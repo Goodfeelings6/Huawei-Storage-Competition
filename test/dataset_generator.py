@@ -13,9 +13,9 @@
 import random
 import numpy as np
 
-# 参数
-wrap_size = 280  # 最大wrap规格280
-tape_size = 1000000  # 假设每个wrap最大lpos = 1000000
+# 参数, 范围参见 public.h
+wrap_size = 280  # 最大wrap规格 280 , [0,278)
+tape_size = 730994  # 每个wrap最大lpos规格 730994 , [0,730994)
 # 设置随机种子
 random.seed(6)
 np.random.seed(6)
@@ -24,7 +24,7 @@ np.random.seed(6)
 def generate_test_cases(io_count, wrap_distribution, startlpos_distribution):
     test_cases = []
     wrap_flag_dic = {} # 存每个wrap已选区间列表
-    for i in range(wrap_size + 1):
+    for i in range(wrap_size):
         wrap_flag_dic[i] = []
     
     # IO 大小生成
@@ -39,21 +39,21 @@ def generate_test_cases(io_count, wrap_distribution, startlpos_distribution):
     # wrap 生成，给定分布于磁带的哪些区域
     def generate_wrap(distribution): 
         if distribution == 'front_20':
-            return random.randint(0, int(wrap_size * 0.2))
+            return random.randint(0, int((wrap_size-1) * 0.2))
         elif distribution == 'front_30':
-            return random.randint(0, int(wrap_size * 0.3))
+            return random.randint(0, int((wrap_size-1) * 0.3))
         elif distribution == 'front_50':
-            return random.randint(0, int(wrap_size * 0.5))
+            return random.randint(0, int((wrap_size-1) * 0.5))
         elif distribution == 'full':
-            return random.randint(0, wrap_size)
+            return random.randint(0, (wrap_size-1))
     
     # startlpos 生成，给定横向磁带上的分布
     def generate_startlpos(distribution):
         if distribution == 'random':
-            return random.randint(0, tape_size)
+            return random.randint(0, tape_size-1)
         elif distribution == 'gaussian':
             # 以横向磁带中间为中心的高斯分布
-            return int(np.random.normal(loc=tape_size//2, scale=tape_size//6))
+            return int(np.random.normal(loc=(tape_size-1)//2, scale=(tape_size-1)//6))
         
     # 生成一个 IO 测试用例
     for i in range(1, io_count + 1):
@@ -64,17 +64,20 @@ def generate_test_cases(io_count, wrap_distribution, startlpos_distribution):
             # 确保 start_lpos 在有效范围内
             if start_lpos < 0:
                 start_lpos = 0
-            elif start_lpos > tape_size:
-                start_lpos = tape_size
+            elif start_lpos > tape_size-1:
+                start_lpos = tape_size-1
             # 计算 end_lpos
             if wrap % 2 == 0: # 正向
                 end_lpos = start_lpos + io_size
-                if end_lpos > tape_size:  # end_lpos 超出范围
-                    end_lpos = tape_size
+                if end_lpos > tape_size-1:  # end_lpos 超出范围
+                    end_lpos = tape_size-1
             else:
                 end_lpos = start_lpos - io_size
                 if end_lpos < 0:
                     end_lpos = 0
+            # 如果起始与结束重合，跳过
+            if start_lpos == end_lpos:
+                continue
             
              # 检查新生成的子区间是否与之前的子区间重叠
             seg = (start_lpos, end_lpos)
@@ -95,9 +98,9 @@ def generate_test_cases(io_count, wrap_distribution, startlpos_distribution):
 # 随机生成磁头信息
 def generate_head_info():
     # 随机生成 head 所处 wrap 值 
-    head = random.randint(0, wrap_size)
+    head = random.randint(0, wrap_size-1)
     # 随机生成 lpos 值
-    lpos = random.randint(0, tape_size) 
+    lpos = random.randint(0, tape_size-1) 
     # 随机生成 status 值（0 静止，1 读写）
     status = random.randint(0, 1)
     return head, lpos, status
