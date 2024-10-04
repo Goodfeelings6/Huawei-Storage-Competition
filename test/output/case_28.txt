@@ -1,0 +1,148 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/project_hw/test/dataset/case_28.txt
+head info : [153,183511,1]
+
+io count = 10
+
+
+0	 28163	 40102	 141948	 167894	 172800	 18399	 8166	 84475	 68051	 0	 INF	
+15824	 0	 48866	 150323	 176155	 181553	 14020	 21912	 92813	 76450	 0	 INF	
+38749	 47772	 0	 122466	 148412	 153318	 40358	 32699	 64993	 48569	 0	 INF	
+141758	 150392	 108893	 0	 45276	 50560	 143176	 135486	 64430	 80818	 0	 INF	
+167632	 176151	 134767	 32794	 0	 24951	 169049	 161360	 90267	 106691	 0	 INF	
+185152	 194163	 152287	 50692	 25011	 0	 186750	 179090	 108202	 124566	 0	 INF	
+4212	 26871	 41354	 143008	 168954	 174040	 0	 11295	 85535	 69111	 0	 INF	
+8171	 21876	 46375	 148000	 173945	 179062	 11440	 0	 90526	 74102	 0	 INF	
+84333	 92931	 51468	 76791	 102701	 108021	 85751	 78061	 0	 23393	 0	 INF	
+68056	 76713	 35191	 93033	 118978	 124239	 69474	 61784	 35559	 0	 0	 INF	
+INF	INF	INF	INF	INF	INF	INF	INF	INF	INF	0	 0	 
+143508	 152027	 110643	 17193	 43628	 49177	 144926	 137236	 66144	 82568	 INF	0	 
+done
+ASCENT_CANDIDATES = 23
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# BWTSP =
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = ALPHA
+# DISTANCE =
+# DEPOT =
+# EDGE_FILE =
+EXCESS = 0.0833333
+EXTERNAL_SALESMEN = 0
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 100
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+K = 0
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAKESPAN = NO
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 24
+MAX_TRIALS = 24
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 5 
+# MTSP_MIN_SIZE =
+# MTSP_MAX_SIZE =
+# MTSP_OBJECTIVE =
+# MTSP_SOLUTION_FILE = 
+# NONSEQUENTIAL_MOVE_TYPE = 5
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = NO
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBABILITY =
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 10
+SALESMEN = 1
+SCALE = 1
+SEED = 1
+# SINTEF_SOLUTION_FILE = 
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = YES
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 5 
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+# TOTAL_TIME_LIMIT =
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+VEHICLES = 1
+
+Lower bound = 301676.8, Ascent time = 0.00 sec.
+Cand.min = 2, Cand.avg = 4.6, Cand.max = 5
+Edges.fixed = 12 [Cost = 0]
+Preprocessing time = 0.00 sec.
+* 1: Cost = 302803, Time = 0.00 sec.
+Run 1: Cost = 302803, Time = 0.00 sec.
+
+* 1: Cost = 302803, Time = 0.00 sec.
+Run 2: Cost = 302803, Time = 0.00 sec.
+
+* 1: Cost = 302803, Time = 0.00 sec.
+Run 3: Cost = 302803, Time = 0.00 sec.
+
+* 1: Cost = 302803, Time = 0.00 sec.
+Run 4: Cost = 302803, Time = 0.00 sec.
+
+* 1: Cost = 302803, Time = 0.00 sec.
+Run 5: Cost = 302803, Time = 0.00 sec.
+
+* 1: Cost = 302803, Time = 0.00 sec.
+Run 6: Cost = 302803, Time = 0.00 sec.
+
+* 1: Cost = 302803, Time = 0.00 sec.
+Run 7: Cost = 302803, Time = 0.00 sec.
+
+* 1: Cost = 302803, Time = 0.00 sec.
+Run 8: Cost = 302803, Time = 0.00 sec.
+
+* 1: Cost = 302803, Time = 0.00 sec.
+Run 9: Cost = 302803, Time = 0.00 sec.
+
+* 1: Cost = 302803, Time = 0.00 sec.
+Run 10: Cost = 302803, Time = 0.00 sec.
+
+Successes/Runs = 0/10
+Cost.min = 302803, Cost.avg = 302803.00, Cost.max = 302803
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 24, Trials.avg = 24.0, Trials.max = 24
+Time.min = 0.00 sec., Time.avg = 0.00 sec., Time.max = 0.00 sec.
+Time.total = 0.00 sec.
+
+len:12
+Output sequence:
+6 5 4 9 10 3 8 2 7 1 
+
+Key Metrics:
+	ioCount:			 10
+	algorithmRunningDuration:	 8.869 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 302803 (ms)
+	readDuration:			 13286 (ms)
+	tapeBeltWear:			 832783
+	tapeMotorWear:			 4
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

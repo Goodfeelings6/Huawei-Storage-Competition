@@ -1,0 +1,22 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/project_hw/test/dataset/case_68.txt
+head info : [31,513378,1]
+
+io count = 50
+
+
+Scan算法得到的io序列1 29 18 3 48 24 38 20 50 26 34 37 5 31 6 27 22 10 12 41 44 30 47 2 46 15 4 49 8 32 7 9 19 40 16 23 28 39 14 13 36 43 21 17 33 11 25 42 35 45 
+Key Metrics:
+	ioCount:			 50
+	algorithmRunningDuration:	 0.009 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 806667 (ms)
+	readDuration:			 58202 (ms)
+	tapeBeltWear:			 1856695
+	tapeMotorWear:			 4
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt
