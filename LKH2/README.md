@@ -11,8 +11,8 @@
 ├── README.md 说明
 ├── bin/ 可执行文件夹
 ├── build/ CMake构建文件夹
-├── include/ LKH头文件
-├── src/ LKH源文件
+├── include/ LKH2头文件
+├── src/ LKH2源文件
 └── testLKH.c 调用测试源文件 main
 ```
 

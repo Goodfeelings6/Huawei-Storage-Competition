@@ -97,33 +97,34 @@ CMakeFiles/project_hw.dir/algorithm/algorithm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project_hw.dir/algorithm/algorithm.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/project_hw/algorithm/algorithm.c -o CMakeFiles/project_hw.dir/algorithm/algorithm.c.s
 
-CMakeFiles/project_hw.dir/LKH2/LKHInterface.c.o: CMakeFiles/project_hw.dir/flags.make
-CMakeFiles/project_hw.dir/LKH2/LKHInterface.c.o: ../LKH2/LKHInterface.c
-CMakeFiles/project_hw.dir/LKH2/LKHInterface.c.o: CMakeFiles/project_hw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csg/project_hw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/project_hw.dir/LKH2/LKHInterface.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/project_hw.dir/LKH2/LKHInterface.c.o -MF CMakeFiles/project_hw.dir/LKH2/LKHInterface.c.o.d -o CMakeFiles/project_hw.dir/LKH2/LKHInterface.c.o -c /home/csg/project_hw/LKH2/LKHInterface.c
+CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.o: CMakeFiles/project_hw.dir/flags.make
+CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.o: ../LKH3/LKHInterface.c
+CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.o: CMakeFiles/project_hw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csg/project_hw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.o -MF CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.o.d -o CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.o -c /home/csg/project_hw/LKH3/LKHInterface.c
 
-CMakeFiles/project_hw.dir/LKH2/LKHInterface.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project_hw.dir/LKH2/LKHInterface.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/project_hw/LKH2/LKHInterface.c > CMakeFiles/project_hw.dir/LKH2/LKHInterface.c.i
+CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/project_hw/LKH3/LKHInterface.c > CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.i
 
-CMakeFiles/project_hw.dir/LKH2/LKHInterface.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project_hw.dir/LKH2/LKHInterface.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/project_hw/LKH2/LKHInterface.c -o CMakeFiles/project_hw.dir/LKH2/LKHInterface.c.s
+CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/project_hw/LKH3/LKHInterface.c -o CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.s
 
 # Object files for target project_hw
 project_hw_OBJECTS = \
 "CMakeFiles/project_hw.dir/main.c.o" \
 "CMakeFiles/project_hw.dir/algorithm/algorithm.c.o" \
-"CMakeFiles/project_hw.dir/LKH2/LKHInterface.c.o"
+"CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.o"
 
 # External object files for target project_hw
 project_hw_EXTERNAL_OBJECTS =
 
 ../bin/project_hw: CMakeFiles/project_hw.dir/main.c.o
 ../bin/project_hw: CMakeFiles/project_hw.dir/algorithm/algorithm.c.o
-../bin/project_hw: CMakeFiles/project_hw.dir/LKH2/LKHInterface.c.o
+../bin/project_hw: CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.o
 ../bin/project_hw: CMakeFiles/project_hw.dir/build.make
+../bin/project_hw: libLKH3.a
 ../bin/project_hw: CMakeFiles/project_hw.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csg/project_hw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable ../bin/project_hw"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project_hw.dir/link.txt --verbose=$(VERBOSE)
