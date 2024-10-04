@@ -1,0 +1,18 @@
+{
+    //用于编译
+    "tasks": [
+        {
+            "label": "compile all code",
+            "type": "shell",
+            "command": "cmake ..&&make", // 编译的命令
+            "options": {
+                "cwd": "${config:ProjectDirPath}/build" //编译命令执行的文件夹
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
