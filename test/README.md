@@ -6,6 +6,7 @@ test/
 ├── README.md 
 ├── dataset/ 所有测试用例 
 ├── output/ 默认测试用例输出目录
+├── dataset_generator.py 测试用例生成，目前前五个用例是官方提供的
 ├── score.py 与基线算法比较计分 脚本
 ├── test.py 构建或测试指定用例 python脚本
 └── testbatch.py 批量测试所有用例 python脚本
