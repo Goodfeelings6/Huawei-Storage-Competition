@@ -1,0 +1,40 @@
+{
+    // 用于调试
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${config:ProjectDirPath}/bin/project_hw", //可执行文件位置
+            "args": [ // 这边的参数都可以自己改，根据想调试的程序功能，和命令行形式是一样的
+                "-f",
+                "${config:ProjectDirPath}/dataset/case_3.txt"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${config:ProjectDirPath}", //命令执行的文件夹
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            // "preLaunchTask": "compile all code",  //是否需要重新编译，如果没有改代码，不需要重新编译就注释掉
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            // 解决构建与源路径差异：例如，使用 CMake 构建项目时，生成的调试信息可能指向构建目录而非源文件目录，
+            // 通过 sourceFileMap 可以将这些路径进行转换，从而避免路径不匹配的问题。
+            // 如下表示当调试器尝试在 ${config:ProjectDirPath}/build/ 中查找源文件时，
+            // 它会实际查找 ${config:ProjectDirPath}/algorithm/ 目录下的文件。如有需要，可以设置多个映射。
+            "sourceFileMap": { 
+                "${config:ProjectDirPath}/build/": "${config:ProjectDirPath}/LKH2/",
+                // "${config:ProjectDirPath}/algorithm/": "${config:ProjectDirPath}/LKH2/",
+            }   
+        }
+    ]
+}
