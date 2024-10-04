@@ -56,4 +56,4 @@ CMakeFiles/project_hw.dir/algorithm/algorithm.c.o: \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/csg/project_hw/LKH2/LKHInterface.h
+ /home/csg/project_hw/LKH3/LKHInterface.h

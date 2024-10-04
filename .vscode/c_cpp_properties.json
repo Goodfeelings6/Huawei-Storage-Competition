@@ -1,14 +1,14 @@
 {
-    // 插件 C/C++ for Visual Studio Code 的配置
     "configurations": [
         {
             "name": "Linux",
             "includePath": [
-                "${config:ProjectDirPath}/**",
-                "${config:ProjectDirPath}/LKH2/include"
+                "${config:ProjectDirPath}/**"
+                // "${config:ProjectDirPath}/LKH2/include",
+                // "${config:ProjectDirPath}/LKH3/include"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/gcc", 
+            "compilerPath": "/usr/bin/gcc",
             "cStandard": "c17",
             "cppStandard": "gnu++14",
             "intelliSenseMode": "linux-gcc-x64",
