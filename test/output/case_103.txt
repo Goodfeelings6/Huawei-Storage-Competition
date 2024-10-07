@@ -1,0 +1,137 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/project_hw/test/dataset/case_103.txt
+head info : [92,445911,1]
+
+io count = 100
+
+
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# BWTSP =
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# DISTANCE =
+# DEPOT =
+# EDGE_FILE =
+EXCESS = 0.00980392
+EXTERNAL_SALESMEN = 0
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 102
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+K = 0
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAKESPAN = NO
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 204
+MAX_TRIALS = 204
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 5 
+# MTSP_MIN_SIZE =
+# MTSP_MAX_SIZE =
+# MTSP_OBJECTIVE =
+# MTSP_SOLUTION_FILE = 
+# NONSEQUENTIAL_MOVE_TYPE = 5
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBABILITY =
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 10
+SALESMEN = 1
+SCALE = 1
+SEED = 1
+# SINTEF_SOLUTION_FILE = 
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 5 
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+VEHICLES = 1
+
+Lower bound = 354102.0, Ascent time = 0.05 sec.
+Cand.min = 4, Cand.avg = 5.1, Cand.max = 6
+Edges.fixed = 102 [Cost = 0]
+Preprocessing time = 0.05 sec.
+* 1: Cost = 752895, Time = 0.00 sec.
+Run 1: Cost = 752895, Time = 0.08 sec.
+
+* 1: Cost = 752895, Time = 0.00 sec.
+Run 2: Cost = 752895, Time = 0.06 sec.
+
+* 1: Cost = 752895, Time = 0.00 sec.
+Run 3: Cost = 752895, Time = 0.04 sec.
+
+* 1: Cost = 752895, Time = 0.00 sec.
+Run 4: Cost = 752895, Time = 0.04 sec.
+
+* 1: Cost = 752895, Time = 0.00 sec.
+Run 5: Cost = 752895, Time = 0.06 sec.
+
+* 1: Cost = 752895, Time = 0.00 sec.
+Run 6: Cost = 752895, Time = 0.07 sec.
+
+* 1: Cost = 752895, Time = 0.00 sec.
+Run 7: Cost = 752895, Time = 0.05 sec.
+
+* 1: Cost = 752895, Time = 0.00 sec.
+Run 8: Cost = 752895, Time = 0.06 sec.
+
+* 1: Cost = 752895, Time = 0.00 sec.
+Run 9: Cost = 752895, Time = 0.04 sec.
+
+* 1: Cost = 752895, Time = 0.00 sec.
+Run 10: Cost = 752895, Time = 0.07 sec.
+
+Successes/Runs = 0/10
+Cost.min = 752895, Cost.avg = 752895.00, Cost.max = 752895
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 204, Trials.avg = 204.0, Trials.max = 204
+Time.min = 0.04 sec., Time.avg = 0.06 sec., Time.max = 0.08 sec.
+Time.total = 0.61 sec.
+
+LKH result
+io len:100
+Output sequence:
+33 23 35 46 63 6 30 9 7 88 62 16 54 43 60 36 20 81 83 41 19 93 40 100 34 24 21 91 1 74 90 82 66 68 96 38 26 5 2 44 76 85 87 86 32 77 67 92 8 18 29 71 25 11 52 95 98 37 94 13 14 45 15 3 97 84 51 28 56 69 80 49 22 53 39 50 10 27 89 61 65 48 72 58 99 42 57 4 31 59 12 64 73 70 55 78 75 47 79 17 
+
+Key Metrics:
+	ioCount:			 100
+	algorithmRunningDuration:	 831.848 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 752895 (ms)
+	readDuration:			 109662 (ms)
+	tapeBeltWear:			 1115254
+	tapeMotorWear:			 38
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt
