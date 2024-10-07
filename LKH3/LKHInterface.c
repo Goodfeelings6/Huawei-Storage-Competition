@@ -520,7 +520,8 @@ void ReadParameters()
     BWTSP_Q = 0;
     BWTSP_L = INT_MAX;
     CandidateSetSymmetric = 0;
-    CandidateSetType = ALPHA;
+    // CandidateSetType = ALPHA;
+    CandidateSetType = POPMUSIC;
     Crossover = ERXT;
     DelaunayPartitioning = 0;
     DelaunayPure = 0;
@@ -565,10 +566,12 @@ void ReadParameters()
     PatchingCRestricted = 0;
     Precision = 100;
     Probability = 100;
-    POPMUSIC_InitialTour = 0;
+    // POPMUSIC_InitialTour = 0;
+    POPMUSIC_InitialTour = 1;
     POPMUSIC_MaxNeighbors = 5;
     POPMUSIC_SampleSize = 10;
     POPMUSIC_Solutions = 50;
+    // POPMUSIC_Solutions = 25; // 这个减半后，IO为10000的也能20秒ascent完，且因为没超时，最终分数还会高些
     POPMUSIC_Trials = 1;
     Recombination = IPT;
     RestrictedSearch = 1;
@@ -579,7 +582,8 @@ void ReadParameters()
     Seed = 1;
     SierpinskiPartitioning = 0;
     StopAtOptimum = 1;
-    Subgradient = 1;
+    // Subgradient = 1;
+    Subgradient = 0;
     SubproblemBorders = 0;
     SubproblemsCompressed = 0;
     SubproblemSize = 0;
@@ -587,12 +591,12 @@ void ReadParameters()
     SubsequentMoveTypeSpecial = 0;
     SubsequentPatching = 1;
     TimeLimit = DBL_MAX;
-    TotalTimeLimit = DBL_MAX;
+    TotalTimeLimit = 20;
     TraceLevel = 1;
     TSPTW_Makespan = 0;
 
     /* other */
-    MaxMatrixDimension = 20000;
+    MaxMatrixDimension = 20006;
     MergeWithTour =
         Recombination == GPX2 ? MergeWithTourGPX2 :
         Recombination == CLARIST ? MergeWithTourCLARIST :

@@ -6,5 +6,5 @@ C_DEFINES = -D_GNU_SOURCE
 
 C_INCLUDES = -I/home/csg/project_hw/algorithm -I/home/csg/project_hw/LKH3 -I/home/csg/project_hw/LKH3/include
 
-C_FLAGS = -g -Wall -std=c99 -std=gnu99
+C_FLAGS = -O3 -DNDEBUG -O3 -DNDEBUG -std=gnu99
 
