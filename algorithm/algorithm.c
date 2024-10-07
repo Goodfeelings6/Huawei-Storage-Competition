@@ -13,11 +13,11 @@
 int32_t IOScheduleAlgorithm(const InputParam *input, OutputParam *output)
 {    
     // 使用 LKH 算法
-    // return LKH(input, output);
+    return LKH(input, output);
     // 使用 Sort 算法
     // return Sort(input, output);
     // 使用 Scan 算法
-    return Scan(input, output);
+    // return Scan(input, output);
 }
 
 // LKH 算法
@@ -61,16 +61,16 @@ int32_t LKH(const InputParam *input, OutputParam *output)
     adjMat[len-1][len-2] = 0xfffff;  // 磁头节点到虚拟节点的代价为极大值
 
     /* 打印邻接矩阵 */
-    for (uint32_t i = 0; i < len; ++i) {
-        for (uint32_t j = 0; j < len; ++j) {
-            if (adjMat[i][j] == 0xfffff) {
-                printf("INF\t");  // 打印无穷大（不可达）的情况
-            } else {
-                printf("%u\t ", adjMat[i][j]);  // 打印代价
-            }
-        }
-        printf("\n");
-    }
+    // for (uint32_t i = 0; i < len; ++i) {
+    //     for (uint32_t j = 0; j < len; ++j) {
+    //         if (adjMat[i][j] == 0xfffff) {
+    //             printf("INF\t");  // 打印无穷大（不可达）的情况
+    //         } else {
+    //             printf("%u\t ", adjMat[i][j]);  // 打印代价
+    //         }
+    //     }
+    //     printf("\n");
+    // }
 
     /* 求解 */
     int Cost = 0;
@@ -90,7 +90,8 @@ int32_t LKH(const InputParam *input, OutputParam *output)
     }
 
     /* 打印求解结果：输出output->sequence的内容 */
-    printf("len:%d\n",len);
+    printf("LKH result\n");
+    printf("io len:%d\n",len-2);
     printf("Output sequence:\n");
     for (uint32_t i = 0; i < len - 2; ++i) {
         printf("%d ", output->sequence[i]);

@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/csg/project_hw/algorithm -I/home/csg/project_hw/LKH3 -I/home/csg/project_hw/LKH3/include
 
-C_FLAGS = -std=gnu99
+C_FLAGS = -O3 -DNDEBUG -O3 -DNDEBUG -std=gnu99
 

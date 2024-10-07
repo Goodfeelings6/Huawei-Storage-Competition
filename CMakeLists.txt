@@ -6,6 +6,14 @@ project(project_hw)
 
 set(CMAKE_C_STANDARD 99)
 
+# 设置全局编译选项
+# set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -Wall -std=c99")
+# set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O2 -std=c99")
+
+# 或者指定构建方式为 release 模式
+set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -O3 -DNDEBUG")
+set(CMAKE_BUILD_TYPE Release CACHE STRING "Choose the type of build." FORCE)
+
 # 设置路径变量
 set(LIB_DIR ${PROJECT_SOURCE_DIR}/lib)
 set(ALG_DIR ${PROJECT_SOURCE_DIR}/algorithm)
@@ -52,5 +60,5 @@ add_executable(project_hw  ${SOURCES})
 target_link_libraries(project_hw PRIVATE seek_model LKH3 m)
 
 # 添加编译选项和宏定义
-target_compile_options(project_hw PRIVATE -g -Wall -std=c99)
+# target_compile_options(project_hw PRIVATE -g -O2 -Wall -std=c99)
 target_compile_definitions(project_hw PRIVATE _GNU_SOURCE)
