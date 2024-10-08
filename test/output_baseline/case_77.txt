@@ -8,15 +8,15 @@ head info : [244,16374,0]
 io count = 50
 
 
-Scan算法得到的io序列3 18 26 9 16 37 34 5 41 50 22 45 47 1 39 17 43 8 15 46 4 25 13 48 42 23 21 14 28 44 49 30 2 36 31 12 20 19 24 33 27 11 10 32 6 38 7 29 40 35 
+
 Key Metrics:
 	ioCount:			 50
-	algorithmRunningDuration:	 0.009 (ms)
+	algorithmRunningDuration:	 0.081 (ms)
 	memoryUse:			 0 (KB)
-	addressingDuration:		 715532 (ms)
+	addressingDuration:		 746755 (ms)
 	readDuration:			 53242 (ms)
-	tapeBeltWear:			 1485253
-	tapeMotorWear:			 9
+	tapeBeltWear:			 1075209
+	tapeMotorWear:			 81
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

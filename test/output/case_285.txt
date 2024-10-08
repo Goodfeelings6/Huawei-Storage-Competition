@@ -1,0 +1,198 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset/case_285.txt
+head info : [244,608809,1]
+
+io count = 10000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# BWTSP =
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# DISTANCE =
+# DEPOT =
+# EDGE_FILE =
+# EXCESS =
+EXTERNAL_SALESMEN = 0
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+# INITIAL_PERIOD =
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+K = 0
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAKESPAN = NO
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 20004
+# MAX_TRIALS =
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 5 
+# MTSP_MIN_SIZE =
+# MTSP_MAX_SIZE =
+# MTSP_OBJECTIVE =
+# MTSP_SOLUTION_FILE = 
+# NONSEQUENTIAL_MOVE_TYPE = 5
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBABILITY =
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SALESMEN = 1
+SCALE = 1
+SEED = 1
+# SINTEF_SOLUTION_FILE = 
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+SUBPROBLEM_SIZE = 10002
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 5 
+SUBSEQUENT_PATCHING = YES
+TIME_LIMIT = 2.0
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 3
+VEHICLES = 1
+
+
+*** Tour segment partitioning *** [Round 1 of 2, Cost = 10962034]
+
+Subproblem 1 of 2: Dimension = 10002, Upper bound = 7568478
+Creating candidates ...
+Creating POPMUSIC candidate set ...
+1: Initial cost:  268039833, Gap = 3441.53%, Time: 0.13 sec.
+1: Improved cost: 56591835, Gap = 647.73%, Time: 0.07 sec.
+2: Initial cost:  265375188, Gap = 3406.32%, Time: 0.13 sec.
+2: Improved cost: 57186123, Gap = 655.58%, Time: 0.07 sec.
+3: Initial cost:  266668011, Gap = 3423.40%, Time: 0.13 sec.
+3: Improved cost: 56658534, Gap = 648.61%, Time: 0.07 sec.
+4: Initial cost:  266200993, Gap = 3417.23%, Time: 0.13 sec.
+4: Improved cost: 56095050, Gap = 641.17%, Time: 0.07 sec.
+5: Initial cost:  266731385, Gap = 3424.24%, Time: 0.13 sec.
+5: Improved cost: 57428267, Gap = 658.78%, Time: 0.07 sec.
+6: Initial cost:  264742419, Gap = 3397.96%, Time: 0.13 sec.
+6: Improved cost: 56620129, Gap = 648.10%, Time: 0.07 sec.
+7: Initial cost:  265000605, Gap = 3401.37%, Time: 0.13 sec.
+7: Improved cost: 57094193, Gap = 654.37%, Time: 0.07 sec.
+8: Initial cost:  266061477, Gap = 3415.39%, Time: 0.13 sec.
+8: Improved cost: 56949562, Gap = 652.46%, Time: 0.07 sec.
+9: Initial cost:  266110498, Gap = 3416.04%, Time: 0.13 sec.
+9: Improved cost: 57103026, Gap = 654.48%, Time: 0.07 sec.
+10: Initial cost:  263043421, Gap = 3375.51%, Time: 0.13 sec.
+10: Improved cost: 55960504, Gap = 639.39%, Time: 0.07 sec.
+11: Initial cost:  267907380, Gap = 3439.78%, Time: 0.14 sec.
+11: Improved cost: 56252701, Gap = 643.25%, Time: 0.07 sec.
+12: Initial cost:  263626697, Gap = 3383.22%, Time: 0.14 sec.
+12: Improved cost: 57478263, Gap = 659.44%, Time: 0.07 sec.
+13: Initial cost:  264293700, Gap = 3392.03%, Time: 0.13 sec.
+13: Improved cost: 55783928, Gap = 637.06%, Time: 0.07 sec.
+14: Initial cost:  265682026, Gap = 3410.38%, Time: 0.13 sec.
+14: Improved cost: 57845549, Gap = 664.30%, Time: 0.07 sec.
+15: Initial cost:  263706885, Gap = 3384.28%, Time: 0.13 sec.
+15: Improved cost: 56177784, Gap = 642.26%, Time: 0.07 sec.
+16: Initial cost:  268240631, Gap = 3444.18%, Time: 0.15 sec.
+16: Improved cost: 56658275, Gap = 648.61%, Time: 0.07 sec.
+17: Initial cost:  264683425, Gap = 3397.18%, Time: 0.13 sec.
+17: Improved cost: 57599184, Gap = 661.04%, Time: 0.07 sec.
+18: Initial cost:  264735525, Gap = 3397.87%, Time: 0.13 sec.
+18: Improved cost: 57153177, Gap = 655.15%, Time: 0.07 sec.
+19: Initial cost:  263377627, Gap = 3379.93%, Time: 0.13 sec.
+19: Improved cost: 57218032, Gap = 656.00%, Time: 0.07 sec.
+20: Initial cost:  263852287, Gap = 3386.20%, Time: 0.13 sec.
+20: Improved cost: 57382505, Gap = 658.18%, Time: 0.07 sec.
+21: Initial cost:  265915702, Gap = 3413.46%, Time: 0.13 sec.
+21: Improved cost: 57335359, Gap = 657.55%, Time: 0.07 sec.
+22: Initial cost:  263530933, Gap = 3381.95%, Time: 0.13 sec.
+22: Improved cost: 57452778, Gap = 659.11%, Time: 0.07 sec.
+23: Initial cost:  267414792, Gap = 3433.27%, Time: 0.13 sec.
+23: Improved cost: 56986520, Gap = 652.95%, Time: 0.07 sec.
+24: Initial cost:  267436739, Gap = 3433.56%, Time: 0.13 sec.
+24: Improved cost: 57957939, Gap = 665.78%, Time: 0.07 sec.
+25: Initial cost:  265712360, Gap = 3410.78%, Time: 0.13 sec.
+25: Improved cost: 56497839, Gap = 646.49%, Time: 0.07 sec.
+26: Initial cost:  265115822, Gap = 3402.89%, Time: 0.13 sec.
+26: Improved cost: 57194325, Gap = 655.69%, Time: 0.07 sec.
+27: Initial cost:  266077338, Gap = 3415.60%, Time: 0.13 sec.
+27: Improved cost: 57387819, Gap = 658.25%, Time: 0.07 sec.
+28: Initial cost:  266630264, Gap = 3422.90%, Time: 0.14 sec.
+28: Improved cost: 56049914, Gap = 640.57%, Time: 0.08 sec.
+29: Initial cost:  266672776, Gap = 3423.47%, Time: 0.15 sec.
+29: Improved cost: 57866208, Gap = 664.57%, Time: 0.08 sec.
+30: Initial cost:  262269798, Gap = 3365.29%, Time: 0.13 sec.
+30: Improved cost: 56648309, Gap = 648.48%, Time: 0.08 sec.
+31: Initial cost:  265892872, Gap = 3413.16%, Time: 0.14 sec.
+31: Improved cost: 57562021, Gap = 660.55%, Time: 0.08 sec.
+32: Initial cost:  262640068, Gap = 3370.18%, Time: 0.14 sec.
+32: Improved cost: 57244168, Gap = 656.35%, Time: 0.08 sec.
+33: Initial cost:  263935647, Gap = 3387.30%, Time: 0.14 sec.
+33: Improved cost: 57123522, Gap = 654.76%, Time: 0.08 sec.
+34: Initial cost:  265168065, Gap = 3403.59%, Time: 0.13 sec.
+34: Improved cost: 57552935, Gap = 660.43%, Time: 0.08 sec.
+35: Initial cost:  263354279, Gap = 3379.62%, Time: 0.14 sec.
+35: Improved cost: 56617205, Gap = 648.07%, Time: 0.08 sec.
+36: Initial cost:  268874398, Gap = 3452.56%, Time: 0.13 sec.
+36: Improved cost: 57913736, Gap = 665.20%, Time: 0.08 sec.
+37: Initial cost:  263146673, Gap = 3376.88%, Time: 0.13 sec.
+37: Improved cost: 57571528, Gap = 660.68%, Time: 0.08 sec.
+38: Initial cost:  264876571, Gap = 3399.73%, Time: 0.13 sec.
+38: Improved cost: 55877596, Gap = 638.29%, Time: 0.08 sec.
+39: Initial cost:  265546673, Gap = 3408.59%, Time: 0.13 sec.
+39: Improved cost: 56827811, Gap = 650.85%, Time: 0.08 sec.
+40: Initial cost:  267748864, Gap = 3437.68%, Time: 0.14 sec.
+40: Improved cost: 56247948, Gap = 643.19%, Time: 0.08 sec.
+41: Initial cost:  263955607, Gap = 3387.57%, Time: 0.13 sec.
+41: Improved cost: 56604594, Gap = 647.90%, Time: 0.08 sec.
+42: Initial cost:  265689755, Gap = 3410.48%, Time: 0.13 sec.
+42: Improved cost: 56410218, Gap = 645.33%, Time: 0.08 sec.
+43: Initial cost:  267257780, Gap = 3431.20%, Time: 0.13 sec.
+43: Improved cost: 57361478, Gap = 657.90%, Time: 0.08 sec.
+44: Initial cost:  265258948, Gap = 3404.79%, Time: 0.13 sec.
+44: Improved cost: 56981242, Gap = 652.88%, Time: 0.08 sec.
+45: Initial cost:  264898807, Gap = 3400.03%, Time: 0.13 sec.
+45: Improved cost: 56964333, Gap = 652.65%, Time: 0.08 sec.
+46: Initial cost:  266807771, Gap = 3425.25%, Time: 0.13 sec.
+46: Improved cost: 57093532, Gap = 654.36%, Time: 0.08 sec.
+47: Initial cost:  265507133, Gap = 3408.07%, Time: 0.13 sec.
+47: Improved cost: 56504296, Gap = 646.57%, Time: 0.08 sec.
+48: Initial cost:  263609629, Gap = 3382.99%, Time: 0.13 sec.
+48: Improved cost: 56181954, Gap = 642.32%, Time: 0.08 sec.
+49: Initial cost:  263664314, Gap = 3383.72%, Time: 0.13 sec.
+49: Improved cost: 56472219, Gap = 646.15%, Time: 0.08 sec.
+50: Initial cost:  264377591, Gap = 3393.14%, Time: 0.13 sec.
+50: Improved cost: 56836491, Gap = 650.96%, Time: 0.08 sec.
+Cost.min = 55783928, Cost.avg = 56931249.16, Cost.max = 57957939
+Gap.min = 637.06%, Gap.avg = 652.22%, Gap.max = 665.78%
+Cand.min = 2, Cand.avg = 45.3, Cand.max = 51
+Edges.fixed = 5003 [Cost = 47240]
+POPMUSIC Time = 10.63 sec.
+done
+Lower bound = 1090151.0, Gap = 85.60%, Ascent time = 10.65 sec.
+Ordering candidates ... done
+Cand.min = 2, Cand.avg = 6.1, Cand.max = 7
+Edges.fixed = 5003 [Cost = 47240]
+Preprocessing time = 10.75 sec.
