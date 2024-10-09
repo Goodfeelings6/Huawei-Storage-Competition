@@ -1,0 +1,111 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/project_hw/test/dataset/case_121.txt
+head info : [224,415303,0]
+
+io count = 100
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# BWTSP =
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = ALPHA
+# DISTANCE =
+# DEPOT =
+# EDGE_FILE =
+EXCESS = 0.00980392
+EXTERNAL_SALESMEN = 0
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 102
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+K = 0
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAKESPAN = NO
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 204
+MAX_TRIALS = 204
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 5 
+# MTSP_MIN_SIZE =
+# MTSP_MAX_SIZE =
+# MTSP_OBJECTIVE =
+# MTSP_SOLUTION_FILE = 
+# NONSEQUENTIAL_MOVE_TYPE = 5
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = NO
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBABILITY =
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SALESMEN = 1
+SCALE = 1
+SEED = 1
+# SINTEF_SOLUTION_FILE = 
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = YES
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 5 
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+VEHICLES = 1
+
+Lower bound = 770719.5, Ascent time = 0.04 sec.
+Cand.min = 2, Cand.avg = 5.0, Cand.max = 6
+Edges.fixed = 103 [Cost = 0]
+Preprocessing time = 0.05 sec.
+* 1: Cost = 771058, Time = 0.00 sec.
+Run 1: Cost = 771058, Time = 0.02 sec.
+
+Successes/Runs = 0/1
+Cost.min = 771058, Cost.avg = 771058.00, Cost.max = 771058
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 204, Trials.avg = 204.0, Trials.max = 204
+Time.min = 0.02 sec., Time.avg = 0.02 sec., Time.max = 0.02 sec.
+Time.total = 0.07 sec.
+
+LKH result
+io len:100
+Output sequence:
+43 66 47 2 60 86 76 8 22 98 85 70 26 97 31 12 40 62 57 41 73 61 48 56 27 99 93 72 35 87 11 52 83 16 64 25 88 100 71 67 14 68 84 19 28 50 44 53 34 10 5 49 89 59 9 23 37 92 6 3 15 77 36 38 18 91 42 96 24 51 45 21 79 17 65 1 20 7 32 46 13 58 69 4 29 82 95 63 75 55 81 33 94 74 90 39 30 54 78 80 
+
+Key Metrics:
+	ioCount:			 100
+	algorithmRunningDuration:	 68.533 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 771058 (ms)
+	readDuration:			 109318 (ms)
+	tapeBeltWear:			 1125464
+	tapeMotorWear:			 41
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

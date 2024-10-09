@@ -1,0 +1,108 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/project_hw/test/dataset/case_125.txt
+head info : [142,564202,0]
+
+io count = 100
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# BWTSP =
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = ALPHA
+# DISTANCE =
+# DEPOT =
+# EDGE_FILE =
+EXCESS = 0.00980392
+EXTERNAL_SALESMEN = 0
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 102
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+K = 0
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAKESPAN = NO
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 204
+MAX_TRIALS = 204
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 5 
+# MTSP_MIN_SIZE =
+# MTSP_MAX_SIZE =
+# MTSP_OBJECTIVE =
+# MTSP_SOLUTION_FILE = 
+# NONSEQUENTIAL_MOVE_TYPE = 5
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = NO
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBABILITY =
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SALESMEN = 1
+SCALE = 1
+SEED = 1
+# SINTEF_SOLUTION_FILE = 
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = YES
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 5 
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+VEHICLES = 1
+
+Lower bound = 700999.0, Ascent time = 0.02 sec.
+Cand.min = 2, Cand.avg = 4.9, Cand.max = 6
+Edges.fixed = 103 [Cost = 0]
+Preprocessing time = 0.02 sec.
+Successes/Runs = 1/0
+Cost.min = 700999, Cost.avg = 700999.00, Cost.max = 700999
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
+Time.min = 0.02 sec., Time.avg = 0.02 sec., Time.max = 0.02 sec.
+Time.total = 0.02 sec.
+
+LKH result
+io len:100
+Output sequence:
+4 56 83 78 55 46 97 36 27 72 100 11 22 82 42 59 49 87 12 37 84 76 34 5 67 94 63 92 14 28 91 57 7 20 31 24 74 50 26 96 86 45 9 69 25 43 32 19 77 61 88 30 65 48 40 8 10 41 13 47 21 98 1 95 85 23 2 64 3 66 18 75 68 44 62 71 52 60 70 16 29 53 38 17 81 39 80 90 54 89 33 15 35 51 58 6 99 79 73 93 
+
+Key Metrics:
+	ioCount:			 100
+	algorithmRunningDuration:	 25.566 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 700999 (ms)
+	readDuration:			 89778 (ms)
+	tapeBeltWear:			 995465
+	tapeMotorWear:			 25
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

@@ -60,22 +60,36 @@ def score():
         # 调度算法加分
         addrT = (base_data_i_dict["addressingDuration"]-curr_data_i_dict["addressingDuration"])*10
         schedulScore.append(addrT)
-        # 调度用时加分
-        scheduleT = (20000-curr_data_i_dict["algorithmRunningDuration"])*10
+        # 调度用时加分 和 调度超时罚分
+        if curr_data_i_dict["algorithmRunningDuration"]<=20000:
+            scheduleT = (20000-curr_data_i_dict["algorithmRunningDuration"])*10
+            penaltyT = 0
+        else:
+            scheduleT = 0
+            penaltyT = (curr_data_i_dict["algorithmRunningDuration"]-20000)*curr_data_i_dict["ioCount"]/50
         timeScore.append(scheduleT)
-        # 
+        timeoutPenalty.append(penaltyT)
+        # 排序错误罚分
+        errorPenalty = curr_data_i_dict["errorIOCount"]*10
+        sortErrorPenaly.append(errorPenalty)
 
         # 写入文件
         scoreFile.write(f"调度算法加分:{addrT:.2f}\t")
         scoreFile.write(f"调度用时加分:{scheduleT:.2f}\t")
+        scoreFile.write(f"调度超时罚分:{penaltyT:.2f}\t")
+        scoreFile.write(f"排序错误罚分:{errorPenalty:.2f}\t")
         scoreFile.write('\n')
     
     schedulScore_sum = sum(schedulScore)
     timeScore_sum = sum(timeScore)
+    timeoutPenalty_sum = sum(timeoutPenalty)
+    sortErrorPenaly_sum = sum(sortErrorPenaly)
     scoreFile.write(f"调度算法总加分:{schedulScore_sum:.2f}\t")
     scoreFile.write(f"调度用时总加分:{timeScore_sum:.2f}\t")
+    scoreFile.write(f"调度超时罚分:{timeoutPenalty_sum:.2f}\t")
+    scoreFile.write(f"排序错误罚分:{sortErrorPenaly_sum:.2f}\t")
 
-    scoreFile.write(f"\n总分:{schedulScore_sum+timeScore_sum:.2f}\n")
+    scoreFile.write(f"\n总分:{schedulScore_sum+timeScore_sum+timeoutPenalty_sum+sortErrorPenaly_sum:.2f}\n")
     scoreFile.close()
     print("Done!")
         
