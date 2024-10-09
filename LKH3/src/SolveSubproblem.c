@@ -17,7 +17,10 @@
 int
 SolveSubproblem(int CurrentSubproblem, int Subproblems,
                 GainType * GlobalBestCost)
-{
+{   
+
+    
+    printf("进入划分子问题函数\n");
     Node *FirstNodeSaved = FirstNode, *N, *Next, *Last = 0;
     GainType OptimumSaved = Optimum, Cost, Improvement, GlobalCost;
     double LastTime, Time, ExcessSaved = Excess;
@@ -65,6 +68,9 @@ SolveSubproblem(int CurrentSubproblem, int Subproblems,
         N->FixedTo1Saved = N->FixedTo1;
         N->FixedTo2Saved = N->FixedTo2;
     } while ((N = N->SubproblemSuc) != FirstNodeSaved);
+
+    
+    
     if ((Number = CurrentSubproblem % Subproblems) == 0)
         Number = Subproblems;
     if (NewDimension <= 3 || NewDimension == OldDimension) {
@@ -122,10 +128,12 @@ SolveSubproblem(int CurrentSubproblem, int Subproblems,
         }
     }
     while ((N = Next) != FirstNode);
-
+    printf("Dimension=%d\n",Dimension);
     Dimension = NewDimension;
+    printf("Dimension=%d\n",Dimension);
     AllocateSegments();
     InitializeStatistics();
+    //printf("InitializeStatistics执行完了\n");
     if (CacheSig)
         for (i = 0; i <= CacheMask; i++)
             CacheSig[i] = 0;
@@ -154,7 +162,9 @@ SolveSubproblem(int CurrentSubproblem, int Subproblems,
 
     for (Run = 1; Run <= Runs; Run++) {
         LastTime = GetTime();
+        //printf("run=%d ,FindTour即将执行\n",Run);
         Cost = Norm != 0 ? FindTour() : Optimum;
+        //printf("run=%d ,FindTour执行完成\n",Run);
         /* Merge with subproblem tour */
         Last = 0;
         N = FirstNode;
@@ -166,6 +176,7 @@ SolveSubproblem(int CurrentSubproblem, int Subproblems,
             }
         }
         while ((N = N->SubproblemSuc) != FirstNode);
+
         Last->Next = FirstNode;
         Cost = MergeWithTour();
         if (MaxPopulationSize > 1) {
@@ -308,6 +319,8 @@ SolveSubproblem(int CurrentSubproblem, int Subproblems,
             break;
     }
 
+
+//printf("for (Run = 1; Run <= Runs; Run++) 循环执行完成\n");
     if (TraceLevel >= 1)
         PrintStatistics();
 

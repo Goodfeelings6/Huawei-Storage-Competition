@@ -76,7 +76,14 @@ void CreateCandidateSet()
         while ((Na = Na->Suc) != FirstNode);
         CandidatesRead = ReadCandidates(MaxCandidates) |
             ReadEdges(MaxCandidates);
+        
+        double ascentstart=GetTime();
         Cost = Ascent();
+        double ascentend=GetTime();
+        if(predict_ascent<ascentend-ascentstart){//计算ascent的最大用时
+             predict_ascent=ascentend-ascentstart;
+        }
+
         if (Subgradient && SubproblemSize == 0) {
             WritePenalties();
             PiFile = 0;

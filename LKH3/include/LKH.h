@@ -395,6 +395,8 @@ extern FILE *ParameterFile, *ProblemFile, *PiFile, *InputTourFile,
 extern CostFunction Distance, D, C, c, OldDistance;
 extern MoveFunction BestMove, BacktrackMove, BestSubsequentMove;
 extern PenaltyFunction Penalty;
+extern double predict_ascent;
+extern int roundnum;
 
 /* Function prototypes: */
 int LKHmain();

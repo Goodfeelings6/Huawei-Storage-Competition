@@ -33,6 +33,7 @@ python test.py s0
 python test.py s1 -src ./dataset/case_1.txt
 # 先构建后测试用例 case_2.txt
 python test.py s2 -src ./dataset/case_2.txt
+python test.py s2 -src ./dataset/case_245.txt
 ```
 ---
 

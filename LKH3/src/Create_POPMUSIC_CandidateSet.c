@@ -86,6 +86,13 @@ void Create_POPMUSIC_CandidateSet(int K)
 
     for (no_res = 1; no_res <= NB_RES; no_res++) {
         /* Create set of non-deleted nodes */
+
+        // if (GetTime() - StartTime >= TotalTimeLimit) {//超过总时长时，不执行第二轮
+        //         if (TraceLevel >= 1)
+        //         printff("*** Time limit exceeded，jump off ascent ***\n");
+        //          break;
+        // }
+
         n = deleted = 0;
         N = FirstNode;
         do {

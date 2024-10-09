@@ -1,21 +1,30 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/mnt/g/Huawei-Storage-Competition/Huawei-Storage-Competition/LKH3/LKHInterface.c" "/mnt/g/Huawei-Storage-Competition/Huawei-Storage-Competition/build/CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.o"
+  "/mnt/g/Huawei-Storage-Competition/Huawei-Storage-Competition/algorithm/algorithm.c" "/mnt/g/Huawei-Storage-Competition/Huawei-Storage-Competition/build/CMakeFiles/project_hw.dir/algorithm/algorithm.c.o"
+  "/mnt/g/Huawei-Storage-Competition/Huawei-Storage-Competition/main.c" "/mnt/g/Huawei-Storage-Competition/Huawei-Storage-Competition/build/CMakeFiles/project_hw.dir/main.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "_GNU_SOURCE"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/csg/project_hw/LKH3/LKHInterface.c" "CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.o" "gcc" "CMakeFiles/project_hw.dir/LKH3/LKHInterface.c.o.d"
-  "/home/csg/project_hw/algorithm/algorithm.c" "CMakeFiles/project_hw.dir/algorithm/algorithm.c.o" "gcc" "CMakeFiles/project_hw.dir/algorithm/algorithm.c.o.d"
-  "/home/csg/project_hw/main.c" "CMakeFiles/project_hw.dir/main.c.o" "gcc" "CMakeFiles/project_hw.dir/main.c.o.d"
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../algorithm"
+  "../LKH3"
+  "../LKH3/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/csg/project_hw/build/CMakeFiles/LKH3.dir/DependInfo.cmake"
+  "/mnt/g/Huawei-Storage-Competition/Huawei-Storage-Competition/build/CMakeFiles/LKH3.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -122,6 +122,9 @@ int POPMUSIC_MaxNeighbors; /* Maximum number of nearest neighbors used
 int POPMUSIC_SampleSize;   /* The sample size */
 int POPMUSIC_Solutions;    /* Number of solutions to generate */
 int POPMUSIC_Trials;       /* Maximum trials used for iterated 3-opt */
+double predict_ascent;     //max of ascent
+
+int roundnum;
 unsigned *Rand;           /* Table of random values */
 int Recombination;        /* IPT or GPX2 */
 int RelaxationLevel;      /* d relaxation lelevel for TSP-D */

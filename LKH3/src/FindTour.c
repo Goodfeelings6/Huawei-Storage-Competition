@@ -40,14 +40,19 @@ GainType FindTour()
     }
     BetterCost = PLUS_INFINITY;
     BetterPenalty = CurrentPenalty = PLUS_INFINITY;
-    if (MaxTrials > 0)
+    if (MaxTrials > 0){
+   // printf("HashInitialize即将执行\n");
         HashInitialize(HTable);
-    else {
+       // printf("HashInitialize即将执行\n");
+    }else {
         Trial = 1;
+       // printf("ChooseInitialTour即将执行\n");
         ChooseInitialTour();
+       // printf("ChooseInitialTour执行完了\n");
         CurrentPenalty = PLUS_INFINITY;
         CurrentPenalty = BetterPenalty = Penalty ? Penalty() : 0;
     }
+    double betterTime;
     for (Trial = 1; Trial <= MaxTrials; Trial++) {
         if (GetTime() - EntryTime >= TimeLimit ||
             GetTime() - StartTime >= TotalTimeLimit) {
@@ -62,11 +67,15 @@ GainType FindTour()
         else
             for (i = Random() % Dimension; i > 0; i--)
                 FirstNode = FirstNode->Suc;
+        // printf("ChooseInitialTour即将执行\n");
         ChooseInitialTour();
+        // printf("ChooseInitialTour执行完了\n");
         if ((ProblemType == SOP || ProblemType == M1_PDTSP) &&
             (InitialTourAlgorithm != SOP_ALG || Trial > 1))
             SOP_RepairTour();
+          //  printf("LinKernighan即将执行\n");
         Cost = LinKernighan();
+       // printf("LinKernighan执行完成\n");
         if (GetTime() - EntryTime < TimeLimit &&
             GetTime() - StartTime < TotalTimeLimit) {
             if (FirstNode->BestSuc && !TSPTW_Makespan) {
@@ -84,8 +93,10 @@ GainType FindTour()
                 Cost = MergeWithTour();
             }
         }
+        
         if (CurrentPenalty < BetterPenalty ||
             (CurrentPenalty == BetterPenalty && Cost < BetterCost)) {
+            betterTime = GetTime();
             if (TraceLevel >= 1) {
                 printff("* %d: ", Trial);
                 StatusReport(Cost, EntryTime, "");
@@ -119,6 +130,11 @@ GainType FindTour()
             printff("  %d: ", Trial);
             StatusReport(Cost, EntryTime, "");
         }
+        if(CurrentPenalty >= BetterPenalty){//没有改进
+           double currentTime=GetTime();
+           if(currentTime-betterTime>=0.5) break;
+        }
+
         /* Record backbones if wanted */
         if (Trial <= BackboneTrials && BackboneTrials < MaxTrials) {
             SwapCandidateSets();
@@ -132,6 +148,9 @@ GainType FindTour()
                 SwapCandidateSets();
         }
     }
+    
+     //printf("for (Trial = 1; Trial <= MaxTrials; Trial++)循环执行完了\n");
+    
     if (BackboneTrials > 0 && BackboneTrials < MaxTrials) {
         if (Trial > BackboneTrials ||
             (Trial == BackboneTrials &&

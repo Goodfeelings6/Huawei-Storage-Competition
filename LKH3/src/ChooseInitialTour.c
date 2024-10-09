@@ -42,6 +42,7 @@ void ChooseInitialTour()
             KSwapKick(KickType);
         return;
     }
+   //  printf("KSwapKick循环执行完了\n");
     if (Trial == 1 && (!FirstNode->InitialSuc || InitialTourFraction < 1)) {
         if (InitialTourAlgorithm == BORUVKA ||
             InitialTourAlgorithm == CTSP_ALG ||
@@ -75,7 +76,7 @@ void ChooseInitialTour()
                 return;
         }
     }
-
+//printf("if (Trial == 1 && (!FirstNode->InitialSuc || InitialTourFraction < 1))执行完了\n");
   Start:
     /* Mark all nodes as "not chosen" by setting their V field to zero */
     N = FirstNode;
@@ -83,7 +84,7 @@ void ChooseInitialTour()
         N->V = 0;
     while ((N = N->Suc) != FirstNode);
     Count = 0;
-
+//printf("N->V = 0;循环执行完了\n");
     /* Choose FirstNode without two incident fixed or common candidate edges */
     do {
         if (FixedOrCommonCandidates(N) < 2)
@@ -91,7 +92,7 @@ void ChooseInitialTour()
     }
     while ((N = N->Suc) != FirstNode);
     FirstNode = N;
-
+//printf("if (FixedOrCommonCandidates(N) < 2)循环执行完了\n");
     /* Move nodes with two incident fixed or common candidate edges in
        front of FirstNode */
     for (Last = FirstNode->Pred; N != Last; N = NextN) {

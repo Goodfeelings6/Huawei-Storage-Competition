@@ -37,7 +37,12 @@ void SolveTourSegmentSubproblems()
         N->Subproblem = 0;
     }
     while ((N = N->SubproblemSuc) != FirstNode);
+    
+
+
     for (Round = 1; Round <= 2; Round++) {
+            
+        
         if (Round == 2 && Subproblems == 1)
             break;
         if (TraceLevel >= 1) {
@@ -52,6 +57,7 @@ void SolveTourSegmentSubproblems()
         if (Round == 2)
             for (i = SubproblemSize / 2; i > 0; i--)
                 FirstNode = FirstNode->SubproblemSuc;
+
         for (CurrentSubproblem = 1;
              CurrentSubproblem <= Subproblems; CurrentSubproblem++) {
             for (i = 0, N = FirstNode;
@@ -65,6 +71,24 @@ void SolveTourSegmentSubproblems()
                 N->SubBestPred = N->SubBestSuc = 0;
             }
             OldGlobalBestCost = GlobalBestCost;
+            
+            if ( Round == 2 && GetTime() - StartTime >= TotalTimeLimit) {//超过总时长时，不执行第二轮
+                if (TraceLevel >= 1)
+                printff("*** Time limit exceeded，jump off round 2 ***\n");
+                Trial--;
+                 break;
+            }
+
+    if ( Round == 2 && GetTime() - StartTime+predict_ascent>TotalTimeLimit ) {//超过总时长时，不执行第二轮
+                if (TraceLevel >= 1)
+                printff("***predict Time limit exceeded，jump off***\n");
+                printf("GetTime() - StartTime:%f <= predict_ascent:%f\n",GetTime() - StartTime, predict_ascent);
+                //Trial--;
+                 break;
+    }else{
+                printf("GetTime() - StartTime:%f <= predict_ascent:%f\n",GetTime() - StartTime, predict_ascent);
+    }
+
             SolveSubproblem((Round - 1) * Subproblems + CurrentSubproblem,
                             Subproblems, &GlobalBestCost);
             if (SubproblemsCompressed

@@ -12,14 +12,14 @@
             "program": "${config:ProjectDirPath}/bin/project_hw", //可执行文件位置
             "args": [ // 这边的参数都可以自己改，根据想调试的程序功能，和命令行形式是一样的
                 "-f",
-                "${config:ProjectDirPath}/dataset/case_3.txt"
+                "${config:ProjectDirPath}/test/dataset/case_285.txt"
             ],
             "stopAtEntry": false,
             "cwd": "${config:ProjectDirPath}", //命令执行的文件夹
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            // "preLaunchTask": "compile all code",  //是否需要重新编译，如果没有改代码，不需要重新编译就注释掉
+            "preLaunchTask": "compile all code",  //是否需要重新编译，如果没有改代码，不需要重新编译就注释掉
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",

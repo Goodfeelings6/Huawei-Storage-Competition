@@ -3,42 +3,54 @@
 #include <assert.h>
 #include "algorithm.h"
 #include "LKHInterface.h"
-
+#include <sys/time.h>
+#include <sys/resource.h>
 // #define DEBUG_LEVEL 0
-#define DEBUG_LEVEL 1
+#define DEBUG_LEVEL 0
 // #define DEBUG_LEVEL 2
 
 #define INF 0x7FFFFF
 
 // 设置需要调整的 LKH 的参数
-void loadUserChangedParam(int matDimension, LKHParameters *p){
+void loadUserChangedParam(int matDimension, LKHParameters *p,double starttime1){
     if(matDimension <= 2002){
         p->TimeLimit = DBL_MAX;
-        p->TotalTimeLimit = 20;
+       
     }
     else if(matDimension > 2002 && matDimension <= 4002){
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         p->Subgradient = 0;
         p->TimeLimit = DBL_MAX;
-        p->TotalTimeLimit = 20;
+       
     }
     else{ // matDimension > 5002
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         p->Subgradient = 0;
-        p->SubproblemSize = matDimension; // 2个子问题卡住？
-        // p->SubproblemSize = matDimension / 2;  // 4个子问题
-        p->TimeLimit = 2;
+        
+        p->SubproblemSize = matDimension/2; // 2个子问题卡住？10002 10001
+        printf("p->SubproblemSize=%d\n",p->SubproblemSize);
+        //p->SubproblemSize = 2002;  // 8个子问题
+        p->TimeLimit = 0.5;
         p->TotalTimeLimit = 20;
     }
     p->Runs = 1;
     p->TraceLevel = 1;
+     p->TotalTimeLimit = 20+starttime1-GetTime();
 }
+
+double GetTime()
+{
+    struct rusage ru;
+    getrusage(RUSAGE_SELF, &ru);
+    return ru.ru_utime.tv_sec + ru.ru_utime.tv_usec / 1000000.0;
+}
+
 
 // LKH 算法
 int32_t LKH(const InputParam *input, OutputParam *output)
-{    
+{   double starttime1=GetTime();
     int32_t ret = 0;
 
     /* 生成邻接矩阵 */
@@ -87,8 +99,9 @@ int32_t LKH(const InputParam *input, OutputParam *output)
         }
         printf("\n");
     }
-#endif
 
+#endif
+    
     /* 基于最近邻贪心构造初始解， 注意巡回路径从1开始编号*/
     int *intialTour = (int *)malloc(len * sizeof(int));
     int* visited = (int*) calloc(len + 1, sizeof(int)); // 标记已经到达过的城市，数组初始化为0
@@ -129,12 +142,13 @@ int32_t LKH(const InputParam *input, OutputParam *output)
     lkhInput->fixEdgeLen = fixLen; 
     lkhInput->lkhParameters = (LKHParameters *)malloc(sizeof(LKHParameters));
     loadDefaultParam(lkhInput->lkhParameters);
-    loadUserChangedParam(lkhInput->matDimension, lkhInput->lkhParameters);
+    loadUserChangedParam(lkhInput->matDimension, lkhInput->lkhParameters,starttime1);
+    
     /* 确定LKH输出结构体 */
     LKHOutput *lkhOutput = (LKHOutput *)malloc(sizeof(LKHOutput));
     lkhOutput->tourCost = 0;
     lkhOutput->tourResult = (int *)malloc(len * sizeof(int));
-
+    
     ret = solveTSP(lkhInput, lkhOutput);
    
     // 处理解
@@ -153,10 +167,10 @@ int32_t LKH(const InputParam *input, OutputParam *output)
 #if DEBUG_LEVEL >= 1
     printf("LKH result\n");
     printf("io len:%d\n",len-2);
-    printf("Output sequence:\n");
-    for (uint32_t i = 0; i < len - 2; ++i) {
-        printf("%d ", output->sequence[i]);
-    }
+    //printf("Output sequence:\n");
+    // for (uint32_t i = 0; i < len - 2; ++i) {
+    //     printf("%d ", output->sequence[i]);
+    // }
     printf("\n");
 #endif
 
