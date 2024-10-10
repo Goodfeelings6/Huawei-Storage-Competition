@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -D_GNU_SOURCE
 
-C_INCLUDES = -I/home/csg/project_hw/algorithm -I/home/csg/project_hw/LKH3 -I/home/csg/project_hw/LKH3/include
+C_INCLUDES = -I/home/csg/project_hw/algorithm -I/home/csg/project_hw/LKH2_MIN -I/home/csg/project_hw/LKH2_MIN/include
 
 C_FLAGS = -O3 -DNDEBUG -O3 -DNDEBUG -std=gnu99
 

@@ -61,8 +61,8 @@ CMakeFiles/project_hw.dir/algorithm/algorithm.c.o: \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/csg/project_hw/LKH3/LKHInterface.h \
- /home/csg/project_hw/LKH3/include/LKH.h /usr/include/ctype.h \
+ /home/csg/project_hw/LKH2_MIN/LKHInterface.h \
+ /home/csg/project_hw/LKH2_MIN/include/LKH.h /usr/include/ctype.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
@@ -89,6 +89,6 @@ CMakeFiles/project_hw.dir/algorithm/algorithm.c.o: \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /home/csg/project_hw/LKH3/include/GainType.h \
- /home/csg/project_hw/LKH3/include/Hashing.h \
- /home/csg/project_hw/LKH3/include/Genetic.h
+ /home/csg/project_hw/LKH2_MIN/include/GainType.h \
+ /home/csg/project_hw/LKH2_MIN/include/Hashing.h \
+ /home/csg/project_hw/LKH2_MIN/include/Genetic.h
