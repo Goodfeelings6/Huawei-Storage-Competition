@@ -40,19 +40,36 @@ int main(){
     /* 定义结果返回 */
     int *tourResult = (int *)malloc(sizeof(int) * len);
     assert(tourResult != NULL);
-    int tourCost = 0;
+
+    /* 确定LKH输入结构体 */
+    LKHInput *lkhInput = (LKHInput *)malloc(sizeof(LKHInput));
+    lkhInput->adjMat = adjMat;
+    lkhInput->matDimension = len;
+    lkhInput->intialTour = 0;
+    lkhInput->fixEdge = 0;
+    lkhInput->fixEdgeLen = 0; 
+    lkhInput->lkhParameters = (LKHParameters *)malloc(sizeof(LKHParameters));
+    loadDefaultParam(lkhInput->lkhParameters);
+    /* 确定LKH输出结构体 */
+    LKHOutput *lkhOutput = (LKHOutput *)malloc(sizeof(LKHOutput));
+    lkhOutput->tourCost = 0;
+    lkhOutput->tourResult = (int *)malloc(len * sizeof(int));
 
     /* 求解 */
-    solveTSP(adjMat, len, tourResult, &tourCost);
+    solveTSP(lkhInput, lkhOutput);
+
 
     printf("tourResult: ");
     for (int i = 0; i < len; ++i) {
-        printf("%d ", tourResult[i]);
+        printf("%d ", lkhOutput->tourResult[i]);
     }
-    printf("\ntourCost: %d\n", tourCost);
+    printf("\ntourCost: %lld\n", lkhOutput->tourCost);
     
     free(adjMat);
     free(tourResult);
+    free(lkhInput->lkhParameters);
+    free(lkhInput);
+    free(lkhOutput);
 
     return 0;
 }

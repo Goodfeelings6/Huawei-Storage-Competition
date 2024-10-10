@@ -242,11 +242,13 @@ void ReadProblem(LKHInput* lkhInput)
     /* EDGE_DATA_SECTION */
     // NULL
     /* FIXED_EDGES_SECTION */
-    Read_FIXED_EDGES_SECTION(lkhInput);
+    if(lkhInput->fixEdgeLen != 0)
+        Read_FIXED_EDGES_SECTION(lkhInput);
     /* DISPLAY_DATA_SECTION */
     // NULL
     /* TOUR_SECTION */
-    Read_TOUR_SECTION(lkhInput);
+    if(lkhInput->intialTour != 0)
+        Read_TOUR_SECTION(lkhInput);
     /* EDGE_WEIGHT_SECTION */
     Read_EDGE_WEIGHT_SECTION(lkhInput);
 
