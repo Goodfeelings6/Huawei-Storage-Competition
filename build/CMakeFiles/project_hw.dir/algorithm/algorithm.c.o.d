@@ -56,6 +56,7 @@ CMakeFiles/project_hw.dir/algorithm/algorithm.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h /usr/include/assert.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h \
  /home/csg/project_hw/algorithm/algorithm.h \
  /home/csg/project_hw/algorithm/../public.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \

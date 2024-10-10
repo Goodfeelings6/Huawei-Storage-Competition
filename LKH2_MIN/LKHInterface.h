@@ -2,8 +2,13 @@
 #define _LKHInterface_H
 #include "LKH.h"
 #include "Genetic.h"
+
 // LKH的参数接口
 typedef struct{
+    // 新增
+    double TimeSpan; /* 统计改进值的时间跨度 */
+    double ScheduleScoreInSecond; /* 调度加分/秒 (未乘10) */
+    
     char *ProblemFileName; /* PROBLEM_FILE */
     char *PiFileName; /* PI_FILE */
     char *InputTourFileName; /* INPUT_TOUR_FILE */
@@ -87,6 +92,7 @@ typedef struct{
     int *intialTour;   // 初始解
     int *fixEdge;      // 固定边数组
     int fixEdgeLen;    // 固定边数量
+    double scheduleStartTime;    // 调度起始时间
     LKHParameters *lkhParameters; // LKH的参数
 } LKHInput;
 

@@ -6,6 +6,12 @@
 /* All global variables of the program. */
 
 /* LKH.h variables */
+// 新增
+double TimeSpan; /* 统计改进值的时间跨度 */
+double ScheduleScoreInSecond; /* 调度加分/秒 (未乘10) */
+double SubProblemTotalTimeLimit; /* 分配给每个子问题的求解时间 */
+double SubProblemStartTime; /* 当前子问题的开始求解时间 */
+
 int AscentCandidates;   /* Number of candidate edges to be associated
                            with each node during the ascent */
 int BackboneTrials;     /* Number of backbone trials in each run */

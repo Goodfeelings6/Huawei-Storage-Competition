@@ -1,44 +1,68 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
+#include <sys/time.h>
 #include "algorithm.h"
 #include "LKHInterface.h"
 
-// #define DEBUG_LEVEL 0
-#define DEBUG_LEVEL 1
+#define DEBUG_LEVEL 0
+// #define DEBUG_LEVEL 1
 // #define DEBUG_LEVEL 2
 
 #define INF 0x7FFFFF
 
+double MyGetTime(){ // 返回实际时间：秒
+    struct timeval tv;
+    gettimeofday(&tv, NULL);
+    return tv.tv_sec + tv.tv_usec / 1000000.0;
+}
 // 设置需要调整的 LKH 的参数
-void loadUserChangedParam(int matDimension, LKHParameters *p){
-    if(matDimension <= 2002){
+void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleStartTime){
+    if(matDimension <= 1752){
         p->TimeLimit = DBL_MAX;
         p->TotalTimeLimit = 20;
+        p->TimeSpan = 2;
     }
-    else if(matDimension > 2002 && matDimension <= 4002){
+    else if(matDimension > 1752 && matDimension <= 6002){
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         p->Subgradient = 0;
-        p->TimeLimit = DBL_MAX;
-        p->TotalTimeLimit = 20;
+        p->TimeSpan = 2;
     }
-    else{ // matDimension > 5002
+    else if(matDimension > 6002 && matDimension <= 7002){ 
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         p->Subgradient = 0;
-        p->SubproblemSize = matDimension; // 2个子问题卡住？
-        // p->SubproblemSize = matDimension / 2;  // 4个子问题
-        p->TimeLimit = 2;
-        p->TotalTimeLimit = 20;
+        p->SubproblemSize = matDimension + 1; // 即划分为两个子问题
+        p->TimeSpan = 2;
+    }
+    else if(matDimension > 7002 && matDimension <= 9002){ 
+        p->CandidateSetType = POPMUSIC;
+        p->POPMUSIC_InitialTour = 1;
+        p->Subgradient = 0;
+        p->SubproblemSize = matDimension*2/3 + 1; // 即划分为三个子问题
+        p->TimeSpan = 0.5;
+    }
+    else { // matDimension > 9002
+        p->CandidateSetType = POPMUSIC;
+        p->POPMUSIC_InitialTour = 1;
+        p->Subgradient = 0;
+        p->SubproblemSize = matDimension/2 + 1; // 即划分为四个子问题
+        p->TimeSpan = 0.5;
     }
     p->Runs = 1;
     p->TraceLevel = 1;
+    p->TimeLimit = DBL_MAX; // 由总时间、分配给每个子问题的总时间、一定时间跨度内的改进值共同控制退出即可
+    p->TotalTimeLimit = 20 - 0.02; // 扣除后处理时间
+    p->ScheduleScoreInSecond = 1000;
 }
 
 // LKH 算法
 int32_t LKH(const InputParam *input, OutputParam *output)
-{    
+{   
+    // 获取调度开始时间
+    double scheduleStartTime = MyGetTime();
+
     int32_t ret = 0;
 
     /* 生成邻接矩阵 */
@@ -126,10 +150,11 @@ int32_t LKH(const InputParam *input, OutputParam *output)
     lkhInput->matDimension = len;
     lkhInput->intialTour = intialTour;
     lkhInput->fixEdge = fixEdge;
-    lkhInput->fixEdgeLen = fixLen; 
+    lkhInput->fixEdgeLen = fixLen;
+    lkhInput->scheduleStartTime = scheduleStartTime;
     lkhInput->lkhParameters = (LKHParameters *)malloc(sizeof(LKHParameters));
     loadDefaultParam(lkhInput->lkhParameters);
-    loadUserChangedParam(lkhInput->matDimension, lkhInput->lkhParameters);
+    loadUserChangedParam(lkhInput->matDimension, lkhInput->lkhParameters, scheduleStartTime);
     /* 确定LKH输出结构体 */
     LKHOutput *lkhOutput = (LKHOutput *)malloc(sizeof(LKHOutput));
     lkhOutput->tourCost = 0;

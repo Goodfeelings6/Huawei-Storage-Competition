@@ -124,12 +124,14 @@ def write_test_cases_to_file(test_cases, file_name):
 
 # 测试函数调用
 if __name__ == "__main__":
-    io_counts = [10,50,100,1000,2000,5000,10000]  # IO 数量
+    # io_counts = [10,50,100,1000,2000,5000,10000]  # IO 数量
+    io_counts = [1350,1500,1750,3000,4000,6000,7000,8000,9000,9500]  # IO 数量
     wrap_distributions = ['front_20', 'front_30', 'front_50', 'full']  # 在整个磁带区域分布
     startlpos_distributions = ['random', 'gaussian']  # 在横向磁带区域分布
 
     # 生成测试用例
-    index = 6 # 起始命名序号
+    # index = 6 # 起始命名序号
+    index = 286 # 起始命名序号
     for io_count in io_counts: # 不同 IO 数量
         for wrap_distribution in wrap_distributions: # 不同 wrap区域分布
             for startlpos_distribution in startlpos_distributions: # 不同横向磁带区域分布

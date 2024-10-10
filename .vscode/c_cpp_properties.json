@@ -3,9 +3,10 @@
         {
             "name": "Linux",
             "includePath": [
-                "${config:ProjectDirPath}/**"
+                "${config:ProjectDirPath}/**",
                 // "${config:ProjectDirPath}/LKH2/include",
                 // "${config:ProjectDirPath}/LKH3/include"
+                "${config:ProjectDirPath}/LKH2_MIN/"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
