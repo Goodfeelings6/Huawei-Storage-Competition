@@ -33,8 +33,7 @@ void CreateCandidateSet()
     }
     if (Distance == Distance_1 ||
         (MaxTrials == 0 &&
-         (FirstNode->InitialSuc || InitialTourAlgorithm == SIERPINSKI ||
-          InitialTourAlgorithm == MOORE))) {
+         (FirstNode->InitialSuc))) {
         CandidatesRead = ReadCandidates(MaxCandidates) |
             ReadEdges(MaxCandidates);
         AddTourCandidates();
@@ -46,28 +45,7 @@ void CreateCandidateSet()
     }
     if (TraceLevel >= 2)
         printff("Creating candidates ...\n");
-    if (MaxCandidates > 0 &&
-        (CandidateSetType == QUADRANT || CandidateSetType == NN)) {
-        ReadPenalties();
-        if (!(CandidatesRead = ReadCandidates(MaxCandidates) |
-              ReadEdges(MaxCandidates)) && MaxCandidates > 0) {
-            if (CandidateSetType == QUADRANT)
-                CreateQuadrantCandidateSet(MaxCandidates);
-            else if (CandidateSetType == NN) {
-                if ((CoordType == TWOD_COORDS
-                     && Distance != Distance_TOR_2D)
-                    || (CoordType == THREED_COORDS
-                        && Distance != Distance_TOR_3D))
-                    CreateNearestNeighborCandidateSet(MaxCandidates);
-                else
-                    CreateNNCandidateSet(MaxCandidates);
-            }
-        }
-        AddTourCandidates();
-        if (CandidateSetSymmetric)
-            SymmetrizeCandidateSet();
-        goto End_CreateCandidateSet;
-    }
+
     if (!ReadPenalties()) {
         /* No PiFile specified or available */
         Na = FirstNode;
@@ -88,8 +66,7 @@ void CreateCandidateSet()
             SymmetrizeCandidateSet();
         goto End_CreateCandidateSet;
     } else {
-        if (CandidateSetType != DELAUNAY &&
-            CandidateSetType != POPMUSIC &&
+        if (CandidateSetType != POPMUSIC &&
             MaxCandidates > 0) {
             if (TraceLevel >= 2)
                 printff("Computing lower bound ... ");
@@ -97,10 +74,7 @@ void CreateCandidateSet()
             if (TraceLevel >= 2)
                 printff("done\n");
         } else {
-            if (CandidateSetType == DELAUNAY)
-                CreateDelaunayCandidateSet();
-            else
-                Create_POPMUSIC_CandidateSet(AscentCandidates);
+            Create_POPMUSIC_CandidateSet(AscentCandidates);
             Na = FirstNode;
             do {
                 Na->BestPi = Na->Pi;
@@ -134,8 +108,7 @@ void CreateCandidateSet()
     MaxAlpha = (GainType) fabs(Excess * Cost);
     if ((A = Optimum * Precision - Cost) > 0 && A < MaxAlpha)
         MaxAlpha = A;
-    if (CandidateSetType == DELAUNAY ||
-        CandidateSetType == POPMUSIC ||
+    if (CandidateSetType == POPMUSIC ||
         MaxCandidates == 0)
         OrderCandidateSet(MaxCandidates, MaxAlpha, CandidateSetSymmetric);
     else

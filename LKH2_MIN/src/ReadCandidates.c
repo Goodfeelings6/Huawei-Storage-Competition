@@ -30,7 +30,7 @@ int ReadCandidates(int MaxCandidates)
         (CandidateFiles == 1 &&
          !(CandidateFile = fopen(CandidateFileName[0], "r"))))
         return 0;
-    Dimension = ProblemType != ATSP ? DimensionSaved : 2 * DimensionSaved;
+    Dimension = 2 * DimensionSaved;
     for (f = 0; f < CandidateFiles; f++) {
         if (CandidateFiles >= 2 &&
             !(CandidateFile = fopen(CandidateFileName[f], "r")))
