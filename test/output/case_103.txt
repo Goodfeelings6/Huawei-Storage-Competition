@@ -13,14 +13,10 @@ done
 ASCENT_CANDIDATES = 50
 BACKBONE_TRIALS = 0
 BACKTRACKING = NO
-# BWTSP =
 # CANDIDATE_FILE =
 CANDIDATE_SET_TYPE = ALPHA
-# DISTANCE =
-# DEPOT =
 # EDGE_FILE =
-EXCESS = 0.00980392
-EXTERNAL_SALESMEN = 0
+EXCESS = 0.00490196
 EXTRA_CANDIDATES = 0 
 EXTRA_CANDIDATE_SET_TYPE = QUADRANT
 GAIN23 = YES
@@ -31,20 +27,14 @@ INITIAL_TOUR_ALGORITHM = WALK
 # INITIAL_TOUR_FILE = 
 INITIAL_TOUR_FRACTION = 1.000
 # INPUT_TOUR_FILE = 
-K = 0
 KICK_TYPE = 0
 KICKS = 1
 # MAX_BREADTH =
-MAKESPAN = NO
 MAX_CANDIDATES = 5 
 MAX_SWAPS = 204
 MAX_TRIALS = 204
 # MERGE_TOUR_FILE =
-MOVE_TYPE = 5 
-# MTSP_MIN_SIZE =
-# MTSP_MAX_SIZE =
-# MTSP_OBJECTIVE =
-# MTSP_SOLUTION_FILE = 
+MOVE_TYPE = 5
 # NONSEQUENTIAL_MOVE_TYPE = 5
 # OPTIMUM =
 # OUTPUT_TOUR_FILE = 
@@ -58,38 +48,32 @@ POPMUSIC_SOLUTIONS = 50
 POPMUSIC_TRIALS = 1
 # POPULATION_SIZE = 0
 PRECISION = 100
-# PROBABILITY =
 # PROBLEM_FILE = 
 RECOMBINATION = IPT
 RESTRICTED_SEARCH = YES
 RUNS = 1
-SALESMEN = 1
-SCALE = 1
 SEED = 1
-# SINTEF_SOLUTION_FILE = 
 STOP_AT_OPTIMUM = YES
 SUBGRADIENT = YES
 # SUBPROBLEM_SIZE =
 # SUBPROBLEM_TOUR_FILE = 
-SUBSEQUENT_MOVE_TYPE = 5 
+SUBSEQUENT_MOVE_TYPE = 5
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
 TOTAL_TIME_LIMIT = 20.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
-VEHICLES = 1
 
-Lower bound = 752895.0, Ascent time = 0.03 sec.
-Cand.min = 2, Cand.avg = 4.9, Cand.max = 6
+Lower bound = 752895.0, Ascent time = 0.02 sec.
+Cand.min = 2, Cand.avg = 4.6, Cand.max = 6
 Edges.fixed = 103 [Cost = 0]
-Preprocessing time = 0.03 sec.
+Preprocessing time = 0.02 sec.
 Successes/Runs = 1/0
 Cost.min = 752895, Cost.avg = 752895.00, Cost.max = 752895
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
 Time.min = 0.03 sec., Time.avg = 0.03 sec., Time.max = 0.03 sec.
 Time.total = 0.03 sec.
-
 LKH result
 io len:100
 Output sequence:
@@ -97,7 +81,7 @@ Output sequence:
 
 Key Metrics:
 	ioCount:			 100
-	algorithmRunningDuration:	 26.659 (ms)
+	algorithmRunningDuration:	 25.697 (ms)
 	memoryUse:			 0 (KB)
 	addressingDuration:		 752895 (ms)
 	readDuration:			 109662 (ms)

@@ -13,14 +13,10 @@ done
 ASCENT_CANDIDATES = 33
 BACKBONE_TRIALS = 0
 BACKTRACKING = NO
-# BWTSP =
 # CANDIDATE_FILE =
 CANDIDATE_SET_TYPE = ALPHA
-# DISTANCE =
-# DEPOT =
 # EDGE_FILE =
-EXCESS = 0.0588235
-EXTERNAL_SALESMEN = 0
+EXCESS = 0.0294118
 EXTRA_CANDIDATES = 0 
 EXTRA_CANDIDATE_SET_TYPE = QUADRANT
 GAIN23 = YES
@@ -31,20 +27,14 @@ INITIAL_TOUR_ALGORITHM = WALK
 # INITIAL_TOUR_FILE = 
 INITIAL_TOUR_FRACTION = 1.000
 # INPUT_TOUR_FILE = 
-K = 0
 KICK_TYPE = 0
 KICKS = 1
 # MAX_BREADTH =
-MAKESPAN = NO
 MAX_CANDIDATES = 5 
 MAX_SWAPS = 34
 MAX_TRIALS = 34
 # MERGE_TOUR_FILE =
-MOVE_TYPE = 5 
-# MTSP_MIN_SIZE =
-# MTSP_MAX_SIZE =
-# MTSP_OBJECTIVE =
-# MTSP_SOLUTION_FILE = 
+MOVE_TYPE = 5
 # NONSEQUENTIAL_MOVE_TYPE = 5
 # OPTIMUM =
 # OUTPUT_TOUR_FILE = 
@@ -58,33 +48,28 @@ POPMUSIC_SOLUTIONS = 50
 POPMUSIC_TRIALS = 1
 # POPULATION_SIZE = 0
 PRECISION = 100
-# PROBABILITY =
 # PROBLEM_FILE = 
 RECOMBINATION = IPT
 RESTRICTED_SEARCH = YES
 RUNS = 1
-SALESMEN = 1
-SCALE = 1
 SEED = 1
-# SINTEF_SOLUTION_FILE = 
 STOP_AT_OPTIMUM = YES
 SUBGRADIENT = YES
 # SUBPROBLEM_SIZE =
 # SUBPROBLEM_TOUR_FILE = 
-SUBSEQUENT_MOVE_TYPE = 5 
+SUBSEQUENT_MOVE_TYPE = 5
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
 TOTAL_TIME_LIMIT = 20.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
-VEHICLES = 1
 
 Lower bound = 354108.8, Ascent time = 0.00 sec.
-Cand.min = 2, Cand.avg = 4.7, Cand.max = 5
+Cand.min = 2, Cand.avg = 4.0, Cand.max = 5
 Edges.fixed = 18 [Cost = 0]
 Preprocessing time = 0.00 sec.
-* 1: Cost = 354295, Time = 0.00 sec.
-Run 1: Cost = 354295, Time = 0.00 sec.
+* 1: Cost = 354295, Time = 0.00 sec. 
+Run 1: Cost = 354295, Time = 0.00 sec. 
 
 Successes/Runs = 0/1
 Cost.min = 354295, Cost.avg = 354295.00, Cost.max = 354295
@@ -92,7 +77,6 @@ Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 34, Trials.avg = 34.0, Trials.max = 34
 Time.min = 0.00 sec., Time.avg = 0.00 sec., Time.max = 0.00 sec.
 Time.total = 0.00 sec.
-
 LKH result
 io len:15
 Output sequence:
@@ -100,7 +84,7 @@ Output sequence:
 
 Key Metrics:
 	ioCount:			 15
-	algorithmRunningDuration:	 2.330 (ms)
+	algorithmRunningDuration:	 2.258 (ms)
 	memoryUse:			 0 (KB)
 	addressingDuration:		 354295 (ms)
 	readDuration:			 9090 (ms)
