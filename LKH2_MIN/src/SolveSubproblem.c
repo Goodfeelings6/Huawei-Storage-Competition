@@ -340,7 +340,7 @@ SolveSubproblem(int CurrentSubproblem, int Subproblems,
             N->InitialSuc = 0;
         while ((N = N->SubproblemSuc) != FirstNode);
     }
-    Dimension = ProblemType != ATSP ? DimensionSaved : 2 * DimensionSaved;
+    Dimension = 2 * DimensionSaved;
     N = FirstNode = FirstNodeSaved;
     do {
         N->Suc = N->BestSuc = N->SubproblemSuc;

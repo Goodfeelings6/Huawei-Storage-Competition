@@ -22,6 +22,9 @@ static void Read_TOUR_SECTION(LKHInput* lkhInput);
 static void Read_EDGE_WEIGHT_SECTION(LKHInput* lkhInput);
 
 void loadDefaultParam(LKHParameters* p){
+    p->TimeSpan = 1; 
+    p->ScheduleScoreInSecond = 1000;
+
     p->ProblemFileName = 0;
     p->PiFileName = 0;
     p->InputTourFileName = 0;
@@ -98,6 +101,9 @@ void ReadParameters(LKHInput* lkhInput)
 {
      LKHParameters* lkhParam = lkhInput->lkhParameters;
     // 从结构体获取参数
+    TimeSpan = lkhParam->TimeSpan; 
+    ScheduleScoreInSecond = lkhParam->ScheduleScoreInSecond;
+
     ProblemFileName = lkhParam->ProblemFileName;
     PiFileName = lkhParam->PiFileName;
     InputTourFileName = lkhParam->InputTourFileName;
@@ -343,7 +349,7 @@ int solveTSP(LKHInput* lkhInput, LKHOutput* lkhOutput){
     /* 问题信息设定、数据读入 */
     ReadProblem(lkhInput);
     /* 调用 LKH内核 */
-    int ret = LKHmain();
+    int ret = LKHmain(lkhInput->scheduleStartTime);
     /* 提取求解结果 */
     OutputTourResult(lkhOutput);
     /* 重置 LKH内核 状态*/

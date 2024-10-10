@@ -9,6 +9,7 @@ extern "C" {
 #endif
 
 int32_t AlgorithmRun(const InputParam *input, OutputParam *output);
+double MyGetTime(); /* 返回实际时间：秒 */
 
 #ifdef __cplusplus
 }

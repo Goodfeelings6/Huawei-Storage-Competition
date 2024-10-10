@@ -74,10 +74,10 @@ def test():
     exePath = os.path.join(os.path.dirname(testDir), "bin", "project_hw")
     summaryFile = open(os.path.join(args.des, "A-summary.txt"), "w", encoding='utf-8')
     for file in sorted(os.listdir(args.src),key=lambda x:int(re.split(r'[_.]+',x)[1])): # 测试所有用例
-        summaryFile.write(file + ':\t')
         # 运行调度算法
         cmd = " ".join([exePath, "-f", os.path.join(args.src, file), ">"+os.path.join(args.des, file)])
         result = subprocess.run(cmd, shell=True, stderr=subprocess.PIPE, text=True)
+        summaryFile.write(file + ':\t')
         # 检查返回码和输出
         if result.returncode != 0:
             print(f"test {file} fail! retval:{result.returncode}, err_detail:{result.stderr}")

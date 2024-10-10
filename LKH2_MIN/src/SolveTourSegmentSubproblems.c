@@ -37,7 +37,9 @@ void SolveTourSegmentSubproblems()
         N->Subproblem = 0;
     }
     while ((N = N->SubproblemSuc) != FirstNode);
-    for (Round = 1; Round <= 2; Round++) {
+
+    // for (Round = 1; Round <= 2; Round++) {
+    for (Round = 1; Round <= 1; Round++) { // 只一轮
         if (Round == 2 && Subproblems == 1)
             break;
         if (TraceLevel >= 1) {
@@ -45,15 +47,19 @@ void SolveTourSegmentSubproblems()
                 printff("\n");
             printff
                 ("*** Tour segment partitioning *** [Round %d of %d, Cost = "
-                 GainFormat "]\n", Round, Subproblems > 1 ? 2 : 1,
+                //  GainFormat "]\n", Round, Subproblems > 1 ? 2 : 1,
+                 GainFormat "]\n", Round, 1,
                  GlobalBestCost);
         }
         FirstNode = FirstNodeSaved;
         if (Round == 2)
             for (i = SubproblemSize / 2; i > 0; i--)
                 FirstNode = FirstNode->SubproblemSuc;
-        for (CurrentSubproblem = 1;
-             CurrentSubproblem <= Subproblems; CurrentSubproblem++) {
+
+        SubProblemTotalTimeLimit = (TotalTimeLimit - (GetTime() - StartTime)) / Subproblems;
+        /* 求解每个子问题 */
+        for (CurrentSubproblem = 1; CurrentSubproblem <= Subproblems; CurrentSubproblem++) {
+            SubProblemStartTime = GetTime();
             for (i = 0, N = FirstNode;
                  i < SubproblemSize ||
                  (FirstNode->Id <= DimensionSaved) != (N->Id <=
@@ -67,11 +73,11 @@ void SolveTourSegmentSubproblems()
             OldGlobalBestCost = GlobalBestCost;
             SolveSubproblem((Round - 1) * Subproblems + CurrentSubproblem,
                             Subproblems, &GlobalBestCost);
-            if (SubproblemsCompressed
-                && GlobalBestCost == OldGlobalBestCost)
-                SolveCompressedSubproblem((Round - 1) * Subproblems +
-                                          CurrentSubproblem, Subproblems,
-                                          &GlobalBestCost);
+            // if (SubproblemsCompressed
+            //     && GlobalBestCost == OldGlobalBestCost)
+            //     SolveCompressedSubproblem((Round - 1) * Subproblems +
+            //                               CurrentSubproblem, Subproblems,
+            //                               &GlobalBestCost);
             FirstNode = N;
         }
     }
@@ -82,6 +88,6 @@ void SolveTourSegmentSubproblems()
     printff(", Time = %0.2f sec. %s\n", fabs(GetTime() - EntryTime),
             GlobalBestCost < Optimum ? "<" : GlobalBestCost ==
             Optimum ? "=" : "");
-    if (SubproblemBorders && Subproblems > 1)
-        SolveSubproblemBorderProblems(Subproblems, &GlobalBestCost);
+    // if (SubproblemBorders && Subproblems > 1)
+    //     SolveSubproblemBorderProblems(Subproblems, &GlobalBestCost);
 }

@@ -90,3 +90,10 @@ python testbatch.py s2
 python score.py
 ```
 **注**：如果基线算法不需更改，1，2步 在之后的对比中就可以省略
+
+
+```shell
+python testbatch.py s2 -src ./dataset_sub -des ./output
+python testbatch.py s2 -src ./dataset_sub -des ./output_sub
+python score.py -c ./output -b output_sub
+```

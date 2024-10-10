@@ -5,12 +5,13 @@
  * This file contains the main function of the program.
  */
 
-int LKHmain()
+int LKHmain(double startTime)
 {
     GainType Cost, OldOptimum;
     double Time, LastTime;
 
-    StartTime = LastTime = GetTime();
+    StartTime = startTime;
+    LastTime = GetTime();
 
     if (SubproblemSize > 0) {
         SolveTourSegmentSubproblems();

@@ -170,6 +170,12 @@ struct SwapRecord {
     Node *t1, *t2, *t3, *t4;    /* The 4 nodes involved in a 2-opt move */
 };
 
+// 新增
+extern double TimeSpan; /* 统计改进值的时间跨度 */
+extern double ScheduleScoreInSecond; /* 调度加分/秒 (未乘10) */
+extern double SubProblemTotalTimeLimit; /* 分配给每个子问题的求解时间 */
+extern double SubProblemStartTime; /* 当前子问题的开始求解时间 */
+
 extern int AscentCandidates;   /* Number of candidate edges to be associated
                                   with each node during the ascent */
 extern int BackboneTrials;     /* Number of backbone trials in each run */
@@ -322,7 +328,7 @@ extern MergeTourFunction MergeWithTour;
 
 /* Function prototypes: */
 
-int LKHmain();
+int LKHmain(double startTime);
 
 int Distance_1(Node *Na, Node *Nb);
 int Distance_LARGE(Node * Na, Node * Nb);

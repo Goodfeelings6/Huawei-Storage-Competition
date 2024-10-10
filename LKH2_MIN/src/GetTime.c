@@ -18,13 +18,19 @@
 #include <sys/time.h>
 #include <sys/resource.h>
 
-double GetTime()
-{
-    struct rusage ru;
-    getrusage(RUSAGE_SELF, &ru);
-    return ru.ru_utime.tv_sec + ru.ru_utime.tv_usec / 1000000.0;
-}
+// double GetTime() // 获取CPU时间
+// {
+//     struct rusage ru;
+//     getrusage(RUSAGE_SELF, &ru);
+//     return ru.ru_utime.tv_sec + ru.ru_utime.tv_usec / 1000000.0;
+// }
 
+double GetTime() // 获取实际时间
+{
+    struct timeval tv;
+    gettimeofday(&tv, 0);
+    return tv.tv_sec + tv.tv_usec / 1000000.0;
+}
 #else
 
 #include <time.h>
