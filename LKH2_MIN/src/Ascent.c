@@ -31,9 +31,8 @@ GainType Ascent()
     do
         t->Pi = t->BestPi = 0;
     while ((t = t->Suc) != FirstNode);
-    if (CandidateSetType == DELAUNAY && !FirstNode->CandidateSet)
-        CreateDelaunayCandidateSet();
-    else if (CandidateSetType == POPMUSIC && !FirstNode->CandidateSet)
+    
+    if (CandidateSetType == POPMUSIC && !FirstNode->CandidateSet)
         Create_POPMUSIC_CandidateSet(AscentCandidates);
     else if (MaxCandidates == 0) {
         AddTourCandidates();
@@ -43,8 +42,7 @@ GainType Ascent()
     }
 
     /* Compute the cost of a minimum 1-tree */
-    W = Minimum1TreeCost(CandidateSetType == DELAUNAY ||
-                         CandidateSetType == POPMUSIC ||
+    W = Minimum1TreeCost(CandidateSetType == POPMUSIC ||
                          MaxCandidates == 0);
 
     /* Return this cost 
@@ -62,7 +60,7 @@ GainType Ascent()
         if (Optimum != MINUS_INFINITY
             && (Alpha = Optimum * Precision - W) >= 0)
             MaxAlpha = Alpha;
-        if (CandidateSetType != DELAUNAY && CandidateSetType != POPMUSIC)
+        if (CandidateSetType != POPMUSIC)
             GenerateCandidates(AscentCandidates, MaxAlpha, 1);
         else {
             OrderCandidateSet(AscentCandidates, MaxAlpha, 1);
@@ -152,8 +150,7 @@ GainType Ascent()
                     T *= 2;
                 /* If the improvement was found at the last iteration of the 
                    current period, then double the period */
-                if (CandidateSetType != DELAUNAY &&
-                    CandidateSetType != POPMUSIC &&
+                if (CandidateSetType != POPMUSIC &&
                     P == Period && (Period *= 2) > InitialPeriod)
                     Period = InitialPeriod;
             } else {
@@ -178,14 +175,11 @@ GainType Ascent()
     } while ((t = t->Suc) != FirstNode);
 
     /* Compute a minimum 1-tree */
-    W = BestW = Minimum1TreeCost(CandidateSetType == DELAUNAY ||
-                                 CandidateSetType == POPMUSIC ||
+    W = BestW = Minimum1TreeCost(CandidateSetType == POPMUSIC ||
                                  MaxCandidates == 0);
 
     if (MaxCandidates > 0 && CandidateSetType != POPMUSIC) {
         FreeCandidateSets();
-        if (CandidateSetType == DELAUNAY)
-            CreateDelaunayCandidateSet();
     } else {
         Candidate *Nt;
         t = FirstNode;

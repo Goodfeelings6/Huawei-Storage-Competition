@@ -42,24 +42,6 @@ void ChooseInitialTour()
             KSwapKick(KickType);
         return;
     }
-    if (Trial == 1 && (!FirstNode->InitialSuc || InitialTourFraction < 1)) {
-        if (InitialTourAlgorithm == BORUVKA ||
-            InitialTourAlgorithm == GREEDY ||
-            InitialTourAlgorithm == MOORE ||
-            InitialTourAlgorithm == NEAREST_NEIGHBOR ||
-            InitialTourAlgorithm == QUICK_BORUVKA ||
-            InitialTourAlgorithm == SIERPINSKI) {
-            GainType Cost = InitialTourAlgorithm == MOORE ||
-                InitialTourAlgorithm == SIERPINSKI ?
-                SFCTour(InitialTourAlgorithm) : GreedyTour();
-            if (MaxTrials == 0) {
-                BetterCost = Cost;
-                RecordBetterTour();
-            }
-            if (!FirstNode->InitialSuc)
-                return;
-        }
-    }
 
   Start:
     /* Mark all nodes as "not chosen" by setting their V field to zero */

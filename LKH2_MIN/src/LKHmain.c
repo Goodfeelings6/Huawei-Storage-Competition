@@ -13,20 +13,7 @@ int LKHmain()
     StartTime = LastTime = GetTime();
 
     if (SubproblemSize > 0) {
-        if (DelaunayPartitioning)
-            SolveDelaunaySubproblems();
-        else if (KarpPartitioning)
-            SolveKarpSubproblems();
-        else if (KCenterPartitioning)
-            SolveKCenterSubproblems();
-        else if (KMeansPartitioning)
-            SolveKMeansSubproblems();
-        else if (RohePartitioning)
-            SolveRoheSubproblems();
-        else if (MoorePartitioning || SierpinskiPartitioning)
-            SolveSFCSubproblems();
-        else
-            SolveTourSegmentSubproblems();
+        SolveTourSegmentSubproblems();
         return EXIT_SUCCESS;
     }
     AllocateStructures();

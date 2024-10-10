@@ -17,28 +17,23 @@ void RecordBetterTour()
 {
     Node *N = FirstNode, *Stop = N;
 
-    if (ProblemType != ATSP) {
+    // ATSP
+    if (Stop->Id > DimensionSaved)
+        Stop = N = Stop->Suc;
+    if (N->Suc->Id != DimensionSaved + N->Id) {
         int i = 1;
         do
-            BetterTour[i++] = N->Id;
+            if (N->Id <= DimensionSaved)
+                BetterTour[i++] = N->Id;
         while ((N = N->Suc) != Stop);
     } else {
-        if (Stop->Id > DimensionSaved)
-            Stop = N = Stop->Suc;
-        if (N->Suc->Id != DimensionSaved + N->Id) {
-            int i = 1;
-            do
-                if (N->Id <= DimensionSaved)
-                    BetterTour[i++] = N->Id;
-            while ((N = N->Suc) != Stop);
-        } else {
-            int i = DimensionSaved;
-            do
-                if (N->Id <= DimensionSaved)
-                    BetterTour[i--] = N->Id;
-            while ((N = N->Suc) != Stop);
-        }
+        int i = DimensionSaved;
+        do
+            if (N->Id <= DimensionSaved)
+                BetterTour[i--] = N->Id;
+        while ((N = N->Suc) != Stop);
     }
+    
     BetterTour[0] = BetterTour[DimensionSaved];
     N = FirstNode;
     do {

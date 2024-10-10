@@ -21,7 +21,7 @@ int ReadEdges(int MaxCandidates)
 
     if (EdgeFiles == 0)
         return 0;
-    Dimension = ProblemType != ATSP ? DimensionSaved : 2 * DimensionSaved;
+    Dimension = 2 * DimensionSaved;
     node_set = (node *) calloc(Dimension + 1, sizeof(node));
     for (f = 0; f < EdgeFiles; f++) {
         if (!(EdgeFile = fopen(EdgeFileName[f], "r")))

@@ -222,13 +222,10 @@ SolveSubproblem(int CurrentSubproblem, int Subproblems,
                     N->BestSuc = FirstNode;
             }
             while ((N = N->BestSuc) != FirstNode);
-            Dimension = ProblemType != ATSP ? DimensionSaved :
-                2 * DimensionSaved;
+            Dimension = 2 * DimensionSaved;
             i = 0;
             do {
-                if (ProblemType != ATSP)
-                    BetterTour[++i] = N->Id;
-                else if (N->Id <= Dimension / 2) {
+                if (N->Id <= Dimension / 2) {
                     i++;
                     if (N->BestSuc->Id != N->Id + Dimension / 2)
                         BetterTour[i] = N->Id;
@@ -238,8 +235,7 @@ SolveSubproblem(int CurrentSubproblem, int Subproblems,
             }
             while ((N = N->BestSuc) != FirstNode);
             BetterTour[0] =
-                BetterTour[ProblemType !=
-                           ATSP ? Dimension : Dimension / 2];
+                BetterTour[Dimension / 2];
             WriteTour(OutputTourFileName, BetterTour, GlobalCost);
             if (Improvement > 0) {
                 do
