@@ -1,0 +1,130 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset1/case_630.txt
+head info : [147,222331,0]
+
+io count = 9000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+# EXCESS =
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+# INITIAL_PERIOD =
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 18004
+# MAX_TRIALS =
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 5
+# NONSEQUENTIAL_MOVE_TYPE = 5
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+SUBPROBLEM_SIZE = 6002
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 5
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+*** Tour segment partitioning *** [Round 1 of 1, Cost = 10826306]
+
+Subproblem 1 of 3: Dimension = 6002, Upper bound = 5327130
+Lower bound = 694740.0, Gap = 86.96%, Ascent time = 6.42 sec.
+Cand.min = 2, Cand.avg = 6.0, Cand.max = 7
+Edges.fixed = 3002 [Cost = 32108]
+Preprocessing time = 6.46 sec.
+*** Time limit for this subproblem has been exhausted ***
+Run 1: Cost = 8216211101, Time = 0.01 sec.
+
+Successes/Runs = 0/1
+Cost.min = 8216211101, Cost.avg = 8216211101.00, Cost.max = 8216211101
+Gap.min = 154133.3508%, Gap.avg = 154133.3508%, Gap.max = 154133.3508%
+Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
+Time.min = 0.01 sec., Time.avg = 0.01 sec., Time.max = 0.01 sec.
+Time.total = 9.66 sec.
+
+Subproblem 2 of 3: Dimension = 6002, Upper bound = 985018
+Lower bound = 624977.0, Gap = 36.55%, Ascent time = 4.75 sec.
+Cand.min = 5, Cand.avg = 5.9, Cand.max = 7
+Edges.fixed = 3001 [Cost = 72072]
+Preprocessing time = 4.79 sec.
+* 1: Cost = 983006, Gap = -0.2043%, Time = 0.03 sec. <
+* 2: Cost = 983002, Gap = -0.2047%, Time = 0.05 sec. <
+* 9: Cost = 983001, Gap = -0.2048%, Time = 0.18 sec. <
+*** Time limit for this subproblem has been exhausted ***
+*** 2: Cost = 10824289, Time = 0.82 sec. 
+Run 1: Cost = 983001, Time = 0.82 sec.
+
+Successes/Runs = 1/1
+Cost.min = 983001, Cost.avg = 983001.00, Cost.max = 983001
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 48, Trials.avg = 48.0, Trials.max = 48
+Time.min = 0.82 sec., Time.avg = 0.82 sec., Time.max = 0.82 sec.
+Time.total = 15.28 sec.
+
+Subproblem 3 of 3: Dimension = 6002, Upper bound = 4515071
+Lower bound = 1113632.0, Gap = 75.34%, Ascent time = 4.74 sec.
+Cand.min = 5, Cand.avg = 6.0, Cand.max = 7
+Edges.fixed = 3001 [Cost = 85474]
+Preprocessing time = 4.79 sec.
+*** Time limit exceeded ***
+Run 1: Cost = 9977142023, Time = 0.01 sec.
+
+Successes/Runs = 0/1
+Cost.min = 9977142023, Cost.avg = 9977142023.00, Cost.max = 9977142023
+Gap.min = 220874.2000%, Gap.avg = 220874.2000%, Gap.max = 220874.2000%
+Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
+Time.min = 0.01 sec., Time.avg = 0.01 sec., Time.max = 0.01 sec.
+Time.total = 20.08 sec.
+
+Cost = 10824289, Time = 16.91 sec. 
+
+Key Metrics:
+	ioCount:			 9000
+	algorithmRunningDuration:	 20089.700 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 10824289 (ms)
+	readDuration:			 9349139 (ms)
+	tapeBeltWear:			 18872845
+	tapeMotorWear:			 851
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

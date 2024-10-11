@@ -52,7 +52,8 @@ def score():
     timeScore = []              # 调度用时加分
     timeoutPenalty = []         # 调度超时罚分
     spaceOverlimitPenalty = []  # 空间超限罚分
-    sortErrorPenaly = []        # 排序错误罚分
+    sortErrorCount = []         # 排序错误数量
+    instanceScore = []          # 算例总得分
     for i in range(len(curr_data)): # 比较计算每个算例
         curr_data_i_dict = decode(curr_data[i])
         base_data_i_dict = decode(base_data[i])
@@ -69,29 +70,37 @@ def score():
             penaltyT = (curr_data_i_dict["algorithmRunningDuration"]-20000)*curr_data_i_dict["ioCount"]/50
         timeScore.append(scheduleT)
         timeoutPenalty.append(penaltyT)
-        # 排序错误罚分
-        errorPenalty = curr_data_i_dict["errorIOCount"]*10
-        sortErrorPenaly.append(errorPenalty)
+        # 排序错误数量
+        errorC = curr_data_i_dict["errorIOCount"]
+        sortErrorCount.append(errorC)
+
+        # 算例得分
+        if errorC > 0:
+            instanceS = 0
+        else:
+            instanceS = addrT+scheduleT-penaltyT
+        instanceScore.append(instanceS)
 
         # 写入文件
         scoreFile.write(f"调度算法加分:{addrT:.2f}\t")
         scoreFile.write(f"调度用时加分:{scheduleT:.2f}\t")
         scoreFile.write(f"调度超时罚分:{penaltyT:.2f}\t")
-        scoreFile.write(f"排序错误罚分:{errorPenalty:.2f}\t")
+        scoreFile.write(f"排序错误数量:{errorC:.2f}\t")
+        scoreFile.write(f"算例总得分:{instanceS:.2f}\t")
         scoreFile.write('\n')
     
     schedulScore_sum = sum(schedulScore)
     timeScore_sum = sum(timeScore)
     timeoutPenalty_sum = sum(timeoutPenalty)
-    sortErrorPenaly_sum = sum(sortErrorPenaly)
+    sortErrorCount_sum = sum(sortErrorCount)
+    instanceScore_sum = sum(instanceScore)
     scoreFile.write(f"调度算法总加分:{schedulScore_sum:.2f}\t")
     scoreFile.write(f"调度用时总加分:{timeScore_sum:.2f}\t")
-    scoreFile.write(f"调度超时罚分:{timeoutPenalty_sum:.2f}\t")
-    scoreFile.write(f"排序错误罚分:{sortErrorPenaly_sum:.2f}\t")
-
-    scoreFile.write(f"\n总分:{schedulScore_sum+timeScore_sum+timeoutPenalty_sum+sortErrorPenaly_sum:.2f}\n")
+    scoreFile.write(f"调度超时总罚分:{timeoutPenalty_sum:.2f}\t")
+    scoreFile.write(f"排序错误总数量:{sortErrorCount_sum:.2f}\t")
+    scoreFile.write(f"\n总分:{instanceScore_sum:.2f}\n")
     scoreFile.close()
-    print("Done!")
+    print("Score Done!")
         
 if __name__=="__main__":
     score()
