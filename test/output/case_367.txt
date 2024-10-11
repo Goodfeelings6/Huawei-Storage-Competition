@@ -1,0 +1,105 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/project_hw/test/dataset/case_367.txt
+head info : [132,98130,0]
+
+io count = 1750
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = ALPHA
+# EDGE_FILE =
+EXCESS = 0.000285388
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 1752
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 3504
+MAX_TRIALS = 3504
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 5
+# NONSEQUENTIAL_MOVE_TYPE = 5
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = NO
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = YES
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 5
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 3045505.0, Ascent time = 10.22 sec.
+Cand.min = 2, Cand.avg = 4.9, Cand.max = 6
+Edges.fixed = 1753 [Cost = 0]
+Preprocessing time = 10.70 sec.
+* 1: Cost = 4014117, Time = 0.04 sec. 
+* 2: Cost = 4003049, Time = 0.06 sec. 
+* 3: Cost = 4001262, Time = 0.08 sec. 
+* 9: Cost = 4001147, Time = 0.15 sec. 
+* 14: Cost = 4000969, Time = 0.22 sec. 
+* 15: Cost = 4000961, Time = 0.24 sec. 
+* 21: Cost = 4000836, Time = 0.32 sec. 
+* 33: Cost = 4000785, Time = 0.49 sec. 
+* 35: Cost = 4000772, Time = 0.52 sec. 
+* 41: Cost = 4000739, Time = 0.62 sec. 
+* 44: Cost = 4000696, Time = 0.66 sec. 
+* 65: Cost = 4000672, Time = 0.95 sec. 
+* 66: Cost = 4000637, Time = 0.96 sec. 
+* 68: Cost = 4000614, Time = 0.98 sec. 
+*** The extent of improvement(0) is too small in 2.0s ***
+Run 1: Cost = 4000614, Time = 4.01 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 4000614, Cost.avg = 4000614.00, Cost.max = 4000614
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 297, Trials.avg = 297.0, Trials.max = 297
+Time.min = 4.01 sec., Time.avg = 4.01 sec., Time.max = 4.01 sec.
+Time.total = 14.81 sec.
+
+Key Metrics:
+	ioCount:			 1750
+	algorithmRunningDuration:	 14810.871 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 4000614 (ms)
+	readDuration:			 1795368 (ms)
+	tapeBeltWear:			 6019278
+	tapeMotorWear:			 153
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

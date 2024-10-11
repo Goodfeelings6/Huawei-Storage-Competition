@@ -1,0 +1,92 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/project_hw/test/dataset/case_79.txt
+head info : [2,569974,1]
+
+io count = 50
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = ALPHA
+# EDGE_FILE =
+EXCESS = 0.00961538
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 100
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 104
+MAX_TRIALS = 104
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 5
+# NONSEQUENTIAL_MOVE_TYPE = 5
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = NO
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = YES
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 5
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 622852.9, Ascent time = 0.02 sec.
+Cand.min = 2, Cand.avg = 4.8, Cand.max = 6
+Edges.fixed = 53 [Cost = 0]
+Preprocessing time = 0.02 sec.
+* 1: Cost = 660343, Time = 0.00 sec. 
+* 9: Cost = 629198, Time = 0.00 sec. 
+Run 1: Cost = 629198, Time = 0.00 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 629198, Cost.avg = 629198.00, Cost.max = 629198
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 104, Trials.avg = 104.0, Trials.max = 104
+Time.min = 0.00 sec., Time.avg = 0.00 sec., Time.max = 0.00 sec.
+Time.total = 0.02 sec.
+
+Key Metrics:
+	ioCount:			 50
+	algorithmRunningDuration:	 20.665 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 629198 (ms)
+	readDuration:			 50781 (ms)
+	tapeBeltWear:			 1263174
+	tapeMotorWear:			 10
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

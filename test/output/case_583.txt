@@ -1,0 +1,172 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset1/case_583.txt
+head info : [3,139210,0]
+
+io count = 8000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+# EXCESS =
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+# INITIAL_PERIOD =
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 16004
+# MAX_TRIALS =
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 5
+# NONSEQUENTIAL_MOVE_TYPE = 5
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+SUBPROBLEM_SIZE = 5335
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 5
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+*** Tour segment partitioning *** [Round 1 of 1, Cost = 11579850]
+
+Subproblem 1 of 3: Dimension = 5336, Upper bound = 935823
+Lower bound = 533038.0, Gap = 43.04%, Ascent time = 3.76 sec.
+Cand.min = 2, Cand.avg = 5.9, Cand.max = 7
+Edges.fixed = 2669 [Cost = 55176]
+Preprocessing time = 3.79 sec.
+* 1: Cost = 929514, Gap = -0.6742%, Time = 0.02 sec. <
+* 2: Cost = 929485, Gap = -0.6773%, Time = 0.04 sec. <
+* 3: Cost = 929263, Gap = -0.7010%, Time = 0.05 sec. <
+* 35: Cost = 929262, Gap = -0.7011%, Time = 0.42 sec. <
+* 42: Cost = 929242, Gap = -0.7032%, Time = 0.51 sec. <
+* 43: Cost = 929219, Gap = -0.7057%, Time = 0.52 sec. <
+*** The extent of improvement(23) is too small in 0.5s ***
+*** 1: Cost = 11573246, Time = 1.02 sec. 
+Run 1: Cost = 929219, Time = 1.02 sec.
+
+Successes/Runs = 1/1
+Cost.min = 929219, Cost.avg = 929219.00, Cost.max = 929219
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 85, Trials.avg = 85.0, Trials.max = 85
+Time.min = 1.02 sec., Time.avg = 1.02 sec., Time.max = 1.02 sec.
+Time.total = 6.99 sec.
+
+Subproblem 2 of 3: Dimension = 5336, Upper bound = 2019063
+Lower bound = 952096.0, Gap = 52.84%, Ascent time = 3.72 sec.
+Cand.min = 2, Cand.avg = 5.9, Cand.max = 7
+Edges.fixed = 2669 [Cost = 38911]
+Preprocessing time = 3.75 sec.
+* 1: Cost = 1901652, Gap = -5.8151%, Time = 0.03 sec. <
+* 2: Cost = 1901087, Gap = -5.8431%, Time = 0.05 sec. <
+* 4: Cost = 1901075, Gap = -5.8437%, Time = 0.08 sec. <
+* 5: Cost = 1901060, Gap = -5.8444%, Time = 0.10 sec. <
+* 6: Cost = 1901056, Gap = -5.8446%, Time = 0.12 sec. <
+* 7: Cost = 1901053, Gap = -5.8448%, Time = 0.13 sec. <
+* 20: Cost = 1900676, Gap = -5.8635%, Time = 0.30 sec. <
+* 28: Cost = 1897627, Gap = -6.0145%, Time = 0.41 sec. <
+* 29: Cost = 1897599, Gap = -6.0159%, Time = 0.43 sec. <
+* 31: Cost = 1897072, Gap = -6.0420%, Time = 0.46 sec. <
+* 44: Cost = 1896908, Gap = -6.0501%, Time = 0.62 sec. <
+* 52: Cost = 1896907, Gap = -6.0501%, Time = 0.72 sec. <
+* 67: Cost = 1896606, Gap = -6.0650%, Time = 0.91 sec. <
+*** The extent of improvement(466) is too small in 0.5s ***
+*** 2: Cost = 11450789, Time = 1.02 sec. 
+Run 1: Cost = 1896606, Time = 1.02 sec.
+
+Successes/Runs = 1/1
+Cost.min = 1896606, Cost.avg = 1896606.00, Cost.max = 1896606
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 75, Trials.avg = 75.0, Trials.max = 75
+Time.min = 1.02 sec., Time.avg = 1.02 sec., Time.max = 1.02 sec.
+Time.total = 11.77 sec.
+
+Subproblem 3 of 3: Dimension = 5336, Upper bound = 8624974
+Lower bound = 1014362.0, Gap = 88.24%, Ascent time = 3.74 sec.
+Cand.min = 2, Cand.avg = 6.1, Cand.max = 7
+Edges.fixed = 2670 [Cost = 34467]
+Preprocessing time = 3.78 sec.
+* 1: Cost = 4824846, Gap = -44.0596%, Time = 0.40 sec. <
+* 2: Cost = 4821487, Gap = -44.0985%, Time = 0.53 sec. <
+* 3: Cost = 4799997, Gap = -44.3477%, Time = 0.65 sec. <
+* 4: Cost = 4799935, Gap = -44.3484%, Time = 0.72 sec. <
+* 5: Cost = 4799670, Gap = -44.3515%, Time = 0.78 sec. <
+* 6: Cost = 4799580, Gap = -44.3525%, Time = 0.85 sec. <
+* 7: Cost = 4799402, Gap = -44.3546%, Time = 0.90 sec. <
+* 8: Cost = 4799400, Gap = -44.3546%, Time = 0.96 sec. <
+* 10: Cost = 4799171, Gap = -44.3573%, Time = 1.09 sec. <
+* 11: Cost = 4799146, Gap = -44.3576%, Time = 1.15 sec. <
+* 12: Cost = 4797082, Gap = -44.3815%, Time = 1.20 sec. <
+* 13: Cost = 4796077, Gap = -44.3931%, Time = 1.26 sec. <
+* 14: Cost = 4795984, Gap = -44.3942%, Time = 1.33 sec. <
+* 15: Cost = 4795605, Gap = -44.3986%, Time = 1.43 sec. <
+* 17: Cost = 4795571, Gap = -44.3990%, Time = 1.53 sec. <
+* 19: Cost = 4795519, Gap = -44.3996%, Time = 1.63 sec. <
+* 20: Cost = 4795517, Gap = -44.3996%, Time = 1.68 sec. <
+* 21: Cost = 4795439, Gap = -44.4005%, Time = 1.76 sec. <
+* 22: Cost = 4792268, Gap = -44.4373%, Time = 1.82 sec. <
+* 23: Cost = 4791952, Gap = -44.4410%, Time = 1.89 sec. <
+* 24: Cost = 4791937, Gap = -44.4411%, Time = 1.94 sec. <
+* 25: Cost = 4791865, Gap = -44.4420%, Time = 2.02 sec. <
+* 26: Cost = 4791649, Gap = -44.4445%, Time = 2.11 sec. <
+* 27: Cost = 4791501, Gap = -44.4462%, Time = 2.16 sec. <
+*** Time limit for this subproblem has been exhausted ***
+*** 3: Cost = 7617316, Time = 2.16 sec. 
+Run 1: Cost = 4791501, Time = 2.16 sec.
+
+Successes/Runs = 1/1
+Cost.min = 4791501, Cost.avg = 4791501.00, Cost.max = 4791501
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 27, Trials.avg = 27.0, Trials.max = 27
+Time.min = 2.16 sec., Time.avg = 2.16 sec., Time.max = 2.16 sec.
+Time.total = 17.71 sec.
+
+Cost = 7617316, Time = 15.53 sec. 
+
+Key Metrics:
+	ioCount:			 8000
+	algorithmRunningDuration:	 17716.162 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 7617316 (ms)
+	readDuration:			 8255709 (ms)
+	tapeBeltWear:			 15806826
+	tapeMotorWear:			 337
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

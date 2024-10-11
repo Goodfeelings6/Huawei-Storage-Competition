@@ -1,0 +1,111 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/project_hw/test/dataset/case_337.txt
+head info : [252,479885,1]
+
+io count = 1500
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = ALPHA
+# EDGE_FILE =
+EXCESS = 0.000332889
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 1502
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 3004
+MAX_TRIALS = 3004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 5
+# NONSEQUENTIAL_MOVE_TYPE = 5
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = NO
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = YES
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 5
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 3129796.9, Ascent time = 7.12 sec.
+Cand.min = 2, Cand.avg = 4.8, Cand.max = 6
+Edges.fixed = 1503 [Cost = 0]
+Preprocessing time = 7.46 sec.
+* 1: Cost = 3651759, Time = 0.02 sec. 
+* 2: Cost = 3650743, Time = 0.02 sec. 
+* 3: Cost = 3640238, Time = 0.02 sec. 
+* 4: Cost = 3640047, Time = 0.03 sec. 
+* 5: Cost = 3640015, Time = 0.03 sec. 
+* 7: Cost = 3639473, Time = 0.04 sec. 
+* 9: Cost = 3639472, Time = 0.05 sec. 
+* 12: Cost = 3639440, Time = 0.06 sec. 
+* 14: Cost = 3639414, Time = 0.07 sec. 
+* 19: Cost = 3639376, Time = 0.09 sec. 
+* 20: Cost = 3639318, Time = 0.09 sec. 
+* 28: Cost = 3639287, Time = 0.12 sec. 
+* 32: Cost = 3639154, Time = 0.14 sec. 
+* 185: Cost = 3637082, Time = 0.74 sec. 
+* 190: Cost = 3636729, Time = 0.76 sec. 
+* 196: Cost = 3636416, Time = 0.78 sec. 
+* 197: Cost = 3636300, Time = 0.78 sec. 
+* 346: Cost = 3636205, Time = 1.40 sec. 
+* 423: Cost = 3635597, Time = 1.73 sec. 
+* 582: Cost = 3635596, Time = 2.39 sec. 
+*** The extent of improvement(1) is too small in 2.0s ***
+Run 1: Cost = 3635596, Time = 4.01 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 3635596, Cost.avg = 3635596.00, Cost.max = 3635596
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 964, Trials.avg = 964.0, Trials.max = 964
+Time.min = 4.01 sec., Time.avg = 4.01 sec., Time.max = 4.01 sec.
+Time.total = 11.55 sec.
+
+Key Metrics:
+	ioCount:			 1500
+	algorithmRunningDuration:	 11551.476 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 3635596 (ms)
+	readDuration:			 1639964 (ms)
+	tapeBeltWear:			 5347576
+	tapeMotorWear:			 166
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

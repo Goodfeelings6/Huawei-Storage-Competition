@@ -1,0 +1,209 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/project_hw/test/dataset/case_177.txt
+head info : [245,155744,1]
+
+io count = 2000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 0.00024975
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 2002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 4004
+MAX_TRIALS = 4004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 5
+# NONSEQUENTIAL_MOVE_TYPE = 5
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 5
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 1156695.0, Ascent time = 2.19 sec.
+Cand.min = 2, Cand.avg = 6.0, Cand.max = 7
+Edges.fixed = 2003 [Cost = 0]
+Preprocessing time = 2.20 sec.
+* 1: Cost = 4158492, Time = 0.09 sec. 
+* 2: Cost = 4157324, Time = 0.12 sec. 
+* 3: Cost = 4156828, Time = 0.14 sec. 
+* 4: Cost = 4156604, Time = 0.16 sec. 
+* 5: Cost = 4156123, Time = 0.18 sec. 
+* 14: Cost = 4155124, Time = 0.31 sec. 
+* 16: Cost = 4153999, Time = 0.34 sec. 
+* 17: Cost = 4153887, Time = 0.35 sec. 
+* 20: Cost = 4153677, Time = 0.39 sec. 
+* 22: Cost = 4153572, Time = 0.42 sec. 
+* 23: Cost = 4153435, Time = 0.44 sec. 
+* 26: Cost = 4150473, Time = 0.48 sec. 
+* 27: Cost = 4148655, Time = 0.50 sec. 
+* 28: Cost = 4148402, Time = 0.52 sec. 
+* 29: Cost = 4148387, Time = 0.54 sec. 
+* 31: Cost = 4148347, Time = 0.57 sec. 
+* 33: Cost = 4148345, Time = 0.60 sec. 
+* 35: Cost = 4148331, Time = 0.63 sec. 
+* 47: Cost = 4148328, Time = 0.81 sec. 
+* 49: Cost = 4148010, Time = 0.85 sec. 
+* 50: Cost = 4147975, Time = 0.86 sec. 
+* 51: Cost = 4147969, Time = 0.88 sec. 
+* 53: Cost = 4147854, Time = 0.91 sec. 
+* 55: Cost = 4147830, Time = 0.94 sec. 
+* 73: Cost = 4147822, Time = 1.21 sec. 
+* 75: Cost = 4147816, Time = 1.24 sec. 
+* 78: Cost = 4147813, Time = 1.28 sec. 
+* 82: Cost = 4144514, Time = 1.35 sec. 
+* 83: Cost = 4144513, Time = 1.37 sec. 
+* 86: Cost = 4144503, Time = 1.43 sec. 
+* 95: Cost = 4144083, Time = 1.61 sec. 
+* 96: Cost = 4143997, Time = 1.63 sec. 
+* 103: Cost = 4143838, Time = 1.73 sec. 
+* 104: Cost = 4143814, Time = 1.74 sec. 
+* 106: Cost = 4142746, Time = 1.77 sec. 
+* 107: Cost = 4142745, Time = 1.79 sec. 
+* 124: Cost = 4142743, Time = 2.05 sec. 
+* 128: Cost = 4142735, Time = 2.12 sec. 
+* 136: Cost = 4142560, Time = 2.26 sec. 
+* 137: Cost = 4142559, Time = 2.28 sec. 
+* 138: Cost = 4142513, Time = 2.30 sec. 
+* 144: Cost = 4142498, Time = 2.39 sec. 
+* 145: Cost = 4142466, Time = 2.41 sec. 
+* 146: Cost = 4142433, Time = 2.43 sec. 
+* 153: Cost = 4142432, Time = 2.53 sec. 
+* 158: Cost = 4142431, Time = 2.61 sec. 
+* 160: Cost = 4142428, Time = 2.64 sec. 
+* 167: Cost = 4142373, Time = 2.76 sec. 
+* 171: Cost = 4142232, Time = 2.82 sec. 
+* 184: Cost = 4142231, Time = 3.04 sec. 
+* 193: Cost = 4142230, Time = 3.19 sec. 
+* 197: Cost = 4142050, Time = 3.25 sec. 
+* 199: Cost = 4142048, Time = 3.28 sec. 
+* 200: Cost = 4142004, Time = 3.30 sec. 
+* 201: Cost = 4141995, Time = 3.31 sec. 
+* 202: Cost = 4141994, Time = 3.33 sec. 
+* 204: Cost = 4141741, Time = 3.37 sec. 
+* 205: Cost = 4141729, Time = 3.38 sec. 
+* 206: Cost = 4141711, Time = 3.40 sec. 
+* 215: Cost = 4138213, Time = 3.55 sec. 
+* 216: Cost = 4138200, Time = 3.56 sec. 
+* 217: Cost = 4138198, Time = 3.57 sec. 
+* 218: Cost = 4138019, Time = 3.58 sec. 
+* 219: Cost = 4138005, Time = 3.60 sec. 
+* 222: Cost = 4137947, Time = 3.65 sec. 
+* 223: Cost = 4136985, Time = 3.67 sec. 
+* 224: Cost = 4136971, Time = 3.70 sec. 
+* 227: Cost = 4136923, Time = 3.74 sec. 
+* 229: Cost = 4135904, Time = 3.78 sec. 
+* 233: Cost = 4135903, Time = 3.85 sec. 
+* 243: Cost = 4135882, Time = 4.02 sec. 
+* 257: Cost = 4135881, Time = 4.25 sec. 
+* 260: Cost = 4135729, Time = 4.31 sec. 
+* 266: Cost = 4135218, Time = 4.41 sec. 
+* 267: Cost = 4135186, Time = 4.43 sec. 
+* 269: Cost = 4135174, Time = 4.46 sec. 
+* 271: Cost = 4135173, Time = 4.49 sec. 
+* 283: Cost = 4135172, Time = 4.68 sec. 
+* 284: Cost = 4135167, Time = 4.70 sec. 
+* 291: Cost = 4133687, Time = 4.82 sec. 
+* 292: Cost = 4133664, Time = 4.83 sec. 
+* 300: Cost = 4133131, Time = 4.96 sec. 
+* 303: Cost = 4130801, Time = 5.02 sec. 
+* 304: Cost = 4130762, Time = 5.04 sec. 
+* 305: Cost = 4130598, Time = 5.06 sec. 
+* 307: Cost = 4130592, Time = 5.10 sec. 
+* 339: Cost = 4128941, Time = 5.64 sec. 
+* 341: Cost = 4128927, Time = 5.67 sec. 
+* 346: Cost = 4128737, Time = 5.77 sec. 
+* 348: Cost = 4128723, Time = 5.80 sec. 
+* 362: Cost = 4128667, Time = 6.00 sec. 
+* 363: Cost = 4128666, Time = 6.02 sec. 
+* 379: Cost = 4127082, Time = 6.30 sec. 
+* 384: Cost = 4127033, Time = 6.39 sec. 
+* 386: Cost = 4127032, Time = 6.42 sec. 
+* 392: Cost = 4121958, Time = 6.53 sec. 
+* 393: Cost = 4121956, Time = 6.55 sec. 
+* 395: Cost = 4121942, Time = 6.58 sec. 
+* 396: Cost = 4121941, Time = 6.60 sec. 
+* 400: Cost = 4121711, Time = 6.67 sec. 
+* 420: Cost = 4121400, Time = 7.00 sec. 
+* 422: Cost = 4121380, Time = 7.03 sec. 
+* 427: Cost = 4121341, Time = 7.11 sec. 
+* 432: Cost = 4121225, Time = 7.20 sec. 
+* 433: Cost = 4121184, Time = 7.22 sec. 
+* 439: Cost = 4121183, Time = 7.31 sec. 
+* 444: Cost = 4121180, Time = 7.39 sec. 
+* 445: Cost = 4121066, Time = 7.42 sec. 
+* 446: Cost = 4121057, Time = 7.43 sec. 
+* 447: Cost = 4121041, Time = 7.45 sec. 
+* 454: Cost = 4119244, Time = 7.58 sec. 
+* 456: Cost = 4119212, Time = 7.62 sec. 
+* 473: Cost = 4119203, Time = 7.90 sec. 
+* 497: Cost = 4119128, Time = 8.31 sec. 
+* 508: Cost = 4119122, Time = 8.52 sec. 
+* 512: Cost = 4118979, Time = 8.59 sec. 
+* 517: Cost = 4118969, Time = 8.68 sec. 
+* 521: Cost = 4118955, Time = 8.74 sec. 
+*** The extent of improvement(248) is too small in 2.0s ***
+Run 1: Cost = 4118955, Time = 10.06 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 4118955, Cost.avg = 4118955.00, Cost.max = 4118955
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 595, Trials.avg = 595.0, Trials.max = 595
+Time.min = 10.06 sec., Time.avg = 10.06 sec., Time.max = 10.06 sec.
+Time.total = 12.40 sec.
+
+Key Metrics:
+	ioCount:			 2000
+	algorithmRunningDuration:	 12399.258 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 4118955 (ms)
+	readDuration:			 2094945 (ms)
+	tapeBeltWear:			 6379036
+	tapeMotorWear:			 166
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt
