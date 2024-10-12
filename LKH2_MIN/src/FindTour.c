@@ -50,31 +50,33 @@ GainType FindTour()
     GainType recordCost = BetterCost;
     for (Trial = 1; Trial <= MaxTrials; Trial++)
     {
-        if (GetTime() - EntryTime >= TimeLimit ||
-            GetTime() - StartTime >= TotalTimeLimit) {
-            if (TraceLevel >= 1)
-                printff("*** Time limit exceeded ***\n");
-            Trial--;
-            break;
-        }
-        // 耗尽了分配给此子问题的时间
-        if(SubproblemSize > 0 && GetTime() - SubProblemStartTime >= SubProblemTotalTimeLimit){
-            if (TraceLevel >= 1)
-                printff("*** Time limit for this subproblem has been exhausted ***\n");
-            Trial--;
-            break;
-        }
-        // 在一定时间跨度内统计改进幅度
-        if(GetTime() - recordTime >= TimeSpan){
-            if(recordCost - BetterCost < TimeSpan*ScheduleScoreInSecond){
+        if(Trial != 1){ // 保证至少跑完一次 Trial
+            if (GetTime() - EntryTime >= TimeLimit ||
+                GetTime() - StartTime >= TotalTimeLimit) {
                 if (TraceLevel >= 1)
-                    printff("*** The extent of improvement("GainFormat") is too small in %.1fs ***\n",(recordCost - BetterCost), TimeSpan);
+                    printff("*** Time limit exceeded ***\n");
                 Trial--;
                 break;
             }
-            else{
-                recordTime = GetTime();
-                recordCost = BetterCost;
+            // 耗尽了分配给此子问题的时间
+            if(SubproblemSize > 0 && GetTime() - SubProblemStartTime >= SubProblemTotalTimeLimit){
+                if (TraceLevel >= 1)
+                    printff("*** Time limit for this subproblem has been exhausted ***\n");
+                Trial--;
+                break;
+            }
+            // 在一定时间跨度内统计改进幅度
+            if(GetTime() - recordTime >= TimeSpan){
+                if(recordCost - BetterCost < TimeSpan*ScheduleScoreInSecond){
+                    if (TraceLevel >= 1)
+                        printff("*** The extent of improvement("GainFormat") is too small in %.1fs ***\n",(recordCost - BetterCost), TimeSpan);
+                    Trial--;
+                    break;
+                }
+                else{
+                    recordTime = GetTime();
+                    recordCost = BetterCost;
+                }
             }
         }
 
@@ -86,8 +88,8 @@ GainType FindTour()
                 FirstNode = FirstNode->Suc;
         ChooseInitialTour();
         Cost = LinKernighan();
-        if (GetTime() - EntryTime < TimeLimit &&
-            GetTime() - StartTime < TotalTimeLimit) {
+        if (Trial == 1 || (GetTime() - EntryTime < TimeLimit &&
+                           GetTime() - StartTime < TotalTimeLimit)) {
             if (FirstNode->BestSuc) {
                 /* Merge tour with current best tour */
                 t = FirstNode;
