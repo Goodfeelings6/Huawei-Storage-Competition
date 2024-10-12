@@ -56,10 +56,11 @@ void SolveTourSegmentSubproblems()
             for (i = SubproblemSize / 2; i > 0; i--)
                 FirstNode = FirstNode->SubproblemSuc;
 
-        SubProblemTotalTimeLimit = (TotalTimeLimit - (GetTime() - StartTime)) / Subproblems;
         /* 求解每个子问题 */
         for (CurrentSubproblem = 1; CurrentSubproblem <= Subproblems; CurrentSubproblem++) {
+            // 计算当前子任务的总时间限制
             SubProblemStartTime = GetTime();
+            SubProblemTotalTimeLimit = (TotalTimeLimit - (SubProblemStartTime - StartTime)) / (Subproblems-CurrentSubproblem+1);
             for (i = 0, N = FirstNode;
                  i < SubproblemSize ||
                  (FirstNode->Id <= DimensionSaved) != (N->Id <=

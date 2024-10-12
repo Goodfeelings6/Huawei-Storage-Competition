@@ -8,14 +8,17 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/csg/project_hw/LKH2_MIN/LKHInterface.c" "CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.o" "gcc" "CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.o.d"
-  "/home/csg/project_hw/algorithm/algorithm.c" "CMakeFiles/project_hw.dir/algorithm/algorithm.c.o" "gcc" "CMakeFiles/project_hw.dir/algorithm/algorithm.c.o.d"
-  "/home/csg/project_hw/main.c" "CMakeFiles/project_hw.dir/main.c.o" "gcc" "CMakeFiles/project_hw.dir/main.c.o.d"
+  "/home/csg/Huawei-Storage-Competition/LKH2_MIN/LKHInterface.c" "CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.o" "gcc" "CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.o.d"
+  "/home/csg/Huawei-Storage-Competition/algorithm/algorithm.c" "CMakeFiles/project_hw.dir/algorithm/algorithm.c.o" "gcc" "CMakeFiles/project_hw.dir/algorithm/algorithm.c.o.d"
+  "/home/csg/Huawei-Storage-Competition/main.c" "CMakeFiles/project_hw.dir/main.c.o" "gcc" "CMakeFiles/project_hw.dir/main.c.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/csg/project_hw/build/CMakeFiles/LKH.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

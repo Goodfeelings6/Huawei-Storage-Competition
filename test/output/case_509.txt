@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/project_hw/test/dataset/case_509.txt
+The file path is: ./dataset/case_509.txt
 head info : [68,12704,1]
 
 io count = 6000
@@ -64,65 +64,57 @@ TOTAL_TIME_LIMIT = 20.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 1486481.0, Ascent time = 13.61 sec.
+Lower bound = 1486481.0, Ascent time = 15.40 sec.
 Cand.min = 2, Cand.avg = 6.0, Cand.max = 7
 Edges.fixed = 6003 [Cost = 0]
-Preprocessing time = 13.71 sec.
-* 1: Cost = 7064392, Time = 0.51 sec. 
-* 2: Cost = 7040624, Time = 0.73 sec. 
-* 3: Cost = 7039786, Time = 0.86 sec. 
-* 4: Cost = 7039742, Time = 0.96 sec. 
-* 6: Cost = 7039646, Time = 1.15 sec. 
-* 7: Cost = 7039451, Time = 1.23 sec. 
-* 8: Cost = 7038885, Time = 1.32 sec. 
-* 9: Cost = 7038134, Time = 1.40 sec. 
-* 10: Cost = 7037900, Time = 1.50 sec. 
-* 11: Cost = 7037871, Time = 1.59 sec. 
-* 12: Cost = 7035982, Time = 1.71 sec. 
-* 13: Cost = 7035867, Time = 1.79 sec. 
-* 15: Cost = 7035662, Time = 1.94 sec. 
-* 16: Cost = 7035255, Time = 2.03 sec. 
-* 17: Cost = 7035139, Time = 2.11 sec. 
-* 18: Cost = 7034903, Time = 2.21 sec. 
-* 19: Cost = 7034618, Time = 2.30 sec. 
-* 20: Cost = 7034522, Time = 2.41 sec. 
-* 21: Cost = 7034302, Time = 2.50 sec. 
-* 22: Cost = 7019189, Time = 2.63 sec. 
-* 23: Cost = 7017341, Time = 2.74 sec. 
-* 24: Cost = 7016975, Time = 2.84 sec. 
-* 25: Cost = 7016847, Time = 2.92 sec. 
-* 27: Cost = 7016791, Time = 3.11 sec. 
-* 29: Cost = 7016562, Time = 3.28 sec. 
-* 31: Cost = 7016411, Time = 3.46 sec. 
-* 32: Cost = 7016310, Time = 3.56 sec. 
-* 33: Cost = 7016204, Time = 3.66 sec. 
-* 34: Cost = 7016144, Time = 3.77 sec. 
-* 35: Cost = 7015836, Time = 3.88 sec. 
-* 39: Cost = 7015772, Time = 4.23 sec. 
-* 40: Cost = 7015745, Time = 4.32 sec. 
-* 41: Cost = 7013767, Time = 4.40 sec. 
-* 42: Cost = 7013548, Time = 4.49 sec. 
-* 43: Cost = 7013377, Time = 4.58 sec. 
-* 47: Cost = 7013308, Time = 4.92 sec. 
-* 48: Cost = 7013234, Time = 5.01 sec. 
-* 49: Cost = 7013032, Time = 5.09 sec. 
+Preprocessing time = 15.48 sec.
+* 1: Cost = 7064392, Time = 0.46 sec. 
+* 2: Cost = 7040624, Time = 0.65 sec. 
+* 3: Cost = 7039786, Time = 0.75 sec. 
+* 4: Cost = 7039742, Time = 0.84 sec. 
+* 6: Cost = 7039646, Time = 0.99 sec. 
+* 7: Cost = 7039451, Time = 1.07 sec. 
+* 8: Cost = 7038885, Time = 1.14 sec. 
+* 9: Cost = 7038134, Time = 1.21 sec. 
+* 10: Cost = 7037900, Time = 1.29 sec. 
+* 11: Cost = 7037871, Time = 1.36 sec. 
+* 12: Cost = 7035982, Time = 1.45 sec. 
+* 13: Cost = 7035867, Time = 1.52 sec. 
+* 15: Cost = 7035662, Time = 1.65 sec. 
+* 16: Cost = 7035255, Time = 1.72 sec. 
+* 17: Cost = 7035139, Time = 1.79 sec. 
+* 18: Cost = 7034903, Time = 1.87 sec. 
+* 19: Cost = 7034618, Time = 1.94 sec. 
+* 20: Cost = 7034522, Time = 2.03 sec. 
+* 21: Cost = 7034302, Time = 2.11 sec. 
+* 22: Cost = 7019189, Time = 2.22 sec. 
+* 23: Cost = 7017341, Time = 2.31 sec. 
+* 24: Cost = 7016975, Time = 2.39 sec. 
+* 25: Cost = 7016847, Time = 2.46 sec. 
+* 27: Cost = 7016791, Time = 2.62 sec. 
+* 29: Cost = 7016562, Time = 2.77 sec. 
+* 31: Cost = 7016411, Time = 2.91 sec. 
+* 32: Cost = 7016310, Time = 2.99 sec. 
+* 33: Cost = 7016204, Time = 3.07 sec. 
+* 34: Cost = 7016144, Time = 3.16 sec. 
+* 35: Cost = 7015836, Time = 3.25 sec. 
 *** Time limit exceeded ***
-Run 1: Cost = 7013032, Time = 5.10 sec. 
+Run 1: Cost = 7015836, Time = 3.40 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 7013032, Cost.avg = 7013032.00, Cost.max = 7013032
+Cost.min = 7015836, Cost.avg = 7015836.00, Cost.max = 7015836
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 49, Trials.avg = 49.0, Trials.max = 49
-Time.min = 5.10 sec., Time.avg = 5.10 sec., Time.max = 5.10 sec.
-Time.total = 20.00 sec.
+Trials.min = 37, Trials.avg = 37.0, Trials.max = 37
+Time.min = 3.40 sec., Time.avg = 3.40 sec., Time.max = 3.40 sec.
+Time.total = 19.99 sec.
 
 Key Metrics:
 	ioCount:			 6000
-	algorithmRunningDuration:	 20005.215 (ms)
+	algorithmRunningDuration:	 19986.012 (ms)
 	memoryUse:			 0 (KB)
-	addressingDuration:		 7013032 (ms)
+	addressingDuration:		 7015836 (ms)
 	readDuration:			 6263177 (ms)
-	tapeBeltWear:			 13224357
+	tapeBeltWear:			 13223337
 	tapeMotorWear:			 182
 	errorIOCount:			 0
 
