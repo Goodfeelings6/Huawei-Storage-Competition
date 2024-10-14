@@ -26,6 +26,8 @@ parser.add_argument("-des", type=str, help="算例输出目录", default=outputD
 # 解析命令行参数
 args = parser.parse_args()
 
+first = True
+
 
 def build():
     """ 仅构建 """
@@ -66,6 +68,58 @@ def formatMetrics(filePath)->str:
         ret += "\n"
     return ret
 
+def formatDetails(filePath)->str:
+    """ 关键运行细节输出格式化(markdown表格格式) """
+    ret = ""
+    content = ""
+    with open(filePath, "r", encoding="utf-8") as f:
+        content = f.read()
+    # 算例名
+    name = re.split(r'[/.]+',filePath)[-2]
+    ret += f"|{name:^10}"
+    # IO数量
+    match = re.search(r'io count\s*=\s*(\d+)', content)
+    if match:
+        ret += f"|{match.group(1):^8}"
+    else:
+        ret += f"|{'none':^8}"
+    # 子问题数
+    match = re.search(r'Subproblem 1 of (\d+)', content)
+    if match:
+        ret += f"|{match.group(1):^9}"
+    else:
+        ret += f"|{1:^9}"
+    # Ascent时间
+    match = re.search(r'Ascent time\s*=\s*([\d.]+)\s*sec', content)
+    if match:
+        ret += f"|{match.group(1)+'s':^10}"
+    else:
+        ret += f"|{'none':^10}s"
+    # 局部搜索最多用时
+    matchs = re.findall(r'Run 1: Cost = [\d]+, Time = ([\d.]+) sec.', content)
+    if matchs:
+        maxTime = max(matchs)
+        ret += f"|{maxTime+'s':^15}"
+    else:
+        ret += f"|{'0s':^15}"
+    # 最终Cost
+    match = re.search(r'addressingDuration:\s*([\d.]+)\s*\(ms\)', content)
+    if match:
+        ret += f"|{match.group(1):^10}"
+    else:
+        ret += f"|{'none':^10}"
+
+    ret += "|\n"
+    
+    global first
+    if first: 
+        head = "|   算例   |  IO数量 |子问题数 | Ascent时间|局部搜索最多用时|  最终Cost |\n" \
+               "|----------|--------|---------|----------|---------------|----------|\n"
+        first = False
+        return head+ret
+    else:
+        return ret
+
 
 def test():
     """ 直接运行测试 """
@@ -73,6 +127,7 @@ def test():
         os.mkdir(args.des)
     exePath = os.path.join(os.path.dirname(testDir), "bin", "project_hw")
     summaryFile = open(os.path.join(args.des, "A-summary.txt"), "w", encoding='utf-8')
+    detailFile = open(os.path.join(args.des, "A-detail.txt"), "w", encoding='utf-8')
     for file in sorted(os.listdir(args.src),key=lambda x:int(re.split(r'[_.]+',x)[1])): # 测试所有用例
         # 运行调度算法
         cmd = " ".join([exePath, "-f", os.path.join(args.src, file), ">"+os.path.join(args.des, file)])
@@ -82,9 +137,12 @@ def test():
         if result.returncode != 0:
             print(f"test {file} fail! retval:{result.returncode}, err_detail:{result.stderr}")
             summaryFile.write(f"test {file} fail! retval:{result.returncode}, err_detail:{result.stderr}\n")
+            detailFile.write(f"test {file} fail! retval:{result.returncode}, err_detail:{result.stderr}\n")
         else:
             print(f"test {file} success!")
             summaryFile.write(formatMetrics(os.path.join(args.des, file)))
+            detailFile.write(formatDetails(os.path.join(args.des, file)))
+
     
     summaryFile.close()
     print("Done!")

@@ -33,7 +33,7 @@ void loadDefaultParam(LKHParameters* p){
     p->CandidateFiles = 0;
     p->MergeTourFiles = 0;
 
-    p->AscentCandidates = 25;//50
+    p->AscentCandidates = 50;
     p->BackboneTrials = 0;
     p->Backtracking = 0;
     p->CandidateSetSymmetric = 0;
@@ -63,7 +63,7 @@ void loadDefaultParam(LKHParameters* p){
     p->MaxSwaps = -1;
     p->MaxTrials = -1;
     p->MoorePartitioning = 0;
-    p->MoveType = 3;
+    p->MoveType = 5;
     p->NonsequentialMoveType = -1;
     p->Optimum = MINUS_INFINITY;
     p->PatchingA = 1;
@@ -75,9 +75,9 @@ void loadDefaultParam(LKHParameters* p){
     p->Precision = 100;
     p->POPMUSIC_InitialTour = 0;
     p->POPMUSIC_MaxNeighbors = 5;
-    p->POPMUSIC_SampleSize = 15;
-    p->POPMUSIC_Solutions = 15;
-    p->POPMUSIC_Trials = 3;
+    p->POPMUSIC_SampleSize = 10;
+    p->POPMUSIC_Solutions = 50;
+    p->POPMUSIC_Trials = 1;
     p->Recombination = IPT;
     p->RestrictedSearch = 1;
     p->RohePartitioning = 0;

@@ -46,7 +46,7 @@ python testbatch.py s [-src src_dir] [-des des_dir]
 + + s2 : 先构建后测试
 + 参数 -src 为可选参数，用于指定测试用例目录，不指定则默认为 dataset 文件夹
 + 参数 -des 为可选参数，用于测试输出目录，不指定则默认为 output 文件夹
-+ 注: 测试完成后，还会在输出文件夹输出汇总文件： A-summary.txt
++ 注: 测试完成后，还会在输出文件夹输出关键指标汇总文件： A-summary.txt 和关键运行细节汇总文件： A-detail.txt
 
 **举例**
 ```shell
@@ -97,6 +97,7 @@ python testbatch.py s2 -src ./dataset_sub -des ./output
 python testbatch.py s2 -src ./dataset_sub -des ./output_sub
 python score.py -c ./output -b output_sub
 ```
+
 ### 对比批量测试结果, compare.py 用法：  
 **更改代码中file1和file2文件名,分别为要对比的两个批量测试结果文件**
 **对比结果输出在/home/csg/Huawei-Storage-Competition/test/comparison_output.txt 文件中，更优的结果加双星号表示**

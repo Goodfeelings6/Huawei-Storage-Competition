@@ -76,43 +76,43 @@ CMakeFiles/project_hw.dir/main.c.o: CMakeFiles/project_hw.dir/flags.make
 CMakeFiles/project_hw.dir/main.c.o: /home/csg/Huawei-Storage-Competition/main.c
 CMakeFiles/project_hw.dir/main.c.o: CMakeFiles/project_hw.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/project_hw.dir/main.c.o"
-	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/project_hw.dir/main.c.o -MF CMakeFiles/project_hw.dir/main.c.o.d -o CMakeFiles/project_hw.dir/main.c.o -c /home/csg/Huawei-Storage-Competition/main.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/project_hw.dir/main.c.o -MF CMakeFiles/project_hw.dir/main.c.o.d -o CMakeFiles/project_hw.dir/main.c.o -c /home/csg/Huawei-Storage-Competition/main.c
 
 CMakeFiles/project_hw.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/project_hw.dir/main.c.i"
-	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/main.c > CMakeFiles/project_hw.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/main.c > CMakeFiles/project_hw.dir/main.c.i
 
 CMakeFiles/project_hw.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/project_hw.dir/main.c.s"
-	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/main.c -o CMakeFiles/project_hw.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/main.c -o CMakeFiles/project_hw.dir/main.c.s
 
 CMakeFiles/project_hw.dir/algorithm/algorithm.c.o: CMakeFiles/project_hw.dir/flags.make
 CMakeFiles/project_hw.dir/algorithm/algorithm.c.o: /home/csg/Huawei-Storage-Competition/algorithm/algorithm.c
 CMakeFiles/project_hw.dir/algorithm/algorithm.c.o: CMakeFiles/project_hw.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/project_hw.dir/algorithm/algorithm.c.o"
-	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/project_hw.dir/algorithm/algorithm.c.o -MF CMakeFiles/project_hw.dir/algorithm/algorithm.c.o.d -o CMakeFiles/project_hw.dir/algorithm/algorithm.c.o -c /home/csg/Huawei-Storage-Competition/algorithm/algorithm.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/project_hw.dir/algorithm/algorithm.c.o -MF CMakeFiles/project_hw.dir/algorithm/algorithm.c.o.d -o CMakeFiles/project_hw.dir/algorithm/algorithm.c.o -c /home/csg/Huawei-Storage-Competition/algorithm/algorithm.c
 
 CMakeFiles/project_hw.dir/algorithm/algorithm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/project_hw.dir/algorithm/algorithm.c.i"
-	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/algorithm/algorithm.c > CMakeFiles/project_hw.dir/algorithm/algorithm.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/algorithm/algorithm.c > CMakeFiles/project_hw.dir/algorithm/algorithm.c.i
 
 CMakeFiles/project_hw.dir/algorithm/algorithm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/project_hw.dir/algorithm/algorithm.c.s"
-	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/algorithm/algorithm.c -o CMakeFiles/project_hw.dir/algorithm/algorithm.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/algorithm/algorithm.c -o CMakeFiles/project_hw.dir/algorithm/algorithm.c.s
 
 CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.o: CMakeFiles/project_hw.dir/flags.make
 CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/LKHInterface.c
 CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.o: CMakeFiles/project_hw.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.o"
-	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.o -MF CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.o.d -o CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/LKHInterface.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.o -MF CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.o.d -o CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/LKHInterface.c
 
 CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.i"
-	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/LKHInterface.c > CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/LKHInterface.c > CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.i
 
 CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.s"
-	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/LKHInterface.c -o CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/LKHInterface.c -o CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.s
 
 # Object files for target project_hw
 project_hw_OBJECTS = \
