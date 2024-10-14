@@ -15,7 +15,7 @@ mkdir build
 cd build
 cmake ..
 make
-../bin/project_hw -f ../test/dataset/case_1.txt
+../bin/project_hw -f ../test/dataset/case_285.txt
 ```
 
 ```shell
@@ -23,7 +23,7 @@ cd build
 rm -rf *
 cmake ..
 make
-../bin/project_hw -f ../test/dataset/case_1.txt
+../bin/project_hw -f ../test/dataset/case_285.txt
 ```
 
 ## 项目目录结构

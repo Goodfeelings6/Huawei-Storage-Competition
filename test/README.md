@@ -97,3 +97,6 @@ python testbatch.py s2 -src ./dataset_sub -des ./output
 python testbatch.py s2 -src ./dataset_sub -des ./output_sub
 python score.py -c ./output -b output_sub
 ```
+### 对比批量测试结果, compare.py 用法：  
+**更改代码中file1和file2文件名,分别为要对比的两个批量测试结果文件**
+**对比结果输出在/home/csg/Huawei-Storage-Competition/test/comparison_output.txt 文件中，更优的结果加双星号表示**

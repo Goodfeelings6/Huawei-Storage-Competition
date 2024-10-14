@@ -1,0 +1,159 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_361.txt
+head info : [57,693431,1]
+
+io count = 1500
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 25
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = ALPHA
+# EDGE_FILE =
+EXCESS = 0.000332889
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 1502
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 3004
+MAX_TRIALS = 3004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = NO
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = YES
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 1672823.2, Ascent time = 5.21 sec.
+Cand.min = 2, Cand.avg = 4.6, Cand.max = 6
+Edges.fixed = 1503 [Cost = 0]
+Preprocessing time = 5.38 sec.
+* 1: Cost = 3248363, Time = 0.02 sec. 
+* 3: Cost = 3248344, Time = 0.03 sec. 
+* 5: Cost = 3243230, Time = 0.04 sec. 
+* 6: Cost = 3242745, Time = 0.05 sec. 
+* 7: Cost = 3242623, Time = 0.05 sec. 
+* 12: Cost = 3242609, Time = 0.09 sec. 
+* 16: Cost = 3242099, Time = 0.10 sec. 
+* 18: Cost = 3241625, Time = 0.12 sec. 
+* 19: Cost = 3241539, Time = 0.12 sec. 
+* 20: Cost = 3241420, Time = 0.13 sec. 
+* 22: Cost = 3241320, Time = 0.14 sec. 
+* 27: Cost = 3241277, Time = 0.16 sec. 
+* 28: Cost = 3240833, Time = 0.17 sec. 
+* 30: Cost = 3240804, Time = 0.18 sec. 
+* 45: Cost = 3240603, Time = 0.26 sec. 
+* 46: Cost = 3240518, Time = 0.27 sec. 
+* 48: Cost = 3240085, Time = 0.28 sec. 
+* 58: Cost = 3240082, Time = 0.34 sec. 
+* 64: Cost = 3239983, Time = 0.38 sec. 
+* 67: Cost = 3239546, Time = 0.39 sec. 
+* 68: Cost = 3239481, Time = 0.40 sec. 
+* 75: Cost = 3239352, Time = 0.44 sec. 
+* 79: Cost = 3239242, Time = 0.47 sec. 
+* 87: Cost = 3239138, Time = 0.52 sec. 
+* 89: Cost = 3239056, Time = 0.53 sec. 
+* 92: Cost = 3239039, Time = 0.55 sec. 
+* 94: Cost = 3238701, Time = 0.56 sec. 
+* 95: Cost = 3238535, Time = 0.57 sec. 
+* 96: Cost = 3238092, Time = 0.57 sec. 
+* 98: Cost = 3238056, Time = 0.59 sec. 
+* 106: Cost = 3237761, Time = 0.64 sec. 
+* 107: Cost = 3237475, Time = 0.64 sec. 
+* 132: Cost = 3237448, Time = 0.78 sec. 
+* 135: Cost = 3237441, Time = 0.81 sec. 
+* 138: Cost = 3236486, Time = 0.82 sec. 
+* 143: Cost = 3236378, Time = 0.86 sec. 
+* 146: Cost = 3236089, Time = 0.88 sec. 
+* 158: Cost = 3236012, Time = 0.95 sec. 
+* 172: Cost = 3235983, Time = 1.03 sec. 
+* 185: Cost = 3235980, Time = 1.12 sec. 
+* 190: Cost = 3235894, Time = 1.15 sec. 
+* 194: Cost = 3235716, Time = 1.17 sec. 
+* 195: Cost = 3235715, Time = 1.18 sec. 
+* 208: Cost = 3235349, Time = 1.26 sec. 
+* 210: Cost = 3235205, Time = 1.27 sec. 
+* 216: Cost = 3235195, Time = 1.32 sec. 
+* 218: Cost = 3235100, Time = 1.33 sec. 
+* 224: Cost = 3235042, Time = 1.37 sec. 
+* 225: Cost = 3234423, Time = 1.37 sec. 
+* 231: Cost = 3234397, Time = 1.41 sec. 
+* 234: Cost = 3234383, Time = 1.43 sec. 
+* 239: Cost = 3234189, Time = 1.47 sec. 
+* 246: Cost = 3234185, Time = 1.51 sec. 
+* 249: Cost = 3234139, Time = 1.52 sec. 
+* 254: Cost = 3234074, Time = 1.56 sec. 
+* 279: Cost = 3233921, Time = 1.71 sec. 
+* 286: Cost = 3233901, Time = 1.76 sec. 
+* 291: Cost = 3233800, Time = 1.79 sec. 
+* 395: Cost = 3233662, Time = 2.43 sec. 
+* 397: Cost = 3233613, Time = 2.44 sec. 
+* 459: Cost = 3232994, Time = 2.82 sec. 
+* 460: Cost = 3232929, Time = 2.83 sec. 
+* 476: Cost = 3232928, Time = 2.93 sec. 
+* 481: Cost = 3232874, Time = 2.96 sec. 
+* 482: Cost = 3232774, Time = 2.96 sec. 
+* 496: Cost = 3232716, Time = 3.05 sec. 
+* 524: Cost = 3232317, Time = 3.22 sec. 
+* 590: Cost = 3232283, Time = 3.62 sec. 
+*** The extent of improvement(1517) is too small in 2.0s ***
+Run 1: Cost = 3232283, Time = 4.01 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 3232283, Cost.avg = 3232283.00, Cost.max = 3232283
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 652, Trials.avg = 652.0, Trials.max = 652
+Time.min = 4.01 sec., Time.avg = 4.01 sec., Time.max = 4.01 sec.
+Time.total = 9.46 sec.
+
+Key Metrics:
+	ioCount:			 1500
+	algorithmRunningDuration:	 9463.623 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 3232283 (ms)
+	readDuration:			 1623332 (ms)
+	tapeBeltWear:			 5011585
+	tapeMotorWear:			 130
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

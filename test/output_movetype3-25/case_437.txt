@@ -1,0 +1,148 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_437.txt
+head info : [29,167548,1]
+
+io count = 3000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 25
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 0.000166556
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 3002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 6004
+MAX_TRIALS = 6004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 1258180.0, Ascent time = 4.22 sec.
+Cand.min = 2, Cand.avg = 6.0, Cand.max = 7
+Edges.fixed = 3003 [Cost = 0]
+Preprocessing time = 4.24 sec.
+* 1: Cost = 5123302, Time = 0.09 sec. 
+* 2: Cost = 5076892, Time = 0.14 sec. 
+* 4: Cost = 5074196, Time = 0.21 sec. 
+* 5: Cost = 5069559, Time = 0.24 sec. 
+* 6: Cost = 5037828, Time = 0.28 sec. 
+* 7: Cost = 5036388, Time = 0.31 sec. 
+* 8: Cost = 5035090, Time = 0.34 sec. 
+* 9: Cost = 5018303, Time = 0.38 sec. 
+* 12: Cost = 5010020, Time = 0.48 sec. 
+* 15: Cost = 5007866, Time = 0.57 sec. 
+* 16: Cost = 5004874, Time = 0.60 sec. 
+* 18: Cost = 5003206, Time = 0.67 sec. 
+* 19: Cost = 4998309, Time = 0.71 sec. 
+* 20: Cost = 4997998, Time = 0.74 sec. 
+* 21: Cost = 4997395, Time = 0.77 sec. 
+* 23: Cost = 4997236, Time = 0.85 sec. 
+* 24: Cost = 4995022, Time = 0.88 sec. 
+* 25: Cost = 4994716, Time = 0.92 sec. 
+* 26: Cost = 4991132, Time = 0.95 sec. 
+* 31: Cost = 4988429, Time = 1.11 sec. 
+* 32: Cost = 4987501, Time = 1.14 sec. 
+* 33: Cost = 4986381, Time = 1.17 sec. 
+* 36: Cost = 4982806, Time = 1.26 sec. 
+* 37: Cost = 4982002, Time = 1.30 sec. 
+* 40: Cost = 4981962, Time = 1.39 sec. 
+* 41: Cost = 4981598, Time = 1.42 sec. 
+* 42: Cost = 4980721, Time = 1.46 sec. 
+* 46: Cost = 4980258, Time = 1.59 sec. 
+* 48: Cost = 4979446, Time = 1.65 sec. 
+* 50: Cost = 4979382, Time = 1.72 sec. 
+* 51: Cost = 4978785, Time = 1.75 sec. 
+* 58: Cost = 4978611, Time = 1.97 sec. 
+* 59: Cost = 4978372, Time = 1.99 sec. 
+* 61: Cost = 4977614, Time = 2.05 sec. 
+* 62: Cost = 4976776, Time = 2.08 sec. 
+* 71: Cost = 4976057, Time = 2.37 sec. 
+* 72: Cost = 4975992, Time = 2.40 sec. 
+* 79: Cost = 4975924, Time = 2.62 sec. 
+* 80: Cost = 4975723, Time = 2.66 sec. 
+* 85: Cost = 4975619, Time = 2.81 sec. 
+* 89: Cost = 4975045, Time = 2.94 sec. 
+* 94: Cost = 4972471, Time = 3.11 sec. 
+* 95: Cost = 4972179, Time = 3.15 sec. 
+* 115: Cost = 4972022, Time = 3.82 sec. 
+* 142: Cost = 4971699, Time = 4.68 sec. 
+* 146: Cost = 4971209, Time = 4.80 sec. 
+* 149: Cost = 4971167, Time = 4.90 sec. 
+* 161: Cost = 4970853, Time = 5.27 sec. 
+* 163: Cost = 4970459, Time = 5.33 sec. 
+* 167: Cost = 4969996, Time = 5.47 sec. 
+* 171: Cost = 4969586, Time = 5.61 sec. 
+* 177: Cost = 4968803, Time = 5.80 sec. 
+* 181: Cost = 4968658, Time = 5.94 sec. 
+* 194: Cost = 4968515, Time = 6.38 sec. 
+* 197: Cost = 4968482, Time = 6.47 sec. 
+* 211: Cost = 4968128, Time = 6.97 sec. 
+* 220: Cost = 4967690, Time = 7.26 sec. 
+*** The extent of improvement(968) is too small in 2.0s ***
+Run 1: Cost = 4967690, Time = 8.07 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 4967690, Cost.avg = 4967690.00, Cost.max = 4967690
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 244, Trials.avg = 244.0, Trials.max = 244
+Time.min = 8.07 sec., Time.avg = 8.07 sec., Time.max = 8.07 sec.
+Time.total = 12.58 sec.
+
+Key Metrics:
+	ioCount:			 3000
+	algorithmRunningDuration:	 12582.792 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 4967690 (ms)
+	readDuration:			 3125415 (ms)
+	tapeBeltWear:			 8056540
+	tapeMotorWear:			 186
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt
