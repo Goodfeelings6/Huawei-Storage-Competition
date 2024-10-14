@@ -41,7 +41,7 @@ MOVE_TYPE = 5
 PATCHING_A = 1 
 PATCHING_C = 0 
 # PI_FILE = 
-POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_INITIAL_TOUR = NO
 POPMUSIC_MAX_NEIGHBORS = 5
 POPMUSIC_SAMPLE_SIZE = 10
 POPMUSIC_SOLUTIONS = 50
@@ -64,58 +64,64 @@ TOTAL_TIME_LIMIT = 20.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 1486481.0, Ascent time = 15.40 sec.
-Cand.min = 2, Cand.avg = 6.0, Cand.max = 7
+Lower bound = 1486481.0, Ascent time = 13.85 sec.
+Cand.min = 2, Cand.avg = 5.1, Cand.max = 6
 Edges.fixed = 6003 [Cost = 0]
-Preprocessing time = 15.48 sec.
-* 1: Cost = 7064392, Time = 0.46 sec. 
-* 2: Cost = 7040624, Time = 0.65 sec. 
-* 3: Cost = 7039786, Time = 0.75 sec. 
-* 4: Cost = 7039742, Time = 0.84 sec. 
-* 6: Cost = 7039646, Time = 0.99 sec. 
-* 7: Cost = 7039451, Time = 1.07 sec. 
-* 8: Cost = 7038885, Time = 1.14 sec. 
-* 9: Cost = 7038134, Time = 1.21 sec. 
-* 10: Cost = 7037900, Time = 1.29 sec. 
-* 11: Cost = 7037871, Time = 1.36 sec. 
-* 12: Cost = 7035982, Time = 1.45 sec. 
-* 13: Cost = 7035867, Time = 1.52 sec. 
-* 15: Cost = 7035662, Time = 1.65 sec. 
-* 16: Cost = 7035255, Time = 1.72 sec. 
-* 17: Cost = 7035139, Time = 1.79 sec. 
-* 18: Cost = 7034903, Time = 1.87 sec. 
-* 19: Cost = 7034618, Time = 1.94 sec. 
-* 20: Cost = 7034522, Time = 2.03 sec. 
-* 21: Cost = 7034302, Time = 2.11 sec. 
-* 22: Cost = 7019189, Time = 2.22 sec. 
-* 23: Cost = 7017341, Time = 2.31 sec. 
-* 24: Cost = 7016975, Time = 2.39 sec. 
-* 25: Cost = 7016847, Time = 2.46 sec. 
-* 27: Cost = 7016791, Time = 2.62 sec. 
-* 29: Cost = 7016562, Time = 2.77 sec. 
-* 31: Cost = 7016411, Time = 2.91 sec. 
-* 32: Cost = 7016310, Time = 2.99 sec. 
-* 33: Cost = 7016204, Time = 3.07 sec. 
-* 34: Cost = 7016144, Time = 3.16 sec. 
-* 35: Cost = 7015836, Time = 3.25 sec. 
+Preprocessing time = 13.95 sec.
+* 1: Cost = 7202933, Time = 0.33 sec. 
+* 2: Cost = 7182716, Time = 0.48 sec. 
+* 3: Cost = 7153844, Time = 0.60 sec. 
+* 4: Cost = 7129661, Time = 0.70 sec. 
+* 5: Cost = 7128577, Time = 0.80 sec. 
+* 6: Cost = 7127516, Time = 0.88 sec. 
+* 7: Cost = 7127195, Time = 0.97 sec. 
+* 8: Cost = 7127006, Time = 1.05 sec. 
+* 9: Cost = 7126887, Time = 1.13 sec. 
+* 10: Cost = 7126539, Time = 1.24 sec. 
+* 11: Cost = 7126464, Time = 1.35 sec. 
+* 12: Cost = 7126394, Time = 1.45 sec. 
+* 13: Cost = 7123886, Time = 1.54 sec. 
+* 14: Cost = 7123401, Time = 1.63 sec. 
+* 15: Cost = 7065040, Time = 1.72 sec. 
+* 16: Cost = 7025230, Time = 1.82 sec. 
+* 18: Cost = 7015233, Time = 1.99 sec. 
+* 19: Cost = 7014805, Time = 2.07 sec. 
+* 20: Cost = 7014178, Time = 2.18 sec. 
+* 25: Cost = 7014077, Time = 2.59 sec. 
+* 30: Cost = 7013992, Time = 3.00 sec. 
+* 31: Cost = 7013823, Time = 3.09 sec. 
+* 33: Cost = 7013814, Time = 3.27 sec. 
+* 35: Cost = 7011015, Time = 3.47 sec. 
+* 36: Cost = 7011003, Time = 3.54 sec. 
+* 37: Cost = 7007629, Time = 3.63 sec. 
+* 38: Cost = 7004363, Time = 3.72 sec. 
+* 39: Cost = 7003434, Time = 3.81 sec. 
+* 40: Cost = 7003382, Time = 3.91 sec. 
+* 41: Cost = 7003000, Time = 3.99 sec. 
+* 42: Cost = 7002661, Time = 4.08 sec. 
+* 43: Cost = 7002498, Time = 4.18 sec. 
+* 45: Cost = 7002449, Time = 4.34 sec. 
+* 46: Cost = 6999401, Time = 4.45 sec. 
+* 47: Cost = 6999297, Time = 4.54 sec. 
+* 49: Cost = 6996734, Time = 4.72 sec. 
 *** Time limit exceeded ***
-Run 1: Cost = 7015836, Time = 3.40 sec. 
+Run 1: Cost = 6996734, Time = 4.81 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 7015836, Cost.avg = 7015836.00, Cost.max = 7015836
+Cost.min = 6996734, Cost.avg = 6996734.00, Cost.max = 6996734
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 37, Trials.avg = 37.0, Trials.max = 37
-Time.min = 3.40 sec., Time.avg = 3.40 sec., Time.max = 3.40 sec.
-Time.total = 19.99 sec.
+Trials.min = 50, Trials.avg = 50.0, Trials.max = 50
+Time.min = 4.81 sec., Time.avg = 4.81 sec., Time.max = 4.81 sec.
+Time.total = 20.00 sec.
 
 Key Metrics:
 	ioCount:			 6000
-	algorithmRunningDuration:	 19986.012 (ms)
+	algorithmRunningDuration:	 20001.259 (ms)
 	memoryUse:			 0 (KB)
-	addressingDuration:		 7015836 (ms)
+	addressingDuration:		 6996734 (ms)
 	readDuration:			 6263177 (ms)
-	tapeBeltWear:			 13223337
-	tapeMotorWear:			 182
+	tapeBeltWear:			 13070147
+	tapeMotorWear:			 206
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

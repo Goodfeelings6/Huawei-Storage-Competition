@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/project_hw/test/dataset/case_298.txt
+The file path is: ./dataset/case_298.txt
 head info : [91,541533,1]
 
 io count = 1350
@@ -14,7 +14,7 @@ ASCENT_CANDIDATES = 50
 BACKBONE_TRIALS = 0
 BACKTRACKING = NO
 # CANDIDATE_FILE =
-CANDIDATE_SET_TYPE = ALPHA
+CANDIDATE_SET_TYPE = POPMUSIC
 # EDGE_FILE =
 EXCESS = 0.000369822
 EXTRA_CANDIDATES = 0 
@@ -41,7 +41,7 @@ MOVE_TYPE = 5
 PATCHING_A = 1 
 PATCHING_C = 0 
 # PI_FILE = 
-POPMUSIC_INITIAL_TOUR = NO
+POPMUSIC_INITIAL_TOUR = YES
 POPMUSIC_MAX_NEIGHBORS = 5
 POPMUSIC_SAMPLE_SIZE = 10
 POPMUSIC_SOLUTIONS = 50
@@ -64,33 +64,58 @@ TOTAL_TIME_LIMIT = 20.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 3364787.2, Ascent time = 6.61 sec.
-Cand.min = 2, Cand.avg = 4.9, Cand.max = 6
+Lower bound = 3472205.9, Ascent time = 5.12 sec.
+Cand.min = 2, Cand.avg = 5.9, Cand.max = 7
 Edges.fixed = 1353 [Cost = 0]
-Preprocessing time = 6.86 sec.
-* 1: Cost = 3459377, Time = 0.01 sec. 
-* 2: Cost = 3459338, Time = 0.01 sec. 
-* 3: Cost = 3459334, Time = 0.02 sec. 
-* 5: Cost = 3459220, Time = 0.02 sec. 
-* 16: Cost = 3459205, Time = 0.06 sec. 
-* 1028: Cost = 3459048, Time = 2.99 sec. 
-*** The extent of improvement(157) is too small in 2.0s ***
-Run 1: Cost = 3459048, Time = 4.00 sec. 
+Preprocessing time = 5.13 sec.
+* 1: Cost = 3464380, Time = 0.01 sec. 
+* 2: Cost = 3463938, Time = 0.02 sec. 
+* 3: Cost = 3463642, Time = 0.02 sec. 
+* 4: Cost = 3463559, Time = 0.03 sec. 
+* 5: Cost = 3462991, Time = 0.04 sec. 
+* 6: Cost = 3462233, Time = 0.04 sec. 
+* 9: Cost = 3461895, Time = 0.05 sec. 
+* 10: Cost = 3461787, Time = 0.05 sec. 
+* 12: Cost = 3461729, Time = 0.06 sec. 
+* 13: Cost = 3461642, Time = 0.07 sec. 
+* 15: Cost = 3461629, Time = 0.07 sec. 
+* 17: Cost = 3461596, Time = 0.08 sec. 
+* 21: Cost = 3461584, Time = 0.09 sec. 
+* 24: Cost = 3461583, Time = 0.10 sec. 
+* 29: Cost = 3461544, Time = 0.12 sec. 
+* 31: Cost = 3461543, Time = 0.13 sec. 
+* 51: Cost = 3461241, Time = 0.20 sec. 
+* 52: Cost = 3461202, Time = 0.21 sec. 
+* 53: Cost = 3461169, Time = 0.21 sec. 
+* 65: Cost = 3461013, Time = 0.25 sec. 
+* 66: Cost = 3461012, Time = 0.26 sec. 
+* 145: Cost = 3460773, Time = 0.53 sec. 
+* 147: Cost = 3460760, Time = 0.54 sec. 
+* 224: Cost = 3460741, Time = 0.80 sec. 
+* 225: Cost = 3460736, Time = 0.81 sec. 
+* 251: Cost = 3460657, Time = 0.89 sec. 
+* 252: Cost = 3460612, Time = 0.90 sec. 
+* 292: Cost = 3460505, Time = 1.02 sec. 
+* 323: Cost = 3460438, Time = 1.16 sec. 
+* 327: Cost = 3460405, Time = 1.19 sec. 
+* 638: Cost = 3460213, Time = 2.35 sec. 
+*** The extent of improvement(192) is too small in 2.0s ***
+Run 1: Cost = 3460213, Time = 4.00 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 3459048, Cost.avg = 3459048.00, Cost.max = 3459048
+Cost.min = 3460213, Cost.avg = 3460213.00, Cost.max = 3460213
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 1368, Trials.avg = 1368.0, Trials.max = 1368
+Trials.min = 1092, Trials.avg = 1092.0, Trials.max = 1092
 Time.min = 4.00 sec., Time.avg = 4.00 sec., Time.max = 4.00 sec.
-Time.total = 10.92 sec.
+Time.total = 9.19 sec.
 
 Key Metrics:
 	ioCount:			 1350
-	algorithmRunningDuration:	 10921.629 (ms)
+	algorithmRunningDuration:	 9191.750 (ms)
 	memoryUse:			 0 (KB)
-	addressingDuration:		 3459048 (ms)
+	addressingDuration:		 3460213 (ms)
 	readDuration:			 1468941 (ms)
-	tapeBeltWear:			 4981510
+	tapeBeltWear:			 4978426
 	tapeMotorWear:			 160
 	errorIOCount:			 0
 

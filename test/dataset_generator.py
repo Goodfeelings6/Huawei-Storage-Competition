@@ -135,7 +135,8 @@ if __name__ == "__main__":
     for io_count in io_counts: # 不同 IO 数量
         for wrap_distribution in wrap_distributions: # 不同 wrap区域分布
             for startlpos_distribution in startlpos_distributions: # 不同横向磁带区域分布
-                for num in range(5): # 每种生成5个
+                # for num in range(5): # 每种生成5个
+                for num in range(1): # 每种生成1个
                     test_cases = generate_test_cases(io_count, wrap_distribution, startlpos_distribution)
                     # 写入文件
                     file_name = f'./dataset/case_{index}.txt'
