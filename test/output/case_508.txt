@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/project_hw/test/dataset/case_508.txt
+The file path is: ./dataset/case_508.txt
 head info : [46,536472,0]
 
 io count = 6000
@@ -21,7 +21,7 @@ EXTRA_CANDIDATES = 0
 EXTRA_CANDIDATE_SET_TYPE = QUADRANT
 GAIN23 = YES
 GAIN_CRITERION = YES
-INITIAL_PERIOD = 6002
+INITIAL_PERIOD = 100
 INITIAL_STEP_SIZE = 1
 INITIAL_TOUR_ALGORITHM = WALK
 # INITIAL_TOUR_FILE = 
@@ -54,7 +54,7 @@ RESTRICTED_SEARCH = YES
 RUNS = 1
 SEED = 1
 STOP_AT_OPTIMUM = YES
-SUBGRADIENT = NO
+SUBGRADIENT = YES
 # SUBPROBLEM_SIZE =
 # SUBPROBLEM_TOUR_FILE = 
 SUBSEQUENT_MOVE_TYPE = 5
@@ -64,67 +64,36 @@ TOTAL_TIME_LIMIT = 20.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 1476004.0, Ascent time = 13.61 sec.
+Lower bound = 7102874.6, Ascent time = 17.21 sec.
 Cand.min = 2, Cand.avg = 6.0, Cand.max = 7
 Edges.fixed = 6003 [Cost = 0]
-Preprocessing time = 13.71 sec.
-* 1: Cost = 7345283, Time = 0.51 sec. 
-* 2: Cost = 7342170, Time = 0.72 sec. 
-* 3: Cost = 7341111, Time = 0.84 sec. 
-* 4: Cost = 7340771, Time = 0.93 sec. 
-* 5: Cost = 7339465, Time = 1.01 sec. 
-* 6: Cost = 7338984, Time = 1.11 sec. 
-* 8: Cost = 7338926, Time = 1.28 sec. 
-* 9: Cost = 7319278, Time = 1.40 sec. 
-* 10: Cost = 7318975, Time = 1.50 sec. 
-* 11: Cost = 7318974, Time = 1.58 sec. 
-* 13: Cost = 7318634, Time = 1.77 sec. 
-* 15: Cost = 7318616, Time = 1.94 sec. 
-* 16: Cost = 7318475, Time = 2.04 sec. 
-* 19: Cost = 7315046, Time = 2.29 sec. 
-* 20: Cost = 7314977, Time = 2.37 sec. 
-* 21: Cost = 7314823, Time = 2.47 sec. 
-* 22: Cost = 7309249, Time = 2.58 sec. 
-* 23: Cost = 7309162, Time = 2.67 sec. 
-* 24: Cost = 7309027, Time = 2.76 sec. 
-* 25: Cost = 7308830, Time = 2.84 sec. 
-* 26: Cost = 7306533, Time = 2.91 sec. 
-* 27: Cost = 7306437, Time = 3.00 sec. 
-* 28: Cost = 7306300, Time = 3.08 sec. 
-* 29: Cost = 7306031, Time = 3.16 sec. 
-* 30: Cost = 7305968, Time = 3.24 sec. 
-* 32: Cost = 7305266, Time = 3.42 sec. 
-* 33: Cost = 7305219, Time = 3.52 sec. 
-* 34: Cost = 7305070, Time = 3.61 sec. 
-* 36: Cost = 7305057, Time = 3.78 sec. 
-* 39: Cost = 7304846, Time = 4.01 sec. 
-* 40: Cost = 7304765, Time = 4.10 sec. 
-* 42: Cost = 7304749, Time = 4.26 sec. 
-* 43: Cost = 7304723, Time = 4.36 sec. 
-* 45: Cost = 7304706, Time = 4.53 sec. 
-* 46: Cost = 7304527, Time = 4.63 sec. 
-* 47: Cost = 7304181, Time = 4.71 sec. 
-* 48: Cost = 7304140, Time = 4.80 sec. 
-* 50: Cost = 7293234, Time = 4.96 sec. 
-* 51: Cost = 7293185, Time = 5.05 sec. 
-*** Time limit exceeded*** Time limit exceeded ***
-Run 1: Cost = 7293185, Time = 5.10 sec. 
+Preprocessing time = 17.31 sec.
+* 1: Cost = 7306852, Time = 0.48 sec. 
+* 2: Cost = 7301892, Time = 0.70 sec. 
+* 3: Cost = 7297617, Time = 0.89 sec. 
+* 4: Cost = 7297119, Time = 0.98 sec. 
+* 5: Cost = 7265875, Time = 1.14 sec. 
+* 6: Cost = 7265553, Time = 1.27 sec. 
+* 7: Cost = 7265189, Time = 1.42 sec. 
+*** Time limit exceeded in LinKernighan
+*** Time limit exceeded ***
+Run 1: Cost = 7265189, Time = 1.50 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 7293185, Cost.avg = 7293185.00, Cost.max = 7293185
+Cost.min = 7265189, Cost.avg = 7265189.00, Cost.max = 7265189
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 52, Trials.avg = 52.0, Trials.max = 52
-Time.min = 5.10 sec., Time.avg = 5.10 sec., Time.max = 5.10 sec.
-Time.total = 19.99 sec.
+Trials.min = 8, Trials.avg = 8.0, Trials.max = 8
+Time.min = 1.50 sec., Time.avg = 1.50 sec., Time.max = 1.50 sec.
+Time.total = 20.06 sec.
 
 Key Metrics:
 	ioCount:			 6000
-	algorithmRunningDuration:	 19988.511 (ms)
+	algorithmRunningDuration:	 20057.933 (ms)
 	memoryUse:			 0 (KB)
-	addressingDuration:		 7293185 (ms)
+	addressingDuration:		 7265189 (ms)
 	readDuration:			 6336326 (ms)
-	tapeBeltWear:			 13409175
-	tapeMotorWear:			 275
+	tapeBeltWear:			 13373934
+	tapeMotorWear:			 279
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt
