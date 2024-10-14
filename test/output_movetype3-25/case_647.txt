@@ -1,0 +1,195 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_647.txt
+head info : [196,308955,1]
+
+io count = 9500
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 25
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+# EXCESS =
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+# INITIAL_PERIOD =
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 19004
+# MAX_TRIALS =
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+SUBPROBLEM_SIZE = 4752
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+*** Tour segment partitioning *** [Round 1 of 1, Cost = 12064800]
+
+Subproblem 1 of 4: Dimension = 4752, Upper bound = 510878
+Lower bound = 381261.0, Gap = 25.37%, Ascent time = 3.03 sec.
+Cand.min = 5, Cand.avg = 5.8, Cand.max = 6
+Edges.fixed = 2376 [Cost = 32101]
+Preprocessing time = 3.05 sec.
+* 1: Cost = 510824, Gap = -0.0106%, Time = 0.01 sec. <
+* 2: Cost = 510823, Gap = -0.0108%, Time = 0.02 sec. <
+* 3: Cost = 510819, Gap = -0.0115%, Time = 0.03 sec. <
+*** The extent of improvement(0) is too small in 0.5s ***
+*** 1: Cost = 12064741, Time = 1.01 sec. 
+Run 1: Cost = 510819, Time = 1.01 sec.
+
+Successes/Runs = 1/1
+Cost.min = 510819, Cost.avg = 510819.00, Cost.max = 510819
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 163, Trials.avg = 163.0, Trials.max = 163
+Time.min = 1.01 sec., Time.avg = 1.01 sec., Time.max = 1.01 sec.
+Time.total = 6.84 sec.
+
+Subproblem 2 of 4: Dimension = 4752, Upper bound = 856881
+Lower bound = 581768.0, Gap = 32.11%, Ascent time = 3.08 sec.
+Cand.min = 5, Cand.avg = 5.9, Cand.max = 7
+Edges.fixed = 2376 [Cost = 35993]
+Preprocessing time = 3.10 sec.
+* 1: Cost = 856214, Gap = -0.0778%, Time = 0.01 sec. <
+* 2: Cost = 856213, Gap = -0.0780%, Time = 0.02 sec. <
+* 4: Cost = 856198, Gap = -0.0797%, Time = 0.03 sec. <
+* 6: Cost = 856196, Gap = -0.0799%, Time = 0.05 sec. <
+* 13: Cost = 856195, Gap = -0.0801%, Time = 0.10 sec. <
+*** The extent of improvement(0) is too small in 0.5s ***
+*** 2: Cost = 12064055, Time = 1.02 sec. 
+Run 1: Cost = 856195, Time = 1.02 sec.
+
+Successes/Runs = 1/1
+Cost.min = 856195, Cost.avg = 856195.00, Cost.max = 856195
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 150, Trials.avg = 150.0, Trials.max = 150
+Time.min = 1.02 sec., Time.avg = 1.02 sec., Time.max = 1.02 sec.
+Time.total = 10.96 sec.
+
+Subproblem 3 of 4: Dimension = 4752, Upper bound = 1692852
+Lower bound = 971774.0, Gap = 42.60%, Ascent time = 3.11 sec.
+Cand.min = 5, Cand.avg = 5.9, Cand.max = 7
+Edges.fixed = 2376 [Cost = 193596]
+Preprocessing time = 3.13 sec.
+* 1: Cost = 1686316, Gap = -0.3861%, Time = 0.02 sec. <
+* 10: Cost = 1686302, Gap = -0.3869%, Time = 0.15 sec. <
+* 11: Cost = 1686277, Gap = -0.3884%, Time = 0.16 sec. <
+* 13: Cost = 1686276, Gap = -0.3885%, Time = 0.18 sec. <
+* 36: Cost = 1686275, Gap = -0.3885%, Time = 0.43 sec. <
+* 56: Cost = 1686274, Gap = -0.3886%, Time = 0.64 sec. <
+*** The extent of improvement(1) is too small in 0.5s ***
+*** 3: Cost = 12057477, Time = 1.02 sec. 
+Run 1: Cost = 1686274, Time = 1.02 sec.
+
+Successes/Runs = 1/1
+Cost.min = 1686274, Cost.avg = 1686274.00, Cost.max = 1686274
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 93, Trials.avg = 93.0, Trials.max = 93
+Time.min = 1.02 sec., Time.avg = 1.02 sec., Time.max = 1.02 sec.
+Time.total = 15.11 sec.
+
+Subproblem 4 of 4: Dimension = 4752, Upper bound = 9004467
+Lower bound = 1280058.0, Gap = 85.78%, Ascent time = 3.10 sec.
+Cand.min = 2, Cand.avg = 6.1, Cand.max = 7
+Edges.fixed = 2377 [Cost = 189051]
+Preprocessing time = 3.11 sec.
+* 1: Cost = 6078716, Gap = -32.4922%, Time = 0.08 sec. <
+* 2: Cost = 5986510, Gap = -33.5162%, Time = 0.11 sec. <
+* 3: Cost = 5929418, Gap = -34.1503%, Time = 0.14 sec. <
+* 4: Cost = 5923924, Gap = -34.2113%, Time = 0.18 sec. <
+* 5: Cost = 5919556, Gap = -34.2598%, Time = 0.20 sec. <
+* 6: Cost = 5897991, Gap = -34.4993%, Time = 0.24 sec. <
+* 7: Cost = 5897178, Gap = -34.5083%, Time = 0.26 sec. <
+* 8: Cost = 5884391, Gap = -34.6503%, Time = 0.30 sec. <
+* 9: Cost = 5865686, Gap = -34.8580%, Time = 0.33 sec. <
+* 10: Cost = 5865628, Gap = -34.8587%, Time = 0.36 sec. <
+* 12: Cost = 5857781, Gap = -34.9458%, Time = 0.42 sec. <
+* 13: Cost = 5852027, Gap = -35.0097%, Time = 0.45 sec. <
+* 14: Cost = 5847990, Gap = -35.0546%, Time = 0.48 sec. <
+* 15: Cost = 5831099, Gap = -35.2422%, Time = 0.51 sec. <
+* 16: Cost = 5802783, Gap = -35.5566%, Time = 0.55 sec. <
+* 19: Cost = 5800162, Gap = -35.5857%, Time = 0.66 sec. <
+* 20: Cost = 5794035, Gap = -35.6538%, Time = 0.70 sec. <
+* 21: Cost = 5793916, Gap = -35.6551%, Time = 0.73 sec. <
+* 22: Cost = 5793271, Gap = -35.6623%, Time = 0.76 sec. <
+* 23: Cost = 5793259, Gap = -35.6624%, Time = 0.79 sec. <
+* 25: Cost = 5792796, Gap = -35.6675%, Time = 0.86 sec. <
+* 30: Cost = 5792527, Gap = -35.6705%, Time = 1.02 sec. <
+* 31: Cost = 5791985, Gap = -35.6765%, Time = 1.06 sec. <
+* 32: Cost = 5789818, Gap = -35.7006%, Time = 1.09 sec. <
+* 33: Cost = 5789764, Gap = -35.7012%, Time = 1.12 sec. <
+* 34: Cost = 5789718, Gap = -35.7017%, Time = 1.16 sec. <
+* 41: Cost = 5789664, Gap = -35.7023%, Time = 1.37 sec. <
+* 42: Cost = 5789611, Gap = -35.7029%, Time = 1.40 sec. <
+* 43: Cost = 5785167, Gap = -35.7523%, Time = 1.43 sec. <
+* 44: Cost = 5785060, Gap = -35.7534%, Time = 1.47 sec. <
+* 46: Cost = 5784144, Gap = -35.7636%, Time = 1.53 sec. <
+* 47: Cost = 5782798, Gap = -35.7786%, Time = 1.56 sec. <
+* 48: Cost = 5782770, Gap = -35.7789%, Time = 1.59 sec. <
+* 50: Cost = 5782706, Gap = -35.7796%, Time = 1.65 sec. <
+* 51: Cost = 5782680, Gap = -35.7799%, Time = 1.69 sec. <
+* 52: Cost = 5782652, Gap = -35.7802%, Time = 1.72 sec. <
+*** Time limit exceeded ***
+*** 4: Cost = 8835662, Time = 1.76 sec. 
+Run 1: Cost = 5782652, Time = 1.76 sec.
+
+Successes/Runs = 1/1
+Cost.min = 5782652, Cost.avg = 5782652.00, Cost.max = 5782652
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 53, Trials.avg = 53.0, Trials.max = 53
+Time.min = 1.76 sec., Time.avg = 1.76 sec., Time.max = 1.76 sec.
+Time.total = 19.99 sec.
+
+Cost = 8835662, Time = 17.21 sec. 
+
+Key Metrics:
+	ioCount:			 9500
+	algorithmRunningDuration:	 19991.420 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 8835662 (ms)
+	readDuration:			 9737231 (ms)
+	tapeBeltWear:			 18480351
+	tapeMotorWear:			 302
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

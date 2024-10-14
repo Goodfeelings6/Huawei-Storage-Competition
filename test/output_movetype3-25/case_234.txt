@@ -1,0 +1,141 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_234.txt
+head info : [169,691627,0]
+
+io count = 5000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 25
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 9.996e-05
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 5002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 10004
+MAX_TRIALS = 10004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 1400230.0, Ascent time = 10.75 sec.
+Cand.min = 2, Cand.avg = 6.0, Cand.max = 7
+Edges.fixed = 5003 [Cost = 0]
+Preprocessing time = 10.78 sec.
+* 1: Cost = 5936125, Time = 0.23 sec. 
+* 2: Cost = 5874328, Time = 0.36 sec. 
+* 3: Cost = 5852518, Time = 0.46 sec. 
+* 4: Cost = 5831981, Time = 0.54 sec. 
+* 5: Cost = 5826896, Time = 0.64 sec. 
+* 7: Cost = 5818565, Time = 0.81 sec. 
+* 8: Cost = 5816640, Time = 0.90 sec. 
+* 10: Cost = 5815323, Time = 1.09 sec. 
+* 11: Cost = 5808879, Time = 1.18 sec. 
+* 12: Cost = 5801739, Time = 1.27 sec. 
+* 14: Cost = 5801236, Time = 1.46 sec. 
+* 15: Cost = 5798995, Time = 1.55 sec. 
+* 16: Cost = 5796466, Time = 1.65 sec. 
+* 17: Cost = 5794371, Time = 1.75 sec. 
+* 18: Cost = 5792113, Time = 1.84 sec. 
+* 20: Cost = 5792038, Time = 2.02 sec. 
+* 21: Cost = 5791192, Time = 2.11 sec. 
+* 22: Cost = 5790358, Time = 2.21 sec. 
+* 23: Cost = 5790266, Time = 2.31 sec. 
+* 26: Cost = 5789797, Time = 2.58 sec. 
+* 27: Cost = 5788472, Time = 2.67 sec. 
+* 28: Cost = 5786567, Time = 2.76 sec. 
+* 29: Cost = 5786279, Time = 2.86 sec. 
+* 31: Cost = 5783773, Time = 3.07 sec. 
+* 33: Cost = 5774089, Time = 3.28 sec. 
+* 35: Cost = 5773741, Time = 3.46 sec. 
+* 36: Cost = 5773410, Time = 3.54 sec. 
+* 38: Cost = 5763823, Time = 3.72 sec. 
+* 39: Cost = 5763422, Time = 3.82 sec. 
+* 46: Cost = 5763181, Time = 4.48 sec. 
+* 51: Cost = 5763045, Time = 5.00 sec. 
+* 52: Cost = 5762993, Time = 5.10 sec. 
+* 53: Cost = 5762260, Time = 5.23 sec. 
+* 55: Cost = 5761891, Time = 5.41 sec. 
+* 56: Cost = 5761873, Time = 5.52 sec. 
+* 58: Cost = 5752605, Time = 5.73 sec. 
+* 59: Cost = 5743547, Time = 5.83 sec. 
+* 63: Cost = 5743232, Time = 6.23 sec. 
+* 64: Cost = 5742436, Time = 6.31 sec. 
+* 68: Cost = 5741616, Time = 6.70 sec. 
+* 69: Cost = 5741580, Time = 6.79 sec. 
+* 70: Cost = 5741389, Time = 6.87 sec. 
+* 72: Cost = 5741228, Time = 7.04 sec. 
+* 73: Cost = 5741052, Time = 7.13 sec. 
+* 77: Cost = 5740859, Time = 7.51 sec. 
+* 79: Cost = 5740782, Time = 7.71 sec. 
+* 80: Cost = 5740557, Time = 7.81 sec. 
+* 84: Cost = 5740186, Time = 8.17 sec. 
+* 86: Cost = 5739983, Time = 8.37 sec. 
+*** Time limit exceeded in LinKernighan
+*** Time limit exceeded ***
+Run 1: Cost = 5739983, Time = 8.43 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 5739983, Cost.avg = 5739983.00, Cost.max = 5739983
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 87, Trials.avg = 87.0, Trials.max = 87
+Time.min = 8.43 sec., Time.avg = 8.43 sec., Time.max = 8.43 sec.
+Time.total = 20.01 sec.
+
+Key Metrics:
+	ioCount:			 5000
+	algorithmRunningDuration:	 20010.263 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 5739983 (ms)
+	readDuration:			 5263449 (ms)
+	tapeBeltWear:			 10911370
+	tapeMotorWear:			 229
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

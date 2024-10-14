@@ -1,0 +1,110 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_153.txt
+head info : [212,511088,1]
+
+io count = 1000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 25
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = ALPHA
+# EDGE_FILE =
+EXCESS = 0.000499002
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 1002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 2004
+MAX_TRIALS = 2004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 5
+# NONSEQUENTIAL_MOVE_TYPE = 5
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = NO
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = YES
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 5
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 1847063.7, Ascent time = 4.69 sec.
+Cand.min = 2, Cand.avg = 4.8, Cand.max = 6
+Edges.fixed = 1003 [Cost = 0]
+Preprocessing time = 4.75 sec.
+* 1: Cost = 2514121, Time = 0.02 sec. 
+* 2: Cost = 2514073, Time = 0.02 sec. 
+* 25: Cost = 2514049, Time = 0.08 sec. 
+* 26: Cost = 2514045, Time = 0.08 sec. 
+* 30: Cost = 2514042, Time = 0.09 sec. 
+* 64: Cost = 2513602, Time = 0.17 sec. 
+* 65: Cost = 2513599, Time = 0.17 sec. 
+* 69: Cost = 2508240, Time = 0.18 sec. 
+* 70: Cost = 2508199, Time = 0.18 sec. 
+* 73: Cost = 2508007, Time = 0.19 sec. 
+* 240: Cost = 2508006, Time = 0.62 sec. 
+* 492: Cost = 2507933, Time = 1.22 sec. 
+* 506: Cost = 2506354, Time = 1.26 sec. 
+* 621: Cost = 2506353, Time = 1.55 sec. 
+* 628: Cost = 2506349, Time = 1.57 sec. 
+* 629: Cost = 2506322, Time = 1.57 sec. 
+* 630: Cost = 2506228, Time = 1.57 sec. 
+* 1539: Cost = 2505506, Time = 3.92 sec. 
+* 1540: Cost = 2505502, Time = 3.92 sec. 
+*** The extent of improvement(726) is too small in 2.0s ***
+Run 1: Cost = 2505502, Time = 4.00 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 2505502, Cost.avg = 2505502.00, Cost.max = 2505502
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 1570, Trials.avg = 1570.0, Trials.max = 1570
+Time.min = 4.00 sec., Time.avg = 4.00 sec., Time.max = 4.00 sec.
+Time.total = 8.79 sec.
+
+Key Metrics:
+	ioCount:			 1000
+	algorithmRunningDuration:	 8786.421 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 2505502 (ms)
+	readDuration:			 1041146 (ms)
+	tapeBeltWear:			 3759343
+	tapeMotorWear:			 108
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

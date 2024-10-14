@@ -1,0 +1,172 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_638.txt
+head info : [63,123423,0]
+
+io count = 9000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 25
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+# EXCESS =
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+# INITIAL_PERIOD =
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 18004
+# MAX_TRIALS =
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+SUBPROBLEM_SIZE = 6002
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+*** Tour segment partitioning *** [Round 1 of 1, Cost = 10878587]
+
+Subproblem 1 of 3: Dimension = 6002, Upper bound = 962043
+Lower bound = 585833.0, Gap = 39.11%, Ascent time = 4.51 sec.
+Cand.min = 5, Cand.avg = 5.9, Cand.max = 7
+Edges.fixed = 3001 [Cost = 56445]
+Preprocessing time = 4.53 sec.
+* 1: Cost = 960234, Gap = -0.1880%, Time = 0.02 sec. <
+* 2: Cost = 960223, Gap = -0.1892%, Time = 0.04 sec. <
+* 49: Cost = 960222, Gap = -0.1893%, Time = 0.73 sec. <
+*** The extent of improvement(1) is too small in 0.5s ***
+*** 1: Cost = 10876766, Time = 1.02 sec. 
+Run 1: Cost = 960222, Time = 1.02 sec.
+
+Successes/Runs = 1/1
+Cost.min = 960222, Cost.avg = 960222.00, Cost.max = 960222
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 69, Trials.avg = 69.0, Trials.max = 69
+Time.min = 1.02 sec., Time.avg = 1.02 sec., Time.max = 1.02 sec.
+Time.total = 8.04 sec.
+
+Subproblem 2 of 3: Dimension = 6002, Upper bound = 2517788
+Lower bound = 1119603.0, Gap = 55.53%, Ascent time = 4.49 sec.
+Cand.min = 5, Cand.avg = 5.9, Cand.max = 7
+Edges.fixed = 3001 [Cost = 39183]
+Preprocessing time = 4.51 sec.
+* 1: Cost = 2476482, Gap = -1.6406%, Time = 0.05 sec. <
+* 2: Cost = 2476367, Gap = -1.6451%, Time = 0.07 sec. <
+* 6: Cost = 2476362, Gap = -1.6453%, Time = 0.16 sec. <
+* 7: Cost = 2476255, Gap = -1.6496%, Time = 0.19 sec. <
+* 9: Cost = 2476253, Gap = -1.6497%, Time = 0.23 sec. <
+* 10: Cost = 2476020, Gap = -1.6589%, Time = 0.25 sec. <
+* 12: Cost = 2476005, Gap = -1.6595%, Time = 0.29 sec. <
+* 13: Cost = 2475936, Gap = -1.6623%, Time = 0.32 sec. <
+* 19: Cost = 2475790, Gap = -1.6681%, Time = 0.46 sec. <
+* 25: Cost = 2475787, Gap = -1.6682%, Time = 0.60 sec. <
+* 28: Cost = 2475730, Gap = -1.6704%, Time = 0.67 sec. <
+* 39: Cost = 2475729, Gap = -1.6705%, Time = 0.92 sec. <
+* 42: Cost = 2475532, Gap = -1.6783%, Time = 0.99 sec. <
+*** The extent of improvement(258) is too small in 0.5s ***
+*** 2: Cost = 10834510, Time = 1.02 sec. 
+Run 1: Cost = 2475532, Time = 1.02 sec.
+
+Successes/Runs = 1/1
+Cost.min = 2475532, Cost.avg = 2475532.00, Cost.max = 2475532
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 43, Trials.avg = 43.0, Trials.max = 43
+Time.min = 1.02 sec., Time.avg = 1.02 sec., Time.max = 1.02 sec.
+Time.total = 13.58 sec.
+
+Subproblem 3 of 3: Dimension = 6002, Upper bound = 7399213
+Lower bound = 844963.0, Gap = 88.58%, Ascent time = 4.49 sec.
+Cand.min = 2, Cand.avg = 6.1, Cand.max = 7
+Edges.fixed = 3002 [Cost = 76109]
+Preprocessing time = 4.51 sec.
+* 1: Cost = 5838577, Gap = -21.0919%, Time = 0.10 sec. <
+* 2: Cost = 5806571, Gap = -21.5245%, Time = 0.15 sec. <
+* 3: Cost = 5676221, Gap = -23.2862%, Time = 0.19 sec. <
+* 4: Cost = 5635994, Gap = -23.8298%, Time = 0.23 sec. <
+* 5: Cost = 5616389, Gap = -24.0948%, Time = 0.26 sec. <
+* 6: Cost = 5612182, Gap = -24.1516%, Time = 0.30 sec. <
+* 7: Cost = 5611132, Gap = -24.1658%, Time = 0.34 sec. <
+* 8: Cost = 5608974, Gap = -24.1950%, Time = 0.38 sec. <
+* 9: Cost = 5607588, Gap = -24.2137%, Time = 0.42 sec. <
+* 10: Cost = 5607279, Gap = -24.2179%, Time = 0.45 sec. <
+* 11: Cost = 5607037, Gap = -24.2212%, Time = 0.49 sec. <
+* 12: Cost = 5602792, Gap = -24.2785%, Time = 0.53 sec. <
+* 13: Cost = 5599735, Gap = -24.3199%, Time = 0.57 sec. <
+* 15: Cost = 5598607, Gap = -24.3351%, Time = 0.63 sec. <
+* 17: Cost = 5597238, Gap = -24.3536%, Time = 0.70 sec. <
+* 19: Cost = 5596154, Gap = -24.3683%, Time = 0.77 sec. <
+* 22: Cost = 5592744, Gap = -24.4143%, Time = 0.88 sec. <
+* 24: Cost = 5592624, Gap = -24.4160%, Time = 0.95 sec. <
+* 26: Cost = 5592396, Gap = -24.4190%, Time = 1.03 sec. <
+* 28: Cost = 5583210, Gap = -24.5432%, Time = 1.11 sec. <
+* 32: Cost = 5583102, Gap = -24.5447%, Time = 1.25 sec. <
+* 34: Cost = 5582983, Gap = -24.5463%, Time = 1.32 sec. <
+* 35: Cost = 5582894, Gap = -24.5475%, Time = 1.35 sec. <
+* 36: Cost = 5581541, Gap = -24.5657%, Time = 1.39 sec. <
+* 41: Cost = 5580048, Gap = -24.5859%, Time = 1.58 sec. <
+* 46: Cost = 5580017, Gap = -24.5863%, Time = 1.78 sec. <
+*** Time limit exceeded in LinKernighan
+*** Time limit exceeded ***
+*** 3: Cost = 9015314, Time = 1.91 sec. 
+Run 1: Cost = 5580017, Time = 1.91 sec.
+
+Successes/Runs = 1/1
+Cost.min = 5580017, Cost.avg = 5580017.00, Cost.max = 5580017
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 50, Trials.avg = 50.0, Trials.max = 50
+Time.min = 1.91 sec., Time.avg = 1.91 sec., Time.max = 1.91 sec.
+Time.total = 20.00 sec.
+
+Cost = 9015314, Time = 17.51 sec. 
+
+Key Metrics:
+	ioCount:			 9000
+	algorithmRunningDuration:	 20000.848 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 9015314 (ms)
+	readDuration:			 9410490 (ms)
+	tapeBeltWear:			 17676538
+	tapeMotorWear:			 359
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

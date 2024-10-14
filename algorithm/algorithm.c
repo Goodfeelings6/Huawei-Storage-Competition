@@ -9,7 +9,7 @@
 // #define DEBUG_LEVEL 1
 // #define DEBUG_LEVEL 2
 
-#define INF 0x7FFFFF
+#define INF INT_MAX/200
 
 double MyGetTime(){ // 返回实际时间：秒
     struct timeval tv;
