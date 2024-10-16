@@ -18,45 +18,37 @@ double MyGetTime(){ // 返回实际时间：秒
 }
 // 设置需要调整的 LKH 的参数
 void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleStartTime){
-    if(matDimension <= 1752){
-        p->TimeSpan = 2;
+    if(matDimension <= 1002){ // 10,50,100,1000 
+        // 默认值
     }
-    else if(matDimension > 1752 && matDimension <= 6002){
+    else if(matDimension <= 2002){ // 2000
+        p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
-        p->Subgradient = 0;
-        p->TimeSpan = 2;
+        p->POPMUSIC_SampleSize = 20;
+        p->POPMUSIC_Solutions = 50;
     }
-    else if(matDimension > 6002 && matDimension <= 7002){ 
+    else if(matDimension <= 5002){ // 5000
+        p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
-        p->Subgradient = 0;
-        // p->SubproblemSize = matDimension + 1; // 即划分为两个子问题
-        p->TimeSpan = 2;
+        p->POPMUSIC_SampleSize = 20;
+        p->POPMUSIC_Solutions = 50;
     }
-    else if(matDimension > 7002 && matDimension <= 9002){ 
+    else{ // 10000
+        p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
-        p->Subgradient = 0;
-        // p->SubproblemSize = matDimension*2/3 + 1; // 即划分为三个子问题
-        p->TimeSpan = 1;
-    }
-    else { // matDimension > 9002
-        p->CandidateSetType = POPMUSIC;
-        p->POPMUSIC_InitialTour = 1;
-        p->Subgradient = 0;
-        // p->SubproblemSize = matDimension/2 + 1; // 即划分为四个子问题
-        p->TimeSpan = 1;
+        p->POPMUSIC_SampleSize = 20;
+        p->POPMUSIC_Solutions = 50;
     }
     p->Runs = 1;
     p->TraceLevel = 1;
-    p->TimeLimit = DBL_MAX; // 由总时间、分配给每个子问题的总时间、一定时间跨度内的改进值共同控制退出即可
-    p->TotalTimeLimit = 20 - 0.02; // 扣除后处理时间
-    p->ScheduleScoreInSecond = 1000;
+    p->TimeLimit = DBL_MAX; // 由总时间、一定时间跨度内的改进值共同控制退出即可
+    p->TotalTimeLimit = 400; // 最大允许运行时间
+    p->ScheduleScoreInSecond = 1;
     p->MoveType = 3;
-
-    p->POPMUSIC_SampleSize = 25;
-    p->POPMUSIC_Solutions = 25;
+    p->TimeSpan = 2;
 }
 
 // LKH 算法
@@ -410,13 +402,13 @@ int32_t NearestNeighbor(const InputParam *input, OutputParam *output){
 int32_t IOScheduleAlgorithm(const InputParam *input, OutputParam *output)
 {    
     // 使用 LKH 算法
-    return LKH(input, output);
+    // return LKH(input, output);
     // 使用最近邻贪心算法 
     // return NearestNeighbor(input, output);
     // 使用 Sort 算法
     // return Sort(input, output);
     // 使用 Scan 算法
-    // return Scan(input, output);
+    return Scan(input, output);
 }
 
 /**
