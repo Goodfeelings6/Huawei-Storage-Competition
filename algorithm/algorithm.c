@@ -402,13 +402,13 @@ int32_t NearestNeighbor(const InputParam *input, OutputParam *output){
 int32_t IOScheduleAlgorithm(const InputParam *input, OutputParam *output)
 {    
     // 使用 LKH 算法
-    // return LKH(input, output);
+    return LKH(input, output);
     // 使用最近邻贪心算法 
     // return NearestNeighbor(input, output);
     // 使用 Sort 算法
     // return Sort(input, output);
     // 使用 Scan 算法
-    return Scan(input, output);
+    // return Scan(input, output);
 }
 
 /**
