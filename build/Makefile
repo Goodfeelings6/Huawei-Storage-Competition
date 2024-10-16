@@ -214,30 +214,6 @@ LKH2_MIN/src/AddCandidate.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/AddCandidate.c.s
 .PHONY : LKH2_MIN/src/AddCandidate.c.s
 
-LKH2_MIN/src/AddExtraCandidates.o: LKH2_MIN/src/AddExtraCandidates.c.o
-.PHONY : LKH2_MIN/src/AddExtraCandidates.o
-
-# target to build an object file
-LKH2_MIN/src/AddExtraCandidates.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.o
-.PHONY : LKH2_MIN/src/AddExtraCandidates.c.o
-
-LKH2_MIN/src/AddExtraCandidates.i: LKH2_MIN/src/AddExtraCandidates.c.i
-.PHONY : LKH2_MIN/src/AddExtraCandidates.i
-
-# target to preprocess a source file
-LKH2_MIN/src/AddExtraCandidates.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.i
-.PHONY : LKH2_MIN/src/AddExtraCandidates.c.i
-
-LKH2_MIN/src/AddExtraCandidates.s: LKH2_MIN/src/AddExtraCandidates.c.s
-.PHONY : LKH2_MIN/src/AddExtraCandidates.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/AddExtraCandidates.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.s
-.PHONY : LKH2_MIN/src/AddExtraCandidates.c.s
-
 LKH2_MIN/src/AddTourCandidates.o: LKH2_MIN/src/AddTourCandidates.c.o
 .PHONY : LKH2_MIN/src/AddTourCandidates.o
 
@@ -285,30 +261,6 @@ LKH2_MIN/src/AdjustCandidateSet.s: LKH2_MIN/src/AdjustCandidateSet.c.s
 LKH2_MIN/src/AdjustCandidateSet.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustCandidateSet.c.s
 .PHONY : LKH2_MIN/src/AdjustCandidateSet.c.s
-
-LKH2_MIN/src/AdjustClusters.o: LKH2_MIN/src/AdjustClusters.c.o
-.PHONY : LKH2_MIN/src/AdjustClusters.o
-
-# target to build an object file
-LKH2_MIN/src/AdjustClusters.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.o
-.PHONY : LKH2_MIN/src/AdjustClusters.c.o
-
-LKH2_MIN/src/AdjustClusters.i: LKH2_MIN/src/AdjustClusters.c.i
-.PHONY : LKH2_MIN/src/AdjustClusters.i
-
-# target to preprocess a source file
-LKH2_MIN/src/AdjustClusters.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.i
-.PHONY : LKH2_MIN/src/AdjustClusters.c.i
-
-LKH2_MIN/src/AdjustClusters.s: LKH2_MIN/src/AdjustClusters.c.s
-.PHONY : LKH2_MIN/src/AdjustClusters.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/AdjustClusters.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.s
-.PHONY : LKH2_MIN/src/AdjustClusters.c.s
 
 LKH2_MIN/src/AllocateStructures.o: LKH2_MIN/src/AllocateStructures.c.o
 .PHONY : LKH2_MIN/src/AllocateStructures.o
@@ -574,30 +526,6 @@ LKH2_MIN/src/BridgeGain.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/BridgeGain.c.s
 .PHONY : LKH2_MIN/src/BridgeGain.c.s
 
-LKH2_MIN/src/BuildKDTree.o: LKH2_MIN/src/BuildKDTree.c.o
-.PHONY : LKH2_MIN/src/BuildKDTree.o
-
-# target to build an object file
-LKH2_MIN/src/BuildKDTree.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.o
-.PHONY : LKH2_MIN/src/BuildKDTree.c.o
-
-LKH2_MIN/src/BuildKDTree.i: LKH2_MIN/src/BuildKDTree.c.i
-.PHONY : LKH2_MIN/src/BuildKDTree.i
-
-# target to preprocess a source file
-LKH2_MIN/src/BuildKDTree.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.i
-.PHONY : LKH2_MIN/src/BuildKDTree.c.i
-
-LKH2_MIN/src/BuildKDTree.s: LKH2_MIN/src/BuildKDTree.c.s
-.PHONY : LKH2_MIN/src/BuildKDTree.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/BuildKDTree.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.s
-.PHONY : LKH2_MIN/src/BuildKDTree.c.s
-
 LKH2_MIN/src/C.o: LKH2_MIN/src/C.c.o
 .PHONY : LKH2_MIN/src/C.o
 
@@ -718,78 +646,6 @@ LKH2_MIN/src/CreateCandidateSet.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/CreateCandidateSet.c.s
 .PHONY : LKH2_MIN/src/CreateCandidateSet.c.s
 
-LKH2_MIN/src/CreateDelaunayCandidateSet.o: LKH2_MIN/src/CreateDelaunayCandidateSet.c.o
-.PHONY : LKH2_MIN/src/CreateDelaunayCandidateSet.o
-
-# target to build an object file
-LKH2_MIN/src/CreateDelaunayCandidateSet.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.o
-.PHONY : LKH2_MIN/src/CreateDelaunayCandidateSet.c.o
-
-LKH2_MIN/src/CreateDelaunayCandidateSet.i: LKH2_MIN/src/CreateDelaunayCandidateSet.c.i
-.PHONY : LKH2_MIN/src/CreateDelaunayCandidateSet.i
-
-# target to preprocess a source file
-LKH2_MIN/src/CreateDelaunayCandidateSet.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.i
-.PHONY : LKH2_MIN/src/CreateDelaunayCandidateSet.c.i
-
-LKH2_MIN/src/CreateDelaunayCandidateSet.s: LKH2_MIN/src/CreateDelaunayCandidateSet.c.s
-.PHONY : LKH2_MIN/src/CreateDelaunayCandidateSet.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/CreateDelaunayCandidateSet.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.s
-.PHONY : LKH2_MIN/src/CreateDelaunayCandidateSet.c.s
-
-LKH2_MIN/src/CreateNNCandidateSet.o: LKH2_MIN/src/CreateNNCandidateSet.c.o
-.PHONY : LKH2_MIN/src/CreateNNCandidateSet.o
-
-# target to build an object file
-LKH2_MIN/src/CreateNNCandidateSet.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.o
-.PHONY : LKH2_MIN/src/CreateNNCandidateSet.c.o
-
-LKH2_MIN/src/CreateNNCandidateSet.i: LKH2_MIN/src/CreateNNCandidateSet.c.i
-.PHONY : LKH2_MIN/src/CreateNNCandidateSet.i
-
-# target to preprocess a source file
-LKH2_MIN/src/CreateNNCandidateSet.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.i
-.PHONY : LKH2_MIN/src/CreateNNCandidateSet.c.i
-
-LKH2_MIN/src/CreateNNCandidateSet.s: LKH2_MIN/src/CreateNNCandidateSet.c.s
-.PHONY : LKH2_MIN/src/CreateNNCandidateSet.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/CreateNNCandidateSet.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.s
-.PHONY : LKH2_MIN/src/CreateNNCandidateSet.c.s
-
-LKH2_MIN/src/CreateQuadrantCandidateSet.o: LKH2_MIN/src/CreateQuadrantCandidateSet.c.o
-.PHONY : LKH2_MIN/src/CreateQuadrantCandidateSet.o
-
-# target to build an object file
-LKH2_MIN/src/CreateQuadrantCandidateSet.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.o
-.PHONY : LKH2_MIN/src/CreateQuadrantCandidateSet.c.o
-
-LKH2_MIN/src/CreateQuadrantCandidateSet.i: LKH2_MIN/src/CreateQuadrantCandidateSet.c.i
-.PHONY : LKH2_MIN/src/CreateQuadrantCandidateSet.i
-
-# target to preprocess a source file
-LKH2_MIN/src/CreateQuadrantCandidateSet.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.i
-.PHONY : LKH2_MIN/src/CreateQuadrantCandidateSet.c.i
-
-LKH2_MIN/src/CreateQuadrantCandidateSet.s: LKH2_MIN/src/CreateQuadrantCandidateSet.c.s
-.PHONY : LKH2_MIN/src/CreateQuadrantCandidateSet.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/CreateQuadrantCandidateSet.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.s
-.PHONY : LKH2_MIN/src/CreateQuadrantCandidateSet.c.s
-
 LKH2_MIN/src/Create_POPMUSIC_CandidateSet.o: LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.o
 .PHONY : LKH2_MIN/src/Create_POPMUSIC_CandidateSet.o
 
@@ -814,30 +670,6 @@ LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.s
 .PHONY : LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.s
 
-LKH2_MIN/src/Delaunay.o: LKH2_MIN/src/Delaunay.c.o
-.PHONY : LKH2_MIN/src/Delaunay.o
-
-# target to build an object file
-LKH2_MIN/src/Delaunay.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.o
-.PHONY : LKH2_MIN/src/Delaunay.c.o
-
-LKH2_MIN/src/Delaunay.i: LKH2_MIN/src/Delaunay.c.i
-.PHONY : LKH2_MIN/src/Delaunay.i
-
-# target to preprocess a source file
-LKH2_MIN/src/Delaunay.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.i
-.PHONY : LKH2_MIN/src/Delaunay.c.i
-
-LKH2_MIN/src/Delaunay.s: LKH2_MIN/src/Delaunay.c.s
-.PHONY : LKH2_MIN/src/Delaunay.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/Delaunay.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.s
-.PHONY : LKH2_MIN/src/Delaunay.c.s
-
 LKH2_MIN/src/Distance.o: LKH2_MIN/src/Distance.c.o
 .PHONY : LKH2_MIN/src/Distance.o
 
@@ -861,30 +693,6 @@ LKH2_MIN/src/Distance.s: LKH2_MIN/src/Distance.c.s
 LKH2_MIN/src/Distance.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.s
 .PHONY : LKH2_MIN/src/Distance.c.s
-
-LKH2_MIN/src/Distance_SPECIAL.o: LKH2_MIN/src/Distance_SPECIAL.c.o
-.PHONY : LKH2_MIN/src/Distance_SPECIAL.o
-
-# target to build an object file
-LKH2_MIN/src/Distance_SPECIAL.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.o
-.PHONY : LKH2_MIN/src/Distance_SPECIAL.c.o
-
-LKH2_MIN/src/Distance_SPECIAL.i: LKH2_MIN/src/Distance_SPECIAL.c.i
-.PHONY : LKH2_MIN/src/Distance_SPECIAL.i
-
-# target to preprocess a source file
-LKH2_MIN/src/Distance_SPECIAL.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.i
-.PHONY : LKH2_MIN/src/Distance_SPECIAL.c.i
-
-LKH2_MIN/src/Distance_SPECIAL.s: LKH2_MIN/src/Distance_SPECIAL.c.s
-.PHONY : LKH2_MIN/src/Distance_SPECIAL.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/Distance_SPECIAL.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.s
-.PHONY : LKH2_MIN/src/Distance_SPECIAL.c.s
 
 LKH2_MIN/src/ERXT.o: LKH2_MIN/src/ERXT.c.o
 .PHONY : LKH2_MIN/src/ERXT.o
@@ -1174,54 +982,6 @@ LKH2_MIN/src/GenerateCandidates.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/GenerateCandidates.c.s
 .PHONY : LKH2_MIN/src/GenerateCandidates.c.s
 
-LKH2_MIN/src/Genetic.o: LKH2_MIN/src/Genetic.c.o
-.PHONY : LKH2_MIN/src/Genetic.o
-
-# target to build an object file
-LKH2_MIN/src/Genetic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.o
-.PHONY : LKH2_MIN/src/Genetic.c.o
-
-LKH2_MIN/src/Genetic.i: LKH2_MIN/src/Genetic.c.i
-.PHONY : LKH2_MIN/src/Genetic.i
-
-# target to preprocess a source file
-LKH2_MIN/src/Genetic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.i
-.PHONY : LKH2_MIN/src/Genetic.c.i
-
-LKH2_MIN/src/Genetic.s: LKH2_MIN/src/Genetic.c.s
-.PHONY : LKH2_MIN/src/Genetic.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/Genetic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.s
-.PHONY : LKH2_MIN/src/Genetic.c.s
-
-LKH2_MIN/src/GeoConversion.o: LKH2_MIN/src/GeoConversion.c.o
-.PHONY : LKH2_MIN/src/GeoConversion.o
-
-# target to build an object file
-LKH2_MIN/src/GeoConversion.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.o
-.PHONY : LKH2_MIN/src/GeoConversion.c.o
-
-LKH2_MIN/src/GeoConversion.i: LKH2_MIN/src/GeoConversion.c.i
-.PHONY : LKH2_MIN/src/GeoConversion.i
-
-# target to preprocess a source file
-LKH2_MIN/src/GeoConversion.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.i
-.PHONY : LKH2_MIN/src/GeoConversion.c.i
-
-LKH2_MIN/src/GeoConversion.s: LKH2_MIN/src/GeoConversion.c.s
-.PHONY : LKH2_MIN/src/GeoConversion.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/GeoConversion.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.s
-.PHONY : LKH2_MIN/src/GeoConversion.c.s
-
 LKH2_MIN/src/GetTime.o: LKH2_MIN/src/GetTime.c.o
 .PHONY : LKH2_MIN/src/GetTime.o
 
@@ -1245,30 +1005,6 @@ LKH2_MIN/src/GetTime.s: LKH2_MIN/src/GetTime.c.s
 LKH2_MIN/src/GetTime.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/GetTime.c.s
 .PHONY : LKH2_MIN/src/GetTime.c.s
-
-LKH2_MIN/src/GreedyTour.o: LKH2_MIN/src/GreedyTour.c.o
-.PHONY : LKH2_MIN/src/GreedyTour.o
-
-# target to build an object file
-LKH2_MIN/src/GreedyTour.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.o
-.PHONY : LKH2_MIN/src/GreedyTour.c.o
-
-LKH2_MIN/src/GreedyTour.i: LKH2_MIN/src/GreedyTour.c.i
-.PHONY : LKH2_MIN/src/GreedyTour.i
-
-# target to preprocess a source file
-LKH2_MIN/src/GreedyTour.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.i
-.PHONY : LKH2_MIN/src/GreedyTour.c.i
-
-LKH2_MIN/src/GreedyTour.s: LKH2_MIN/src/GreedyTour.c.s
-.PHONY : LKH2_MIN/src/GreedyTour.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/GreedyTour.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.s
-.PHONY : LKH2_MIN/src/GreedyTour.c.s
 
 LKH2_MIN/src/Hashing.o: LKH2_MIN/src/Hashing.c.o
 .PHONY : LKH2_MIN/src/Hashing.o
@@ -1918,150 +1654,6 @@ LKH2_MIN/src/Random.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/Random.c.s
 .PHONY : LKH2_MIN/src/Random.c.s
 
-LKH2_MIN/src/ReadCandidates.o: LKH2_MIN/src/ReadCandidates.c.o
-.PHONY : LKH2_MIN/src/ReadCandidates.o
-
-# target to build an object file
-LKH2_MIN/src/ReadCandidates.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.o
-.PHONY : LKH2_MIN/src/ReadCandidates.c.o
-
-LKH2_MIN/src/ReadCandidates.i: LKH2_MIN/src/ReadCandidates.c.i
-.PHONY : LKH2_MIN/src/ReadCandidates.i
-
-# target to preprocess a source file
-LKH2_MIN/src/ReadCandidates.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.i
-.PHONY : LKH2_MIN/src/ReadCandidates.c.i
-
-LKH2_MIN/src/ReadCandidates.s: LKH2_MIN/src/ReadCandidates.c.s
-.PHONY : LKH2_MIN/src/ReadCandidates.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/ReadCandidates.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.s
-.PHONY : LKH2_MIN/src/ReadCandidates.c.s
-
-LKH2_MIN/src/ReadEdges.o: LKH2_MIN/src/ReadEdges.c.o
-.PHONY : LKH2_MIN/src/ReadEdges.o
-
-# target to build an object file
-LKH2_MIN/src/ReadEdges.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.o
-.PHONY : LKH2_MIN/src/ReadEdges.c.o
-
-LKH2_MIN/src/ReadEdges.i: LKH2_MIN/src/ReadEdges.c.i
-.PHONY : LKH2_MIN/src/ReadEdges.i
-
-# target to preprocess a source file
-LKH2_MIN/src/ReadEdges.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.i
-.PHONY : LKH2_MIN/src/ReadEdges.c.i
-
-LKH2_MIN/src/ReadEdges.s: LKH2_MIN/src/ReadEdges.c.s
-.PHONY : LKH2_MIN/src/ReadEdges.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/ReadEdges.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.s
-.PHONY : LKH2_MIN/src/ReadEdges.c.s
-
-LKH2_MIN/src/ReadLine.o: LKH2_MIN/src/ReadLine.c.o
-.PHONY : LKH2_MIN/src/ReadLine.o
-
-# target to build an object file
-LKH2_MIN/src/ReadLine.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.o
-.PHONY : LKH2_MIN/src/ReadLine.c.o
-
-LKH2_MIN/src/ReadLine.i: LKH2_MIN/src/ReadLine.c.i
-.PHONY : LKH2_MIN/src/ReadLine.i
-
-# target to preprocess a source file
-LKH2_MIN/src/ReadLine.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.i
-.PHONY : LKH2_MIN/src/ReadLine.c.i
-
-LKH2_MIN/src/ReadLine.s: LKH2_MIN/src/ReadLine.c.s
-.PHONY : LKH2_MIN/src/ReadLine.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/ReadLine.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.s
-.PHONY : LKH2_MIN/src/ReadLine.c.s
-
-LKH2_MIN/src/ReadParameters.o: LKH2_MIN/src/ReadParameters.c.o
-.PHONY : LKH2_MIN/src/ReadParameters.o
-
-# target to build an object file
-LKH2_MIN/src/ReadParameters.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.o
-.PHONY : LKH2_MIN/src/ReadParameters.c.o
-
-LKH2_MIN/src/ReadParameters.i: LKH2_MIN/src/ReadParameters.c.i
-.PHONY : LKH2_MIN/src/ReadParameters.i
-
-# target to preprocess a source file
-LKH2_MIN/src/ReadParameters.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.i
-.PHONY : LKH2_MIN/src/ReadParameters.c.i
-
-LKH2_MIN/src/ReadParameters.s: LKH2_MIN/src/ReadParameters.c.s
-.PHONY : LKH2_MIN/src/ReadParameters.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/ReadParameters.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.s
-.PHONY : LKH2_MIN/src/ReadParameters.c.s
-
-LKH2_MIN/src/ReadPenalties.o: LKH2_MIN/src/ReadPenalties.c.o
-.PHONY : LKH2_MIN/src/ReadPenalties.o
-
-# target to build an object file
-LKH2_MIN/src/ReadPenalties.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.o
-.PHONY : LKH2_MIN/src/ReadPenalties.c.o
-
-LKH2_MIN/src/ReadPenalties.i: LKH2_MIN/src/ReadPenalties.c.i
-.PHONY : LKH2_MIN/src/ReadPenalties.i
-
-# target to preprocess a source file
-LKH2_MIN/src/ReadPenalties.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.i
-.PHONY : LKH2_MIN/src/ReadPenalties.c.i
-
-LKH2_MIN/src/ReadPenalties.s: LKH2_MIN/src/ReadPenalties.c.s
-.PHONY : LKH2_MIN/src/ReadPenalties.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/ReadPenalties.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.s
-.PHONY : LKH2_MIN/src/ReadPenalties.c.s
-
-LKH2_MIN/src/ReadProblem.o: LKH2_MIN/src/ReadProblem.c.o
-.PHONY : LKH2_MIN/src/ReadProblem.o
-
-# target to build an object file
-LKH2_MIN/src/ReadProblem.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.o
-.PHONY : LKH2_MIN/src/ReadProblem.c.o
-
-LKH2_MIN/src/ReadProblem.i: LKH2_MIN/src/ReadProblem.c.i
-.PHONY : LKH2_MIN/src/ReadProblem.i
-
-# target to preprocess a source file
-LKH2_MIN/src/ReadProblem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.i
-.PHONY : LKH2_MIN/src/ReadProblem.c.i
-
-LKH2_MIN/src/ReadProblem.s: LKH2_MIN/src/ReadProblem.c.s
-.PHONY : LKH2_MIN/src/ReadProblem.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/ReadProblem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.s
-.PHONY : LKH2_MIN/src/ReadProblem.c.s
-
 LKH2_MIN/src/RecordBestTour.o: LKH2_MIN/src/RecordBestTour.c.o
 .PHONY : LKH2_MIN/src/RecordBestTour.o
 
@@ -2182,30 +1774,6 @@ LKH2_MIN/src/RestoreTour.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/RestoreTour.c.s
 .PHONY : LKH2_MIN/src/RestoreTour.c.s
 
-LKH2_MIN/src/SFCTour.o: LKH2_MIN/src/SFCTour.c.o
-.PHONY : LKH2_MIN/src/SFCTour.o
-
-# target to build an object file
-LKH2_MIN/src/SFCTour.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.o
-.PHONY : LKH2_MIN/src/SFCTour.c.o
-
-LKH2_MIN/src/SFCTour.i: LKH2_MIN/src/SFCTour.c.i
-.PHONY : LKH2_MIN/src/SFCTour.i
-
-# target to preprocess a source file
-LKH2_MIN/src/SFCTour.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.i
-.PHONY : LKH2_MIN/src/SFCTour.c.i
-
-LKH2_MIN/src/SFCTour.s: LKH2_MIN/src/SFCTour.c.s
-.PHONY : LKH2_MIN/src/SFCTour.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/SFCTour.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.s
-.PHONY : LKH2_MIN/src/SFCTour.c.s
-
 LKH2_MIN/src/SegmentSize.o: LKH2_MIN/src/SegmentSize.c.o
 .PHONY : LKH2_MIN/src/SegmentSize.o
 
@@ -2253,246 +1821,6 @@ LKH2_MIN/src/Sequence.s: LKH2_MIN/src/Sequence.c.s
 LKH2_MIN/src/Sequence.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/Sequence.c.s
 .PHONY : LKH2_MIN/src/Sequence.c.s
-
-LKH2_MIN/src/SolveCompressedSubproblem.o: LKH2_MIN/src/SolveCompressedSubproblem.c.o
-.PHONY : LKH2_MIN/src/SolveCompressedSubproblem.o
-
-# target to build an object file
-LKH2_MIN/src/SolveCompressedSubproblem.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.o
-.PHONY : LKH2_MIN/src/SolveCompressedSubproblem.c.o
-
-LKH2_MIN/src/SolveCompressedSubproblem.i: LKH2_MIN/src/SolveCompressedSubproblem.c.i
-.PHONY : LKH2_MIN/src/SolveCompressedSubproblem.i
-
-# target to preprocess a source file
-LKH2_MIN/src/SolveCompressedSubproblem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.i
-.PHONY : LKH2_MIN/src/SolveCompressedSubproblem.c.i
-
-LKH2_MIN/src/SolveCompressedSubproblem.s: LKH2_MIN/src/SolveCompressedSubproblem.c.s
-.PHONY : LKH2_MIN/src/SolveCompressedSubproblem.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/SolveCompressedSubproblem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.s
-.PHONY : LKH2_MIN/src/SolveCompressedSubproblem.c.s
-
-LKH2_MIN/src/SolveDelaunaySubproblems.o: LKH2_MIN/src/SolveDelaunaySubproblems.c.o
-.PHONY : LKH2_MIN/src/SolveDelaunaySubproblems.o
-
-# target to build an object file
-LKH2_MIN/src/SolveDelaunaySubproblems.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.o
-.PHONY : LKH2_MIN/src/SolveDelaunaySubproblems.c.o
-
-LKH2_MIN/src/SolveDelaunaySubproblems.i: LKH2_MIN/src/SolveDelaunaySubproblems.c.i
-.PHONY : LKH2_MIN/src/SolveDelaunaySubproblems.i
-
-# target to preprocess a source file
-LKH2_MIN/src/SolveDelaunaySubproblems.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.i
-.PHONY : LKH2_MIN/src/SolveDelaunaySubproblems.c.i
-
-LKH2_MIN/src/SolveDelaunaySubproblems.s: LKH2_MIN/src/SolveDelaunaySubproblems.c.s
-.PHONY : LKH2_MIN/src/SolveDelaunaySubproblems.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/SolveDelaunaySubproblems.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.s
-.PHONY : LKH2_MIN/src/SolveDelaunaySubproblems.c.s
-
-LKH2_MIN/src/SolveKCenterSubproblems.o: LKH2_MIN/src/SolveKCenterSubproblems.c.o
-.PHONY : LKH2_MIN/src/SolveKCenterSubproblems.o
-
-# target to build an object file
-LKH2_MIN/src/SolveKCenterSubproblems.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.o
-.PHONY : LKH2_MIN/src/SolveKCenterSubproblems.c.o
-
-LKH2_MIN/src/SolveKCenterSubproblems.i: LKH2_MIN/src/SolveKCenterSubproblems.c.i
-.PHONY : LKH2_MIN/src/SolveKCenterSubproblems.i
-
-# target to preprocess a source file
-LKH2_MIN/src/SolveKCenterSubproblems.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.i
-.PHONY : LKH2_MIN/src/SolveKCenterSubproblems.c.i
-
-LKH2_MIN/src/SolveKCenterSubproblems.s: LKH2_MIN/src/SolveKCenterSubproblems.c.s
-.PHONY : LKH2_MIN/src/SolveKCenterSubproblems.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/SolveKCenterSubproblems.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.s
-.PHONY : LKH2_MIN/src/SolveKCenterSubproblems.c.s
-
-LKH2_MIN/src/SolveKMeansSubproblems.o: LKH2_MIN/src/SolveKMeansSubproblems.c.o
-.PHONY : LKH2_MIN/src/SolveKMeansSubproblems.o
-
-# target to build an object file
-LKH2_MIN/src/SolveKMeansSubproblems.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.o
-.PHONY : LKH2_MIN/src/SolveKMeansSubproblems.c.o
-
-LKH2_MIN/src/SolveKMeansSubproblems.i: LKH2_MIN/src/SolveKMeansSubproblems.c.i
-.PHONY : LKH2_MIN/src/SolveKMeansSubproblems.i
-
-# target to preprocess a source file
-LKH2_MIN/src/SolveKMeansSubproblems.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.i
-.PHONY : LKH2_MIN/src/SolveKMeansSubproblems.c.i
-
-LKH2_MIN/src/SolveKMeansSubproblems.s: LKH2_MIN/src/SolveKMeansSubproblems.c.s
-.PHONY : LKH2_MIN/src/SolveKMeansSubproblems.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/SolveKMeansSubproblems.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.s
-.PHONY : LKH2_MIN/src/SolveKMeansSubproblems.c.s
-
-LKH2_MIN/src/SolveKarpSubproblems.o: LKH2_MIN/src/SolveKarpSubproblems.c.o
-.PHONY : LKH2_MIN/src/SolveKarpSubproblems.o
-
-# target to build an object file
-LKH2_MIN/src/SolveKarpSubproblems.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.o
-.PHONY : LKH2_MIN/src/SolveKarpSubproblems.c.o
-
-LKH2_MIN/src/SolveKarpSubproblems.i: LKH2_MIN/src/SolveKarpSubproblems.c.i
-.PHONY : LKH2_MIN/src/SolveKarpSubproblems.i
-
-# target to preprocess a source file
-LKH2_MIN/src/SolveKarpSubproblems.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.i
-.PHONY : LKH2_MIN/src/SolveKarpSubproblems.c.i
-
-LKH2_MIN/src/SolveKarpSubproblems.s: LKH2_MIN/src/SolveKarpSubproblems.c.s
-.PHONY : LKH2_MIN/src/SolveKarpSubproblems.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/SolveKarpSubproblems.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.s
-.PHONY : LKH2_MIN/src/SolveKarpSubproblems.c.s
-
-LKH2_MIN/src/SolveRoheSubproblems.o: LKH2_MIN/src/SolveRoheSubproblems.c.o
-.PHONY : LKH2_MIN/src/SolveRoheSubproblems.o
-
-# target to build an object file
-LKH2_MIN/src/SolveRoheSubproblems.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.o
-.PHONY : LKH2_MIN/src/SolveRoheSubproblems.c.o
-
-LKH2_MIN/src/SolveRoheSubproblems.i: LKH2_MIN/src/SolveRoheSubproblems.c.i
-.PHONY : LKH2_MIN/src/SolveRoheSubproblems.i
-
-# target to preprocess a source file
-LKH2_MIN/src/SolveRoheSubproblems.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.i
-.PHONY : LKH2_MIN/src/SolveRoheSubproblems.c.i
-
-LKH2_MIN/src/SolveRoheSubproblems.s: LKH2_MIN/src/SolveRoheSubproblems.c.s
-.PHONY : LKH2_MIN/src/SolveRoheSubproblems.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/SolveRoheSubproblems.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.s
-.PHONY : LKH2_MIN/src/SolveRoheSubproblems.c.s
-
-LKH2_MIN/src/SolveSFCSubproblems.o: LKH2_MIN/src/SolveSFCSubproblems.c.o
-.PHONY : LKH2_MIN/src/SolveSFCSubproblems.o
-
-# target to build an object file
-LKH2_MIN/src/SolveSFCSubproblems.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.o
-.PHONY : LKH2_MIN/src/SolveSFCSubproblems.c.o
-
-LKH2_MIN/src/SolveSFCSubproblems.i: LKH2_MIN/src/SolveSFCSubproblems.c.i
-.PHONY : LKH2_MIN/src/SolveSFCSubproblems.i
-
-# target to preprocess a source file
-LKH2_MIN/src/SolveSFCSubproblems.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.i
-.PHONY : LKH2_MIN/src/SolveSFCSubproblems.c.i
-
-LKH2_MIN/src/SolveSFCSubproblems.s: LKH2_MIN/src/SolveSFCSubproblems.c.s
-.PHONY : LKH2_MIN/src/SolveSFCSubproblems.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/SolveSFCSubproblems.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.s
-.PHONY : LKH2_MIN/src/SolveSFCSubproblems.c.s
-
-LKH2_MIN/src/SolveSubproblem.o: LKH2_MIN/src/SolveSubproblem.c.o
-.PHONY : LKH2_MIN/src/SolveSubproblem.o
-
-# target to build an object file
-LKH2_MIN/src/SolveSubproblem.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.o
-.PHONY : LKH2_MIN/src/SolveSubproblem.c.o
-
-LKH2_MIN/src/SolveSubproblem.i: LKH2_MIN/src/SolveSubproblem.c.i
-.PHONY : LKH2_MIN/src/SolveSubproblem.i
-
-# target to preprocess a source file
-LKH2_MIN/src/SolveSubproblem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.i
-.PHONY : LKH2_MIN/src/SolveSubproblem.c.i
-
-LKH2_MIN/src/SolveSubproblem.s: LKH2_MIN/src/SolveSubproblem.c.s
-.PHONY : LKH2_MIN/src/SolveSubproblem.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/SolveSubproblem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.s
-.PHONY : LKH2_MIN/src/SolveSubproblem.c.s
-
-LKH2_MIN/src/SolveSubproblemBorderProblems.o: LKH2_MIN/src/SolveSubproblemBorderProblems.c.o
-.PHONY : LKH2_MIN/src/SolveSubproblemBorderProblems.o
-
-# target to build an object file
-LKH2_MIN/src/SolveSubproblemBorderProblems.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.o
-.PHONY : LKH2_MIN/src/SolveSubproblemBorderProblems.c.o
-
-LKH2_MIN/src/SolveSubproblemBorderProblems.i: LKH2_MIN/src/SolveSubproblemBorderProblems.c.i
-.PHONY : LKH2_MIN/src/SolveSubproblemBorderProblems.i
-
-# target to preprocess a source file
-LKH2_MIN/src/SolveSubproblemBorderProblems.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.i
-.PHONY : LKH2_MIN/src/SolveSubproblemBorderProblems.c.i
-
-LKH2_MIN/src/SolveSubproblemBorderProblems.s: LKH2_MIN/src/SolveSubproblemBorderProblems.c.s
-.PHONY : LKH2_MIN/src/SolveSubproblemBorderProblems.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/SolveSubproblemBorderProblems.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.s
-.PHONY : LKH2_MIN/src/SolveSubproblemBorderProblems.c.s
-
-LKH2_MIN/src/SolveTourSegmentSubproblems.o: LKH2_MIN/src/SolveTourSegmentSubproblems.c.o
-.PHONY : LKH2_MIN/src/SolveTourSegmentSubproblems.o
-
-# target to build an object file
-LKH2_MIN/src/SolveTourSegmentSubproblems.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.o
-.PHONY : LKH2_MIN/src/SolveTourSegmentSubproblems.c.o
-
-LKH2_MIN/src/SolveTourSegmentSubproblems.i: LKH2_MIN/src/SolveTourSegmentSubproblems.c.i
-.PHONY : LKH2_MIN/src/SolveTourSegmentSubproblems.i
-
-# target to preprocess a source file
-LKH2_MIN/src/SolveTourSegmentSubproblems.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.i
-.PHONY : LKH2_MIN/src/SolveTourSegmentSubproblems.c.i
-
-LKH2_MIN/src/SolveTourSegmentSubproblems.s: LKH2_MIN/src/SolveTourSegmentSubproblems.c.s
-.PHONY : LKH2_MIN/src/SolveTourSegmentSubproblems.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/SolveTourSegmentSubproblems.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.s
-.PHONY : LKH2_MIN/src/SolveTourSegmentSubproblems.c.s
 
 LKH2_MIN/src/Statistics.o: LKH2_MIN/src/Statistics.c.o
 .PHONY : LKH2_MIN/src/Statistics.o
@@ -2590,78 +1918,6 @@ LKH2_MIN/src/TrimCandidateSet.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/TrimCandidateSet.c.s
 .PHONY : LKH2_MIN/src/TrimCandidateSet.c.s
 
-LKH2_MIN/src/WriteCandidates.o: LKH2_MIN/src/WriteCandidates.c.o
-.PHONY : LKH2_MIN/src/WriteCandidates.o
-
-# target to build an object file
-LKH2_MIN/src/WriteCandidates.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.o
-.PHONY : LKH2_MIN/src/WriteCandidates.c.o
-
-LKH2_MIN/src/WriteCandidates.i: LKH2_MIN/src/WriteCandidates.c.i
-.PHONY : LKH2_MIN/src/WriteCandidates.i
-
-# target to preprocess a source file
-LKH2_MIN/src/WriteCandidates.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.i
-.PHONY : LKH2_MIN/src/WriteCandidates.c.i
-
-LKH2_MIN/src/WriteCandidates.s: LKH2_MIN/src/WriteCandidates.c.s
-.PHONY : LKH2_MIN/src/WriteCandidates.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/WriteCandidates.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.s
-.PHONY : LKH2_MIN/src/WriteCandidates.c.s
-
-LKH2_MIN/src/WritePenalties.o: LKH2_MIN/src/WritePenalties.c.o
-.PHONY : LKH2_MIN/src/WritePenalties.o
-
-# target to build an object file
-LKH2_MIN/src/WritePenalties.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.o
-.PHONY : LKH2_MIN/src/WritePenalties.c.o
-
-LKH2_MIN/src/WritePenalties.i: LKH2_MIN/src/WritePenalties.c.i
-.PHONY : LKH2_MIN/src/WritePenalties.i
-
-# target to preprocess a source file
-LKH2_MIN/src/WritePenalties.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.i
-.PHONY : LKH2_MIN/src/WritePenalties.c.i
-
-LKH2_MIN/src/WritePenalties.s: LKH2_MIN/src/WritePenalties.c.s
-.PHONY : LKH2_MIN/src/WritePenalties.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/WritePenalties.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.s
-.PHONY : LKH2_MIN/src/WritePenalties.c.s
-
-LKH2_MIN/src/WriteTour.o: LKH2_MIN/src/WriteTour.c.o
-.PHONY : LKH2_MIN/src/WriteTour.o
-
-# target to build an object file
-LKH2_MIN/src/WriteTour.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.o
-.PHONY : LKH2_MIN/src/WriteTour.c.o
-
-LKH2_MIN/src/WriteTour.i: LKH2_MIN/src/WriteTour.c.i
-.PHONY : LKH2_MIN/src/WriteTour.i
-
-# target to preprocess a source file
-LKH2_MIN/src/WriteTour.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.i
-.PHONY : LKH2_MIN/src/WriteTour.c.i
-
-LKH2_MIN/src/WriteTour.s: LKH2_MIN/src/WriteTour.c.s
-.PHONY : LKH2_MIN/src/WriteTour.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/WriteTour.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.s
-.PHONY : LKH2_MIN/src/WriteTour.c.s
-
 LKH2_MIN/src/eprintf.o: LKH2_MIN/src/eprintf.c.o
 .PHONY : LKH2_MIN/src/eprintf.o
 
@@ -2685,30 +1941,6 @@ LKH2_MIN/src/eprintf.s: LKH2_MIN/src/eprintf.c.s
 LKH2_MIN/src/eprintf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/eprintf.c.s
 .PHONY : LKH2_MIN/src/eprintf.c.s
-
-LKH2_MIN/src/fscanint.o: LKH2_MIN/src/fscanint.c.o
-.PHONY : LKH2_MIN/src/fscanint.o
-
-# target to build an object file
-LKH2_MIN/src/fscanint.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.o
-.PHONY : LKH2_MIN/src/fscanint.c.o
-
-LKH2_MIN/src/fscanint.i: LKH2_MIN/src/fscanint.c.i
-.PHONY : LKH2_MIN/src/fscanint.i
-
-# target to preprocess a source file
-LKH2_MIN/src/fscanint.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.i
-.PHONY : LKH2_MIN/src/fscanint.c.i
-
-LKH2_MIN/src/fscanint.s: LKH2_MIN/src/fscanint.c.s
-.PHONY : LKH2_MIN/src/fscanint.s
-
-# target to generate assembly for a file
-LKH2_MIN/src/fscanint.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.s
-.PHONY : LKH2_MIN/src/fscanint.c.s
 
 LKH2_MIN/src/gpx.o: LKH2_MIN/src/gpx.c.o
 .PHONY : LKH2_MIN/src/gpx.o
@@ -2825,18 +2057,12 @@ help:
 	@echo "... LKH2_MIN/src/AddCandidate.o"
 	@echo "... LKH2_MIN/src/AddCandidate.i"
 	@echo "... LKH2_MIN/src/AddCandidate.s"
-	@echo "... LKH2_MIN/src/AddExtraCandidates.o"
-	@echo "... LKH2_MIN/src/AddExtraCandidates.i"
-	@echo "... LKH2_MIN/src/AddExtraCandidates.s"
 	@echo "... LKH2_MIN/src/AddTourCandidates.o"
 	@echo "... LKH2_MIN/src/AddTourCandidates.i"
 	@echo "... LKH2_MIN/src/AddTourCandidates.s"
 	@echo "... LKH2_MIN/src/AdjustCandidateSet.o"
 	@echo "... LKH2_MIN/src/AdjustCandidateSet.i"
 	@echo "... LKH2_MIN/src/AdjustCandidateSet.s"
-	@echo "... LKH2_MIN/src/AdjustClusters.o"
-	@echo "... LKH2_MIN/src/AdjustClusters.i"
-	@echo "... LKH2_MIN/src/AdjustClusters.s"
 	@echo "... LKH2_MIN/src/AllocateStructures.o"
 	@echo "... LKH2_MIN/src/AllocateStructures.i"
 	@echo "... LKH2_MIN/src/AllocateStructures.s"
@@ -2870,9 +2096,6 @@ help:
 	@echo "... LKH2_MIN/src/BridgeGain.o"
 	@echo "... LKH2_MIN/src/BridgeGain.i"
 	@echo "... LKH2_MIN/src/BridgeGain.s"
-	@echo "... LKH2_MIN/src/BuildKDTree.o"
-	@echo "... LKH2_MIN/src/BuildKDTree.i"
-	@echo "... LKH2_MIN/src/BuildKDTree.s"
 	@echo "... LKH2_MIN/src/C.o"
 	@echo "... LKH2_MIN/src/C.i"
 	@echo "... LKH2_MIN/src/C.s"
@@ -2888,27 +2111,12 @@ help:
 	@echo "... LKH2_MIN/src/CreateCandidateSet.o"
 	@echo "... LKH2_MIN/src/CreateCandidateSet.i"
 	@echo "... LKH2_MIN/src/CreateCandidateSet.s"
-	@echo "... LKH2_MIN/src/CreateDelaunayCandidateSet.o"
-	@echo "... LKH2_MIN/src/CreateDelaunayCandidateSet.i"
-	@echo "... LKH2_MIN/src/CreateDelaunayCandidateSet.s"
-	@echo "... LKH2_MIN/src/CreateNNCandidateSet.o"
-	@echo "... LKH2_MIN/src/CreateNNCandidateSet.i"
-	@echo "... LKH2_MIN/src/CreateNNCandidateSet.s"
-	@echo "... LKH2_MIN/src/CreateQuadrantCandidateSet.o"
-	@echo "... LKH2_MIN/src/CreateQuadrantCandidateSet.i"
-	@echo "... LKH2_MIN/src/CreateQuadrantCandidateSet.s"
 	@echo "... LKH2_MIN/src/Create_POPMUSIC_CandidateSet.o"
 	@echo "... LKH2_MIN/src/Create_POPMUSIC_CandidateSet.i"
 	@echo "... LKH2_MIN/src/Create_POPMUSIC_CandidateSet.s"
-	@echo "... LKH2_MIN/src/Delaunay.o"
-	@echo "... LKH2_MIN/src/Delaunay.i"
-	@echo "... LKH2_MIN/src/Delaunay.s"
 	@echo "... LKH2_MIN/src/Distance.o"
 	@echo "... LKH2_MIN/src/Distance.i"
 	@echo "... LKH2_MIN/src/Distance.s"
-	@echo "... LKH2_MIN/src/Distance_SPECIAL.o"
-	@echo "... LKH2_MIN/src/Distance_SPECIAL.i"
-	@echo "... LKH2_MIN/src/Distance_SPECIAL.s"
 	@echo "... LKH2_MIN/src/ERXT.o"
 	@echo "... LKH2_MIN/src/ERXT.i"
 	@echo "... LKH2_MIN/src/ERXT.s"
@@ -2945,18 +2153,9 @@ help:
 	@echo "... LKH2_MIN/src/GenerateCandidates.o"
 	@echo "... LKH2_MIN/src/GenerateCandidates.i"
 	@echo "... LKH2_MIN/src/GenerateCandidates.s"
-	@echo "... LKH2_MIN/src/Genetic.o"
-	@echo "... LKH2_MIN/src/Genetic.i"
-	@echo "... LKH2_MIN/src/Genetic.s"
-	@echo "... LKH2_MIN/src/GeoConversion.o"
-	@echo "... LKH2_MIN/src/GeoConversion.i"
-	@echo "... LKH2_MIN/src/GeoConversion.s"
 	@echo "... LKH2_MIN/src/GetTime.o"
 	@echo "... LKH2_MIN/src/GetTime.i"
 	@echo "... LKH2_MIN/src/GetTime.s"
-	@echo "... LKH2_MIN/src/GreedyTour.o"
-	@echo "... LKH2_MIN/src/GreedyTour.i"
-	@echo "... LKH2_MIN/src/GreedyTour.s"
 	@echo "... LKH2_MIN/src/Hashing.o"
 	@echo "... LKH2_MIN/src/Hashing.i"
 	@echo "... LKH2_MIN/src/Hashing.s"
@@ -3038,24 +2237,6 @@ help:
 	@echo "... LKH2_MIN/src/Random.o"
 	@echo "... LKH2_MIN/src/Random.i"
 	@echo "... LKH2_MIN/src/Random.s"
-	@echo "... LKH2_MIN/src/ReadCandidates.o"
-	@echo "... LKH2_MIN/src/ReadCandidates.i"
-	@echo "... LKH2_MIN/src/ReadCandidates.s"
-	@echo "... LKH2_MIN/src/ReadEdges.o"
-	@echo "... LKH2_MIN/src/ReadEdges.i"
-	@echo "... LKH2_MIN/src/ReadEdges.s"
-	@echo "... LKH2_MIN/src/ReadLine.o"
-	@echo "... LKH2_MIN/src/ReadLine.i"
-	@echo "... LKH2_MIN/src/ReadLine.s"
-	@echo "... LKH2_MIN/src/ReadParameters.o"
-	@echo "... LKH2_MIN/src/ReadParameters.i"
-	@echo "... LKH2_MIN/src/ReadParameters.s"
-	@echo "... LKH2_MIN/src/ReadPenalties.o"
-	@echo "... LKH2_MIN/src/ReadPenalties.i"
-	@echo "... LKH2_MIN/src/ReadPenalties.s"
-	@echo "... LKH2_MIN/src/ReadProblem.o"
-	@echo "... LKH2_MIN/src/ReadProblem.i"
-	@echo "... LKH2_MIN/src/ReadProblem.s"
 	@echo "... LKH2_MIN/src/RecordBestTour.o"
 	@echo "... LKH2_MIN/src/RecordBestTour.i"
 	@echo "... LKH2_MIN/src/RecordBestTour.s"
@@ -3071,45 +2252,12 @@ help:
 	@echo "... LKH2_MIN/src/RestoreTour.o"
 	@echo "... LKH2_MIN/src/RestoreTour.i"
 	@echo "... LKH2_MIN/src/RestoreTour.s"
-	@echo "... LKH2_MIN/src/SFCTour.o"
-	@echo "... LKH2_MIN/src/SFCTour.i"
-	@echo "... LKH2_MIN/src/SFCTour.s"
 	@echo "... LKH2_MIN/src/SegmentSize.o"
 	@echo "... LKH2_MIN/src/SegmentSize.i"
 	@echo "... LKH2_MIN/src/SegmentSize.s"
 	@echo "... LKH2_MIN/src/Sequence.o"
 	@echo "... LKH2_MIN/src/Sequence.i"
 	@echo "... LKH2_MIN/src/Sequence.s"
-	@echo "... LKH2_MIN/src/SolveCompressedSubproblem.o"
-	@echo "... LKH2_MIN/src/SolveCompressedSubproblem.i"
-	@echo "... LKH2_MIN/src/SolveCompressedSubproblem.s"
-	@echo "... LKH2_MIN/src/SolveDelaunaySubproblems.o"
-	@echo "... LKH2_MIN/src/SolveDelaunaySubproblems.i"
-	@echo "... LKH2_MIN/src/SolveDelaunaySubproblems.s"
-	@echo "... LKH2_MIN/src/SolveKCenterSubproblems.o"
-	@echo "... LKH2_MIN/src/SolveKCenterSubproblems.i"
-	@echo "... LKH2_MIN/src/SolveKCenterSubproblems.s"
-	@echo "... LKH2_MIN/src/SolveKMeansSubproblems.o"
-	@echo "... LKH2_MIN/src/SolveKMeansSubproblems.i"
-	@echo "... LKH2_MIN/src/SolveKMeansSubproblems.s"
-	@echo "... LKH2_MIN/src/SolveKarpSubproblems.o"
-	@echo "... LKH2_MIN/src/SolveKarpSubproblems.i"
-	@echo "... LKH2_MIN/src/SolveKarpSubproblems.s"
-	@echo "... LKH2_MIN/src/SolveRoheSubproblems.o"
-	@echo "... LKH2_MIN/src/SolveRoheSubproblems.i"
-	@echo "... LKH2_MIN/src/SolveRoheSubproblems.s"
-	@echo "... LKH2_MIN/src/SolveSFCSubproblems.o"
-	@echo "... LKH2_MIN/src/SolveSFCSubproblems.i"
-	@echo "... LKH2_MIN/src/SolveSFCSubproblems.s"
-	@echo "... LKH2_MIN/src/SolveSubproblem.o"
-	@echo "... LKH2_MIN/src/SolveSubproblem.i"
-	@echo "... LKH2_MIN/src/SolveSubproblem.s"
-	@echo "... LKH2_MIN/src/SolveSubproblemBorderProblems.o"
-	@echo "... LKH2_MIN/src/SolveSubproblemBorderProblems.i"
-	@echo "... LKH2_MIN/src/SolveSubproblemBorderProblems.s"
-	@echo "... LKH2_MIN/src/SolveTourSegmentSubproblems.o"
-	@echo "... LKH2_MIN/src/SolveTourSegmentSubproblems.i"
-	@echo "... LKH2_MIN/src/SolveTourSegmentSubproblems.s"
 	@echo "... LKH2_MIN/src/Statistics.o"
 	@echo "... LKH2_MIN/src/Statistics.i"
 	@echo "... LKH2_MIN/src/Statistics.s"
@@ -3122,21 +2270,9 @@ help:
 	@echo "... LKH2_MIN/src/TrimCandidateSet.o"
 	@echo "... LKH2_MIN/src/TrimCandidateSet.i"
 	@echo "... LKH2_MIN/src/TrimCandidateSet.s"
-	@echo "... LKH2_MIN/src/WriteCandidates.o"
-	@echo "... LKH2_MIN/src/WriteCandidates.i"
-	@echo "... LKH2_MIN/src/WriteCandidates.s"
-	@echo "... LKH2_MIN/src/WritePenalties.o"
-	@echo "... LKH2_MIN/src/WritePenalties.i"
-	@echo "... LKH2_MIN/src/WritePenalties.s"
-	@echo "... LKH2_MIN/src/WriteTour.o"
-	@echo "... LKH2_MIN/src/WriteTour.i"
-	@echo "... LKH2_MIN/src/WriteTour.s"
 	@echo "... LKH2_MIN/src/eprintf.o"
 	@echo "... LKH2_MIN/src/eprintf.i"
 	@echo "... LKH2_MIN/src/eprintf.s"
-	@echo "... LKH2_MIN/src/fscanint.o"
-	@echo "... LKH2_MIN/src/fscanint.i"
-	@echo "... LKH2_MIN/src/fscanint.s"
 	@echo "... LKH2_MIN/src/gpx.o"
 	@echo "... LKH2_MIN/src/gpx.i"
 	@echo "... LKH2_MIN/src/gpx.s"

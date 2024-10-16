@@ -100,24 +100,10 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/AddCandidate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/AddCandidate.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/AddCandidate.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/AddCandidate.c.s
 
-CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/AddExtraCandidates.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/AddExtraCandidates.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/AddExtraCandidates.c > CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/AddExtraCandidates.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.s
-
 CMakeFiles/LKH.dir/LKH2_MIN/src/AddTourCandidates.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/AddTourCandidates.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/AddTourCandidates.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/AddTourCandidates.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/AddTourCandidates.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/AddTourCandidates.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/AddTourCandidates.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/AddTourCandidates.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/AddTourCandidates.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/AddTourCandidates.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/AddTourCandidates.c.i: cmake_force
@@ -131,7 +117,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/AddTourCandidates.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustCandidateSet.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustCandidateSet.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/AdjustCandidateSet.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustCandidateSet.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustCandidateSet.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustCandidateSet.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustCandidateSet.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustCandidateSet.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustCandidateSet.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/AdjustCandidateSet.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustCandidateSet.c.i: cmake_force
@@ -142,24 +128,10 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustCandidateSet.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustCandidateSet.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/AdjustCandidateSet.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustCandidateSet.c.s
 
-CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/AdjustClusters.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/AdjustClusters.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/AdjustClusters.c > CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/AdjustClusters.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.s
-
 CMakeFiles/LKH.dir/LKH2_MIN/src/AllocateStructures.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/AllocateStructures.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/AllocateStructures.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/AllocateStructures.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/AllocateStructures.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/AllocateStructures.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/AllocateStructures.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/AllocateStructures.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/AllocateStructures.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/AllocateStructures.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/AllocateStructures.c.i: cmake_force
@@ -173,7 +145,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/AllocateStructures.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Ascent.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Ascent.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Ascent.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Ascent.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Ascent.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Ascent.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Ascent.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Ascent.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Ascent.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Ascent.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Ascent.c.i: cmake_force
@@ -187,7 +159,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Ascent.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Best2OptMove.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Best2OptMove.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Best2OptMove.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Best2OptMove.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Best2OptMove.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Best2OptMove.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Best2OptMove.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Best2OptMove.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Best2OptMove.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Best2OptMove.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Best2OptMove.c.i: cmake_force
@@ -201,7 +173,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Best2OptMove.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Best3OptMove.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Best3OptMove.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Best3OptMove.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Best3OptMove.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Best3OptMove.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Best3OptMove.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Best3OptMove.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Best3OptMove.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Best3OptMove.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Best3OptMove.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Best3OptMove.c.i: cmake_force
@@ -215,7 +187,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Best3OptMove.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Best4OptMove.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Best4OptMove.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Best4OptMove.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Best4OptMove.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Best4OptMove.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Best4OptMove.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Best4OptMove.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Best4OptMove.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Best4OptMove.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Best4OptMove.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Best4OptMove.c.i: cmake_force
@@ -229,7 +201,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Best4OptMove.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Best5OptMove.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Best5OptMove.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Best5OptMove.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Best5OptMove.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Best5OptMove.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Best5OptMove.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Best5OptMove.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Best5OptMove.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Best5OptMove.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Best5OptMove.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Best5OptMove.c.i: cmake_force
@@ -243,7 +215,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Best5OptMove.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/BestKOptMove.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/BestKOptMove.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/BestKOptMove.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/BestKOptMove.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/BestKOptMove.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/BestKOptMove.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/BestKOptMove.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/BestKOptMove.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/BestKOptMove.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/BestKOptMove.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/BestKOptMove.c.i: cmake_force
@@ -257,7 +229,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/BestKOptMove.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Between.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Between.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Between.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Between.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Between.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Between.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Between.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Between.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Between.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Between.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Between.c.i: cmake_force
@@ -271,7 +243,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Between.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SL.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SL.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Between_SL.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SL.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SL.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SL.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SL.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SL.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SL.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Between_SL.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SL.c.i: cmake_force
@@ -285,7 +257,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SL.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SSL.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SSL.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Between_SSL.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SSL.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SSL.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SSL.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SSL.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SSL.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SSL.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Between_SSL.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SSL.c.i: cmake_force
@@ -299,7 +271,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SSL.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/BridgeGain.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/BridgeGain.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/BridgeGain.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/BridgeGain.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/BridgeGain.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/BridgeGain.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/BridgeGain.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/BridgeGain.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/BridgeGain.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/BridgeGain.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/BridgeGain.c.i: cmake_force
@@ -310,24 +282,10 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/BridgeGain.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/BridgeGain.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/BridgeGain.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/BridgeGain.c.s
 
-CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/BuildKDTree.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/BuildKDTree.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/BuildKDTree.c > CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/BuildKDTree.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.s
-
 CMakeFiles/LKH.dir/LKH2_MIN/src/C.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/C.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/C.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/C.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/C.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/C.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/C.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/C.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/C.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/C.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/C.c.i: cmake_force
@@ -341,7 +299,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/C.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/CandidateReport.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/CandidateReport.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/CandidateReport.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/CandidateReport.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/CandidateReport.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/CandidateReport.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/CandidateReport.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/CandidateReport.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/CandidateReport.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/CandidateReport.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/CandidateReport.c.i: cmake_force
@@ -355,7 +313,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/CandidateReport.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/ChooseInitialTour.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/ChooseInitialTour.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ChooseInitialTour.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/ChooseInitialTour.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/ChooseInitialTour.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/ChooseInitialTour.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/ChooseInitialTour.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/ChooseInitialTour.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/ChooseInitialTour.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ChooseInitialTour.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/ChooseInitialTour.c.i: cmake_force
@@ -369,7 +327,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/ChooseInitialTour.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Connect.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Connect.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Connect.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Connect.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Connect.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Connect.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Connect.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Connect.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Connect.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Connect.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Connect.c.i: cmake_force
@@ -383,7 +341,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Connect.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/CreateCandidateSet.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/CreateCandidateSet.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/CreateCandidateSet.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/CreateCandidateSet.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/CreateCandidateSet.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/CreateCandidateSet.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/CreateCandidateSet.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/CreateCandidateSet.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/CreateCandidateSet.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/CreateCandidateSet.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/CreateCandidateSet.c.i: cmake_force
@@ -394,52 +352,10 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/CreateCandidateSet.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/CreateCandidateSet.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/CreateCandidateSet.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/CreateCandidateSet.c.s
 
-CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/CreateDelaunayCandidateSet.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/CreateDelaunayCandidateSet.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/CreateDelaunayCandidateSet.c > CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/CreateDelaunayCandidateSet.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/CreateNNCandidateSet.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/CreateNNCandidateSet.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/CreateNNCandidateSet.c > CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/CreateNNCandidateSet.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/CreateQuadrantCandidateSet.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/CreateQuadrantCandidateSet.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/CreateQuadrantCandidateSet.c > CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/CreateQuadrantCandidateSet.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.s
-
 CMakeFiles/LKH.dir/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.i: cmake_force
@@ -450,24 +366,10 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.s
 
-CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Delaunay.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Delaunay.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Delaunay.c > CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Delaunay.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.s
-
 CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Distance.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Distance.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.i: cmake_force
@@ -478,24 +380,10 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Distance.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.s
 
-CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Distance_SPECIAL.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Distance_SPECIAL.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Distance_SPECIAL.c > CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Distance_SPECIAL.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.s
-
 CMakeFiles/LKH.dir/LKH2_MIN/src/ERXT.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/ERXT.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ERXT.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/ERXT.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/ERXT.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/ERXT.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/ERXT.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/ERXT.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/ERXT.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ERXT.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/ERXT.c.i: cmake_force
@@ -509,7 +397,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/ERXT.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Excludable.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Excludable.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Excludable.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Excludable.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Excludable.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Excludable.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Excludable.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Excludable.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Excludable.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Excludable.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Excludable.c.i: cmake_force
@@ -523,7 +411,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Excludable.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Exclude.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Exclude.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Exclude.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Exclude.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Exclude.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Exclude.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Exclude.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Exclude.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Exclude.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Exclude.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Exclude.c.i: cmake_force
@@ -537,7 +425,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Exclude.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/FindTour.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/FindTour.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/FindTour.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/FindTour.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/FindTour.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/FindTour.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/FindTour.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/FindTour.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/FindTour.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/FindTour.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/FindTour.c.i: cmake_force
@@ -551,7 +439,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/FindTour.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/FixedOrCommonCandidates.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/FixedOrCommonCandidates.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/FixedOrCommonCandidates.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/FixedOrCommonCandidates.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/FixedOrCommonCandidates.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/FixedOrCommonCandidates.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/FixedOrCommonCandidates.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/FixedOrCommonCandidates.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/FixedOrCommonCandidates.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/FixedOrCommonCandidates.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/FixedOrCommonCandidates.c.i: cmake_force
@@ -565,7 +453,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/FixedOrCommonCandidates.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Flip.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Flip.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Flip.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Flip.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Flip.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Flip.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Flip.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Flip.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Flip.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Flip.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Flip.c.i: cmake_force
@@ -579,7 +467,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Flip.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SL.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SL.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Flip_SL.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SL.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SL.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SL.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SL.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SL.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SL.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Flip_SL.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SL.c.i: cmake_force
@@ -593,7 +481,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SL.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SSL.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SSL.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Flip_SSL.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SSL.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SSL.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SSL.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SSL.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SSL.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SSL.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Flip_SSL.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SSL.c.i: cmake_force
@@ -607,7 +495,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Flip_SSL.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Forbidden.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Forbidden.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Forbidden.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Forbidden.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Forbidden.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Forbidden.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Forbidden.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Forbidden.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Forbidden.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Forbidden.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Forbidden.c.i: cmake_force
@@ -621,7 +509,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Forbidden.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/FreeStructures.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/FreeStructures.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/FreeStructures.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/FreeStructures.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/FreeStructures.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/FreeStructures.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/FreeStructures.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/FreeStructures.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/FreeStructures.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/FreeStructures.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/FreeStructures.c.i: cmake_force
@@ -635,7 +523,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/FreeStructures.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Gain23.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Gain23.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Gain23.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Gain23.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Gain23.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Gain23.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Gain23.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Gain23.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Gain23.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Gain23.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Gain23.c.i: cmake_force
@@ -649,7 +537,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Gain23.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/GenerateCandidates.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/GenerateCandidates.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/GenerateCandidates.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/GenerateCandidates.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/GenerateCandidates.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/GenerateCandidates.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/GenerateCandidates.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/GenerateCandidates.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/GenerateCandidates.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/GenerateCandidates.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/GenerateCandidates.c.i: cmake_force
@@ -660,38 +548,10 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/GenerateCandidates.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/GenerateCandidates.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/GenerateCandidates.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/GenerateCandidates.c.s
 
-CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Genetic.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Genetic.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Genetic.c > CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Genetic.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/GeoConversion.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/GeoConversion.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/GeoConversion.c > CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/GeoConversion.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.s
-
 CMakeFiles/LKH.dir/LKH2_MIN/src/GetTime.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/GetTime.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/GetTime.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/GetTime.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/GetTime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/GetTime.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/GetTime.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/GetTime.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/GetTime.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/GetTime.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/GetTime.c.i: cmake_force
@@ -702,24 +562,10 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/GetTime.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/GetTime.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/GetTime.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/GetTime.c.s
 
-CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/GreedyTour.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/GreedyTour.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/GreedyTour.c > CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/GreedyTour.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.s
-
 CMakeFiles/LKH.dir/LKH2_MIN/src/Hashing.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Hashing.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Hashing.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Hashing.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Hashing.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Hashing.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Hashing.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Hashing.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Hashing.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Hashing.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Hashing.c.i: cmake_force
@@ -733,7 +579,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Hashing.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Heap.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Heap.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Heap.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Heap.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Heap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Heap.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Heap.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Heap.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Heap.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Heap.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Heap.c.i: cmake_force
@@ -747,7 +593,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Heap.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/IsBackboneCandidate.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/IsBackboneCandidate.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/IsBackboneCandidate.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/IsBackboneCandidate.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/IsBackboneCandidate.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/IsBackboneCandidate.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/IsBackboneCandidate.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/IsBackboneCandidate.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/IsBackboneCandidate.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/IsBackboneCandidate.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/IsBackboneCandidate.c.i: cmake_force
@@ -761,7 +607,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/IsBackboneCandidate.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/IsCandidate.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/IsCandidate.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/IsCandidate.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/IsCandidate.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/IsCandidate.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/IsCandidate.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/IsCandidate.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/IsCandidate.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/IsCandidate.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/IsCandidate.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/IsCandidate.c.i: cmake_force
@@ -775,7 +621,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/IsCandidate.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/IsCommonEdge.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/IsCommonEdge.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/IsCommonEdge.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/IsCommonEdge.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/IsCommonEdge.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/IsCommonEdge.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/IsCommonEdge.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/IsCommonEdge.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/IsCommonEdge.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/IsCommonEdge.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/IsCommonEdge.c.i: cmake_force
@@ -789,7 +635,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/IsCommonEdge.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/IsPossibleCandidate.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/IsPossibleCandidate.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/IsPossibleCandidate.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/IsPossibleCandidate.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/IsPossibleCandidate.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/IsPossibleCandidate.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/IsPossibleCandidate.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/IsPossibleCandidate.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/IsPossibleCandidate.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/IsPossibleCandidate.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/IsPossibleCandidate.c.i: cmake_force
@@ -803,7 +649,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/IsPossibleCandidate.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/KSwapKick.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/KSwapKick.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/KSwapKick.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/KSwapKick.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/KSwapKick.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/KSwapKick.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/KSwapKick.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/KSwapKick.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/KSwapKick.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/KSwapKick.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/KSwapKick.c.i: cmake_force
@@ -817,7 +663,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/KSwapKick.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/LKH.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/LKH.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/LKH.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/LKH.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/LKH.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/LKH.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/LKH.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/LKH.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/LKH.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/LKH.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/LKH.c.i: cmake_force
@@ -831,7 +677,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/LKH.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/LKHmain.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/LKHmain.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/LKHmain.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/LKHmain.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/LKHmain.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/LKHmain.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/LKHmain.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/LKHmain.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/LKHmain.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/LKHmain.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/LKHmain.c.i: cmake_force
@@ -845,7 +691,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/LKHmain.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/LinKernighan.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/LinKernighan.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/LinKernighan.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/LinKernighan.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/LinKernighan.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/LinKernighan.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/LinKernighan.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/LinKernighan.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/LinKernighan.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/LinKernighan.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/LinKernighan.c.i: cmake_force
@@ -859,7 +705,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/LinKernighan.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Make2OptMove.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Make2OptMove.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Make2OptMove.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Make2OptMove.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Make2OptMove.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Make2OptMove.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Make2OptMove.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Make2OptMove.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Make2OptMove.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Make2OptMove.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Make2OptMove.c.i: cmake_force
@@ -873,7 +719,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Make2OptMove.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Make3OptMove.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Make3OptMove.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Make3OptMove.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Make3OptMove.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Make3OptMove.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Make3OptMove.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Make3OptMove.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Make3OptMove.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Make3OptMove.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Make3OptMove.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Make3OptMove.c.i: cmake_force
@@ -887,7 +733,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Make3OptMove.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Make4OptMove.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Make4OptMove.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Make4OptMove.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Make4OptMove.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Make4OptMove.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Make4OptMove.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Make4OptMove.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Make4OptMove.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Make4OptMove.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Make4OptMove.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Make4OptMove.c.i: cmake_force
@@ -901,7 +747,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Make4OptMove.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Make5OptMove.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Make5OptMove.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Make5OptMove.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Make5OptMove.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Make5OptMove.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Make5OptMove.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Make5OptMove.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Make5OptMove.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Make5OptMove.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Make5OptMove.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Make5OptMove.c.i: cmake_force
@@ -915,7 +761,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Make5OptMove.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/MakeKOptMove.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/MakeKOptMove.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/MakeKOptMove.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/MakeKOptMove.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/MakeKOptMove.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/MakeKOptMove.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/MakeKOptMove.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/MakeKOptMove.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/MakeKOptMove.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/MakeKOptMove.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/MakeKOptMove.c.i: cmake_force
@@ -929,7 +775,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/MakeKOptMove.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/MergeTourWithBestTour.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/MergeTourWithBestTour.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/MergeTourWithBestTour.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/MergeTourWithBestTour.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/MergeTourWithBestTour.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/MergeTourWithBestTour.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/MergeTourWithBestTour.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/MergeTourWithBestTour.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/MergeTourWithBestTour.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/MergeTourWithBestTour.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/MergeTourWithBestTour.c.i: cmake_force
@@ -943,7 +789,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/MergeTourWithBestTour.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourCLARIST.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourCLARIST.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/MergeWithTourCLARIST.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourCLARIST.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourCLARIST.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourCLARIST.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourCLARIST.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourCLARIST.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourCLARIST.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/MergeWithTourCLARIST.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourCLARIST.c.i: cmake_force
@@ -957,7 +803,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourCLARIST.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourGPX2.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourGPX2.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/MergeWithTourGPX2.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourGPX2.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourGPX2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourGPX2.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourGPX2.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourGPX2.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourGPX2.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/MergeWithTourGPX2.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourGPX2.c.i: cmake_force
@@ -971,7 +817,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourGPX2.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourIPT.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourIPT.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/MergeWithTourIPT.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourIPT.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourIPT.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourIPT.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourIPT.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourIPT.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourIPT.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/MergeWithTourIPT.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourIPT.c.i: cmake_force
@@ -985,7 +831,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/MergeWithTourIPT.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Minimum1TreeCost.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Minimum1TreeCost.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Minimum1TreeCost.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Minimum1TreeCost.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Minimum1TreeCost.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Minimum1TreeCost.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Minimum1TreeCost.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Minimum1TreeCost.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Minimum1TreeCost.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Minimum1TreeCost.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Minimum1TreeCost.c.i: cmake_force
@@ -999,7 +845,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Minimum1TreeCost.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/MinimumSpanningTree.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/MinimumSpanningTree.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/MinimumSpanningTree.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/MinimumSpanningTree.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/MinimumSpanningTree.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/MinimumSpanningTree.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/MinimumSpanningTree.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/MinimumSpanningTree.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/MinimumSpanningTree.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/MinimumSpanningTree.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/MinimumSpanningTree.c.i: cmake_force
@@ -1013,7 +859,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/MinimumSpanningTree.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeNodeList.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeNodeList.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/NormalizeNodeList.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeNodeList.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeNodeList.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeNodeList.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeNodeList.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeNodeList.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeNodeList.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/NormalizeNodeList.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeNodeList.c.i: cmake_force
@@ -1027,7 +873,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeNodeList.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeSegmentList.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeSegmentList.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/NormalizeSegmentList.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeSegmentList.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeSegmentList.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeSegmentList.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeSegmentList.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeSegmentList.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeSegmentList.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/NormalizeSegmentList.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeSegmentList.c.i: cmake_force
@@ -1041,7 +887,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/NormalizeSegmentList.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/OrderCandidateSet.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/OrderCandidateSet.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/OrderCandidateSet.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/OrderCandidateSet.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/OrderCandidateSet.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/OrderCandidateSet.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/OrderCandidateSet.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/OrderCandidateSet.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/OrderCandidateSet.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/OrderCandidateSet.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/OrderCandidateSet.c.i: cmake_force
@@ -1055,7 +901,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/OrderCandidateSet.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/PatchCycles.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/PatchCycles.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/PatchCycles.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/PatchCycles.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/PatchCycles.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/PatchCycles.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/PatchCycles.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/PatchCycles.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/PatchCycles.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/PatchCycles.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/PatchCycles.c.i: cmake_force
@@ -1069,7 +915,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/PatchCycles.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/PrintParameters.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/PrintParameters.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/PrintParameters.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/PrintParameters.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/PrintParameters.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/PrintParameters.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/PrintParameters.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/PrintParameters.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/PrintParameters.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/PrintParameters.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/PrintParameters.c.i: cmake_force
@@ -1083,7 +929,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/PrintParameters.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Random.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Random.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Random.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Random.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Random.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Random.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Random.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Random.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Random.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Random.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Random.c.i: cmake_force
@@ -1094,94 +940,10 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Random.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/Random.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Random.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/Random.c.s
 
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadCandidates.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadCandidates.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadCandidates.c > CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadCandidates.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadEdges.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadEdges.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadEdges.c > CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadEdges.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadLine.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadLine.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadLine.c > CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadLine.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadParameters.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadParameters.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadParameters.c > CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadParameters.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadPenalties.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadPenalties.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadPenalties.c > CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadPenalties.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadProblem.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadProblem.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadProblem.c > CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ReadProblem.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.s
-
 CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBestTour.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBestTour.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/RecordBestTour.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBestTour.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBestTour.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBestTour.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBestTour.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBestTour.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBestTour.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/RecordBestTour.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBestTour.c.i: cmake_force
@@ -1195,7 +957,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBestTour.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBetterTour.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBetterTour.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/RecordBetterTour.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBetterTour.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBetterTour.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBetterTour.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBetterTour.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBetterTour.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBetterTour.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/RecordBetterTour.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBetterTour.c.i: cmake_force
@@ -1209,7 +971,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBetterTour.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/RemoveFirstActive.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/RemoveFirstActive.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/RemoveFirstActive.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/RemoveFirstActive.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/RemoveFirstActive.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/RemoveFirstActive.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/RemoveFirstActive.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/RemoveFirstActive.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/RemoveFirstActive.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/RemoveFirstActive.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/RemoveFirstActive.c.i: cmake_force
@@ -1223,7 +985,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/RemoveFirstActive.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/ResetCandidateSet.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/ResetCandidateSet.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ResetCandidateSet.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/ResetCandidateSet.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/ResetCandidateSet.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/ResetCandidateSet.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/ResetCandidateSet.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/ResetCandidateSet.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/ResetCandidateSet.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/ResetCandidateSet.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/ResetCandidateSet.c.i: cmake_force
@@ -1237,7 +999,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/ResetCandidateSet.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/RestoreTour.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/RestoreTour.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/RestoreTour.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/RestoreTour.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/RestoreTour.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/RestoreTour.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/RestoreTour.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/RestoreTour.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/RestoreTour.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/RestoreTour.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/RestoreTour.c.i: cmake_force
@@ -1248,24 +1010,10 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/RestoreTour.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/RestoreTour.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/RestoreTour.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/RestoreTour.c.s
 
-CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SFCTour.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SFCTour.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SFCTour.c > CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SFCTour.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.s
-
 CMakeFiles/LKH.dir/LKH2_MIN/src/SegmentSize.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/SegmentSize.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SegmentSize.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/SegmentSize.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/SegmentSize.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/SegmentSize.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/SegmentSize.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/SegmentSize.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/SegmentSize.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SegmentSize.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/SegmentSize.c.i: cmake_force
@@ -1279,7 +1027,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/SegmentSize.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/Sequence.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Sequence.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Sequence.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Sequence.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Sequence.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Sequence.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Sequence.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Sequence.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Sequence.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Sequence.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Sequence.c.i: cmake_force
@@ -1290,150 +1038,10 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Sequence.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/Sequence.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Sequence.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/Sequence.c.s
 
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveCompressedSubproblem.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveCompressedSubproblem.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveCompressedSubproblem.c > CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveCompressedSubproblem.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveDelaunaySubproblems.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveDelaunaySubproblems.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveDelaunaySubproblems.c > CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveDelaunaySubproblems.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveKCenterSubproblems.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveKCenterSubproblems.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveKCenterSubproblems.c > CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveKCenterSubproblems.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveKMeansSubproblems.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveKMeansSubproblems.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveKMeansSubproblems.c > CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveKMeansSubproblems.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveKarpSubproblems.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveKarpSubproblems.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveKarpSubproblems.c > CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveKarpSubproblems.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveRoheSubproblems.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveRoheSubproblems.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveRoheSubproblems.c > CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveRoheSubproblems.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveSFCSubproblems.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveSFCSubproblems.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveSFCSubproblems.c > CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveSFCSubproblems.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveSubproblem.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveSubproblem.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveSubproblem.c > CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveSubproblem.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveSubproblemBorderProblems.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveSubproblemBorderProblems.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveSubproblemBorderProblems.c > CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveSubproblemBorderProblems.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveTourSegmentSubproblems.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveTourSegmentSubproblems.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveTourSegmentSubproblems.c > CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SolveTourSegmentSubproblems.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.s
-
 CMakeFiles/LKH.dir/LKH2_MIN/src/Statistics.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/Statistics.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Statistics.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/Statistics.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Statistics.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/Statistics.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/Statistics.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/Statistics.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/Statistics.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/Statistics.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/Statistics.c.i: cmake_force
@@ -1447,7 +1055,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Statistics.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/StoreTour.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/StoreTour.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/StoreTour.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/StoreTour.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/StoreTour.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/StoreTour.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/StoreTour.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/StoreTour.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/StoreTour.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/StoreTour.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/StoreTour.c.i: cmake_force
@@ -1461,7 +1069,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/StoreTour.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/SymmetrizeCandidateSet.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/SymmetrizeCandidateSet.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SymmetrizeCandidateSet.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/SymmetrizeCandidateSet.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/SymmetrizeCandidateSet.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/SymmetrizeCandidateSet.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/SymmetrizeCandidateSet.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/SymmetrizeCandidateSet.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/SymmetrizeCandidateSet.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/SymmetrizeCandidateSet.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/SymmetrizeCandidateSet.c.i: cmake_force
@@ -1475,7 +1083,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/SymmetrizeCandidateSet.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/TrimCandidateSet.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/TrimCandidateSet.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/TrimCandidateSet.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/TrimCandidateSet.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/TrimCandidateSet.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/TrimCandidateSet.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/TrimCandidateSet.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/TrimCandidateSet.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/TrimCandidateSet.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/TrimCandidateSet.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/TrimCandidateSet.c.i: cmake_force
@@ -1486,52 +1094,10 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/TrimCandidateSet.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/TrimCandidateSet.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/TrimCandidateSet.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/TrimCandidateSet.c.s
 
-CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/WriteCandidates.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/WriteCandidates.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/WriteCandidates.c > CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/WriteCandidates.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/WritePenalties.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/WritePenalties.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/WritePenalties.c > CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/WritePenalties.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.s
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/WriteTour.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/WriteTour.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/WriteTour.c > CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/WriteTour.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.s
-
 CMakeFiles/LKH.dir/LKH2_MIN/src/eprintf.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/eprintf.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/eprintf.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/eprintf.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/eprintf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/eprintf.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/eprintf.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/eprintf.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/eprintf.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/eprintf.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/eprintf.c.i: cmake_force
@@ -1542,24 +1108,10 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/eprintf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/eprintf.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/eprintf.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/eprintf.c.s
 
-CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.o: CMakeFiles/LKH.dir/flags.make
-CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/fscanint.c
-CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/fscanint.c
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/fscanint.c > CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.i
-
-CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/fscanint.c -o CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.s
-
 CMakeFiles/LKH.dir/LKH2_MIN/src/gpx.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/gpx.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/gpx.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/gpx.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/gpx.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/gpx.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/gpx.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/gpx.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/gpx.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/gpx.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/gpx.c.i: cmake_force
@@ -1573,7 +1125,7 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/gpx.c.s: cmake_force
 CMakeFiles/LKH.dir/LKH2_MIN/src/printff.c.o: CMakeFiles/LKH.dir/flags.make
 CMakeFiles/LKH.dir/LKH2_MIN/src/printff.c.o: /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/printff.c
 CMakeFiles/LKH.dir/LKH2_MIN/src/printff.c.o: CMakeFiles/LKH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/printff.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/LKH.dir/LKH2_MIN/src/printff.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LKH.dir/LKH2_MIN/src/printff.c.o -MF CMakeFiles/LKH.dir/LKH2_MIN/src/printff.c.o.d -o CMakeFiles/LKH.dir/LKH2_MIN/src/printff.c.o -c /home/csg/Huawei-Storage-Competition/LKH2_MIN/src/printff.c
 
 CMakeFiles/LKH.dir/LKH2_MIN/src/printff.c.i: cmake_force
@@ -1588,10 +1140,8 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/printff.c.s: cmake_force
 LKH_OBJECTS = \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/Activate.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/AddCandidate.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/AddTourCandidates.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustCandidateSet.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/AllocateStructures.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/Ascent.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/Best2OptMove.c.o" \
@@ -1603,19 +1153,13 @@ LKH_OBJECTS = \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SL.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SSL.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/BridgeGain.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/C.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/CandidateReport.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/ChooseInitialTour.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/Connect.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/CreateCandidateSet.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/ERXT.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/Excludable.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/Exclude.c.o" \
@@ -1628,10 +1172,7 @@ LKH_OBJECTS = \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/FreeStructures.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/Gain23.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/GenerateCandidates.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/GetTime.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/Hashing.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/Heap.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/IsBackboneCandidate.c.o" \
@@ -1659,39 +1200,18 @@ LKH_OBJECTS = \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/PatchCycles.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/PrintParameters.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/Random.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBestTour.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBetterTour.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/RemoveFirstActive.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/ResetCandidateSet.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/RestoreTour.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/SegmentSize.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/Sequence.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/Statistics.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/StoreTour.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/SymmetrizeCandidateSet.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/TrimCandidateSet.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/eprintf.c.o" \
-"CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/gpx.c.o" \
 "CMakeFiles/LKH.dir/LKH2_MIN/src/printff.c.o"
 
@@ -1700,10 +1220,8 @@ LKH_EXTERNAL_OBJECTS =
 
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Activate.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/AddCandidate.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/AddExtraCandidates.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/AddTourCandidates.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustCandidateSet.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/AdjustClusters.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/AllocateStructures.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Ascent.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Best2OptMove.c.o
@@ -1715,19 +1233,13 @@ libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Between.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SL.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Between_SSL.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/BridgeGain.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/BuildKDTree.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/C.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/CandidateReport.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/ChooseInitialTour.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Connect.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/CreateCandidateSet.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/CreateDelaunayCandidateSet.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/CreateNNCandidateSet.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/CreateQuadrantCandidateSet.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Delaunay.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/ERXT.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Excludable.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Exclude.c.o
@@ -1740,10 +1252,7 @@ libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Forbidden.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/FreeStructures.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Gain23.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/GenerateCandidates.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Genetic.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/GeoConversion.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/GetTime.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/GreedyTour.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Hashing.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Heap.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/IsBackboneCandidate.c.o
@@ -1771,44 +1280,23 @@ libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/OrderCandidateSet.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/PatchCycles.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/PrintParameters.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Random.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/ReadCandidates.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/ReadEdges.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/ReadLine.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/ReadParameters.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/ReadPenalties.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/ReadProblem.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBestTour.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/RecordBetterTour.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/RemoveFirstActive.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/ResetCandidateSet.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/RestoreTour.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/SFCTour.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/SegmentSize.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Sequence.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/SolveCompressedSubproblem.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/SolveDelaunaySubproblems.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKCenterSubproblems.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKMeansSubproblems.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/SolveKarpSubproblems.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/SolveRoheSubproblems.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSFCSubproblems.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblem.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/SolveSubproblemBorderProblems.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/SolveTourSegmentSubproblems.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/Statistics.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/StoreTour.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/SymmetrizeCandidateSet.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/TrimCandidateSet.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/WriteCandidates.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/WritePenalties.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/WriteTour.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/eprintf.c.o
-libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/fscanint.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/gpx.c.o
 libLKH.a: CMakeFiles/LKH.dir/LKH2_MIN/src/printff.c.o
 libLKH.a: CMakeFiles/LKH.dir/build.make
 libLKH.a: CMakeFiles/LKH.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Linking C static library libLKH.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/csg/Huawei-Storage-Competition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Linking C static library libLKH.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/LKH.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LKH.dir/link.txt --verbose=$(VERBOSE)
 
