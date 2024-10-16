@@ -1,0 +1,139 @@
+
+
+Welcome to HW project.
+
+The file path is: ../dataset/case_50.txt
+head info : [2,358054,1]
+
+io count = 10000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 4.999e-05
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 10002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 20004
+MAX_TRIALS = 20004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 20
+POPMUSIC_SOLUTIONS = 10
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 400.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 2098991.0, Ascent time = 10.00 sec.
+Cand.min = 2, Cand.avg = 5.8, Cand.max = 7
+Edges.fixed = 10003 [Cost = 0]
+Preprocessing time = 10.04 sec.
+* 1: Cost = 9662296, Time = 0.62 sec. 
+* 2: Cost = 9615008, Time = 0.97 sec. 
+* 3: Cost = 9566204, Time = 1.28 sec. 
+* 4: Cost = 9563917, Time = 1.56 sec. 
+* 5: Cost = 9531463, Time = 1.89 sec. 
+* 6: Cost = 9468255, Time = 2.22 sec. 
+* 7: Cost = 9434171, Time = 2.51 sec. 
+* 9: Cost = 9423451, Time = 3.10 sec. 
+* 12: Cost = 9414340, Time = 4.04 sec. 
+* 13: Cost = 9408555, Time = 4.32 sec. 
+* 14: Cost = 9394750, Time = 4.66 sec. 
+* 15: Cost = 9386709, Time = 5.00 sec. 
+* 16: Cost = 9371314, Time = 5.29 sec. 
+* 17: Cost = 9359133, Time = 5.62 sec. 
+* 18: Cost = 9356604, Time = 5.92 sec. 
+* 19: Cost = 9353460, Time = 6.24 sec. 
+* 20: Cost = 9345732, Time = 6.54 sec. 
+* 21: Cost = 9345300, Time = 6.87 sec. 
+* 22: Cost = 9343910, Time = 7.19 sec. 
+* 23: Cost = 9342651, Time = 7.50 sec. 
+* 24: Cost = 9322427, Time = 7.79 sec. 
+* 25: Cost = 9320307, Time = 8.08 sec. 
+* 26: Cost = 9319891, Time = 8.34 sec. 
+* 27: Cost = 9314805, Time = 8.68 sec. 
+* 29: Cost = 9312894, Time = 9.31 sec. 
+* 30: Cost = 9306467, Time = 9.66 sec. 
+* 31: Cost = 9302856, Time = 10.02 sec. 
+* 33: Cost = 9296613, Time = 10.64 sec. 
+* 34: Cost = 9295940, Time = 10.97 sec. 
+* 35: Cost = 9285482, Time = 11.32 sec. 
+* 37: Cost = 9280359, Time = 11.96 sec. 
+* 39: Cost = 9280103, Time = 12.55 sec. 
+* 40: Cost = 9276625, Time = 12.88 sec. 
+* 41: Cost = 9272944, Time = 13.24 sec. 
+* 43: Cost = 9272672, Time = 13.90 sec. 
+* 51: Cost = 9267625, Time = 16.52 sec. 
+* 52: Cost = 9259909, Time = 16.83 sec. 
+* 56: Cost = 9256750, Time = 18.16 sec. 
+* 57: Cost = 9253589, Time = 18.54 sec. 
+* 58: Cost = 9246563, Time = 18.90 sec. 
+* 60: Cost = 9244785, Time = 19.55 sec. 
+* 61: Cost = 9236910, Time = 19.94 sec. 
+* 62: Cost = 9229889, Time = 20.31 sec. 
+* 66: Cost = 9227869, Time = 21.66 sec. 
+* 67: Cost = 9226848, Time = 22.01 sec. 
+* 68: Cost = 9224155, Time = 22.41 sec. 
+* 76: Cost = 9222738, Time = 25.08 sec. 
+* 77: Cost = 9219520, Time = 25.43 sec. 
+*** The extent of improvement(0) is too small in 2.0s ***
+Run 1: Cost = 9219520, Time = 28.24 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 9219520, Cost.avg = 9219520.00, Cost.max = 9219520
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 85, Trials.avg = 85.0, Trials.max = 85
+Time.min = 28.24 sec., Time.avg = 28.24 sec., Time.max = 28.24 sec.
+Time.total = 42.41 sec.
+
+Key Metrics:
+	ioCount:			 10000
+	algorithmRunningDuration:	 42410.852 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 9219520 (ms)
+	readDuration:			 10059657 (ms)
+	tapeBeltWear:			 20345817
+	tapeMotorWear:			 370
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt
