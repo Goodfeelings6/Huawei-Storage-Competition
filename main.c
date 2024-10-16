@@ -233,7 +233,7 @@ int main(int argc, char *argv[])
     /* 输入dataset文件地址 */
     int opt;
     char *file = NULL;
-    // pthread_t thread;
+    pthread_t thread;
     int ret;
 
     /* 使用 getopt 解析命令行参数 */

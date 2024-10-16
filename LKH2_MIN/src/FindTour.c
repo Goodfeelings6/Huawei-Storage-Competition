@@ -139,8 +139,7 @@ GainType FindTour()
             }
             BetterCost = Cost;
             RecordBetterTour();
-            if (BetterCost < BestCost && SubproblemSize == 0)
-                WriteTour(OutputTourFileName, BetterTour, BetterCost);
+
             if (StopAtOptimum && BetterCost == Optimum)
                 break;
             AdjustCandidateSet();

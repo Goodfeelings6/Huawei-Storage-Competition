@@ -36,9 +36,6 @@ GainType Ascent()
         Create_POPMUSIC_CandidateSet(AscentCandidates);
     else if (MaxCandidates == 0) {
         AddTourCandidates();
-        if (ExtraCandidates > 0)
-            AddExtraCandidates(ExtraCandidates, ExtraCandidateSetType,
-                               ExtraCandidateSetSymmetric);
     }
 
     /* Compute the cost of a minimum 1-tree */
@@ -69,9 +66,6 @@ GainType Ascent()
                 return W;
         }
     }
-    if (ExtraCandidates > 0)
-        AddExtraCandidates(ExtraCandidates, ExtraCandidateSetType,
-                           ExtraCandidateSetSymmetric);
     if (TraceLevel >= 2) {
         CandidateReport();
         printff("Subgradient optimization ...\n");

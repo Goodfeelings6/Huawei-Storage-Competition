@@ -19,7 +19,7 @@ void CreateCandidateSet()
 {
     GainType Cost, MaxAlpha, A;
     Node *Na;
-    int CandidatesRead = 0, i;
+    int i;
     double EntryTime = GetTime();
 
     Norm = 9999;
@@ -31,69 +31,18 @@ void CreateCandidateSet()
         }
         while ((Na = Na->Suc) != FirstNode);
     }
-    if (Distance == Distance_1 ||
-        (MaxTrials == 0 &&
-         (FirstNode->InitialSuc))) {
-        CandidatesRead = ReadCandidates(MaxCandidates) |
-            ReadEdges(MaxCandidates);
-        AddTourCandidates();
-        if (CandidateSetSymmetric)
-            SymmetrizeCandidateSet();
-        if (ProblemType == HCP || ProblemType == HPP)
-            Ascent();
-        goto End_CreateCandidateSet;
-    }
+   
     if (TraceLevel >= 2)
         printff("Creating candidates ...\n");
 
-    if (!ReadPenalties()) {
-        /* No PiFile specified or available */
-        Na = FirstNode;
-        do
-            Na->Pi = 0;
-        while ((Na = Na->Suc) != FirstNode);
-        CandidatesRead = ReadCandidates(MaxCandidates) |
-            ReadEdges(MaxCandidates);
-        Cost = Ascent();
-        if (Subgradient && SubproblemSize == 0) {
-            WritePenalties();
-            PiFile = 0;
-        }
-    } else if ((CandidatesRead = ReadCandidates(MaxCandidates) |
-                ReadEdges(MaxCandidates)) || MaxCandidates == 0) {
-        AddTourCandidates();
-        if (CandidateSetSymmetric)
-            SymmetrizeCandidateSet();
-        goto End_CreateCandidateSet;
-    } else {
-        if (CandidateSetType != POPMUSIC &&
-            MaxCandidates > 0) {
-            if (TraceLevel >= 2)
-                printff("Computing lower bound ... ");
-            Cost = Minimum1TreeCost(0);
-            if (TraceLevel >= 2)
-                printff("done\n");
-        } else {
-            Create_POPMUSIC_CandidateSet(AscentCandidates);
-            Na = FirstNode;
-            do {
-                Na->BestPi = Na->Pi;
-                Na->Pi = 0;
-            }
-            while ((Na = Na->Suc) != FirstNode);
-            if (TraceLevel >= 2)
-                printff("Computing lower bound ... ");
-            Cost = Minimum1TreeCost(1);
-            if (TraceLevel >= 2)
-                printff("done\n");
-            Na = FirstNode;
-            do {
-                Na->Pi = Na->BestPi;
-                Cost -= 2 * Na->Pi;
-            }
-            while ((Na = Na->Suc) != FirstNode);
-        }
-    }
+    
+    /* No PiFile specified or available */
+    Na = FirstNode;
+    do
+        Na->Pi = 0;
+    while ((Na = Na->Suc) != FirstNode);
+    Cost = Ascent();
+
     LowerBound = (double) Cost / Precision;
     if (TraceLevel >= 1) {
         printff("Lower bound = %0.1f", LowerBound);
@@ -115,16 +64,8 @@ void CreateCandidateSet()
         GenerateCandidates(MaxCandidates, MaxAlpha, CandidateSetSymmetric);
 
   End_CreateCandidateSet:
-    if (ExtraCandidates > 0) {
-        AddExtraCandidates(ExtraCandidates,
-                           ExtraCandidateSetType,
-                           ExtraCandidateSetSymmetric);
-        AddTourCandidates();
-    }
     ResetCandidateSet();
-    if (MaxTrials > 0 ||
-        (InitialTourAlgorithm != SIERPINSKI &&
-         InitialTourAlgorithm != MOORE)) {
+    if (MaxTrials > 0) {
         Na = FirstNode;
         do {
             if (!Na->CandidateSet || !Na->CandidateSet[0].To) {
@@ -137,8 +78,7 @@ void CreateCandidateSet()
             }
         }
         while ((Na = Na->Suc) != FirstNode);
-        if (!CandidatesRead && SubproblemSize == 0)
-            WriteCandidates();
+
     }
     if (C == C_EXPLICIT) {
         Na = FirstNode;

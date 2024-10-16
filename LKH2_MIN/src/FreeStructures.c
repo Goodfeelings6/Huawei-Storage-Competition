@@ -45,7 +45,6 @@ void FreeStructures()
     Free(incl);
     Free(cycle);
     Free(G);
-    FreePopulation();
 }
 
 /*      
