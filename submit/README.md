@@ -16,3 +16,12 @@ cmake ..
 make
 ./project_hw -f ../dataset/case_1.txt
 ```
+
+
+## 批量测试 
+
+```shell
+cd test
+# 构建并批量测试 ../dataset 内所有用例, 输出将位于 output 文件夹
+python testbatch.py s2 -src ../dataset -des ./output
+```
