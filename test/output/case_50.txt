@@ -1,0 +1,138 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_50.txt
+head info : [2,358054,1]
+
+io count = 10000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 4.999e-05
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 10002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 20004
+MAX_TRIALS = 20004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 20
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 400.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 1226959.0, Ascent time = 49.84 sec.
+Cand.min = 2, Cand.avg = 6.1, Cand.max = 7
+Edges.fixed = 10003 [Cost = 0]
+Preprocessing time = 49.96 sec.
+* 1: Cost = 9394900, Time = 0.95 sec. 
+* 2: Cost = 9251927, Time = 1.56 sec. 
+* 3: Cost = 9226489, Time = 2.01 sec. 
+* 5: Cost = 9191231, Time = 2.90 sec. 
+* 6: Cost = 9180890, Time = 3.28 sec. 
+* 7: Cost = 9171775, Time = 3.75 sec. 
+* 8: Cost = 9167032, Time = 4.12 sec. 
+* 10: Cost = 9165736, Time = 4.93 sec. 
+* 11: Cost = 9153956, Time = 5.42 sec. 
+* 12: Cost = 9153577, Time = 5.87 sec. 
+* 13: Cost = 9150711, Time = 6.34 sec. 
+* 14: Cost = 9143944, Time = 6.77 sec. 
+* 15: Cost = 9142320, Time = 7.17 sec. 
+* 16: Cost = 9139649, Time = 7.59 sec. 
+* 17: Cost = 9137866, Time = 8.10 sec. 
+* 19: Cost = 9137613, Time = 9.01 sec. 
+* 20: Cost = 9135325, Time = 9.47 sec. 
+* 22: Cost = 9133199, Time = 10.31 sec. 
+* 24: Cost = 9132476, Time = 11.28 sec. 
+* 25: Cost = 9131427, Time = 11.78 sec. 
+* 27: Cost = 9126243, Time = 12.75 sec. 
+* 29: Cost = 9125973, Time = 13.61 sec. 
+* 34: Cost = 9124748, Time = 15.89 sec. 
+* 35: Cost = 9123021, Time = 16.35 sec. 
+* 38: Cost = 9122802, Time = 17.70 sec. 
+* 42: Cost = 9122756, Time = 19.52 sec. 
+* 45: Cost = 9122442, Time = 20.94 sec. 
+* 46: Cost = 9122334, Time = 21.39 sec. 
+* 48: Cost = 9122185, Time = 22.32 sec. 
+* 50: Cost = 9121411, Time = 23.27 sec. 
+* 51: Cost = 9120712, Time = 23.79 sec. 
+* 55: Cost = 9120559, Time = 25.74 sec. 
+* 56: Cost = 9120109, Time = 26.23 sec. 
+* 62: Cost = 9119743, Time = 29.16 sec. 
+* 64: Cost = 9119358, Time = 30.14 sec. 
+* 65: Cost = 9118133, Time = 30.55 sec. 
+* 68: Cost = 9118090, Time = 32.02 sec. 
+* 70: Cost = 9116587, Time = 32.98 sec. 
+* 71: Cost = 9114147, Time = 33.49 sec. 
+* 72: Cost = 9114049, Time = 34.02 sec. 
+* 74: Cost = 9114035, Time = 35.01 sec. 
+* 75: Cost = 9110830, Time = 35.56 sec. 
+* 78: Cost = 9102373, Time = 37.02 sec. 
+* 80: Cost = 9100000, Time = 38.02 sec. 
+* 81: Cost = 9097922, Time = 38.52 sec. 
+* 83: Cost = 9096970, Time = 39.47 sec. 
+* 90: Cost = 9094712, Time = 43.14 sec. 
+*** The extent of improvement(0) is too small in 2.0s ***
+Run 1: Cost = 9094712, Time = 45.19 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 9094712, Cost.avg = 9094712.00, Cost.max = 9094712
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 94, Trials.avg = 94.0, Trials.max = 94
+Time.min = 45.19 sec., Time.avg = 45.19 sec., Time.max = 45.19 sec.
+Time.total = 98.32 sec.
+
+Key Metrics:
+	ioCount:			 10000
+	algorithmRunningDuration:	 98319.581 (ms)
+	memoryUse:			 0 (KB)
+	addressingDuration:		 9094712 (ms)
+	readDuration:			 10059657 (ms)
+	tapeBeltWear:			 20188969
+	tapeMotorWear:			 372
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

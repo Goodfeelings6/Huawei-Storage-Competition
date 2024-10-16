@@ -37,12 +37,12 @@ int LKHmain(double startTime)
     /* Find a specified number (Runs) of local optima */
     for (Run = 1; Run <= Runs; Run++) {
         LastTime = GetTime();
-        if (LastTime - StartTime >= TotalTimeLimit) {
-            if (TraceLevel >= 1)
-                printff("*** Time limit exceeded ***\n");
-            Run--;
-            break;
-        }
+        // if (Run!=1 && LastTime - StartTime >= TotalTimeLimit) {
+        //     if (TraceLevel >= 1)
+        //         printff("*** Time limit exceeded in LKHmain ***\n");
+        //     Run--;
+        //     break;
+        // }
         Cost = FindTour();      /* using the Lin-Kernighan heuristic */
         if (MaxPopulationSize > 1) {
             /* Genetic algorithm */

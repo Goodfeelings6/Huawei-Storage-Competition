@@ -186,12 +186,12 @@ GainType LinKernighan()
                 goto End_LinKernighan;
 
             // 移到这里判断，保证 StoreTour 执行至少一次
-            if (GetTime() - EntryTime >= TimeLimit ||
-                GetTime() - StartTime >= TotalTimeLimit) {
-                if (TraceLevel >= 1)
-                    printff("*** Time limit exceeded in LinKernighan\n");
-                goto End_LinKernighan;
-            }
+            // if (GetTime() - EntryTime >= TimeLimit ||
+            //     GetTime() - StartTime >= TotalTimeLimit) {
+            //     if (TraceLevel >= 1)
+            //         printff("*** Time limit exceeded in LinKernighan\n");
+            //     goto End_LinKernighan;
+            // }
         }
     }
     while (Gain > 0);

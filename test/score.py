@@ -58,16 +58,17 @@ def score():
         curr_data_i_dict = decode(curr_data[i])
         base_data_i_dict = decode(base_data[i])
         scoreFile.write(curr_data_i_dict["name"] + ':\t')
+        scoreFile.write("IO:"+str(curr_data_i_dict["ioCount"])+"\t")
         # 调度算法加分
         addrT = (base_data_i_dict["addressingDuration"]-curr_data_i_dict["addressingDuration"])*10
         schedulScore.append(addrT)
         # 调度用时加分 和 调度超时罚分
         if curr_data_i_dict["algorithmRunningDuration"]<=20000:
-            scheduleT = (20000-curr_data_i_dict["algorithmRunningDuration"])*10
+            scheduleT = (20000-curr_data_i_dict["algorithmRunningDuration"])/100
             penaltyT = 0
         else:
             scheduleT = 0
-            penaltyT = (curr_data_i_dict["algorithmRunningDuration"]-20000)*curr_data_i_dict["ioCount"]/50
+            penaltyT = (curr_data_i_dict["algorithmRunningDuration"]-20000)*curr_data_i_dict["ioCount"]/50000
         timeScore.append(scheduleT)
         timeoutPenalty.append(penaltyT)
         # 排序错误数量
