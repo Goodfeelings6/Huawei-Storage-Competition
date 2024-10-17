@@ -33,19 +33,19 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         p->POPMUSIC_SampleSize = 20;
-        p->POPMUSIC_Solutions = 50;
+        p->POPMUSIC_Solutions = 20;
     }
     else{ // 10000
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         p->POPMUSIC_SampleSize = 20;
-        p->POPMUSIC_Solutions = 50;
+        p->POPMUSIC_Solutions = 10;
     }
     p->Runs = 1;
-    p->TraceLevel = 1;
+    p->TraceLevel = 0;
     p->TimeLimit = DBL_MAX; // 由总时间、一定时间跨度内的改进值共同控制退出即可
-    p->TotalTimeLimit = 400; // 最大允许运行时间
+    p->TotalTimeLimit = 280; // 最大允许运行时间
     p->ScheduleScoreInSecond = 20;
     p->MoveType = 3;
     p->TimeSpan = 2;
