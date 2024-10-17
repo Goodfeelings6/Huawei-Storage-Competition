@@ -46,8 +46,19 @@ GainType FindTour()
         ChooseInitialTour();
     }
 
-    double recordTime = GetTime();
+    // double recordTime = GetTime();
     GainType recordCost = BetterCost;
+    int recordTrial = 1;
+    int TrialSpan = 100;
+    if(DimensionSaved <= 1002)
+        TrialSpan = 400;
+    else if(DimensionSaved <= 2002)
+        TrialSpan = 58;
+    else if(DimensionSaved <= 5002)
+        TrialSpan = 12;
+    else
+        TrialSpan = 4;
+
     for (Trial = 1; Trial <= MaxTrials; Trial++)
     {
         // if(Trial != 1){ // 保证至少跑完一次 Trial
@@ -82,25 +93,38 @@ GainType FindTour()
         
         // 总时间限制
         if (GetTime() - StartTime >= TotalTimeLimit) {
-                if (TraceLevel >= 1)
-                    printff("*** Time limit exceeded in FindTour ***\n");
-                Trial--;
-                break;
+            if (TraceLevel >= 1)
+                printff("*** Time limit exceeded in FindTour ***\n");
+            Trial--;
+            break;
         }
-
-        // 在一定时间跨度内统计改进幅度
-        if(GetTime() - recordTime >= TimeSpan){
+        // 在一定Trial跨度内统计改进幅度
+        if(Trial - recordTrial >= TimeSpan * TrialSpan){
             if(recordCost - BetterCost < TimeSpan*ScheduleScoreInSecond){
                 if (TraceLevel >= 1)
-                    printff("*** The extent of improvement("GainFormat") is too small in %.1fs ***\n",(recordCost - BetterCost), TimeSpan);
+                    printff("*** The extent of improvement("GainFormat") is too small in %d Trials ***\n",(recordCost - BetterCost), (int)TimeSpan * TrialSpan);
                 Trial--;
                 break;
             }
             else{
-                recordTime = GetTime();
+                recordTrial = Trial;
                 recordCost = BetterCost;
             }
         }
+
+        // 在一定时间跨度内统计改进幅度
+        // if(GetTime() - recordTime >= TimeSpan){
+        //     if(recordCost - BetterCost < TimeSpan*ScheduleScoreInSecond){
+        //         if (TraceLevel >= 1)
+        //             printff("*** The extent of improvement("GainFormat") is too small in %.1fs ***\n",(recordCost - BetterCost), TimeSpan);
+        //         Trial--;
+        //         break;
+        //     }
+        //     else{
+        //         recordTime = GetTime();
+        //         recordCost = BetterCost;
+        //     }
+        // }
 
         /* Choose FirstNode at random */
         if (Dimension == DimensionSaved)
