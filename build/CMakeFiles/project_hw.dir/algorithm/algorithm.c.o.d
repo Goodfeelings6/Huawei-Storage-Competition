@@ -60,4 +60,5 @@ CMakeFiles/project_hw.dir/algorithm/algorithm.c.o: \
  /usr/include/bits/types/struct_itimerspec.h \
  /home/csg/Huawei-Storage-Competition/LKH2_MIN/include/GainType.h \
  /home/csg/Huawei-Storage-Competition/LKH2_MIN/include/Hashing.h \
+ /home/csg/Huawei-Storage-Competition/public.h \
  /home/csg/Huawei-Storage-Competition/LKH2_MIN/include/Genetic.h

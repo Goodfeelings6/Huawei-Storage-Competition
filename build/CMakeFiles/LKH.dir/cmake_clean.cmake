@@ -43,6 +43,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/LKH.dir/LKH2_MIN/src/Create_POPMUSIC_CandidateSet.c.o.d"
   "CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.o"
   "CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.o.d"
+  "CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.o"
+  "CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.o.d"
   "CMakeFiles/LKH.dir/LKH2_MIN/src/ERXT.c.o"
   "CMakeFiles/LKH.dir/LKH2_MIN/src/ERXT.c.o.d"
   "CMakeFiles/LKH.dir/LKH2_MIN/src/Excludable.c.o"

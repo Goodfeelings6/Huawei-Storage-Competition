@@ -1,5 +1,5 @@
-# cmake_minimum_required(VERSION 2.8)
-cmake_minimum_required(VERSION 3.10.2)
+cmake_minimum_required(VERSION 2.8)
+# cmake_minimum_required(VERSION 3.10.2)
 project(project_hw)
 
 set(CMAKE_C_STANDARD 99)
@@ -19,6 +19,7 @@ set(LKH_DIR ${PROJECT_SOURCE_DIR}/LKH2_MIN)
 
 # 设置头文件目录变量
 set(HEADER_DIRS
+    ${PROJECT_SOURCE_DIR}
     ${ALG_DIR}
     ${LKH_DIR}
     ${LKH_DIR}/include
@@ -56,6 +57,7 @@ add_executable(project_hw  ${SOURCES})
 
 # 链接库 libseek_model.so libLKH.a libm.so(数学库)
 target_link_libraries(project_hw PRIVATE seek_model LKH m)
+target_link_libraries(project_hw PRIVATE -lm -g -std=c99)
 
 # 添加编译选项和宏定义
 # target_compile_options(project_hw PRIVATE -g -O2 -Wall -std=c99)

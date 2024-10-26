@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_1.txt
+The file path is: ./dataset/case_1.txt
 head info : [100,665760,1]
 
 io count = 10
@@ -60,13 +60,13 @@ SUBGRADIENT = YES
 SUBSEQUENT_MOVE_TYPE = 3
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
-TOTAL_TIME_LIMIT = 40.0
+TOTAL_TIME_LIMIT = 280.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
 Lower bound = 285068.0, Ascent time = 0.00 sec.
-Cand.min = 2, Cand.avg = 3.8, Cand.max = 5
-Edges.fixed = 13 [Cost = 0]
+Cand.min = 2, Cand.avg = 3.4, Cand.max = 5
+Edges.fixed = 1 [Cost = 0]
 Preprocessing time = 0.00 sec.
 Successes/Runs = 1/0
 Cost.min = 285068, Cost.avg = 285068.00, Cost.max = 285068
@@ -77,7 +77,7 @@ Time.total = 0.00 sec.
 
 Key Metrics:
 	ioCount:			 10
-	algorithmRunningDuration:	 0.994 (ms)
+	algorithmRunningDuration:	 2.166 (ms)
 	memoryUse:			 0 (KB)
 	addressingDuration:		 285068 (ms)
 	readDuration:			 7503 (ms)

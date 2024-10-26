@@ -55,6 +55,10 @@ CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.o: \
  /usr/include/bits/types/struct_itimerspec.h \
  /home/csg/Huawei-Storage-Competition/LKH2_MIN/include/GainType.h \
  /home/csg/Huawei-Storage-Competition/LKH2_MIN/include/Hashing.h \
+ /home/csg/Huawei-Storage-Competition/public.h \
+ /usr/lib/gcc/aarch64-linux-gnu/10.3.1/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h \
+ /usr/include/bits/stdint-uintn.h \
  /home/csg/Huawei-Storage-Competition/LKH2_MIN/include/Genetic.h \
  /home/csg/Huawei-Storage-Competition/LKH2_MIN/include/Heap.h \
  /home/csg/Huawei-Storage-Competition/LKH2_MIN/include/LKH.h \

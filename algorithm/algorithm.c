@@ -5,6 +5,8 @@
 #include "algorithm.h"
 #include "LKHInterface.h"
 
+#define USING_REAL_TIME_COST  // 是否启用实时的方式算代价，未定义则使用邻接矩阵方式
+
 #define DEBUG_LEVEL 0
 // #define DEBUG_LEVEL 1
 // #define DEBUG_LEVEL 2
@@ -43,12 +45,49 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         p->POPMUSIC_Solutions = 10;
     }
     p->Runs = 1;
-    p->TraceLevel = 0;
+    p->TraceLevel = 1;
     p->TimeLimit = DBL_MAX; // 由总时间、一定时间跨度内的改进值共同控制退出即可
     p->TotalTimeLimit = 280; // 最大允许运行时间
     p->ScheduleScoreInSecond = 20;
     p->MoveType = 3;
     p->TimeSpan = 2;
+}
+
+// 实时算代价
+int getCost(const InputParam *input, int len, int i, int j){
+    if(i == j)
+        return 0;
+    else if(i==len-1){ // 磁头节点
+        if(j==len-2){ // 磁头节点到虚拟节点的代价为极大值
+            return INF;
+        }
+        else{ // 磁头节点到其他节点的代价为对应寻址时间
+            HeadInfo start = {input->headInfo.wrap, input->headInfo.lpos, input->headInfo.status};
+            HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
+            return SeekTimeCalculate(&start, &end);  
+        }
+    }
+    else if(i==len-2){ // 虚拟节点
+        if(j==len-1){ // 虚拟节点到磁头节点的代价为0
+            return 0;
+        }
+        else{ // 虚拟节点到其他节点的代价为极大值
+            return INF;
+        }
+    }
+    else{ // 其他节点
+        if(j==len-1){// 其他节点到磁头节点的代价为极大值
+            return INF;
+        }
+        else if(j==len-2){// 其他节点到虚拟节点的代价为0
+            return 0;
+        }
+        else{
+            HeadInfo start = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].endLpos, HEAD_RW};
+            HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
+            return SeekTimeCalculate(&start, &end);
+        }
+    }
 }
 
 // LKH 算法
@@ -59,8 +98,9 @@ int32_t LKH(const InputParam *input, OutputParam *output)
 
     int32_t ret = 0;
 
-    /* 生成邻接矩阵 */
     uint32_t len = output->len + 2; //增加了一个虚拟节点和磁头起始位置节点
+#ifndef USING_REAL_TIME_COST
+    /* 生成邻接矩阵 */
     int **adjMat = (int **)malloc(sizeof(int *) * len);
     for (uint32_t i = 0; i < len; ++i){
         adjMat[i] = (int *)malloc(sizeof(int) * len);
@@ -107,6 +147,8 @@ int32_t LKH(const InputParam *input, OutputParam *output)
     }
 #endif
 
+#endif
+
     /* 基于最近邻贪心构造初始解， 注意巡回路径从1开始编号*/
     int *intialTour = (int *)malloc(len * sizeof(int));
     int* visited = (int*) calloc(len + 1, sizeof(int)); // 标记已经到达过的城市，数组初始化为0
@@ -119,8 +161,14 @@ int32_t LKH(const InputParam *input, OutputParam *output)
         int node = -1;
         // 找到最近的未访问城市
         for (int j = 1; j <= len; ++j){
-            if(!visited[j] && adjMat[current-1][j-1] < min_dist){
-                min_dist = adjMat[current-1][j-1];
+#ifndef USING_REAL_TIME_COST
+            int cost = adjMat[current - 1][j - 1];
+#endif
+#ifdef USING_REAL_TIME_COST
+            int cost = getCost(input, len, current - 1, j - 1);
+#endif
+            if (!visited[j] && cost < min_dist){
+                min_dist = cost;
                 node = j;
             }
         }
@@ -140,7 +188,12 @@ int32_t LKH(const InputParam *input, OutputParam *output)
     /* 调用 LKH 求解 */
     /* 确定LKH输入结构体 */
     LKHInput *lkhInput = (LKHInput *)malloc(sizeof(LKHInput));
+#ifndef USING_REAL_TIME_COST
     lkhInput->adjMat = adjMat;
+#endif
+#ifdef USING_REAL_TIME_COST
+    lkhInput->adjMat = 0;
+#endif
     lkhInput->matDimension = len;
     lkhInput->intialTour = intialTour;
     lkhInput->fixEdge = fixEdge;
@@ -149,6 +202,9 @@ int32_t LKH(const InputParam *input, OutputParam *output)
     lkhInput->lkhParameters = (LKHParameters *)malloc(sizeof(LKHParameters));
     loadDefaultParam(lkhInput->lkhParameters);
     loadUserChangedParam(lkhInput->matDimension, lkhInput->lkhParameters, scheduleStartTime);
+#ifdef USING_REAL_TIME_COST
+    lkhInput->lkhParameters->OriginInput = input;
+#endif
     /* 确定LKH输出结构体 */
     LKHOutput *lkhOutput = (LKHOutput *)malloc(sizeof(LKHOutput));
     lkhOutput->tourCost = 0;
@@ -180,10 +236,12 @@ int32_t LKH(const InputParam *input, OutputParam *output)
 #endif
 
     // 释放内存
+#ifndef USING_REAL_TIME_COST
     for (int i = 0; i < len; i++) {
         free(adjMat[i]);  // 逐行释放
     }
     free(adjMat);
+#endif
     free(intialTour);
     free(visited);
     free(fixEdge);
