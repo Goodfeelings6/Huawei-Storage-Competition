@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/csg/Huawei-Storage-Competition/algorithm -I/home/csg/Huawei-Storage-Competition/LKH2_MIN -I/home/csg/Huawei-Storage-Competition/LKH2_MIN/include
+C_INCLUDES = -I/home/csg/Huawei-Storage-Competition -I/home/csg/Huawei-Storage-Competition/algorithm -I/home/csg/Huawei-Storage-Competition/LKH2_MIN -I/home/csg/Huawei-Storage-Competition/LKH2_MIN/include
 
 C_FLAGS = -O3 -DNDEBUG -O3 -DNDEBUG -std=gnu99
 

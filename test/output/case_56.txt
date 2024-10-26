@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_56.txt
+The file path is: ./dataset/case_56.txt
 head info : [162,531938,1]
 
 io count = 10000
@@ -60,56 +60,57 @@ SUBGRADIENT = NO
 SUBSEQUENT_MOVE_TYPE = 3
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
-TOTAL_TIME_LIMIT = 40.0
+TOTAL_TIME_LIMIT = 280.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 2029641.0, Ascent time = 9.80 sec.
+Lower bound = 2029641.0, Ascent time = 9.48 sec.
 Cand.min = 2, Cand.avg = 5.7, Cand.max = 7
 Edges.fixed = 10003 [Cost = 0]
-Preprocessing time = 9.84 sec.
-* 1: Cost = 8429328, Time = 0.56 sec. 
-* 2: Cost = 8365988, Time = 0.90 sec. 
-* 3: Cost = 8341567, Time = 1.18 sec. 
-* 4: Cost = 8263047, Time = 1.46 sec. 
-* 7: Cost = 8226452, Time = 2.30 sec. 
-* 14: Cost = 8223648, Time = 4.32 sec. 
-* 15: Cost = 8202658, Time = 4.61 sec. 
-* 16: Cost = 8200264, Time = 4.88 sec. 
-* 18: Cost = 8192113, Time = 5.48 sec. 
-* 21: Cost = 8191436, Time = 6.31 sec. 
-* 22: Cost = 8182580, Time = 6.63 sec. 
-* 23: Cost = 8177026, Time = 6.94 sec. 
-* 25: Cost = 8170772, Time = 7.51 sec. 
-* 33: Cost = 8160528, Time = 9.93 sec. 
-* 36: Cost = 8156020, Time = 10.81 sec. 
-* 39: Cost = 8153052, Time = 11.71 sec. 
-* 41: Cost = 8152938, Time = 12.31 sec. 
-* 43: Cost = 8152435, Time = 12.91 sec. 
-* 49: Cost = 8144494, Time = 14.81 sec. 
-* 57: Cost = 8141306, Time = 17.28 sec. 
-* 68: Cost = 8135967, Time = 20.72 sec. 
-* 80: Cost = 8133869, Time = 24.27 sec. 
-* 87: Cost = 8129832, Time = 26.52 sec. 
-* 88: Cost = 8118478, Time = 26.82 sec. 
-* 89: Cost = 8112390, Time = 27.12 sec. 
-*** Time limit exceeded in FindTour ***
-Run 1: Cost = 8112390, Time = 27.13 sec. 
+Preprocessing time = 9.53 sec.
+* 1: Cost = 8429328, Time = 0.58 sec. 
+* 2: Cost = 8365988, Time = 0.93 sec. 
+* 3: Cost = 8341567, Time = 1.22 sec. 
+* 4: Cost = 8263047, Time = 1.51 sec. 
+* 7: Cost = 8226452, Time = 2.36 sec. 
+* 14: Cost = 8223648, Time = 4.39 sec. 
+* 15: Cost = 8202658, Time = 4.69 sec. 
+* 16: Cost = 8200264, Time = 4.95 sec. 
+* 18: Cost = 8192113, Time = 5.56 sec. 
+* 21: Cost = 8191436, Time = 6.40 sec. 
+* 22: Cost = 8182580, Time = 6.72 sec. 
+* 23: Cost = 8177026, Time = 7.03 sec. 
+* 25: Cost = 8170772, Time = 7.60 sec. 
+* 33: Cost = 8160528, Time = 10.04 sec. 
+* 36: Cost = 8156020, Time = 10.93 sec. 
+* 39: Cost = 8153052, Time = 11.84 sec. 
+* 41: Cost = 8152938, Time = 12.45 sec. 
+* 43: Cost = 8152435, Time = 13.05 sec. 
+* 49: Cost = 8144494, Time = 14.95 sec. 
+* 57: Cost = 8141306, Time = 17.45 sec. 
+* 68: Cost = 8135967, Time = 20.92 sec. 
+* 80: Cost = 8133869, Time = 24.52 sec. 
+* 87: Cost = 8129832, Time = 26.81 sec. 
+* 88: Cost = 8118478, Time = 27.11 sec. 
+* 89: Cost = 8112390, Time = 27.42 sec. 
+* 96: Cost = 8111795, Time = 29.68 sec. 
+*** The extent of improvement(0) is too small in 8 Trials ***
+Run 1: Cost = 8111795, Time = 32.25 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 8112390, Cost.avg = 8112390.00, Cost.max = 8112390
+Cost.min = 8111795, Cost.avg = 8111795.00, Cost.max = 8111795
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 89, Trials.avg = 89.0, Trials.max = 89
-Time.min = 27.13 sec., Time.avg = 27.13 sec., Time.max = 27.13 sec.
-Time.total = 40.19 sec.
+Trials.min = 104, Trials.avg = 104.0, Trials.max = 104
+Time.min = 32.25 sec., Time.avg = 32.25 sec., Time.max = 32.25 sec.
+Time.total = 45.00 sec.
 
 Key Metrics:
 	ioCount:			 10000
-	algorithmRunningDuration:	 40189.592 (ms)
+	algorithmRunningDuration:	 45004.175 (ms)
 	memoryUse:			 0 (KB)
-	addressingDuration:		 8112390 (ms)
+	addressingDuration:		 8111795 (ms)
 	readDuration:			 10443129 (ms)
-	tapeBeltWear:			 18055251
+	tapeBeltWear:			 18055331
 	tapeMotorWear:			 254
 	errorIOCount:			 0
 

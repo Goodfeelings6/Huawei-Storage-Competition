@@ -24,6 +24,7 @@ static void Read_EDGE_WEIGHT_SECTION(LKHInput* lkhInput);
 void loadDefaultParam(LKHParameters* p){
     p->TimeSpan = 1; 
     p->ScheduleScoreInSecond = 1000;
+    p->OriginInput = 0;
 
     p->ProblemFileName = 0;
     p->PiFileName = 0;
@@ -103,6 +104,7 @@ void ReadParameters(LKHInput* lkhInput)
     // 从结构体获取参数
     TimeSpan = lkhParam->TimeSpan; 
     ScheduleScoreInSecond = lkhParam->ScheduleScoreInSecond;
+    OriginInput = lkhParam->OriginInput;
 
     ProblemFileName = lkhParam->ProblemFileName;
     PiFileName = lkhParam->PiFileName;
@@ -197,13 +199,31 @@ void ReadProblem(LKHInput* lkhInput)
     /* DIMENSION */
     Dimension = lkhInput->matDimension;;
     DimensionSaved = Dimension;
-    /* EDGE_WEIGHT_TYPE */
-    EdgeWeightType = Copy("EXPLICIT");
-    WeightType = EXPLICIT;
-    Distance = Distance_EXPLICIT;
-    /* EDGE_WEIGHT_FORMAT */
-    EdgeWeightFormat = Copy("FULL_MATRIX");
-    WeightFormat = FULL_MATRIX;
+
+    // ################## 邻接矩阵为代价 ####################
+    if(lkhInput->lkhParameters->OriginInput == 0){
+        /* EDGE_WEIGHT_TYPE */
+        EdgeWeightType = Copy("EXPLICIT");
+        WeightType = EXPLICIT;
+        Distance = Distance_EXPLICIT;
+        /* EDGE_WEIGHT_FORMAT */
+        EdgeWeightFormat = Copy("FULL_MATRIX");
+        WeightFormat = FULL_MATRIX;
+    }
+    // #####################################################
+
+    // ################## 实时算代价 ####################
+    else{
+        /* EDGE_WEIGHT_TYPE */
+        EdgeWeightType = Copy("SPECIAL");
+        WeightType = SPECIAL;
+        Distance = Distance_SPECIAL;
+        /* EDGE_WEIGHT_FORMAT */
+        EdgeWeightFormat = Copy("FUNCTION");
+        WeightFormat = FUNCTION;
+    }
+    // #####################################################
+
     /* EDGE_DATA_FORMAT */
     EdgeDataFormat = NULL; 
     /* NODE_COORD_TYPE */
@@ -519,26 +539,34 @@ static void Read_EDGE_WEIGHT_SECTION(LKHInput* lkhInput)
         CreateNodes(); // 创建结点数组，是一个头尾相连的双链表数据结构，FirstNode指向第一个结点
 
     /* ProblemType == ATSP && WeightFormat == FULL_MATRIX */
-    // 为矩阵申请空间
-    n = DimensionSaved;
-    CostMatrix = (int *) calloc((size_t) n * n, sizeof(int));
-    for (Ni = FirstNode; Ni->Id <= n; Ni = Ni->Suc)
-        Ni->C = &CostMatrix[(size_t) (Ni->Id - 1) * n] - 1;
-    // 写入矩阵中
-    for (i = 1; i <= n; i++) {
-        Ni = &NodeSet[i];
-        for (j = 1; j <= n; j++) {
-            W = lkhInput->adjMat[i - 1][j - 1]; // 对应位置
-            if (j != i && W > INT_MAX / 2 / Precision)
-                eprintf("EDGE_WEIGHT_SECTION: "
-                        "Weight %d > INT_MAX / 2 / PRECISION", W);
-            Ni->C[j] = W;
-            if (i != j && W > M)
-                M = W;
+    if(WeightFormat == FULL_MATRIX){
+        // 为矩阵申请空间
+        n = DimensionSaved;
+        CostMatrix = (int *) calloc((size_t) n * n, sizeof(int));
+        for (Ni = FirstNode; Ni->Id <= n; Ni = Ni->Suc)
+            Ni->C = &CostMatrix[(size_t) (Ni->Id - 1) * n] - 1;
+        // 写入矩阵中
+        for (i = 1; i <= n; i++) {
+            Ni = &NodeSet[i];
+            for (j = 1; j <= n; j++) {
+                W = lkhInput->adjMat[i - 1][j - 1]; // 对应位置
+                if (j != i && W > INT_MAX / 2 / Precision)
+                    eprintf("EDGE_WEIGHT_SECTION: "
+                            "Weight %d > INT_MAX / 2 / PRECISION", W);
+                Ni->C[j] = W;
+                if (i != j && W > M)
+                    M = W;
+            }
+            Nj = &NodeSet[i + n];
+            FixEdge(Ni, Nj);
         }
-        Nj = &NodeSet[i + n];
-        FixEdge(Ni, Nj);
+        Distance = Distance_ATSP;
+        WeightType = -1;
     }
-    Distance = Distance_ATSP;
-    WeightType = -1;
+
+    /* ProblemType == ATSP && WeightFormat == FUNCTION */
+    if(WeightFormat == FUNCTION){
+        for (i = 1; i <= DimensionSaved; i++)
+            FixEdge(&NodeSet[i], &NodeSet[i + DimensionSaved]);
+    }
 }

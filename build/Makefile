@@ -694,6 +694,30 @@ LKH2_MIN/src/Distance.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/Distance.c.s
 .PHONY : LKH2_MIN/src/Distance.c.s
 
+LKH2_MIN/src/Distance_SPECIAL.o: LKH2_MIN/src/Distance_SPECIAL.c.o
+.PHONY : LKH2_MIN/src/Distance_SPECIAL.o
+
+# target to build an object file
+LKH2_MIN/src/Distance_SPECIAL.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.o
+.PHONY : LKH2_MIN/src/Distance_SPECIAL.c.o
+
+LKH2_MIN/src/Distance_SPECIAL.i: LKH2_MIN/src/Distance_SPECIAL.c.i
+.PHONY : LKH2_MIN/src/Distance_SPECIAL.i
+
+# target to preprocess a source file
+LKH2_MIN/src/Distance_SPECIAL.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.i
+.PHONY : LKH2_MIN/src/Distance_SPECIAL.c.i
+
+LKH2_MIN/src/Distance_SPECIAL.s: LKH2_MIN/src/Distance_SPECIAL.c.s
+.PHONY : LKH2_MIN/src/Distance_SPECIAL.s
+
+# target to generate assembly for a file
+LKH2_MIN/src/Distance_SPECIAL.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.s
+.PHONY : LKH2_MIN/src/Distance_SPECIAL.c.s
+
 LKH2_MIN/src/ERXT.o: LKH2_MIN/src/ERXT.c.o
 .PHONY : LKH2_MIN/src/ERXT.o
 
@@ -2117,6 +2141,9 @@ help:
 	@echo "... LKH2_MIN/src/Distance.o"
 	@echo "... LKH2_MIN/src/Distance.i"
 	@echo "... LKH2_MIN/src/Distance.s"
+	@echo "... LKH2_MIN/src/Distance_SPECIAL.o"
+	@echo "... LKH2_MIN/src/Distance_SPECIAL.i"
+	@echo "... LKH2_MIN/src/Distance_SPECIAL.s"
 	@echo "... LKH2_MIN/src/ERXT.o"
 	@echo "... LKH2_MIN/src/ERXT.i"
 	@echo "... LKH2_MIN/src/ERXT.s"

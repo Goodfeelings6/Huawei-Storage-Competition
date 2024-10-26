@@ -8,6 +8,7 @@ typedef struct{
     // 新增
     double TimeSpan; /* 统计改进值的时间跨度 */
     double ScheduleScoreInSecond; /* 调度加分/秒 (未乘10) */
+    const InputParam *OriginInput; /* 原始输入结构体 */
     
     char *ProblemFileName; /* PROBLEM_FILE */
     char *PiFileName; /* PI_FILE */
