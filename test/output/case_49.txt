@@ -43,7 +43,7 @@ PATCHING_C = 0
 # PI_FILE = 
 POPMUSIC_INITIAL_TOUR = YES
 POPMUSIC_MAX_NEIGHBORS = 5
-POPMUSIC_SAMPLE_SIZE = 20
+POPMUSIC_SAMPLE_SIZE = 40
 POPMUSIC_SOLUTIONS = 10
 POPMUSIC_TRIALS = 1
 # POPULATION_SIZE = 0
@@ -60,87 +60,47 @@ SUBGRADIENT = NO
 SUBSEQUENT_MOVE_TYPE = 3
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
-TOTAL_TIME_LIMIT = 40.0
+TOTAL_TIME_LIMIT = 280.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 2048009.0, Ascent time = 9.64 sec.
+Lower bound = 1305232.0, Ascent time = 18.88 sec.
 Cand.min = 2, Cand.avg = 5.7, Cand.max = 7
 Edges.fixed = 10003 [Cost = 0]
-Preprocessing time = 9.68 sec.
-* 1: Cost = 9852559, Time = 0.47 sec. 
-* 2: Cost = 9598254, Time = 0.75 sec. 
-* 3: Cost = 9533024, Time = 0.96 sec. 
-* 4: Cost = 9415907, Time = 1.16 sec. 
-* 6: Cost = 9395438, Time = 1.60 sec. 
-* 7: Cost = 9379373, Time = 1.79 sec. 
-* 8: Cost = 9362596, Time = 2.01 sec. 
-* 10: Cost = 9356247, Time = 2.44 sec. 
-* 12: Cost = 9348044, Time = 2.88 sec. 
-* 17: Cost = 9339769, Time = 3.94 sec. 
-* 19: Cost = 9331579, Time = 4.36 sec. 
-* 23: Cost = 9330682, Time = 5.16 sec. 
-* 24: Cost = 9329155, Time = 5.35 sec. 
-* 25: Cost = 9326472, Time = 5.58 sec. 
-* 28: Cost = 9323069, Time = 6.21 sec. 
-* 30: Cost = 9309287, Time = 6.60 sec. 
-* 31: Cost = 9306782, Time = 6.79 sec. 
-* 33: Cost = 9302297, Time = 7.19 sec. 
-* 34: Cost = 9301587, Time = 7.41 sec. 
-* 36: Cost = 9299362, Time = 7.78 sec. 
-* 37: Cost = 9297407, Time = 7.97 sec. 
-* 38: Cost = 9294529, Time = 8.19 sec. 
-* 41: Cost = 9281444, Time = 8.80 sec. 
-* 42: Cost = 9278255, Time = 9.05 sec. 
-* 47: Cost = 9255609, Time = 10.12 sec. 
-* 50: Cost = 9255102, Time = 10.77 sec. 
-* 52: Cost = 9254072, Time = 11.16 sec. 
-* 55: Cost = 9253814, Time = 11.75 sec. 
-* 56: Cost = 9251289, Time = 11.97 sec. 
-* 59: Cost = 9250779, Time = 12.60 sec. 
-* 63: Cost = 9249709, Time = 13.44 sec. 
-* 65: Cost = 9248489, Time = 13.84 sec. 
-* 67: Cost = 9247896, Time = 14.23 sec. 
-* 69: Cost = 9247202, Time = 14.66 sec. 
-* 70: Cost = 9243642, Time = 14.87 sec. 
-* 71: Cost = 9242795, Time = 15.07 sec. 
-* 73: Cost = 9242413, Time = 15.49 sec. 
-* 74: Cost = 9242291, Time = 15.70 sec. 
-* 75: Cost = 9242214, Time = 15.91 sec. 
-* 80: Cost = 9241906, Time = 17.02 sec. 
-* 82: Cost = 9238070, Time = 17.39 sec. 
-* 85: Cost = 9237980, Time = 18.04 sec. 
-* 90: Cost = 9231693, Time = 19.04 sec. 
-* 91: Cost = 9227197, Time = 19.26 sec. 
-* 95: Cost = 9226760, Time = 20.13 sec. 
-* 97: Cost = 9225131, Time = 20.55 sec. 
-* 98: Cost = 9224677, Time = 20.78 sec. 
-* 99: Cost = 9224627, Time = 21.01 sec. 
-* 100: Cost = 9221844, Time = 21.24 sec. 
-* 101: Cost = 9221688, Time = 21.41 sec. 
-* 105: Cost = 9220645, Time = 22.33 sec. 
-* 109: Cost = 9220033, Time = 23.12 sec. 
-* 115: Cost = 9219245, Time = 24.41 sec. 
-* 120: Cost = 9215376, Time = 25.51 sec. 
-* 121: Cost = 9210713, Time = 25.73 sec. 
-*** Time limit exceeded in FindTour ***
-Run 1: Cost = 9210713, Time = 27.45 sec. 
+Preprocessing time = 18.92 sec.
+* 1: Cost = 11155483, Time = 0.57 sec. 
+* 2: Cost = 10347602, Time = 1.03 sec. 
+* 3: Cost = 9469712, Time = 1.48 sec. 
+* 4: Cost = 9345514, Time = 1.88 sec. 
+* 6: Cost = 9261216, Time = 2.64 sec. 
+* 7: Cost = 8934199, Time = 3.05 sec. 
+* 8: Cost = 8822549, Time = 3.46 sec. 
+* 13: Cost = 8744080, Time = 5.40 sec. 
+* 19: Cost = 8702448, Time = 7.74 sec. 
+* 21: Cost = 8655374, Time = 8.53 sec. 
+* 24: Cost = 8637418, Time = 9.70 sec. 
+* 28: Cost = 8624920, Time = 11.39 sec. 
+* 29: Cost = 8579208, Time = 11.81 sec. 
+* 34: Cost = 8578072, Time = 13.88 sec. 
+* 40: Cost = 8515466, Time = 16.29 sec. 
+*** The extent of improvement(0) is too small in 8 Trials ***
+Run 1: Cost = 8515466, Time = 19.40 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 9210713, Cost.avg = 9210713.00, Cost.max = 9210713
+Cost.min = 8515466, Cost.avg = 8515466.00, Cost.max = 8515466
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 129, Trials.avg = 129.0, Trials.max = 129
-Time.min = 27.45 sec., Time.avg = 27.45 sec., Time.max = 27.45 sec.
-Time.total = 40.21 sec.
+Trials.min = 48, Trials.avg = 48.0, Trials.max = 48
+Time.min = 19.40 sec., Time.avg = 19.40 sec., Time.max = 19.40 sec.
+Time.total = 42.95 sec.
 
 Key Metrics:
 	ioCount:			 10000
-	algorithmRunningDuration:	 40207.785 (ms)
-	memoryUse:			 0 (KB)
-	addressingDuration:		 9210713 (ms)
+	algorithmRunningDuration:	 42949.955 (ms)
+	memoryUse:			 16315.44 (KB)
+	addressingDuration:		 10188614 (ms)
 	readDuration:			 10067534 (ms)
-	tapeBeltWear:			 19018076
-	tapeMotorWear:			 342
+	tapeBeltWear:			 17728831
+	tapeMotorWear:			 882
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

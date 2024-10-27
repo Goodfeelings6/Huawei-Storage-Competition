@@ -60,7 +60,8 @@ def score():
         scoreFile.write(curr_data_i_dict["name"] + ':\t')
         scoreFile.write("IO:"+str(curr_data_i_dict["ioCount"])+"\t")
         # 调度算法加分
-        addrT = (base_data_i_dict["addressingDuration"]-curr_data_i_dict["addressingDuration"])*10
+        addrT = (base_data_i_dict["addressingDuration"]-curr_data_i_dict["addressingDuration"])*10 + \
+                (base_data_i_dict["tapeBeltWear"]-curr_data_i_dict["tapeBeltWear"])*10
         schedulScore.append(addrT)
         # 调度用时加分 和 调度超时罚分
         if curr_data_i_dict["algorithmRunningDuration"]<=20000:
@@ -71,6 +72,12 @@ def score():
             penaltyT = (curr_data_i_dict["algorithmRunningDuration"]-20000)*curr_data_i_dict["ioCount"]/50000
         timeScore.append(scheduleT)
         timeoutPenalty.append(penaltyT)
+        # 空间超限罚分
+        if curr_data_i_dict["memoryUse"] <= 10240:
+            spaceOverlimitP = 0
+        else:
+            spaceOverlimitP = (curr_data_i_dict["memoryUse"]-10240)*curr_data_i_dict["ioCount"]/102400
+        spaceOverlimitPenalty.append(spaceOverlimitP)
         # 排序错误数量
         errorC = curr_data_i_dict["errorIOCount"]
         sortErrorCount.append(errorC)
@@ -79,13 +86,14 @@ def score():
         if errorC > 0:
             instanceS = 0
         else:
-            instanceS = addrT+scheduleT-penaltyT
+            instanceS = addrT+scheduleT-penaltyT-spaceOverlimitP
         instanceScore.append(instanceS)
 
         # 写入文件
         scoreFile.write(f"调度算法加分:{addrT:.2f}\t")
         scoreFile.write(f"调度用时加分:{scheduleT:.2f}\t")
         scoreFile.write(f"调度超时罚分:{penaltyT:.2f}\t")
+        scoreFile.write(f"空间超限罚分:{spaceOverlimitP:.2f}\t")
         scoreFile.write(f"排序错误数量:{errorC:.2f}\t")
         scoreFile.write(f"算例总得分:{instanceS:.2f}\t")
         scoreFile.write('\n')
@@ -93,11 +101,13 @@ def score():
     schedulScore_sum = sum(schedulScore)
     timeScore_sum = sum(timeScore)
     timeoutPenalty_sum = sum(timeoutPenalty)
+    spaceOverlimitPenalty_sum = sum(spaceOverlimitPenalty)
     sortErrorCount_sum = sum(sortErrorCount)
     instanceScore_sum = sum(instanceScore)
     scoreFile.write(f"调度算法总加分:{schedulScore_sum:.2f}\t")
     scoreFile.write(f"调度用时总加分:{timeScore_sum:.2f}\t")
     scoreFile.write(f"调度超时总罚分:{timeoutPenalty_sum:.2f}\t")
+    scoreFile.write(f"空间超限总罚分:{spaceOverlimitPenalty_sum:.2f}\t")
     scoreFile.write(f"排序错误总数量:{sortErrorCount_sum:.2f}\t")
     scoreFile.write(f"\n总分:{instanceScore_sum:.2f}\n")
     scoreFile.close()

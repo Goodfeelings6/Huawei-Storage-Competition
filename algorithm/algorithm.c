@@ -41,7 +41,7 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
-        p->POPMUSIC_SampleSize = 20;
+        p->POPMUSIC_SampleSize = 40;
         p->POPMUSIC_Solutions = 10;
     }
     p->Runs = 1;
@@ -64,7 +64,7 @@ int getCost(const InputParam *input, int len, int i, int j){
         else{ // 磁头节点到其他节点的代价为对应寻址时间
             HeadInfo start = {input->headInfo.wrap, input->headInfo.lpos, input->headInfo.status};
             HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
-            return SeekTimeCalculate(&start, &end);  
+            return SeekTimeCalculate(&start, &end)+BeltWearTimes(&start, &end, NULL); 
         }
     }
     else if(i==len-2){ // 虚拟节点
@@ -85,7 +85,7 @@ int getCost(const InputParam *input, int len, int i, int j){
         else{
             HeadInfo start = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].endLpos, HEAD_RW};
             HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
-            return SeekTimeCalculate(&start, &end);
+            return SeekTimeCalculate(&start, &end)+BeltWearTimes(&start, &end, NULL); 
         }
     }
 }
