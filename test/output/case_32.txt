@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: ./dataset/case_32.txt
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_32.txt
 head info : [229,266435,1]
 
 io count = 1000
@@ -64,40 +64,34 @@ TOTAL_TIME_LIMIT = 280.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 2374307.4, Ascent time = 6.68 sec.
-Cand.min = 2, Cand.avg = 4.9, Cand.max = 6
+Lower bound = 2371071.2, Ascent time = 3.38 sec.
+Cand.min = 2, Cand.avg = 5.0, Cand.max = 6
 Edges.fixed = 1003 [Cost = 0]
-Preprocessing time = 6.87 sec.
-* 1: Cost = 2514507, Time = 0.01 sec. 
-* 2: Cost = 2514428, Time = 0.01 sec. 
-* 3: Cost = 2514367, Time = 0.02 sec. 
-* 4: Cost = 2514284, Time = 0.03 sec. 
-* 5: Cost = 2514206, Time = 0.03 sec. 
-* 7: Cost = 2514038, Time = 0.04 sec. 
-* 9: Cost = 2513957, Time = 0.05 sec. 
-* 10: Cost = 2513955, Time = 0.06 sec. 
-* 54: Cost = 2513905, Time = 0.27 sec. 
-* 59: Cost = 2513795, Time = 0.29 sec. 
-* 63: Cost = 2513585, Time = 0.31 sec. 
-* 67: Cost = 2513562, Time = 0.33 sec. 
+Preprocessing time = 3.53 sec.
+* 1: Cost = 2699240, Time = 0.00 sec. 
+* 2: Cost = 2405426, Time = 0.01 sec. 
+* 15: Cost = 2396656, Time = 0.05 sec. 
+* 88: Cost = 2392858, Time = 0.30 sec. 
+* 91: Cost = 2389308, Time = 0.31 sec. 
+* 237: Cost = 2388704, Time = 0.83 sec. 
 *** The extent of improvement(0) is too small in 800 Trials ***
-Run 1: Cost = 2513562, Time = 7.56 sec. 
+Run 1: Cost = 2388704, Time = 5.71 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 2513562, Cost.avg = 2513562.00, Cost.max = 2513562
+Cost.min = 2388704, Cost.avg = 2388704.00, Cost.max = 2388704
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 1600, Trials.avg = 1600.0, Trials.max = 1600
-Time.min = 7.56 sec., Time.avg = 7.56 sec., Time.max = 7.56 sec.
-Time.total = 14.50 sec.
+Time.min = 5.71 sec., Time.avg = 5.71 sec., Time.max = 5.71 sec.
+Time.total = 9.30 sec.
 
 Key Metrics:
 	ioCount:			 1000
-	algorithmRunningDuration:	 14500.707 (ms)
-	memoryUse:			 0 (KB)
-	addressingDuration:		 2513562 (ms)
+	algorithmRunningDuration:	 9297.038 (ms)
+	memoryUse:			 5467.60 (KB)
+	addressingDuration:		 2901999 (ms)
 	readDuration:			 1058372 (ms)
-	tapeBeltWear:			 3691966
-	tapeMotorWear:			 116
+	tapeBeltWear:			 3357201
+	tapeMotorWear:			 326
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

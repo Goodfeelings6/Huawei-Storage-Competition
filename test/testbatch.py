@@ -3,7 +3,9 @@ import os
 import subprocess
 import shutil
 import re
-
+import threading
+import psutil
+import time
 
 # 获取 test 文件夹根路径
 testDir = os.path.abspath(os.path.dirname(__file__))
@@ -27,7 +29,8 @@ parser.add_argument("-des", type=str, help="算例输出目录", default=outputD
 args = parser.parse_args()
 
 first = True
-
+memory_usage = []
+peak_memory = 0
 
 def build():
     """ 仅构建 """
@@ -120,6 +123,39 @@ def formatDetails(filePath)->str:
     else:
         return ret
 
+def monitor_memory(process:subprocess.Popen, interval=1):
+    """ 监控指定 process 的内存使用 """
+    def theadFunc(pid, interval):
+        try:
+            # 线程通过 pid 获取对应进程信息
+            proc = psutil.Process(pid)
+            while proc.is_running() and not proc.status() == psutil.STATUS_ZOMBIE:
+                memory_info = proc.memory_info()
+                memory_usage_mb = memory_info.rss / 1024 / 1024
+                memory_usage.append(memory_usage_mb)
+                global peak_memory
+                peak_memory = max(peak_memory, memory_usage_mb)
+                # print(f"Current Memory: {memory_usage_mb:.2f} MB, Peak Memory: {peak_memory:.2f} MB", end='\r')
+                time.sleep(interval)
+        except psutil.NoSuchProcess:
+            print("Process not found.")
+
+    # 创建一个线程监控 process 的内存使用
+    monitor_thread = threading.Thread(target=theadFunc, args=(process.pid, interval))
+    monitor_thread.start()
+
+def changeMemoryText(filePath):
+    """ 替换输出文件内存部分内容 """
+    # 计算平均内存
+    average_memory = sum(memory_usage) / len(memory_usage) if memory_usage else 0
+    # 读取文件内容
+    with open(filePath, 'r', encoding='utf-8') as file:
+        content = file.read()
+    # 替换内存部分内容
+    content = re.sub(r"memoryUse:\s+\d+", f"memoryUse:\t\t\t {(average_memory*1024):.2f}", content)
+    # 将修改后的内容写回文件
+    with open(filePath, 'w', encoding='utf-8') as file:
+        file.write(content)
 
 def test():
     """ 直接运行测试 """
@@ -130,19 +166,33 @@ def test():
     detailFile = open(os.path.join(args.des, "A-detail.txt"), "w", encoding='utf-8')
     for file in sorted(os.listdir(args.src),key=lambda x:int(re.split(r'[_.]+',x)[1])): # 测试所有用例
         # 运行调度算法
-        cmd = " ".join([exePath, "-f", os.path.join(args.src, file), ">"+os.path.join(args.des, file)])
-        result = subprocess.run(cmd, shell=True, stderr=subprocess.PIPE, text=True)
+        cmd = " ".join([exePath, "-f", os.path.join(args.src, file)])
+        # process = subprocess.run(cmd, shell=True, stderr=subprocess.PIPE, text=True)
+        stdout_file = open(os.path.join(args.des, file), 'w') # 不使用命令行重定向了，不然内存监控的进程不对，改为使用 subprocess 来重定向
+        # 启动进程
+        process = subprocess.Popen(cmd, shell=True, stdout=stdout_file, stderr=subprocess.PIPE, text=True) # 异步的
+        # 监控内存
+        monitor_memory(process, 1)
+        # 等待子进程完成
+        process.wait()
+        stdout_file.close()
+        # 获取进程输出
+        stdout, stderr = process.communicate()
+
         summaryFile.write(file + ':\t')
         # 检查返回码和输出
-        if result.returncode != 0:
-            print(f"test {file} fail! retval:{result.returncode}, err_detail:{result.stderr}")
-            summaryFile.write(f"test {file} fail! retval:{result.returncode}, err_detail:{result.stderr}\n")
-            detailFile.write(f"test {file} fail! retval:{result.returncode}, err_detail:{result.stderr}\n")
+        if process.returncode != 0:
+            print(f"test {file} fail! retval:{process.returncode}, err_detail:{stderr}")
+            summaryFile.write(f"test {file} fail! retval:{process.returncode}, err_detail:{stderr}\n")
+            detailFile.write(f"test {file} fail! retval:{process.returncode}, err_detail:{stderr}\n")
         else:
             print(f"test {file} success!")
+            changeMemoryText(os.path.join(args.des, file))
             summaryFile.write(formatMetrics(os.path.join(args.des, file)))
             detailFile.write(formatDetails(os.path.join(args.des, file)))
-
+        
+        globals()['memory_usage'] = []
+        globals()['peak_memory'] = 0
     
     summaryFile.close()
     print("Done!")

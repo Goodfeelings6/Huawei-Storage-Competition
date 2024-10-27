@@ -60,29 +60,32 @@ SUBGRADIENT = YES
 SUBSEQUENT_MOVE_TYPE = 3
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
-TOTAL_TIME_LIMIT = 40.0
+TOTAL_TIME_LIMIT = 280.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 741581.0, Ascent time = 0.03 sec.
-Cand.min = 2, Cand.avg = 4.2, Cand.max = 6
+Lower bound = 870069.7, Ascent time = 0.05 sec.
+Cand.min = 2, Cand.avg = 4.5, Cand.max = 6
 Edges.fixed = 103 [Cost = 0]
-Preprocessing time = 0.03 sec.
-Successes/Runs = 1/0
-Cost.min = 741581, Cost.avg = 741581.00, Cost.max = 741581
+Preprocessing time = 0.05 sec.
+* 1: Cost = 875820, Time = 0.00 sec. 
+Run 1: Cost = 875820, Time = 0.02 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 875820, Cost.avg = 875820.00, Cost.max = 875820
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
-Time.min = 0.03 sec., Time.avg = 0.03 sec., Time.max = 0.03 sec.
-Time.total = 0.03 sec.
+Trials.min = 204, Trials.avg = 204.0, Trials.max = 204
+Time.min = 0.02 sec., Time.avg = 0.02 sec., Time.max = 0.02 sec.
+Time.total = 0.07 sec.
 
 Key Metrics:
 	ioCount:			 100
-	algorithmRunningDuration:	 28.131 (ms)
-	memoryUse:			 0 (KB)
-	addressingDuration:		 741581 (ms)
+	algorithmRunningDuration:	 71.814 (ms)
+	memoryUse:			 1232.00 (KB)
+	addressingDuration:		 850052 (ms)
 	readDuration:			 107913 (ms)
-	tapeBeltWear:			 1207157
-	tapeMotorWear:			 20
+	tapeBeltWear:			 974564
+	tapeMotorWear:			 110
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt
