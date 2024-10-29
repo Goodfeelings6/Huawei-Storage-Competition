@@ -60,32 +60,29 @@ SUBGRADIENT = YES
 SUBSEQUENT_MOVE_TYPE = 3
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
-TOTAL_TIME_LIMIT = 280.0
+TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 669796.6, Ascent time = 0.00 sec.
-Cand.min = 2, Cand.avg = 3.4, Cand.max = 5
+Lower bound = 956222.0, Ascent time = 0.00 sec.
+Cand.min = 2, Cand.avg = 3.4, Cand.max = 4
 Edges.fixed = 13 [Cost = 0]
 Preprocessing time = 0.00 sec.
-* 1: Cost = 670411, Time = 0.00 sec. 
-Run 1: Cost = 670411, Time = 0.00 sec. 
-
-Successes/Runs = 0/1
-Cost.min = 670411, Cost.avg = 670411.00, Cost.max = 670411
+Successes/Runs = 1/0
+Cost.min = 956222, Cost.avg = 956222.00, Cost.max = 956222
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 24, Trials.avg = 24.0, Trials.max = 24
+Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
 Time.min = 0.00 sec., Time.avg = 0.00 sec., Time.max = 0.00 sec.
 Time.total = 0.00 sec.
 
 Key Metrics:
 	ioCount:			 10
-	algorithmRunningDuration:	 1.469 (ms)
-	memoryUse:			 4.00 (KB)
-	addressingDuration:		 289463 (ms)
+	algorithmRunningDuration:	 1.096 (ms)
+	memoryUse:			 1340.00 (KB)
+	addressingDuration:		 285068 (ms)
 	readDuration:			 7503 (ms)
-	tapeBeltWear:			 677282
-	tapeMotorWear:			 18
+	tapeBeltWear:			 678025
+	tapeMotorWear:			 16
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

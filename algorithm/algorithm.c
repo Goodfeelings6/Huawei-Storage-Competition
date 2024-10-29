@@ -18,6 +18,12 @@ double MyGetTime(){ // 返回实际时间：秒
     gettimeofday(&tv, NULL);
     return tv.tv_sec + tv.tv_usec / 1000000.0;
 }
+int GetObjectValue(const HeadInfo *start, const HeadInfo *end){ /* 返回目标函数值(距离) */
+    // return SeekTimeCalculate(start, end);
+    return SeekTimeCalculate(start, end)+BeltWearTimes(start, end, NULL);
+    // return SeekTimeCalculate(start, end)+BeltWearTimes(start, end, NULL)+MotorWearTimes(start, end);
+}
+
 // 设置需要调整的 LKH 的参数
 void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleStartTime){
     if(matDimension <= 1002){ // 10,50,100,1000 
@@ -29,31 +35,34 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         p->POPMUSIC_InitialTour = 1;
         p->POPMUSIC_SampleSize = 20;
         p->POPMUSIC_Solutions = 50;
+        p->MaxCandidates = 15;
     }
     else if(matDimension <= 5002){ // 5000
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         p->POPMUSIC_SampleSize = 20;
-        p->POPMUSIC_Solutions = 20;
+        p->POPMUSIC_Solutions = 25;
+        p->MaxCandidates = 15;
     }
     else{ // 10000
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
-        p->POPMUSIC_SampleSize = 40;
-        p->POPMUSIC_Solutions = 10;
+        p->POPMUSIC_SampleSize = 30;
+        p->POPMUSIC_Solutions = 20;
+        p->MaxCandidates = 6;
     }
     p->Runs = 1;
     p->TraceLevel = 1;
     p->TimeLimit = DBL_MAX; // 由总时间、一定时间跨度内的改进值共同控制退出即可
-    p->TotalTimeLimit = 280; // 最大允许运行时间
+    p->TotalTimeLimit = 100; // 最大允许运行时间
     p->ScheduleScoreInSecond = 20;
     p->MoveType = 3;
     p->TimeSpan = 2;
 }
 
-// 实时算代价
+// LKH初始解实时算代价
 int getCost(const InputParam *input, int len, int i, int j){
     if(i == j)
         return 0;
@@ -64,7 +73,7 @@ int getCost(const InputParam *input, int len, int i, int j){
         else{ // 磁头节点到其他节点的代价为对应寻址时间
             HeadInfo start = {input->headInfo.wrap, input->headInfo.lpos, input->headInfo.status};
             HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
-            return SeekTimeCalculate(&start, &end)+BeltWearTimes(&start, &end, NULL); 
+            return GetObjectValue(&start, &end);
         }
     }
     else if(i==len-2){ // 虚拟节点
@@ -85,7 +94,7 @@ int getCost(const InputParam *input, int len, int i, int j){
         else{
             HeadInfo start = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].endLpos, HEAD_RW};
             HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
-            return SeekTimeCalculate(&start, &end)+BeltWearTimes(&start, &end, NULL); 
+            return GetObjectValue(&start, &end);
         }
     }
 }
@@ -113,7 +122,7 @@ int32_t LKH(const InputParam *input, OutputParam *output)
             else {
                 HeadInfo start = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].endLpos, HEAD_RW};
                 HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
-                adjMat[i][j] = SeekTimeCalculate(&start, &end);
+                adjMat[i][j] = GetObjectValue(&start, &end);
             }
         }
     }
@@ -125,7 +134,7 @@ int32_t LKH(const InputParam *input, OutputParam *output)
         
         HeadInfo start = {input->headInfo.wrap, input->headInfo.lpos, input->headInfo.status};
         HeadInfo end = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].startLpos, HEAD_RW};
-        adjMat[len-1][i] = SeekTimeCalculate(&start, &end);  // 磁头节点到其他节点的代价为对应寻址时间
+        adjMat[len-1][i] = GetObjectValue(&start, &end);  // 磁头节点到其他节点的代价为对应寻址时间
         adjMat[i][len-1] = INF;  // 其他节点到磁头节点的代价为极大值，则不可能返回该点
     }
     adjMat[len-2][len-1] = 0; // 虚拟节点到磁头节点的代价为0，到其他结点代价无穷，相当于固定了磁头节点为第二个节点
@@ -363,8 +372,8 @@ int32_t Scan(const InputParam *input, OutputParam *output){
 
 // 最近邻贪心构造
 int32_t NearestNeighbor(const InputParam *input, OutputParam *output){
-    /* 生成邻接矩阵 */
     uint32_t len = output->len + 1; //增加了一个磁头起始位置节点
+    /* 生成邻接矩阵 */
     int **adjMat = (int **)malloc(sizeof(int *) * len);
     for (uint32_t i = 0; i < len; ++i){
         adjMat[i] = (int *)malloc(sizeof(int) * len);
@@ -377,7 +386,7 @@ int32_t NearestNeighbor(const InputParam *input, OutputParam *output){
             else {
                 HeadInfo start = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].endLpos, HEAD_RW};
                 HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
-                adjMat[i][j] = SeekTimeCalculate(&start, &end);
+                adjMat[i][j] = GetObjectValue(&start, &end);;
             }
         }
     }
@@ -386,7 +395,7 @@ int32_t NearestNeighbor(const InputParam *input, OutputParam *output){
     for (uint32_t i = 0; i < len - 1; ++i) {  
         HeadInfo start = {input->headInfo.wrap, input->headInfo.lpos, input->headInfo.status};
         HeadInfo end = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].startLpos, HEAD_RW};
-        adjMat[len-1][i] = SeekTimeCalculate(&start, &end);  // 磁头节点到其他节点的代价为对应寻址时间
+        adjMat[len-1][i] = GetObjectValue(&start, &end);;  // 磁头节点到其他节点的代价为对应寻址时间
         adjMat[i][len-1] = INF;  // 其他节点到磁头节点的代价为极大值，则不可能返回该点
     }
     adjMat[len-1][len-1] = 0; // 磁头节点到自身的代价为0
@@ -417,8 +426,9 @@ int32_t NearestNeighbor(const InputParam *input, OutputParam *output){
         int node = -1;
         // 找到最近的未访问城市
         for (int j = 1; j <= len; ++j){
-            if(!visited[j] && adjMat[current-1][j-1] < min_dist){
-                min_dist = adjMat[current-1][j-1];
+            int cost = adjMat[current - 1][j - 1];
+            if(!visited[j] && cost < min_dist){
+                min_dist = cost;
                 node = j;
             }
         }
