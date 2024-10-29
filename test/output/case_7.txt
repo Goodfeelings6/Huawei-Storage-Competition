@@ -60,16 +60,16 @@ SUBGRADIENT = YES
 SUBSEQUENT_MOVE_TYPE = 3
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
-TOTAL_TIME_LIMIT = 280.0
+TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 660109.0, Ascent time = 0.00 sec.
-Cand.min = 2, Cand.avg = 3.3, Cand.max = 5
+Lower bound = 942916.0, Ascent time = 0.00 sec.
+Cand.min = 2, Cand.avg = 3.2, Cand.max = 5
 Edges.fixed = 13 [Cost = 0]
 Preprocessing time = 0.00 sec.
 Successes/Runs = 1/0
-Cost.min = 660109, Cost.avg = 660109.00, Cost.max = 660109
+Cost.min = 942916, Cost.avg = 942916.00, Cost.max = 942916
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
 Time.min = 0.00 sec., Time.avg = 0.00 sec., Time.max = 0.00 sec.
@@ -77,8 +77,8 @@ Time.total = 0.00 sec.
 
 Key Metrics:
 	ioCount:			 10
-	algorithmRunningDuration:	 0.980 (ms)
-	memoryUse:			 1216.00 (KB)
+	algorithmRunningDuration:	 1.030 (ms)
+	memoryUse:			 492.00 (KB)
 	addressingDuration:		 282807 (ms)
 	readDuration:			 13068 (ms)
 	tapeBeltWear:			 672063

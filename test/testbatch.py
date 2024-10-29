@@ -31,6 +31,9 @@ args = parser.parse_args()
 first = True
 memory_usage = []
 peak_memory = 0
+total_addressingDuration = 0
+total_tapeBeltWear = 0
+total_tapeMotorWear = 0
 
 def build():
     """ 仅构建 """
@@ -69,6 +72,11 @@ def formatMetrics(filePath)->str:
                      ret += "".join(line)
                      ret += "\t"
         ret += "\n"
+    # 从ret中顺便提取信息
+    global total_addressingDuration,total_tapeBeltWear,total_tapeMotorWear
+    total_addressingDuration += int(re.search(r'addressingDuration:(\d+)\(ms\)', ret).group(1)) 
+    total_tapeBeltWear += int(re.search(r'tapeBeltWear:(\d+)', ret).group(1)) 
+    total_tapeMotorWear += int(re.search(r'tapeMotorWear:(\d+)', ret).group(1)) 
     return ret
 
 def formatDetails(filePath)->str:
@@ -87,26 +95,32 @@ def formatDetails(filePath)->str:
     else:
         ret += f"|{'none':^8}"
     # 子问题数
-    match = re.search(r'Subproblem 1 of (\d+)', content)
-    if match:
-        ret += f"|{match.group(1):^9}"
-    else:
-        ret += f"|{1:^9}"
+    # match = re.search(r'Subproblem 1 of (\d+)', content)
+    # if match:
+    #     ret += f"|{match.group(1):^9}"
+    # else:
+    #     ret += f"|{1:^9}"
     # Ascent时间
-    match = re.search(r'Ascent time\s*=\s*([\d.]+)\s*sec', content)
-    if match:
-        ret += f"|{match.group(1)+'s':^10}"
-    else:
-        ret += f"|{'none':^10}s"
+    # match = re.search(r'Ascent time\s*=\s*([\d.]+)\s*sec', content)
+    # if match:
+    #     ret += f"|{match.group(1)+'s':^10}"
+    # else:
+    #     ret += f"|{'none':^10}s"
     # 局部搜索最多用时
-    matchs = re.findall(r'Run 1: Cost = [\d]+, Time = ([\d.]+) sec.', content)
-    if matchs:
-        maxTime = max(matchs)
-        ret += f"|{maxTime+'s':^15}"
+    # matchs = re.findall(r'Run 1: Cost = [\d]+, Time = ([\d.]+) sec.', content)
+    # if matchs:
+    #     maxTime = max(matchs)
+    #     ret += f"|{maxTime+'s':^15}"
+    # else:
+    #     ret += f"|{'0s':^15}"
+    # 总用时
+    match = re.search(r'algorithmRunningDuration:\s*([\d.]+)\s*\(ms\)', content)
+    if match:
+        ret += f"|{str(round(float(match.group(1))/1000,2))+'s':^10}"
     else:
-        ret += f"|{'0s':^15}"
+        ret += f"|{'none':^10}ms"
     # 最终Cost
-    match = re.search(r'addressingDuration:\s*([\d.]+)\s*\(ms\)', content)
+    match = re.search(r'Cost.min\s*=\s*([\d.]+)', content)
     if match:
         ret += f"|{match.group(1):^10}"
     else:
@@ -116,8 +130,10 @@ def formatDetails(filePath)->str:
     
     global first
     if first: 
-        head = "|   算例   |  IO数量 |子问题数 | Ascent时间|局部搜索最多用时|  最终Cost |\n" \
-               "|----------|--------|---------|----------|---------------|----------|\n"
+        # head = "|   算例   |  IO数量 |子问题数 | Ascent时间|局部搜索最多用时|  最终Cost |\n" \
+            #    "|----------|--------|---------|----------|---------------|----------|\n"
+        head = "|   算例   |  IO数量 |  总用时  |  最终Cost |\n" \
+               "|----------|--------|----------|----------|\n"
         first = False
         return head+ret
     else:
@@ -195,6 +211,11 @@ def test():
         globals()['peak_memory'] = 0
     
     summaryFile.close()
+    with open(os.path.join(args.des, "A-total.txt"), "w", encoding='utf-8') as totalFile:
+        totalFile.write(f"总寻址时间:{total_addressingDuration}\n")
+        totalFile.write(f"总带体磨损:{total_tapeBeltWear}\n")
+        totalFile.write(f"总电机磨损:{total_tapeMotorWear}\n")
+        totalFile.write(f"总消耗:{total_addressingDuration+total_tapeBeltWear+total_tapeMotorWear}\n")
     print("Done!")
         
     

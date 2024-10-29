@@ -30,7 +30,7 @@ INITIAL_TOUR_FRACTION = 1.000
 KICK_TYPE = 0
 KICKS = 1
 # MAX_BREADTH =
-MAX_CANDIDATES = 5 
+MAX_CANDIDATES = 6 
 MAX_SWAPS = 20004
 MAX_TRIALS = 20004
 # MERGE_TOUR_FILE =
@@ -43,8 +43,8 @@ PATCHING_C = 0
 # PI_FILE = 
 POPMUSIC_INITIAL_TOUR = YES
 POPMUSIC_MAX_NEIGHBORS = 5
-POPMUSIC_SAMPLE_SIZE = 40
-POPMUSIC_SOLUTIONS = 10
+POPMUSIC_SAMPLE_SIZE = 30
+POPMUSIC_SOLUTIONS = 20
 POPMUSIC_TRIALS = 1
 # POPULATION_SIZE = 0
 PRECISION = 100
@@ -60,42 +60,70 @@ SUBGRADIENT = NO
 SUBSEQUENT_MOVE_TYPE = 3
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
-TOTAL_TIME_LIMIT = 280.0
+TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 1317441.0, Ascent time = 19.08 sec.
-Cand.min = 2, Cand.avg = 5.7, Cand.max = 7
+Lower bound = 2445550.0, Ascent time = 26.03 sec.
+Cand.min = 2, Cand.avg = 6.8, Cand.max = 8
 Edges.fixed = 10003 [Cost = 0]
-Preprocessing time = 19.13 sec.
-* 1: Cost = 9925685, Time = 0.73 sec. 
-* 2: Cost = 8639753, Time = 1.37 sec. 
-* 3: Cost = 8370348, Time = 1.88 sec. 
-* 4: Cost = 8231810, Time = 2.38 sec. 
-* 5: Cost = 8129701, Time = 2.86 sec. 
-* 7: Cost = 8115529, Time = 3.90 sec. 
-* 9: Cost = 8082187, Time = 4.87 sec. 
-* 10: Cost = 8052383, Time = 5.40 sec. 
-* 13: Cost = 7985623, Time = 6.81 sec. 
-* 18: Cost = 7935009, Time = 9.20 sec. 
+Preprocessing time = 26.09 sec.
+* 1: Cost = 17524250, Time = 1.14 sec. 
+* 2: Cost = 17107499, Time = 1.87 sec. 
+* 3: Cost = 16978636, Time = 2.42 sec. 
+* 5: Cost = 16975263, Time = 3.50 sec. 
+* 6: Cost = 16960432, Time = 3.96 sec. 
+* 8: Cost = 16928793, Time = 5.12 sec. 
+* 9: Cost = 16812284, Time = 5.68 sec. 
+* 12: Cost = 16806246, Time = 7.37 sec. 
+* 13: Cost = 16803470, Time = 7.95 sec. 
+* 15: Cost = 16798242, Time = 9.13 sec. 
+* 19: Cost = 16793439, Time = 11.24 sec. 
+* 20: Cost = 16782652, Time = 11.84 sec. 
+* 21: Cost = 16780495, Time = 12.32 sec. 
+* 23: Cost = 16777590, Time = 13.43 sec. 
+* 27: Cost = 16767513, Time = 15.62 sec. 
+* 28: Cost = 16767415, Time = 16.16 sec. 
+* 29: Cost = 16766462, Time = 16.71 sec. 
+* 30: Cost = 16755375, Time = 17.31 sec. 
+* 32: Cost = 16754837, Time = 18.51 sec. 
+* 40: Cost = 16751994, Time = 23.06 sec. 
+* 41: Cost = 16751094, Time = 23.61 sec. 
+* 42: Cost = 16750677, Time = 24.21 sec. 
+* 44: Cost = 16748571, Time = 25.32 sec. 
+* 49: Cost = 16747100, Time = 28.11 sec. 
+* 51: Cost = 16746318, Time = 29.30 sec. 
+* 52: Cost = 16746068, Time = 29.83 sec. 
+* 55: Cost = 16745362, Time = 31.60 sec. 
+* 58: Cost = 16744924, Time = 33.34 sec. 
+* 61: Cost = 16744738, Time = 35.00 sec. 
+* 66: Cost = 16742873, Time = 38.01 sec. 
+* 73: Cost = 16737133, Time = 42.25 sec. 
+* 74: Cost = 16736861, Time = 42.86 sec. 
+* 77: Cost = 16731912, Time = 44.61 sec. 
+* 85: Cost = 16731102, Time = 49.37 sec. 
+* 91: Cost = 16730545, Time = 52.70 sec. 
+* 95: Cost = 16729375, Time = 54.99 sec. 
+* 97: Cost = 16729098, Time = 56.26 sec. 
+* 98: Cost = 16727962, Time = 56.89 sec. 
 *** The extent of improvement(0) is too small in 8 Trials ***
-Run 1: Cost = 7935009, Time = 16.05 sec. 
+Run 1: Cost = 16727962, Time = 65.30 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 7935009, Cost.avg = 7935009.00, Cost.max = 7935009
+Cost.min = 16727962, Cost.avg = 16727962.00, Cost.max = 16727962
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 32, Trials.avg = 32.0, Trials.max = 32
-Time.min = 16.05 sec., Time.avg = 16.05 sec., Time.max = 16.05 sec.
-Time.total = 39.93 sec.
+Trials.min = 112, Trials.avg = 112.0, Trials.max = 112
+Time.min = 65.30 sec., Time.avg = 65.30 sec., Time.max = 65.30 sec.
+Time.total = 96.15 sec.
 
 Key Metrics:
 	ioCount:			 10000
-	algorithmRunningDuration:	 39934.982 (ms)
-	memoryUse:			 16394.90 (KB)
-	addressingDuration:		 9587351 (ms)
+	algorithmRunningDuration:	 96151.974 (ms)
+	memoryUse:			 17776.33 (KB)
+	addressingDuration:		 8692055 (ms)
 	readDuration:			 10220675 (ms)
-	tapeBeltWear:			 17288212
-	tapeMotorWear:			 869
+	tapeBeltWear:			 17389110
+	tapeMotorWear:			 653
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt
