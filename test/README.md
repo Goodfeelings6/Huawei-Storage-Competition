@@ -46,7 +46,7 @@ python testbatch.py s [-src src_dir] [-des des_dir]
 + + s2 : 先构建后测试
 + 参数 -src 为可选参数，用于指定测试用例目录，不指定则默认为 dataset 文件夹
 + 参数 -des 为可选参数，用于测试输出目录，不指定则默认为 output 文件夹
-+ 注: 测试完成后，还会在输出文件夹输出关键指标汇总文件： A-summary.txt 和关键运行细节汇总文件： A-detail.txt
++ 注: 测试完成后，还会在输出文件夹输出关键指标汇总文件： A-summary.txt 和关键运行细节汇总文件： A-detail.txt 以及指标和汇总：A-total.txt
 
 **举例**
 ```shell
@@ -69,18 +69,21 @@ python score.py [-c curr_path] [-b base_path]
 ```
 + 参数 -c 为可选参数，用于指定当前测试算法结果目录，不指定则默认为 output 文件夹
 + 参数 -b 为可选参数，用于指定基线算法结果目录，不指定则默认为 output_baseline 文件夹
++ 注: 输出A-score.txt文件在 -c 参数指定的文件夹
 
 **举例**
 ```shell
 cd test
 # 进行计分：即默认对比 output 文件夹 与 output_baseline 文件夹的结果
 python score.py 
+# 对比 output_other 文件夹 与 output_baseline 文件夹的结果
+python score.py -c ./output_other
 ```
 ---
 
 ### 测试流程
 ```shell
-# 1 修改 algorithm.c 文件，使用 SORT 基线算法
+# 1 修改 algorithm.c 文件，使用 SCAN 基线算法
 # 2 每次修改源码后必须重新构建，然后执行批量测试，故使用s2参数，输出文件夹显式指定为 output_baseline
 python testbatch.py s2 -des ./output_baseline
 # 3 再次修改 algorithm.c 文件，使用 LKH 算法

@@ -8,7 +8,7 @@
 
 #include "Arr.h"  // 假设已经将 Arr.h 文件转换成了纯 C 的二维数组实现
 
-#define INF 100000000
+#define INF INT_MAX/200
 
 typedef int ID;
 typedef int Cost;

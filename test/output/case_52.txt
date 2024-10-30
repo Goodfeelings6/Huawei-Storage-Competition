@@ -64,53 +64,36 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 2436070.0, Ascent time = 26.08 sec.
+Lower bound = 2439038.0, Ascent time = 27.09 sec.
 Cand.min = 2, Cand.avg = 6.8, Cand.max = 8
 Edges.fixed = 10003 [Cost = 0]
-Preprocessing time = 26.14 sec.
-* 1: Cost = 17695356, Time = 1.15 sec. 
-* 2: Cost = 17550836, Time = 1.78 sec. 
-* 3: Cost = 17417029, Time = 2.26 sec. 
-* 4: Cost = 17360046, Time = 2.81 sec. 
-* 5: Cost = 17342012, Time = 3.31 sec. 
-* 6: Cost = 17305214, Time = 3.89 sec. 
-* 7: Cost = 17250504, Time = 4.46 sec. 
-* 8: Cost = 17213097, Time = 5.03 sec. 
-* 9: Cost = 17188719, Time = 5.56 sec. 
-* 11: Cost = 17160591, Time = 6.66 sec. 
-* 12: Cost = 17129742, Time = 7.19 sec. 
-* 13: Cost = 17101616, Time = 7.77 sec. 
-* 16: Cost = 17090942, Time = 9.66 sec. 
-* 18: Cost = 17074822, Time = 10.70 sec. 
-* 19: Cost = 17054800, Time = 11.33 sec. 
-* 20: Cost = 17046616, Time = 11.88 sec. 
-* 21: Cost = 17039430, Time = 12.46 sec. 
-* 23: Cost = 17038142, Time = 13.58 sec. 
-* 24: Cost = 17030330, Time = 14.13 sec. 
-* 27: Cost = 17013323, Time = 15.88 sec. 
-* 28: Cost = 16999979, Time = 16.51 sec. 
-* 30: Cost = 16999848, Time = 17.79 sec. 
-* 31: Cost = 16972020, Time = 18.50 sec. 
-* 33: Cost = 16958747, Time = 19.77 sec. 
-* 37: Cost = 16952752, Time = 22.17 sec. 
+Preprocessing time = 27.14 sec.
+* 1: Cost = 17176429, Time = 1.05 sec. 
+* 2: Cost = 17059809, Time = 1.60 sec. 
+* 3: Cost = 17030513, Time = 2.04 sec. 
+* 4: Cost = 16959560, Time = 2.58 sec. 
+* 5: Cost = 16946332, Time = 3.13 sec. 
+* 8: Cost = 16927358, Time = 4.98 sec. 
+* 11: Cost = 16925224, Time = 6.62 sec. 
+* 13: Cost = 16900715, Time = 7.66 sec. 
 *** The extent of improvement(0) is too small in 8 Trials ***
-Run 1: Cost = 16952752, Time = 29.31 sec. 
+Run 1: Cost = 16900715, Time = 13.60 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 16952752, Cost.avg = 16952752.00, Cost.max = 16952752
+Cost.min = 16900715, Cost.avg = 16900715.00, Cost.max = 16900715
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 48, Trials.avg = 48.0, Trials.max = 48
-Time.min = 29.31 sec., Time.avg = 29.31 sec., Time.max = 29.31 sec.
-Time.total = 60.19 sec.
+Trials.min = 24, Trials.avg = 24.0, Trials.max = 24
+Time.min = 13.60 sec., Time.avg = 13.60 sec., Time.max = 13.60 sec.
+Time.total = 57.21 sec.
 
 Key Metrics:
 	ioCount:			 10000
-	algorithmRunningDuration:	 60194.356 (ms)
-	memoryUse:			 17096.66 (KB)
-	addressingDuration:		 8496869 (ms)
+	algorithmRunningDuration:	 57206.032 (ms)
+	memoryUse:			 107812.83 (KB)
+	addressingDuration:		 8542112 (ms)
 	readDuration:			 10179016 (ms)
-	tapeBeltWear:			 17771068
-	tapeMotorWear:			 579
+	tapeBeltWear:			 17673171
+	tapeMotorWear:			 617
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

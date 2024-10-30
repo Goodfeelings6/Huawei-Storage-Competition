@@ -64,66 +64,34 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 2445550.0, Ascent time = 26.03 sec.
+Lower bound = 2454603.0, Ascent time = 26.96 sec.
 Cand.min = 2, Cand.avg = 6.8, Cand.max = 8
 Edges.fixed = 10003 [Cost = 0]
-Preprocessing time = 26.09 sec.
-* 1: Cost = 17524250, Time = 1.14 sec. 
-* 2: Cost = 17107499, Time = 1.87 sec. 
-* 3: Cost = 16978636, Time = 2.42 sec. 
-* 5: Cost = 16975263, Time = 3.50 sec. 
-* 6: Cost = 16960432, Time = 3.96 sec. 
-* 8: Cost = 16928793, Time = 5.12 sec. 
-* 9: Cost = 16812284, Time = 5.68 sec. 
-* 12: Cost = 16806246, Time = 7.37 sec. 
-* 13: Cost = 16803470, Time = 7.95 sec. 
-* 15: Cost = 16798242, Time = 9.13 sec. 
-* 19: Cost = 16793439, Time = 11.24 sec. 
-* 20: Cost = 16782652, Time = 11.84 sec. 
-* 21: Cost = 16780495, Time = 12.32 sec. 
-* 23: Cost = 16777590, Time = 13.43 sec. 
-* 27: Cost = 16767513, Time = 15.62 sec. 
-* 28: Cost = 16767415, Time = 16.16 sec. 
-* 29: Cost = 16766462, Time = 16.71 sec. 
-* 30: Cost = 16755375, Time = 17.31 sec. 
-* 32: Cost = 16754837, Time = 18.51 sec. 
-* 40: Cost = 16751994, Time = 23.06 sec. 
-* 41: Cost = 16751094, Time = 23.61 sec. 
-* 42: Cost = 16750677, Time = 24.21 sec. 
-* 44: Cost = 16748571, Time = 25.32 sec. 
-* 49: Cost = 16747100, Time = 28.11 sec. 
-* 51: Cost = 16746318, Time = 29.30 sec. 
-* 52: Cost = 16746068, Time = 29.83 sec. 
-* 55: Cost = 16745362, Time = 31.60 sec. 
-* 58: Cost = 16744924, Time = 33.34 sec. 
-* 61: Cost = 16744738, Time = 35.00 sec. 
-* 66: Cost = 16742873, Time = 38.01 sec. 
-* 73: Cost = 16737133, Time = 42.25 sec. 
-* 74: Cost = 16736861, Time = 42.86 sec. 
-* 77: Cost = 16731912, Time = 44.61 sec. 
-* 85: Cost = 16731102, Time = 49.37 sec. 
-* 91: Cost = 16730545, Time = 52.70 sec. 
-* 95: Cost = 16729375, Time = 54.99 sec. 
-* 97: Cost = 16729098, Time = 56.26 sec. 
-* 98: Cost = 16727962, Time = 56.89 sec. 
+Preprocessing time = 27.02 sec.
+* 1: Cost = 17181678, Time = 1.04 sec. 
+* 2: Cost = 16905032, Time = 1.59 sec. 
+* 6: Cost = 16831456, Time = 3.47 sec. 
+* 8: Cost = 16780094, Time = 4.37 sec. 
+* 13: Cost = 16779805, Time = 6.81 sec. 
+* 16: Cost = 16767512, Time = 8.27 sec. 
 *** The extent of improvement(0) is too small in 8 Trials ***
-Run 1: Cost = 16727962, Time = 65.30 sec. 
+Run 1: Cost = 16767512, Time = 12.16 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 16727962, Cost.avg = 16727962.00, Cost.max = 16727962
+Cost.min = 16767512, Cost.avg = 16767512.00, Cost.max = 16767512
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 112, Trials.avg = 112.0, Trials.max = 112
-Time.min = 65.30 sec., Time.avg = 65.30 sec., Time.max = 65.30 sec.
-Time.total = 96.15 sec.
+Trials.min = 24, Trials.avg = 24.0, Trials.max = 24
+Time.min = 12.16 sec., Time.avg = 12.16 sec., Time.max = 12.16 sec.
+Time.total = 53.63 sec.
 
 Key Metrics:
 	ioCount:			 10000
-	algorithmRunningDuration:	 96151.974 (ms)
-	memoryUse:			 17776.33 (KB)
-	addressingDuration:		 8692055 (ms)
+	algorithmRunningDuration:	 53628.334 (ms)
+	memoryUse:			 100376.67 (KB)
+	addressingDuration:		 8663586 (ms)
 	readDuration:			 10220675 (ms)
-	tapeBeltWear:			 17389110
-	tapeMotorWear:			 653
+	tapeBeltWear:			 17456488
+	tapeMotorWear:			 641
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

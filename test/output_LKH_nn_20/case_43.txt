@@ -1,0 +1,138 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_43.txt
+head info : [245,352753,0]
+
+io count = 5000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 9.996e-05
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 5002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 10004
+MAX_TRIALS = 10004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 20
+POPMUSIC_SOLUTIONS = 25
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 2352583.0, Ascent time = 8.12 sec.
+Cand.min = 2, Cand.avg = 5.9, Cand.max = 7
+Edges.fixed = 5003 [Cost = 0]
+Preprocessing time = 8.15 sec.
+* 1: Cost = 13172910, Time = 0.21 sec. 
+* 2: Cost = 13165230, Time = 0.31 sec. 
+* 3: Cost = 13155142, Time = 0.41 sec. 
+* 4: Cost = 13089780, Time = 0.49 sec. 
+* 5: Cost = 13087128, Time = 0.56 sec. 
+* 7: Cost = 13061439, Time = 0.72 sec. 
+* 8: Cost = 13048604, Time = 0.79 sec. 
+* 9: Cost = 13034649, Time = 0.86 sec. 
+* 10: Cost = 13016571, Time = 0.95 sec. 
+* 11: Cost = 12979645, Time = 1.03 sec. 
+* 12: Cost = 12978631, Time = 1.11 sec. 
+* 13: Cost = 12978191, Time = 1.18 sec. 
+* 14: Cost = 12974143, Time = 1.25 sec. 
+* 15: Cost = 12973130, Time = 1.34 sec. 
+* 16: Cost = 12972997, Time = 1.41 sec. 
+* 17: Cost = 12945225, Time = 1.49 sec. 
+* 18: Cost = 12923754, Time = 1.57 sec. 
+* 19: Cost = 12919328, Time = 1.65 sec. 
+* 21: Cost = 12918389, Time = 1.82 sec. 
+* 22: Cost = 12917371, Time = 1.90 sec. 
+* 23: Cost = 12914374, Time = 1.97 sec. 
+* 24: Cost = 12913873, Time = 2.07 sec. 
+* 25: Cost = 12913732, Time = 2.13 sec. 
+* 26: Cost = 12913264, Time = 2.21 sec. 
+* 27: Cost = 12913210, Time = 2.30 sec. 
+* 28: Cost = 12911637, Time = 2.38 sec. 
+* 29: Cost = 12910657, Time = 2.46 sec. 
+* 31: Cost = 12888324, Time = 2.60 sec. 
+* 32: Cost = 12888210, Time = 2.67 sec. 
+* 33: Cost = 12887172, Time = 2.75 sec. 
+* 34: Cost = 12886195, Time = 2.85 sec. 
+* 35: Cost = 12886013, Time = 2.93 sec. 
+* 37: Cost = 12885444, Time = 3.09 sec. 
+* 38: Cost = 12884652, Time = 3.18 sec. 
+* 39: Cost = 12883099, Time = 3.27 sec. 
+* 40: Cost = 12881936, Time = 3.37 sec. 
+* 45: Cost = 12881659, Time = 3.81 sec. 
+* 48: Cost = 12881509, Time = 4.05 sec. 
+* 51: Cost = 12881305, Time = 4.29 sec. 
+* 54: Cost = 12881298, Time = 4.54 sec. 
+* 55: Cost = 12881130, Time = 4.63 sec. 
+* 58: Cost = 12880900, Time = 4.86 sec. 
+* 59: Cost = 12880776, Time = 4.94 sec. 
+* 65: Cost = 12880565, Time = 5.42 sec. 
+* 68: Cost = 12880006, Time = 5.66 sec. 
+* 69: Cost = 12879899, Time = 5.75 sec. 
+* 72: Cost = 12879816, Time = 5.98 sec. 
+*** The extent of improvement(1693) is too small in 24 Trials ***
+Run 1: Cost = 12879816, Time = 5.99 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 12879816, Cost.avg = 12879816.00, Cost.max = 12879816
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 72, Trials.avg = 72.0, Trials.max = 72
+Time.min = 5.99 sec., Time.avg = 5.99 sec., Time.max = 5.99 sec.
+Time.total = 15.47 sec.
+
+Key Metrics:
+	ioCount:			 5000
+	algorithmRunningDuration:	 15468.374 (ms)
+	memoryUse:			 9294.00 (KB)
+	addressingDuration:		 6734741 (ms)
+	readDuration:			 5340776 (ms)
+	tapeBeltWear:			 11031768
+	tapeMotorWear:			 465
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

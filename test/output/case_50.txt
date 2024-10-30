@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: ./dataset/case_50.txt
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_50.txt
 head info : [2,358054,1]
 
 io count = 10000
@@ -64,88 +64,34 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 2528253.0, Ascent time = 25.96 sec.
-Cand.min = 2, Cand.avg = 6.9, Cand.max = 8
+Lower bound = 2462228.0, Ascent time = 27.26 sec.
+Cand.min = 2, Cand.avg = 6.8, Cand.max = 8
 Edges.fixed = 10003 [Cost = 0]
-Preprocessing time = 26.02 sec.
-* 1: Cost = 19850495, Time = 1.06 sec. 
-* 3: Cost = 19811720, Time = 2.25 sec. 
-* 4: Cost = 19598508, Time = 2.94 sec. 
-* 5: Cost = 19552441, Time = 3.45 sec. 
-* 6: Cost = 19514905, Time = 3.91 sec. 
-* 7: Cost = 19487510, Time = 4.34 sec. 
-* 8: Cost = 19454662, Time = 4.79 sec. 
-* 11: Cost = 19436698, Time = 6.35 sec. 
-* 12: Cost = 19420804, Time = 6.85 sec. 
-* 15: Cost = 19403702, Time = 8.54 sec. 
-* 16: Cost = 19394759, Time = 9.10 sec. 
-* 18: Cost = 19392871, Time = 10.23 sec. 
-* 19: Cost = 19375620, Time = 10.84 sec. 
-* 20: Cost = 19369306, Time = 11.37 sec. 
-* 21: Cost = 19368395, Time = 11.90 sec. 
-* 24: Cost = 19359060, Time = 13.56 sec. 
-* 25: Cost = 19353969, Time = 14.13 sec. 
-* 27: Cost = 19353401, Time = 15.23 sec. 
-* 29: Cost = 19352838, Time = 16.25 sec. 
-* 30: Cost = 19350629, Time = 16.80 sec. 
-* 31: Cost = 19346867, Time = 17.30 sec. 
-* 33: Cost = 19337301, Time = 18.36 sec. 
-* 34: Cost = 19318651, Time = 18.91 sec. 
-* 35: Cost = 19313072, Time = 19.44 sec. 
-* 36: Cost = 19306876, Time = 19.92 sec. 
-* 42: Cost = 19306705, Time = 23.22 sec. 
-* 44: Cost = 19306155, Time = 24.36 sec. 
-* 45: Cost = 19305673, Time = 24.91 sec. 
-* 47: Cost = 19305502, Time = 26.00 sec. 
-* 48: Cost = 19302715, Time = 26.56 sec. 
-* 52: Cost = 19299911, Time = 28.69 sec. 
-* 54: Cost = 19296123, Time = 29.87 sec. 
-* 55: Cost = 19295628, Time = 30.50 sec. 
-* 56: Cost = 19294992, Time = 31.04 sec. 
-* 58: Cost = 19291125, Time = 32.23 sec. 
-* 59: Cost = 19290553, Time = 32.80 sec. 
-* 60: Cost = 19289017, Time = 33.36 sec. 
-* 61: Cost = 19288242, Time = 33.90 sec. 
-* 68: Cost = 19286793, Time = 38.10 sec. 
-* 70: Cost = 19284971, Time = 39.32 sec. 
-* 72: Cost = 19284718, Time = 40.47 sec. 
-* 78: Cost = 19280718, Time = 44.00 sec. 
-* 80: Cost = 19278413, Time = 45.26 sec. 
-* 81: Cost = 19274880, Time = 45.86 sec. 
-* 82: Cost = 19273939, Time = 46.56 sec. 
-* 83: Cost = 19273750, Time = 47.17 sec. 
-* 84: Cost = 19273332, Time = 47.75 sec. 
-* 86: Cost = 19273302, Time = 49.08 sec. 
-* 87: Cost = 19273199, Time = 49.73 sec. 
-* 89: Cost = 19270350, Time = 51.00 sec. 
-* 92: Cost = 19269870, Time = 52.82 sec. 
-* 93: Cost = 19268352, Time = 53.41 sec. 
-* 94: Cost = 19264629, Time = 54.07 sec. 
-* 95: Cost = 19260609, Time = 54.71 sec. 
-* 98: Cost = 19259663, Time = 56.64 sec. 
-* 101: Cost = 19259646, Time = 58.52 sec. 
-* 103: Cost = 19259341, Time = 59.62 sec. 
-* 106: Cost = 19259101, Time = 61.13 sec. 
-* 107: Cost = 19257482, Time = 61.73 sec. 
-* 114: Cost = 19256102, Time = 66.24 sec. 
-*** Time limit exceeded in FindTour ***
-Run 1: Cost = 19256102, Time = 69.69 sec. 
+Preprocessing time = 27.32 sec.
+* 1: Cost = 19307872, Time = 0.96 sec. 
+* 4: Cost = 19274767, Time = 2.63 sec. 
+* 5: Cost = 19267761, Time = 3.16 sec. 
+* 7: Cost = 19266576, Time = 4.16 sec. 
+* 10: Cost = 19227970, Time = 5.70 sec. 
+* 15: Cost = 19226612, Time = 8.26 sec. 
+*** The extent of improvement(0) is too small in 8 Trials ***
+Run 1: Cost = 19226612, Time = 13.12 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 19256102, Cost.avg = 19256102.00, Cost.max = 19256102
+Cost.min = 19226612, Cost.avg = 19226612.00, Cost.max = 19226612
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 119, Trials.avg = 119.0, Trials.max = 119
-Time.min = 69.69 sec., Time.avg = 69.69 sec., Time.max = 69.69 sec.
-Time.total = 100.47 sec.
+Trials.min = 24, Trials.avg = 24.0, Trials.max = 24
+Time.min = 13.12 sec., Time.avg = 13.12 sec., Time.max = 13.12 sec.
+Time.total = 59.57 sec.
 
 Key Metrics:
 	ioCount:			 10000
-	algorithmRunningDuration:	 100470.753 (ms)
-	memoryUse:			 17864.48 (KB)
-	addressingDuration:		 9462909 (ms)
+	algorithmRunningDuration:	 59570.392 (ms)
+	memoryUse:			 123585.20 (KB)
+	addressingDuration:		 9434029 (ms)
 	readDuration:			 10059657 (ms)
-	tapeBeltWear:			 18999351
-	tapeMotorWear:			 742
+	tapeBeltWear:			 18998003
+	tapeMotorWear:			 738
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt
