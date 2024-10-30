@@ -64,62 +64,35 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 2100565.0, Ascent time = 5.21 sec.
+Lower bound = 2086242.0, Ascent time = 5.39 sec.
 Cand.min = 2, Cand.avg = 15.3, Cand.max = 17
 Edges.fixed = 2003 [Cost = 0]
-Preprocessing time = 5.22 sec.
-* 1: Cost = 8078363, Time = 0.14 sec. 
-* 2: Cost = 8078264, Time = 0.22 sec. 
-* 3: Cost = 8073707, Time = 0.28 sec. 
-* 5: Cost = 8073275, Time = 0.44 sec. 
-* 6: Cost = 8073264, Time = 0.50 sec. 
-* 7: Cost = 8073261, Time = 0.58 sec. 
-* 8: Cost = 8073250, Time = 0.63 sec. 
-* 10: Cost = 8072961, Time = 0.80 sec. 
-* 11: Cost = 8072804, Time = 0.86 sec. 
-* 12: Cost = 8072687, Time = 0.92 sec. 
-* 13: Cost = 8072600, Time = 1.00 sec. 
-* 14: Cost = 8072483, Time = 1.06 sec. 
-* 22: Cost = 8072315, Time = 1.62 sec. 
-* 23: Cost = 8071437, Time = 1.67 sec. 
-* 24: Cost = 8071375, Time = 1.77 sec. 
-* 25: Cost = 8071348, Time = 1.83 sec. 
-* 27: Cost = 8071187, Time = 1.93 sec. 
-* 29: Cost = 8071142, Time = 2.06 sec. 
-* 32: Cost = 8071058, Time = 2.22 sec. 
-* 34: Cost = 8070901, Time = 2.32 sec. 
-* 37: Cost = 8070861, Time = 2.53 sec. 
-* 39: Cost = 8070749, Time = 2.65 sec. 
-* 44: Cost = 8070710, Time = 2.95 sec. 
-* 48: Cost = 8070687, Time = 3.23 sec. 
-* 56: Cost = 8070475, Time = 3.84 sec. 
-* 61: Cost = 8070471, Time = 4.17 sec. 
-* 76: Cost = 8070469, Time = 5.16 sec. 
-* 78: Cost = 8070434, Time = 5.27 sec. 
-* 103: Cost = 8070423, Time = 6.89 sec. 
-* 131: Cost = 8070375, Time = 8.76 sec. 
-* 135: Cost = 8070331, Time = 8.99 sec. 
-* 147: Cost = 8070327, Time = 9.81 sec. 
-* 239: Cost = 8070305, Time = 16.13 sec. 
-* 325: Cost = 8069634, Time = 22.04 sec. 
-* 326: Cost = 8069565, Time = 22.12 sec. 
-* 343: Cost = 8069531, Time = 23.39 sec. 
-* 354: Cost = 8069527, Time = 24.14 sec. 
-* 359: Cost = 8069522, Time = 24.55 sec. 
-*** The extent of improvement(9) is too small in 116 Trials ***
-Run 1: Cost = 8069522, Time = 32.04 sec. 
+Preprocessing time = 5.40 sec.
+* 1: Cost = 8078715, Time = 0.14 sec. 
+* 2: Cost = 8078682, Time = 0.21 sec. 
+* 4: Cost = 8077118, Time = 0.34 sec. 
+* 7: Cost = 8077104, Time = 0.53 sec. 
+* 9: Cost = 8070777, Time = 0.66 sec. 
+* 18: Cost = 8069999, Time = 1.30 sec. 
+* 29: Cost = 8069994, Time = 2.08 sec. 
+* 37: Cost = 8069983, Time = 2.65 sec. 
+* 93: Cost = 8069971, Time = 6.29 sec. 
+* 113: Cost = 8069924, Time = 7.63 sec. 
+* 130: Cost = 8069891, Time = 8.82 sec. 
+*** The extent of improvement(33) is too small in 116 Trials ***
+Run 1: Cost = 8069891, Time = 15.62 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 8069522, Cost.avg = 8069522.00, Cost.max = 8069522
+Cost.min = 8069891, Cost.avg = 8069891.00, Cost.max = 8069891
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 464, Trials.avg = 464.0, Trials.max = 464
-Time.min = 32.04 sec., Time.avg = 32.04 sec., Time.max = 32.04 sec.
-Time.total = 37.45 sec.
+Trials.min = 232, Trials.avg = 232.0, Trials.max = 232
+Time.min = 15.62 sec., Time.avg = 15.62 sec., Time.max = 15.62 sec.
+Time.total = 21.39 sec.
 
 Key Metrics:
 	ioCount:			 2000
-	algorithmRunningDuration:	 37447.025 (ms)
-	memoryUse:			 6316.32 (KB)
+	algorithmRunningDuration:	 21388.844 (ms)
+	memoryUse:			 6120.73 (KB)
 	addressingDuration:		 4256226 (ms)
 	readDuration:			 2126876 (ms)
 	tapeBeltWear:			 5759547

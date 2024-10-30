@@ -35,7 +35,7 @@ int Distance_SPECIAL(Node * Na, Node * Nb)
         }
         // 以下正常对应邻接矩阵位置求距离
         if(i == j)
-            return 0;
+            return INF;
         else if(i==len-1){ // 磁头节点
             if(j==len-2){ // 磁头节点到虚拟节点的代价为极大值
                 return INF;

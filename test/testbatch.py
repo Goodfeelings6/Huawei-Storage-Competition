@@ -31,6 +31,7 @@ args = parser.parse_args()
 first = True
 memory_usage = []
 peak_memory = 0
+total_algorithmRunningDuration = 0
 total_addressingDuration = 0
 total_tapeBeltWear = 0
 total_tapeMotorWear = 0
@@ -73,7 +74,8 @@ def formatMetrics(filePath)->str:
                      ret += "\t"
         ret += "\n"
     # 从ret中顺便提取信息
-    global total_addressingDuration,total_tapeBeltWear,total_tapeMotorWear
+    global total_algorithmRunningDuration,total_addressingDuration,total_tapeBeltWear,total_tapeMotorWear
+    total_algorithmRunningDuration += float(re.search(r'algorithmRunningDuration:\s*([.\d]+)', ret).group(1))
     total_addressingDuration += int(re.search(r'addressingDuration:(\d+)\(ms\)', ret).group(1)) 
     total_tapeBeltWear += int(re.search(r'tapeBeltWear:(\d+)', ret).group(1)) 
     total_tapeMotorWear += int(re.search(r'tapeMotorWear:(\d+)', ret).group(1)) 
@@ -116,7 +118,7 @@ def formatDetails(filePath)->str:
     # 总用时
     match = re.search(r'algorithmRunningDuration:\s*([\d.]+)\s*\(ms\)', content)
     if match:
-        ret += f"|{str(round(float(match.group(1))/1000,2))+'s':^10}"
+        ret += f"|{str(round(float(match.group(1)),2))+'ms':^10}"
     else:
         ret += f"|{'none':^10}ms"
     # 最终Cost
@@ -138,6 +140,17 @@ def formatDetails(filePath)->str:
         return head+ret
     else:
         return ret
+
+def writeA_total(filePath):
+    head = "|  总排序时间  |  总寻址时间  |  总带体磨损  |  总电机磨损  |    总消耗    |\n" \
+           "|--------------|--------------|--------------|--------------|--------------|\n"
+    with open(filePath, "w", encoding='utf-8') as totalFile:
+        totalFile.write(head)
+        totalFile.write(f"|{round(total_algorithmRunningDuration,2):^14}")
+        totalFile.write(f"|{total_addressingDuration:^14}")
+        totalFile.write(f"|{total_tapeBeltWear:^14}")
+        totalFile.write(f"|{total_tapeMotorWear:^14}")
+        totalFile.write(f"|{round(total_algorithmRunningDuration+total_addressingDuration+total_tapeBeltWear+total_tapeMotorWear,2):^14}|\n")
 
 def monitor_memory(process:subprocess.Popen, interval=1):
     """ 监控指定 process 的内存使用 """
@@ -211,11 +224,8 @@ def test():
         globals()['peak_memory'] = 0
     
     summaryFile.close()
-    with open(os.path.join(args.des, "A-total.txt"), "w", encoding='utf-8') as totalFile:
-        totalFile.write(f"总寻址时间:{total_addressingDuration}\n")
-        totalFile.write(f"总带体磨损:{total_tapeBeltWear}\n")
-        totalFile.write(f"总电机磨损:{total_tapeMotorWear}\n")
-        totalFile.write(f"总消耗:{total_addressingDuration+total_tapeBeltWear+total_tapeMotorWear}\n")
+    writeA_total(os.path.join(args.des, "A-total.txt"))
+
     print("Done!")
         
     

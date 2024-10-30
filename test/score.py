@@ -39,7 +39,7 @@ def decode(s:str)->dict:
 
 def score():
     """ 计算得分 """
-    scoreFile = open(os.path.join(testDir, "score_file.txt"), "w", encoding='utf-8')
+    scoreFile = open(os.path.join(args.c, "A-score.txt"), "w", encoding='utf-8')
     curr_data = []
     base_data = []
     with open(os.path.join(args.c, "A-summary.txt"), "r", encoding="utf-8") as f1:
@@ -60,7 +60,8 @@ def score():
         scoreFile.write(curr_data_i_dict["name"] + ':\t')
         scoreFile.write("IO:"+str(curr_data_i_dict["ioCount"])+"\t")
         # 调度算法加分
-        addrT = (base_data_i_dict["addressingDuration"]-curr_data_i_dict["addressingDuration"])*10 + \
+        addrT = (base_data_i_dict["algorithmRunningDuration"]-curr_data_i_dict["algorithmRunningDuration"])*10 + \
+                (base_data_i_dict["addressingDuration"]-curr_data_i_dict["addressingDuration"])*10 + \
                 (base_data_i_dict["tapeBeltWear"]-curr_data_i_dict["tapeBeltWear"])*10
         schedulScore.append(addrT)
         # 调度用时加分 和 调度超时罚分
@@ -110,6 +111,13 @@ def score():
     scoreFile.write(f"空间超限总罚分:{spaceOverlimitPenalty_sum:.2f}\t")
     scoreFile.write(f"排序错误总数量:{sortErrorCount_sum:.2f}\t")
     scoreFile.write(f"\n总分:{instanceScore_sum:.2f}\n")
+
+    # 测相比基线的提升幅度
+    with open(os.path.join(args.c, "A-total.txt"), "r", encoding="utf-8") as f1:
+        curr_total_cost = float((f1.readlines()[-1]).strip().split('|')[-2].strip())
+    with open(os.path.join(args.b, "A-total.txt"), "r", encoding="utf-8") as f2:
+        base_total_cost = float((f2.readlines()[-1]).strip().split('|')[-2].strip())
+    scoreFile.write(f"优化幅度:{(base_total_cost-curr_total_cost)/base_total_cost*100:.3f}%\n")
     scoreFile.close()
     print("Score Done!")
         

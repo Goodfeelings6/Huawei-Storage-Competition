@@ -1,0 +1,104 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_56.txt
+head info : [162,531938,1]
+
+io count = 10000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 4.999e-05
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 10002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 20004
+MAX_TRIALS = 20004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 30
+POPMUSIC_SOLUTIONS = 20
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 100.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 2524707.0, Ascent time = 27.44 sec.
+Cand.min = 2, Cand.avg = 5.9, Cand.max = 7
+Edges.fixed = 10003 [Cost = 0]
+Preprocessing time = 27.49 sec.
+* 1: Cost = 17141167, Time = 0.79 sec. 
+* 3: Cost = 16708379, Time = 1.72 sec. 
+* 4: Cost = 16232442, Time = 2.13 sec. 
+* 6: Cost = 16013809, Time = 2.94 sec. 
+* 8: Cost = 15923697, Time = 3.75 sec. 
+* 13: Cost = 15918299, Time = 5.88 sec. 
+* 17: Cost = 15874159, Time = 7.42 sec. 
+* 21: Cost = 15873569, Time = 9.10 sec. 
+* 26: Cost = 15860707, Time = 11.15 sec. 
+* 29: Cost = 15814115, Time = 12.51 sec. 
+* 35: Cost = 15813470, Time = 15.21 sec. 
+* 38: Cost = 15810450, Time = 16.60 sec. 
+* 47: Cost = 15807091, Time = 20.49 sec. 
+*** The extent of improvement(0) is too small in 8 Trials ***
+Run 1: Cost = 15807091, Time = 24.51 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 15807091, Cost.avg = 15807091.00, Cost.max = 15807091
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 56, Trials.avg = 56.0, Trials.max = 56
+Time.min = 24.51 sec., Time.avg = 24.51 sec., Time.max = 24.51 sec.
+Time.total = 65.12 sec.
+
+Key Metrics:
+	ioCount:			 10000
+	algorithmRunningDuration:	 65122.545 (ms)
+	memoryUse:			 79876.36 (KB)
+	addressingDuration:		 8219369 (ms)
+	readDuration:			 10443129 (ms)
+	tapeBeltWear:			 17143694
+	tapeMotorWear:			 534
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

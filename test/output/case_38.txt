@@ -64,82 +64,36 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 1786994.0, Ascent time = 5.23 sec.
+Lower bound = 1799448.0, Ascent time = 5.50 sec.
 Cand.min = 2, Cand.avg = 15.3, Cand.max = 17
 Edges.fixed = 2003 [Cost = 0]
-Preprocessing time = 5.24 sec.
-* 1: Cost = 7302732, Time = 0.23 sec. 
-* 2: Cost = 7302268, Time = 0.33 sec. 
-* 3: Cost = 7301826, Time = 0.42 sec. 
-* 5: Cost = 7301486, Time = 0.56 sec. 
-* 6: Cost = 7301278, Time = 0.63 sec. 
-* 7: Cost = 7300235, Time = 0.72 sec. 
-* 8: Cost = 7300197, Time = 0.79 sec. 
-* 10: Cost = 7300183, Time = 0.93 sec. 
-* 11: Cost = 7193763, Time = 1.02 sec. 
-* 15: Cost = 7178704, Time = 1.31 sec. 
-* 16: Cost = 7178596, Time = 1.40 sec. 
-* 20: Cost = 7178524, Time = 1.64 sec. 
-* 21: Cost = 7178317, Time = 1.70 sec. 
-* 22: Cost = 7174273, Time = 1.78 sec. 
-* 23: Cost = 7174078, Time = 1.84 sec. 
-* 25: Cost = 7174050, Time = 1.98 sec. 
-* 26: Cost = 7173925, Time = 2.06 sec. 
-* 53: Cost = 7173913, Time = 3.86 sec. 
-* 61: Cost = 7173075, Time = 4.37 sec. 
-* 62: Cost = 7171632, Time = 4.45 sec. 
-* 63: Cost = 7171304, Time = 4.51 sec. 
-* 69: Cost = 7171222, Time = 4.91 sec. 
-* 72: Cost = 7171141, Time = 5.09 sec. 
-* 81: Cost = 7171131, Time = 5.66 sec. 
-* 89: Cost = 7171128, Time = 6.16 sec. 
-* 90: Cost = 7171093, Time = 6.25 sec. 
-* 97: Cost = 7168065, Time = 6.74 sec. 
-* 98: Cost = 7168061, Time = 6.79 sec. 
-* 99: Cost = 7167527, Time = 6.87 sec. 
-* 100: Cost = 7167385, Time = 6.94 sec. 
-* 105: Cost = 7167314, Time = 7.30 sec. 
-* 106: Cost = 7167299, Time = 7.37 sec. 
-* 108: Cost = 7167156, Time = 7.50 sec. 
-* 167: Cost = 7167049, Time = 11.54 sec. 
-* 187: Cost = 7167032, Time = 12.90 sec. 
-* 223: Cost = 7167026, Time = 15.39 sec. 
-* 237: Cost = 7167012, Time = 16.29 sec. 
-* 301: Cost = 7166919, Time = 20.75 sec. 
-* 306: Cost = 7166885, Time = 21.09 sec. 
-* 339: Cost = 7166884, Time = 23.45 sec. 
-* 350: Cost = 7166878, Time = 24.15 sec. 
-* 394: Cost = 7166875, Time = 27.24 sec. 
-* 402: Cost = 7166871, Time = 27.81 sec. 
-* 421: Cost = 7166842, Time = 29.11 sec. 
-* 471: Cost = 7166830, Time = 32.64 sec. 
-* 477: Cost = 7166812, Time = 33.09 sec. 
-* 478: Cost = 7166716, Time = 33.17 sec. 
-* 479: Cost = 7166692, Time = 33.23 sec. 
-* 493: Cost = 7166691, Time = 34.23 sec. 
-* 498: Cost = 7166684, Time = 34.58 sec. 
-* 508: Cost = 7166633, Time = 35.36 sec. 
-* 542: Cost = 7166629, Time = 37.88 sec. 
-* 615: Cost = 7166628, Time = 43.16 sec. 
-* 683: Cost = 7166627, Time = 48.22 sec. 
-*** The extent of improvement(2) is too small in 116 Trials ***
-Run 1: Cost = 7166627, Time = 49.19 sec. 
+Preprocessing time = 5.52 sec.
+* 1: Cost = 7300109, Time = 0.22 sec. 
+* 2: Cost = 7297746, Time = 0.30 sec. 
+* 3: Cost = 7190001, Time = 0.37 sec. 
+* 7: Cost = 7188388, Time = 0.72 sec. 
+* 9: Cost = 7171355, Time = 0.87 sec. 
+* 18: Cost = 7171234, Time = 1.58 sec. 
+* 26: Cost = 7171222, Time = 2.12 sec. 
+* 228: Cost = 7171218, Time = 16.98 sec. 
+*** The extent of improvement(4) is too small in 116 Trials ***
+Run 1: Cost = 7171218, Time = 17.28 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 7166627, Cost.avg = 7166627.00, Cost.max = 7166627
+Cost.min = 7171218, Cost.avg = 7171218.00, Cost.max = 7171218
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 696, Trials.avg = 696.0, Trials.max = 696
-Time.min = 49.19 sec., Time.avg = 49.19 sec., Time.max = 49.19 sec.
-Time.total = 54.62 sec.
+Trials.min = 232, Trials.avg = 232.0, Trials.max = 232
+Time.min = 17.28 sec., Time.avg = 17.28 sec., Time.max = 17.28 sec.
+Time.total = 23.17 sec.
 
 Key Metrics:
 	ioCount:			 2000
-	algorithmRunningDuration:	 54615.803 (ms)
-	memoryUse:			 6313.16 (KB)
-	addressingDuration:		 3674612 (ms)
+	algorithmRunningDuration:	 23165.400 (ms)
+	memoryUse:			 6145.50 (KB)
+	addressingDuration:		 3662763 (ms)
 	readDuration:			 2108375 (ms)
-	tapeBeltWear:			 5421350
-	tapeMotorWear:			 267
+	tapeBeltWear:			 5437531
+	tapeMotorWear:			 259
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt
