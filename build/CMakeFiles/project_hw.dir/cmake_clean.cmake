@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/csg/Huawei-Storage-Competition/bin/project_hw"
-  "/home/csg/Huawei-Storage-Competition/bin/project_hw.pdb"
+  "../bin/project_hw"
+  "../bin/project_hw.pdb"
   "CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.o"
   "CMakeFiles/project_hw.dir/LKH2_MIN/LKHInterface.c.o.d"
   "CMakeFiles/project_hw.dir/algorithm/algorithm.c.o"

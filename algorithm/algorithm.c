@@ -99,8 +99,8 @@ int getCost(const InputParam *input, int len, int i, int j){
     }
 }
 
-// LKH 算法
-int32_t LKH(const InputParam *input, OutputParam *output)
+// LKH 算法 + 最近邻(NN)生成初始解
+int32_t LKH_NN(const InputParam *input, OutputParam *output)
 {   
     // 获取调度开始时间
     double scheduleStartTime = MyGetTime();
@@ -273,6 +273,118 @@ int32_t LKH(const InputParam *input, OutputParam *output)
 
     // /* 调用公共函数示例：调用IO读写时间函数 */
     // uint32_t rwT = ReadTimeCalculate(abs(input->ioVec.ioArray[0].endLpos - input->ioVec.ioArray[0].startLpos));
+
+    return ret;
+}
+
+// LKH 算法 + 贪心插入(GI)生成初始解
+int32_t LKH_GI(const InputParam *input, OutputParam *output)
+{   
+    // 获取调度开始时间
+    double scheduleStartTime = MyGetTime();
+
+    int32_t ret = 0;
+
+    uint32_t len = output->len + 2; //增加了一个虚拟节点和磁头起始位置节点
+
+    /* 基于贪心插入构造初始解， 注意巡回路径从1开始编号*/
+    int *Next = (int *)calloc(len + 1, sizeof(int)); //记录当前城市的下一个城市
+    // 从虚拟结点出发, 再到磁头结点
+    Next[len - 1] = len;
+    for (int i = 1; i <= len-2; ++i){ // 每次找一个城市
+        int minDeltaCost = INF;
+        int insertPrev = -1;
+        // 评估磁头往后的k个插入位置
+        int prev = len; // 从磁头开始
+        while(prev != 0){
+            int deltaCost;
+            if(Next[prev] == 0) // 末尾位置插入
+                deltaCost = getCost(input, len, prev-1, i-1);
+            else // 中间位置插入
+                deltaCost = getCost(input, len, prev-1, i-1) + getCost(input, len, i-1, Next[prev]-1) - getCost(input, len, prev-1, Next[prev]-1);
+            if (deltaCost < minDeltaCost){
+                minDeltaCost = deltaCost;
+                insertPrev = prev;
+            }
+            prev = Next[prev];
+        }
+        // 当前城市插入得到的最优位置
+        if(Next[insertPrev] == 0){ // 末尾位置插入
+            Next[insertPrev] = i;
+        }
+        else{ // 中间位置插入
+            Next[i] = Next[insertPrev];
+            Next[insertPrev] = i;
+        }
+    }
+    // 路径链表拷贝至数组
+    int *intialTour = (int *)malloc(len * sizeof(int));
+    int curr = len-1, idx = 0;
+    while(curr != 0){
+        intialTour[idx++] = curr;
+        // printf("%d ", curr);
+        curr = Next[curr];
+    }
+    // printf("\n");
+
+    /* 设置固定边, 结点从1开始编号 */
+    int fixLen = 1;
+    int *fixEdge = (int *)malloc(2 * fixLen * sizeof(int));
+    // 虚拟结点到磁头结点的边固定
+    fixEdge[0] = len - 1;
+    fixEdge[1] = len;
+
+    /* 调用 LKH 求解 */
+    /* 确定LKH输入结构体 */
+    LKHInput *lkhInput = (LKHInput *)malloc(sizeof(LKHInput));
+    lkhInput->adjMat = 0;
+    lkhInput->matDimension = len;
+    lkhInput->intialTour = intialTour;
+    lkhInput->fixEdge = fixEdge;
+    lkhInput->fixEdgeLen = fixLen;
+    lkhInput->scheduleStartTime = scheduleStartTime;
+    lkhInput->lkhParameters = (LKHParameters *)malloc(sizeof(LKHParameters));
+    loadDefaultParam(lkhInput->lkhParameters);
+    loadUserChangedParam(lkhInput->matDimension, lkhInput->lkhParameters, scheduleStartTime);
+    lkhInput->lkhParameters->OriginInput = input;
+    /* 确定LKH输出结构体 */
+    LKHOutput *lkhOutput = (LKHOutput *)malloc(sizeof(LKHOutput));
+    lkhOutput->tourCost = 0;
+    lkhOutput->tourResult = (int *)malloc(len * sizeof(int));
+
+    ret = solveTSP(lkhInput, lkhOutput);
+   
+    // 处理解
+    int i, j;
+    for (i = 0; i < len; ++i){
+        if(lkhOutput->tourResult[i] == len) // i指向磁头结点
+            break;
+    }
+    for (j = 0; j < len - 2; ++j){ // 排序结果赋值到输出
+        if(i + 1 > len - 1)
+            i = -1;
+        output->sequence[j] = lkhOutput->tourResult[++i];
+    }
+
+    /* 打印求解结果：输出output->sequence的内容 */
+#if DEBUG_LEVEL >= 1
+    printf("LKH result\n");
+    printf("io len:%d\n",len-2);
+    printf("Output sequence:\n");
+    for (uint32_t i = 0; i < len - 2; ++i) {
+        printf("%d ", output->sequence[i]);
+    }
+    printf("\n");
+#endif
+
+    // 释放内存
+    free(Next);
+    free(intialTour);
+    free(fixEdge);
+    free(lkhInput->lkhParameters);
+    free(lkhInput);
+    free(lkhOutput->tourResult);
+    free(lkhOutput);
 
     return ret;
 }
@@ -461,6 +573,61 @@ int32_t NearestNeighbor(const InputParam *input, OutputParam *output){
     return 0;
 }
 
+// 贪心插入构造
+int32_t GreedyInsert(const InputParam *input, OutputParam *output){
+    uint32_t len = output->len + 2; //增加了一个虚拟节点和磁头起始位置节点
+
+    /* 基于贪心插入构造初始解， 注意巡回路径从1开始编号*/
+    int *Next = (int *)calloc(len + 1, sizeof(int)); //记录当前城市的下一个城市
+    // 从虚拟结点出发, 再到磁头结点
+    Next[len - 1] = len;
+    for (int i = 1; i <= len-2; ++i){ // 每次找一个城市
+        int minDeltaCost = INF;
+        int insertPrev = -1;
+        // 评估磁头往后的k个插入位置
+        int prev = len; // 从磁头开始
+        while(prev != 0){
+            int deltaCost;
+            if(Next[prev] == 0) // 末尾位置插入
+                deltaCost = getCost(input, len, prev-1, i-1);
+            else // 中间位置插入
+                deltaCost = getCost(input, len, prev-1, i-1) + getCost(input, len, i-1, Next[prev]-1) - getCost(input, len, prev-1, Next[prev]-1);
+            if (deltaCost < minDeltaCost){
+                minDeltaCost = deltaCost;
+                insertPrev = prev;
+            }
+            prev = Next[prev];
+        }
+        // 当前城市插入得到的最优位置
+        if(Next[insertPrev] == 0){ // 末尾位置插入
+            Next[insertPrev] = i;
+        }
+        else{ // 中间位置插入
+            Next[i] = Next[insertPrev];
+            Next[insertPrev] = i;
+        }
+    }
+    // 路径链表拷贝至输出数组
+    int curr = Next[len], idx = 0;
+    while(curr != 0){
+        output->sequence[idx++] = curr;
+        curr = Next[curr];
+    }
+
+#if DEBUG_LEVEL >= 1
+    printf("贪心插入算法得到的io序列:\n");
+    for (uint32_t i = 0; i < input->ioVec.len; ++i) {
+         printf("%d ", output->sequence[i]);
+    }
+    printf("\n");
+#endif    
+
+    // 释放内存
+    free(Next);
+
+    return 0;
+}
+
 /**
  * @brief  算法接口
  * @param  input            输入参数
@@ -468,11 +635,15 @@ int32_t NearestNeighbor(const InputParam *input, OutputParam *output){
  * @return int32_t          返回成功或者失败，RETURN_OK 或 RETURN_ERROR
  */
 int32_t IOScheduleAlgorithm(const InputParam *input, OutputParam *output)
-{    
-    // 使用 LKH 算法
-    return LKH(input, output);
+{   
+    // 使用 LKH_GI 算法
+    return LKH_GI(input, output); 
+    // 使用 LKH_NN 算法
+    // return LKH_NN(input, output);
     // 使用最近邻贪心算法 
     // return NearestNeighbor(input, output);
+    // 使用贪心插入算法
+    // return GreedyInsert(input, output);
     // 使用 Sort 算法
     // return Sort(input, output);
     // 使用 Scan 算法
