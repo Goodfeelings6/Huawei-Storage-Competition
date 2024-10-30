@@ -4,7 +4,7 @@
 #include <sys/time.h>
 #include "algorithm.h"
 #include "LKHInterface.h"
-
+#include "MaxMatchingByHarryZHR.h" 
 #define USING_REAL_TIME_COST  // 是否启用实时的方式算代价，未定义则使用邻接矩阵方式
 
 #define DEBUG_LEVEL 0
@@ -98,9 +98,415 @@ int getCost(const InputParam *input, int len, int i, int j){
         }
     }
 }
+// 拼接未优化 MaxMatchingByHarryZHR 求解函数
+int MaxMatchingByHarryZHRsolver(const InputParam *input, OutputParam *output) {
+    /* 生成邻接矩阵 */
+    uint32_t len = output->len + 2; // 增加了一个虚拟节点和磁头起始位置节点
+    int **adjMat = (int **)malloc(sizeof(int *) * len);
+    if (!adjMat) {
+        fprintf(stderr, "Memory allocation for adjMat failed\n");
+        return -1;
+    }
+    for (uint32_t i = 0; i < len; ++i) {
+        adjMat[i] = (int *)malloc(sizeof(int) * len);
+        if (!adjMat[i]) {
+            fprintf(stderr, "Memory allocation for adjMat[%d] failed\n", i);
+            return -1;
+        }
+    }
+
+    for (uint32_t i = 0; i < len - 2; ++i) {
+        for (uint32_t j = 0; j < len - 2; ++j) {
+            if (i == j)
+                adjMat[i][j] = INF;
+            else {
+                HeadInfo start = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].endLpos, HEAD_RW};
+                HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
+                adjMat[i][j] = SeekTimeCalculate(&start, &end);
+            }
+        }
+    }
+
+    /* len-2 行 len-2 列是虚拟节点，len-1 行 len-1 列是磁头节点 */
+    for (uint32_t i = 0; i < len - 2; ++i) {
+        adjMat[len-2][i] = INF;
+        adjMat[i][len-2] = 0;
+
+        HeadInfo start = {input->headInfo.wrap, input->headInfo.lpos, input->headInfo.status};
+        HeadInfo end = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].startLpos, HEAD_RW};
+        adjMat[len-1][i] = SeekTimeCalculate(&start, &end);
+        adjMat[i][len-1] = INF;
+    }
+    adjMat[len-2][len-1] = 0;
+    adjMat[len-2][len-2] = INF;
+    adjMat[len-1][len-1] = INF;
+    adjMat[len-1][len-2] = INF;
+
+    /*for (int i = 0; i < len; ++i) {
+        for (int j = 0; j < len; ++j) {
+            printf("%d\t ", adjMat[i][j]);
+        }
+        printf("\n");
+    }*/
+
+    // int maxCost = 0;
+    // for (uint32_t i = 0; i < len; ++i) {
+    //     for (uint32_t j = 0; j < len; ++j) {
+    //         if (adjMat[i][j] > maxCost && adjMat[i][j] != INF) {
+    //             maxCost = adjMat[i][j];
+    //         }
+    //     }
+    // }
+
+    int maxCost = INF;
+    //printf("maxcost=%d\n", maxCost);
+
+    for (uint32_t i = 0; i < len; ++i) {
+        for (uint32_t j = 0; j < len; ++j) {
+            adjMat[i][j] = maxCost - adjMat[i][j];
+           // printf("%d\t", adjMat[i][j]);
+        }
+       // printf("\n");
+    }
+
+// printf("\n");printf("\n");
+//     for (uint32_t i = 0; i < len; ++i) {
+//         for (uint32_t j = 0; j < len; ++j) {
+            
+//             printf("%d\t", getCost(input,len,i,j));
+//         }
+//         printf("\n");
+//     }
+
+    // 初始化 MaxMatchingByHarryZHR 结构体
+    MaxMatchingByHarryZHR matcher;
+    initMaxMatchingByHarryZHR(&matcher, len);
+    Arr* resultt = solveMaxMatchingByHarryZHR(&matcher, adjMat);
+    int *result = (int*)calloc(len, sizeof(int)); ;
+    for (uint32_t i = 0; i < len; ++i) 
+    { 
+        result[i]=getArr(resultt, i);
+        //printf("result[i]: %d ", result[i]);
+    }    
+    int* visited = (int*)calloc(len, sizeof(int)); // 标记已经到达过的节点
+    for(int i=0;i<len;++i)visited[i]=0;
+    if (!visited) {
+        fprintf(stderr, "Memory allocation for visited failed\n");
+        return -1;
+    }
+    //printf("visited[0]: %d\n", visited[0]);
+    //printf("形成的环路：\n");
+    int* final_result= (int*)calloc(len, sizeof(int));
+    for(int i=0;i<len;++i)final_result[i]=0;
+    int count_result=0;
+     int loops=0;
+    for (int i = len-1; i >= 0; --i) {
+        if (!visited[i]) {
+            loops++;
+            int current = i;
+            //printf("环路: %d", current);
+            if(current!=len-1&&current!=len-2)
+                {   
+                    final_result[count_result]=current+1;
+                    count_result++;
+                }
+            while (result[current] != -1 && !visited[result[current]]) {
+                visited[current] = 1;
+                current = result[current];
+                if(current!=len-1&&current!=len-2)
+                {   
+                    final_result[count_result]=current+1;
+                    count_result++;
+                }
+                //printf(" -> %d", current);
+            }
+         
+            visited[current] = 1;
+            //printf("\n");
+          
+        }
+    }
+    //for(int i=0;i<10;i++)printf(" %d ", final_result[i]);
+    free(visited);
+ printf("环路个数: %d\n", loops);
+    for (uint32_t i = 0; i < len - 2; ++i) {
+        output->sequence[i] = final_result[i] ;
+    }
+    /*printf("最大匹配算法得到的 io 序列:\n");
+    for (uint32_t i = 0; i < input->ioVec.len; ++i) {
+        printf("%d ", output->sequence[i]);
+    }
+    printf("\n");*/
+
+    // 释放 matcher 和 adjMat 的内存
+    freeMaxMatchingByHarryZHR(&matcher);
+    for (uint32_t i = 0; i < len; ++i) {
+        free(adjMat[i]);
+    }
+    free(adjMat);
+
+    return 0;
+}
+
+//拼接贪心优化 MaxMatchingByHarryZHR 求解函数
+int MaxMatchingByHarryZHRsolver2(const InputParam *input, OutputParam *output) {
+    /* 生成邻接矩阵 */
+    uint32_t len = output->len + 2; // 增加了一个虚拟节点和磁头起始位置节点
+    int **adjMat = (int **)malloc(sizeof(int *) * len);
+    if (!adjMat) {
+        fprintf(stderr, "Memory allocation for adjMat failed\n");
+        return -1;
+    }
+    for (uint32_t i = 0; i < len; ++i) {
+        adjMat[i] = (int *)malloc(sizeof(int) * len);
+        if (!adjMat[i]) {
+            fprintf(stderr, "Memory allocation for adjMat[%d] failed\n", i);
+            return -1;
+        }
+    }
+
+    for (uint32_t i = 0; i < len - 2; ++i) {
+        for (uint32_t j = 0; j < len - 2; ++j) {
+            if (i == j)
+                adjMat[i][j] = INF;
+            else {
+                HeadInfo start = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].endLpos, HEAD_RW};
+                HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
+                adjMat[i][j] = SeekTimeCalculate(&start, &end);
+            }
+        }
+    }
+
+    /* len-2 行 len-2 列是虚拟节点，len-1 行 len-1 列是磁头节点 */
+    for (uint32_t i = 0; i < len - 2; ++i) {
+        adjMat[len-2][i] = INF;
+        adjMat[i][len-2] = 0;
+
+        HeadInfo start = {input->headInfo.wrap, input->headInfo.lpos, input->headInfo.status};
+        HeadInfo end = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].startLpos, HEAD_RW};
+        adjMat[len-1][i] = SeekTimeCalculate(&start, &end);
+        adjMat[i][len-1] = INF;
+    }
+    adjMat[len-2][len-1] = 0;
+    adjMat[len-2][len-2] = INF;
+    adjMat[len-1][len-1] = INF;
+    adjMat[len-1][len-2] = INF;
+
+    /*for (int i = 0; i < len; ++i) {
+        for (int j = 0; j < len; ++j) {
+            printf("%d\t ", adjMat[i][j]);
+        }
+        printf("\n");
+    }*/
+
+    int maxCost = 0;
+    for (uint32_t i = 0; i < len; ++i) {
+        for (uint32_t j = 0; j < len; ++j) {
+            if (adjMat[i][j] > maxCost && adjMat[i][j] != INF) {
+                maxCost = adjMat[i][j];
+            }
+        }
+    }
+    //printf("maxcost=%d\n", maxCost);
+
+    for (uint32_t i = 0; i < len; ++i) {
+        for (uint32_t j = 0; j < len; ++j) {
+            adjMat[i][j] = maxCost - adjMat[i][j];
+        }
+    }
+
+    // 初始化 MaxMatchingByHarryZHR 结构体
+    MaxMatchingByHarryZHR matcher;
+    initMaxMatchingByHarryZHR(&matcher, len);
+    Arr* resultt = solveMaxMatchingByHarryZHR(&matcher, adjMat);
+    int *result = (int*)calloc(len, sizeof(int)); ;
+    for (uint32_t i = 0; i < len; ++i) 
+    { 
+        result[i]=getArr(resultt, i);
+        //printf("result[i]: %d ", result[i]);
+    }    
+    int* visited = (int*)calloc(len, sizeof(int)); // 标记已经到达过的节点
+    for(int i=0;i<len;++i)visited[i]=0;
+    if (!visited) {
+        fprintf(stderr, "Memory allocation for visited failed\n");
+        return -1;
+    }
+    
+
+    //printf("visited[0]: %d\n", visited[0]);
+    //printf("形成的环路：\n");
+    int* final_result= (int*)calloc(len, sizeof(int));
+    for(int i=0;i<len;++i)final_result[i]=0;
+    int count_result=0;
+    int loops=0;
+    int current=len-1;//i=len-1,确保从磁头开始构建序列
+   while( current!=-1 && visited[current] != 1) {//i=len-1,确保从磁头开始构建序列
+       // if (!visited[i]) {
+            //int current = i;
+            visited[current] = 1;//标记访问
+            loops++;
+            if(current!=len-1&&current!=len-2)//若当前节点不是磁头节点或者虚拟节点，则放入结果序列中
+                {   
+                    final_result[count_result]=current+1;
+                    count_result++;
+                }
+            while (result[current] != -1 && !visited[result[current]]) {//继续基于当前节点向后搜索，直到把同一回路（即本回路）的节点全部放入结果序列为止
+                visited[current] = 1;//标记访问
+                current = result[current];//传递下标索引
+                if(current!=len-1&&current!=len-2)//放入结果序列
+                {   
+                    final_result[count_result]=current+1;
+                    count_result++;
+                }
+              
+           }
+            
+            visited[current] = 1;
+            //放完本回路节点之后，遍历所有剩余节点，找到连接路径最短的其他回路节点(这里最短要考虑删边和加边)
+            int mincost=INF;
+            int nextnode=-1;//记录连接到的下一个回路的节点
+            int outtimes=0;
+            int intimes=0;
+            for (int i = len-1; i >= 0; --i) {
+                outtimes++;
+                if (!visited[i] ) {
+                    intimes++;
+                    int j=result[i];//i的下一个节点j才是要判断是否连接的点
+                     //printf("mincost=%d\n",mincost);
+                    if(mincost>adjMat[i][j]-adjMat[current][j]){
+                        mincost=adjMat[i][j]-adjMat[current][j];
+                        nextnode=j;
+                    }
+                }
+            }
+            //printf("outtimes: %d\n", outtimes);
+            //printf("intimes: %d\n", intimes);
+            current=nextnode;//把找到的连接路径最短的节点作为下一轮的起始节点
+       // }
+    }
+    //for(int i=0;i<10;i++)printf(" %d ", final_result[i]);
+     printf("环路个数: %d\n", loops);
+
+
+    free(visited);
+
+    for (uint32_t i = 0; i < len - 2; ++i) {
+        output->sequence[i] = final_result[i] ;
+    }
+    // printf("最大匹配算法得到的 io 序列:\n");
+    // for (uint32_t i = 0; i < input->ioVec.len; ++i) {
+    //     printf("%d ", output->sequence[i]);
+    // }
+    // printf("\n");
+
+    // 释放 matcher 和 adjMat 的内存
+    freeMaxMatchingByHarryZHR(&matcher);
+    for (uint32_t i = 0; i < len; ++i) {
+        free(adjMat[i]);
+    }
+    free(adjMat);
+
+    return 0;
+}
+// LKH 算法
+int32_t LKH_Maxmatch(const InputParam *input, OutputParam *output)
+{   
+    // 获取调度开始时间
+    double scheduleStartTime = MyGetTime();
+
+    int32_t ret = 0;
+
+    uint32_t len = output->len + 2; //增加了一个虚拟节点和磁头起始位置节点
+
+
+    int *intialTour = (int *)malloc(len * sizeof(int));
+    intialTour[0] = len - 1, intialTour[1] = len; 
+    int rett=MaxMatchingByHarryZHRsolver(input, output);
+    for(int i=2;i<len;i++)intialTour[i]=output->sequence[i-2];
+    //for(int i=0;i<len;i++)printf("%d ", intialTour[i]);
+    /* 设置固定边, 结点从1开始编号 */
+    int fixLen = 1;
+    int *fixEdge = (int *)malloc(2 * fixLen * sizeof(int));
+    // 虚拟结点到磁头结点的边固定
+    fixEdge[0] = len - 1;
+    fixEdge[1] = len;
+
+    /* 调用 LKH 求解 */
+    /* 确定LKH输入结构体 */
+    LKHInput *lkhInput = (LKHInput *)malloc(sizeof(LKHInput));
+
+
+    lkhInput->adjMat = 0;
+    lkhInput->matDimension = len;
+    lkhInput->intialTour = intialTour;
+    lkhInput->fixEdge = fixEdge;
+    lkhInput->fixEdgeLen = fixLen;
+    lkhInput->scheduleStartTime = scheduleStartTime;
+    lkhInput->lkhParameters = (LKHParameters *)malloc(sizeof(LKHParameters));
+    loadDefaultParam(lkhInput->lkhParameters);
+    loadUserChangedParam(lkhInput->matDimension, lkhInput->lkhParameters, scheduleStartTime);
+#ifdef USING_REAL_TIME_COST
+    lkhInput->lkhParameters->OriginInput = input;
+#endif
+    /* 确定LKH输出结构体 */
+    LKHOutput *lkhOutput = (LKHOutput *)malloc(sizeof(LKHOutput));
+    lkhOutput->tourCost = 0;
+    lkhOutput->tourResult = (int *)malloc(len * sizeof(int));
+
+    ret = solveTSP(lkhInput, lkhOutput);
+   
+    // 处理解
+    int i, j;
+    for (i = 0; i < len; ++i){
+        if(lkhOutput->tourResult[i] == len) // i指向磁头结点
+            break;
+    }
+    for (j = 0; j < len - 2; ++j){ // 排序结果赋值到输出
+        if(i + 1 > len - 1)
+            i = -1;
+        output->sequence[j] = lkhOutput->tourResult[++i];
+    }
+
+    /* 打印求解结果：输出output->sequence的内容 */
+#if DEBUG_LEVEL >= 1
+    printf("LKH result\n");
+    printf("io len:%d\n",len-2);
+    printf("Output sequence:\n");
+    for (uint32_t i = 0; i < len - 2; ++i) {
+        printf("%d ", output->sequence[i]);
+    }
+    printf("\n");
+#endif
+
+
+    free(intialTour);
+    free(fixEdge);
+    free(lkhInput->lkhParameters);
+    free(lkhInput);
+    free(lkhOutput->tourResult);
+    free(lkhOutput);
+
+    /* 调用公共函数示例：调用电机寻址、带体磨损、电机磨损函数 */
+    // HeadInfo start = {input->ioVec.ioArray[0].wrap, input->ioVec.ioArray[0].endLpos, HEAD_RW};
+    // HeadInfo end = {input->ioVec.ioArray[1].wrap, input->ioVec.ioArray[1].endLpos, HEAD_RW};
+    // int32_t seekT = 0;
+    // int32_t beltW = 0;
+    // int32_t motorW = 0;
+    //    for (uint32_t i = 0; i < 10000; i++) {
+    //        seekT = SeekTimeCalculate(&start, &end);
+    //        beltW = BeltWearTimes(&start, &end, NULL);
+    //        motorW = MotorWearTimes(&start, &end);
+    //    }
+
+    // /* 调用公共函数示例：调用IO读写时间函数 */
+    // uint32_t rwT = ReadTimeCalculate(abs(input->ioVec.ioArray[0].endLpos - input->ioVec.ioArray[0].startLpos));
+
+    return ret;
+}
+
 
 // LKH 算法
-int32_t LKH(const InputParam *input, OutputParam *output)
+int32_t LKH_Nearest(const InputParam *input, OutputParam *output)
 {   
     // 获取调度开始时间
     double scheduleStartTime = MyGetTime();
@@ -470,7 +876,8 @@ int32_t NearestNeighbor(const InputParam *input, OutputParam *output){
 int32_t IOScheduleAlgorithm(const InputParam *input, OutputParam *output)
 {    
     // 使用 LKH 算法
-    return LKH(input, output);
+    return LKH_Maxmatch(input, output);
+    //return LKH_Nearest(input, output);
     // 使用最近邻贪心算法 
     // return NearestNeighbor(input, output);
     // 使用 Sort 算法
