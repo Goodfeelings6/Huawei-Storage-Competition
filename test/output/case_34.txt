@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_34.txt
+The file path is: /home/csg/project_hw/test/dataset/case_34.txt
 head info : [102,563724,0]
 
 io count = 2000
@@ -64,63 +64,71 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 1899452.0, Ascent time = 5.24 sec.
+Lower bound = 1907744.0, Ascent time = 5.15 sec.
 Cand.min = 2, Cand.avg = 15.3, Cand.max = 17
 Edges.fixed = 2003 [Cost = 0]
-Preprocessing time = 5.25 sec.
-* 1: Cost = 7079691, Time = 0.15 sec. 
-* 2: Cost = 7079165, Time = 0.24 sec. 
-* 3: Cost = 7079155, Time = 0.29 sec. 
-* 5: Cost = 7078898, Time = 0.39 sec. 
-* 7: Cost = 7078889, Time = 0.50 sec. 
-* 8: Cost = 7078876, Time = 0.57 sec. 
-* 9: Cost = 7078723, Time = 0.62 sec. 
-* 11: Cost = 7078551, Time = 0.76 sec. 
-* 12: Cost = 7078527, Time = 0.81 sec. 
-* 15: Cost = 7078518, Time = 1.00 sec. 
-* 21: Cost = 7078517, Time = 1.33 sec. 
-* 24: Cost = 7078451, Time = 1.48 sec. 
-* 28: Cost = 7077098, Time = 1.74 sec. 
-* 31: Cost = 7076899, Time = 1.90 sec. 
-* 32: Cost = 7076895, Time = 1.95 sec. 
-* 33: Cost = 7076870, Time = 2.01 sec. 
-* 34: Cost = 7076859, Time = 2.07 sec. 
-* 49: Cost = 7076601, Time = 3.00 sec. 
-* 53: Cost = 7076580, Time = 3.24 sec. 
-* 59: Cost = 7075987, Time = 3.59 sec. 
-* 60: Cost = 7075950, Time = 3.65 sec. 
-* 64: Cost = 7075949, Time = 3.92 sec. 
-* 79: Cost = 7075898, Time = 4.82 sec. 
-* 80: Cost = 7075737, Time = 4.89 sec. 
-* 100: Cost = 7075695, Time = 6.11 sec. 
-* 127: Cost = 7075677, Time = 7.71 sec. 
-* 133: Cost = 7075622, Time = 8.06 sec. 
-* 142: Cost = 7075613, Time = 8.63 sec. 
-* 165: Cost = 7075520, Time = 10.01 sec. 
-* 169: Cost = 7075470, Time = 10.26 sec. 
-* 249: Cost = 7075154, Time = 15.25 sec. 
-* 250: Cost = 7075149, Time = 15.33 sec. 
-* 300: Cost = 7075144, Time = 18.41 sec. 
-* 303: Cost = 7075133, Time = 18.56 sec. 
-* 306: Cost = 7075129, Time = 18.75 sec. 
-* 377: Cost = 7075117, Time = 23.01 sec. 
-* 379: Cost = 7075115, Time = 23.12 sec. 
-* 463: Cost = 7075106, Time = 28.18 sec. 
-*** The extent of improvement(23) is too small in 116 Trials ***
-Run 1: Cost = 7075106, Time = 28.24 sec. 
+Preprocessing time = 5.16 sec.
+* 1: Cost = 7118144, Time = 0.14 sec. 
+* 2: Cost = 7098522, Time = 0.21 sec. 
+* 3: Cost = 7097706, Time = 0.29 sec. 
+* 4: Cost = 7097692, Time = 0.34 sec. 
+* 5: Cost = 7082104, Time = 0.40 sec. 
+* 6: Cost = 7081430, Time = 0.46 sec. 
+* 7: Cost = 7077726, Time = 0.51 sec. 
+* 8: Cost = 7077709, Time = 0.56 sec. 
+* 9: Cost = 7077676, Time = 0.62 sec. 
+* 11: Cost = 7077625, Time = 0.74 sec. 
+* 12: Cost = 7077491, Time = 0.78 sec. 
+* 18: Cost = 7077479, Time = 1.08 sec. 
+* 19: Cost = 7077417, Time = 1.14 sec. 
+* 20: Cost = 7077326, Time = 1.21 sec. 
+* 22: Cost = 7077286, Time = 1.31 sec. 
+* 23: Cost = 7077280, Time = 1.37 sec. 
+* 24: Cost = 7076873, Time = 1.43 sec. 
+* 27: Cost = 7076848, Time = 1.60 sec. 
+* 29: Cost = 7076786, Time = 1.72 sec. 
+* 31: Cost = 7076473, Time = 1.83 sec. 
+* 33: Cost = 7076458, Time = 1.93 sec. 
+* 34: Cost = 7076338, Time = 2.00 sec. 
+* 35: Cost = 7076268, Time = 2.06 sec. 
+* 37: Cost = 7076152, Time = 2.18 sec. 
+* 38: Cost = 7076149, Time = 2.22 sec. 
+* 39: Cost = 7076124, Time = 2.28 sec. 
+* 43: Cost = 7076107, Time = 2.51 sec. 
+* 47: Cost = 7075817, Time = 2.73 sec. 
+* 48: Cost = 7075799, Time = 2.79 sec. 
+* 54: Cost = 7075626, Time = 3.14 sec. 
+* 57: Cost = 7075604, Time = 3.30 sec. 
+* 59: Cost = 7075319, Time = 3.41 sec. 
+* 60: Cost = 7075301, Time = 3.47 sec. 
+* 64: Cost = 7075294, Time = 3.70 sec. 
+* 67: Cost = 7075292, Time = 3.87 sec. 
+* 70: Cost = 7075291, Time = 4.02 sec. 
+* 75: Cost = 7075263, Time = 4.28 sec. 
+* 76: Cost = 7075262, Time = 4.33 sec. 
+* 90: Cost = 7075255, Time = 5.10 sec. 
+* 129: Cost = 7075122, Time = 7.27 sec. 
+* 132: Cost = 7075116, Time = 7.45 sec. 
+* 192: Cost = 7075106, Time = 10.83 sec. 
+* 208: Cost = 7075104, Time = 11.78 sec. 
+* 209: Cost = 7075103, Time = 11.84 sec. 
+* 215: Cost = 7075102, Time = 12.18 sec. 
+* 294: Cost = 7075101, Time = 16.69 sec. 
+*** The extent of improvement(1) is too small in 116 Trials ***
+Run 1: Cost = 7075101, Time = 19.80 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 7075106, Cost.avg = 7075106.00, Cost.max = 7075106
+Cost.min = 7075101, Cost.avg = 7075101.00, Cost.max = 7075101
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 464, Trials.avg = 464.0, Trials.max = 464
-Time.min = 28.24 sec., Time.avg = 28.24 sec., Time.max = 28.24 sec.
-Time.total = 33.68 sec.
+Trials.min = 348, Trials.avg = 348.0, Trials.max = 348
+Time.min = 19.80 sec., Time.avg = 19.80 sec., Time.max = 19.80 sec.
+Time.total = 25.19 sec.
 
 Key Metrics:
 	ioCount:			 2000
-	algorithmRunningDuration:	 33683.441 (ms)
-	memoryUse:			 6346.94 (KB)
-	addressingDuration:		 3695826 (ms)
+	algorithmRunningDuration:	 25192.469 (ms)
+	memoryUse:			 1032.00 (KB)
+	addressingDuration:		 3695821 (ms)
 	readDuration:			 2084753 (ms)
 	tapeBeltWear:			 5287031
 	tapeMotorWear:			 303

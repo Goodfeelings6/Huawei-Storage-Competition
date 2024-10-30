@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_46.txt
+The file path is: /home/csg/project_hw/test/dataset/case_46.txt
 head info : [236,623520,0]
 
 io count = 5000
@@ -64,64 +64,96 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 2221883.0, Ascent time = 7.92 sec.
+Lower bound = 2275827.0, Ascent time = 7.93 sec.
 Cand.min = 2, Cand.avg = 15.3, Cand.max = 17
 Edges.fixed = 5003 [Cost = 0]
-Preprocessing time = 7.95 sec.
-* 1: Cost = 11623397, Time = 0.73 sec. 
-* 2: Cost = 11623359, Time = 1.16 sec. 
-* 3: Cost = 11622867, Time = 1.53 sec. 
-* 5: Cost = 11622762, Time = 2.18 sec. 
-* 7: Cost = 11617312, Time = 2.70 sec. 
-* 8: Cost = 11616066, Time = 3.01 sec. 
-* 10: Cost = 11614231, Time = 3.71 sec. 
-* 12: Cost = 11612720, Time = 4.26 sec. 
-* 13: Cost = 11607007, Time = 4.53 sec. 
-* 17: Cost = 11606420, Time = 5.53 sec. 
-* 18: Cost = 11604771, Time = 5.84 sec. 
-* 19: Cost = 11604528, Time = 6.13 sec. 
-* 21: Cost = 11602720, Time = 6.65 sec. 
-* 22: Cost = 11602291, Time = 6.96 sec. 
-* 24: Cost = 11589653, Time = 7.54 sec. 
-* 25: Cost = 11578090, Time = 7.86 sec. 
-* 27: Cost = 11572630, Time = 8.50 sec. 
-* 29: Cost = 11571364, Time = 9.09 sec. 
-* 30: Cost = 11562523, Time = 9.34 sec. 
-* 32: Cost = 11562329, Time = 9.92 sec. 
-* 33: Cost = 11562177, Time = 10.18 sec. 
-* 34: Cost = 11560927, Time = 10.49 sec. 
-* 35: Cost = 11560421, Time = 10.80 sec. 
-* 37: Cost = 11559673, Time = 11.44 sec. 
-* 43: Cost = 11559364, Time = 13.34 sec. 
-* 47: Cost = 11559293, Time = 14.60 sec. 
-* 57: Cost = 11558593, Time = 17.58 sec. 
-* 67: Cost = 11557860, Time = 20.46 sec. 
-* 70: Cost = 11557756, Time = 21.35 sec. 
-* 85: Cost = 11557215, Time = 25.74 sec. 
-* 105: Cost = 11557126, Time = 31.86 sec. 
-* 108: Cost = 11557125, Time = 32.84 sec. 
-* 113: Cost = 11556771, Time = 34.41 sec. 
-* 115: Cost = 11555383, Time = 34.98 sec. 
-* 129: Cost = 11555373, Time = 38.91 sec. 
-* 133: Cost = 11555225, Time = 40.16 sec. 
-*** The extent of improvement(0) is too small in 24 Trials ***
-Run 1: Cost = 11555225, Time = 50.52 sec. 
+Preprocessing time = 7.97 sec.
+* 1: Cost = 12016557, Time = 0.77 sec. 
+* 2: Cost = 11834155, Time = 1.27 sec. 
+* 5: Cost = 11757998, Time = 2.60 sec. 
+* 6: Cost = 11722461, Time = 2.93 sec. 
+* 7: Cost = 11722159, Time = 3.23 sec. 
+* 8: Cost = 11678624, Time = 3.53 sec. 
+* 9: Cost = 11676942, Time = 3.82 sec. 
+* 11: Cost = 11676109, Time = 4.38 sec. 
+* 12: Cost = 11676053, Time = 4.69 sec. 
+* 15: Cost = 11675264, Time = 5.56 sec. 
+* 19: Cost = 11674969, Time = 6.98 sec. 
+* 20: Cost = 11656145, Time = 7.29 sec. 
+* 30: Cost = 11655818, Time = 10.40 sec. 
+* 32: Cost = 11655812, Time = 11.01 sec. 
+* 34: Cost = 11655152, Time = 11.54 sec. 
+* 37: Cost = 11652779, Time = 12.47 sec. 
+* 43: Cost = 11638872, Time = 14.57 sec. 
+* 46: Cost = 11638399, Time = 15.42 sec. 
+* 50: Cost = 11637947, Time = 16.81 sec. 
+* 54: Cost = 11637811, Time = 18.05 sec. 
+* 55: Cost = 11636653, Time = 18.37 sec. 
+* 57: Cost = 11636181, Time = 18.92 sec. 
+* 59: Cost = 11636067, Time = 19.48 sec. 
+* 65: Cost = 11635923, Time = 21.55 sec. 
+* 67: Cost = 11635248, Time = 22.21 sec. 
+* 73: Cost = 11635147, Time = 24.32 sec. 
+* 78: Cost = 11635074, Time = 25.93 sec. 
+* 79: Cost = 11634566, Time = 26.33 sec. 
+* 81: Cost = 11633685, Time = 26.97 sec. 
+* 92: Cost = 11633552, Time = 30.76 sec. 
+* 101: Cost = 11633467, Time = 33.80 sec. 
+* 107: Cost = 11633220, Time = 35.68 sec. 
+* 111: Cost = 11627418, Time = 36.95 sec. 
+* 115: Cost = 11627279, Time = 38.20 sec. 
+* 119: Cost = 11626964, Time = 39.63 sec. 
+* 120: Cost = 11626305, Time = 39.93 sec. 
+* 122: Cost = 11626186, Time = 40.52 sec. 
+* 128: Cost = 11626164, Time = 42.37 sec. 
+* 129: Cost = 11625178, Time = 42.69 sec. 
+* 131: Cost = 11624289, Time = 43.34 sec. 
+* 132: Cost = 11620589, Time = 43.70 sec. 
+* 133: Cost = 11614213, Time = 44.12 sec. 
+* 134: Cost = 11614088, Time = 44.48 sec. 
+* 136: Cost = 11614049, Time = 45.13 sec. 
+* 138: Cost = 11600056, Time = 45.84 sec. 
+* 139: Cost = 11599104, Time = 46.14 sec. 
+* 145: Cost = 11591027, Time = 48.09 sec. 
+* 158: Cost = 11590244, Time = 52.52 sec. 
+* 160: Cost = 11589953, Time = 53.24 sec. 
+* 161: Cost = 11585985, Time = 53.59 sec. 
+* 162: Cost = 11577328, Time = 53.95 sec. 
+* 165: Cost = 11577254, Time = 54.96 sec. 
+* 166: Cost = 11577219, Time = 55.30 sec. 
+* 169: Cost = 11577017, Time = 56.28 sec. 
+* 171: Cost = 11576794, Time = 56.82 sec. 
+* 172: Cost = 11576654, Time = 57.14 sec. 
+* 174: Cost = 11576203, Time = 57.81 sec. 
+* 181: Cost = 11576140, Time = 59.95 sec. 
+* 186: Cost = 11575299, Time = 61.57 sec. 
+* 196: Cost = 11574935, Time = 64.80 sec. 
+* 209: Cost = 11574648, Time = 68.98 sec. 
+* 215: Cost = 11574558, Time = 70.77 sec. 
+* 216: Cost = 11574437, Time = 71.16 sec. 
+* 231: Cost = 11574415, Time = 75.95 sec. 
+* 234: Cost = 11574230, Time = 77.17 sec. 
+* 246: Cost = 11574207, Time = 81.33 sec. 
+* 262: Cost = 11574133, Time = 86.84 sec. 
+* 263: Cost = 11574029, Time = 87.15 sec. 
+*** Time limit exceeded in FindTour ***
+Run 1: Cost = 11574029, Time = 90.70 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 11555225, Cost.avg = 11555225.00, Cost.max = 11555225
+Cost.min = 11574029, Cost.avg = 11574029.00, Cost.max = 11574029
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 168, Trials.avg = 168.0, Trials.max = 168
-Time.min = 50.52 sec., Time.avg = 50.52 sec., Time.max = 50.52 sec.
-Time.total = 59.67 sec.
+Trials.min = 274, Trials.avg = 274.0, Trials.max = 274
+Time.min = 90.70 sec., Time.avg = 90.70 sec., Time.max = 90.70 sec.
+Time.total = 100.03 sec.
 
 Key Metrics:
 	ioCount:			 5000
-	algorithmRunningDuration:	 59665.661 (ms)
-	memoryUse:			 11070.80 (KB)
-	addressingDuration:		 6118124 (ms)
+	algorithmRunningDuration:	 100027.422 (ms)
+	memoryUse:			 968.00 (KB)
+	addressingDuration:		 6110024 (ms)
 	readDuration:			 5453955 (ms)
-	tapeBeltWear:			 10427658
-	tapeMotorWear:			 517
+	tapeBeltWear:			 10454562
+	tapeMotorWear:			 501
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

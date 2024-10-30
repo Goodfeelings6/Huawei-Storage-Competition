@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_41.txt
+The file path is: /home/csg/project_hw/test/dataset/case_41.txt
 head info : [275,671104,0]
 
 io count = 5000
@@ -64,61 +64,92 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 2359539.0, Ascent time = 7.75 sec.
+Lower bound = 2411106.0, Ascent time = 7.79 sec.
 Cand.min = 2, Cand.avg = 15.3, Cand.max = 17
 Edges.fixed = 5003 [Cost = 0]
-Preprocessing time = 7.78 sec.
-* 1: Cost = 12936728, Time = 0.63 sec. 
-* 2: Cost = 12928679, Time = 0.98 sec. 
-* 4: Cost = 12928345, Time = 1.40 sec. 
-* 5: Cost = 12912956, Time = 1.63 sec. 
-* 6: Cost = 12910556, Time = 1.88 sec. 
-* 8: Cost = 12897402, Time = 2.35 sec. 
-* 9: Cost = 12895099, Time = 2.59 sec. 
-* 10: Cost = 12894517, Time = 2.85 sec. 
-* 13: Cost = 12894127, Time = 3.43 sec. 
-* 15: Cost = 12892903, Time = 3.90 sec. 
-* 16: Cost = 12892764, Time = 4.09 sec. 
-* 17: Cost = 12892604, Time = 4.27 sec. 
-* 18: Cost = 12892446, Time = 4.48 sec. 
-* 19: Cost = 12892271, Time = 4.69 sec. 
-* 20: Cost = 12892095, Time = 4.93 sec. 
-* 21: Cost = 12891935, Time = 5.12 sec. 
-* 23: Cost = 12891885, Time = 5.54 sec. 
-* 25: Cost = 12891777, Time = 5.98 sec. 
-* 26: Cost = 12891542, Time = 6.17 sec. 
-* 29: Cost = 12891397, Time = 6.79 sec. 
-* 31: Cost = 12891230, Time = 7.24 sec. 
-* 32: Cost = 12890952, Time = 7.41 sec. 
-* 36: Cost = 12890784, Time = 8.26 sec. 
-* 39: Cost = 12888319, Time = 8.95 sec. 
-* 44: Cost = 12888261, Time = 10.02 sec. 
-* 47: Cost = 12888214, Time = 10.68 sec. 
-* 54: Cost = 12888209, Time = 12.14 sec. 
-* 60: Cost = 12888183, Time = 13.41 sec. 
-* 61: Cost = 12887961, Time = 13.61 sec. 
-* 62: Cost = 12887793, Time = 13.79 sec. 
-* 67: Cost = 12887751, Time = 14.79 sec. 
-* 72: Cost = 12887524, Time = 15.86 sec. 
-* 94: Cost = 12887443, Time = 20.63 sec. 
-*** The extent of improvement(0) is too small in 24 Trials ***
-Run 1: Cost = 12887443, Time = 25.95 sec. 
+Preprocessing time = 7.83 sec.
+* 1: Cost = 12999984, Time = 0.67 sec. 
+* 5: Cost = 12988328, Time = 2.21 sec. 
+* 6: Cost = 12977886, Time = 2.48 sec. 
+* 7: Cost = 12953380, Time = 2.73 sec. 
+* 9: Cost = 12943231, Time = 3.33 sec. 
+* 10: Cost = 12940642, Time = 3.57 sec. 
+* 12: Cost = 12940164, Time = 4.05 sec. 
+* 13: Cost = 12939661, Time = 4.30 sec. 
+* 14: Cost = 12910693, Time = 4.56 sec. 
+* 17: Cost = 12906337, Time = 5.22 sec. 
+* 19: Cost = 12906179, Time = 5.76 sec. 
+* 20: Cost = 12904967, Time = 6.04 sec. 
+* 21: Cost = 12904874, Time = 6.26 sec. 
+* 22: Cost = 12904840, Time = 6.46 sec. 
+* 24: Cost = 12904626, Time = 6.98 sec. 
+* 25: Cost = 12904494, Time = 7.22 sec. 
+* 26: Cost = 12904487, Time = 7.42 sec. 
+* 30: Cost = 12904249, Time = 8.41 sec. 
+* 31: Cost = 12903423, Time = 8.67 sec. 
+* 32: Cost = 12903413, Time = 8.89 sec. 
+* 34: Cost = 12903254, Time = 9.38 sec. 
+* 39: Cost = 12903247, Time = 10.58 sec. 
+* 44: Cost = 12903082, Time = 11.69 sec. 
+* 46: Cost = 12903016, Time = 12.13 sec. 
+* 55: Cost = 12902891, Time = 14.19 sec. 
+* 70: Cost = 12902686, Time = 17.75 sec. 
+* 72: Cost = 12902664, Time = 18.20 sec. 
+* 73: Cost = 12901843, Time = 18.39 sec. 
+* 74: Cost = 12901621, Time = 18.68 sec. 
+* 77: Cost = 12901600, Time = 19.38 sec. 
+* 79: Cost = 12901251, Time = 19.79 sec. 
+* 86: Cost = 12901198, Time = 21.36 sec. 
+* 93: Cost = 12901141, Time = 23.01 sec. 
+* 97: Cost = 12901060, Time = 24.02 sec. 
+* 99: Cost = 12900873, Time = 24.55 sec. 
+* 110: Cost = 12900866, Time = 27.14 sec. 
+* 111: Cost = 12900795, Time = 27.41 sec. 
+* 113: Cost = 12900710, Time = 27.81 sec. 
+* 115: Cost = 12894507, Time = 28.33 sec. 
+* 117: Cost = 12894357, Time = 28.77 sec. 
+* 124: Cost = 12894288, Time = 30.34 sec. 
+* 128: Cost = 12894126, Time = 31.20 sec. 
+* 129: Cost = 12894060, Time = 31.44 sec. 
+* 131: Cost = 12894039, Time = 32.00 sec. 
+* 134: Cost = 12893323, Time = 32.79 sec. 
+* 139: Cost = 12893312, Time = 33.94 sec. 
+* 147: Cost = 12893297, Time = 35.86 sec. 
+* 150: Cost = 12893286, Time = 36.56 sec. 
+* 152: Cost = 12893022, Time = 37.12 sec. 
+* 153: Cost = 12892740, Time = 37.37 sec. 
+* 158: Cost = 12892707, Time = 38.64 sec. 
+* 159: Cost = 12892627, Time = 38.95 sec. 
+* 164: Cost = 12892624, Time = 40.08 sec. 
+* 172: Cost = 12892540, Time = 42.01 sec. 
+* 175: Cost = 12892491, Time = 42.68 sec. 
+* 177: Cost = 12892474, Time = 43.10 sec. 
+* 182: Cost = 12892428, Time = 44.24 sec. 
+* 185: Cost = 12892427, Time = 44.91 sec. 
+* 187: Cost = 12892377, Time = 45.30 sec. 
+* 200: Cost = 12892358, Time = 48.52 sec. 
+* 209: Cost = 12892064, Time = 50.73 sec. 
+* 212: Cost = 12892050, Time = 51.39 sec. 
+* 228: Cost = 12891465, Time = 55.05 sec. 
+* 245: Cost = 12891446, Time = 59.29 sec. 
+*** The extent of improvement(19) is too small in 24 Trials ***
+Run 1: Cost = 12891446, Time = 64.29 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 12887443, Cost.avg = 12887443.00, Cost.max = 12887443
+Cost.min = 12891446, Cost.avg = 12891446.00, Cost.max = 12891446
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 120, Trials.avg = 120.0, Trials.max = 120
-Time.min = 25.95 sec., Time.avg = 25.95 sec., Time.max = 25.95 sec.
-Time.total = 34.89 sec.
+Trials.min = 264, Trials.avg = 264.0, Trials.max = 264
+Time.min = 64.29 sec., Time.avg = 64.29 sec., Time.max = 64.29 sec.
+Time.total = 73.47 sec.
 
 Key Metrics:
 	ioCount:			 5000
-	algorithmRunningDuration:	 34893.942 (ms)
-	memoryUse:			 10575.54 (KB)
-	addressingDuration:		 6798946 (ms)
+	algorithmRunningDuration:	 73474.487 (ms)
+	memoryUse:			 932.00 (KB)
+	addressingDuration:		 6807311 (ms)
 	readDuration:			 5214656 (ms)
-	tapeBeltWear:			 10860448
-	tapeMotorWear:			 525
+	tapeBeltWear:			 10856086
+	tapeMotorWear:			 529
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt
