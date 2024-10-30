@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_49.txt
+The file path is: /home/csg/project_hw/test/dataset/case_49.txt
 head info : [234,688749,1]
 
 io count = 10000
@@ -64,104 +64,59 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 2359302.0, Ascent time = 25.70 sec.
+Lower bound = 2513313.0, Ascent time = 26.06 sec.
 Cand.min = 2, Cand.avg = 6.8, Cand.max = 8
 Edges.fixed = 10003 [Cost = 0]
-Preprocessing time = 25.76 sec.
-* 1: Cost = 20538839, Time = 0.85 sec. 
-* 2: Cost = 19507128, Time = 1.36 sec. 
-* 3: Cost = 19057387, Time = 1.75 sec. 
-* 4: Cost = 18808223, Time = 2.06 sec. 
-* 5: Cost = 18525736, Time = 2.40 sec. 
-* 6: Cost = 18470395, Time = 2.73 sec. 
-* 8: Cost = 18467485, Time = 3.37 sec. 
-* 9: Cost = 18398069, Time = 3.67 sec. 
-* 10: Cost = 18389898, Time = 4.04 sec. 
-* 11: Cost = 18350859, Time = 4.37 sec. 
-* 12: Cost = 18292966, Time = 4.68 sec. 
-* 13: Cost = 18267063, Time = 4.99 sec. 
-* 14: Cost = 18259727, Time = 5.30 sec. 
-* 15: Cost = 18232211, Time = 5.62 sec. 
-* 16: Cost = 18224177, Time = 5.97 sec. 
-* 17: Cost = 18223101, Time = 6.31 sec. 
-* 18: Cost = 18214976, Time = 6.66 sec. 
-* 19: Cost = 18212661, Time = 6.99 sec. 
-* 20: Cost = 18211840, Time = 7.29 sec. 
-* 21: Cost = 18210153, Time = 7.63 sec. 
-* 22: Cost = 18180326, Time = 7.96 sec. 
-* 23: Cost = 18172223, Time = 8.29 sec. 
-* 25: Cost = 18172033, Time = 9.01 sec. 
-* 26: Cost = 18134344, Time = 9.31 sec. 
-* 28: Cost = 18107599, Time = 9.96 sec. 
-* 30: Cost = 18101462, Time = 10.62 sec. 
-* 31: Cost = 18096697, Time = 10.98 sec. 
-* 33: Cost = 18093875, Time = 11.72 sec. 
-* 41: Cost = 18090368, Time = 14.54 sec. 
-* 42: Cost = 18090042, Time = 14.86 sec. 
-* 43: Cost = 18087815, Time = 15.22 sec. 
-* 44: Cost = 18087307, Time = 15.57 sec. 
-* 47: Cost = 18081779, Time = 16.63 sec. 
-* 48: Cost = 18075288, Time = 17.03 sec. 
-* 50: Cost = 18065956, Time = 17.74 sec. 
-* 51: Cost = 18065863, Time = 18.09 sec. 
-* 52: Cost = 18065002, Time = 18.40 sec. 
-* 53: Cost = 18064014, Time = 18.76 sec. 
-* 54: Cost = 18063460, Time = 19.10 sec. 
-* 56: Cost = 18062940, Time = 19.81 sec. 
-* 58: Cost = 18062820, Time = 20.52 sec. 
-* 59: Cost = 18062803, Time = 20.88 sec. 
-* 60: Cost = 18062558, Time = 21.28 sec. 
-* 61: Cost = 18058975, Time = 21.65 sec. 
-* 63: Cost = 18058920, Time = 22.39 sec. 
-* 64: Cost = 18058785, Time = 22.72 sec. 
-* 67: Cost = 18058610, Time = 23.74 sec. 
-* 68: Cost = 18049319, Time = 24.10 sec. 
-* 70: Cost = 18048727, Time = 24.79 sec. 
-* 72: Cost = 18048617, Time = 25.51 sec. 
-* 73: Cost = 18048352, Time = 25.87 sec. 
-* 74: Cost = 18048263, Time = 26.23 sec. 
-* 80: Cost = 18048168, Time = 28.28 sec. 
-* 81: Cost = 18048110, Time = 28.60 sec. 
-* 85: Cost = 18047955, Time = 29.97 sec. 
-* 87: Cost = 18040100, Time = 30.61 sec. 
-* 91: Cost = 18039770, Time = 32.02 sec. 
-* 92: Cost = 18039703, Time = 32.40 sec. 
-* 93: Cost = 18039575, Time = 32.76 sec. 
-* 95: Cost = 18039448, Time = 33.46 sec. 
-* 102: Cost = 18039400, Time = 36.01 sec. 
-* 107: Cost = 18038941, Time = 37.79 sec. 
-* 112: Cost = 18038828, Time = 39.53 sec. 
-* 115: Cost = 18038741, Time = 40.55 sec. 
-* 121: Cost = 18038129, Time = 42.69 sec. 
-* 122: Cost = 18026375, Time = 43.04 sec. 
-* 123: Cost = 18025852, Time = 43.40 sec. 
-* 125: Cost = 18023611, Time = 44.14 sec. 
-* 126: Cost = 18023589, Time = 44.49 sec. 
-* 127: Cost = 18023471, Time = 44.81 sec. 
-* 128: Cost = 18023094, Time = 45.23 sec. 
-* 130: Cost = 18020986, Time = 46.01 sec. 
-* 132: Cost = 18020776, Time = 46.79 sec. 
-* 137: Cost = 18018515, Time = 48.67 sec. 
-* 140: Cost = 18018494, Time = 49.79 sec. 
-* 144: Cost = 18012638, Time = 51.40 sec. 
+Preprocessing time = 26.15 sec.
+* 1: Cost = 20854329, Time = 1.20 sec. 
+* 2: Cost = 19680574, Time = 1.86 sec. 
+* 3: Cost = 19358231, Time = 2.39 sec. 
+* 4: Cost = 19164772, Time = 2.95 sec. 
+* 5: Cost = 19035465, Time = 3.46 sec. 
+* 6: Cost = 18913094, Time = 4.03 sec. 
+* 7: Cost = 18713438, Time = 4.52 sec. 
+* 8: Cost = 18574892, Time = 5.04 sec. 
+* 9: Cost = 18574286, Time = 5.49 sec. 
+* 10: Cost = 18515844, Time = 5.98 sec. 
+* 11: Cost = 18493659, Time = 6.45 sec. 
+* 12: Cost = 18471282, Time = 6.92 sec. 
+* 13: Cost = 18468390, Time = 7.37 sec. 
+* 14: Cost = 18457202, Time = 7.94 sec. 
+* 15: Cost = 18457148, Time = 8.36 sec. 
+* 16: Cost = 18424316, Time = 8.83 sec. 
+* 17: Cost = 18424015, Time = 9.32 sec. 
+* 18: Cost = 18402874, Time = 9.73 sec. 
+* 19: Cost = 18391509, Time = 10.22 sec. 
+* 20: Cost = 18387938, Time = 10.72 sec. 
+* 21: Cost = 18384893, Time = 11.23 sec. 
+* 22: Cost = 18383197, Time = 11.72 sec. 
+* 23: Cost = 18325825, Time = 12.15 sec. 
+* 25: Cost = 18325481, Time = 12.98 sec. 
+* 26: Cost = 18323404, Time = 13.39 sec. 
+* 27: Cost = 18319971, Time = 13.90 sec. 
+* 28: Cost = 18317818, Time = 14.30 sec. 
+* 29: Cost = 18316727, Time = 14.73 sec. 
+* 30: Cost = 18314292, Time = 15.24 sec. 
+* 31: Cost = 18301080, Time = 15.73 sec. 
+* 33: Cost = 18295079, Time = 16.75 sec. 
 *** The extent of improvement(0) is too small in 8 Trials ***
-Run 1: Cost = 18012638, Time = 54.48 sec. 
+Run 1: Cost = 18295079, Time = 23.82 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 18012638, Cost.avg = 18012638.00, Cost.max = 18012638
+Cost.min = 18295079, Cost.avg = 18295079.00, Cost.max = 18295079
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 152, Trials.avg = 152.0, Trials.max = 152
-Time.min = 54.48 sec., Time.avg = 54.48 sec., Time.max = 54.48 sec.
-Time.total = 84.88 sec.
+Trials.min = 48, Trials.avg = 48.0, Trials.max = 48
+Time.min = 23.82 sec., Time.avg = 23.82 sec., Time.max = 23.82 sec.
+Time.total = 55.24 sec.
 
 Key Metrics:
 	ioCount:			 10000
-	algorithmRunningDuration:	 84880.090 (ms)
-	memoryUse:			 17824.28 (KB)
-	addressingDuration:		 9421701 (ms)
+	algorithmRunningDuration:	 55241.727 (ms)
+	memoryUse:			 968.00 (KB)
+	addressingDuration:		 9478010 (ms)
 	readDuration:			 10067534 (ms)
-	tapeBeltWear:			 17804302
-	tapeMotorWear:			 682
+	tapeBeltWear:			 18030434
+	tapeMotorWear:			 658
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

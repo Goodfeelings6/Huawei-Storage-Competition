@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_31.txt
+The file path is: /home/csg/project_hw/test/dataset/case_31.txt
 head info : [190,244475,0]
 
 io count = 1000
@@ -64,25 +64,26 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 5843541.3, Ascent time = 3.41 sec.
+Lower bound = 5841189.1, Ascent time = 3.27 sec.
 Cand.min = 2, Cand.avg = 4.8, Cand.max = 6
 Edges.fixed = 1003 [Cost = 0]
-Preprocessing time = 3.56 sec.
-* 1: Cost = 5852014, Time = 0.00 sec. 
+Preprocessing time = 3.43 sec.
+* 1: Cost = 5852724, Time = 0.00 sec. 
+* 2: Cost = 5852014, Time = 0.00 sec. 
 *** The extent of improvement(0) is too small in 800 Trials ***
-Run 1: Cost = 5852014, Time = 2.95 sec. 
+Run 1: Cost = 5852014, Time = 2.37 sec. 
 
 Successes/Runs = 0/1
 Cost.min = 5852014, Cost.avg = 5852014.00, Cost.max = 5852014
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 1600, Trials.avg = 1600.0, Trials.max = 1600
-Time.min = 2.95 sec., Time.avg = 2.95 sec., Time.max = 2.95 sec.
-Time.total = 6.56 sec.
+Time.min = 2.37 sec., Time.avg = 2.37 sec., Time.max = 2.37 sec.
+Time.total = 5.86 sec.
 
 Key Metrics:
 	ioCount:			 1000
-	algorithmRunningDuration:	 6558.480 (ms)
-	memoryUse:			 5343.43 (KB)
+	algorithmRunningDuration:	 5864.399 (ms)
+	memoryUse:			 980.00 (KB)
 	addressingDuration:		 3122971 (ms)
 	readDuration:			 1020482 (ms)
 	tapeBeltWear:			 3662938
