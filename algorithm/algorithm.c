@@ -21,8 +21,8 @@ double MyGetTime(){ // 返回实际时间：秒
 /* 返回目标函数值(距离) */
 int GetObjectValue(const HeadInfo *start, const HeadInfo *end){ 
     // return SeekTimeCalculate(start, end);
-    // return SeekTimeCalculate(start, end)+BeltWearTimes(start, end, NULL);
-    return SeekTimeCalculate(start, end)+BeltWearTimes(start, end, NULL)+MotorWearTimes(start, end);
+    return SeekTimeCalculate(start, end)+BeltWearTimes(start, end, NULL);
+    // return SeekTimeCalculate(start, end)+BeltWearTimes(start, end, NULL)+MotorWearTimes(start, end);
 
     /* 调用公共函数示例：调用电机寻址、带体磨损、电机磨损函数 */
     // HeadInfo start = {input->ioVec.ioArray[0].wrap, input->ioVec.ioArray[0].endLpos, HEAD_RW};
@@ -43,14 +43,14 @@ int GetObjectValue(const HeadInfo *start, const HeadInfo *end){
 
 // 设置需要调整的 LKH 的参数
 void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleStartTime){
-    if(matDimension <= 1002){ // 10,50,100,1000 
+    if(matDimension <= 1002){ // 10,50,100,1000
         // 默认值
     }
     else if(matDimension <= 2002){ // 2000
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
-        p->POPMUSIC_SampleSize = 20;
+        p->POPMUSIC_SampleSize = 10;
         p->POPMUSIC_Solutions = 50;
         // p->MaxCandidates = 15;
     }
@@ -58,22 +58,22 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
-        p->POPMUSIC_SampleSize = 20;
-        p->POPMUSIC_Solutions = 25;
+        p->POPMUSIC_SampleSize = 10;
+        p->POPMUSIC_Solutions = 20;
         // p->MaxCandidates = 15;
     }
     else{ // 10000
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
-        p->POPMUSIC_SampleSize = 30;
-        p->POPMUSIC_Solutions = 20;
+        p->POPMUSIC_SampleSize = 10;
+        p->POPMUSIC_Solutions = 10;
         // p->MaxCandidates = 6;
     }
     p->Runs = 1;
-    p->TraceLevel = 1;
+    p->TraceLevel = 0;
     p->TimeLimit = DBL_MAX; // 由总时间、一定时间跨度内的改进值共同控制退出即可
-    p->TotalTimeLimit = 100; // 最大允许运行时间
+    p->TotalTimeLimit = 200; // 最大允许运行时间
     p->ScheduleScoreInSecond = 1020;
     p->MoveType = 3;
     p->TimeSpan = 2;

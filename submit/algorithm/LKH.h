@@ -11,12 +11,14 @@
 #include <ctype.h>
 #include <float.h>
 #include <limits.h>
+#include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
 #include "GainType.h"
 #include "Hashing.h"
+#include "../public.h"
 
 /* Macro definitions */
 
@@ -171,9 +173,10 @@ struct SwapRecord {
 
 // 新增
 extern double TimeSpan; /* 统计改进值的时间跨度 */
-extern double ScheduleScoreInSecond; /* 调度加分/秒 (未乘10) */
+extern double ScheduleScoreInSecond; /* 每多算1秒实际罚分 (未乘10) */
 extern double SubProblemTotalTimeLimit; /* 分配给每个子问题的求解时间 */
 extern double SubProblemStartTime; /* 当前子问题的开始求解时间 */
+extern const InputParam *OriginInput; /* 原始输入结构体 */
 
 extern int AscentCandidates;   /* Number of candidate edges to be associated
                                   with each node during the ascent */
