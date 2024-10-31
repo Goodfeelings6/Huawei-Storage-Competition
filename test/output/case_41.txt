@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_41.txt
+The file path is: ./dataset/case_41.txt
 head info : [275,671104,0]
 
 io count = 5000
@@ -30,7 +30,7 @@ INITIAL_TOUR_FRACTION = 1.000
 KICK_TYPE = 0
 KICKS = 1
 # MAX_BREADTH =
-MAX_CANDIDATES = 15 
+MAX_CANDIDATES = 5 
 MAX_SWAPS = 10004
 MAX_TRIALS = 10004
 # MERGE_TOUR_FILE =
@@ -43,8 +43,8 @@ PATCHING_C = 0
 # PI_FILE = 
 POPMUSIC_INITIAL_TOUR = YES
 POPMUSIC_MAX_NEIGHBORS = 5
-POPMUSIC_SAMPLE_SIZE = 20
-POPMUSIC_SOLUTIONS = 25
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 20
 POPMUSIC_TRIALS = 1
 # POPULATION_SIZE = 0
 PRECISION = 100
@@ -64,33 +64,41 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 2344318.0, Ascent time = 8.15 sec.
-Cand.min = 2, Cand.avg = 15.3, Cand.max = 17
+Lower bound = 3604277.0, Ascent time = 4.38 sec.
+Cand.min = 2, Cand.avg = 5.9, Cand.max = 7
 Edges.fixed = 5003 [Cost = 0]
-Preprocessing time = 8.18 sec.
-* 1: Cost = 12887405, Time = 0.56 sec. 
-* 19: Cost = 12887262, Time = 6.12 sec. 
-* 27: Cost = 12887105, Time = 8.14 sec. 
-* 43: Cost = 12887022, Time = 11.80 sec. 
-* 47: Cost = 12887011, Time = 12.73 sec. 
-*** The extent of improvement(251) is too small in 24 Trials ***
-Run 1: Cost = 12887011, Time = 12.97 sec. 
+Preprocessing time = 4.42 sec.
+* 1: Cost = 12942214, Time = 0.14 sec. 
+* 2: Cost = 12894604, Time = 0.23 sec. 
+* 5: Cost = 12894517, Time = 0.44 sec. 
+* 7: Cost = 12894277, Time = 0.58 sec. 
+* 8: Cost = 12888186, Time = 0.65 sec. 
+* 9: Cost = 12887396, Time = 0.72 sec. 
+* 17: Cost = 12887236, Time = 1.22 sec. 
+* 19: Cost = 12886966, Time = 1.36 sec. 
+* 24: Cost = 12886817, Time = 1.71 sec. 
+* 29: Cost = 12886579, Time = 2.03 sec. 
+* 30: Cost = 12886541, Time = 2.09 sec. 
+* 38: Cost = 12886473, Time = 2.64 sec. 
+* 42: Cost = 12886459, Time = 2.90 sec. 
+*** The extent of improvement(358) is too small in 24 Trials ***
+Run 1: Cost = 12886459, Time = 3.30 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 12887011, Cost.avg = 12887011.00, Cost.max = 12887011
+Cost.min = 12886459, Cost.avg = 12886459.00, Cost.max = 12886459
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 48, Trials.avg = 48.0, Trials.max = 48
-Time.min = 12.97 sec., Time.avg = 12.97 sec., Time.max = 12.97 sec.
-Time.total = 23.72 sec.
+Time.min = 3.30 sec., Time.avg = 3.30 sec., Time.max = 3.30 sec.
+Time.total = 10.13 sec.
 
 Key Metrics:
 	ioCount:			 5000
-	algorithmRunningDuration:	 23715.400 (ms)
-	memoryUse:			 17056.17 (KB)
-	addressingDuration:		 6797259 (ms)
+	algorithmRunningDuration:	 10133.884 (ms)
+	memoryUse:			 25768.36 (KB)
+	addressingDuration:		 6809278 (ms)
 	readDuration:			 5214656 (ms)
-	tapeBeltWear:			 10861178
-	tapeMotorWear:			 525
+	tapeBeltWear:			 10849132
+	tapeMotorWear:			 533
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

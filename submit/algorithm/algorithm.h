@@ -10,6 +10,7 @@ extern "C" {
 
 int32_t AlgorithmRun(const InputParam *input, OutputParam *output);
 double MyGetTime(); /* 返回实际时间：秒 */
+int GetObjectValue(const HeadInfo *start, const HeadInfo *end); /* 返回目标函数值 */
 
 #ifdef __cplusplus
 }

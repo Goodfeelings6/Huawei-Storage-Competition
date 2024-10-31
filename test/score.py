@@ -56,7 +56,8 @@ def score():
     instanceScore = []          # 算例总得分
     for i in range(len(curr_data)): # 比较计算每个算例
         curr_data_i_dict = decode(curr_data[i])
-        base_data_i_dict = decode(base_data[i])
+        instanceID = int(re.search(r'case_(\d+).txt', curr_data_i_dict["name"]).group(1))
+        base_data_i_dict = decode(base_data[instanceID-1])
         scoreFile.write(curr_data_i_dict["name"] + ':\t')
         scoreFile.write("IO:"+str(curr_data_i_dict["ioCount"])+"\t")
         # 调度算法加分

@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_51.txt
+The file path is: ./dataset/case_51.txt
 head info : [9,225536,0]
 
 io count = 10000
@@ -30,7 +30,7 @@ INITIAL_TOUR_FRACTION = 1.000
 KICK_TYPE = 0
 KICKS = 1
 # MAX_BREADTH =
-MAX_CANDIDATES = 6 
+MAX_CANDIDATES = 5 
 MAX_SWAPS = 20004
 MAX_TRIALS = 20004
 # MERGE_TOUR_FILE =
@@ -43,8 +43,8 @@ PATCHING_C = 0
 # PI_FILE = 
 POPMUSIC_INITIAL_TOUR = YES
 POPMUSIC_MAX_NEIGHBORS = 5
-POPMUSIC_SAMPLE_SIZE = 30
-POPMUSIC_SOLUTIONS = 20
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 10
 POPMUSIC_TRIALS = 1
 # POPULATION_SIZE = 0
 PRECISION = 100
@@ -64,29 +64,31 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 2401663.0, Ascent time = 26.93 sec.
-Cand.min = 2, Cand.avg = 6.8, Cand.max = 8
+Lower bound = 5872561.0, Ascent time = 8.47 sec.
+Cand.min = 2, Cand.avg = 5.7, Cand.max = 7
 Edges.fixed = 10003 [Cost = 0]
-Preprocessing time = 26.99 sec.
-* 1: Cost = 18239083, Time = 0.79 sec. 
+Preprocessing time = 8.52 sec.
+* 1: Cost = 17962337, Time = 0.24 sec. 
+* 3: Cost = 17931675, Time = 0.51 sec. 
+* 4: Cost = 17927246, Time = 0.63 sec. 
 *** The extent of improvement(0) is too small in 8 Trials ***
-Run 1: Cost = 18239083, Time = 6.76 sec. 
+Run 1: Cost = 17927246, Time = 2.06 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 18239083, Cost.avg = 18239083.00, Cost.max = 18239083
+Cost.min = 17927246, Cost.avg = 17927246.00, Cost.max = 17927246
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 16, Trials.avg = 16.0, Trials.max = 16
-Time.min = 6.76 sec., Time.avg = 6.76 sec., Time.max = 6.76 sec.
-Time.total = 45.75 sec.
+Time.min = 2.06 sec., Time.avg = 2.06 sec., Time.max = 2.06 sec.
+Time.total = 21.91 sec.
 
 Key Metrics:
 	ioCount:			 10000
-	algorithmRunningDuration:	 45750.890 (ms)
-	memoryUse:			 90576.78 (KB)
-	addressingDuration:		 9428788 (ms)
+	algorithmRunningDuration:	 21908.948 (ms)
+	memoryUse:			 172271.82 (KB)
+	addressingDuration:		 9391334 (ms)
 	readDuration:			 10221497 (ms)
-	tapeBeltWear:			 18163649
-	tapeMotorWear:			 633
+	tapeBeltWear:			 17889899
+	tapeMotorWear:			 653
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

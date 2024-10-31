@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_50.txt
+The file path is: ./dataset/case_50.txt
 head info : [2,358054,1]
 
 io count = 10000
@@ -30,7 +30,7 @@ INITIAL_TOUR_FRACTION = 1.000
 KICK_TYPE = 0
 KICKS = 1
 # MAX_BREADTH =
-MAX_CANDIDATES = 6 
+MAX_CANDIDATES = 5 
 MAX_SWAPS = 20004
 MAX_TRIALS = 20004
 # MERGE_TOUR_FILE =
@@ -43,8 +43,8 @@ PATCHING_C = 0
 # PI_FILE = 
 POPMUSIC_INITIAL_TOUR = YES
 POPMUSIC_MAX_NEIGHBORS = 5
-POPMUSIC_SAMPLE_SIZE = 30
-POPMUSIC_SOLUTIONS = 20
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 10
 POPMUSIC_TRIALS = 1
 # POPULATION_SIZE = 0
 PRECISION = 100
@@ -64,34 +64,38 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 2462228.0, Ascent time = 27.26 sec.
-Cand.min = 2, Cand.avg = 6.8, Cand.max = 8
+Lower bound = 5662107.0, Ascent time = 8.23 sec.
+Cand.min = 2, Cand.avg = 5.7, Cand.max = 7
 Edges.fixed = 10003 [Cost = 0]
-Preprocessing time = 27.32 sec.
-* 1: Cost = 19307872, Time = 0.96 sec. 
-* 4: Cost = 19274767, Time = 2.63 sec. 
-* 5: Cost = 19267761, Time = 3.16 sec. 
-* 7: Cost = 19266576, Time = 4.16 sec. 
-* 10: Cost = 19227970, Time = 5.70 sec. 
-* 15: Cost = 19226612, Time = 8.26 sec. 
+Preprocessing time = 8.28 sec.
+* 1: Cost = 19583622, Time = 0.34 sec. 
+* 2: Cost = 19399984, Time = 0.58 sec. 
+* 3: Cost = 19362687, Time = 0.79 sec. 
+* 4: Cost = 19336016, Time = 0.97 sec. 
+* 10: Cost = 19334711, Time = 2.20 sec. 
+* 11: Cost = 19301464, Time = 2.40 sec. 
+* 13: Cost = 19278152, Time = 2.82 sec. 
+* 21: Cost = 19275366, Time = 4.41 sec. 
+* 28: Cost = 19243863, Time = 5.86 sec. 
+* 32: Cost = 19243707, Time = 6.74 sec. 
 *** The extent of improvement(0) is too small in 8 Trials ***
-Run 1: Cost = 19226612, Time = 13.12 sec. 
+Run 1: Cost = 19243707, Time = 8.37 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 19226612, Cost.avg = 19226612.00, Cost.max = 19226612
+Cost.min = 19243707, Cost.avg = 19243707.00, Cost.max = 19243707
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 24, Trials.avg = 24.0, Trials.max = 24
-Time.min = 13.12 sec., Time.avg = 13.12 sec., Time.max = 13.12 sec.
-Time.total = 59.57 sec.
+Trials.min = 40, Trials.avg = 40.0, Trials.max = 40
+Time.min = 8.37 sec., Time.avg = 8.37 sec., Time.max = 8.37 sec.
+Time.total = 35.02 sec.
 
 Key Metrics:
 	ioCount:			 10000
-	algorithmRunningDuration:	 59570.392 (ms)
-	memoryUse:			 123585.20 (KB)
-	addressingDuration:		 9434029 (ms)
+	algorithmRunningDuration:	 35021.412 (ms)
+	memoryUse:			 185252.33 (KB)
+	addressingDuration:		 9498926 (ms)
 	readDuration:			 10059657 (ms)
-	tapeBeltWear:			 18998003
-	tapeMotorWear:			 738
+	tapeBeltWear:			 18950939
+	tapeMotorWear:			 762
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt
