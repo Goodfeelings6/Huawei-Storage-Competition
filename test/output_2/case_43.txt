@@ -1,0 +1,98 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_43.txt
+head info : [245,352753,0]
+
+io count = 5000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 9.996e-05
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 5002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 10004
+MAX_TRIALS = 10004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 20
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 200.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 3531062.0, Ascent time = 4.08 sec.
+Cand.min = 2, Cand.avg = 5.9, Cand.max = 7
+Edges.fixed = 5003 [Cost = 0]
+Preprocessing time = 4.11 sec.
+* 1: Cost = 12871300, Time = 0.13 sec. 
+* 5: Cost = 12856627, Time = 0.48 sec. 
+* 6: Cost = 12856228, Time = 0.54 sec. 
+* 8: Cost = 12855063, Time = 0.66 sec. 
+* 22: Cost = 12854756, Time = 1.59 sec. 
+* 40: Cost = 12844700, Time = 2.70 sec. 
+* 47: Cost = 12842222, Time = 3.12 sec. 
+*** The extent of improvement(0) is too small in 24 Trials ***
+Run 1: Cost = 12842222, Time = 4.74 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 12842222, Cost.avg = 12842222.00, Cost.max = 12842222
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 72, Trials.avg = 72.0, Trials.max = 72
+Time.min = 4.74 sec., Time.avg = 4.74 sec., Time.max = 4.74 sec.
+Time.total = 11.29 sec.
+
+Key Metrics:
+	ioCount:			 5000
+	algorithmRunningDuration:	 11294.022 (ms)
+	memoryUse:			 23588.33 (KB)
+	addressingDuration:		 6741709 (ms)
+	readDuration:			 5340776 (ms)
+	tapeBeltWear:			 10987671
+	tapeMotorWear:			 485
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

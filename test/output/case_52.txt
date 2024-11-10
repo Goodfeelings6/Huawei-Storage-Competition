@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: ./dataset/case_52.txt
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_52.txt
 head info : [166,388172,0]
 
 io count = 10000
@@ -64,37 +64,37 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 5335577.0, Ascent time = 8.17 sec.
+Lower bound = 5335577.0, Ascent time = 8.37 sec.
 Cand.min = 2, Cand.avg = 5.7, Cand.max = 7
 Edges.fixed = 10003 [Cost = 0]
-Preprocessing time = 8.23 sec.
-* 1: Cost = 17161771, Time = 0.32 sec. 
-* 3: Cost = 17103096, Time = 0.75 sec. 
-* 4: Cost = 17090537, Time = 0.93 sec. 
-* 5: Cost = 16969271, Time = 1.13 sec. 
-* 8: Cost = 16968749, Time = 1.63 sec. 
-* 11: Cost = 16962271, Time = 2.20 sec. 
-* 13: Cost = 16951598, Time = 2.54 sec. 
-* 15: Cost = 16951566, Time = 2.85 sec. 
-* 19: Cost = 16948681, Time = 3.56 sec. 
-* 26: Cost = 16944141, Time = 4.69 sec. 
-* 27: Cost = 16929303, Time = 4.89 sec. 
-* 29: Cost = 16928640, Time = 5.26 sec. 
-* 31: Cost = 16924136, Time = 5.59 sec. 
+Preprocessing time = 8.43 sec.
+* 1: Cost = 17161771, Time = 0.33 sec. 
+* 3: Cost = 17103096, Time = 0.77 sec. 
+* 4: Cost = 17090537, Time = 0.96 sec. 
+* 5: Cost = 16969271, Time = 1.16 sec. 
+* 8: Cost = 16968749, Time = 1.67 sec. 
+* 11: Cost = 16962271, Time = 2.27 sec. 
+* 13: Cost = 16951598, Time = 2.62 sec. 
+* 15: Cost = 16951566, Time = 2.94 sec. 
+* 19: Cost = 16948681, Time = 3.66 sec. 
+* 26: Cost = 16944141, Time = 4.83 sec. 
+* 27: Cost = 16929303, Time = 5.04 sec. 
+* 29: Cost = 16928640, Time = 5.42 sec. 
+* 31: Cost = 16924136, Time = 5.79 sec. 
 *** The extent of improvement(0) is too small in 8 Trials ***
-Run 1: Cost = 16924136, Time = 7.10 sec. 
+Run 1: Cost = 16924136, Time = 7.37 sec. 
 
 Successes/Runs = 0/1
 Cost.min = 16924136, Cost.avg = 16924136.00, Cost.max = 16924136
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 40, Trials.avg = 40.0, Trials.max = 40
-Time.min = 7.10 sec., Time.avg = 7.10 sec., Time.max = 7.10 sec.
-Time.total = 31.03 sec.
+Time.min = 7.37 sec., Time.avg = 7.37 sec., Time.max = 7.37 sec.
+Time.total = 31.51 sec.
 
 Key Metrics:
 	ioCount:			 10000
-	algorithmRunningDuration:	 31033.966 (ms)
-	memoryUse:			 170924.75 (KB)
+	algorithmRunningDuration:	 31508.388 (ms)
+	memoryUse:			 170832.88 (KB)
 	addressingDuration:		 8577122 (ms)
 	readDuration:			 10179016 (ms)
 	tapeBeltWear:			 17662199

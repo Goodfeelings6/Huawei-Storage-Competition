@@ -60,6 +60,7 @@ python testbatch.py s2
 
 # 构建并批量测试所有用例, 输出将位于 output_baseline 文件夹
 python testbatch.py s2 -des ./output_baseline
+python testbatch.py s2 -des ./output_noshuffle
 ```
 ---
 

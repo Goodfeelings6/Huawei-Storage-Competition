@@ -71,10 +71,11 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         // p->MaxCandidates = 6;
     }
     p->Runs = 1;
-    p->TraceLevel = 0;
+    p->TraceLevel = 1;
     p->TimeLimit = DBL_MAX; // 由总时间、一定时间跨度内的改进值共同控制退出即可
-    p->TotalTimeLimit = 200; // 最大允许运行时间
-    p->ScheduleScoreInSecond = 1020;
+    p->TotalTimeLimit = 100; // 最大允许运行时间
+    p->ScheduleScoreInSecond = 1020; // 1s罚分
+    // p->ScheduleScoreInSecond = 20;
     p->MoveType = 3;
     p->TimeSpan = 2;
 }

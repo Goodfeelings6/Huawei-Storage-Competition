@@ -70,7 +70,7 @@ void Create_POPMUSIC_CandidateSet(int K)
     }
 
     /* Create a tour containing all fixed or common edges */
-    InitialTourAlgorithm = WALK;
+    InitialTourAlgorithm = GREEDY;
     ChooseInitialTour();
     InitialTourAlgorithm = InitialTourAlgorithmSaved;
     /* N->V == 1 iff N is going to be deleted */
@@ -95,7 +95,7 @@ void Create_POPMUSIC_CandidateSet(int K)
             } else
                 deleted++;
         } while ((N = N->Suc) != FirstNode);
-        shuffle(n, solution);
+        //shuffle(n, solution);
         solution[n] = solution[0];
         node[n] = node[solution[0]];
         startTime = GetTime();

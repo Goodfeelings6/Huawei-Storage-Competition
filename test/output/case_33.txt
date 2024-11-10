@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: ./dataset/case_33.txt
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_33.txt
 head info : [119,161546,0]
 
 io count = 2000
@@ -67,7 +67,7 @@ TRACE_LEVEL = 1
 Lower bound = 2229839.0, Ascent time = 2.38 sec.
 Cand.min = 2, Cand.avg = 6.0, Cand.max = 7
 Edges.fixed = 2003 [Cost = 0]
-Preprocessing time = 2.39 sec.
+Preprocessing time = 2.40 sec.
 * 1: Cost = 8368857, Time = 0.05 sec. 
 * 2: Cost = 8078627, Time = 0.07 sec. 
 * 4: Cost = 8078496, Time = 0.11 sec. 
@@ -75,27 +75,27 @@ Preprocessing time = 2.39 sec.
 * 8: Cost = 8069863, Time = 0.19 sec. 
 * 11: Cost = 8069825, Time = 0.24 sec. 
 * 17: Cost = 8069786, Time = 0.37 sec. 
-* 24: Cost = 8069770, Time = 0.50 sec. 
+* 24: Cost = 8069770, Time = 0.51 sec. 
 * 25: Cost = 8069769, Time = 0.52 sec. 
-* 40: Cost = 8069766, Time = 0.80 sec. 
-* 41: Cost = 8069759, Time = 0.82 sec. 
-* 42: Cost = 8069722, Time = 0.84 sec. 
-* 126: Cost = 8069712, Time = 2.45 sec. 
-* 129: Cost = 8069711, Time = 2.51 sec. 
+* 40: Cost = 8069766, Time = 0.81 sec. 
+* 41: Cost = 8069759, Time = 0.83 sec. 
+* 42: Cost = 8069722, Time = 0.85 sec. 
+* 126: Cost = 8069712, Time = 2.53 sec. 
+* 129: Cost = 8069711, Time = 2.59 sec. 
 *** The extent of improvement(11) is too small in 116 Trials ***
-Run 1: Cost = 8069711, Time = 4.58 sec. 
+Run 1: Cost = 8069711, Time = 4.67 sec. 
 
 Successes/Runs = 0/1
 Cost.min = 8069711, Cost.avg = 8069711.00, Cost.max = 8069711
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 232, Trials.avg = 232.0, Trials.max = 232
-Time.min = 4.58 sec., Time.avg = 4.58 sec., Time.max = 4.58 sec.
-Time.total = 7.29 sec.
+Time.min = 4.67 sec., Time.avg = 4.67 sec., Time.max = 4.67 sec.
+Time.total = 7.39 sec.
 
 Key Metrics:
 	ioCount:			 2000
-	algorithmRunningDuration:	 7294.719 (ms)
-	memoryUse:			 6353.50 (KB)
+	algorithmRunningDuration:	 7392.204 (ms)
+	memoryUse:			 6381.50 (KB)
 	addressingDuration:		 4256383 (ms)
 	readDuration:			 2126876 (ms)
 	tapeBeltWear:			 5759579

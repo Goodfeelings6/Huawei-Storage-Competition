@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: ./dataset/case_55.txt
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_55.txt
 head info : [186,339047,1]
 
 io count = 10000
@@ -64,33 +64,33 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 6058758.0, Ascent time = 8.13 sec.
+Lower bound = 6058758.0, Ascent time = 8.49 sec.
 Cand.min = 2, Cand.avg = 5.7, Cand.max = 7
 Edges.fixed = 10003 [Cost = 0]
-Preprocessing time = 8.18 sec.
+Preprocessing time = 8.54 sec.
 * 1: Cost = 18693379, Time = 0.24 sec. 
-* 3: Cost = 18625579, Time = 0.53 sec. 
-* 4: Cost = 18564747, Time = 0.67 sec. 
-* 5: Cost = 18564512, Time = 0.78 sec. 
-* 6: Cost = 18562738, Time = 0.89 sec. 
-* 7: Cost = 18557425, Time = 0.99 sec. 
-* 8: Cost = 18547769, Time = 1.15 sec. 
-* 13: Cost = 18546483, Time = 1.70 sec. 
-* 14: Cost = 18545868, Time = 1.80 sec. 
+* 3: Cost = 18625579, Time = 0.54 sec. 
+* 4: Cost = 18564747, Time = 0.69 sec. 
+* 5: Cost = 18564512, Time = 0.80 sec. 
+* 6: Cost = 18562738, Time = 0.91 sec. 
+* 7: Cost = 18557425, Time = 1.02 sec. 
+* 8: Cost = 18547769, Time = 1.18 sec. 
+* 13: Cost = 18546483, Time = 1.74 sec. 
+* 14: Cost = 18545868, Time = 1.85 sec. 
 *** The extent of improvement(1901) is too small in 8 Trials ***
-Run 1: Cost = 18545868, Time = 2.02 sec. 
+Run 1: Cost = 18545868, Time = 2.08 sec. 
 
 Successes/Runs = 0/1
 Cost.min = 18545868, Cost.avg = 18545868.00, Cost.max = 18545868
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 16, Trials.avg = 16.0, Trials.max = 16
-Time.min = 2.02 sec., Time.avg = 2.02 sec., Time.max = 2.02 sec.
-Time.total = 21.87 sec.
+Time.min = 2.08 sec., Time.avg = 2.08 sec., Time.max = 2.08 sec.
+Time.total = 22.27 sec.
 
 Key Metrics:
 	ioCount:			 10000
-	algorithmRunningDuration:	 21874.433 (ms)
-	memoryUse:			 173080.73 (KB)
+	algorithmRunningDuration:	 22269.189 (ms)
+	memoryUse:			 166316.35 (KB)
 	addressingDuration:		 9751977 (ms)
 	readDuration:			 10636862 (ms)
 	tapeBeltWear:			 18527384

@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: ./dataset/case_44.txt
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_44.txt
 head info : [118,269768,0]
 
 io count = 5000
@@ -64,42 +64,42 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 3280055.0, Ascent time = 4.34 sec.
+Lower bound = 3280055.0, Ascent time = 4.16 sec.
 Cand.min = 2, Cand.avg = 5.9, Cand.max = 7
 Edges.fixed = 5003 [Cost = 0]
-Preprocessing time = 4.38 sec.
-* 1: Cost = 11451283, Time = 0.19 sec. 
-* 2: Cost = 11407710, Time = 0.29 sec. 
-* 3: Cost = 11407103, Time = 0.38 sec. 
-* 4: Cost = 11403823, Time = 0.47 sec. 
-* 5: Cost = 11397257, Time = 0.57 sec. 
-* 6: Cost = 11394467, Time = 0.66 sec. 
-* 7: Cost = 11390772, Time = 0.74 sec. 
-* 10: Cost = 11390723, Time = 1.05 sec. 
-* 17: Cost = 11387313, Time = 1.67 sec. 
-* 22: Cost = 11387310, Time = 2.12 sec. 
-* 29: Cost = 11387152, Time = 2.71 sec. 
-* 31: Cost = 11384587, Time = 2.88 sec. 
-* 39: Cost = 11384326, Time = 3.53 sec. 
-* 44: Cost = 11384322, Time = 3.93 sec. 
-* 47: Cost = 11384163, Time = 4.19 sec. 
-* 54: Cost = 11379639, Time = 4.76 sec. 
-* 56: Cost = 11379633, Time = 4.95 sec. 
-* 66: Cost = 11379438, Time = 5.74 sec. 
+Preprocessing time = 4.19 sec.
+* 1: Cost = 11451283, Time = 0.17 sec. 
+* 2: Cost = 11407710, Time = 0.27 sec. 
+* 3: Cost = 11407103, Time = 0.35 sec. 
+* 4: Cost = 11403823, Time = 0.43 sec. 
+* 5: Cost = 11397257, Time = 0.52 sec. 
+* 6: Cost = 11394467, Time = 0.60 sec. 
+* 7: Cost = 11390772, Time = 0.68 sec. 
+* 10: Cost = 11390723, Time = 0.95 sec. 
+* 17: Cost = 11387313, Time = 1.50 sec. 
+* 22: Cost = 11387310, Time = 2.02 sec. 
+* 29: Cost = 11387152, Time = 2.57 sec. 
+* 31: Cost = 11384587, Time = 2.73 sec. 
+* 39: Cost = 11384326, Time = 3.33 sec. 
+* 44: Cost = 11384322, Time = 3.71 sec. 
+* 47: Cost = 11384163, Time = 3.94 sec. 
+* 54: Cost = 11379639, Time = 4.48 sec. 
+* 56: Cost = 11379633, Time = 4.65 sec. 
+* 66: Cost = 11379438, Time = 5.38 sec. 
 *** The extent of improvement(0) is too small in 24 Trials ***
-Run 1: Cost = 11379438, Time = 8.21 sec. 
+Run 1: Cost = 11379438, Time = 7.64 sec. 
 
 Successes/Runs = 0/1
 Cost.min = 11379438, Cost.avg = 11379438.00, Cost.max = 11379438
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 96, Trials.avg = 96.0, Trials.max = 96
-Time.min = 8.21 sec., Time.avg = 8.21 sec., Time.max = 8.21 sec.
-Time.total = 15.36 sec.
+Time.min = 7.64 sec., Time.avg = 7.64 sec., Time.max = 7.64 sec.
+Time.total = 14.58 sec.
 
 Key Metrics:
 	ioCount:			 5000
-	algorithmRunningDuration:	 15358.535 (ms)
-	memoryUse:			 21290.25 (KB)
+	algorithmRunningDuration:	 14581.439 (ms)
+	memoryUse:			 20956.80 (KB)
 	addressingDuration:		 5978846 (ms)
 	readDuration:			 5253261 (ms)
 	tapeBeltWear:			 10207777

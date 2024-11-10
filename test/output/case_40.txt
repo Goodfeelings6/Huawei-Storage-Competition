@@ -43,8 +43,8 @@ PATCHING_C = 0
 # PI_FILE = 
 POPMUSIC_INITIAL_TOUR = YES
 POPMUSIC_MAX_NEIGHBORS = 5
-POPMUSIC_SAMPLE_SIZE = 10
-POPMUSIC_SOLUTIONS = 50
+POPMUSIC_SAMPLE_SIZE = 30
+POPMUSIC_SOLUTIONS = 7
 POPMUSIC_TRIALS = 1
 # POPULATION_SIZE = 0
 PRECISION = 100
@@ -64,35 +64,43 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 1929406.0, Ascent time = 2.85 sec.
-Cand.min = 2, Cand.avg = 6.0, Cand.max = 7
+Lower bound = 2266540.0, Ascent time = 1.34 sec.
+Cand.min = 2, Cand.avg = 5.1, Cand.max = 7
 Edges.fixed = 2003 [Cost = 0]
-Preprocessing time = 2.87 sec.
-* 1: Cost = 7473433, Time = 0.07 sec. 
-* 2: Cost = 7447436, Time = 0.12 sec. 
-* 10: Cost = 7443762, Time = 0.34 sec. 
-* 13: Cost = 7443751, Time = 0.41 sec. 
-* 19: Cost = 7443530, Time = 0.59 sec. 
-* 22: Cost = 7443420, Time = 0.67 sec. 
-* 111: Cost = 7443394, Time = 3.19 sec. 
-* 141: Cost = 7443288, Time = 3.97 sec. 
-*** The extent of improvement(106) is too small in 116 Trials ***
-Run 1: Cost = 7443288, Time = 6.16 sec. 
+Preprocessing time = 1.34 sec.
+* 1: Cost = 7637655, Time = 0.03 sec. 
+* 3: Cost = 7637619, Time = 0.07 sec. 
+* 4: Cost = 7449886, Time = 0.09 sec. 
+* 6: Cost = 7444975, Time = 0.13 sec. 
+* 8: Cost = 7444758, Time = 0.17 sec. 
+* 9: Cost = 7443738, Time = 0.19 sec. 
+* 17: Cost = 7442586, Time = 0.34 sec. 
+* 23: Cost = 7442303, Time = 0.44 sec. 
+* 33: Cost = 7442243, Time = 0.62 sec. 
+* 34: Cost = 7442236, Time = 0.64 sec. 
+* 49: Cost = 7442200, Time = 0.90 sec. 
+* 69: Cost = 7442149, Time = 1.27 sec. 
+* 96: Cost = 7442038, Time = 1.76 sec. 
+* 104: Cost = 7442033, Time = 1.90 sec. 
+* 149: Cost = 7442025, Time = 2.74 sec. 
+* 179: Cost = 7441978, Time = 3.30 sec. 
+*** The extent of improvement(55) is too small in 116 Trials ***
+Run 1: Cost = 7441978, Time = 4.27 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 7443288, Cost.avg = 7443288.00, Cost.max = 7443288
+Cost.min = 7441978, Cost.avg = 7441978.00, Cost.max = 7441978
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 232, Trials.avg = 232.0, Trials.max = 232
-Time.min = 6.16 sec., Time.avg = 6.16 sec., Time.max = 6.16 sec.
-Time.total = 9.42 sec.
+Time.min = 4.27 sec., Time.avg = 4.27 sec., Time.max = 4.27 sec.
+Time.total = 5.96 sec.
 
 Key Metrics:
 	ioCount:			 2000
-	algorithmRunningDuration:	 9420.222 (ms)
-	memoryUse:			 7532.80 (KB)
-	addressingDuration:		 3905003 (ms)
+	algorithmRunningDuration:	 5956.704 (ms)
+	memoryUse:			 6980.67 (KB)
+	addressingDuration:		 3903619 (ms)
 	readDuration:			 2172906 (ms)
-	tapeBeltWear:			 5526596
+	tapeBeltWear:			 5526670
 	tapeMotorWear:			 310
 	errorIOCount:			 0
 
