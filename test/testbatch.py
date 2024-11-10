@@ -103,18 +103,18 @@ def formatDetails(filePath)->str:
     # else:
     #     ret += f"|{1:^9}"
     # Ascent时间
-    # match = re.search(r'Ascent time\s*=\s*([\d.]+)\s*sec', content)
-    # if match:
-    #     ret += f"|{match.group(1)+'s':^10}"
-    # else:
-    #     ret += f"|{'none':^10}s"
+    match = re.search(r'Ascent time\s*=\s*([\d.]+)\s*sec', content)
+    if match:
+        ret += f"|{match.group(1)+'s':^10}"
+    else:
+        ret += f"|{'none':^10}s"
     # 局部搜索最多用时
-    # matchs = re.findall(r'Run 1: Cost = [\d]+, Time = ([\d.]+) sec.', content)
-    # if matchs:
-    #     maxTime = max(matchs)
-    #     ret += f"|{maxTime+'s':^15}"
-    # else:
-    #     ret += f"|{'0s':^15}"
+    matchs = re.findall(r'Run 1: Cost = [\d]+, Time = ([\d.]+) sec.', content)
+    if matchs:
+        maxTime = max(matchs)
+        ret += f"|{maxTime+'s':^15}"
+    else:
+        ret += f"|{'0s':^15}"
     # 总用时
     match = re.search(r'algorithmRunningDuration:\s*([\d.]+)\s*\(ms\)', content)
     if match:
@@ -134,8 +134,10 @@ def formatDetails(filePath)->str:
     if first: 
         # head = "|   算例   |  IO数量 |子问题数 | Ascent时间|局部搜索最多用时|  最终Cost |\n" \
             #    "|----------|--------|---------|----------|---------------|----------|\n"
-        head = "|   算例   |  IO数量 |  总用时  |  最终Cost |\n" \
-               "|----------|--------|----------|----------|\n"
+        # head = "|   算例   |  IO数量 |  总用时  |  最终Cost |\n" \
+        #        "|----------|--------|----------|----------|\n"
+        head = "|   算例   |  IO数量 | Ascent时间| 局部搜索 |  总用时  |  最终Cost |\n" \
+               "|----------|--------|----------|-----------|----------|----------|\n"
         first = False
         return head+ret
     else:

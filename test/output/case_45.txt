@@ -2,7 +2,7 @@
 
 Welcome to HW project.
 
-The file path is: ./dataset/case_45.txt
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_45.txt
 head info : [147,353817,0]
 
 io count = 5000
@@ -64,31 +64,31 @@ TOTAL_TIME_LIMIT = 100.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 3496174.0, Ascent time = 4.16 sec.
+Lower bound = 3496174.0, Ascent time = 4.20 sec.
 Cand.min = 2, Cand.avg = 5.9, Cand.max = 7
 Edges.fixed = 5003 [Cost = 0]
-Preprocessing time = 4.19 sec.
+Preprocessing time = 4.24 sec.
 * 1: Cost = 12678876, Time = 0.12 sec. 
-* 4: Cost = 12676432, Time = 0.33 sec. 
-* 5: Cost = 12676217, Time = 0.40 sec. 
-* 12: Cost = 12676208, Time = 0.79 sec. 
-* 13: Cost = 12662902, Time = 0.85 sec. 
-* 14: Cost = 12655465, Time = 0.90 sec. 
-* 31: Cost = 12655388, Time = 1.88 sec. 
+* 4: Cost = 12676432, Time = 0.34 sec. 
+* 5: Cost = 12676217, Time = 0.41 sec. 
+* 12: Cost = 12676208, Time = 0.80 sec. 
+* 13: Cost = 12662902, Time = 0.86 sec. 
+* 14: Cost = 12655465, Time = 0.92 sec. 
+* 31: Cost = 12655388, Time = 1.91 sec. 
 *** The extent of improvement(77) is too small in 24 Trials ***
-Run 1: Cost = 12655388, Time = 2.86 sec. 
+Run 1: Cost = 12655388, Time = 2.88 sec. 
 
 Successes/Runs = 0/1
 Cost.min = 12655388, Cost.avg = 12655388.00, Cost.max = 12655388
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 48, Trials.avg = 48.0, Trials.max = 48
-Time.min = 2.86 sec., Time.avg = 2.86 sec., Time.max = 2.86 sec.
-Time.total = 9.40 sec.
+Time.min = 2.88 sec., Time.avg = 2.88 sec., Time.max = 2.88 sec.
+Time.total = 9.44 sec.
 
 Key Metrics:
 	ioCount:			 5000
-	algorithmRunningDuration:	 9404.055 (ms)
-	memoryUse:			 27189.60 (KB)
+	algorithmRunningDuration:	 9437.272 (ms)
+	memoryUse:			 26055.60 (KB)
 	addressingDuration:		 6681424 (ms)
 	readDuration:			 5198410 (ms)
 	tapeBeltWear:			 10731037

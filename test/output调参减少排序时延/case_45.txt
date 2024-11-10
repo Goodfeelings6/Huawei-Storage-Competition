@@ -1,0 +1,98 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset/case_45.txt
+head info : [147,353817,0]
+
+io count = 5000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 9.996e-05
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 5002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 10004
+MAX_TRIALS = 10004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 20
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 100.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 3496174.0, Ascent time = 4.16 sec.
+Cand.min = 2, Cand.avg = 5.9, Cand.max = 7
+Edges.fixed = 5003 [Cost = 0]
+Preprocessing time = 4.19 sec.
+* 1: Cost = 12678876, Time = 0.12 sec. 
+* 4: Cost = 12676432, Time = 0.33 sec. 
+* 5: Cost = 12676217, Time = 0.40 sec. 
+* 12: Cost = 12676208, Time = 0.79 sec. 
+* 13: Cost = 12662902, Time = 0.85 sec. 
+* 14: Cost = 12655465, Time = 0.90 sec. 
+* 31: Cost = 12655388, Time = 1.88 sec. 
+*** The extent of improvement(77) is too small in 24 Trials ***
+Run 1: Cost = 12655388, Time = 2.86 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 12655388, Cost.avg = 12655388.00, Cost.max = 12655388
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 48, Trials.avg = 48.0, Trials.max = 48
+Time.min = 2.86 sec., Time.avg = 2.86 sec., Time.max = 2.86 sec.
+Time.total = 9.40 sec.
+
+Key Metrics:
+	ioCount:			 5000
+	algorithmRunningDuration:	 9404.055 (ms)
+	memoryUse:			 27189.60 (KB)
+	addressingDuration:		 6681424 (ms)
+	readDuration:			 5198410 (ms)
+	tapeBeltWear:			 10731037
+	tapeMotorWear:			 533
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt
