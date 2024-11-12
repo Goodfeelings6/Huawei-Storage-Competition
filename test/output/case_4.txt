@@ -8,6 +8,12 @@ head info : [245,515922,0]
 io count = 10
 
 
+base_totaltime = 319633.000002
+base_tapeBeltWear = 871618.000000
+base_tapeMotorWear = 5.000000
+new base_totaltime = 0.366712
+new base_tapeBeltWear = 1.000000
+new base_tapeMotorWear = 0.000006
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 23
@@ -60,16 +66,16 @@ SUBGRADIENT = YES
 SUBSEQUENT_MOVE_TYPE = 3
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
-TOTAL_TIME_LIMIT = 100.0
+TOTAL_TIME_LIMIT = 20.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 772107.0, Ascent time = 0.00 sec.
-Cand.min = 2, Cand.avg = 5.1, Cand.max = 6
+Lower bound = 570557.0, Ascent time = 0.00 sec.
+Cand.min = 2, Cand.avg = 3.7, Cand.max = 6
 Edges.fixed = 13 [Cost = 0]
 Preprocessing time = 0.00 sec.
 Successes/Runs = 1/0
-Cost.min = 772107, Cost.avg = 772107.00, Cost.max = 772107
+Cost.min = 570557, Cost.avg = 570557.00, Cost.max = 570557
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
 Time.min = 0.00 sec., Time.avg = 0.00 sec., Time.max = 0.00 sec.
@@ -77,8 +83,8 @@ Time.total = 0.00 sec.
 
 Key Metrics:
 	ioCount:			 10
-	algorithmRunningDuration:	 1.374 (ms)
-	memoryUse:			 4.00 (KB)
+	algorithmRunningDuration:	 5.083 (ms)
+	memoryUse:			 488.00 (KB)
 	addressingDuration:		 220352 (ms)
 	readDuration:			 9314 (ms)
 	tapeBeltWear:			 560277

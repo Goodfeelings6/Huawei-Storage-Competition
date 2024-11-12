@@ -8,13 +8,19 @@ head info : [254,599395,1]
 io count = 1000
 
 
+base_totaltime = 10129224.000090
+base_tapeBeltWear = 7246057.000000
+base_tapeMotorWear = 2102.000000
+new base_totaltime = 1.000000
+new base_tapeBeltWear = 0.715362
+new base_tapeMotorWear = 0.000208
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 50
 BACKBONE_TRIALS = 0
 BACKTRACKING = NO
 # CANDIDATE_FILE =
-CANDIDATE_SET_TYPE = ALPHA
+CANDIDATE_SET_TYPE = POPMUSIC
 # EDGE_FILE =
 EXCESS = 0.000499002
 EXTRA_CANDIDATES = 0 
@@ -41,7 +47,7 @@ MOVE_TYPE = 3
 PATCHING_A = 1 
 PATCHING_C = 0 
 # PI_FILE = 
-POPMUSIC_INITIAL_TOUR = NO
+POPMUSIC_INITIAL_TOUR = YES
 POPMUSIC_MAX_NEIGHBORS = 5
 POPMUSIC_SAMPLE_SIZE = 10
 POPMUSIC_SOLUTIONS = 50
@@ -54,39 +60,88 @@ RESTRICTED_SEARCH = YES
 RUNS = 1
 SEED = 1
 STOP_AT_OPTIMUM = YES
-SUBGRADIENT = YES
+SUBGRADIENT = NO
 # SUBPROBLEM_SIZE =
 # SUBPROBLEM_TOUR_FILE = 
 SUBSEQUENT_MOVE_TYPE = 3
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
-TOTAL_TIME_LIMIT = 100.0
+TOTAL_TIME_LIMIT = 20.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 5176524.3, Ascent time = 3.40 sec.
-Cand.min = 2, Cand.avg = 4.9, Cand.max = 6
+Lower bound = 798696.0, Ascent time = 0.95 sec.
+Cand.min = 2, Cand.avg = 5.8, Cand.max = 7
 Edges.fixed = 1003 [Cost = 0]
-Preprocessing time = 3.55 sec.
-* 1: Cost = 5198872, Time = 0.00 sec. 
-*** The extent of improvement(0) is too small in 800 Trials ***
-Run 1: Cost = 5198872, Time = 2.25 sec. 
+Preprocessing time = 0.95 sec.
+* 1: Cost = 2572709, Time = 0.02 sec. 
+* 2: Cost = 2571002, Time = 0.03 sec. 
+* 3: Cost = 2569470, Time = 0.03 sec. 
+* 4: Cost = 2569361, Time = 0.04 sec. 
+* 5: Cost = 2568691, Time = 0.05 sec. 
+* 6: Cost = 2568123, Time = 0.05 sec. 
+* 7: Cost = 2568012, Time = 0.06 sec. 
+* 8: Cost = 2567788, Time = 0.07 sec. 
+* 12: Cost = 2566731, Time = 0.09 sec. 
+* 17: Cost = 2566668, Time = 0.12 sec. 
+* 21: Cost = 2566656, Time = 0.15 sec. 
+* 22: Cost = 2566631, Time = 0.16 sec. 
+* 23: Cost = 2566573, Time = 0.17 sec. 
+* 24: Cost = 2566524, Time = 0.18 sec. 
+* 25: Cost = 2566409, Time = 0.18 sec. 
+* 29: Cost = 2566404, Time = 0.21 sec. 
+* 40: Cost = 2566375, Time = 0.28 sec. 
+* 44: Cost = 2566219, Time = 0.30 sec. 
+* 45: Cost = 2566192, Time = 0.31 sec. 
+* 46: Cost = 2566191, Time = 0.32 sec. 
+* 48: Cost = 2566066, Time = 0.33 sec. 
+* 51: Cost = 2563875, Time = 0.35 sec. 
+* 54: Cost = 2563873, Time = 0.38 sec. 
+* 58: Cost = 2563870, Time = 0.40 sec. 
+* 71: Cost = 2563869, Time = 0.49 sec. 
+* 78: Cost = 2562945, Time = 0.54 sec. 
+* 79: Cost = 2562934, Time = 0.55 sec. 
+* 81: Cost = 2562933, Time = 0.56 sec. 
+* 82: Cost = 2562927, Time = 0.57 sec. 
+* 83: Cost = 2562926, Time = 0.58 sec. 
+* 84: Cost = 2562903, Time = 0.58 sec. 
+* 87: Cost = 2562812, Time = 0.61 sec. 
+* 92: Cost = 2562799, Time = 0.65 sec. 
+* 124: Cost = 2562766, Time = 0.88 sec. 
+* 126: Cost = 2562171, Time = 0.89 sec. 
+* 150: Cost = 2562014, Time = 1.05 sec. 
+* 152: Cost = 2561208, Time = 1.07 sec. 
+* 155: Cost = 2561157, Time = 1.09 sec. 
+* 202: Cost = 2561042, Time = 1.41 sec. 
+* 206: Cost = 2561025, Time = 1.43 sec. 
+* 207: Cost = 2561013, Time = 1.44 sec. 
+* 216: Cost = 2561012, Time = 1.50 sec. 
+* 229: Cost = 2558972, Time = 1.59 sec. 
+* 231: Cost = 2558943, Time = 1.61 sec. 
+* 232: Cost = 2558939, Time = 1.61 sec. 
+* 233: Cost = 2558851, Time = 1.62 sec. 
+* 242: Cost = 2558840, Time = 1.69 sec. 
+* 246: Cost = 2558828, Time = 1.72 sec. 
+* 311: Cost = 2558574, Time = 2.18 sec. 
+* 407: Cost = 2558498, Time = 2.88 sec. 
+*** The extent of improvement(330) is too small in 2.0s ***
+Run 1: Cost = 2558498, Time = 4.01 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 5198872, Cost.avg = 5198872.00, Cost.max = 5198872
+Cost.min = 2558498, Cost.avg = 2558498.00, Cost.max = 2558498
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 1600, Trials.avg = 1600.0, Trials.max = 1600
-Time.min = 2.25 sec., Time.avg = 2.25 sec., Time.max = 2.25 sec.
-Time.total = 5.89 sec.
+Trials.min = 562, Trials.avg = 562.0, Trials.max = 562
+Time.min = 4.01 sec., Time.avg = 4.01 sec., Time.max = 4.01 sec.
+Time.total = 5.02 sec.
 
 Key Metrics:
 	ioCount:			 1000
-	algorithmRunningDuration:	 5889.979 (ms)
-	memoryUse:			 5273.33 (KB)
-	addressingDuration:		 2680161 (ms)
+	algorithmRunningDuration:	 5040.303 (ms)
+	memoryUse:			 5304.00 (KB)
+	addressingDuration:		 2578310 (ms)
 	readDuration:			 1009593 (ms)
-	tapeBeltWear:			 3442621
-	tapeMotorWear:			 234
+	tapeBeltWear:			 3621012
+	tapeMotorWear:			 144
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

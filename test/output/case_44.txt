@@ -8,6 +8,12 @@ head info : [118,269768,0]
 io count = 5000
 
 
+base_totaltime = 72844692.000505
+base_tapeBeltWear = 45052679.000000
+base_tapeMotorWear = 17357.000000
+new base_totaltime = 1.000000
+new base_tapeBeltWear = 0.618476
+new base_tapeMotorWear = 0.000238
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 50
@@ -60,50 +66,68 @@ SUBGRADIENT = NO
 SUBSEQUENT_MOVE_TYPE = 3
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
-TOTAL_TIME_LIMIT = 100.0
+TOTAL_TIME_LIMIT = 20.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 3280055.0, Ascent time = 4.16 sec.
+Lower bound = 1713135.0, Ascent time = 4.31 sec.
 Cand.min = 2, Cand.avg = 5.9, Cand.max = 7
 Edges.fixed = 5003 [Cost = 0]
-Preprocessing time = 4.19 sec.
-* 1: Cost = 11451283, Time = 0.17 sec. 
-* 2: Cost = 11407710, Time = 0.27 sec. 
-* 3: Cost = 11407103, Time = 0.35 sec. 
-* 4: Cost = 11403823, Time = 0.43 sec. 
-* 5: Cost = 11397257, Time = 0.52 sec. 
-* 6: Cost = 11394467, Time = 0.60 sec. 
-* 7: Cost = 11390772, Time = 0.68 sec. 
-* 10: Cost = 11390723, Time = 0.95 sec. 
-* 17: Cost = 11387313, Time = 1.50 sec. 
-* 22: Cost = 11387310, Time = 2.02 sec. 
-* 29: Cost = 11387152, Time = 2.57 sec. 
-* 31: Cost = 11384587, Time = 2.73 sec. 
-* 39: Cost = 11384326, Time = 3.33 sec. 
-* 44: Cost = 11384322, Time = 3.71 sec. 
-* 47: Cost = 11384163, Time = 3.94 sec. 
-* 54: Cost = 11379639, Time = 4.48 sec. 
-* 56: Cost = 11379633, Time = 4.65 sec. 
-* 66: Cost = 11379438, Time = 5.38 sec. 
-*** The extent of improvement(0) is too small in 24 Trials ***
-Run 1: Cost = 11379438, Time = 7.64 sec. 
+Preprocessing time = 4.34 sec.
+* 1: Cost = 6352272, Time = 0.22 sec. 
+* 2: Cost = 6202280, Time = 0.34 sec. 
+* 3: Cost = 6150704, Time = 0.44 sec. 
+* 4: Cost = 6148152, Time = 0.54 sec. 
+* 5: Cost = 6126919, Time = 0.64 sec. 
+* 6: Cost = 6110998, Time = 0.72 sec. 
+* 8: Cost = 6089879, Time = 0.89 sec. 
+* 9: Cost = 6075573, Time = 0.98 sec. 
+* 10: Cost = 6074853, Time = 1.07 sec. 
+* 11: Cost = 6062256, Time = 1.15 sec. 
+* 12: Cost = 6048752, Time = 1.23 sec. 
+* 13: Cost = 6028084, Time = 1.31 sec. 
+* 14: Cost = 6022448, Time = 1.42 sec. 
+* 16: Cost = 6021796, Time = 1.59 sec. 
+* 18: Cost = 6021109, Time = 1.75 sec. 
+* 19: Cost = 6017404, Time = 1.84 sec. 
+* 20: Cost = 6016936, Time = 1.94 sec. 
+* 21: Cost = 6016350, Time = 2.03 sec. 
+* 22: Cost = 6015690, Time = 2.13 sec. 
+* 24: Cost = 6014248, Time = 2.33 sec. 
+* 25: Cost = 6013936, Time = 2.41 sec. 
+* 26: Cost = 6013889, Time = 2.49 sec. 
+* 28: Cost = 6013642, Time = 2.64 sec. 
+* 29: Cost = 6013358, Time = 2.74 sec. 
+* 30: Cost = 6013332, Time = 2.82 sec. 
+* 31: Cost = 6004924, Time = 2.92 sec. 
+* 32: Cost = 5999795, Time = 3.01 sec. 
+* 33: Cost = 5998914, Time = 3.10 sec. 
+* 34: Cost = 5998784, Time = 3.18 sec. 
+* 35: Cost = 5998175, Time = 3.26 sec. 
+* 36: Cost = 5995535, Time = 3.37 sec. 
+* 37: Cost = 5995191, Time = 3.46 sec. 
+* 38: Cost = 5995100, Time = 3.53 sec. 
+* 39: Cost = 5988624, Time = 3.64 sec. 
+* 42: Cost = 5987958, Time = 3.90 sec. 
+* 43: Cost = 5987890, Time = 3.98 sec. 
+*** The extent of improvement(28460) is too small in 2.0s ***
+Run 1: Cost = 5987890, Time = 4.08 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 11379438, Cost.avg = 11379438.00, Cost.max = 11379438
+Cost.min = 5987890, Cost.avg = 5987890.00, Cost.max = 5987890
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 96, Trials.avg = 96.0, Trials.max = 96
-Time.min = 7.64 sec., Time.avg = 7.64 sec., Time.max = 7.64 sec.
-Time.total = 14.58 sec.
+Trials.min = 44, Trials.avg = 44.0, Trials.max = 44
+Time.min = 4.08 sec., Time.avg = 4.08 sec., Time.max = 4.08 sec.
+Time.total = 9.90 sec.
 
 Key Metrics:
 	ioCount:			 5000
-	algorithmRunningDuration:	 14581.439 (ms)
-	memoryUse:			 20956.80 (KB)
-	addressingDuration:		 5978846 (ms)
+	algorithmRunningDuration:	 10017.579 (ms)
+	memoryUse:			 9910.18 (KB)
+	addressingDuration:		 5839144 (ms)
 	readDuration:			 5253261 (ms)
-	tapeBeltWear:			 10207777
-	tapeMotorWear:			 491
+	tapeBeltWear:			 10611125
+	tapeMotorWear:			 305
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

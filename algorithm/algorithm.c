@@ -13,6 +13,57 @@
 
 #define INF INT_MAX/200
 
+// 权重控制系数
+double alpha = 0.5; // 读时延权重
+double beta = 0.3; // 带体磨损权重
+double gama = 0.2; // 电机磨损权重
+double base_totaltime = 0;     // 基线读时延
+double base_tapeBeltWear = 0;  // 基线带体磨损
+double base_tapeMotorWear = 0; // 基线电机磨损
+double maxbase = 0;            // 缩放系数
+
+// 调用SCAN基线并分析以获取权重控制系数
+void getbaseline(const InputParam *input, OutputParam *output)
+{
+    // 获取调度开始时间
+    double scheduleStartTime = MyGetTime();
+    Scan(input, output);
+    /* 基线读时延 */
+    base_totaltime += MyGetTime() - scheduleStartTime; // 加上SCAN算法排序时间
+    AccessTime accessTime = {0};
+    TotalAccessTime(input, output, &accessTime);
+    base_totaltime += accessTime.addressDuration; // 加上读寻址时间
+    base_totaltime += accessTime.readDuration;    // 加上读数据时间
+    /* 基线带体磨损 */
+    TapeBeltSegWearInfo segWearInfo = {0};
+    base_tapeBeltWear = TotalTapeBeltWearTimes(input, output, &segWearInfo);
+    /* 基线电机磨损 */
+    base_tapeMotorWear = TotalMotorWearTimes(input, output);
+    printf("base_totaltime = %lf\n", base_totaltime);
+    printf("base_tapeBeltWear = %lf\n", base_tapeBeltWear);
+    printf("base_tapeMotorWear = %lf\n", base_tapeMotorWear);
+
+    if (base_tapeBeltWear < base_totaltime){
+        maxbase = base_totaltime;
+    }
+    else{
+        maxbase = base_tapeBeltWear;
+    }
+
+    base_totaltime /= maxbase;
+    base_tapeBeltWear /= maxbase;
+    base_tapeMotorWear /= maxbase;
+    printf("new base_totaltime = %lf\n", base_totaltime);
+    printf("new base_tapeBeltWear = %lf\n", base_tapeBeltWear);
+    printf("new base_tapeMotorWear = %lf\n", base_tapeMotorWear);
+
+    /* 检测算例场景 
+       备份归档场景backup：alpha=0.3,beta=0.5,gama=0.2 
+       高性能场景hdd：alpha=0.5,beta=0.3,gama=0.2 
+    */
+   //....
+}
+
 double MyGetTime(){ // 返回实际时间：秒
     struct timeval tv;
     gettimeofday(&tv, NULL);
@@ -20,8 +71,10 @@ double MyGetTime(){ // 返回实际时间：秒
 }
 /* 返回目标函数值(距离) */
 int GetObjectValue(const HeadInfo *start, const HeadInfo *end){ 
+    double value = SeekTimeCalculate(start, end)*alpha/base_totaltime+BeltWearTimes(start, end, NULL)*beta/base_tapeBeltWear+MotorWearTimes(start, end)*gama/base_tapeMotorWear;
+    assert(value < INF);
+    return (int)value;
     // return SeekTimeCalculate(start, end);
-    return SeekTimeCalculate(start, end)+BeltWearTimes(start, end, NULL);
     // return SeekTimeCalculate(start, end)+BeltWearTimes(start, end, NULL)+MotorWearTimes(start, end);
 
     /* 调用公共函数示例：调用电机寻址、带体磨损、电机磨损函数 */
@@ -43,8 +96,15 @@ int GetObjectValue(const HeadInfo *start, const HeadInfo *end){
 
 // 设置需要调整的 LKH 的参数
 void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleStartTime){
-    if(matDimension <= 1002){ // 10,50,100,1000
+    if(matDimension <= 102){ // 10,50,100
         // 默认值
+    }
+    else if(matDimension <= 1002){ // 1000
+        p->Subgradient = 0;
+        p->CandidateSetType = POPMUSIC;
+        p->POPMUSIC_InitialTour = 1;
+        p->POPMUSIC_SampleSize = 10;
+        p->POPMUSIC_Solutions = 50;
     }
     else if(matDimension <= 2002){ // 2000
         p->Subgradient = 0;
@@ -52,7 +112,6 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         p->POPMUSIC_InitialTour = 1;
         p->POPMUSIC_SampleSize = 10;
         p->POPMUSIC_Solutions = 50;
-        // p->MaxCandidates = 15;
     }
     else if(matDimension <= 5002){ // 5000
         p->Subgradient = 0;
@@ -60,7 +119,6 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         p->POPMUSIC_InitialTour = 1;
         p->POPMUSIC_SampleSize = 10;
         p->POPMUSIC_Solutions = 20;
-        // p->MaxCandidates = 15;
     }
     else{ // 10000
         p->Subgradient = 0;
@@ -68,14 +126,12 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         p->POPMUSIC_InitialTour = 1;
         p->POPMUSIC_SampleSize = 10;
         p->POPMUSIC_Solutions = 10;
-        // p->MaxCandidates = 6;
     }
     p->Runs = 1;
     p->TraceLevel = 1;
     p->TimeLimit = DBL_MAX; // 由总时间、一定时间跨度内的改进值共同控制退出即可
-    p->TotalTimeLimit = 100; // 最大允许运行时间
-    p->ScheduleScoreInSecond = 1020; // 1s罚分
-    // p->ScheduleScoreInSecond = 20;
+    p->TotalTimeLimit = 20; // 最大允许运行时间
+    p->ScheduleScoreInSecond = alpha*1000/base_totaltime*maxbase + (2-(matDimension-2)/10000)/200; // 1s内相对Cost罚分
     p->MoveType = 3;
     p->TimeSpan = 2;
 }
@@ -891,14 +947,16 @@ int MaxMatching_Greedy(const InputParam *input, OutputParam *output) {
  */
 int32_t IOScheduleAlgorithm(const InputParam *input, OutputParam *output)
 {    
+    getbaseline(input, output);
+
     // 使用 LKH_MM 算法
-    return LKH_MM(input, output);
+    //return LKH_MM(input, output);
 
     // 使用 LKH_GI 算法
     // return LKH_GI(input, output); 
 
     // 使用 LKH_NN 算法
-    // return LKH_NN(input, output);
+    return LKH_NN(input, output);
 
     // 使用最近邻贪心算法 
     // return NearestNeighbor(input, output);

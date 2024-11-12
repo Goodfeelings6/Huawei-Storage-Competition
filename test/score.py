@@ -58,27 +58,38 @@ def score():
         curr_data_i_dict = decode(curr_data[i])
         instanceID = int(re.search(r'case_(\d+).txt', curr_data_i_dict["name"]).group(1))
         base_data_i_dict = decode(base_data[instanceID-1])
+        # 权重
+        if instanceID <= 56:
+            alpha = 0.5
+            beta = 0.3
+            gama = 0.2
+        else:
+            alpha = 0.3
+            beta = 0.5
+            gama = 0.2
         scoreFile.write(curr_data_i_dict["name"] + ':\t')
         scoreFile.write("IO:"+str(curr_data_i_dict["ioCount"])+"\t")
         # 调度算法加分
-        addrT = (base_data_i_dict["algorithmRunningDuration"]-curr_data_i_dict["algorithmRunningDuration"])*10 + \
-                (base_data_i_dict["addressingDuration"]-curr_data_i_dict["addressingDuration"])*10 + \
-                (base_data_i_dict["tapeBeltWear"]-curr_data_i_dict["tapeBeltWear"])*10
+        base_read_time = base_data_i_dict["algorithmRunningDuration"]+base_data_i_dict["addressingDuration"]+base_data_i_dict["readDuration"]
+        curr_read_time = curr_data_i_dict["algorithmRunningDuration"]+curr_data_i_dict["addressingDuration"]+curr_data_i_dict["readDuration"]
+        addrT = alpha*(base_read_time-curr_read_time)/base_read_time*100 + \
+                beta*(base_data_i_dict["tapeBeltWear"]-curr_data_i_dict["tapeBeltWear"])/base_data_i_dict["tapeBeltWear"]*100 +\
+                gama*(base_data_i_dict["tapeMotorWear"]-curr_data_i_dict["tapeMotorWear"])/base_data_i_dict["tapeMotorWear"]*100
         schedulScore.append(addrT)
         # 调度用时加分 和 调度超时罚分
         if curr_data_i_dict["algorithmRunningDuration"]<=20000:
-            scheduleT = (20000-curr_data_i_dict["algorithmRunningDuration"])/100
+            scheduleT = (20000-curr_data_i_dict["algorithmRunningDuration"])/20000*10*(curr_data_i_dict["ioCount"]/10000)
             penaltyT = 0
         else:
             scheduleT = 0
-            penaltyT = (curr_data_i_dict["algorithmRunningDuration"]-20000)*curr_data_i_dict["ioCount"]/50000
+            penaltyT = (curr_data_i_dict["algorithmRunningDuration"]-20000)/20000*10*(2-curr_data_i_dict["ioCount"]/10000)
         timeScore.append(scheduleT)
         timeoutPenalty.append(penaltyT)
         # 空间超限罚分
         if curr_data_i_dict["memoryUse"] <= 10240:
             spaceOverlimitP = 0
         else:
-            spaceOverlimitP = (curr_data_i_dict["memoryUse"]-10240)*curr_data_i_dict["ioCount"]/102400
+            spaceOverlimitP = (curr_data_i_dict["memoryUse"]-10240)/10240*10*(2-curr_data_i_dict["ioCount"]/10000)
         spaceOverlimitPenalty.append(spaceOverlimitP)
         # 排序错误数量
         errorC = curr_data_i_dict["errorIOCount"]

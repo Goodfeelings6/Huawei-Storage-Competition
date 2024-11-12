@@ -8,6 +8,12 @@ head info : [191,232017,0]
 io count = 5000
 
 
+base_totaltime = 71139377.000510
+base_tapeBeltWear = 43357960.000000
+base_tapeMotorWear = 16757.000000
+new base_totaltime = 1.000000
+new base_tapeBeltWear = 0.609479
+new base_tapeMotorWear = 0.000236
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 50
@@ -60,43 +66,75 @@ SUBGRADIENT = NO
 SUBSEQUENT_MOVE_TYPE = 3
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
-TOTAL_TIME_LIMIT = 100.0
+TOTAL_TIME_LIMIT = 20.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 3631404.0, Ascent time = 4.26 sec.
-Cand.min = 2, Cand.avg = 5.9, Cand.max = 7
+Lower bound = 1918688.0, Ascent time = 4.41 sec.
+Cand.min = 2, Cand.avg = 5.8, Cand.max = 7
 Edges.fixed = 5003 [Cost = 0]
-Preprocessing time = 4.29 sec.
-* 1: Cost = 13446545, Time = 0.13 sec. 
-* 4: Cost = 13435992, Time = 0.37 sec. 
-* 5: Cost = 13424847, Time = 0.43 sec. 
-* 6: Cost = 13415367, Time = 0.52 sec. 
-* 7: Cost = 13373763, Time = 0.60 sec. 
-* 8: Cost = 13369651, Time = 0.66 sec. 
-* 12: Cost = 13357994, Time = 0.95 sec. 
-* 22: Cost = 13357103, Time = 1.59 sec. 
-* 32: Cost = 13354506, Time = 2.25 sec. 
-* 33: Cost = 13354323, Time = 2.31 sec. 
-* 34: Cost = 13353229, Time = 2.37 sec. 
-*** The extent of improvement(0) is too small in 24 Trials ***
-Run 1: Cost = 13353229, Time = 4.83 sec. 
+Preprocessing time = 4.44 sec.
+* 1: Cost = 7294876, Time = 0.18 sec. 
+* 2: Cost = 7216154, Time = 0.29 sec. 
+* 3: Cost = 7214525, Time = 0.37 sec. 
+* 4: Cost = 7183890, Time = 0.45 sec. 
+* 5: Cost = 7164530, Time = 0.53 sec. 
+* 6: Cost = 7150783, Time = 0.61 sec. 
+* 7: Cost = 7126462, Time = 0.69 sec. 
+* 8: Cost = 7124800, Time = 0.77 sec. 
+* 9: Cost = 7123574, Time = 0.84 sec. 
+* 10: Cost = 7121718, Time = 0.90 sec. 
+* 12: Cost = 7121232, Time = 1.06 sec. 
+* 13: Cost = 7113183, Time = 1.12 sec. 
+* 14: Cost = 7111245, Time = 1.19 sec. 
+* 15: Cost = 7110899, Time = 1.28 sec. 
+* 16: Cost = 7108611, Time = 1.35 sec. 
+* 18: Cost = 7108235, Time = 1.50 sec. 
+* 19: Cost = 7106719, Time = 1.58 sec. 
+* 20: Cost = 7105121, Time = 1.65 sec. 
+* 21: Cost = 7104929, Time = 1.71 sec. 
+* 22: Cost = 7096372, Time = 1.77 sec. 
+* 24: Cost = 7095313, Time = 1.91 sec. 
+* 25: Cost = 7095204, Time = 1.98 sec. 
+* 26: Cost = 7094246, Time = 2.06 sec. 
+* 27: Cost = 7089498, Time = 2.14 sec. 
+* 28: Cost = 7089308, Time = 2.22 sec. 
+* 29: Cost = 7088750, Time = 2.29 sec. 
+* 30: Cost = 7073472, Time = 2.36 sec. 
+* 31: Cost = 7073244, Time = 2.42 sec. 
+* 34: Cost = 7073001, Time = 2.66 sec. 
+* 35: Cost = 7072470, Time = 2.72 sec. 
+* 36: Cost = 7072354, Time = 2.79 sec. 
+* 37: Cost = 7071492, Time = 2.86 sec. 
+* 38: Cost = 7071293, Time = 2.94 sec. 
+* 40: Cost = 7071277, Time = 3.07 sec. 
+* 41: Cost = 7071034, Time = 3.14 sec. 
+* 42: Cost = 7070698, Time = 3.22 sec. 
+* 44: Cost = 7070036, Time = 3.37 sec. 
+* 45: Cost = 7069408, Time = 3.44 sec. 
+* 47: Cost = 7069206, Time = 3.58 sec. 
+* 49: Cost = 7068941, Time = 3.74 sec. 
+* 50: Cost = 7068608, Time = 3.83 sec. 
+* 51: Cost = 7068521, Time = 3.89 sec. 
+* 54: Cost = 7068377, Time = 4.11 sec. 
+*** The extent of improvement(25869) is too small in 2.0s ***
+Run 1: Cost = 7068377, Time = 4.12 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 13353229, Cost.avg = 13353229.00, Cost.max = 13353229
+Cost.min = 7068377, Cost.avg = 7068377.00, Cost.max = 7068377
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 72, Trials.avg = 72.0, Trials.max = 72
-Time.min = 4.83 sec., Time.avg = 4.83 sec., Time.max = 4.83 sec.
-Time.total = 11.79 sec.
+Trials.min = 54, Trials.avg = 54.0, Trials.max = 54
+Time.min = 4.12 sec., Time.avg = 4.12 sec., Time.max = 4.12 sec.
+Time.total = 10.06 sec.
 
 Key Metrics:
 	ioCount:			 5000
-	algorithmRunningDuration:	 11789.890 (ms)
-	memoryUse:			 23462.00 (KB)
-	addressingDuration:		 7047665 (ms)
+	algorithmRunningDuration:	 10175.875 (ms)
+	memoryUse:			 9911.64 (KB)
+	addressingDuration:		 6935496 (ms)
 	readDuration:			 5316534 (ms)
-	tapeBeltWear:			 11170591
-	tapeMotorWear:			 545
+	tapeBeltWear:			 11542479
+	tapeMotorWear:			 373
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt
