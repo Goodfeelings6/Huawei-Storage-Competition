@@ -3,17 +3,20 @@
 Welcome to HW project.
 
 The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_22.txt
-head info : [190,236444,1]
+head info : [186,283678,0]
 
 io count = 100
 
 
-base_totaltime = 975700.000010
-base_tapeBeltWear = 1461756.000000
-base_tapeMotorWear = 42.000000
-new base_totaltime = 0.667485
-new base_tapeBeltWear = 1.000000
-new base_tapeMotorWear = 0.000029
+base_totaltime = 944898.000011
+base_tapeBeltWear = 1488857.000000
+base_tapeMotorWear = 37.000000
+maxbase = 148885.700000
+new base_totaltime = 6.346466
+new base_tapeBeltWear = 10.000000
+new base_tapeMotorWear = 0.000249
+hdd
+p->ScheduleScoreInSecond = 1560.196721
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 50
@@ -70,25 +73,25 @@ TOTAL_TIME_LIMIT = 20.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 1160214.0, Ascent time = 0.04 sec.
-Cand.min = 2, Cand.avg = 4.4, Cand.max = 6
+Lower bound = 108860.0, Ascent time = 0.03 sec.
+Cand.min = 2, Cand.avg = 4.1, Cand.max = 6
 Edges.fixed = 103 [Cost = 0]
-Preprocessing time = 0.04 sec.
+Preprocessing time = 0.03 sec.
 Successes/Runs = 1/0
-Cost.min = 1160214, Cost.avg = 1160214.00, Cost.max = 1160214
+Cost.min = 108860, Cost.avg = 108860.00, Cost.max = 108860
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
-Time.min = 0.04 sec., Time.avg = 0.04 sec., Time.max = 0.04 sec.
-Time.total = 0.04 sec.
+Time.min = 0.03 sec., Time.avg = 0.03 sec., Time.max = 0.03 sec.
+Time.total = 0.03 sec.
 
 Key Metrics:
 	ioCount:			 100
-	algorithmRunningDuration:	 45.553 (ms)
-	memoryUse:			 1336.00 (KB)
-	addressingDuration:		 809879 (ms)
-	readDuration:			 105734 (ms)
-	tapeBeltWear:			 1385220
-	tapeMotorWear:			 24
+	algorithmRunningDuration:	 41.077 (ms)
+	memoryUse:			 1228.00 (KB)
+	addressingDuration:		 764126 (ms)
+	readDuration:			 99228 (ms)
+	tapeBeltWear:			 1365665
+	tapeMotorWear:			 13
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

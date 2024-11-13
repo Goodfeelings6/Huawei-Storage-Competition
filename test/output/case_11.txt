@@ -3,17 +3,20 @@
 Welcome to HW project.
 
 The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_11.txt
-head info : [239,343558,0]
+head info : [165,143904,1]
 
 io count = 50
 
 
-base_totaltime = 836207.000004
-base_tapeBeltWear = 1777622.000000
-base_tapeMotorWear = 9.000000
-new base_totaltime = 0.470408
-new base_tapeBeltWear = 1.000000
-new base_tapeMotorWear = 0.000005
+base_totaltime = 771493.000004
+base_tapeBeltWear = 1582336.000000
+base_tapeMotorWear = 8.000000
+maxbase = 316467.200000
+new base_totaltime = 2.437829
+new base_tapeBeltWear = 5.000000
+new base_tapeMotorWear = 0.000025
+hdd
+p->ScheduleScoreInSecond = 3361.860820
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 50
@@ -70,25 +73,28 @@ TOTAL_TIME_LIMIT = 20.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 1485229.0, Ascent time = 0.01 sec.
-Cand.min = 2, Cand.avg = 3.6, Cand.max = 5
+Lower bound = 286823.0, Ascent time = 0.01 sec.
+Cand.min = 2, Cand.avg = 3.9, Cand.max = 6
 Edges.fixed = 53 [Cost = 0]
 Preprocessing time = 0.01 sec.
-Successes/Runs = 1/0
-Cost.min = 1485229, Cost.avg = 1485229.00, Cost.max = 1485229
+* 1: Cost = 286888, Time = 0.00 sec. 
+Run 1: Cost = 286888, Time = 0.00 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 286888, Cost.avg = 286888.00, Cost.max = 286888
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
-Time.min = 0.01 sec., Time.avg = 0.01 sec., Time.max = 0.01 sec.
+Trials.min = 104, Trials.avg = 104.0, Trials.max = 104
+Time.min = 0.00 sec., Time.avg = 0.00 sec., Time.max = 0.00 sec.
 Time.total = 0.01 sec.
 
 Key Metrics:
 	ioCount:			 50
-	algorithmRunningDuration:	 21.844 (ms)
-	memoryUse:			 484.00 (KB)
-	addressingDuration:		 748493 (ms)
-	readDuration:			 51494 (ms)
-	tapeBeltWear:			 1687652
-	tapeMotorWear:			 5
+	algorithmRunningDuration:	 18.185 (ms)
+	memoryUse:			 480.00 (KB)
+	addressingDuration:		 679115 (ms)
+	readDuration:			 57130 (ms)
+	tapeBeltWear:			 1457847
+	tapeMotorWear:			 8
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

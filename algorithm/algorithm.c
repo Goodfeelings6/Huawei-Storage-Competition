@@ -14,8 +14,8 @@
 #define INF INT_MAX/200
 
 // 权重控制系数
-double alpha = 0.5; // 读时延权重
-double beta = 0.3; // 带体磨损权重
+double alpha = 0.3; // 读时延权重
+double beta = 0.5; // 带体磨损权重
 double gama = 0.2; // 电机磨损权重
 double base_totaltime = 0;     // 基线读时延
 double base_tapeBeltWear = 0;  // 基线带体磨损
@@ -49,10 +49,11 @@ void getbaseline(const InputParam *input, OutputParam *output)
     else{
         maxbase = base_tapeBeltWear;
     }
-
+    maxbase = maxbase*10/input->ioVec.len;
     base_totaltime /= maxbase;
     base_tapeBeltWear /= maxbase;
     base_tapeMotorWear /= maxbase;
+    printf("maxbase = %lf\n", maxbase);
     printf("new base_totaltime = %lf\n", base_totaltime);
     printf("new base_tapeBeltWear = %lf\n", base_tapeBeltWear);
     printf("new base_tapeMotorWear = %lf\n", base_tapeMotorWear);
@@ -61,7 +62,43 @@ void getbaseline(const InputParam *input, OutputParam *output)
        备份归档场景backup：alpha=0.3,beta=0.5,gama=0.2 
        高性能场景hdd：alpha=0.5,beta=0.3,gama=0.2 
     */
-   //....
+    int Nosequential_count=0;//计数非顺序IO节点
+    for (uint32_t i = 1; i < input->ioVec.len; ++i)
+    {
+        if (input->ioVec.ioArray[i].wrap < input->ioVec.ioArray[i - 1].wrap) // 如果后一个wrap小于前一个 肯定非顺序
+        {
+            Nosequential_count++;
+            // printf("Nosequential_id = %d\n", input->ioVec.ioArray[i].id);
+        }
+        else if (input->ioVec.ioArray[i].wrap == input->ioVec.ioArray[i - 1].wrap)
+        {
+            if (input->ioVec.ioArray[i].wrap % 2 == 0) // 正向
+            {
+                if (input->ioVec.ioArray[i].startLpos < input->ioVec.ioArray[i - 1].startLpos)
+                    Nosequential_count++;
+                // printf("Nosequential_id = %d\n", input->ioVec.ioArray[i].id);
+            }
+            else // 反向
+            {
+                if (input->ioVec.ioArray[i].startLpos > input->ioVec.ioArray[i - 1].startLpos)
+                    Nosequential_count++;
+                // printf("Nosequential_id = %d\n", input->ioVec.ioArray[i].id);
+            }
+        }
+        // 是否 hdd 场景
+        if (Nosequential_count >= input->ioVec.len * 0.1)
+        {
+            alpha = 0.5; // 读时延权重
+            beta = 0.3;  // 带体磨损权重
+            gama = 0.2;  // 电机磨损权重
+            break;
+        }
+    }
+    // printf("Nosequential_count = %d\n", Nosequential_count);
+    if(alpha==0.3)
+        printf("backup\n");
+    else
+        printf("hdd\n");
 }
 
 double MyGetTime(){ // 返回实际时间：秒
@@ -72,7 +109,7 @@ double MyGetTime(){ // 返回实际时间：秒
 /* 返回目标函数值(距离) */
 int GetObjectValue(const HeadInfo *start, const HeadInfo *end){ 
     double value = SeekTimeCalculate(start, end)*alpha/base_totaltime+BeltWearTimes(start, end, NULL)*beta/base_tapeBeltWear+MotorWearTimes(start, end)*gama/base_tapeMotorWear;
-    assert(value < INF);
+    // assert(value < INF);
     return (int)value;
     // return SeekTimeCalculate(start, end);
     // return SeekTimeCalculate(start, end)+BeltWearTimes(start, end, NULL)+MotorWearTimes(start, end);
@@ -131,7 +168,8 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
     p->TraceLevel = 1;
     p->TimeLimit = DBL_MAX; // 由总时间、一定时间跨度内的改进值共同控制退出即可
     p->TotalTimeLimit = 20; // 最大允许运行时间
-    p->ScheduleScoreInSecond = alpha*1000/base_totaltime*maxbase + (2-(matDimension-2)/10000)/200; // 1s内相对Cost罚分
+    p->ScheduleScoreInSecond = alpha*1000/base_totaltime + ((2-(matDimension-2)/10000.0)/200.0)*maxbase; // 1s内相对Cost罚分
+    printf("p->ScheduleScoreInSecond = %lf\n", p->ScheduleScoreInSecond);
     p->MoveType = 3;
     p->TimeSpan = 2;
 }

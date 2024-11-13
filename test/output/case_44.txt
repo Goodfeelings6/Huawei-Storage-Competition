@@ -3,17 +3,20 @@
 Welcome to HW project.
 
 The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_44.txt
-head info : [118,269768,0]
+head info : [155,462021,1]
 
-io count = 5000
+io count = 2000
 
 
-base_totaltime = 72844692.000505
-base_tapeBeltWear = 45052679.000000
-base_tapeMotorWear = 17357.000000
-new base_totaltime = 1.000000
-new base_tapeBeltWear = 0.618476
-new base_tapeMotorWear = 0.000238
+base_totaltime = 25241486.000183
+base_tapeBeltWear = 16092839.000000
+base_tapeMotorWear = 5712.000000
+maxbase = 126207.430001
+new base_totaltime = 200.000000
+new base_tapeBeltWear = 127.511027
+new base_tapeMotorWear = 0.045259
+hdd
+p->ScheduleScoreInSecond = 1138.366870
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 50
@@ -22,12 +25,12 @@ BACKTRACKING = NO
 # CANDIDATE_FILE =
 CANDIDATE_SET_TYPE = POPMUSIC
 # EDGE_FILE =
-EXCESS = 9.996e-05
+EXCESS = 0.00024975
 EXTRA_CANDIDATES = 0 
 EXTRA_CANDIDATE_SET_TYPE = QUADRANT
 GAIN23 = YES
 GAIN_CRITERION = YES
-INITIAL_PERIOD = 5002
+INITIAL_PERIOD = 2002
 INITIAL_STEP_SIZE = 1
 INITIAL_TOUR_ALGORITHM = WALK
 # INITIAL_TOUR_FILE = 
@@ -37,8 +40,8 @@ KICK_TYPE = 0
 KICKS = 1
 # MAX_BREADTH =
 MAX_CANDIDATES = 5 
-MAX_SWAPS = 10004
-MAX_TRIALS = 10004
+MAX_SWAPS = 4004
+MAX_TRIALS = 4004
 # MERGE_TOUR_FILE =
 MOVE_TYPE = 3
 # NONSEQUENTIAL_MOVE_TYPE = 3
@@ -50,7 +53,7 @@ PATCHING_C = 0
 POPMUSIC_INITIAL_TOUR = YES
 POPMUSIC_MAX_NEIGHBORS = 5
 POPMUSIC_SAMPLE_SIZE = 10
-POPMUSIC_SOLUTIONS = 20
+POPMUSIC_SOLUTIONS = 50
 POPMUSIC_TRIALS = 1
 # POPULATION_SIZE = 0
 PRECISION = 100
@@ -70,64 +73,68 @@ TOTAL_TIME_LIMIT = 20.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 1713135.0, Ascent time = 4.31 sec.
-Cand.min = 2, Cand.avg = 5.9, Cand.max = 7
-Edges.fixed = 5003 [Cost = 0]
-Preprocessing time = 4.34 sec.
-* 1: Cost = 6352272, Time = 0.22 sec. 
-* 2: Cost = 6202280, Time = 0.34 sec. 
-* 3: Cost = 6150704, Time = 0.44 sec. 
-* 4: Cost = 6148152, Time = 0.54 sec. 
-* 5: Cost = 6126919, Time = 0.64 sec. 
-* 6: Cost = 6110998, Time = 0.72 sec. 
-* 8: Cost = 6089879, Time = 0.89 sec. 
-* 9: Cost = 6075573, Time = 0.98 sec. 
-* 10: Cost = 6074853, Time = 1.07 sec. 
-* 11: Cost = 6062256, Time = 1.15 sec. 
-* 12: Cost = 6048752, Time = 1.23 sec. 
-* 13: Cost = 6028084, Time = 1.31 sec. 
-* 14: Cost = 6022448, Time = 1.42 sec. 
-* 16: Cost = 6021796, Time = 1.59 sec. 
-* 18: Cost = 6021109, Time = 1.75 sec. 
-* 19: Cost = 6017404, Time = 1.84 sec. 
-* 20: Cost = 6016936, Time = 1.94 sec. 
-* 21: Cost = 6016350, Time = 2.03 sec. 
-* 22: Cost = 6015690, Time = 2.13 sec. 
-* 24: Cost = 6014248, Time = 2.33 sec. 
-* 25: Cost = 6013936, Time = 2.41 sec. 
-* 26: Cost = 6013889, Time = 2.49 sec. 
-* 28: Cost = 6013642, Time = 2.64 sec. 
-* 29: Cost = 6013358, Time = 2.74 sec. 
-* 30: Cost = 6013332, Time = 2.82 sec. 
-* 31: Cost = 6004924, Time = 2.92 sec. 
-* 32: Cost = 5999795, Time = 3.01 sec. 
-* 33: Cost = 5998914, Time = 3.10 sec. 
-* 34: Cost = 5998784, Time = 3.18 sec. 
-* 35: Cost = 5998175, Time = 3.26 sec. 
-* 36: Cost = 5995535, Time = 3.37 sec. 
-* 37: Cost = 5995191, Time = 3.46 sec. 
-* 38: Cost = 5995100, Time = 3.53 sec. 
-* 39: Cost = 5988624, Time = 3.64 sec. 
-* 42: Cost = 5987958, Time = 3.90 sec. 
-* 43: Cost = 5987890, Time = 3.98 sec. 
-*** The extent of improvement(28460) is too small in 2.0s ***
-Run 1: Cost = 5987890, Time = 4.08 sec. 
+Lower bound = 3803.0, Ascent time = 2.46 sec.
+Cand.min = 2, Cand.avg = 6.0, Cand.max = 7
+Edges.fixed = 2003 [Cost = 0]
+Preprocessing time = 2.47 sec.
+* 1: Cost = 18280, Time = 0.05 sec. 
+* 2: Cost = 18261, Time = 0.08 sec. 
+* 3: Cost = 18249, Time = 0.10 sec. 
+* 5: Cost = 18245, Time = 0.15 sec. 
+* 7: Cost = 18238, Time = 0.19 sec. 
+* 8: Cost = 18207, Time = 0.22 sec. 
+* 9: Cost = 18187, Time = 0.24 sec. 
+* 10: Cost = 18180, Time = 0.26 sec. 
+* 12: Cost = 18177, Time = 0.31 sec. 
+* 15: Cost = 18173, Time = 0.38 sec. 
+* 16: Cost = 18172, Time = 0.40 sec. 
+* 17: Cost = 18168, Time = 0.42 sec. 
+* 19: Cost = 18163, Time = 0.48 sec. 
+* 27: Cost = 18124, Time = 0.67 sec. 
+* 28: Cost = 18121, Time = 0.70 sec. 
+* 30: Cost = 18114, Time = 0.75 sec. 
+* 31: Cost = 18111, Time = 0.78 sec. 
+* 41: Cost = 18109, Time = 1.00 sec. 
+* 49: Cost = 18108, Time = 1.19 sec. 
+* 56: Cost = 18103, Time = 1.36 sec. 
+* 57: Cost = 18085, Time = 1.38 sec. 
+* 58: Cost = 18084, Time = 1.41 sec. 
+* 59: Cost = 18078, Time = 1.44 sec. 
+* 69: Cost = 18077, Time = 1.68 sec. 
+* 80: Cost = 18076, Time = 1.96 sec. 
+* 82: Cost = 18059, Time = 2.01 sec. 
+* 86: Cost = 18058, Time = 2.11 sec. 
+* 88: Cost = 18057, Time = 2.16 sec. 
+* 95: Cost = 18056, Time = 2.35 sec. 
+* 99: Cost = 18055, Time = 2.45 sec. 
+* 103: Cost = 18054, Time = 2.55 sec. 
+* 105: Cost = 18053, Time = 2.61 sec. 
+* 109: Cost = 18047, Time = 2.72 sec. 
+* 135: Cost = 18045, Time = 3.38 sec. 
+* 137: Cost = 18043, Time = 3.43 sec. 
+* 149: Cost = 18036, Time = 3.74 sec. 
+* 155: Cost = 18035, Time = 3.91 sec. 
+* 156: Cost = 18013, Time = 3.94 sec. 
+* 157: Cost = 18012, Time = 3.97 sec. 
+* 159: Cost = 18006, Time = 4.02 sec. 
+*** The extent of improvement(53) is too small in 2.0s ***
+Run 1: Cost = 18006, Time = 4.02 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 5987890, Cost.avg = 5987890.00, Cost.max = 5987890
+Cost.min = 18006, Cost.avg = 18006.00, Cost.max = 18006
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 44, Trials.avg = 44.0, Trials.max = 44
-Time.min = 4.08 sec., Time.avg = 4.08 sec., Time.max = 4.08 sec.
-Time.total = 9.90 sec.
+Trials.min = 159, Trials.avg = 159.0, Trials.max = 159
+Time.min = 4.02 sec., Time.avg = 4.02 sec., Time.max = 4.02 sec.
+Time.total = 6.73 sec.
 
 Key Metrics:
-	ioCount:			 5000
-	algorithmRunningDuration:	 10017.579 (ms)
-	memoryUse:			 9910.18 (KB)
-	addressingDuration:		 5839144 (ms)
-	readDuration:			 5253261 (ms)
-	tapeBeltWear:			 10611125
-	tapeMotorWear:			 305
+	ioCount:			 2000
+	algorithmRunningDuration:	 6771.235 (ms)
+	memoryUse:			 7311.43 (KB)
+	addressingDuration:		 3836311 (ms)
+	readDuration:			 2131264 (ms)
+	tapeBeltWear:			 5703469
+	tapeMotorWear:			 192
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

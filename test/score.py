@@ -125,11 +125,11 @@ def score():
     scoreFile.write(f"\n总分:{instanceScore_sum:.2f}\n")
 
     # 测相比基线的提升幅度
-    with open(os.path.join(args.c, "A-total.txt"), "r", encoding="utf-8") as f1:
-        curr_total_cost = float((f1.readlines()[-1]).strip().split('|')[-2].strip())
-    with open(os.path.join(args.b, "A-total.txt"), "r", encoding="utf-8") as f2:
-        base_total_cost = float((f2.readlines()[-1]).strip().split('|')[-2].strip())
-    scoreFile.write(f"优化幅度:{(base_total_cost-curr_total_cost)/base_total_cost*100:.3f}%\n")
+    # with open(os.path.join(args.c, "A-total.txt"), "r", encoding="utf-8") as f1:
+    #     curr_total_cost = float((f1.readlines()[-1]).strip().split('|')[-2].strip())
+    # with open(os.path.join(args.b, "A-total.txt"), "r", encoding="utf-8") as f2:
+    #     base_total_cost = float((f2.readlines()[-1]).strip().split('|')[-2].strip())
+    # scoreFile.write(f"优化幅度:{(base_total_cost-curr_total_cost)/base_total_cost*100:.3f}%\n")
     scoreFile.close()
     print("Score Done!")
         

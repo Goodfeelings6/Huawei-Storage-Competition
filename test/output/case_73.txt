@@ -1,0 +1,118 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_73.txt
+head info : [206,227353,1]
+
+io count = 1000
+
+
+base_totaltime = 7838529.000068
+base_tapeBeltWear = 5499255.000000
+base_tapeMotorWear = 1542.000000
+maxbase = 78385.290001
+new base_totaltime = 100.000000
+new base_tapeBeltWear = 70.156722
+new base_tapeMotorWear = 0.019672
+backup
+p->ScheduleScoreInSecond = 747.660255
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 0.000499002
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 1002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 2004
+MAX_TRIALS = 2004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_SOLUTIONS = 50
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 6325.0, Ascent time = 0.94 sec.
+Cand.min = 2, Cand.avg = 5.9, Cand.max = 7
+Edges.fixed = 1003 [Cost = 0]
+Preprocessing time = 0.94 sec.
+* 1: Cost = 23553, Time = 0.01 sec. 
+* 2: Cost = 23543, Time = 0.02 sec. 
+* 3: Cost = 23422, Time = 0.03 sec. 
+* 4: Cost = 23406, Time = 0.03 sec. 
+* 6: Cost = 22887, Time = 0.05 sec. 
+* 7: Cost = 22885, Time = 0.05 sec. 
+* 8: Cost = 22862, Time = 0.06 sec. 
+* 9: Cost = 22795, Time = 0.06 sec. 
+* 17: Cost = 22788, Time = 0.12 sec. 
+* 22: Cost = 22775, Time = 0.15 sec. 
+* 24: Cost = 22740, Time = 0.17 sec. 
+* 73: Cost = 22658, Time = 0.48 sec. 
+* 75: Cost = 22657, Time = 0.49 sec. 
+* 89: Cost = 22656, Time = 0.59 sec. 
+* 103: Cost = 22655, Time = 0.68 sec. 
+* 127: Cost = 22654, Time = 0.84 sec. 
+* 184: Cost = 22653, Time = 1.20 sec. 
+* 486: Cost = 22652, Time = 3.15 sec. 
+*** The extent of improvement(1) is too small in 2.0s ***
+Run 1: Cost = 22652, Time = 4.01 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 22652, Cost.avg = 22652.00, Cost.max = 22652
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 623, Trials.avg = 623.0, Trials.max = 623
+Time.min = 4.01 sec., Time.avg = 4.01 sec., Time.max = 4.01 sec.
+Time.total = 5.00 sec.
+
+Key Metrics:
+	ioCount:			 1000
+	algorithmRunningDuration:	 5019.148 (ms)
+	memoryUse:			 5366.00 (KB)
+	addressingDuration:		 2142655 (ms)
+	readDuration:			 1080977 (ms)
+	tapeBeltWear:			 3018516
+	tapeMotorWear:			 206
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

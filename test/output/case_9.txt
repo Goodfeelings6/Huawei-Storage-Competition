@@ -3,17 +3,20 @@
 Welcome to HW project.
 
 The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_9.txt
-head info : [208,652740,0]
+head info : [177,308588,1]
 
 io count = 50
 
 
-base_totaltime = 930747.000005
-base_tapeBeltWear = 2139940.000000
-base_tapeMotorWear = 21.000000
-new base_totaltime = 0.434941
-new base_tapeBeltWear = 1.000000
-new base_tapeMotorWear = 0.000010
+base_totaltime = 827922.000004
+base_tapeBeltWear = 1739658.000000
+base_tapeMotorWear = 16.000000
+maxbase = 347931.600000
+new base_totaltime = 2.379554
+new base_tapeBeltWear = 5.000000
+new base_tapeMotorWear = 0.000046
+hdd
+p->ScheduleScoreInSecond = 3680.741127
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 50
@@ -70,28 +73,25 @@ TOTAL_TIME_LIMIT = 20.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 1399333.0, Ascent time = 0.01 sec.
-Cand.min = 2, Cand.avg = 3.6, Cand.max = 6
+Lower bound = 296909.0, Ascent time = 0.01 sec.
+Cand.min = 2, Cand.avg = 4.5, Cand.max = 6
 Edges.fixed = 53 [Cost = 0]
 Preprocessing time = 0.01 sec.
-* 1: Cost = 1400595, Time = 0.00 sec. 
-Run 1: Cost = 1400595, Time = 0.00 sec. 
-
-Successes/Runs = 0/1
-Cost.min = 1400595, Cost.avg = 1400595.00, Cost.max = 1400595
+Successes/Runs = 1/0
+Cost.min = 296909, Cost.avg = 296909.00, Cost.max = 296909
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 104, Trials.avg = 104.0, Trials.max = 104
-Time.min = 0.00 sec., Time.avg = 0.00 sec., Time.max = 0.00 sec.
+Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
+Time.min = 0.01 sec., Time.avg = 0.01 sec., Time.max = 0.01 sec.
 Time.total = 0.01 sec.
 
 Key Metrics:
 	ioCount:			 50
-	algorithmRunningDuration:	 20.864 (ms)
-	memoryUse:			 1220.00 (KB)
-	addressingDuration:		 678370 (ms)
-	readDuration:			 49640 (ms)
-	tapeBeltWear:			 1503289
-	tapeMotorWear:			 9
+	algorithmRunningDuration:	 21.718 (ms)
+	memoryUse:			 2808.00 (KB)
+	addressingDuration:		 706226 (ms)
+	readDuration:			 56425 (ms)
+	tapeBeltWear:			 1512438
+	tapeMotorWear:			 14
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

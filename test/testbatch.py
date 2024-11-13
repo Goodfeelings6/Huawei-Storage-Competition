@@ -31,10 +31,22 @@ args = parser.parse_args()
 first = True
 memory_usage = []
 peak_memory = 0
-total_algorithmRunningDuration = 0
-total_addressingDuration = 0
-total_tapeBeltWear = 0
-total_tapeMotorWear = 0
+
+# 高性能场景样例hdd
+hdd_total_algorithmRunningDuration = 0
+hdd_total_addressingDuration = 0
+hdd_total_readDuration = 0
+hdd_total_readDelay = 0 # 总读时延
+hdd_total_tapeBeltWear = 0 # 总带体磨损
+hdd_total_tapeMotorWear = 0 # 总电机磨损
+
+# 备分归档场景样例backup
+backup_total_algorithmRunningDuration = 0
+backup_total_addressingDuration = 0
+backup_total_readDuration = 0
+backup_total_readDelay = 0 # 总读时延
+backup_total_tapeBeltWear = 0
+backup_total_tapeMotorWear = 0
 
 def build():
     """ 仅构建 """
@@ -74,11 +86,22 @@ def formatMetrics(filePath)->str:
                      ret += "\t"
         ret += "\n"
     # 从ret中顺便提取信息
-    global total_algorithmRunningDuration,total_addressingDuration,total_tapeBeltWear,total_tapeMotorWear
-    total_algorithmRunningDuration += float(re.search(r'algorithmRunningDuration:\s*([.\d]+)', ret).group(1))
-    total_addressingDuration += int(re.search(r'addressingDuration:(\d+)\(ms\)', ret).group(1)) 
-    total_tapeBeltWear += int(re.search(r'tapeBeltWear:(\d+)', ret).group(1)) 
-    total_tapeMotorWear += int(re.search(r'tapeMotorWear:(\d+)', ret).group(1)) 
+    global hdd_total_algorithmRunningDuration,hdd_total_addressingDuration,\
+           hdd_total_readDuration,hdd_total_tapeBeltWear,hdd_total_tapeMotorWear,\
+           backup_total_algorithmRunningDuration,backup_total_addressingDuration,\
+           backup_total_readDuration,backup_total_tapeBeltWear,backup_total_tapeMotorWear
+    if int(re.search(r'case_(\d+).txt', filePath).group(1))<=60: # 前60个属于hdd场景
+        hdd_total_algorithmRunningDuration += float(re.search(r'algorithmRunningDuration:\s*([.\d]+)', ret).group(1))
+        hdd_total_addressingDuration += int(re.search(r'addressingDuration:(\d+)\(ms\)', ret).group(1)) 
+        hdd_total_readDuration += int(re.search(r'readDuration:(\d+)\(ms\)', ret).group(1)) 
+        hdd_total_tapeBeltWear += int(re.search(r'tapeBeltWear:(\d+)', ret).group(1)) 
+        hdd_total_tapeMotorWear += int(re.search(r'tapeMotorWear:(\d+)', ret).group(1)) 
+    else:
+        backup_total_algorithmRunningDuration += float(re.search(r'algorithmRunningDuration:\s*([.\d]+)', ret).group(1))
+        backup_total_addressingDuration += int(re.search(r'addressingDuration:(\d+)\(ms\)', ret).group(1)) 
+        backup_total_readDuration += int(re.search(r'readDuration:(\d+)\(ms\)', ret).group(1)) 
+        backup_total_tapeBeltWear += int(re.search(r'tapeBeltWear:(\d+)', ret).group(1)) 
+        backup_total_tapeMotorWear += int(re.search(r'tapeMotorWear:(\d+)', ret).group(1)) 
     return ret
 
 def formatDetails(filePath)->str:
@@ -144,15 +167,31 @@ def formatDetails(filePath)->str:
         return ret
 
 def writeA_total(filePath):
-    head = "|  总排序时间  |  总寻址时间  |  总带体磨损  |  总电机磨损  |    总消耗    |\n" \
-           "|--------------|--------------|--------------|--------------|--------------|\n"
+    head = "| 场景 |  总排序时间  |  总寻址时间  | 总读数据时间 |   总读时延   |  总带体磨损  |  总电机磨损  |  加权总消耗    |\n" \
+           "|------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|\n"
     with open(filePath, "w", encoding='utf-8') as totalFile:
         totalFile.write(head)
-        totalFile.write(f"|{round(total_algorithmRunningDuration,2):^14}")
-        totalFile.write(f"|{total_addressingDuration:^14}")
-        totalFile.write(f"|{total_tapeBeltWear:^14}")
-        totalFile.write(f"|{total_tapeMotorWear:^14}")
-        totalFile.write(f"|{round(total_algorithmRunningDuration+total_addressingDuration+total_tapeBeltWear+total_tapeMotorWear,2):^14}|\n")
+        totalFile.write(f"|{'hdd':^6}")
+        totalFile.write(f"|{round(hdd_total_algorithmRunningDuration,2):^14}")
+        totalFile.write(f"|{hdd_total_addressingDuration:^14}")
+        totalFile.write(f"|{hdd_total_readDuration:^14}")
+        hdd_total_readDelay = hdd_total_algorithmRunningDuration+hdd_total_addressingDuration+hdd_total_readDuration
+        totalFile.write(f"|{round(hdd_total_readDelay,2):^14}")
+        totalFile.write(f"|{hdd_total_tapeBeltWear:^14}")
+        totalFile.write(f"|{hdd_total_tapeMotorWear:^14}")
+        hdd_weight_sum = 0.5*hdd_total_readDelay+0.3*hdd_total_tapeBeltWear+0.2*hdd_total_tapeMotorWear
+        totalFile.write(f"|{round(hdd_weight_sum,2):^14}|\n")
+
+        totalFile.write(f"|{'backup':^6}")
+        totalFile.write(f"|{round(backup_total_algorithmRunningDuration,2):^14}")
+        totalFile.write(f"|{backup_total_addressingDuration:^14}")
+        totalFile.write(f"|{backup_total_readDuration:^14}")
+        backup_total_readDelay = backup_total_algorithmRunningDuration+backup_total_addressingDuration+backup_total_readDuration
+        totalFile.write(f"|{round(backup_total_readDelay):^14}")
+        totalFile.write(f"|{backup_total_tapeBeltWear:^14}")
+        totalFile.write(f"|{backup_total_tapeMotorWear:^14}")
+        backup_weight_sum = 0.3*backup_total_readDelay+0.5*backup_total_tapeBeltWear+0.2*backup_total_tapeMotorWear
+        totalFile.write(f"|{round(backup_weight_sum,2):^14}|\n")
 
 def monitor_memory(process:subprocess.Popen, interval=1):
     """ 监控指定 process 的内存使用 """

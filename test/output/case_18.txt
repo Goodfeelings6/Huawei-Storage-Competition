@@ -3,17 +3,20 @@
 Welcome to HW project.
 
 The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_18.txt
-head info : [201,58191,0]
+head info : [93,372280,1]
 
 io count = 100
 
 
-base_totaltime = 803689.000010
-base_tapeBeltWear = 1223432.000000
-base_tapeMotorWear = 15.000000
-new base_totaltime = 0.656914
-new base_tapeBeltWear = 1.000000
-new base_tapeMotorWear = 0.000012
+base_totaltime = 923549.000010
+base_tapeBeltWear = 1357830.000000
+base_tapeMotorWear = 36.000000
+maxbase = 135783.000000
+new base_totaltime = 6.801654
+new base_tapeBeltWear = 10.000000
+new base_tapeMotorWear = 0.000265
+hdd
+p->ScheduleScoreInSecond = 1424.552380
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 50
@@ -70,28 +73,28 @@ TOTAL_TIME_LIMIT = 20.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 1113174.5, Ascent time = 0.05 sec.
+Lower bound = 96755.9, Ascent time = 0.03 sec.
 Cand.min = 2, Cand.avg = 4.1, Cand.max = 6
 Edges.fixed = 103 [Cost = 0]
-Preprocessing time = 0.05 sec.
-* 1: Cost = 1119845, Time = 0.00 sec. 
-Run 1: Cost = 1119845, Time = 0.01 sec. 
+Preprocessing time = 0.03 sec.
+* 1: Cost = 96756, Time = 0.00 sec. 
+Run 1: Cost = 96756, Time = 0.00 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 1119845, Cost.avg = 1119845.00, Cost.max = 1119845
+Cost.min = 96756, Cost.avg = 96756.00, Cost.max = 96756
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 204, Trials.avg = 204.0, Trials.max = 204
-Time.min = 0.01 sec., Time.avg = 0.01 sec., Time.max = 0.01 sec.
-Time.total = 0.06 sec.
+Time.min = 0.00 sec., Time.avg = 0.00 sec., Time.max = 0.00 sec.
+Time.total = 0.04 sec.
 
 Key Metrics:
 	ioCount:			 100
-	algorithmRunningDuration:	 65.165 (ms)
-	memoryUse:			 496.00 (KB)
-	addressingDuration:		 741728 (ms)
-	readDuration:			 89269 (ms)
-	tapeBeltWear:			 1334700
-	tapeMotorWear:			 11
+	algorithmRunningDuration:	 42.070 (ms)
+	memoryUse:			 2900.00 (KB)
+	addressingDuration:		 725192 (ms)
+	readDuration:			 110609 (ms)
+	tapeBeltWear:			 1249454
+	tapeMotorWear:			 12
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt
