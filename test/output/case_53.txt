@@ -2,13 +2,13 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_53.txt
+The file path is: ./dataset/case_53.txt
 head info : [128,640010,0]
 
 io count = 10000
 
 
-base_totaltime = 153668975.001094
+base_totaltime = 153668975.001146
 base_tapeBeltWear = 94245517.000000
 base_tapeMotorWear = 37185.000000
 maxbase = 153668.975001
@@ -16,7 +16,9 @@ new base_totaltime = 1000.000000
 new base_tapeBeltWear = 613.302178
 new base_tapeMotorWear = 0.241981
 hdd
-p->ScheduleScoreInSecond = 768.844875
+环路个数: 11
+p->ScheduleScoreInSecond = 767.844875
+p->PenaltyScoreInSecond = 768.844875
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 50
@@ -73,43 +75,24 @@ TOTAL_TIME_LIMIT = 20.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 675.0, Ascent time = 8.30 sec.
+Lower bound = 296.0, Ascent time = 8.36 sec.
 Cand.min = 2, Cand.avg = 5.6, Cand.max = 7
 Edges.fixed = 10003 [Cost = 0]
-Preprocessing time = 8.36 sec.
-* 1: Cost = 7845, Time = 0.25 sec. 
-* 2: Cost = 7487, Time = 0.43 sec. 
-* 4: Cost = 7446, Time = 0.72 sec. 
-* 5: Cost = 7436, Time = 0.87 sec. 
-* 6: Cost = 7431, Time = 1.03 sec. 
-* 7: Cost = 7162, Time = 1.18 sec. 
-* 8: Cost = 7154, Time = 1.32 sec. 
-* 9: Cost = 6965, Time = 1.46 sec. 
-* 13: Cost = 6959, Time = 2.05 sec. 
-* 15: Cost = 6937, Time = 2.38 sec. 
-* 18: Cost = 6897, Time = 2.85 sec. 
-* 23: Cost = 6854, Time = 3.62 sec. 
-* 24: Cost = 6760, Time = 3.76 sec. 
-* 25: Cost = 6723, Time = 3.91 sec. 
-* 26: Cost = 6652, Time = 4.07 sec. 
-*** The extent of improvement(307) is too small in 2.0s ***
-Run 1: Cost = 6652, Time = 4.08 sec. 
-
+Preprocessing time = 8.41 sec.
+*** Time limit exceeded in FindTour ***
 Successes/Runs = 0/1
-Cost.min = 6652, Cost.avg = 6652.00, Cost.max = 6652
-Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 26, Trials.avg = 26.0, Trials.max = 26
-Time.min = 4.08 sec., Time.avg = 4.08 sec., Time.max = 4.08 sec.
-Time.total = 18.21 sec.
+Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
+Time.min = 0.01 sec., Time.avg = 0.01 sec., Time.max = 0.01 sec.
+Time.total = 21.55 sec.
 
 Key Metrics:
 	ioCount:			 10000
-	algorithmRunningDuration:	 18451.424 (ms)
-	memoryUse:			 11570.11 (KB)
-	addressingDuration:		 12092301 (ms)
-	readDuration:			 10158352 (ms)
-	tapeBeltWear:			 21574846
-	tapeMotorWear:			 379
-	errorIOCount:			 0
+	algorithmRunningDuration:	 21801.102 (ms)
+	memoryUse:			 58781.09 (KB)
+	addressingDuration:		 0 (ms)
+	readDuration:			 0 (ms)
+	tapeBeltWear:			 0
+	tapeMotorWear:			 0
+	errorIOCount:			 10000
 
 指标写入文件 ./metrics.txt

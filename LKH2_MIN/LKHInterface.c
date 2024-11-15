@@ -23,6 +23,7 @@ static void Read_EDGE_WEIGHT_SECTION(LKHInput* lkhInput);
 
 void loadDefaultParam(LKHParameters* p){
     p->TimeSpan = 1; 
+    p->PenaltyScoreInSecond = 1000;
     p->ScheduleScoreInSecond = 1000;
     p->OriginInput = 0;
 
@@ -103,7 +104,8 @@ void ReadParameters(LKHInput* lkhInput)
      LKHParameters* lkhParam = lkhInput->lkhParameters;
     // 从结构体获取参数
     TimeSpan = lkhParam->TimeSpan; 
-    ScheduleScoreInSecond = lkhParam->ScheduleScoreInSecond;
+    PenaltyScoreInSecond = lkhParam->PenaltyScoreInSecond;
+    ScheduleScoreInSecond =lkhParam->ScheduleScoreInSecond;
     OriginInput = lkhParam->OriginInput;
 
     ProblemFileName = lkhParam->ProblemFileName;

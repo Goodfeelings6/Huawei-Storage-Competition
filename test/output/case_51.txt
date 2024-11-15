@@ -2,13 +2,13 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_51.txt
+The file path is: ./dataset/case_51.txt
 head info : [115,212692,0]
 
 io count = 5000
 
 
-base_totaltime = 70830640.000523
+base_totaltime = 70830640.000522
 base_tapeBeltWear = 43079561.000000
 base_tapeMotorWear = 16709.000000
 maxbase = 141661.280001
@@ -16,7 +16,9 @@ new base_totaltime = 500.000000
 new base_tapeBeltWear = 304.102582
 new base_tapeMotorWear = 0.117950
 hdd
-p->ScheduleScoreInSecond = 1063.459600
+环路个数: 9
+p->ScheduleScoreInSecond = 355.153200
+p->PenaltyScoreInSecond = 1063.459600
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 50
@@ -73,60 +75,37 @@ TOTAL_TIME_LIMIT = 20.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 1677.0, Ascent time = 4.18 sec.
+Lower bound = 1557.0, Ascent time = 4.36 sec.
 Cand.min = 2, Cand.avg = 5.8, Cand.max = 7
 Edges.fixed = 5003 [Cost = 0]
-Preprocessing time = 4.22 sec.
-* 1: Cost = 11508, Time = 0.12 sec. 
-* 2: Cost = 11468, Time = 0.20 sec. 
-* 3: Cost = 11436, Time = 0.28 sec. 
-* 4: Cost = 11286, Time = 0.36 sec. 
-* 5: Cost = 11239, Time = 0.43 sec. 
-* 6: Cost = 11037, Time = 0.51 sec. 
-* 7: Cost = 11006, Time = 0.57 sec. 
-* 11: Cost = 10921, Time = 0.87 sec. 
-* 12: Cost = 10902, Time = 0.93 sec. 
-* 15: Cost = 10881, Time = 1.14 sec. 
-* 16: Cost = 10851, Time = 1.20 sec. 
-* 17: Cost = 10839, Time = 1.26 sec. 
-* 18: Cost = 10836, Time = 1.32 sec. 
-* 19: Cost = 10816, Time = 1.39 sec. 
-* 20: Cost = 10748, Time = 1.46 sec. 
-* 22: Cost = 10696, Time = 1.59 sec. 
-* 24: Cost = 10692, Time = 1.73 sec. 
-* 25: Cost = 10680, Time = 1.79 sec. 
-* 26: Cost = 10671, Time = 1.85 sec. 
-* 29: Cost = 10668, Time = 2.06 sec. 
-* 30: Cost = 10664, Time = 2.12 sec. 
-* 31: Cost = 10659, Time = 2.18 sec. 
-* 33: Cost = 10626, Time = 2.33 sec. 
-* 35: Cost = 10602, Time = 2.47 sec. 
-* 38: Cost = 10597, Time = 2.67 sec. 
-* 40: Cost = 10596, Time = 2.81 sec. 
-* 41: Cost = 10595, Time = 2.88 sec. 
-* 44: Cost = 10593, Time = 3.07 sec. 
-* 48: Cost = 10588, Time = 3.34 sec. 
-* 50: Cost = 10554, Time = 3.51 sec. 
-* 51: Cost = 10542, Time = 3.59 sec. 
-* 55: Cost = 10536, Time = 3.85 sec. 
-*** The extent of improvement(132) is too small in 2.0s ***
-Run 1: Cost = 10536, Time = 4.07 sec. 
+Preprocessing time = 4.40 sec.
+* 1: Cost = 10505, Time = 0.10 sec. 
+* 2: Cost = 10371, Time = 0.19 sec. 
+* 3: Cost = 10326, Time = 0.26 sec. 
+* 4: Cost = 10248, Time = 0.31 sec. 
+* 5: Cost = 10221, Time = 0.37 sec. 
+* 7: Cost = 10206, Time = 0.48 sec. 
+* 10: Cost = 10195, Time = 0.66 sec. 
+* 11: Cost = 10180, Time = 0.72 sec. 
+* 15: Cost = 10150, Time = 0.95 sec. 
+*** Time limit exceeded in FindTour ***
+Run 1: Cost = 10150, Time = 12.26 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 10536, Cost.avg = 10536.00, Cost.max = 10536
+Cost.min = 10150, Cost.avg = 10150.00, Cost.max = 10150
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 58, Trials.avg = 58.0, Trials.max = 58
-Time.min = 4.07 sec., Time.avg = 4.07 sec., Time.max = 4.07 sec.
-Time.total = 9.70 sec.
+Trials.min = 214, Trials.avg = 214.0, Trials.max = 214
+Time.min = 12.26 sec., Time.avg = 12.26 sec., Time.max = 12.26 sec.
+Time.total = 20.02 sec.
 
 Key Metrics:
 	ioCount:			 5000
-	algorithmRunningDuration:	 9812.363 (ms)
-	memoryUse:			 9704.40 (KB)
-	addressingDuration:		 6799780 (ms)
+	algorithmRunningDuration:	 20151.178 (ms)
+	memoryUse:			 17098.67 (KB)
+	addressingDuration:		 6659080 (ms)
 	readDuration:			 5240745 (ms)
-	tapeBeltWear:			 11212206
-	tapeMotorWear:			 321
+	tapeBeltWear:			 11056474
+	tapeMotorWear:			 317
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

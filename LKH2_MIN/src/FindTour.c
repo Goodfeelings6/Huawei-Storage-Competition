@@ -68,6 +68,29 @@ GainType FindTour()
             Trial--;
             break;
         }
+
+        // 在一定时间跨度内统计改进幅度
+        if(GetTime() - recordTime >= TimeSpan){
+            // 20s之前
+            if(GetTime() - StartTime <= 20 && recordCost - BetterCost < TimeSpan*ScheduleScoreInSecond){
+                if (TraceLevel >= 1)
+                    printff("*** Within 20s the extent of improvement("GainFormat"(<%.1f)) is too small in %.1fs ***\n",(recordCost - BetterCost),TimeSpan*ScheduleScoreInSecond, TimeSpan);
+                Trial--;
+                break;
+            }
+            // 20s之后
+            else if(GetTime() - StartTime > 20 && recordCost - BetterCost < TimeSpan*PenaltyScoreInSecond){
+                if (TraceLevel >= 1)
+                    printff("*** The extent of improvement("GainFormat"(<%.1f)) is too small in %.1fs ***\n",(recordCost - BetterCost),TimeSpan*PenaltyScoreInSecond, TimeSpan);
+                Trial--;
+                break;
+            }
+            else{
+                recordTime = GetTime();
+                recordCost = BetterCost;
+            }
+        }
+
         // 在一定Trial跨度内统计改进幅度
         // if(Trial - recordTrial >= TimeSpan * TrialSpan){
         //     if(recordCost - BetterCost < TimeSpan*ScheduleScoreInSecond){
@@ -81,20 +104,6 @@ GainType FindTour()
         //         recordCost = BetterCost;
         //     }
         // }
-
-        // 在一定时间跨度内统计改进幅度
-        if(GetTime() - recordTime >= TimeSpan){
-            if(recordCost - BetterCost < TimeSpan*ScheduleScoreInSecond){
-                if (TraceLevel >= 1)
-                    printff("*** The extent of improvement("GainFormat") is too small in %.1fs ***\n",(recordCost - BetterCost), TimeSpan);
-                Trial--;
-                break;
-            }
-            else{
-                recordTime = GetTime();
-                recordCost = BetterCost;
-            }
-        }
 
         /* Choose FirstNode at random */
         if (Dimension == DimensionSaved)

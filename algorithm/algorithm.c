@@ -140,13 +140,15 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
-        p->POPMUSIC_SampleSize = 10;
-        p->POPMUSIC_Solutions = 50;
+        //@flag1000
+		p->POPMUSIC_SampleSize = 5;
+		p->POPMUSIC_Solutions = 30;
     }
     else if(matDimension <= 2002){ // 2000
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
+        //@flag2000
         p->POPMUSIC_SampleSize = 10;
         p->POPMUSIC_Solutions = 50;
     }
@@ -154,6 +156,7 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
+        //@flag5000
         p->POPMUSIC_SampleSize = 10;
         p->POPMUSIC_Solutions = 20;
     }
@@ -161,17 +164,20 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
+        //@flag10000
         p->POPMUSIC_SampleSize = 10;
         p->POPMUSIC_Solutions = 10;
     }
     p->Runs = 1;
     p->TraceLevel = 1;
     p->TimeLimit = DBL_MAX; // 由总时间、一定时间跨度内的改进值共同控制退出即可
-    p->TotalTimeLimit = 20; // 最大允许运行时间
-    p->ScheduleScoreInSecond = alpha*1000/base_totaltime + ((2-(matDimension-2)/10000.0)/200.0)*maxbase; // 1s内相对Cost罚分
+    p->TotalTimeLimit = 40; // 最大允许运行时间
+    p->PenaltyScoreInSecond = alpha*1000/base_totaltime + ((2-(matDimension-2)/10000.0)/200.0)*maxbase; /* 20s后每多算1秒实际罚分 (相对Cost) */
+    p->ScheduleScoreInSecond = alpha*1000/base_totaltime+(((matDimension-2)/10000.0)/200.0)*maxbase;/* 20s内每少算1秒实际加分 (相对Cost) */
     printf("p->ScheduleScoreInSecond = %lf\n", p->ScheduleScoreInSecond);
+    printf("p->PenaltyScoreInSecond = %lf\n", p->PenaltyScoreInSecond);
     p->MoveType = 3;
-    p->TimeSpan = 2;
+    p->TimeSpan = 1;
 }
 
 // 实时算代价
@@ -212,7 +218,7 @@ int getCost(const InputParam *input, int len, int i, int j){
 }
 
 // 邻接矩阵算代价
-int getAdjMat(const InputParam *input, int len, int** adjMat){
+void getAdjMat(const InputParam *input, int len, int** adjMat){
     //为了节点能和id号对应，还是将它们从0开始对应行列
     for (uint32_t i = 0; i < len - 2; ++i) {
         for (uint32_t j = 0; j < len - 2; ++j) {
@@ -254,6 +260,43 @@ int getAdjMat(const InputParam *input, int len, int** adjMat){
         printf("\n");
     }
 #endif
+}
+
+void getAdjList(const InputParam* input, Graph* graph) {
+    uint32_t len = graph->n;
+
+    for (uint32_t i = 0; i < len - 2; ++i) {
+        NodeCost heap[HEAP_SIZE];  // 小顶堆数组
+        int heapSize = 0;
+
+        for (uint32_t j = 0; j < len - 2; ++j) {
+            if (i == j) continue;
+
+            HeadInfo start = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].endLpos, HEAD_RW};
+            HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
+            int cost = GetObjectValue(&start, &end);
+
+            NodeCost newElement = {j, cost};
+            insertMinHeap(heap, &heapSize, newElement);
+        }
+
+        // 将堆中元素添加到图的邻接表中
+        for (int k = 0; k < heapSize; ++k) {
+            addEdge(graph, i, heap[k].node, heap[k].cost);
+        }
+    }
+
+    // 处理虚拟节点和磁头节点的代价
+    for (uint32_t i = 0; i < len - 2; ++i) {
+        addEdge(graph, i, len - 2, 0);
+
+        HeadInfo start = {input->headInfo.wrap, input->headInfo.lpos, input->headInfo.status};
+        HeadInfo end = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].startLpos, HEAD_RW};
+        int headCost = GetObjectValue(&start, &end);
+        addEdge(graph, len - 1, i, headCost);
+    }
+
+    addEdge(graph, len - 2, len - 1, 0);
 }
 
 // LKH 算法 + 最大匹配(MM)生成初始解
@@ -827,65 +870,68 @@ int32_t GreedyInsert(const InputParam *input, OutputParam *output){
 // 最大匹配(MaxMatchingByHarryZHRsolver)-随机拼接
 int MaxMatching_Random(const InputParam *input, OutputParam *output) {
     uint32_t len = output->len + 2; // 增加了一个虚拟节点和磁头起始位置节点
-// #ifndef USING_REAL_TIME_COST
-   /* 生成邻接矩阵 */
-    int **adjMat = (int **)malloc(sizeof(int *) * len);
-    for (uint32_t i = 0; i < len; ++i){
-        adjMat[i] = (int *)malloc(sizeof(int) * len);
-    }
-    getAdjMat(input, len, adjMat);
 
-    // 矩阵转换
-    for (uint32_t i = 0; i < len; ++i) {
-        for (uint32_t j = 0; j < len; ++j) {
-            adjMat[i][j] =  -adjMat[i][j];
-        }
-    }
-// #endif
+    // 初始化图
+    Graph graph;
+    initGraph(&graph, len);
+
+    // 构建邻接表
+    getAdjList(input, &graph);
 
     // 初始化 MaxMatchingByHarryZHR 结构体
     MaxMatchingByHarryZHR matcher;
     initMaxMatchingByHarryZHR(&matcher, len);
-    int* Next = solveMaxMatchingByHarryZHR(&matcher, adjMat)->arr;
+
+    // 调用最大匹配算法
+    int* Next = solveMaxMatchingByHarryZHR(&matcher, &graph)->arr;
+
     int* visited = (int*)calloc(len, sizeof(int)); // 标记已经到达过的节点
 
-    //printf("形成的环路：\n");
-    int idx=0;
-    for (int i = len-1; i >= 0; --i) {
+    int idx = 0;
+    int loops=0;
+    for (int i = len - 1; i >= 0; --i) {
         if (!visited[i]) {
+             loops++;
             int current = i;
             //printf("环路: %d", current);
-            if(current!=len-1&&current!=len-2){   
-                output->sequence[idx++]=current+1;
+            if (current != len - 1 && current != len - 2) {
+                output->sequence[idx++] = current + 1;
             }
             while (Next[current] != -1 && !visited[Next[current]]) {
                 visited[current] = 1;
                 current = Next[current];
-                if(current!=len-1&&current!=len-2){   
-                    output->sequence[idx++]=current+1;
+                if (current != len - 1 && current != len - 2) {
+                    output->sequence[idx++] = current + 1;
                 }
-                //printf(" -> %d", current);
+                 //printf(" -> %d", current);
             }
             visited[current] = 1;
-            //printf("\n");
+             //printf("\n");
         }
     }
+    printf("环路个数: %d\n", loops);
+// #if DEBUG_LEVEL >= 1
+//     printf("最大匹配算法得到的 io 序列:\n");
+//     for (uint32_t i = 0; i < input->ioVec.len; ++i) {
+//         printf("%d ", output->sequence[i]);
+//     }
+//     printf("\n");
+// #endif
 
-#if DEBUG_LEVEL >= 1
-    printf("最大匹配算法得到的 io 序列:\n");
-    for (uint32_t i = 0; i < input->ioVec.len; ++i) {
-        printf("%d ", output->sequence[i]);
-    }
-    printf("\n");
-#endif
-
-    // 释放 matcher 和 adjMat 的内存
+    // 释放资源
     free(visited);
     freeMaxMatchingByHarryZHR(&matcher);
-    for (uint32_t i = 0; i < len; ++i) {
-        free(adjMat[i]);
+    
+    // 释放图的邻接表内存
+    for (int i = 0; i < graph.n; i++) {
+        Edge *e = graph.lists[i].head;
+        while (e) {
+            Edge *tmp = e;
+            e = e->next;
+            free(tmp);
+        }
     }
-    free(adjMat);
+    free(graph.lists);
 
     return 0;
 }

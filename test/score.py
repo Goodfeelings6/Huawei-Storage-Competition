@@ -47,7 +47,9 @@ def score():
     with open(os.path.join(args.b, "A-summary.txt"), "r", encoding="utf-8") as f2:
         base_data = f2.readlines()
 
-
+    readTimeScoreList = []      # 读时延加分
+    tapeBeltWearScoreList = []  # 带体磨损加分
+    tapeMotorWearScoreList = [] # 电机磨损加分
     schedulScore = []           # 调度算法加分
     timeScore = []              # 调度用时加分
     timeoutPenalty = []         # 调度超时罚分
@@ -59,7 +61,7 @@ def score():
         instanceID = int(re.search(r'case_(\d+).txt', curr_data_i_dict["name"]).group(1))
         base_data_i_dict = decode(base_data[instanceID-1])
         # 权重
-        if instanceID <= 56:
+        if instanceID <= 60:
             alpha = 0.5
             beta = 0.3
             gama = 0.2
@@ -72,9 +74,17 @@ def score():
         # 调度算法加分
         base_read_time = base_data_i_dict["algorithmRunningDuration"]+base_data_i_dict["addressingDuration"]+base_data_i_dict["readDuration"]
         curr_read_time = curr_data_i_dict["algorithmRunningDuration"]+curr_data_i_dict["addressingDuration"]+curr_data_i_dict["readDuration"]
-        addrT = alpha*(base_read_time-curr_read_time)/base_read_time*100 + \
-                beta*(base_data_i_dict["tapeBeltWear"]-curr_data_i_dict["tapeBeltWear"])/base_data_i_dict["tapeBeltWear"]*100 +\
-                gama*(base_data_i_dict["tapeMotorWear"]-curr_data_i_dict["tapeMotorWear"])/base_data_i_dict["tapeMotorWear"]*100
+        ## 三部分得分
+        readTimeScore = alpha*(base_read_time-curr_read_time)/base_read_time*100
+        tapeBeltWearScore = beta*(base_data_i_dict["tapeBeltWear"]-curr_data_i_dict["tapeBeltWear"])/base_data_i_dict["tapeBeltWear"]*100
+        tapeMotorWearScore = gama*(base_data_i_dict["tapeMotorWear"]-curr_data_i_dict["tapeMotorWear"])/base_data_i_dict["tapeMotorWear"]*100
+        readTimeScoreList.append(readTimeScore)
+        tapeBeltWearScoreList.append(tapeBeltWearScore)
+        tapeMotorWearScoreList.append(tapeMotorWearScore)
+        ## 相加
+        addrT = readTimeScore+tapeBeltWearScore+tapeMotorWearScore
+        if addrT < 0 :
+            addrT = 0
         schedulScore.append(addrT)
         # 调度用时加分 和 调度超时罚分
         if curr_data_i_dict["algorithmRunningDuration"]<=20000:
@@ -103,6 +113,9 @@ def score():
         instanceScore.append(instanceS)
 
         # 写入文件
+        scoreFile.write(f"读时延加分:{readTimeScore:.2f}\t")
+        scoreFile.write(f"带体磨损加分:{tapeBeltWearScore:.2f}\t")
+        scoreFile.write(f"电机磨损加分:{tapeMotorWearScore:.2f}\t")
         scoreFile.write(f"调度算法加分:{addrT:.2f}\t")
         scoreFile.write(f"调度用时加分:{scheduleT:.2f}\t")
         scoreFile.write(f"调度超时罚分:{penaltyT:.2f}\t")
@@ -111,18 +124,15 @@ def score():
         scoreFile.write(f"算例总得分:{instanceS:.2f}\t")
         scoreFile.write('\n')
     
-    schedulScore_sum = sum(schedulScore)
-    timeScore_sum = sum(timeScore)
-    timeoutPenalty_sum = sum(timeoutPenalty)
-    spaceOverlimitPenalty_sum = sum(spaceOverlimitPenalty)
-    sortErrorCount_sum = sum(sortErrorCount)
-    instanceScore_sum = sum(instanceScore)
-    scoreFile.write(f"调度算法总加分:{schedulScore_sum:.2f}\t")
-    scoreFile.write(f"调度用时总加分:{timeScore_sum:.2f}\t")
-    scoreFile.write(f"调度超时总罚分:{timeoutPenalty_sum:.2f}\t")
-    scoreFile.write(f"空间超限总罚分:{spaceOverlimitPenalty_sum:.2f}\t")
-    scoreFile.write(f"排序错误总数量:{sortErrorCount_sum:.2f}\t")
-    scoreFile.write(f"\n总分:{instanceScore_sum:.2f}\n")
+    scoreFile.write(f"读时延总加分:{sum(readTimeScoreList):.2f}\t")
+    scoreFile.write(f"带体磨损总加分:{sum(tapeBeltWearScoreList):.2f}\t")
+    scoreFile.write(f"电机磨损总加分:{sum(tapeMotorWearScoreList):.2f}\t")
+    scoreFile.write(f"调度算法总加分:{sum(schedulScore):.2f}\t")
+    scoreFile.write(f"调度用时总加分:{sum(timeScore):.2f}\t")
+    scoreFile.write(f"调度超时总罚分:{sum(timeoutPenalty):.2f}\t")
+    scoreFile.write(f"空间超限总罚分:{sum(spaceOverlimitPenalty):.2f}\t")
+    scoreFile.write(f"排序错误总数量:{sum(sortErrorCount):.2f}\t")
+    scoreFile.write(f"\n总分:{sum(instanceScore):.2f}\n")
 
     # 测相比基线的提升幅度
     # with open(os.path.join(args.c, "A-total.txt"), "r", encoding="utf-8") as f1:

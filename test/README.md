@@ -7,10 +7,17 @@ test/
 ├── dataset/ 所有测试用例 
 ├── output/ 默认测试用例输出目录
 ├── dataset_generator.py 测试用例生成
+├── param_adjust.py 自动调参脚本
 ├── score.py 与基线算法比较计分 脚本
 ├── test.py 构建或测试指定用例 python脚本
 └── testbatch.py 批量测试所有用例 python脚本
 ```
+
+## 算例生成
+```shell
+python dataset_generator.py
+```
++ 会自动创建 ./dataset 文件夹，根据在脚本中预先设置好的规则，在其下生成构造算例
 
 ## 运行测试
 ### 构建或测试指定用例, test.py 用法：  
@@ -60,7 +67,9 @@ python testbatch.py s2
 
 # 构建并批量测试所有用例, 输出将位于 output_baseline 文件夹
 python testbatch.py s2 -des ./output_baseline
-python testbatch.py s2 -des ./output_noshuffle
+
+# 构建并批量测试所有用例, 测试用例目录 dataset_sub, 输出将位于 output_sub 文件夹
+python testbatch.py s2 -src ./dataset_sub -des ./output_sub
 ```
 ---
 
@@ -103,6 +112,9 @@ python testbatch.py s2 -src ./dataset_sub -des ./output_sub
 python score.py -c ./output -b output_sub
 ```
 
-### 对比批量测试结果, compare.py 用法：  
-**更改代码中file1和file2文件名,分别为要对比的两个批量测试结果文件**
-**对比结果输出在/home/csg/Huawei-Storage-Competition/test/comparison_output.txt 文件中，更优的结果加双星号表示**
+
+## 自动调参
+```shell
+python param_adjust.py
+```
++ 根据在脚本中预先设置好的参数范围，自动修改参数并运行测试，输出调参结果写入文件 ./adjustParamInfo.txt

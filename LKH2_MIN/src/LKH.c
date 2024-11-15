@@ -8,7 +8,8 @@
 /* LKH.h variables */
 // 新增
 double TimeSpan; /* 统计改进值的时间跨度 */
-double ScheduleScoreInSecond; /* 每多算1秒实际罚分 (未乘10) */
+double PenaltyScoreInSecond; /* 20s后每多算1秒实际罚分 (相对Cost) */
+double ScheduleScoreInSecond; /* 20s内每少算1秒实际加分 (相对Cost) */
 double SubProblemTotalTimeLimit; /* 分配给每个子问题的求解时间 */
 double SubProblemStartTime; /* 当前子问题的开始求解时间 */
 const InputParam *OriginInput; /* 原始输入结构体 */
