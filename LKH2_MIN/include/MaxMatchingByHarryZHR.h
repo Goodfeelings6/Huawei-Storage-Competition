@@ -9,9 +9,9 @@
 #include "Arr.h"  // 假设已经将 Arr.h 文件转换成了纯 C 的二维数组实现
 
 #define INF INT_MAX/200
-#define HEAP_SIZE 500  // 堆的大小
+#define HEAP_SIZE 100  // 堆的大小
 typedef int ID;
-typedef int Cost;
+typedef double Cost;
 
 // 结构体用于存储节点和代价
 typedef struct {
@@ -57,37 +57,48 @@ void addEdge(Graph *graph, ID u, ID v, Cost cost) {
 }
 
 
-// 插入到小顶堆中，如果新元素比堆顶小则替换堆顶元素
-void insertMinHeap(NodeCost* heap, int* heapSize, NodeCost newElement) {
+// 插入到最大堆中，堆满时如果新元素比堆顶小则替换堆顶元素
+void insertMaxHeap(NodeCost* heap, int* heapSize, NodeCost newElement) {
     if (*heapSize < HEAP_SIZE) {
+        // 堆未满，直接插入新元素并上浮调整
         heap[(*heapSize)++] = newElement;
         // 上浮调整堆
-        for (int i = *heapSize - 1; i > 0 && heap[i].cost < heap[(i - 1) / 2].cost; i = (i - 1) / 2) {
+        for (int i = *heapSize - 1; i > 0 && heap[i].cost > heap[(i - 1) / 2].cost; i = (i - 1) / 2) {
             NodeCost temp = heap[i];
             heap[i] = heap[(i - 1) / 2];
             heap[(i - 1) / 2] = temp;
         }
     } else if (newElement.cost < heap[0].cost) {
+        // 堆已满，且新元素比堆顶小，则替换堆顶
         heap[0] = newElement;
         // 下沉调整堆
         int i = 0;
         while (2 * i + 1 < HEAP_SIZE) {
-            int smallest = i;
+            int largest = i;
             int left = 2 * i + 1;
             int right = 2 * i + 2;
-            if (left < HEAP_SIZE && heap[left].cost < heap[smallest].cost)
-                smallest = left;
-            if (right < HEAP_SIZE && heap[right].cost < heap[smallest].cost)
-                smallest = right;
-            if (smallest == i)
+            if (left < HEAP_SIZE && heap[left].cost > heap[largest].cost)
+                largest = left;
+            if (right < HEAP_SIZE && heap[right].cost > heap[largest].cost)
+                largest = right;
+            if (largest == i)
                 break;
             NodeCost temp = heap[i];
-            heap[i] = heap[smallest];
-            heap[smallest] = temp;
-            i = smallest;
+            heap[i] = heap[largest];
+            heap[largest] = temp;
+            i = largest;
         }
     }
 }
+
+// // 打印堆的内容
+// void printHeap(NodeCost* heap, int heapSize, int iteration, int node) {
+//     printf("Heap after iteration %d for node %d:\n", iteration, node);
+//     for (int i = 0; i < heapSize; ++i) {
+//         printf("Node: %d, Cost: %d\n", heap[i].node, heap[i].cost);
+//     }
+//     printf("\n");
+//}
 // 定义循环队列 LoopQueue 结构体
 typedef struct {
     ID *q;            // 队列数组

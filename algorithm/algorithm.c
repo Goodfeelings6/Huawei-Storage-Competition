@@ -141,32 +141,32 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         //@flag1000
-		p->POPMUSIC_SampleSize = 5;
-		p->POPMUSIC_Solutions = 30;
+		p->POPMUSIC_SampleSize = 20;
+		p->POPMUSIC_Solutions = 60;
     }
     else if(matDimension <= 2002){ // 2000
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         //@flag2000
-        p->POPMUSIC_SampleSize = 10;
-        p->POPMUSIC_Solutions = 50;
+		p->POPMUSIC_SampleSize = 20;
+		p->POPMUSIC_Solutions = 60;
     }
     else if(matDimension <= 5002){ // 5000
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         //@flag5000
-        p->POPMUSIC_SampleSize = 10;
-        p->POPMUSIC_Solutions = 20;
+		p->POPMUSIC_SampleSize = 20;
+		p->POPMUSIC_Solutions = 25;
     }
     else{ // 10000
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         //@flag10000
-        p->POPMUSIC_SampleSize = 10;
-        p->POPMUSIC_Solutions = 10;
+		p->POPMUSIC_SampleSize = 20;
+		p->POPMUSIC_Solutions = 20;
     }
     p->Runs = 1;
     p->TraceLevel = 1;
@@ -262,7 +262,7 @@ void getAdjMat(const InputParam *input, int len, int** adjMat){
 #endif
 }
 
-void getAdjList(const InputParam* input, Graph* graph) {
+void getAdjList1(const InputParam* input, Graph* graph) {
     uint32_t len = graph->n;
 
     for (uint32_t i = 0; i < len - 2; ++i) {
@@ -282,7 +282,7 @@ void getAdjList(const InputParam* input, Graph* graph) {
 
         // 将堆中元素添加到图的邻接表中
         for (int k = 0; k < heapSize; ++k) {
-            addEdge(graph, i, heap[k].node, heap[k].cost);
+            addEdge(graph, i, heap[k].node, -heap[k].cost);
         }
     }
 
@@ -293,7 +293,7 @@ void getAdjList(const InputParam* input, Graph* graph) {
         HeadInfo start = {input->headInfo.wrap, input->headInfo.lpos, input->headInfo.status};
         HeadInfo end = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].startLpos, HEAD_RW};
         int headCost = GetObjectValue(&start, &end);
-        addEdge(graph, len - 1, i, headCost);
+        addEdge(graph, len - 1, i, -headCost);
     }
 
     addEdge(graph, len - 2, len - 1, 0);
@@ -868,7 +868,7 @@ int32_t GreedyInsert(const InputParam *input, OutputParam *output){
 }
 
 // 最大匹配(MaxMatchingByHarryZHRsolver)-随机拼接
-int MaxMatching_Random(const InputParam *input, OutputParam *output) {
+int MaxMatching_Random_qsort(const InputParam *input, OutputParam *output) {
     uint32_t len = output->len + 2; // 增加了一个虚拟节点和磁头起始位置节点
 
     // 初始化图
@@ -1040,7 +1040,7 @@ int32_t IOScheduleAlgorithm(const InputParam *input, OutputParam *output)
     // return LKH_GI(input, output); 
 
     // 使用 LKH_NN 算法
-    return LKH_NN(input, output);
+    //return LKH_NN(input, output);
 
     // 使用最近邻贪心算法 
     // return NearestNeighbor(input, output);
@@ -1049,8 +1049,8 @@ int32_t IOScheduleAlgorithm(const InputParam *input, OutputParam *output)
     // return GreedyInsert(input, output);
 
     // 使用最大匹配-随机拼接算法
-    // return MaxMatching_Random(input, output);
-
+     return MaxMatching_Random_qsort(input, output);
+     //return MaxMatching_Random_heap(input, output);
     // 使用最大匹配-贪心拼接算法
     // return MaxMatching_Greedy(input, output);
 
