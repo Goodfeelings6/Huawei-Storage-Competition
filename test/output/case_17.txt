@@ -16,7 +16,8 @@ new base_totaltime = 5.653769
 new base_tapeBeltWear = 10.000000
 new base_tapeMotorWear = 0.000067
 hdd
-p->ScheduleScoreInSecond = 2024.485686
+p->ScheduleScoreInSecond = 98.165466
+p->PenaltyScoreInSecond = 2024.485686
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 50
@@ -69,14 +70,14 @@ SUBGRADIENT = YES
 SUBSEQUENT_MOVE_TYPE = 3
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
-TOTAL_TIME_LIMIT = 20.0
+TOTAL_TIME_LIMIT = 40.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 156259.6, Ascent time = 0.06 sec.
+Lower bound = 156259.6, Ascent time = 0.05 sec.
 Cand.min = 2, Cand.avg = 3.9, Cand.max = 6
 Edges.fixed = 103 [Cost = 0]
-Preprocessing time = 0.06 sec.
+Preprocessing time = 0.05 sec.
 * 1: Cost = 156310, Time = 0.00 sec. 
 Run 1: Cost = 156310, Time = 0.01 sec. 
 
@@ -89,8 +90,8 @@ Time.total = 0.07 sec.
 
 Key Metrics:
 	ioCount:			 100
-	algorithmRunningDuration:	 76.574 (ms)
-	memoryUse:			 492.00 (KB)
+	algorithmRunningDuration:	 74.079 (ms)
+	memoryUse:			 852.00 (KB)
 	addressingDuration:		 925776 (ms)
 	readDuration:			 88775 (ms)
 	tapeBeltWear:			 1666266

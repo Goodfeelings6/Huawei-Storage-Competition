@@ -2,35 +2,33 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_72.txt
-head info : [226,642386,1]
-
-io count = 100
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset
 
 
-base_totaltime = 853521.000009
-base_tapeBeltWear = 1999340.000000
-base_tapeMotorWear = 6.000000
-maxbase = 199934.000000
-new base_totaltime = 4.269014
-new base_tapeBeltWear = 10.000000
-new base_tapeMotorWear = 0.000030
+base_totaltime = 0.000001
+base_tapeBeltWear = 0.000000
+base_tapeMotorWear = 0.000000
+maxbase = inf
+new base_totaltime = 0.000000
+new base_tapeBeltWear = 0.000000
+new base_tapeMotorWear = 0.000000
 backup
-p->ScheduleScoreInSecond = 2059.617142
+p->ScheduleScoreInSecond = nan
+p->PenaltyScoreInSecond = inf
 Reading TOUR...done
 done
-ASCENT_CANDIDATES = 50
+ASCENT_CANDIDATES = 3
 BACKBONE_TRIALS = 0
 BACKTRACKING = NO
 # CANDIDATE_FILE =
 CANDIDATE_SET_TYPE = ALPHA
 # EDGE_FILE =
-EXCESS = 0.00490196
+EXCESS = 0.25
 EXTRA_CANDIDATES = 0 
 EXTRA_CANDIDATE_SET_TYPE = QUADRANT
 GAIN23 = YES
 GAIN_CRITERION = YES
-INITIAL_PERIOD = 102
+INITIAL_PERIOD = 100
 INITIAL_STEP_SIZE = 1
 INITIAL_TOUR_ALGORITHM = WALK
 # INITIAL_TOUR_FILE = 
@@ -39,9 +37,9 @@ INITIAL_TOUR_FRACTION = 1.000
 KICK_TYPE = 0
 KICKS = 1
 # MAX_BREADTH =
-MAX_CANDIDATES = 5 
-MAX_SWAPS = 204
-MAX_TRIALS = 204
+MAX_CANDIDATES = 3 
+MAX_SWAPS = 4
+MAX_TRIALS = 4
 # MERGE_TOUR_FILE =
 MOVE_TYPE = 3
 # NONSEQUENTIAL_MOVE_TYPE = 3
@@ -51,8 +49,8 @@ PATCHING_A = 1
 PATCHING_C = 0 
 # PI_FILE = 
 POPMUSIC_INITIAL_TOUR = NO
-POPMUSIC_MAX_NEIGHBORS = 5
-POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_MAX_NEIGHBORS = 3
+POPMUSIC_SAMPLE_SIZE = 4
 POPMUSIC_SOLUTIONS = 50
 POPMUSIC_TRIALS = 1
 # POPULATION_SIZE = 0
@@ -69,29 +67,29 @@ SUBGRADIENT = YES
 SUBSEQUENT_MOVE_TYPE = 3
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
-TOTAL_TIME_LIMIT = 20.0
+TOTAL_TIME_LIMIT = 40.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 134775.0, Ascent time = 0.02 sec.
-Cand.min = 2, Cand.avg = 2.8, Cand.max = 5
-Edges.fixed = 103 [Cost = 0]
-Preprocessing time = 0.02 sec.
+Lower bound = 10737418.0, Ascent time = 0.00 sec.
+Cand.min = 2, Cand.avg = 2.0, Cand.max = 2
+Edges.fixed = 3 [Cost = 0]
+Preprocessing time = 0.00 sec.
 Successes/Runs = 1/0
-Cost.min = 134775, Cost.avg = 134775.00, Cost.max = 134775
+Cost.min = 10737418, Cost.avg = 10737418.00, Cost.max = 10737418
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
-Time.min = 0.02 sec., Time.avg = 0.02 sec., Time.max = 0.02 sec.
-Time.total = 0.02 sec.
+Time.min = 0.00 sec., Time.avg = 0.00 sec., Time.max = 0.00 sec.
+Time.total = 0.00 sec.
 
 Key Metrics:
-	ioCount:			 100
-	algorithmRunningDuration:	 31.240 (ms)
-	memoryUse:			 496.00 (KB)
-	addressingDuration:		 595172 (ms)
-	readDuration:			 91116 (ms)
-	tapeBeltWear:			 1409800
-	tapeMotorWear:			 4
+	ioCount:			 0
+	algorithmRunningDuration:	 0.677 (ms)
+	memoryUse:			 2768.00 (KB)
+	addressingDuration:		 0 (ms)
+	readDuration:			 0 (ms)
+	tapeBeltWear:			 0
+	tapeMotorWear:			 0
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

@@ -8,7 +8,7 @@ head info : [15,365141,0]
 io count = 100
 
 
-base_totaltime = 974940.000010
+base_totaltime = 974940.000011
 base_tapeBeltWear = 1862258.000000
 base_tapeMotorWear = 41.000000
 maxbase = 186225.800000
@@ -16,7 +16,8 @@ new base_totaltime = 5.235257
 new base_tapeBeltWear = 10.000000
 new base_tapeMotorWear = 0.000220
 hdd
-p->ScheduleScoreInSecond = 1948.452998
+p->ScheduleScoreInSecond = 104.817578
+p->PenaltyScoreInSecond = 1948.452998
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 50
@@ -69,7 +70,7 @@ SUBGRADIENT = YES
 SUBSEQUENT_MOVE_TYPE = 3
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
-TOTAL_TIME_LIMIT = 20.0
+TOTAL_TIME_LIMIT = 40.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
@@ -86,8 +87,8 @@ Time.total = 0.03 sec.
 
 Key Metrics:
 	ioCount:			 100
-	algorithmRunningDuration:	 35.450 (ms)
-	memoryUse:			 480.00 (KB)
+	algorithmRunningDuration:	 35.288 (ms)
+	memoryUse:			 2088.00 (KB)
 	addressingDuration:		 678912 (ms)
 	readDuration:			 111037 (ms)
 	tapeBeltWear:			 1473083

@@ -2,35 +2,33 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_38.txt
-head info : [137,137070,1]
-
-io count = 2000
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset
 
 
-base_totaltime = 24297071.000185
-base_tapeBeltWear = 15401714.000000
-base_tapeMotorWear = 5592.000000
-maxbase = 121485.355001
-new base_totaltime = 200.000000
-new base_tapeBeltWear = 126.778359
-new base_tapeMotorWear = 0.046030
-hdd
-p->ScheduleScoreInSecond = 1095.868195
+base_totaltime = 0.000001
+base_tapeBeltWear = 0.000000
+base_tapeMotorWear = 0.000000
+maxbase = inf
+new base_totaltime = 0.000000
+new base_tapeBeltWear = 0.000000
+new base_tapeMotorWear = 0.000000
+backup
+p->ScheduleScoreInSecond = nan
+p->PenaltyScoreInSecond = inf
 Reading TOUR...done
 done
-ASCENT_CANDIDATES = 50
+ASCENT_CANDIDATES = 3
 BACKBONE_TRIALS = 0
 BACKTRACKING = NO
 # CANDIDATE_FILE =
-CANDIDATE_SET_TYPE = POPMUSIC
+CANDIDATE_SET_TYPE = ALPHA
 # EDGE_FILE =
-EXCESS = 0.00024975
+EXCESS = 0.25
 EXTRA_CANDIDATES = 0 
 EXTRA_CANDIDATE_SET_TYPE = QUADRANT
 GAIN23 = YES
 GAIN_CRITERION = YES
-INITIAL_PERIOD = 2002
+INITIAL_PERIOD = 100
 INITIAL_STEP_SIZE = 1
 INITIAL_TOUR_ALGORITHM = WALK
 # INITIAL_TOUR_FILE = 
@@ -39,9 +37,9 @@ INITIAL_TOUR_FRACTION = 1.000
 KICK_TYPE = 0
 KICKS = 1
 # MAX_BREADTH =
-MAX_CANDIDATES = 5 
-MAX_SWAPS = 4004
-MAX_TRIALS = 4004
+MAX_CANDIDATES = 3 
+MAX_SWAPS = 4
+MAX_TRIALS = 4
 # MERGE_TOUR_FILE =
 MOVE_TYPE = 3
 # NONSEQUENTIAL_MOVE_TYPE = 3
@@ -50,9 +48,9 @@ MOVE_TYPE = 3
 PATCHING_A = 1 
 PATCHING_C = 0 
 # PI_FILE = 
-POPMUSIC_INITIAL_TOUR = YES
-POPMUSIC_MAX_NEIGHBORS = 5
-POPMUSIC_SAMPLE_SIZE = 10
+POPMUSIC_INITIAL_TOUR = NO
+POPMUSIC_MAX_NEIGHBORS = 3
+POPMUSIC_SAMPLE_SIZE = 4
 POPMUSIC_SOLUTIONS = 50
 POPMUSIC_TRIALS = 1
 # POPULATION_SIZE = 0
@@ -63,68 +61,35 @@ RESTRICTED_SEARCH = YES
 RUNS = 1
 SEED = 1
 STOP_AT_OPTIMUM = YES
-SUBGRADIENT = NO
+SUBGRADIENT = YES
 # SUBPROBLEM_SIZE =
 # SUBPROBLEM_TOUR_FILE = 
 SUBSEQUENT_MOVE_TYPE = 3
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
-TOTAL_TIME_LIMIT = 20.0
+TOTAL_TIME_LIMIT = 40.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 3897.0, Ascent time = 2.45 sec.
-Cand.min = 2, Cand.avg = 5.9, Cand.max = 7
-Edges.fixed = 2003 [Cost = 0]
-Preprocessing time = 2.46 sec.
-* 1: Cost = 18121, Time = 0.04 sec. 
-* 2: Cost = 17661, Time = 0.07 sec. 
-* 3: Cost = 17652, Time = 0.09 sec. 
-* 4: Cost = 17546, Time = 0.12 sec. 
-* 6: Cost = 17492, Time = 0.16 sec. 
-* 7: Cost = 17482, Time = 0.18 sec. 
-* 8: Cost = 17472, Time = 0.20 sec. 
-* 9: Cost = 17458, Time = 0.22 sec. 
-* 10: Cost = 17456, Time = 0.24 sec. 
-* 12: Cost = 17455, Time = 0.28 sec. 
-* 13: Cost = 17454, Time = 0.30 sec. 
-* 14: Cost = 17453, Time = 0.33 sec. 
-* 15: Cost = 17450, Time = 0.35 sec. 
-* 16: Cost = 17449, Time = 0.37 sec. 
-* 18: Cost = 17448, Time = 0.41 sec. 
-* 22: Cost = 17387, Time = 0.48 sec. 
-* 23: Cost = 17384, Time = 0.50 sec. 
-* 24: Cost = 17383, Time = 0.52 sec. 
-* 25: Cost = 17382, Time = 0.55 sec. 
-* 26: Cost = 17381, Time = 0.57 sec. 
-* 28: Cost = 17378, Time = 0.61 sec. 
-* 29: Cost = 17361, Time = 0.63 sec. 
-* 32: Cost = 17360, Time = 0.69 sec. 
-* 34: Cost = 17355, Time = 0.74 sec. 
-* 45: Cost = 17353, Time = 0.95 sec. 
-* 93: Cost = 17350, Time = 1.96 sec. 
-* 94: Cost = 17349, Time = 1.98 sec. 
-* 101: Cost = 17348, Time = 2.14 sec. 
-* 159: Cost = 17347, Time = 3.52 sec. 
-* 163: Cost = 17344, Time = 3.61 sec. 
-*** The extent of improvement(5) is too small in 2.0s ***
-Run 1: Cost = 17344, Time = 4.02 sec. 
-
-Successes/Runs = 0/1
-Cost.min = 17344, Cost.avg = 17344.00, Cost.max = 17344
+Lower bound = 10737418.0, Ascent time = 0.00 sec.
+Cand.min = 2, Cand.avg = 2.0, Cand.max = 2
+Edges.fixed = 3 [Cost = 0]
+Preprocessing time = 0.00 sec.
+Successes/Runs = 1/0
+Cost.min = 10737418, Cost.avg = 10737418.00, Cost.max = 10737418
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 180, Trials.avg = 180.0, Trials.max = 180
-Time.min = 4.02 sec., Time.avg = 4.02 sec., Time.max = 4.02 sec.
-Time.total = 6.71 sec.
+Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
+Time.min = 0.00 sec., Time.avg = 0.00 sec., Time.max = 0.00 sec.
+Time.total = 0.00 sec.
 
 Key Metrics:
-	ioCount:			 2000
-	algorithmRunningDuration:	 6755.459 (ms)
-	memoryUse:			 7282.86 (KB)
-	addressingDuration:		 3639443 (ms)
-	readDuration:			 2073932 (ms)
-	tapeBeltWear:			 5558540
-	tapeMotorWear:			 194
+	ioCount:			 0
+	algorithmRunningDuration:	 0.755 (ms)
+	memoryUse:			 0.00 (KB)
+	addressingDuration:		 0 (ms)
+	readDuration:			 0 (ms)
+	tapeBeltWear:			 0
+	tapeMotorWear:			 0
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

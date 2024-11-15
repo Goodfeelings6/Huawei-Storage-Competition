@@ -1,0 +1,110 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset/case_31.txt
+head info : [158,478204,0]
+
+io count = 1000
+
+
+base_totaltime = 8990858.000092
+base_tapeBeltWear = 6341389.000000
+base_tapeMotorWear = 1777.000000
+maxbase = 89908.580001
+new base_totaltime = 100.000000
+new base_tapeBeltWear = 70.531522
+new base_tapeMotorWear = 0.019765
+hdd
+构建邻接表完成
+initMaxMatchingByHarryZHR完成
+最大匹配算法完成
+环路个数: 10
+p->ScheduleScoreInSecond = 49.954290
+p->PenaltyScoreInSecond = 859.131510
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 0.000499002
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 1002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 2004
+MAX_TRIALS = 2004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 20
+POPMUSIC_SOLUTIONS = 60
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 40.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 9755.0, Ascent time = 3.49 sec.
+Cand.min = 2, Cand.avg = 5.5, Cand.max = 7
+Edges.fixed = 1003 [Cost = 0]
+Preprocessing time = 3.49 sec.
+* 1: Cost = 29114, Time = 0.01 sec. 
+* 2: Cost = 29112, Time = 0.02 sec. 
+* 3: Cost = 29111, Time = 0.03 sec. 
+* 5: Cost = 29109, Time = 0.04 sec. 
+* 190: Cost = 29107, Time = 1.16 sec. 
+*** Within 20s the extent of improvement(0(<99.9)) is too small in 2.0s ***
+Run 1: Cost = 29107, Time = 4.01 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 29107, Cost.avg = 29107.00, Cost.max = 29107
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 656, Trials.avg = 656.0, Trials.max = 656
+Time.min = 4.01 sec., Time.avg = 4.01 sec., Time.max = 4.01 sec.
+Time.total = 7.60 sec.
+
+Key Metrics:
+	ioCount:			 1000
+	algorithmRunningDuration:	 7618.357 (ms)
+	memoryUse:			 5686.00 (KB)
+	addressingDuration:		 3009165 (ms)
+	readDuration:			 1073547 (ms)
+	tapeBeltWear:			 4044684
+	tapeMotorWear:			 157
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

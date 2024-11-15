@@ -200,6 +200,7 @@ def monitor_memory(process:subprocess.Popen, interval=1):
             # 线程通过 pid 获取对应进程信息
             proc = psutil.Process(pid)
             while proc.is_running() and not proc.status() == psutil.STATUS_ZOMBIE:
+                # print("主进程：", proc)
                 memory_info = proc.memory_info()
                 memory_usage_mb = memory_info.rss / 1024 / 1024
                 memory_usage.append(memory_usage_mb)
@@ -236,13 +237,15 @@ def test():
     detailFile = open(os.path.join(args.des, "A-detail.txt"), "w", encoding='utf-8')
     for file in sorted(os.listdir(args.src),key=lambda x:int(re.split(r'[_.]+',x)[1])): # 测试所有用例
         # 运行调度算法
-        cmd = " ".join([exePath, "-f", os.path.join(args.src, file)])
+        # cmd = " ".join([exePath, "-f", os.path.join(args.src, file)])
         # process = subprocess.run(cmd, shell=True, stderr=subprocess.PIPE, text=True)
-        stdout_file = open(os.path.join(args.des, file), 'w') # 不使用命令行重定向了，不然内存监控的进程不对，改为使用 subprocess 来重定向
+        cmd_lst = [exePath, "-f", os.path.join(args.src, file)]
+        stdout_file = open(os.path.join(args.des, file), 'w')
         # 启动进程
-        process = subprocess.Popen(cmd, shell=True, stdout=stdout_file, stderr=subprocess.PIPE, text=True) # 异步的
+        process = subprocess.Popen(cmd_lst, shell=False, stdout=stdout_file, stderr=subprocess.PIPE, text=True) # 异步的
+        
         # 监控内存
-        monitor_memory(process, 1)
+        monitor_memory(process, 0.1)
         # 等待子进程完成
         process.wait()
         stdout_file.close()

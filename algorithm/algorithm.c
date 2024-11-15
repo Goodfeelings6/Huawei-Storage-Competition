@@ -49,7 +49,7 @@ void getbaseline(const InputParam *input, OutputParam *output)
     else{
         maxbase = base_tapeBeltWear;
     }
-    maxbase = maxbase*10/input->ioVec.len;
+    maxbase = maxbase*10;
     base_totaltime /= maxbase;
     base_tapeBeltWear /= maxbase;
     base_tapeMotorWear /= maxbase;
@@ -109,7 +109,8 @@ double MyGetTime(){ // 返回实际时间：秒
 /* 返回目标函数值(距离) */
 int GetObjectValue(const HeadInfo *start, const HeadInfo *end){ 
     double value = SeekTimeCalculate(start, end)*alpha/base_totaltime+BeltWearTimes(start, end, NULL)*beta/base_tapeBeltWear+MotorWearTimes(start, end)*gama/base_tapeMotorWear;
-    // assert(value < INF);
+    // if(value<100)
+    //     printf("value:%f\n", value);
     return (int)value;
     // return SeekTimeCalculate(start, end);
     // return SeekTimeCalculate(start, end)+BeltWearTimes(start, end, NULL)+MotorWearTimes(start, end);
@@ -141,32 +142,32 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         //@flag1000
-		p->POPMUSIC_SampleSize = 20;
-		p->POPMUSIC_Solutions = 60;
+		p->POPMUSIC_SampleSize = 10;
+		p->POPMUSIC_Solutions = 30;
     }
     else if(matDimension <= 2002){ // 2000
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         //@flag2000
-		p->POPMUSIC_SampleSize = 20;
-		p->POPMUSIC_Solutions = 60;
+		p->POPMUSIC_SampleSize = 15;
+		p->POPMUSIC_Solutions = 30;
     }
     else if(matDimension <= 5002){ // 5000
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         //@flag5000
-		p->POPMUSIC_SampleSize = 20;
-		p->POPMUSIC_Solutions = 25;
+		p->POPMUSIC_SampleSize = 15;
+		p->POPMUSIC_Solutions = 10;
     }
     else{ // 10000
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         //@flag10000
-		p->POPMUSIC_SampleSize = 20;
-		p->POPMUSIC_Solutions = 20;
+		p->POPMUSIC_SampleSize = 15;
+		p->POPMUSIC_Solutions = 5;
     }
     p->Runs = 1;
     p->TraceLevel = 1;
@@ -177,7 +178,7 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
     printf("p->ScheduleScoreInSecond = %lf\n", p->ScheduleScoreInSecond);
     printf("p->PenaltyScoreInSecond = %lf\n", p->PenaltyScoreInSecond);
     p->MoveType = 3;
-    p->TimeSpan = 1;
+    p->TimeSpan = 2;
 }
 
 // 实时算代价
@@ -262,7 +263,64 @@ void getAdjMat(const InputParam *input, int len, int** adjMat){
 #endif
 }
 
+// 邻接表算代价
 void getAdjList1(const InputParam* input, Graph* graph) {
+    uint32_t len = graph->n;
+
+ for (uint32_t i = 0; i < len - 2; ++i) {
+        NodeCost *nodeCosts = (NodeCost *)malloc((len - 1) * sizeof(NodeCost));  // len-1是因为不考虑节点到自己的代价
+        int count = 0;
+        for (uint32_t j = 0; j < len - 2; ++j) {
+            if(i == j)
+            continue;
+            
+            HeadInfo start = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].endLpos, HEAD_RW};
+            HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
+            nodeCosts[count].node=j;
+            nodeCosts[count].cost =-GetObjectValue(&start, &end);
+            count++;
+        }
+
+        // 对代价数组按代价升序排序
+        qsort(nodeCosts, count, sizeof(NodeCost), compareEdges);
+
+        // 打印当前节点i的最近十个节点
+        // printf("Node %d's nearest 10 nodes: ", i);
+        for (int k = 0; k < 500 && k < count; ++k) {
+            addEdge(graph, i, nodeCosts[k].node, nodeCosts[k].cost);
+           // printf("%d (cost: %d) ", nodeCosts[k].node, nodeCosts[k].cost);
+        }
+        // printf("\n");
+
+        // 释放内存
+        free(nodeCosts);
+
+    }
+    // 处理虚拟节点和磁头节点的代价
+    // 虚拟节点 (len-2) 到其他节点的代价为 INF
+
+    for (uint32_t i = 0; i < len - 2; ++i) {
+        //addEdge(graph, len - 2, i, -INF);  // 虚拟节点到其他节点的代价为 INF
+        addEdge(graph, i, len - 2, 0);    // 其他节点到虚拟节点的代价为 0
+
+        // 磁头节点 (len-1) 到其他节点的代价为计算后的值
+        HeadInfo start = {input->headInfo.wrap, input->headInfo.lpos, input->headInfo.status};
+        HeadInfo end = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].startLpos, HEAD_RW};
+        Cost headCost = GetObjectValue(&start, &end);
+        addEdge(graph, len - 1, i, -headCost);  // 磁头节点到任务的代价
+        //addEdge(graph, i, len - 1, -INF);      // 其他节点到磁头节点的代价为 INF
+    }
+
+    // 虚拟节点到磁头节点的代价为 0
+    addEdge(graph, len - 2, len - 1, 0);  // 虚拟节点到磁头节点的代价为 0
+    //addEdge(graph, len - 1, len - 2, -INF);  // 磁头节点到虚拟节点的代价为 INF
+
+    // // 虚拟节点和磁头节点到自身的代价为 INF
+    // addEdge(graph, len - 2, len - 2, -INF);  // 虚拟节点到自己
+    // addEdge(graph, len - 1, len - 1, -INF);  // 磁头节点到自己
+}
+
+void getAdjList2(const InputParam* input, Graph* graph) {
     uint32_t len = graph->n;
 
     for (uint32_t i = 0; i < len - 2; ++i) {
@@ -275,15 +333,20 @@ void getAdjList1(const InputParam* input, Graph* graph) {
             HeadInfo start = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].endLpos, HEAD_RW};
             HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
             int cost = GetObjectValue(&start, &end);
-
+//printf("cost=%lf\n",cost);
             NodeCost newElement = {j, cost};
-            insertMinHeap(heap, &heapSize, newElement);
+            insertMaxHeap(heap, &heapSize, newElement);
         }
-
+        //printf("heapSize=%d\n",heapSize);
         // 将堆中元素添加到图的邻接表中
         for (int k = 0; k < heapSize; ++k) {
             addEdge(graph, i, heap[k].node, -heap[k].cost);
         }
+    //     printf("Heap for node %d:\n",i);
+    //     for (int i = 0; i < heapSize; ++i) {
+    //      printf("Node: %d, Cost: %lf\t", heap[i].node, heap[i].cost);
+    //     }
+    // printf("\n");
     }
 
     // 处理虚拟节点和磁头节点的代价
@@ -311,7 +374,7 @@ int32_t LKH_MM(const InputParam *input, OutputParam *output)
 
     int *intialTour = (int *)malloc(len * sizeof(int));
     intialTour[0] = len - 1, intialTour[1] = len;
-    MaxMatching_Random(input, output);
+    MaxMatching_Random_heap(input, output);
     // MaxMatching_Greedy(input, output);
     for (int i = 2; i < len; i++)
         intialTour[i] = output->sequence[i - 2];
@@ -876,7 +939,7 @@ int MaxMatching_Random_qsort(const InputParam *input, OutputParam *output) {
     initGraph(&graph, len);
 
     // 构建邻接表
-    getAdjList(input, &graph);
+    getAdjList1(input, &graph);
 
     // 初始化 MaxMatchingByHarryZHR 结构体
     MaxMatchingByHarryZHR matcher;
@@ -885,6 +948,75 @@ int MaxMatching_Random_qsort(const InputParam *input, OutputParam *output) {
     // 调用最大匹配算法
     int* Next = solveMaxMatchingByHarryZHR(&matcher, &graph)->arr;
 
+    int* visited = (int*)calloc(len, sizeof(int)); // 标记已经到达过的节点
+
+    int idx = 0;
+    int loops=0;
+    for (int i = len - 1; i >= 0; --i) {
+        if (!visited[i]) {
+             loops++;
+            int current = i;
+           // printf("环路: %d", current);
+            if (current != len - 1 && current != len - 2) {
+                output->sequence[idx++] = current + 1;
+            }
+            while (Next[current] != -1 && !visited[Next[current]]) {
+                visited[current] = 1;
+                current = Next[current];
+                if (current != len - 1 && current != len - 2) {
+                    output->sequence[idx++] = current + 1;
+                }
+                // printf(" -> %d", current);
+            }
+            visited[current] = 1;
+             //printf("\n");
+        }
+    }
+    printf("环路个数: %d\n", loops);
+// #if DEBUG_LEVEL >= 1
+//     printf("最大匹配算法得到的 io 序列:\n");
+//     for (uint32_t i = 0; i < input->ioVec.len; ++i) {
+//         printf("%d ", output->sequence[i]);
+//     }
+//     printf("\n");
+// #endif
+
+    // 释放资源
+    free(visited);
+    freeMaxMatchingByHarryZHR(&matcher);
+    
+    // 释放图的邻接表内存
+    for (int i = 0; i < graph.n; i++) {
+        Edge *e = graph.lists[i].head;
+        while (e) {
+            Edge *tmp = e;
+            e = e->next;
+            free(tmp);
+        }
+    }
+    free(graph.lists);
+
+    return 0;
+}
+
+// 最大匹配(MaxMatchingByHarryZHRsolver)-随机拼接
+int MaxMatching_Random_heap(const InputParam *input, OutputParam *output) {
+    uint32_t len = output->len + 2; // 增加了一个虚拟节点和磁头起始位置节点
+
+    // 初始化图
+    Graph graph;
+    initGraph(&graph, len);
+
+    // 构建邻接表
+    getAdjList2(input, &graph);
+    printf("构建邻接表完成\n");
+    // 初始化 MaxMatchingByHarryZHR 结构体
+    MaxMatchingByHarryZHR matcher;
+    initMaxMatchingByHarryZHR(&matcher, len);
+printf("initMaxMatchingByHarryZHR完成\n");
+    // 调用最大匹配算法
+    int* Next = solveMaxMatchingByHarryZHR(&matcher, &graph)->arr;
+    printf("最大匹配算法完成\n");
     int* visited = (int*)calloc(len, sizeof(int)); // 标记已经到达过的节点
 
     int idx = 0;
@@ -1034,13 +1166,13 @@ int32_t IOScheduleAlgorithm(const InputParam *input, OutputParam *output)
     getbaseline(input, output);
 
     // 使用 LKH_MM 算法
-    //return LKH_MM(input, output);
+    // return LKH_MM(input, output);
 
     // 使用 LKH_GI 算法
     // return LKH_GI(input, output); 
 
     // 使用 LKH_NN 算法
-    //return LKH_NN(input, output);
+    return LKH_NN(input, output);
 
     // 使用最近邻贪心算法 
     // return NearestNeighbor(input, output);
@@ -1049,8 +1181,8 @@ int32_t IOScheduleAlgorithm(const InputParam *input, OutputParam *output)
     // return GreedyInsert(input, output);
 
     // 使用最大匹配-随机拼接算法
-     return MaxMatching_Random_qsort(input, output);
-     //return MaxMatching_Random_heap(input, output);
+    //return MaxMatching_Random_qsort(input, output);
+    //return MaxMatching_Random_heap(input, output);
     // 使用最大匹配-贪心拼接算法
     // return MaxMatching_Greedy(input, output);
 

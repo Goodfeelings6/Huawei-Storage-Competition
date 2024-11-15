@@ -43,6 +43,7 @@ def monitor_memory(process:subprocess.Popen, interval=1):
             # 线程通过 pid 获取对应进程信息
             proc = psutil.Process(pid)
             while proc.is_running() and not proc.status() == psutil.STATUS_ZOMBIE:
+                # print("主进程：", proc)
                 memory_info = proc.memory_info()
                 memory_usage_mb = memory_info.rss / 1024 / 1024
                 memory_usage.append(memory_usage_mb)
@@ -74,13 +75,20 @@ def test():
     if not os.path.exists(os.path.dirname(args.des)): # 若输出文件夹不存在则创建
         os.mkdir(os.path.dirname(args.des))
     exePath = os.path.join(os.path.dirname(testDir), "bin", "project_hw")
-    cmd = " ".join([exePath, "-f", args.src])
-    stdout_file = open(args.des, 'w') # 不使用命令行重定向了，不然内存监控的进程不对，改为使用 subprocess 来重定向
-    # 启动进程
-    process = subprocess.Popen(cmd, shell=True, stdout=stdout_file, stderr=subprocess.PIPE, text=True) # 异步的
+
+    # cmd_str = " ".join([exePath, "-f", args.src, ">"+args.des]) # 使用命令行重定向到对应文件
+    cmd_lst = [exePath, "-f", args.src]
+    # 启动进程(1若使用shell=True， 故可以直接传递一个命令字符串cmd_str， 但主进程将是sh，由sh派生子进程执行cmd_str命令，
+    #         所以统计内存需注意，要统计的是子进程的内存。
+    #         2若使用shell=False，只能传递列表命令cmd_lst，此时cmd_lst将作为主进程执行； 其次，无法使用'>'符号来命令行重定向，
+    #         只能通过 stdout、 stderr来实现重定向)
+    # 为方便统计内存， 此处用 shell=False， stdout重定向
+    stdout_file = open(args.des, 'w')
+    process = subprocess.Popen(cmd_lst, shell=False, stdout=stdout_file, stderr=subprocess.PIPE, text=True) # 异步的
+    
     # 监控内存
-    monitor_memory(process, 1)
-    # 等待子进程完成
+    monitor_memory(process, 0.1)
+    # 等待进程完成
     process.wait()
     stdout_file.close()
     # 获取进程输出

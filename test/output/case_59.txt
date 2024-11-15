@@ -2,35 +2,33 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_59.txt
-head info : [91,268752,0]
-
-io count = 10000
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset
 
 
-base_totaltime = 156745617.001083
-base_tapeBeltWear = 94938147.000000
-base_tapeMotorWear = 37313.000000
-maxbase = 156745.617001
-new base_totaltime = 1000.000000
-new base_tapeBeltWear = 605.682946
-new base_tapeMotorWear = 0.238048
-hdd
-p->ScheduleScoreInSecond = 784.228085
+base_totaltime = 0.000000
+base_tapeBeltWear = 0.000000
+base_tapeMotorWear = 0.000000
+maxbase = nan
+new base_totaltime = nan
+new base_tapeBeltWear = nan
+new base_tapeMotorWear = nan
+backup
+p->ScheduleScoreInSecond = nan
+p->PenaltyScoreInSecond = nan
 Reading TOUR...done
 done
-ASCENT_CANDIDATES = 50
+ASCENT_CANDIDATES = 3
 BACKBONE_TRIALS = 0
 BACKTRACKING = NO
 # CANDIDATE_FILE =
-CANDIDATE_SET_TYPE = POPMUSIC
+CANDIDATE_SET_TYPE = ALPHA
 # EDGE_FILE =
-EXCESS = 4.999e-05
+EXCESS = 0.25
 EXTRA_CANDIDATES = 0 
 EXTRA_CANDIDATE_SET_TYPE = QUADRANT
 GAIN23 = YES
 GAIN_CRITERION = YES
-INITIAL_PERIOD = 10002
+INITIAL_PERIOD = 100
 INITIAL_STEP_SIZE = 1
 INITIAL_TOUR_ALGORITHM = WALK
 # INITIAL_TOUR_FILE = 
@@ -39,9 +37,9 @@ INITIAL_TOUR_FRACTION = 1.000
 KICK_TYPE = 0
 KICKS = 1
 # MAX_BREADTH =
-MAX_CANDIDATES = 5 
-MAX_SWAPS = 20004
-MAX_TRIALS = 20004
+MAX_CANDIDATES = 3 
+MAX_SWAPS = 4
+MAX_TRIALS = 4
 # MERGE_TOUR_FILE =
 MOVE_TYPE = 3
 # NONSEQUENTIAL_MOVE_TYPE = 3
@@ -50,10 +48,10 @@ MOVE_TYPE = 3
 PATCHING_A = 1 
 PATCHING_C = 0 
 # PI_FILE = 
-POPMUSIC_INITIAL_TOUR = YES
-POPMUSIC_MAX_NEIGHBORS = 5
-POPMUSIC_SAMPLE_SIZE = 10
-POPMUSIC_SOLUTIONS = 10
+POPMUSIC_INITIAL_TOUR = NO
+POPMUSIC_MAX_NEIGHBORS = 3
+POPMUSIC_SAMPLE_SIZE = 4
+POPMUSIC_SOLUTIONS = 50
 POPMUSIC_TRIALS = 1
 # POPULATION_SIZE = 0
 PRECISION = 100
@@ -63,54 +61,35 @@ RESTRICTED_SEARCH = YES
 RUNS = 1
 SEED = 1
 STOP_AT_OPTIMUM = YES
-SUBGRADIENT = NO
+SUBGRADIENT = YES
 # SUBPROBLEM_SIZE =
 # SUBPROBLEM_TOUR_FILE = 
 SUBSEQUENT_MOVE_TYPE = 3
 SUBSEQUENT_PATCHING = YES
 # TIME_LIMIT =
-TOTAL_TIME_LIMIT = 20.0
+TOTAL_TIME_LIMIT = 40.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 660.0, Ascent time = 8.08 sec.
-Cand.min = 2, Cand.avg = 5.6, Cand.max = 7
-Edges.fixed = 10003 [Cost = 0]
-Preprocessing time = 8.14 sec.
-* 1: Cost = 6687, Time = 0.21 sec. 
-* 2: Cost = 6551, Time = 0.35 sec. 
-* 4: Cost = 6533, Time = 0.59 sec. 
-* 5: Cost = 6227, Time = 0.72 sec. 
-* 10: Cost = 6195, Time = 1.35 sec. 
-* 13: Cost = 6148, Time = 1.70 sec. 
-* 14: Cost = 6051, Time = 1.83 sec. 
-* 15: Cost = 6037, Time = 1.99 sec. 
-* 16: Cost = 6018, Time = 2.12 sec. 
-* 21: Cost = 6006, Time = 2.70 sec. 
-* 23: Cost = 5995, Time = 2.92 sec. 
-* 25: Cost = 5968, Time = 3.15 sec. 
-* 27: Cost = 5907, Time = 3.40 sec. 
-* 30: Cost = 5876, Time = 3.76 sec. 
-* 31: Cost = 5841, Time = 3.87 sec. 
-* 33: Cost = 5831, Time = 4.10 sec. 
-*** The extent of improvement(187) is too small in 2.0s ***
-Run 1: Cost = 5831, Time = 4.22 sec. 
-
-Successes/Runs = 0/1
-Cost.min = 5831, Cost.avg = 5831.00, Cost.max = 5831
+Lower bound = 10737418.0, Ascent time = 0.00 sec.
+Cand.min = 2, Cand.avg = 2.0, Cand.max = 2
+Edges.fixed = 3 [Cost = 0]
+Preprocessing time = 0.00 sec.
+Successes/Runs = 1/0
+Cost.min = 10737418, Cost.avg = 10737418.00, Cost.max = 10737418
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 34, Trials.avg = 34.0, Trials.max = 34
-Time.min = 4.22 sec., Time.avg = 4.22 sec., Time.max = 4.22 sec.
-Time.total = 18.02 sec.
+Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
+Time.min = 0.00 sec., Time.avg = 0.00 sec., Time.max = 0.00 sec.
+Time.total = 0.00 sec.
 
 Key Metrics:
-	ioCount:			 10000
-	algorithmRunningDuration:	 18267.724 (ms)
-	memoryUse:			 12280.21 (KB)
-	addressingDuration:		 11653789 (ms)
-	readDuration:			 10557983 (ms)
-	tapeBeltWear:			 20640100
-	tapeMotorWear:			 315
+	ioCount:			 0
+	algorithmRunningDuration:	 0.833 (ms)
+	memoryUse:			 2756.00 (KB)
+	addressingDuration:		 0 (ms)
+	readDuration:			 0 (ms)
+	tapeBeltWear:			 0
+	tapeMotorWear:			 0
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt
