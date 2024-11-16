@@ -1,0 +1,90 @@
+|   算例   |  IO数量 | Ascent时间| 局部搜索 |  总用时  |  最终Cost |
+|----------|--------|----------|-----------|----------|----------|
+|  case_1  |   10   |   none   s|      0s       |  7.11ms  |   none   |
+|  case_2  |   10   |   none   s|      0s       |  4.82ms  |   none   |
+|  case_3  |   10   |   none   s|      0s       |  6.75ms  |   none   |
+|  case_4  |   10   |   none   s|      0s       |  4.51ms  |   none   |
+|  case_5  |   10   |   none   s|      0s       |  6.27ms  |   none   |
+|  case_6  |   10   |   none   s|      0s       |  3.62ms  |   none   |
+|  case_7  |   10   |   none   s|      0s       |  5.01ms  |   none   |
+|  case_8  |   10   |   none   s|      0s       |  2.51ms  |   none   |
+|  case_9  |   50   |   none   s|      0s       |  7.7ms   |   none   |
+| case_10  |   50   |   none   s|      0s       |  6.57ms  |   none   |
+| case_11  |   50   |   none   s|      0s       |  8.83ms  |   none   |
+| case_12  |   50   |   none   s|      0s       | 10.59ms  |   none   |
+| case_13  |   50   |   none   s|      0s       |  9.49ms  |   none   |
+| case_14  |   50   |   none   s|      0s       |  5.46ms  |   none   |
+| case_15  |   50   |   none   s|      0s       |  7.73ms  |   none   |
+| case_16  |   50   |   none   s|      0s       |  6.92ms  |   none   |
+| case_17  |  100   |   none   s|      0s       |  9.23ms  |   none   |
+| case_18  |  100   |   none   s|      0s       |  6.48ms  |   none   |
+| case_19  |  100   |   none   s|      0s       |  8.46ms  |   none   |
+| case_20  |  100   |   none   s|      0s       |  7.42ms  |   none   |
+| case_21  |  100   |   none   s|      0s       |  7.75ms  |   none   |
+| case_22  |  100   |   none   s|      0s       |  7.04ms  |   none   |
+| case_23  |  100   |   none   s|      0s       |  9.83ms  |   none   |
+| case_24  |  100   |   none   s|      0s       |  7.6ms   |   none   |
+| case_25  |  100   |   none   s|      0s       |  8.97ms  |   none   |
+| case_26  |  100   |   none   s|      0s       |  9.81ms  |   none   |
+| case_27  |  1000  |   none   s|      0s       |  75.5ms  |   none   |
+| case_28  |  1000  |   none   s|      0s       | 78.21ms  |   none   |
+| case_29  |  1000  |   none   s|      0s       | 74.41ms  |   none   |
+| case_30  |  1000  |   none   s|      0s       | 85.92ms  |   none   |
+| case_31  |  1000  |   none   s|      0s       | 76.92ms  |   none   |
+| case_32  |  1000  |   none   s|      0s       | 80.44ms  |   none   |
+| case_33  |  1000  |   none   s|      0s       | 74.82ms  |   none   |
+| case_34  |  1000  |   none   s|      0s       | 82.32ms  |   none   |
+| case_35  |  1000  |   none   s|      0s       | 73.69ms  |   none   |
+| case_36  |  1000  |   none   s|      0s       | 74.28ms  |   none   |
+| case_37  |  2000  |   none   s|      0s       | 266.07ms |   none   |
+| case_38  |  2000  |   none   s|      0s       | 274.63ms |   none   |
+| case_39  |  2000  |   none   s|      0s       | 266.3ms  |   none   |
+| case_40  |  2000  |   none   s|      0s       | 273.96ms |   none   |
+| case_41  |  2000  |   none   s|      0s       | 266.51ms |   none   |
+| case_42  |  2000  |   none   s|      0s       | 277.56ms |   none   |
+| case_43  |  2000  |   none   s|      0s       | 266.56ms |   none   |
+| case_44  |  2000  |   none   s|      0s       | 277.19ms |   none   |
+| case_45  |  5000  |   none   s|      0s       |1537.05ms |   none   |
+| case_46  |  5000  |   none   s|      0s       |1570.72ms |   none   |
+| case_47  |  5000  |   none   s|      0s       |1541.03ms |   none   |
+| case_48  |  5000  |   none   s|      0s       |1573.02ms |   none   |
+| case_49  |  5000  |   none   s|      0s       |1540.68ms |   none   |
+| case_50  |  5000  |   none   s|      0s       |1577.78ms |   none   |
+| case_51  |  5000  |   none   s|      0s       |1538.01ms |   none   |
+| case_52  |  5000  |   none   s|      0s       |1665.66ms |   none   |
+| case_53  | 10000  |   none   s|      0s       |5928.72ms |   none   |
+| case_54  | 10000  |   none   s|      0s       |6035.73ms |   none   |
+| case_55  | 10000  |   none   s|      0s       |5945.34ms |   none   |
+| case_56  | 10000  |   none   s|      0s       |6058.26ms |   none   |
+| case_57  | 10000  |   none   s|      0s       |5940.75ms |   none   |
+| case_58  | 10000  |   none   s|      0s       |6057.18ms |   none   |
+| case_59  | 10000  |   none   s|      0s       |5953.93ms |   none   |
+| case_60  | 10000  |   none   s|      0s       |6069.84ms |   none   |
+| case_61  |   10   |   none   s|      0s       |  5.79ms  |   none   |
+| case_62  |   10   |   none   s|      0s       |  1.88ms  |   none   |
+| case_63  |   10   |   none   s|      0s       |  2.95ms  |   none   |
+| case_64  |   10   |   none   s|      0s       |  8.03ms  |   none   |
+| case_65  |   50   |   none   s|      0s       |  7.64ms  |   none   |
+| case_66  |   50   |   none   s|      0s       |  5.88ms  |   none   |
+| case_67  |   50   |   none   s|      0s       |  8.14ms  |   none   |
+| case_68  |   50   |   none   s|      0s       |  9.08ms  |   none   |
+| case_69  |  100   |   none   s|      0s       |  7.22ms  |   none   |
+| case_70  |  100   |   none   s|      0s       |  9.83ms  |   none   |
+| case_71  |  100   |   none   s|      0s       |  7.79ms  |   none   |
+| case_72  |  100   |   none   s|      0s       |  9.4ms   |   none   |
+| case_73  |  1000  |   none   s|      0s       | 70.49ms  |   none   |
+| case_74  |  1000  |   none   s|      0s       | 70.97ms  |   none   |
+| case_75  |  1000  |   none   s|      0s       | 70.54ms  |   none   |
+| case_76  |  1000  |   none   s|      0s       | 70.93ms  |   none   |
+| case_77  |  2000  |   none   s|      0s       | 246.01ms |   none   |
+| case_78  |  2000  |   none   s|      0s       | 249.1ms  |   none   |
+| case_79  |  2000  |   none   s|      0s       | 249.81ms |   none   |
+| case_80  |  2000  |   none   s|      0s       | 252.15ms |   none   |
+| case_81  |  5000  |   none   s|      0s       | 1425.5ms |   none   |
+| case_82  |  5000  |   none   s|      0s       |1428.35ms |   none   |
+| case_83  |  5000  |   none   s|      0s       |1432.76ms |   none   |
+| case_84  |  5000  |   none   s|      0s       |1443.41ms |   none   |
+| case_85  | 10000  |   none   s|      0s       | 5466.7ms |   none   |
+| case_86  | 10000  |   none   s|      0s       |5470.62ms |   none   |
+| case_87  | 10000  |   none   s|      0s       |5485.11ms |   none   |
+| case_88  | 10000  |   none   s|      0s       |5521.17ms |   none   |

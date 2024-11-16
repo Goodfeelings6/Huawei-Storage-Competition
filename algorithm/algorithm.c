@@ -39,9 +39,9 @@ void getbaseline(const InputParam *input, OutputParam *output)
     base_tapeBeltWear = TotalTapeBeltWearTimes(input, output, &segWearInfo);
     /* 基线电机磨损 */
     base_tapeMotorWear = TotalMotorWearTimes(input, output);
-    printf("base_totaltime = %lf\n", base_totaltime);
-    printf("base_tapeBeltWear = %lf\n", base_tapeBeltWear);
-    printf("base_tapeMotorWear = %lf\n", base_tapeMotorWear);
+    // printf("base_totaltime = %lf\n", base_totaltime);
+    // printf("base_tapeBeltWear = %lf\n", base_tapeBeltWear);
+    // printf("base_tapeMotorWear = %lf\n", base_tapeMotorWear);
 
     if (base_tapeBeltWear < base_totaltime){
         maxbase = base_totaltime;
@@ -53,10 +53,10 @@ void getbaseline(const InputParam *input, OutputParam *output)
     base_totaltime /= maxbase;
     base_tapeBeltWear /= maxbase;
     base_tapeMotorWear /= maxbase;
-    printf("maxbase = %lf\n", maxbase);
-    printf("new base_totaltime = %lf\n", base_totaltime);
-    printf("new base_tapeBeltWear = %lf\n", base_tapeBeltWear);
-    printf("new base_tapeMotorWear = %lf\n", base_tapeMotorWear);
+    // printf("maxbase = %lf\n", maxbase);
+    // printf("new base_totaltime = %lf\n", base_totaltime);
+    // printf("new base_tapeBeltWear = %lf\n", base_tapeBeltWear);
+    // printf("new base_tapeMotorWear = %lf\n", base_tapeMotorWear);
 
     /* 检测算例场景 
        备份归档场景backup：alpha=0.3,beta=0.5,gama=0.2 
@@ -95,10 +95,10 @@ void getbaseline(const InputParam *input, OutputParam *output)
         }
     }
     // printf("Nosequential_count = %d\n", Nosequential_count);
-    if(alpha==0.3)
-        printf("backup\n");
-    else
-        printf("hdd\n");
+    // if(alpha==0.3)
+    //     printf("backup\n");
+    // else
+    //     printf("hdd\n");
 }
 
 double MyGetTime(){ // 返回实际时间：秒
@@ -108,8 +108,10 @@ double MyGetTime(){ // 返回实际时间：秒
 }
 
 /* 返回目标函数值(距离) */
-int GetObjectValue(const HeadInfo *start, const HeadInfo *end){ 
-    double value = SeekTimeCalculate(start, end)*alpha/base_totaltime+BeltWearTimes(start, end, NULL)*beta/base_tapeBeltWear+MotorWearTimes(start, end)*gama/base_tapeMotorWear;
+int GetObjectValue(const HeadInfo *start, const HeadInfo *end){
+    double value = SeekTimeCalculate(start, end) * alpha / base_totaltime + BeltWearTimes(start, end, NULL) * beta / base_tapeBeltWear + MotorWearTimes(start, end) * gama / base_tapeMotorWear;
+    // double value = SeekTimeCalculate(start, end)*alpha/base_totaltime+MotorWearTimes(start, end)*gama/base_tapeMotorWear;
+    // double value = BeltWearTimes(start, end, NULL) * beta / base_tapeBeltWear +MotorWearTimes(start, end)*gama/base_tapeMotorWear;
     // if(value<100)
     //     printf("value:%f\n", value);
     return (int)value;
@@ -143,16 +145,16 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         //@flag1000
-		p->POPMUSIC_SampleSize = 15;
-		p->POPMUSIC_Solutions = 20;
+		p->POPMUSIC_SampleSize = 25;
+		p->POPMUSIC_Solutions = 5;
     }
     else if(matDimension <= 2002){ // 2000
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         //@flag2000
-		p->POPMUSIC_SampleSize = 10;
-		p->POPMUSIC_Solutions = 20;
+		p->POPMUSIC_SampleSize = 25;
+		p->POPMUSIC_Solutions = 5;
     }
     else if(matDimension <= 5002){ // 5000
         p->Subgradient = 0;
@@ -160,7 +162,7 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         p->POPMUSIC_InitialTour = 1;
         //@flag5000
 		p->POPMUSIC_SampleSize = 20;
-		p->POPMUSIC_Solutions = 5;
+		p->POPMUSIC_Solutions = 4;
     }
     else{ // 10000
         p->Subgradient = 0;
@@ -171,13 +173,13 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
 		p->POPMUSIC_Solutions = 3;
     }
     p->Runs = 1;
-    p->TraceLevel = 1;
+    p->TraceLevel = 0;
     p->TimeLimit = DBL_MAX; // 由总时间、一定时间跨度内的改进值共同控制退出即可
     p->TotalTimeLimit = 40; // 最大允许运行时间
     p->PenaltyScoreInSecond = alpha*1000/base_totaltime + ((2-(matDimension-2)/10000.0)/200.0)*maxbase; /* 20s后每多算1秒实际罚分 (相对Cost) */
     p->ScheduleScoreInSecond = alpha*1000/base_totaltime + (((matDimension-2)/10000.0)/200.0)*maxbase;/* 20s内每少算1秒实际加分 (相对Cost) */
-    printf("p->ScheduleScoreInSecond = %lf\n", p->ScheduleScoreInSecond);
-    printf("p->PenaltyScoreInSecond = %lf\n", p->PenaltyScoreInSecond);
+    // printf("p->ScheduleScoreInSecond = %lf\n", p->ScheduleScoreInSecond);
+    // printf("p->PenaltyScoreInSecond = %lf\n", p->PenaltyScoreInSecond);
     p->MoveType = 3;
     p->TimeSpan = 1;
 }
@@ -1014,7 +1016,7 @@ int MaxMatching_Random_heap(const InputParam *input, OutputParam *output) {
     // 初始化 MaxMatchingByHarryZHR 结构体
     MaxMatchingByHarryZHR matcher;
     initMaxMatchingByHarryZHR(&matcher, len);
-printf("initMaxMatchingByHarryZHR完成\n");
+    printf("initMaxMatchingByHarryZHR完成\n");
     // 调用最大匹配算法
     int* Next = solveMaxMatchingByHarryZHR(&matcher, &graph)->arr;
     printf("最大匹配算法完成\n");
@@ -1072,28 +1074,22 @@ printf("initMaxMatchingByHarryZHR完成\n");
 // 最大匹配(MaxMatchingByHarryZHRsolver)-贪心拼接
 int MaxMatching_Greedy(const InputParam *input, OutputParam *output) {
     uint32_t len = output->len + 2; // 增加了一个虚拟节点和磁头起始位置节点
-// #ifndef USING_REAL_TIME_COST
-   /* 生成邻接矩阵 */
-    int **adjMat = (int **)malloc(sizeof(int *) * len);
-    for (uint32_t i = 0; i < len; ++i){
-        adjMat[i] = (int *)malloc(sizeof(int) * len);
-    }
-    getAdjMat(input, len, adjMat);
+    // 初始化图
+    Graph graph;
+    initGraph(&graph, len);
 
-    // 矩阵转换
-    for (uint32_t i = 0; i < len; ++i) {
-        for (uint32_t j = 0; j < len; ++j) {
-            adjMat[i][j] =  -adjMat[i][j];
-        }
-    }
-// #endif
-
+    // 构建邻接表
+    getAdjList2(input, &graph);
+    printf("构建邻接表完成\n");
     // 初始化 MaxMatchingByHarryZHR 结构体
     MaxMatchingByHarryZHR matcher;
     initMaxMatchingByHarryZHR(&matcher, len);
-    int* Next = solveMaxMatchingByHarryZHR(&matcher, adjMat)->arr;
+    printf("initMaxMatchingByHarryZHR完成\n");
+    // 调用最大匹配算法
+    int* Next = solveMaxMatchingByHarryZHR(&matcher, &graph)->arr;
+    printf("最大匹配算法完成\n");
     int* visited = (int*)calloc(len, sizeof(int)); // 标记已经到达过的节点
-    
+
     //printf("形成的环路：\n");
     int idx=0;
     int loops=0;
@@ -1123,8 +1119,8 @@ int MaxMatching_Greedy(const InputParam *input, OutputParam *output) {
                 intimes++;
                 int j=Next[i];//i的下一个节点j才是要判断是否连接的点
                  //printf("mincost=%d\n",mincost);
-                if(mincost>adjMat[i][j]-adjMat[current][j]){
-                    mincost=adjMat[i][j]-adjMat[current][j];
+                if(mincost>getCost(input, len, current, j)-getCost(input, len, i, j)){
+                    mincost=getCost(input, len, current, j)-getCost(input, len, i, j);
                     nextnode=j;
                 }
             }
@@ -1148,10 +1144,16 @@ int MaxMatching_Greedy(const InputParam *input, OutputParam *output) {
     // 释放 matcher 和 adjMat 的内存
     free(visited);
     freeMaxMatchingByHarryZHR(&matcher);
-    for (uint32_t i = 0; i < len; ++i) {
-        free(adjMat[i]);
+    // 释放图的邻接表内存
+    for (int i = 0; i < graph.n; i++) {
+        Edge *e = graph.lists[i].head;
+        while (e) {
+            Edge *tmp = e;
+            e = e->next;
+            free(tmp);
+        }
     }
-    free(adjMat);
+    free(graph.lists);
 
     return 0;
 }

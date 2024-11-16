@@ -9,7 +9,7 @@
 #include "Arr.h"  // 假设已经将 Arr.h 文件转换成了纯 C 的二维数组实现
 
 #define INF INT_MAX/200
-#define HEAP_SIZE 20  // 堆的大小
+#define HEAP_SIZE 30  // 堆的大小
 typedef int ID;
 typedef double Cost;
 

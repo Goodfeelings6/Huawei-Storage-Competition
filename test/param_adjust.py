@@ -91,7 +91,7 @@ def adjustParam(ioSize:int, CaseRange:list[tuple], ParamRange:list[tuple]):
 
 if __name__=="__main__":
     # 记录调参版本名
-    versionName = "最近邻-提升精度版本"
+    versionName = "最近邻-提升精度版本-扩展参数"
     with open('./adjustParamInfo.txt', 'a', encoding='utf-8') as f: 
         f.write(f"################################### {versionName} begin ###################################\n")
         # 记录开始时间
@@ -106,15 +106,14 @@ if __name__=="__main__":
     }
     # 各规模调参取值(第一个为 POPMUSIC_Solutions 可选取值，第二个区间为 POPMUSIC_SampleSize 可选取值)
     IOParamRangeDict = { 
-        # 1000:[(20,30,40,50,60),(10,15,20)],
-        1000:[(20,),(10,)],
-        2000:[(20,30,40,50,60),(10,15,20)],
-        5000:[(5,10,15,20,25),(10,15,20)],
-        10000:[(3,4,5,10),(10,15,20)]
+        1000:[(5,10,15,20),(10,15,20,25)],
+        2000:[(5,10,15,20),(10,15,20,25)],
+        5000:[(4,5,6,7),(15,20,25,30,35,40,45,50)],
+        10000:[(2,3,4,5),(20,25,30,35,40,45,50)]
     }
     # 要调参的规模
-    # IOSizes = [1000,2000,5000,10000]
-    IOSizes = [1000]
+    IOSizes = [1000,2000,5000,10000]
+    # IOSizes = [1000]
     # 自动调参
     for ioSize in IOSizes:
         print(f"io={ioSize} start...")

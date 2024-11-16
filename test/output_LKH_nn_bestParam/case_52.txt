@@ -8,10 +8,10 @@ head info : [40,650916,0]
 io count = 5000
 
 
-base_totaltime = 74136494.000512
+base_totaltime = 74136494.000508
 base_tapeBeltWear = 45495636.000000
 base_tapeMotorWear = 17465.000000
-maxbase = 741364940.005119
+maxbase = 741364940.005078
 new base_totaltime = 0.100000
 new base_tapeBeltWear = 0.061367
 new base_tapeMotorWear = 0.000024
@@ -54,7 +54,7 @@ PATCHING_C = 0
 POPMUSIC_INITIAL_TOUR = YES
 POPMUSIC_MAX_NEIGHBORS = 5
 POPMUSIC_SAMPLE_SIZE = 20
-POPMUSIC_SOLUTIONS = 5
+POPMUSIC_SOLUTIONS = 4
 POPMUSIC_TRIALS = 1
 # POPULATION_SIZE = 0
 PRECISION = 100
@@ -74,50 +74,53 @@ TOTAL_TIME_LIMIT = 40.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 19364963.0, Ascent time = 1.66 sec.
-Cand.min = 2, Cand.avg = 5.4, Cand.max = 7
+Lower bound = 20800055.0, Ascent time = 1.30 sec.
+Cand.min = 2, Cand.avg = 5.2, Cand.max = 6
 Edges.fixed = 5003 [Cost = 0]
-Preprocessing time = 1.68 sec.
-* 1: Cost = 63190093, Time = 0.19 sec. 
-* 2: Cost = 62981453, Time = 0.30 sec. 
-* 3: Cost = 61573559, Time = 0.39 sec. 
-* 4: Cost = 61557952, Time = 0.48 sec. 
-* 5: Cost = 61535677, Time = 0.58 sec. 
-* 6: Cost = 61531079, Time = 0.66 sec. 
-* 7: Cost = 61404259, Time = 0.74 sec. 
-* 8: Cost = 61272658, Time = 0.82 sec. 
-* 9: Cost = 61089922, Time = 0.91 sec. 
-* 10: Cost = 61016472, Time = 0.99 sec. 
-* 11: Cost = 60925880, Time = 1.07 sec. 
-* 12: Cost = 60921896, Time = 1.15 sec. 
-* 13: Cost = 60920496, Time = 1.22 sec. 
-* 14: Cost = 60916658, Time = 1.31 sec. 
-* 17: Cost = 60904695, Time = 1.55 sec. 
-* 18: Cost = 60901637, Time = 1.63 sec. 
-* 19: Cost = 60703428, Time = 1.72 sec. 
-* 20: Cost = 60702798, Time = 1.81 sec. 
-* 21: Cost = 60699531, Time = 1.88 sec. 
-* 22: Cost = 60640622, Time = 1.97 sec. 
-* 23: Cost = 60625751, Time = 2.06 sec. 
-* 24: Cost = 60606586, Time = 2.15 sec. 
-*** Within 20s the extent of improvement(319294(<1858412.4)) is too small in 1.0s ***
-Run 1: Cost = 60606586, Time = 2.15 sec. 
+Preprocessing time = 1.31 sec.
+* 1: Cost = 64295988, Time = 0.14 sec. 
+* 2: Cost = 63455714, Time = 0.23 sec. 
+* 3: Cost = 62188982, Time = 0.29 sec. 
+* 4: Cost = 62053419, Time = 0.37 sec. 
+* 5: Cost = 62026289, Time = 0.43 sec. 
+* 6: Cost = 61791474, Time = 0.49 sec. 
+* 7: Cost = 61781334, Time = 0.55 sec. 
+* 8: Cost = 61767200, Time = 0.62 sec. 
+* 9: Cost = 61442642, Time = 0.69 sec. 
+* 10: Cost = 61434992, Time = 0.77 sec. 
+* 11: Cost = 61433461, Time = 0.84 sec. 
+* 12: Cost = 61408386, Time = 0.91 sec. 
+* 13: Cost = 61289268, Time = 0.98 sec. 
+* 14: Cost = 61282996, Time = 1.05 sec. 
+* 15: Cost = 61243240, Time = 1.11 sec. 
+* 16: Cost = 61235020, Time = 1.18 sec. 
+* 17: Cost = 61231829, Time = 1.26 sec. 
+* 18: Cost = 61225435, Time = 1.33 sec. 
+* 19: Cost = 61223111, Time = 1.40 sec. 
+* 20: Cost = 61222718, Time = 1.47 sec. 
+* 21: Cost = 60988537, Time = 1.53 sec. 
+* 22: Cost = 60987412, Time = 1.60 sec. 
+* 26: Cost = 60975055, Time = 1.87 sec. 
+* 28: Cost = 60823116, Time = 2.01 sec. 
+* 29: Cost = 60649454, Time = 2.08 sec. 
+*** Within 20s the extent of improvement(633542(<1858412.4)) is too small in 1.0s ***
+Run 1: Cost = 60649454, Time = 2.09 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 60606586, Cost.avg = 60606586.00, Cost.max = 60606586
+Cost.min = 60649454, Cost.avg = 60649454.00, Cost.max = 60649454
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 24, Trials.avg = 24.0, Trials.max = 24
-Time.min = 2.15 sec., Time.avg = 2.15 sec., Time.max = 2.15 sec.
-Time.total = 5.28 sec.
+Trials.min = 29, Trials.avg = 29.0, Trials.max = 29
+Time.min = 2.09 sec., Time.avg = 2.09 sec., Time.max = 2.09 sec.
+Time.total = 4.85 sec.
 
 Key Metrics:
 	ioCount:			 5000
-	algorithmRunningDuration:	 5402.170 (ms)
-	memoryUse:			 8189.38 (KB)
-	addressingDuration:		 5968548 (ms)
+	algorithmRunningDuration:	 4964.510 (ms)
+	memoryUse:			 7830.82 (KB)
+	addressingDuration:		 5967790 (ms)
 	readDuration:			 5160765 (ms)
-	tapeBeltWear:			 10486598
-	tapeMotorWear:			 305
+	tapeBeltWear:			 10510026
+	tapeMotorWear:			 297
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt
