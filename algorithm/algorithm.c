@@ -106,6 +106,7 @@ double MyGetTime(){ // 返回实际时间：秒
     gettimeofday(&tv, NULL);
     return tv.tv_sec + tv.tv_usec / 1000000.0;
 }
+
 /* 返回目标函数值(距离) */
 int GetObjectValue(const HeadInfo *start, const HeadInfo *end){ 
     double value = SeekTimeCalculate(start, end)*alpha/base_totaltime+BeltWearTimes(start, end, NULL)*beta/base_tapeBeltWear+MotorWearTimes(start, end)*gama/base_tapeMotorWear;
@@ -142,43 +143,43 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         //@flag1000
-		p->POPMUSIC_SampleSize = 10;
-		p->POPMUSIC_Solutions = 30;
+		p->POPMUSIC_SampleSize = 15;
+		p->POPMUSIC_Solutions = 20;
     }
     else if(matDimension <= 2002){ // 2000
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         //@flag2000
-		p->POPMUSIC_SampleSize = 15;
-		p->POPMUSIC_Solutions = 30;
+		p->POPMUSIC_SampleSize = 10;
+		p->POPMUSIC_Solutions = 20;
     }
     else if(matDimension <= 5002){ // 5000
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         //@flag5000
-		p->POPMUSIC_SampleSize = 15;
-		p->POPMUSIC_Solutions = 10;
+		p->POPMUSIC_SampleSize = 20;
+		p->POPMUSIC_Solutions = 5;
     }
     else{ // 10000
         p->Subgradient = 0;
         p->CandidateSetType = POPMUSIC;
         p->POPMUSIC_InitialTour = 1;
         //@flag10000
-		p->POPMUSIC_SampleSize = 15;
-		p->POPMUSIC_Solutions = 5;
+		p->POPMUSIC_SampleSize = 20;
+		p->POPMUSIC_Solutions = 3;
     }
     p->Runs = 1;
     p->TraceLevel = 1;
     p->TimeLimit = DBL_MAX; // 由总时间、一定时间跨度内的改进值共同控制退出即可
     p->TotalTimeLimit = 40; // 最大允许运行时间
     p->PenaltyScoreInSecond = alpha*1000/base_totaltime + ((2-(matDimension-2)/10000.0)/200.0)*maxbase; /* 20s后每多算1秒实际罚分 (相对Cost) */
-    p->ScheduleScoreInSecond = alpha*1000/base_totaltime+(((matDimension-2)/10000.0)/200.0)*maxbase;/* 20s内每少算1秒实际加分 (相对Cost) */
+    p->ScheduleScoreInSecond = alpha*1000/base_totaltime + (((matDimension-2)/10000.0)/200.0)*maxbase;/* 20s内每少算1秒实际加分 (相对Cost) */
     printf("p->ScheduleScoreInSecond = %lf\n", p->ScheduleScoreInSecond);
     printf("p->PenaltyScoreInSecond = %lf\n", p->PenaltyScoreInSecond);
     p->MoveType = 3;
-    p->TimeSpan = 2;
+    p->TimeSpan = 1;
 }
 
 // 实时算代价

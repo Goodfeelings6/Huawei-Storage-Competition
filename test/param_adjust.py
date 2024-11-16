@@ -2,6 +2,7 @@ import os
 import re
 import subprocess
 import shutil
+import time
 
 # 样例拷贝，创建子数据集
 def copyCase(src, CaseRange:list[tuple], des):
@@ -83,11 +84,19 @@ def adjustParam(ioSize:int, CaseRange:list[tuple], ParamRange:list[tuple]):
             print(f"io={ioSize},POPMUSIC_Solutions={POPMUSIC_Solutions},POPMUSIC_SampleSize={POPMUSIC_SampleSize} done!")
     # 记录最优
     with open('./adjustParamInfo.txt', 'a', encoding='utf-8') as f:     
-        f.write("Optimal:\n")
+        f.write(f"IO={ioSize} Optimal:\n")
         f.write(maxInfo)
+        f.write("\n")
 
 
 if __name__=="__main__":
+    # 记录调参版本名
+    versionName = "最近邻-提升精度版本"
+    with open('./adjustParamInfo.txt', 'a', encoding='utf-8') as f: 
+        f.write(f"################################### {versionName} begin ###################################\n")
+        # 记录开始时间
+        f.write(f"#### start time:{time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())} ####\n")
+        
     # 各规模测试样例编号区间(第一个区间为 hdd样例，第二个区间为 backup样例)
     IOCaseRangeDict = { 
         1000:[(27,36),(73,76)],
@@ -97,14 +106,15 @@ if __name__=="__main__":
     }
     # 各规模调参取值(第一个为 POPMUSIC_Solutions 可选取值，第二个区间为 POPMUSIC_SampleSize 可选取值)
     IOParamRangeDict = { 
-        1000:[(30,40,50,60),(5,10,15,20)],
-        2000:[(30,40,50,60),(5,10,15,20)],
-        5000:[(5,10,15,20,25),(5,10,15,20)],
-        10000:[(3,4,5,10),(5,10,15,20)]
+        # 1000:[(20,30,40,50,60),(10,15,20)],
+        1000:[(20,),(10,)],
+        2000:[(20,30,40,50,60),(10,15,20)],
+        5000:[(5,10,15,20,25),(10,15,20)],
+        10000:[(3,4,5,10),(10,15,20)]
     }
     # 要调参的规模
-    IOSizes = [1000,2000,5000,10000]
-    # IOSizes = [1000]
+    # IOSizes = [1000,2000,5000,10000]
+    IOSizes = [1000]
     # 自动调参
     for ioSize in IOSizes:
         print(f"io={ioSize} start...")
@@ -114,3 +124,10 @@ if __name__=="__main__":
             f.write("|----------|--------|----------|----------|----------|----------|--------|--------|--------|----------|----------|\n")
         adjustParam(ioSize, IOCaseRangeDict[ioSize], IOParamRangeDict[ioSize])
     print(f"all done!")
+
+    # 记录结束
+    with open('./adjustParamInfo.txt', 'a', encoding='utf-8') as f: 
+        # 记录结束时间
+        f.write(f"#### end time:{time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())} ####\n")
+        f.write(f"################################### {versionName} end ###################################\n\n\n")
+    

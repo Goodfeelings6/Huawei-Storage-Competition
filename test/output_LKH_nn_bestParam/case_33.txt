@@ -1,0 +1,139 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_33.txt
+head info : [89,134812,1]
+
+io count = 1000
+
+
+base_totaltime = 8675353.000092
+base_tapeBeltWear = 5802703.000000
+base_tapeMotorWear = 1700.000000
+maxbase = 86753530.000920
+new base_totaltime = 0.100000
+new base_tapeBeltWear = 0.066887
+new base_tapeMotorWear = 0.000020
+hdd
+p->ScheduleScoreInSecond = 48376.765000
+p->PenaltyScoreInSecond = 829158.535009
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 0.000499002
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 1002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 2004
+MAX_TRIALS = 2004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 15
+POPMUSIC_SOLUTIONS = 20
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 40.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 11566538.0, Ascent time = 0.58 sec.
+Cand.min = 2, Cand.avg = 5.6, Cand.max = 7
+Edges.fixed = 1003 [Cost = 0]
+Preprocessing time = 0.58 sec.
+* 1: Cost = 31880469, Time = 0.01 sec. 
+* 2: Cost = 31551170, Time = 0.02 sec. 
+* 3: Cost = 31550761, Time = 0.03 sec. 
+* 4: Cost = 31315203, Time = 0.04 sec. 
+* 5: Cost = 31314516, Time = 0.04 sec. 
+* 6: Cost = 30492601, Time = 0.05 sec. 
+* 7: Cost = 30488827, Time = 0.06 sec. 
+* 8: Cost = 30438703, Time = 0.06 sec. 
+* 9: Cost = 30425964, Time = 0.07 sec. 
+* 11: Cost = 30417962, Time = 0.08 sec. 
+* 12: Cost = 30417423, Time = 0.09 sec. 
+* 13: Cost = 30353901, Time = 0.10 sec. 
+* 14: Cost = 30352305, Time = 0.11 sec. 
+* 17: Cost = 30352113, Time = 0.12 sec. 
+* 23: Cost = 30349703, Time = 0.17 sec. 
+* 30: Cost = 30347753, Time = 0.22 sec. 
+* 34: Cost = 30345739, Time = 0.24 sec. 
+* 37: Cost = 30313673, Time = 0.27 sec. 
+* 39: Cost = 30313566, Time = 0.28 sec. 
+* 41: Cost = 30313078, Time = 0.29 sec. 
+* 42: Cost = 30310633, Time = 0.30 sec. 
+* 45: Cost = 30310557, Time = 0.32 sec. 
+* 71: Cost = 30304943, Time = 0.50 sec. 
+* 76: Cost = 30303558, Time = 0.54 sec. 
+* 95: Cost = 30226963, Time = 0.67 sec. 
+* 96: Cost = 30226923, Time = 0.68 sec. 
+* 97: Cost = 30210533, Time = 0.68 sec. 
+* 106: Cost = 30209498, Time = 0.74 sec. 
+* 113: Cost = 30208312, Time = 0.79 sec. 
+* 128: Cost = 30125185, Time = 0.90 sec. 
+* 131: Cost = 30124981, Time = 0.92 sec. 
+* 132: Cost = 30124905, Time = 0.93 sec. 
+* 187: Cost = 30118951, Time = 1.32 sec. 
+* 212: Cost = 30118317, Time = 1.50 sec. 
+* 213: Cost = 30117807, Time = 1.51 sec. 
+* 222: Cost = 30117592, Time = 1.57 sec. 
+* 230: Cost = 30116376, Time = 1.62 sec. 
+* 244: Cost = 30109331, Time = 1.71 sec. 
+*** Within 20s the extent of improvement(15574(<48376.8)) is too small in 1.0s ***
+Run 1: Cost = 30109331, Time = 2.01 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 30109331, Cost.avg = 30109331.00, Cost.max = 30109331
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 286, Trials.avg = 286.0, Trials.max = 286
+Time.min = 2.01 sec., Time.avg = 2.01 sec., Time.max = 2.01 sec.
+Time.total = 2.65 sec.
+
+Key Metrics:
+	ioCount:			 1000
+	algorithmRunningDuration:	 2669.358 (ms)
+	memoryUse:			 5572.59 (KB)
+	addressingDuration:		 3028936 (ms)
+	readDuration:			 1054688 (ms)
+	tapeBeltWear:			 3869380
+	tapeMotorWear:			 190
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt
