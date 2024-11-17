@@ -16,8 +16,6 @@ new base_totaltime = 0.100000
 new base_tapeBeltWear = 0.070016
 new base_tapeMotorWear = 0.000021
 hdd
-p->ScheduleScoreInSecond = 57123.465000
-p->PenaltyScoreInSecond = 995345.835009
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 50
@@ -74,42 +72,72 @@ TOTAL_TIME_LIMIT = 40.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 4621277.0, Ascent time = 0.32 sec.
-Cand.min = 2, Cand.avg = 4.8, Cand.max = 7
+Lower bound = 9769525.0, Ascent time = 0.40 sec.
+Cand.min = 2, Cand.avg = 4.6, Cand.max = 7
 Edges.fixed = 1003 [Cost = 0]
-Preprocessing time = 0.32 sec.
-* 1: Cost = 13863907, Time = 0.01 sec. 
-* 2: Cost = 13788874, Time = 0.02 sec. 
-* 3: Cost = 13416171, Time = 0.03 sec. 
-* 6: Cost = 12800387, Time = 0.05 sec. 
-* 7: Cost = 12777439, Time = 0.06 sec. 
-* 9: Cost = 12719733, Time = 0.08 sec. 
-* 11: Cost = 12662859, Time = 0.09 sec. 
-* 12: Cost = 12628345, Time = 0.10 sec. 
-* 13: Cost = 12617384, Time = 0.11 sec. 
-* 14: Cost = 12617383, Time = 0.11 sec. 
-* 15: Cost = 12575288, Time = 0.12 sec. 
-* 31: Cost = 12575287, Time = 0.23 sec. 
-* 228: Cost = 12575286, Time = 1.53 sec. 
-* 260: Cost = 12575285, Time = 1.75 sec. 
-*** Within 20s the extent of improvement(2(<57123.5)) is too small in 1.0s ***
-Run 1: Cost = 12575285, Time = 2.01 sec. 
+Preprocessing time = 0.40 sec.
+* 1: Cost = 25867338, Time = 0.01 sec. 
+* 2: Cost = 25837746, Time = 0.02 sec. 
+* 4: Cost = 25837326, Time = 0.03 sec. 
+* 5: Cost = 25836448, Time = 0.04 sec. 
+* 6: Cost = 25834531, Time = 0.04 sec. 
+* 8: Cost = 25834428, Time = 0.05 sec. 
+* 10: Cost = 25828326, Time = 0.06 sec. 
+* 12: Cost = 25678784, Time = 0.07 sec. 
+* 13: Cost = 25676824, Time = 0.08 sec. 
+* 16: Cost = 25676673, Time = 0.09 sec. 
+* 17: Cost = 25675914, Time = 0.10 sec. 
+* 18: Cost = 25675132, Time = 0.10 sec. 
+* 19: Cost = 25674437, Time = 0.11 sec. 
+* 29: Cost = 25674277, Time = 0.16 sec. 
+* 30: Cost = 25674127, Time = 0.16 sec. 
+* 32: Cost = 25673427, Time = 0.17 sec. 
+* 33: Cost = 25671597, Time = 0.18 sec. 
+* 38: Cost = 25671413, Time = 0.20 sec. 
+* 43: Cost = 25670657, Time = 0.23 sec. 
+* 44: Cost = 25670288, Time = 0.23 sec. 
+* 46: Cost = 25669953, Time = 0.24 sec. 
+* 48: Cost = 25669324, Time = 0.25 sec. 
+* 53: Cost = 25668899, Time = 0.28 sec. 
+* 60: Cost = 25668125, Time = 0.32 sec. 
+* 61: Cost = 25667401, Time = 0.32 sec. 
+* 65: Cost = 25607382, Time = 0.34 sec. 
+* 74: Cost = 25607212, Time = 0.39 sec. 
+* 80: Cost = 25607022, Time = 0.42 sec. 
+* 101: Cost = 25606853, Time = 0.54 sec. 
+* 128: Cost = 25605528, Time = 0.68 sec. 
+* 158: Cost = 25605522, Time = 0.84 sec. 
+* 175: Cost = 25605338, Time = 0.93 sec. 
+* 187: Cost = 25604268, Time = 1.00 sec. 
+* 190: Cost = 25604190, Time = 1.01 sec. 
+* 197: Cost = 25603490, Time = 1.05 sec. 
+* 223: Cost = 25603455, Time = 1.20 sec. 
+* 225: Cost = 25603339, Time = 1.21 sec. 
+* 230: Cost = 25603312, Time = 1.24 sec. 
+* 252: Cost = 25603188, Time = 1.37 sec. 
+* 258: Cost = 25603182, Time = 1.41 sec. 
+* 279: Cost = 25603162, Time = 1.53 sec. 
+* 293: Cost = 25602872, Time = 1.61 sec. 
+* 304: Cost = 25602763, Time = 1.68 sec. 
+* 305: Cost = 25602422, Time = 1.69 sec. 
+*** Within 20s the extent of improvement(1846(<57123.5)) is too small in 1.0s ***
+Run 1: Cost = 25602422, Time = 2.01 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 12575285, Cost.avg = 12575285.00, Cost.max = 12575285
+Cost.min = 25602422, Cost.avg = 25602422.00, Cost.max = 25602422
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 296, Trials.avg = 296.0, Trials.max = 296
+Trials.min = 362, Trials.avg = 362.0, Trials.max = 362
 Time.min = 2.01 sec., Time.avg = 2.01 sec., Time.max = 2.01 sec.
-Time.total = 2.37 sec.
+Time.total = 2.44 sec.
 
 Key Metrics:
 	ioCount:			 1000
-	algorithmRunningDuration:	 2388.304 (ms)
-	memoryUse:			 6709.67 (KB)
-	addressingDuration:		 2755294 (ms)
+	algorithmRunningDuration:	 2465.597 (ms)
+	memoryUse:			 6627.20 (KB)
+	addressingDuration:		 2595805 (ms)
 	readDuration:			 1072449 (ms)
-	tapeBeltWear:			 3494256
-	tapeMotorWear:			 190
+	tapeBeltWear:			 3532115
+	tapeMotorWear:			 178
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

@@ -8,7 +8,7 @@ head info : [208,121090,1]
 io count = 100
 
 
-base_totaltime = 753275.000010
+base_totaltime = 753275.000011
 base_tapeBeltWear = 1506471.000000
 base_tapeMotorWear = 14.000000
 maxbase = 15064710.000000
@@ -16,8 +16,6 @@ new base_totaltime = 0.050003
 new base_tapeBeltWear = 0.100000
 new base_tapeMotorWear = 0.000001
 backup
-p->ScheduleScoreInSecond = 6752.920874
-p->PenaltyScoreInSecond = 155893.549874
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 50
@@ -74,27 +72,24 @@ TOTAL_TIME_LIMIT = 40.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 8838910.1, Ascent time = 0.04 sec.
-Cand.min = 2, Cand.avg = 4.0, Cand.max = 6
+Lower bound = 12755916.0, Ascent time = 0.03 sec.
+Cand.min = 2, Cand.avg = 3.8, Cand.max = 6
 Edges.fixed = 103 [Cost = 0]
-Preprocessing time = 0.04 sec.
-* 1: Cost = 8988730, Time = 0.00 sec. 
-Run 1: Cost = 8988730, Time = 0.01 sec. 
-
-Successes/Runs = 0/1
-Cost.min = 8988730, Cost.avg = 8988730.00, Cost.max = 8988730
+Preprocessing time = 0.03 sec.
+Successes/Runs = 1/0
+Cost.min = 12755916, Cost.avg = 12755916.00, Cost.max = 12755916
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 204, Trials.avg = 204.0, Trials.max = 204
-Time.min = 0.01 sec., Time.avg = 0.01 sec., Time.max = 0.01 sec.
-Time.total = 0.05 sec.
+Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
+Time.min = 0.03 sec., Time.avg = 0.03 sec., Time.max = 0.03 sec.
+Time.total = 0.03 sec.
 
 Key Metrics:
 	ioCount:			 100
-	algorithmRunningDuration:	 56.434 (ms)
-	memoryUse:			 900.00 (KB)
-	addressingDuration:		 628085 (ms)
+	algorithmRunningDuration:	 40.322 (ms)
+	memoryUse:			 856.00 (KB)
+	addressingDuration:		 627872 (ms)
 	readDuration:			 105216 (ms)
-	tapeBeltWear:			 1463608
+	tapeBeltWear:			 1463654
 	tapeMotorWear:			 10
 	errorIOCount:			 0
 

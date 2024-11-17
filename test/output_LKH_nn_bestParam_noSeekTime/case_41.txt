@@ -8,16 +8,14 @@ head info : [20,399664,1]
 io count = 2000
 
 
-base_totaltime = 21603239.000187
+base_totaltime = 21603239.000186
 base_tapeBeltWear = 13848973.000000
 base_tapeMotorWear = 4862.000000
-maxbase = 216032390.001869
+maxbase = 216032390.001860
 new base_totaltime = 0.100000
 new base_tapeBeltWear = 0.064106
 new base_tapeMotorWear = 0.000023
 hdd
-p->ScheduleScoreInSecond = 221032.390002
-p->PenaltyScoreInSecond = 1949291.510017
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 50
@@ -74,41 +72,90 @@ TOTAL_TIME_LIMIT = 40.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 6102507.0, Ascent time = 0.61 sec.
+Lower bound = 12793930.0, Ascent time = 0.75 sec.
 Cand.min = 2, Cand.avg = 5.1, Cand.max = 7
 Edges.fixed = 2003 [Cost = 0]
-Preprocessing time = 0.61 sec.
-* 1: Cost = 21577493, Time = 0.03 sec. 
-* 2: Cost = 21280665, Time = 0.05 sec. 
-* 3: Cost = 21119190, Time = 0.08 sec. 
-* 4: Cost = 21118488, Time = 0.09 sec. 
-* 6: Cost = 21064000, Time = 0.13 sec. 
-* 12: Cost = 21059731, Time = 0.24 sec. 
-* 19: Cost = 21001702, Time = 0.36 sec. 
-* 28: Cost = 21001700, Time = 0.51 sec. 
-* 31: Cost = 20993897, Time = 0.56 sec. 
-* 54: Cost = 20982081, Time = 1.00 sec. 
-* 55: Cost = 20980321, Time = 1.02 sec. 
-* 63: Cost = 20980317, Time = 1.17 sec. 
-* 94: Cost = 20980314, Time = 1.77 sec. 
-*** Within 20s the extent of improvement(7(<221032.4)) is too small in 1.0s ***
-Run 1: Cost = 20980314, Time = 2.02 sec. 
+Preprocessing time = 0.76 sec.
+* 1: Cost = 42781882, Time = 0.04 sec. 
+* 2: Cost = 42206528, Time = 0.07 sec. 
+* 3: Cost = 42195593, Time = 0.08 sec. 
+* 4: Cost = 42186583, Time = 0.10 sec. 
+* 5: Cost = 42182562, Time = 0.12 sec. 
+* 6: Cost = 42015852, Time = 0.13 sec. 
+* 7: Cost = 42012080, Time = 0.15 sec. 
+* 8: Cost = 42006773, Time = 0.17 sec. 
+* 9: Cost = 41990864, Time = 0.18 sec. 
+* 10: Cost = 41990753, Time = 0.20 sec. 
+* 12: Cost = 41990178, Time = 0.24 sec. 
+* 13: Cost = 41973207, Time = 0.25 sec. 
+* 14: Cost = 41970809, Time = 0.27 sec. 
+* 15: Cost = 41968749, Time = 0.28 sec. 
+* 16: Cost = 41968504, Time = 0.29 sec. 
+* 17: Cost = 41968289, Time = 0.31 sec. 
+* 21: Cost = 41964535, Time = 0.36 sec. 
+* 22: Cost = 41964130, Time = 0.38 sec. 
+* 23: Cost = 41964085, Time = 0.39 sec. 
+* 24: Cost = 41960830, Time = 0.41 sec. 
+* 25: Cost = 41960657, Time = 0.43 sec. 
+* 26: Cost = 41959591, Time = 0.44 sec. 
+* 28: Cost = 41959141, Time = 0.47 sec. 
+* 29: Cost = 41959135, Time = 0.49 sec. 
+* 30: Cost = 41959055, Time = 0.50 sec. 
+* 31: Cost = 41958595, Time = 0.52 sec. 
+* 32: Cost = 41949291, Time = 0.53 sec. 
+* 33: Cost = 41946049, Time = 0.55 sec. 
+* 34: Cost = 41941104, Time = 0.57 sec. 
+* 35: Cost = 41940319, Time = 0.58 sec. 
+* 36: Cost = 41939409, Time = 0.60 sec. 
+* 37: Cost = 41935119, Time = 0.61 sec. 
+* 40: Cost = 41933996, Time = 0.66 sec. 
+* 41: Cost = 41933868, Time = 0.67 sec. 
+* 42: Cost = 41933187, Time = 0.69 sec. 
+* 43: Cost = 41930787, Time = 0.71 sec. 
+* 44: Cost = 41930547, Time = 0.72 sec. 
+* 49: Cost = 41929476, Time = 0.80 sec. 
+* 50: Cost = 41927926, Time = 0.82 sec. 
+* 52: Cost = 41916266, Time = 0.85 sec. 
+* 54: Cost = 41916226, Time = 0.88 sec. 
+* 56: Cost = 41916189, Time = 0.91 sec. 
+* 57: Cost = 41916153, Time = 0.93 sec. 
+* 58: Cost = 41914453, Time = 0.94 sec. 
+* 59: Cost = 41911823, Time = 0.96 sec. 
+* 60: Cost = 41911749, Time = 0.98 sec. 
+* 62: Cost = 41910613, Time = 1.01 sec. 
+* 67: Cost = 41909278, Time = 1.08 sec. 
+* 70: Cost = 41905982, Time = 1.12 sec. 
+* 75: Cost = 41904777, Time = 1.20 sec. 
+* 79: Cost = 41904692, Time = 1.26 sec. 
+* 89: Cost = 41903208, Time = 1.42 sec. 
+* 95: Cost = 41902907, Time = 1.50 sec. 
+* 104: Cost = 41899573, Time = 1.65 sec. 
+* 105: Cost = 41899223, Time = 1.66 sec. 
+* 106: Cost = 41897587, Time = 1.68 sec. 
+* 107: Cost = 41897586, Time = 1.69 sec. 
+* 108: Cost = 41897585, Time = 1.71 sec. 
+* 111: Cost = 41896639, Time = 1.76 sec. 
+* 113: Cost = 41896149, Time = 1.79 sec. 
+* 114: Cost = 41893369, Time = 1.81 sec. 
+* 115: Cost = 41893365, Time = 1.82 sec. 
+*** Within 20s the extent of improvement(17248(<221032.4)) is too small in 1.0s ***
+Run 1: Cost = 41893365, Time = 2.02 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 20980314, Cost.avg = 20980314.00, Cost.max = 20980314
+Cost.min = 41893365, Cost.avg = 41893365.00, Cost.max = 41893365
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 107, Trials.avg = 107.0, Trials.max = 107
+Trials.min = 128, Trials.avg = 128.0, Trials.max = 128
 Time.min = 2.02 sec., Time.avg = 2.02 sec., Time.max = 2.02 sec.
-Time.total = 2.77 sec.
+Time.total = 2.92 sec.
 
 Key Metrics:
 	ioCount:			 2000
-	algorithmRunningDuration:	 2807.680 (ms)
-	memoryUse:			 7578.62 (KB)
-	addressingDuration:		 4532110 (ms)
+	algorithmRunningDuration:	 2954.590 (ms)
+	memoryUse:			 7562.80 (KB)
+	addressingDuration:		 4169896 (ms)
 	readDuration:			 2083366 (ms)
-	tapeBeltWear:			 5869678
-	tapeMotorWear:			 274
+	tapeBeltWear:			 5943966
+	tapeMotorWear:			 242
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

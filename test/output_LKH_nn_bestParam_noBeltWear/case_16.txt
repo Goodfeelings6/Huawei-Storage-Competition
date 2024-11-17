@@ -16,8 +16,6 @@ new base_totaltime = 0.049524
 new base_tapeBeltWear = 0.100000
 new base_tapeMotorWear = 0.000001
 hdd
-p->ScheduleScoreInSecond = 10468.139121
-p->PenaltyScoreInSecond = 158565.730121
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 50
@@ -74,12 +72,12 @@ TOTAL_TIME_LIMIT = 40.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 7539567.0, Ascent time = 0.01 sec.
-Cand.min = 2, Cand.avg = 3.6, Cand.max = 6
+Lower bound = 11098179.0, Ascent time = 0.01 sec.
+Cand.min = 2, Cand.avg = 3.3, Cand.max = 6
 Edges.fixed = 53 [Cost = 0]
 Preprocessing time = 0.01 sec.
 Successes/Runs = 1/0
-Cost.min = 7539567, Cost.avg = 7539567.00, Cost.max = 7539567
+Cost.min = 11098179, Cost.avg = 11098179.00, Cost.max = 11098179
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
 Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
 Time.min = 0.01 sec., Time.avg = 0.01 sec., Time.max = 0.01 sec.
@@ -87,8 +85,8 @@ Time.total = 0.01 sec.
 
 Key Metrics:
 	ioCount:			 50
-	algorithmRunningDuration:	 15.541 (ms)
-	memoryUse:			 888.00 (KB)
+	algorithmRunningDuration:	 19.298 (ms)
+	memoryUse:			 880.00 (KB)
 	addressingDuration:		 599362 (ms)
 	readDuration:			 57872 (ms)
 	tapeBeltWear:			 1239152

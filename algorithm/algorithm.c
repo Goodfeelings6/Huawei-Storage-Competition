@@ -39,9 +39,9 @@ void getbaseline(const InputParam *input, OutputParam *output)
     base_tapeBeltWear = TotalTapeBeltWearTimes(input, output, &segWearInfo);
     /* 基线电机磨损 */
     base_tapeMotorWear = TotalMotorWearTimes(input, output);
-    // printf("base_totaltime = %lf\n", base_totaltime);
-    // printf("base_tapeBeltWear = %lf\n", base_tapeBeltWear);
-    // printf("base_tapeMotorWear = %lf\n", base_tapeMotorWear);
+    printf("base_totaltime = %lf\n", base_totaltime);
+    printf("base_tapeBeltWear = %lf\n", base_tapeBeltWear);
+    printf("base_tapeMotorWear = %lf\n", base_tapeMotorWear);
 
     if (base_tapeBeltWear < base_totaltime){
         maxbase = base_totaltime;
@@ -53,10 +53,10 @@ void getbaseline(const InputParam *input, OutputParam *output)
     base_totaltime /= maxbase;
     base_tapeBeltWear /= maxbase;
     base_tapeMotorWear /= maxbase;
-    // printf("maxbase = %lf\n", maxbase);
-    // printf("new base_totaltime = %lf\n", base_totaltime);
-    // printf("new base_tapeBeltWear = %lf\n", base_tapeBeltWear);
-    // printf("new base_tapeMotorWear = %lf\n", base_tapeMotorWear);
+    printf("maxbase = %lf\n", maxbase);
+    printf("new base_totaltime = %lf\n", base_totaltime);
+    printf("new base_tapeBeltWear = %lf\n", base_tapeBeltWear);
+    printf("new base_tapeMotorWear = %lf\n", base_tapeMotorWear);
 
     /* 检测算例场景 
        备份归档场景backup：alpha=0.3,beta=0.5,gama=0.2 
@@ -95,10 +95,10 @@ void getbaseline(const InputParam *input, OutputParam *output)
         }
     }
     // printf("Nosequential_count = %d\n", Nosequential_count);
-    // if(alpha==0.3)
-    //     printf("backup\n");
-    // else
-    //     printf("hdd\n");
+    if(alpha==0.3)
+        printf("backup\n");
+    else
+        printf("hdd\n");
 }
 
 double MyGetTime(){ // 返回实际时间：秒
@@ -109,14 +109,12 @@ double MyGetTime(){ // 返回实际时间：秒
 
 /* 返回目标函数值(距离) */
 int GetObjectValue(const HeadInfo *start, const HeadInfo *end){
-    double value = SeekTimeCalculate(start, end) * alpha / base_totaltime + BeltWearTimes(start, end, NULL) * beta / base_tapeBeltWear + MotorWearTimes(start, end) * gama / base_tapeMotorWear;
-    // double value = SeekTimeCalculate(start, end)*alpha/base_totaltime+MotorWearTimes(start, end)*gama/base_tapeMotorWear;
+    // double value = SeekTimeCalculate(start, end) * alpha / base_totaltime + BeltWearTimes(start, end, NULL) * beta / base_tapeBeltWear + MotorWearTimes(start, end) * gama / base_tapeMotorWear;
+    double value = SeekTimeCalculate(start, end)*alpha/base_totaltime+MotorWearTimes(start, end)*gama/base_tapeMotorWear;
     // double value = BeltWearTimes(start, end, NULL) * beta / base_tapeBeltWear +MotorWearTimes(start, end)*gama/base_tapeMotorWear;
     // if(value<100)
     //     printf("value:%f\n", value);
     return (int)value;
-    // return SeekTimeCalculate(start, end);
-    // return SeekTimeCalculate(start, end)+BeltWearTimes(start, end, NULL)+MotorWearTimes(start, end);
 
     /* 调用公共函数示例：调用电机寻址、带体磨损、电机磨损函数 */
     // HeadInfo start = {input->ioVec.ioArray[0].wrap, input->ioVec.ioArray[0].endLpos, HEAD_RW};
@@ -134,7 +132,11 @@ int GetObjectValue(const HeadInfo *start, const HeadInfo *end){
     // uint32_t rwT = ReadTimeCalculate(abs(input->ioVec.ioArray[0].endLpos - input->ioVec.ioArray[0].startLpos));
 
 }
-
+/* 返回目标函数值(距离) */
+int GetObjectValue_LKH(const HeadInfo *start, const HeadInfo *end){
+    double value = SeekTimeCalculate(start, end) * alpha / base_totaltime + BeltWearTimes(start, end, NULL) * beta / base_tapeBeltWear + MotorWearTimes(start, end) * gama / base_tapeMotorWear;
+    return (int)value;
+}
 // 设置需要调整的 LKH 的参数
 void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleStartTime){
     if(matDimension <= 102){ // 10,50,100
@@ -173,7 +175,7 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
 		p->POPMUSIC_Solutions = 3;
     }
     p->Runs = 1;
-    p->TraceLevel = 0;
+    p->TraceLevel = 1;
     p->TimeLimit = DBL_MAX; // 由总时间、一定时间跨度内的改进值共同控制退出即可
     p->TotalTimeLimit = 40; // 最大允许运行时间
     p->PenaltyScoreInSecond = alpha*1000/base_totaltime + ((2-(matDimension-2)/10000.0)/200.0)*maxbase; /* 20s后每多算1秒实际罚分 (相对Cost) */
@@ -1012,14 +1014,14 @@ int MaxMatching_Random_heap(const InputParam *input, OutputParam *output) {
 
     // 构建邻接表
     getAdjList2(input, &graph);
-    printf("构建邻接表完成\n");
+    //printf("构建邻接表完成\n");
     // 初始化 MaxMatchingByHarryZHR 结构体
     MaxMatchingByHarryZHR matcher;
     initMaxMatchingByHarryZHR(&matcher, len);
-    printf("initMaxMatchingByHarryZHR完成\n");
+    //printf("initMaxMatchingByHarryZHR完成\n");
     // 调用最大匹配算法
     int* Next = solveMaxMatchingByHarryZHR(&matcher, &graph)->arr;
-    printf("最大匹配算法完成\n");
+    //printf("最大匹配算法完成\n");
     int* visited = (int*)calloc(len, sizeof(int)); // 标记已经到达过的节点
 
     int idx = 0;
@@ -1169,23 +1171,23 @@ int32_t IOScheduleAlgorithm(const InputParam *input, OutputParam *output)
     getbaseline(input, output);
 
     // 使用 LKH_MM 算法
-    // return LKH_MM(input, output);
+     //return LKH_MM(input, output);
 
     // 使用 LKH_GI 算法
     // return LKH_GI(input, output); 
 
     // 使用 LKH_NN 算法
-    return LKH_NN(input, output);
+    // return LKH_NN(input, output);
 
     // 使用最近邻贪心算法 
-    // return NearestNeighbor(input, output);
+    //return NearestNeighbor(input, output);
 
     // 使用贪心插入算法
     // return GreedyInsert(input, output);
 
     // 使用最大匹配-随机拼接算法
     //return MaxMatching_Random_qsort(input, output);
-    //return MaxMatching_Random_heap(input, output);
+    return MaxMatching_Random_heap(input, output);
     // 使用最大匹配-贪心拼接算法
     // return MaxMatching_Greedy(input, output);
 

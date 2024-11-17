@@ -16,8 +16,6 @@ new base_totaltime = 0.100000
 new base_tapeBeltWear = 0.068080
 new base_tapeMotorWear = 0.000019
 hdd
-p->ScheduleScoreInSecond = 46204.100000
-p->PenaltyScoreInSecond = 787877.900009
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 50
@@ -74,64 +72,60 @@ TOTAL_TIME_LIMIT = 40.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 6486288.0, Ascent time = 0.32 sec.
+Lower bound = 11824723.0, Ascent time = 0.39 sec.
 Cand.min = 2, Cand.avg = 4.5, Cand.max = 7
 Edges.fixed = 1003 [Cost = 0]
-Preprocessing time = 0.32 sec.
-* 1: Cost = 15081015, Time = 0.01 sec. 
-* 2: Cost = 15069265, Time = 0.01 sec. 
-* 3: Cost = 15053940, Time = 0.01 sec. 
-* 4: Cost = 15053935, Time = 0.02 sec. 
-* 6: Cost = 15048670, Time = 0.02 sec. 
-* 7: Cost = 14992587, Time = 0.03 sec. 
-* 8: Cost = 14991727, Time = 0.03 sec. 
-* 9: Cost = 14989572, Time = 0.03 sec. 
-* 10: Cost = 14974362, Time = 0.04 sec. 
-* 11: Cost = 14974282, Time = 0.04 sec. 
-* 15: Cost = 14973757, Time = 0.05 sec. 
-* 19: Cost = 14973187, Time = 0.06 sec. 
-* 20: Cost = 14973132, Time = 0.07 sec. 
-* 21: Cost = 14970212, Time = 0.07 sec. 
-* 22: Cost = 14951585, Time = 0.07 sec. 
-* 37: Cost = 14950775, Time = 0.12 sec. 
-* 38: Cost = 14950685, Time = 0.12 sec. 
-* 45: Cost = 14950295, Time = 0.15 sec. 
-* 46: Cost = 14950290, Time = 0.15 sec. 
-* 63: Cost = 14950235, Time = 0.20 sec. 
-* 65: Cost = 14949740, Time = 0.21 sec. 
-* 81: Cost = 14949175, Time = 0.26 sec. 
-* 84: Cost = 14948820, Time = 0.27 sec. 
-* 105: Cost = 14939785, Time = 0.34 sec. 
-* 114: Cost = 14939410, Time = 0.36 sec. 
-* 205: Cost = 14938187, Time = 0.66 sec. 
-* 207: Cost = 14937550, Time = 0.66 sec. 
-* 214: Cost = 14936445, Time = 0.69 sec. 
-* 241: Cost = 14936075, Time = 0.78 sec. 
-* 246: Cost = 14935360, Time = 0.79 sec. 
-* 330: Cost = 14933995, Time = 1.08 sec. 
-* 354: Cost = 14933780, Time = 1.16 sec. 
-* 357: Cost = 14933775, Time = 1.17 sec. 
-* 403: Cost = 14932293, Time = 1.32 sec. 
-* 404: Cost = 14931933, Time = 1.32 sec. 
-* 468: Cost = 14931788, Time = 1.53 sec. 
-*** Within 20s the extent of improvement(3572(<46204.1)) is too small in 1.0s ***
-Run 1: Cost = 14931788, Time = 2.01 sec. 
+Preprocessing time = 0.39 sec.
+* 1: Cost = 28654692, Time = 0.01 sec. 
+* 2: Cost = 28534181, Time = 0.01 sec. 
+* 3: Cost = 28270425, Time = 0.02 sec. 
+* 4: Cost = 28188245, Time = 0.02 sec. 
+* 6: Cost = 28167207, Time = 0.03 sec. 
+* 7: Cost = 28167126, Time = 0.04 sec. 
+* 8: Cost = 28161575, Time = 0.04 sec. 
+* 9: Cost = 28161570, Time = 0.04 sec. 
+* 11: Cost = 28120580, Time = 0.05 sec. 
+* 12: Cost = 27828083, Time = 0.06 sec. 
+* 13: Cost = 27827669, Time = 0.06 sec. 
+* 14: Cost = 27827576, Time = 0.07 sec. 
+* 15: Cost = 27827562, Time = 0.07 sec. 
+* 18: Cost = 27827542, Time = 0.09 sec. 
+* 19: Cost = 27827441, Time = 0.09 sec. 
+* 20: Cost = 27815913, Time = 0.10 sec. 
+* 22: Cost = 27805874, Time = 0.11 sec. 
+* 23: Cost = 27805574, Time = 0.11 sec. 
+* 24: Cost = 27803826, Time = 0.12 sec. 
+* 32: Cost = 27798524, Time = 0.15 sec. 
+* 34: Cost = 27797995, Time = 0.16 sec. 
+* 53: Cost = 27796701, Time = 0.24 sec. 
+* 63: Cost = 27777274, Time = 0.29 sec. 
+* 64: Cost = 27776358, Time = 0.30 sec. 
+* 65: Cost = 27775764, Time = 0.30 sec. 
+* 92: Cost = 27775659, Time = 0.42 sec. 
+* 123: Cost = 27774314, Time = 0.55 sec. 
+* 158: Cost = 27771604, Time = 0.71 sec. 
+* 253: Cost = 27771131, Time = 1.16 sec. 
+* 275: Cost = 27769204, Time = 1.26 sec. 
+* 280: Cost = 27769128, Time = 1.28 sec. 
+* 328: Cost = 27766988, Time = 1.49 sec. 
+*** Within 20s the extent of improvement(4616(<46204.1)) is too small in 1.0s ***
+Run 1: Cost = 27766988, Time = 2.01 sec. 
 
 Successes/Runs = 0/1
-Cost.min = 14931788, Cost.avg = 14931788.00, Cost.max = 14931788
+Cost.min = 27766988, Cost.avg = 27766988.00, Cost.max = 27766988
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 608, Trials.avg = 608.0, Trials.max = 608
+Trials.min = 446, Trials.avg = 446.0, Trials.max = 446
 Time.min = 2.01 sec., Time.avg = 2.01 sec., Time.max = 2.01 sec.
-Time.total = 2.36 sec.
+Time.total = 2.43 sec.
 
 Key Metrics:
 	ioCount:			 1000
-	algorithmRunningDuration:	 2381.684 (ms)
-	memoryUse:			 6737.83 (KB)
-	addressingDuration:		 2836058 (ms)
+	algorithmRunningDuration:	 2450.718 (ms)
+	memoryUse:			 6740.48 (KB)
+	addressingDuration:		 2788171 (ms)
 	readDuration:			 1124740 (ms)
-	tapeBeltWear:			 4382849
-	tapeMotorWear:			 73
+	tapeBeltWear:			 3776731
+	tapeMotorWear:			 167
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

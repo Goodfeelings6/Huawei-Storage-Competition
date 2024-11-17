@@ -8,7 +8,7 @@ head info : [278,390305,1]
 io count = 10
 
 
-base_totaltime = 416970.000002
+base_totaltime = 416970.000001
 base_tapeBeltWear = 1131924.000000
 base_tapeMotorWear = 10.000000
 maxbase = 11319240.000000
@@ -16,8 +16,6 @@ new base_totaltime = 0.036837
 new base_tapeBeltWear = 0.100000
 new base_tapeMotorWear = 0.000001
 hdd
-p->ScheduleScoreInSecond = 13629.802905
-p->PenaltyScoreInSecond = 126709.010505
 Reading TOUR...done
 done
 ASCENT_CANDIDATES = 23
@@ -74,28 +72,25 @@ TOTAL_TIME_LIMIT = 40.0
 # TOUR_FILE = 
 TRACE_LEVEL = 1
 
-Lower bound = 4104097.0, Ascent time = 0.00 sec.
-Cand.min = 2, Cand.avg = 4.1, Cand.max = 6
+Lower bound = 8582099.0, Ascent time = 0.00 sec.
+Cand.min = 2, Cand.avg = 4.5, Cand.max = 6
 Edges.fixed = 13 [Cost = 0]
 Preprocessing time = 0.00 sec.
-* 1: Cost = 4106090, Time = 0.00 sec. 
-Run 1: Cost = 4106090, Time = 0.00 sec. 
-
-Successes/Runs = 0/1
-Cost.min = 4106090, Cost.avg = 4106090.00, Cost.max = 4106090
+Successes/Runs = 1/0
+Cost.min = 8582099, Cost.avg = 8582099.00, Cost.max = 8582099
 Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
-Trials.min = 24, Trials.avg = 24.0, Trials.max = 24
+Trials.min = 0, Trials.avg = 0.0, Trials.max = 0
 Time.min = 0.00 sec., Time.avg = 0.00 sec., Time.max = 0.00 sec.
 Time.total = 0.00 sec.
 
 Key Metrics:
 	ioCount:			 10
-	algorithmRunningDuration:	 6.498 (ms)
-	memoryUse:			 908.00 (KB)
-	addressingDuration:		 340157 (ms)
+	algorithmRunningDuration:	 6.668 (ms)
+	memoryUse:			 2816.00 (KB)
+	addressingDuration:		 316603 (ms)
 	readDuration:			 15075 (ms)
-	tapeBeltWear:			 929718
-	tapeMotorWear:			 6
+	tapeBeltWear:			 838358
+	tapeMotorWear:			 8
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

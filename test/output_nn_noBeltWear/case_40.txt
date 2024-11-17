@@ -1,0 +1,30 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_40.txt
+head info : [272,22012,0]
+
+io count = 2000
+
+
+base_totaltime = 24314773.000187
+base_tapeBeltWear = 15331530.000000
+base_tapeMotorWear = 5585.000000
+maxbase = 243147730.001869
+new base_totaltime = 0.100000
+new base_tapeBeltWear = 0.063054
+new base_tapeMotorWear = 0.000023
+hdd
+
+Key Metrics:
+	ioCount:			 2000
+	algorithmRunningDuration:	 178.074 (ms)
+	memoryUse:			 3330.67 (KB)
+	addressingDuration:		 4267310 (ms)
+	readDuration:			 2095843 (ms)
+	tapeBeltWear:			 7266051
+	tapeMotorWear:			 139
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt
