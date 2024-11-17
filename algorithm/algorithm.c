@@ -476,14 +476,16 @@ int32_t LKH_NN(const InputParam *input, OutputParam *output)
         int node = -1;
         // 找到最近的未访问城市
         for (int j = 1; j <= len; ++j){
+            if(!visited[j]){
 #ifndef USING_REAL_TIME_COST
-            int cost = adjMat[current - 1][j - 1];
+                int cost = adjMat[current - 1][j - 1];
 #else
-            int cost = getCost(input, len, current - 1, j - 1);
+                int cost = getCost(input, len, current - 1, j - 1);
 #endif
-            if (!visited[j] && cost < min_dist){
-                min_dist = cost;
-                node = j;
+                if (!visited[j] && cost < min_dist){
+                    min_dist = cost;
+                    node = j;
+                }
             }
         }
         // 更新当前城市
@@ -817,14 +819,16 @@ int32_t NearestNeighbor(const InputParam *input, OutputParam *output){
         int node = -1;
         // 找到最近的未访问城市
         for (int j = 1; j <= len; ++j){
+            if(!visited[j]){
 #ifndef USING_REAL_TIME_COST
-            int cost = adjMat[current - 1][j - 1];
+                int cost = adjMat[current - 1][j - 1];
 #else
-            int cost = getCost(input, len, current - 1, j - 1);
+                int cost = getCost(input, len, current - 1, j - 1);
 #endif
-            if (!visited[j] && cost < min_dist){
-                min_dist = cost;
-                node = j;
+                if (cost < min_dist){
+                    min_dist = cost;
+                    node = j;
+                }
             }
         }
         // 更新当前城市
@@ -1177,17 +1181,17 @@ int32_t IOScheduleAlgorithm(const InputParam *input, OutputParam *output)
     // return LKH_GI(input, output); 
 
     // 使用 LKH_NN 算法
-    // return LKH_NN(input, output);
+    return LKH_NN(input, output);
 
     // 使用最近邻贪心算法 
-    //return NearestNeighbor(input, output);
+    // return NearestNeighbor(input, output);
 
     // 使用贪心插入算法
     // return GreedyInsert(input, output);
 
     // 使用最大匹配-随机拼接算法
     //return MaxMatching_Random_qsort(input, output);
-    return MaxMatching_Random_heap(input, output);
+    // return MaxMatching_Random_heap(input, output);
     // 使用最大匹配-贪心拼接算法
     // return MaxMatching_Greedy(input, output);
 

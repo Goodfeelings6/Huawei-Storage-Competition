@@ -49,7 +49,7 @@ def monitor_memory(process:subprocess.Popen, interval=1):
                 memory_usage.append(memory_usage_mb)
                 global peak_memory
                 peak_memory = max(peak_memory, memory_usage_mb)
-                # print(f"Current Memory: {memory_usage_mb:.2f} MB, Peak Memory: {peak_memory:.2f} MB", end='\r')
+                print(f"Current Memory: {memory_usage_mb:.2f} MB, Peak Memory: {peak_memory:.2f} MB", end='\r')
                 time.sleep(interval)
         except psutil.NoSuchProcess:
             print("Process not found.")
