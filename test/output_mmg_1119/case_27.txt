@@ -1,0 +1,34 @@
+
+
+Welcome to HW project.
+
+The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_27.txt
+head info : [20,151247,1]
+
+io count = 1000
+
+
+base_totaltime = 8627489.000091
+base_tapeBeltWear = 5885381.000000
+base_tapeMotorWear = 1718.000000
+maxbase = 86274890.000911
+new base_totaltime = 0.100000
+new base_tapeBeltWear = 0.068217
+new base_tapeMotorWear = 0.000020
+hdd
+构建邻接表完成
+initMaxMatchingByHarryZHR完成
+最大匹配算法完成
+环路个数: 7
+
+Key Metrics:
+	ioCount:			 1000
+	algorithmRunningDuration:	 75.035 (ms)
+	memoryUse:			 446.00 (KB)
+	addressingDuration:		 3398825 (ms)
+	readDuration:			 1049704 (ms)
+	tapeBeltWear:			 5504035
+	tapeMotorWear:			 78
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

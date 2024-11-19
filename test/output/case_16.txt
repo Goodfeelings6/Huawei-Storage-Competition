@@ -1,0 +1,32 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset/case_16.txt
+head info : [75,494772,1]
+
+io count = 50
+
+
+base_totaltime = 737130.000008
+base_tapeBeltWear = 1488418.000000
+base_tapeMotorWear = 8.000000
+maxbase = 14884180.000000
+new base_totaltime = 0.049524
+new base_tapeBeltWear = 0.100000
+new base_tapeMotorWear = 0.000001
+hdd
+nnnn算法得到的io序列:
+11 40 18 39 30 21 22 49 37 5 43 26 23 20 25 33 24 6 12 7 16 31 46 41 42 32 48 10 34 36 50 4 45 19 2 38 44 9 3 35 17 13 1 47 29 28 27 8 14 15 
+
+Key Metrics:
+	ioCount:			 50
+	algorithmRunningDuration:	 6.704 (ms)
+	memoryUse:			 884.00 (KB)
+	addressingDuration:		 647367 (ms)
+	readDuration:			 57872 (ms)
+	tapeBeltWear:			 1390388
+	tapeMotorWear:			 6
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

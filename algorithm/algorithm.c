@@ -8,7 +8,7 @@
 #define USING_REAL_TIME_COST  // 是否启用实时的方式算代价，未定义则使用邻接矩阵方式
 
 #define DEBUG_LEVEL 0
-// #define DEBUG_LEVEL 1
+//#define DEBUG_LEVEL 1
 // #define DEBUG_LEVEL 2
 
 #define INF INT_MAX/200
@@ -21,7 +21,13 @@ double base_totaltime = 0;     // 基线读时延
 double base_tapeBeltWear = 0;  // 基线带体磨损
 double base_tapeMotorWear = 0; // 基线电机磨损
 double maxbase = 0;            // 缩放系数
-
+typedef struct {
+    uint32_t id;         // IO序号
+    uint32_t wrap;       // 起始wrap
+    uint32_t startLpos;  // 起始lpos
+    uint32_t endLpos;    // 结束lpos
+    uint32_t visit;      //是否被选
+} IOUintnn;
 // 调用SCAN基线并分析以获取权重控制系数
 void getbaseline(const InputParam *input, OutputParam *output)
 {
@@ -109,7 +115,7 @@ double MyGetTime(){ // 返回实际时间：秒
 
 /* 返回目标函数值(距离) */
 int GetObjectValue(const HeadInfo *start, const HeadInfo *end){
-    // double value = SeekTimeCalculate(start, end) * alpha / base_totaltime + BeltWearTimes(start, end, NULL) * beta / base_tapeBeltWear + MotorWearTimes(start, end) * gama / base_tapeMotorWear;
+    //double value = SeekTimeCalculate(start, end) * alpha / base_totaltime + BeltWearTimes(start, end, NULL) * beta / base_tapeBeltWear + MotorWearTimes(start, end) * gama / base_tapeMotorWear;
     double value = SeekTimeCalculate(start, end)*alpha/base_totaltime+MotorWearTimes(start, end)*gama/base_tapeMotorWear;
     // double value = BeltWearTimes(start, end, NULL) * beta / base_tapeBeltWear +MotorWearTimes(start, end)*gama/base_tapeMotorWear;
     // if(value<100)
@@ -328,43 +334,61 @@ void getAdjList1(const InputParam* input, Graph* graph) {
 void getAdjList2(const InputParam* input, Graph* graph) {
     uint32_t len = graph->n;
 
-    for (uint32_t i = 0; i < len - 2; ++i) {
+    for (uint32_t i = 0; i < len - 1; ++i) {
         NodeCost heap[HEAP_SIZE];  // 小顶堆数组
         int heapSize = 0;
-
-        for (uint32_t j = 0; j < len - 2; ++j) {
-            if (i == j) continue;
-
+        int iwrap=input->ioVec.ioArray[i].wrap;
+        int index_samewrap_close=0;
+        int mindis=INF;
+        for (uint32_t j = 0; j < len - 1; ++j) {
+            int jwrap=input->ioVec.ioArray[j].wrap;
+            if (i == j) {
+                addEdge(graph, i, i, -INF+1);
+                continue;
+            }
+            if(iwrap==jwrap){//对同wrap的处理
+                if(iwrap%2==0){//正向
+                    if(mindis <= input->ioVec.ioArray[j].startLpos - input->ioVec.ioArray[i].endLpos){
+                        mindis=input->ioVec.ioArray[j].startLpos - input->ioVec.ioArray[i].endLpos;
+                        index_samewrap_close=j;//同wrap里i最近的IO块是j
+                    }
+                }else{
+                    if(mindis <= input->ioVec.ioArray[i].endLpos -input->ioVec.ioArray[j].startLpos){
+                        mindis=input->ioVec.ioArray[i].endLpos -input->ioVec.ioArray[j].startLpos;
+                        index_samewrap_close=j;//同wrap里i最近的IO块是j
+                    }
+                }
+            continue;
+            }
             HeadInfo start = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].endLpos, HEAD_RW};
             HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
             int cost = GetObjectValue(&start, &end);
-//printf("cost=%lf\n",cost);
+
             NodeCost newElement = {j, cost};
             insertMaxHeap(heap, &heapSize, newElement);
         }
-        //printf("heapSize=%d\n",heapSize);
+
         // 将堆中元素添加到图的邻接表中
         for (int k = 0; k < heapSize; ++k) {
             addEdge(graph, i, heap[k].node, -heap[k].cost);
+            //printf("Node: %d, Cost: %lf\t", heap[k].node, heap[k].cost);
         }
-    //     printf("Heap for node %d:\n",i);
-    //     for (int i = 0; i < heapSize; ++i) {
-    //      printf("Node: %d, Cost: %lf\t", heap[i].node, heap[i].cost);
-    //     }
-    // printf("\n");
+            HeadInfo start = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].endLpos, HEAD_RW};
+            HeadInfo end = {input->ioVec.ioArray[index_samewrap_close].wrap, input->ioVec.ioArray[index_samewrap_close].startLpos, HEAD_RW};
+            int cost = GetObjectValue(&start, &end);
+            addEdge(graph, i, index_samewrap_close, -cost);
     }
 
     // 处理虚拟节点和磁头节点的代价
-    for (uint32_t i = 0; i < len - 2; ++i) {
-        addEdge(graph, i, len - 2, 0);
+    for (uint32_t i = 0; i < len - 1; ++i) {
+        addEdge(graph, i, len - 1, 0);
 
-        HeadInfo start = {input->headInfo.wrap, input->headInfo.lpos, input->headInfo.status};
-        HeadInfo end = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].startLpos, HEAD_RW};
-        int headCost = GetObjectValue(&start, &end);
-        addEdge(graph, len - 1, i, -headCost);
+        // HeadInfo start = {input->headInfo.wrap, input->headInfo.lpos, input->headInfo.status};
+        // HeadInfo end = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].startLpos, HEAD_RW};
+        // int headCost = GetObjectValue(&start, &end);
+        // addEdge(graph, len - 1, i, -headCost);
     }
-
-    addEdge(graph, len - 2, len - 1, 0);
+    addEdge(graph, len - 1, len - 2, 0);
 }
 
 // LKH 算法 + 最大匹配(MM)生成初始解
@@ -379,7 +403,85 @@ int32_t LKH_MM(const InputParam *input, OutputParam *output)
 
     int *intialTour = (int *)malloc(len * sizeof(int));
     intialTour[0] = len - 1, intialTour[1] = len;
-    MaxMatching_Random_heap(input, output);
+    MaxMatching_Greedy(input, output);
+    // MaxMatching_Greedy(input, output);
+    for (int i = 2; i < len; i++)
+        intialTour[i] = output->sequence[i - 2];
+    //for(int i=0;i<len;i++)printf("%d ", intialTour[i]);
+    /* 设置固定边, 结点从1开始编号 */
+    int fixLen = 1;
+    int *fixEdge = (int *)malloc(2 * fixLen * sizeof(int));
+    // 虚拟结点到磁头结点的边固定
+    fixEdge[0] = len - 1;
+    fixEdge[1] = len;
+
+    /* 调用 LKH 求解 */
+    /* 确定LKH输入结构体 */
+    LKHInput *lkhInput = (LKHInput *)malloc(sizeof(LKHInput));
+    lkhInput->adjMat = 0;
+    lkhInput->matDimension = len;
+    lkhInput->intialTour = intialTour;
+    lkhInput->fixEdge = fixEdge;
+    lkhInput->fixEdgeLen = fixLen;
+    lkhInput->scheduleStartTime = scheduleStartTime;
+    lkhInput->lkhParameters = (LKHParameters *)malloc(sizeof(LKHParameters));
+    loadDefaultParam(lkhInput->lkhParameters);
+    loadUserChangedParam(lkhInput->matDimension, lkhInput->lkhParameters, scheduleStartTime);
+#ifdef USING_REAL_TIME_COST
+    lkhInput->lkhParameters->OriginInput = input;
+#endif
+    /* 确定LKH输出结构体 */
+    LKHOutput *lkhOutput = (LKHOutput *)malloc(sizeof(LKHOutput));
+    lkhOutput->tourCost = 0;
+    lkhOutput->tourResult = (int *)malloc(len * sizeof(int));
+
+    ret = solveTSP(lkhInput, lkhOutput);
+   
+    // 处理解
+    int i, j;
+    for (i = 0; i < len; ++i){
+        if(lkhOutput->tourResult[i] == len) // i指向磁头结点
+            break;
+    }
+    for (j = 0; j < len - 2; ++j){ // 排序结果赋值到输出
+        if(i + 1 > len - 1)
+            i = -1;
+        output->sequence[j] = lkhOutput->tourResult[++i];
+    }
+
+    /* 打印求解结果：输出output->sequence的内容 */
+#if DEBUG_LEVEL >= 1
+    printf("LKH result\n");
+    printf("io len:%d\n",len-2);
+    printf("Output sequence:\n");
+    for (uint32_t i = 0; i < len - 2; ++i) {
+        printf("%d ", output->sequence[i]);
+    }
+    printf("\n");
+#endif
+
+    free(intialTour);
+    free(fixEdge);
+    free(lkhInput->lkhParameters);
+    free(lkhInput);
+    free(lkhOutput->tourResult);
+    free(lkhOutput);
+
+    return ret;
+}
+// LKH 算法 + 最大匹配(MM)生成初始解
+int32_t LKH_nn1(const InputParam *input, OutputParam *output)
+{   
+    // 获取调度开始时间
+    double scheduleStartTime = MyGetTime();
+
+    int32_t ret = 0;
+
+    uint32_t len = output->len + 2; //增加了一个虚拟节点和磁头起始位置节点
+
+    int *intialTour = (int *)malloc(len * sizeof(int));
+    intialTour[0] = len - 1, intialTour[1] = len;
+    NearestNeighbor1(input, output);
     // MaxMatching_Greedy(input, output);
     for (int i = 2; i < len; i++)
         intialTour[i] = output->sequence[i - 2];
@@ -861,7 +963,364 @@ int32_t NearestNeighbor(const InputParam *input, OutputParam *output){
 
     return 0;
 }
+int findFirstGreaterOrEqual(IOUintnn * arr, int n, int target) {
+    int left = 0, right = n - 1;
+    int result = -1; // 初始化结果为 -1，表示未找到
+    //printf("result: %d\n",result);
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
 
+        if (arr[mid].startLpos >= target) {
+            //printf("第一个大于的数 %d\n",arr[mid].startLpos);
+            result = mid; // 更新结果为当前 mid
+            right = mid - 1; // 继续向左找，确保是第一个
+        } else {
+            left = mid + 1; // 向右找更大的值
+        }
+    }
+    //printf("result: %d\n",result);
+    return result; // 返回第一个满足条件的下标（或 -1 表示未找到）
+}
+
+int findFirstLessOrEqual(IOUintnn * arr, int n, int target) {
+    int left = 0, right = n - 1;
+    int result = -1; // 初始化结果为 -1，表示未找到
+
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+
+        if (arr[mid].startLpos <= target) {
+            //printf("第%d个小于%d的数 %d\n",mid,target,arr[mid].startLpos);
+            result = mid; // 更新结果为当前 mid
+            left = mid + 1; // 继续向右找，确保是第一个
+        } else {
+            right = mid - 1; // 向左找更小的值
+        }
+    }
+
+    return result; // 返回第一个满足条件的下标（或 -1 表示未找到）
+}
+
+int nn_compare(const void *a, const void *b) {
+    IOUintnn *ioA = (IOUintnn *)a;
+    IOUintnn *ioB = (IOUintnn *)b;
+
+    if (ioA->startLpos < ioB->startLpos) {
+        return -1; // ioA 在 ioB 之前
+    } else if (ioA->startLpos > ioB->startLpos) {
+        return 1;  // ioA 在 ioB 之后
+    } else {
+        return 0;  // 两者相等
+    }
+}
+void deleteElement(IOUintnn * arr, int *n, int index) {
+    if (index < 0 || index >= *n) {
+        //printf("Invalid index to delete.\n");
+        return;
+    }
+
+    // 将后续元素左移覆盖
+    for (int i = index; i < *n - 1; i++) {
+        arr[i] = arr[i + 1];
+    }
+
+    // 减少数组长度
+    (*n)--;
+}
+
+int nonNegative(int num) {
+    return num >= 0 ? num : 0;
+}
+int32_t NearestNeighbor1(const InputParam *input, OutputParam *output){    
+    // 创建 ioArray 的副本，用于排序
+    //IOUintnn *nn_IOArray = (IOUintnn *)malloc(input->ioVec.len * sizeof(IOUintnn));
+    int len1=0;
+    int len0=0;
+    for (uint32_t i = 0; i < input->ioVec.len; ++i) 
+    {
+        if(input->ioVec.ioArray[i].wrap%2==1)len1++;
+        else len0++;
+    }
+    IOUintnn *nnodd_IOArray = (IOUintnn *)malloc(len1* sizeof(IOUintnn));;
+    IOUintnn *nneven_IOArray  = (IOUintnn *)malloc(len0 * sizeof(IOUintnn));;
+
+    uint32_t oddIndex = 0;
+    uint32_t evenIndex = 0;
+    //printf("循环1:\n");
+    for (uint32_t i = 0; i < input->ioVec.len; ++i) {
+        if(input->ioVec.ioArray[i].wrap%2==1)
+        {
+            nnodd_IOArray[oddIndex].endLpos = input->ioVec.ioArray[i].endLpos;
+            nnodd_IOArray[oddIndex].startLpos = input->ioVec.ioArray[i].startLpos;
+            nnodd_IOArray[oddIndex].wrap=input->ioVec.ioArray[i].wrap;
+            nnodd_IOArray[oddIndex].id=input->ioVec.ioArray[i].id;
+            nnodd_IOArray[oddIndex].visit=0;
+            oddIndex++;
+        }
+        else
+        {
+            nneven_IOArray[evenIndex].endLpos = input->ioVec.ioArray[i].endLpos;
+            nneven_IOArray[evenIndex].startLpos = input->ioVec.ioArray[i].startLpos;
+            nneven_IOArray[evenIndex].wrap=input->ioVec.ioArray[i].wrap;
+            nneven_IOArray[evenIndex].id=input->ioVec.ioArray[i].id;
+            nneven_IOArray[evenIndex].visit=0;
+            evenIndex++;
+        }
+    }
+    
+    // 使用 qsort 对副本进行排序
+    qsort(nnodd_IOArray, oddIndex, sizeof(IOUintnn), nn_compare);
+    qsort(nneven_IOArray, evenIndex, sizeof(IOUintnn), nn_compare);
+    //input->headInfo.wrap, input->headInfo.lpos, input->headInfo.status;
+    //for (uint32_t i = 0; i < len0; ++i)
+    //printf("偶数第%d个节点%dstarlops: %d\n",i,nneven_IOArray[i].id,nneven_IOArray[i].startLpos);
+    //for (uint32_t i = 0; i < len1; ++i)
+    //printf("奇数第%d个节点%dstarlops: %d\n",i,nnodd_IOArray[i].id,nnodd_IOArray[i].startLpos);
+    uint32_t seqIndex = 0;
+    uint32_t target=input->headInfo.lpos;
+    int xx=1;
+    //printf("循环2:\n");
+    if(input->headInfo.wrap%2==0)
+    {
+        xx=0;
+    }
+    /*
+    if(input->headInfo.wrap%2==0)
+    {   printf("算法进入了0:\n");
+        int index = findFirstGreaterOrEqual(nneven_IOArray, evenIndex, input->headInfo.lpos);
+        printf("index: %d\n",index);
+        nneven_IOArray[index].visit=1;
+        target=nneven_IOArray[index].endLpos;
+        output->sequence[seqIndex++]=nneven_IOArray[index].id;
+        xx=0;
+    }
+    else
+    {   printf("算法进入了1:\n");
+        int index = findFirstLessOrEqual(nnodd_IOArray, oddIndex, input->headInfo.lpos);
+        nnodd_IOArray[index].visit=1;
+        target=nnodd_IOArray[index].endLpos;
+        output->sequence[seqIndex++]=nnodd_IOArray[index].id;
+        xx=1;
+    }
+    */
+    //printf("第一个: %d\n",output->sequence[0]);
+    //printf("seqIndex: %d\n",seqIndex);
+    //printf("target: %d\n",target);
+    /**/
+    int evenIndextag=1;
+    int oddIndextag=1;
+    int index;
+    while(seqIndex<input->ioVec.len)
+    //for(int i=0;i<10;i++)
+    {   //printf("循环 %d xx:%d:\n",seqIndex,xx);
+        //printf("xx %d:\n",xx);
+        //printf("evenIndex %d:\n",evenIndex);
+        //printf("target: %d\n",target);
+        //printf("evenIndex: %d || xx :%d\n",evenIndex,xx);
+        if(xx==0)
+        {   //printf("evenIndex: %d || xx :%d\n",evenIndex,xx);
+            if(evenIndextag!=0)
+            {
+            index = findFirstGreaterOrEqual(nneven_IOArray, evenIndex, target);
+            //printf("index: %d || xx :%d\n",index,xx);
+            if(index!=-1)
+            {   //printf("算法进入了1:\n");
+                nneven_IOArray[index].visit=1;
+                target=nneven_IOArray[index].endLpos;
+                output->sequence[seqIndex++]=nneven_IOArray[index].id;
+                deleteElement(nneven_IOArray, &evenIndex, index);
+                len0--;
+                
+                if(index==evenIndex-1)
+                {   //printf("算法进入了3:\n");
+                    if(oddIndex==0)target=nneven_IOArray[0].startLpos;
+                    else target=nnodd_IOArray[oddIndex-1].startLpos;
+                }
+               
+            }
+            else if(index==-1)
+            {
+                
+                //printf("算法进入了2:\n");
+                 if(evenIndex==0)evenIndextag=0;
+                 //printf("oddIndex: %d\n",oddIndex);
+                 if(oddIndex!=0){xx=1;target=nnodd_IOArray[oddIndex-1].startLpos;}
+                 else 
+                 {
+                    target=nneven_IOArray[0].startLpos;
+                 }
+            }
+             }
+
+        }
+        else
+        {   
+              if(oddIndextag!=0)
+             {
+            //printf("算法错误:\n");
+            index = findFirstLessOrEqual(nnodd_IOArray, oddIndex, target);
+             //printf("index: %d || xx :%d\n",index,xx);
+            if(index!=-1)
+            {   //printf("算法进入了1:\n");
+                nnodd_IOArray[index].visit=1;
+                target=nnodd_IOArray[index].endLpos;
+                output->sequence[seqIndex++]=nnodd_IOArray[index].id;
+                deleteElement(nnodd_IOArray, &oddIndex, index);
+                len1--;
+                if(index==0)
+                {   //printf("算法进入了2%d:\n,oddIndex");
+                    if(evenIndex==0){target=nnodd_IOArray[nonNegative(oddIndex-1)].startLpos;}
+                    else {target=nneven_IOArray[index].startLpos;}
+                    //printf("target: %d\n",target);
+                    //printf("evenIndex: %d\n",evenIndex);
+                }
+            }
+            else if(index==-1)
+            {
+                
+                //printf("算法进入了2:\n");
+                if(oddIndex==0){oddIndextag=0;target=nneven_IOArray[0].startLpos;}
+                if(evenIndex!=0){xx=0;}
+                else
+                {
+                    target=nnodd_IOArray[nonNegative(oddIndex-1)].startLpos;
+                }
+            }
+             }
+             
+        }
+        //printf("index: %d || xx :%d\n",index,xx);
+        // if(len1==0)
+        // {   
+        //     target=nneven_IOArray[0].startLpos-1;
+        //     int index = findFirstGreaterOrEqual(nneven_IOArray, evenIndex, target);
+        //     printf("index: %d || xx :%d\n",index,xx);
+        //     if(index!=-1)
+        //     {   printf("算法进入了1:\n");
+        //         nneven_IOArray[index].visit=1;
+        //         target=nneven_IOArray[index].endLpos;
+        //         output->sequence[seqIndex++]=nneven_IOArray[index].id;
+        //         len0--;
+        //     }
+        //     else if(index==-1)
+        //     {
+        //         xx=1;
+        //         printf("算法进入了2:\n");
+        //     }
+        // }
+    }
+//     for(int i=0;i<10;i++)
+//    {   printf("循环 %d xx:%d:\n",seqIndex,xx);
+//         //printf("xx %d:\n",xx);
+//         //printf("evenIndex %d:\n",evenIndex);
+//         printf("target: %d\n",target);
+//         printf("evenIndex: %d || xx :%d\n",evenIndex,xx);
+//         if(xx==0)
+//         {   printf("evenIndex: %d || xx :%d\n",evenIndex,xx);
+//             if(evenIndextag!=0)
+//             {
+//             index = findFirstGreaterOrEqual(nneven_IOArray, evenIndex, target);
+//             printf("index: %d || xx :%d\n",index,xx);
+//             if(index!=-1)
+//             {   printf("算法进入了1:\n");
+//                 nneven_IOArray[index].visit=1;
+//                 target=nneven_IOArray[index].endLpos;
+//                 output->sequence[seqIndex++]=nneven_IOArray[index].id;
+//                 deleteElement(nneven_IOArray, &evenIndex, index);
+//                 len0--;
+                
+//                 if(index==evenIndex-1)
+//                 {   printf("算法进入了3:\n");
+//                     if(oddIndex==0)target=nneven_IOArray[0].startLpos;
+//                     else target=nnodd_IOArray[oddIndex-1].startLpos;
+//                 }
+               
+//             }
+//             else if(index==-1)
+//             {
+                
+//                 printf("算法进入了2:\n");
+//                  if(evenIndex==0)evenIndextag=0;
+//                  printf("oddIndex: %d\n",oddIndex);
+//                  if(oddIndex!=0){xx=1;target=nnodd_IOArray[oddIndex-1].startLpos;}
+//                  else 
+//                  {
+//                     target=nneven_IOArray[0].startLpos;
+//                  }
+//             }
+//              }
+
+//         }
+//         else
+//         {   
+//               if(oddIndextag!=0)
+//              {
+//             printf("算法错误:\n");
+//             index = findFirstLessOrEqual(nnodd_IOArray, oddIndex, target);
+//              printf("index: %d || xx :%d\n",index,xx);
+//             if(index!=-1)
+//             {   printf("算法进入了1:\n");
+//                 nnodd_IOArray[index].visit=1;
+//                 target=nnodd_IOArray[index].endLpos;
+//                 output->sequence[seqIndex++]=nnodd_IOArray[index].id;
+//                 deleteElement(nnodd_IOArray, &oddIndex, index);
+//                 len1--;
+//                 if(index==0)
+//                 {   printf("算法进入了2%d:\n,oddIndex");
+//                     if(evenIndex==0){printf("算法进入了3:\n");target=nnodd_IOArray[nonNegative(oddIndex-1)].startLpos;}
+//                     else {printf("算法进入了4:\n");target=nneven_IOArray[index].startLpos;}
+//                     printf("target: %d\n",target);
+//                     printf("evenIndex: %d\n",evenIndex);
+//                 }
+//             }
+//             else if(index==-1)
+//             {
+                
+//                 //printf("算法进入了2:\n");
+//                 if(oddIndex==0){oddIndextag=0;}
+//                 if(evenIndex!=0)xx=0;
+//             }
+//              }
+             
+//         }
+//         printf("index: %d || xx :%d\n",index,xx);
+//         // if(len1==0)
+//         // {   
+//         //     target=nneven_IOArray[0].startLpos-1;
+//         //     int index = findFirstGreaterOrEqual(nneven_IOArray, evenIndex, target);
+//         //     printf("index: %d || xx :%d\n",index,xx);
+//         //     if(index!=-1)
+//         //     {   printf("算法进入了1:\n");
+//         //         nneven_IOArray[index].visit=1;
+//         //         target=nneven_IOArray[index].endLpos;
+//         //         output->sequence[seqIndex++]=nneven_IOArray[index].id;
+//         //         len0--;
+//         //     }
+//         //     else if(index==-1)
+//         //     {
+//         //         xx=1;
+//         //         printf("算法进入了2:\n");
+//         //     }
+//         // }
+//     }
+//     for (uint32_t i = 0; i <evenIndex ; ++i)
+//     printf("偶数第%d个节点%dstarlops: %d\n",i,nneven_IOArray[i].id,nneven_IOArray[i].startLpos);
+//     for (uint32_t i = 0; i < oddIndex; ++i)
+//     printf("奇数第%d个节点%dstarlops: %d\n",i,nnodd_IOArray[i].id,nnodd_IOArray[i].startLpos);
+
+//#if DEBUG_LEVEL >= 1
+    printf("nnnn算法得到的io序列:\n");
+    for (uint32_t i = 0; i < input->ioVec.len; ++i) {
+         printf("%d ", output->sequence[i]);
+    }
+    printf("\n");
+//#endif
+
+    // 释放副本内存
+    free(nnodd_IOArray);
+    free(nneven_IOArray);
+    return 0;
+}
 // 贪心插入构造
 int32_t GreedyInsert(const InputParam *input, OutputParam *output){
     uint32_t len = output->len + 2; //增加了一个虚拟节点和磁头起始位置节点
@@ -1018,19 +1477,19 @@ int MaxMatching_Random_heap(const InputParam *input, OutputParam *output) {
 
     // 构建邻接表
     getAdjList2(input, &graph);
-    //printf("构建邻接表完成\n");
+    printf("构建邻接表完成\n");
     // 初始化 MaxMatchingByHarryZHR 结构体
     MaxMatchingByHarryZHR matcher;
     initMaxMatchingByHarryZHR(&matcher, len);
-    //printf("initMaxMatchingByHarryZHR完成\n");
+    printf("initMaxMatchingByHarryZHR完成\n");
     // 调用最大匹配算法
     int* Next = solveMaxMatchingByHarryZHR(&matcher, &graph)->arr;
-    //printf("最大匹配算法完成\n");
+  
     int* visited = (int*)calloc(len, sizeof(int)); // 标记已经到达过的节点
 
     int idx = 0;
     int loops=0;
-    for (int i = len - 1; i >= 0; --i) {
+    for (int i = len - 2; i >= 0; --i) {
         if (!visited[i]) {
              loops++;
             int current = i;
@@ -1038,10 +1497,11 @@ int MaxMatching_Random_heap(const InputParam *input, OutputParam *output) {
             if (current != len - 1 && current != len - 2) {
                 output->sequence[idx++] = current + 1;
             }
+            int firstloopnode=current;
             while (Next[current] != -1 && !visited[Next[current]]) {
                 visited[current] = 1;
                 current = Next[current];
-                if (current != len - 1 && current != len - 2) {
+                if (current != len - 1 && current != len - 2&&current!=firstloopnode) {
                     output->sequence[idx++] = current + 1;
                 }
                  //printf(" -> %d", current);
@@ -1051,18 +1511,20 @@ int MaxMatching_Random_heap(const InputParam *input, OutputParam *output) {
         }
     }
     printf("环路个数: %d\n", loops);
+
 // #if DEBUG_LEVEL >= 1
-//     printf("最大匹配算法得到的 io 序列:\n");
-//     for (uint32_t i = 0; i < input->ioVec.len; ++i) {
-//         printf("%d ", output->sequence[i]);
-//     }
-//     printf("\n");
+    // printf("最大匹配算法得到的 io 序列:\n");
+    // for (uint32_t i = 0; i < input->ioVec.len; ++i) {
+    //     printf("%d ", output->sequence[i]);
+    // }
+    // printf("\n");
 // #endif
 
     // 释放资源
     free(visited);
+        printf("free(visited)\n");
     freeMaxMatchingByHarryZHR(&matcher);
-    
+    printf("freeMaxMatchingByHarryZHR\n");
     // 释放图的邻接表内存
     for (int i = 0; i < graph.n; i++) {
         Edge *e = graph.lists[i].head;
@@ -1099,17 +1561,18 @@ int MaxMatching_Greedy(const InputParam *input, OutputParam *output) {
     //printf("形成的环路：\n");
     int idx=0;
     int loops=0;
-    int current=len-1;//i=len-1,确保从磁头开始构建序列
+    int current=len-2;//i=len-1,确保从磁头开始构建序列
     while( current!=-1 && visited[current] != 1) {//i=len-1,确保从磁头开始构建序列
         visited[current] = 1;//标记访问
         loops++;
+        int firstloopnode=current;
         if(current!=len-1&&current!=len-2){//若当前节点不是磁头节点或者虚拟节点，则放入结果序列中
             output->sequence[idx++]=current+1;
         }
         while (Next[current] != -1 && !visited[Next[current]]) {//继续基于当前节点向后搜索，直到把同一回路（即本回路）的节点全部放入结果序列为止
             visited[current] = 1;//标记访问
             current = Next[current];//传递下标索引
-            if(current!=len-1&&current!=len-2){//放入结果序列
+            if(current!=len-1&&current!=len-2&&current!=firstloopnode){//放入结果序列
                 output->sequence[idx++]=current+1;
             }
         }
@@ -1173,27 +1636,40 @@ int MaxMatching_Greedy(const InputParam *input, OutputParam *output) {
 int32_t IOScheduleAlgorithm(const InputParam *input, OutputParam *output)
 {    
     getbaseline(input, output);
-
+    // if(input->ioVec.len<10000){
+    //     // 使用 LKH_MM 算法
+    //      return LKH_MM(input, output);
+    // }else{
+    //     //return MaxMatching_Greedy(input, output);
+    //     return NearestNeighbor(input, output);
+    // }
     // 使用 LKH_MM 算法
-     //return LKH_MM(input, output);
+    //return LKH_MM(input, output);
 
     // 使用 LKH_GI 算法
     // return LKH_GI(input, output); 
 
     // 使用 LKH_NN 算法
-    return LKH_NN(input, output);
+    //return LKH_NN(input, output);
+
+    // 使用 LKH_NN 算法
+    return LKH_nn1(input, output);
 
     // 使用最近邻贪心算法 
-    // return NearestNeighbor(input, output);
+    //return NearestNeighbor(input, output);
+
+    // 直接构造最近邻贪心算法 
+    //return NearestNeighbor1(input, output);
+
 
     // 使用贪心插入算法
     // return GreedyInsert(input, output);
 
     // 使用最大匹配-随机拼接算法
     //return MaxMatching_Random_qsort(input, output);
-    // return MaxMatching_Random_heap(input, output);
+     //return MaxMatching_Random_heap(input, output);
     // 使用最大匹配-贪心拼接算法
-    // return MaxMatching_Greedy(input, output);
+    //return MaxMatching_Greedy(input, output);
 
     // 使用 Sort 算法
     // return Sort(input, output);
