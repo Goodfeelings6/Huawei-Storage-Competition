@@ -1,0 +1,142 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset/case_74.txt
+head info : [136,479272,1]
+
+io count = 1000
+
+
+base_totaltime = 7359629.000073
+base_tapeBeltWear = 5442279.000000
+base_tapeMotorWear = 1406.000000
+maxbase = 7359629.000073
+new base_totaltime = 1.000000
+new base_tapeBeltWear = 0.739477
+new base_tapeMotorWear = 0.000191
+backup
+扫描轮数: 7 
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 0.000499002
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 1002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 2004
+MAX_TRIALS = 2004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 15
+POPMUSIC_SOLUTIONS = 10
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 40.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 769860.0, Ascent time = 0.28 sec.
+Cand.min = 2, Cand.avg = 5.5, Cand.max = 7
+Edges.fixed = 1003 [Cost = 0]
+Preprocessing time = 0.29 sec.
+* 1: Cost = 2459932, Time = 0.01 sec. 
+* 2: Cost = 2455210, Time = 0.02 sec. 
+* 3: Cost = 2412129, Time = 0.02 sec. 
+* 5: Cost = 2406726, Time = 0.04 sec. 
+* 6: Cost = 2406539, Time = 0.04 sec. 
+* 7: Cost = 2406176, Time = 0.05 sec. 
+* 8: Cost = 2406168, Time = 0.06 sec. 
+* 9: Cost = 2385497, Time = 0.06 sec. 
+* 14: Cost = 2385186, Time = 0.11 sec. 
+* 15: Cost = 2385120, Time = 0.11 sec. 
+* 16: Cost = 2338343, Time = 0.12 sec. 
+* 17: Cost = 2338304, Time = 0.13 sec. 
+* 19: Cost = 2338176, Time = 0.15 sec. 
+* 26: Cost = 2338001, Time = 0.19 sec. 
+* 28: Cost = 2331201, Time = 0.21 sec. 
+* 29: Cost = 2325026, Time = 0.22 sec. 
+* 31: Cost = 2324952, Time = 0.23 sec. 
+* 33: Cost = 2318021, Time = 0.24 sec. 
+* 34: Cost = 2317539, Time = 0.25 sec. 
+* 36: Cost = 2317484, Time = 0.26 sec. 
+* 39: Cost = 2317418, Time = 0.27 sec. 
+* 40: Cost = 2308353, Time = 0.28 sec. 
+* 41: Cost = 2308349, Time = 0.28 sec. 
+* 42: Cost = 2307839, Time = 0.29 sec. 
+* 43: Cost = 2290443, Time = 0.30 sec. 
+* 44: Cost = 2290384, Time = 0.30 sec. 
+* 45: Cost = 2290375, Time = 0.31 sec. 
+* 47: Cost = 2290335, Time = 0.32 sec. 
+* 48: Cost = 2290321, Time = 0.33 sec. 
+* 51: Cost = 2290279, Time = 0.35 sec. 
+* 61: Cost = 2290270, Time = 0.40 sec. 
+* 63: Cost = 2290123, Time = 0.42 sec. 
+* 74: Cost = 2283058, Time = 0.48 sec. 
+* 75: Cost = 2282977, Time = 0.49 sec. 
+* 77: Cost = 2282873, Time = 0.50 sec. 
+* 81: Cost = 2282828, Time = 0.52 sec. 
+* 116: Cost = 2282534, Time = 0.73 sec. 
+* 121: Cost = 2282453, Time = 0.76 sec. 
+* 130: Cost = 2282428, Time = 0.82 sec. 
+* 227: Cost = 2282192, Time = 1.39 sec. 
+* 244: Cost = 2282183, Time = 1.49 sec. 
+* 279: Cost = 2282159, Time = 1.69 sec. 
+*** Within 20s the extent of improvement(269(<3979.8)) is too small in 1.0s ***
+Run 1: Cost = 2282159, Time = 2.01 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 2282159, Cost.avg = 2282159.00, Cost.max = 2282159
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 333, Trials.avg = 333.0, Trials.max = 333
+Time.min = 2.01 sec., Time.avg = 2.01 sec., Time.max = 2.01 sec.
+Time.total = 2.29 sec.
+
+Key Metrics:
+	ioCount:			 1000
+	algorithmRunningDuration:	 2310.919 (ms)
+	memoryUse:			 5472.83 (KB)
+	addressingDuration:		 2170722 (ms)
+	readDuration:			 1045633 (ms)
+	tapeBeltWear:			 3044689
+	tapeMotorWear:			 210
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

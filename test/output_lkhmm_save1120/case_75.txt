@@ -1,0 +1,141 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset_small/case_75.txt
+head info : [16,455661,0]
+
+io count = 1000
+
+
+base_totaltime = 6952769.000076
+base_tapeBeltWear = 5170638.000000
+base_tapeMotorWear = 1297.000000
+maxbase = 6952769.000076
+new base_totaltime = 1.000000
+new base_tapeBeltWear = 0.743680
+new base_tapeMotorWear = 0.000187
+backup
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 0.000499002
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 1002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 2004
+MAX_TRIALS = 2004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 25
+POPMUSIC_SOLUTIONS = 5
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 40.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 804843.0, Ascent time = 0.41 sec.
+Cand.min = 2, Cand.avg = 4.4, Cand.max = 7
+Edges.fixed = 1003 [Cost = 0]
+Preprocessing time = 0.41 sec.
+* 1: Cost = 2262291, Time = 0.01 sec. 
+* 2: Cost = 2245351, Time = 0.01 sec. 
+* 3: Cost = 2245132, Time = 0.02 sec. 
+* 4: Cost = 2244297, Time = 0.02 sec. 
+* 6: Cost = 2244149, Time = 0.03 sec. 
+* 7: Cost = 2244145, Time = 0.03 sec. 
+* 8: Cost = 2243654, Time = 0.04 sec. 
+* 9: Cost = 2243653, Time = 0.04 sec. 
+* 10: Cost = 2243634, Time = 0.04 sec. 
+* 11: Cost = 2243136, Time = 0.05 sec. 
+* 14: Cost = 2241662, Time = 0.06 sec. 
+* 16: Cost = 2235239, Time = 0.07 sec. 
+* 17: Cost = 2135674, Time = 0.07 sec. 
+* 20: Cost = 2135134, Time = 0.08 sec. 
+* 21: Cost = 2135127, Time = 0.09 sec. 
+* 22: Cost = 2122100, Time = 0.09 sec. 
+* 26: Cost = 2119806, Time = 0.11 sec. 
+* 27: Cost = 2119798, Time = 0.11 sec. 
+* 28: Cost = 2119797, Time = 0.11 sec. 
+* 29: Cost = 2119724, Time = 0.12 sec. 
+* 30: Cost = 2119593, Time = 0.12 sec. 
+* 32: Cost = 2118434, Time = 0.13 sec. 
+* 35: Cost = 2118354, Time = 0.14 sec. 
+* 38: Cost = 2114023, Time = 0.15 sec. 
+* 40: Cost = 2114021, Time = 0.17 sec. 
+* 45: Cost = 2113791, Time = 0.19 sec. 
+* 46: Cost = 2112734, Time = 0.19 sec. 
+* 47: Cost = 2112682, Time = 0.20 sec. 
+* 51: Cost = 2112677, Time = 0.21 sec. 
+* 52: Cost = 2112558, Time = 0.22 sec. 
+* 81: Cost = 2107454, Time = 0.33 sec. 
+* 86: Cost = 2106944, Time = 0.34 sec. 
+* 150: Cost = 2106873, Time = 0.61 sec. 
+* 153: Cost = 2106508, Time = 0.62 sec. 
+* 214: Cost = 2106279, Time = 0.87 sec. 
+* 225: Cost = 2106228, Time = 0.92 sec. 
+* 230: Cost = 2106211, Time = 0.94 sec. 
+* 288: Cost = 2106206, Time = 1.17 sec. 
+* 379: Cost = 2106191, Time = 1.53 sec. 
+* 388: Cost = 2106157, Time = 1.57 sec. 
+* 392: Cost = 2106148, Time = 1.58 sec. 
+* 393: Cost = 2106143, Time = 1.59 sec. 
+*** Within 20s the extent of improvement(68(<3776.4)) is too small in 1.0s ***
+Run 1: Cost = 2106143, Time = 2.01 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 2106143, Cost.avg = 2106143.00, Cost.max = 2106143
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 499, Trials.avg = 499.0, Trials.max = 499
+Time.min = 2.01 sec., Time.avg = 2.01 sec., Time.max = 2.01 sec.
+Time.total = 2.43 sec.
+
+Key Metrics:
+	ioCount:			 1000
+	algorithmRunningDuration:	 2449.129 (ms)
+	memoryUse:			 6686.56 (KB)
+	addressingDuration:		 2030926 (ms)
+	readDuration:			 1061757 (ms)
+	tapeBeltWear:			 2878329
+	tapeMotorWear:			 201
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

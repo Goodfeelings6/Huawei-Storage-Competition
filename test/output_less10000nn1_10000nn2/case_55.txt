@@ -1,0 +1,38 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset/case_55.txt
+head info : [11,214623,0]
+
+io count = 10000
+
+
+base_totaltime = 153561277.001064
+base_tapeBeltWear = 93704168.000000
+base_tapeMotorWear = 37073.000000
+maxbase = 153561277.001064
+new base_totaltime = 1.000000
+new base_tapeBeltWear = 0.610207
+new base_tapeMotorWear = 0.000241
+hdd
+有重复wrap情况:  
+有重复wrap情况:  
+有重复wrap情况:  
+有重复wrap情况:  
+有重复wrap情况:  
+有重复wrap情况:  
+有重复wrap情况:  
+扫描轮数: 19 
+
+Key Metrics:
+	ioCount:			 10000
+	algorithmRunningDuration:	 240.169 (ms)
+	memoryUse:			 3303.00 (KB)
+	addressingDuration:		 10829877 (ms)
+	readDuration:			 10220256 (ms)
+	tapeBeltWear:			 25400892
+	tapeMotorWear:			 77
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

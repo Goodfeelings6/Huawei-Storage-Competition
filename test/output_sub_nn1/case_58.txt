@@ -1,0 +1,30 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset_sub/case_58.txt
+head info : [249,93110,1]
+
+io count = 10000
+
+
+base_totaltime = 155669007.001214
+base_tapeBeltWear = 95031817.000000
+base_tapeMotorWear = 37352.000000
+maxbase = 155669007.001214
+new base_totaltime = 1.000000
+new base_tapeBeltWear = 0.610474
+new base_tapeMotorWear = 0.000240
+hdd
+
+Key Metrics:
+	ioCount:			 10000
+	algorithmRunningDuration:	 256.980 (ms)
+	memoryUse:			 3616.00 (KB)
+	addressingDuration:		 9361812 (ms)
+	readDuration:			 10383687 (ms)
+	tapeBeltWear:			 21807873
+	tapeMotorWear:			 144
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

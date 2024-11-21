@@ -261,11 +261,12 @@ def compare(io1, io2):
 
 # 测试函数调用
 if __name__ == "__main__":
-    dataset_dir = './dataset'
+    dataset_dir = './dataset_10000'
     if not os.path.exists(dataset_dir):
         os.mkdir(dataset_dir)
 
-    io_counts = [10,50,100,1000,2000,5000,10000]  # IO 数量
+    # io_counts = [10,50,100,1000,2000,5000,10000]  # IO 数量
+    io_counts = [10000]  # IO 数量
     # io_counts = [1350,1500,1750,3000,4000,6000,7000,8000,9000,9500]  # IO 数量
     wrap_distributions = ['front_20', 'front_30', 'front_50', 'full']  # 在整个磁带区域分布
     startlpos_distributions = ['random', 'gaussian']  # 在横向磁带区域分布
@@ -280,8 +281,8 @@ if __name__ == "__main__":
         state_reverse_probability = 0  # 倒序状态触发概率
         for wrap_distribution in wrap_distributions: # 不同 wrap区域分布
             for startlpos_distribution in startlpos_distributions: # 不同横向磁带区域分布
-                # for num in range(5): # 每种生成5个
-                for num in range(1): # 每种生成1个
+                for num in range(20): # 每种生成5个
+                # for num in range(1): # 每种生成1个
                     test_cases = generate_test_cases(io_count, wrap_distribution, startlpos_distribution)
                     # 写入文件
                     file_name = f'{dataset_dir}/case_{index}.txt'
@@ -289,7 +290,7 @@ if __name__ == "__main__":
                     print(f'Generate case_{index}.txt success!')
                     index += 1
         # io = 100 和 1000，额外生成带连续的
-        if io_count == 100 or io_count == 1000:
+        if io_count == 100 or io_count == 10000:
             state_random_probability = 80   # 随机状态触发概率
             state_continue_probability = 20 # 连续状态触发概率
             state_reverse_probability = 0  # 倒序状态触发概率
@@ -301,7 +302,7 @@ if __name__ == "__main__":
             index += 1
 
         # io = 100 和 1000，额外生成带连续加倒序的
-        if io_count == 100 or io_count == 1000:
+        if io_count == 100 or io_count == 10000:
             state_random_probability = 80   # 随机状态触发概率
             state_continue_probability = 10 # 连续状态触发概率
             state_reverse_probability = 10  # 倒序状态触发概率
@@ -318,7 +319,8 @@ if __name__ == "__main__":
         state_continue_probability = 30 # 连续状态触发概率
         state_reverse_probability = 0  # 倒序状态触发概率
         for wrap_distribution in wrap_distributions: # 不同 wrap区域分布
-            for num in range(1): # 每种生成1个
+            # for num in range(1): # 每种生成1个
+            for num in range(10): # 每种生成1个
                 test_cases = generate_test_cases(io_count, wrap_distribution, 'random')
                 # 排序
                 test_cases = sorted(test_cases, key=cmp_to_key(compare))
