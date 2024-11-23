@@ -4,8 +4,9 @@
             "name": "Linux",
             "includePath": [
                 "${config:ProjectDirPath}/",
-                "${config:ProjectDirPath}/algorithm/",
-                "${config:ProjectDirPath}/LKH2_MIN/**"
+                "${config:ProjectDirPath}/algorithm/include",
+                "${config:ProjectDirPath}/LKH2_MIN/",
+                "${config:ProjectDirPath}/LKH2_MIN/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

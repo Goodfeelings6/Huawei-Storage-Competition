@@ -61,7 +61,7 @@ def score():
         instanceID = int(re.search(r'case_(\d+).txt', curr_data_i_dict["name"]).group(1))
         base_data_i_dict = decode(base_data[instanceID-1])
         # 权重
-        if instanceID <= 60:
+        if instanceID <= 66:
             alpha = 0.5
             beta = 0.3
             gama = 0.2
@@ -126,13 +126,13 @@ def score():
     
     scoreFile.write(f"读时延总加分:{sum(readTimeScoreList):.2f}\t")
     scoreFile.write(f"带体磨损总加分:{sum(tapeBeltWearScoreList):.2f}\t")
-    scoreFile.write(f"电机磨损总加分:{sum(tapeMotorWearScoreList):.2f}\t")
+    scoreFile.write(f"电机磨损总加分:{sum(tapeMotorWearScoreList):.2f}\n")
     scoreFile.write(f"调度算法总加分:{sum(schedulScore):.2f}\t")
     scoreFile.write(f"调度用时总加分:{sum(timeScore):.2f}\t")
-    scoreFile.write(f"调度超时总罚分:{sum(timeoutPenalty):.2f}\t")
+    scoreFile.write(f"调度超时总罚分:{sum(timeoutPenalty):.2f}\n")
     scoreFile.write(f"空间超限总罚分:{sum(spaceOverlimitPenalty):.2f}\t")
-    scoreFile.write(f"排序错误总数量:{sum(sortErrorCount):.2f}\t")
-    scoreFile.write(f"\n总分:{sum(instanceScore):.2f}\n")
+    scoreFile.write(f"排序错误总数量:{sum(sortErrorCount):.2f}\n")
+    scoreFile.write(f"总分:{sum(instanceScore):.2f}\n")
 
     # 测相比基线的提升幅度
     # with open(os.path.join(args.c, "A-total.txt"), "r", encoding="utf-8") as f1:

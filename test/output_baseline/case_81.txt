@@ -2,21 +2,21 @@
 
 Welcome to HW project.
 
-The file path is: /home/csg/Huawei-Storage-Competition/test/dataset/case_81.txt
-head info : [77,367317,0]
+The file path is: ./dataset/case_81.txt
+head info : [16,455661,0]
 
-io count = 5000
+io count = 1000
 
 
 
 Key Metrics:
-	ioCount:			 5000
-	algorithmRunningDuration:	 0.354 (ms)
-	memoryUse:			 1240.00 (KB)
-	addressingDuration:		 62981376 (ms)
-	readDuration:			 5310182 (ms)
-	tapeBeltWear:			 42340338
-	tapeMotorWear:			 16261
+	ioCount:			 1000
+	algorithmRunningDuration:	 0.074 (ms)
+	memoryUse:			 880.00 (KB)
+	addressingDuration:		 5891012 (ms)
+	readDuration:			 1061757 (ms)
+	tapeBeltWear:			 5170638
+	tapeMotorWear:			 1297
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

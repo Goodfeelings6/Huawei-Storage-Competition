@@ -55,5 +55,8 @@ CMakeFiles/LKH.dir/LKH2_MIN/src/Distance_SPECIAL.c.o: \
  /usr/lib/gcc/aarch64-linux-gnu/10.3.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-uintn.h \
- /home/csg/Huawei-Storage-Competition/algorithm/algorithm.h \
- /home/csg/Huawei-Storage-Competition/algorithm/../public.h
+ /home/csg/Huawei-Storage-Competition/algorithm/include/algorithm.h \
+ /usr/include/sys/time.h \
+ /home/csg/Huawei-Storage-Competition/LKH2_MIN/../public.h \
+ /home/csg/Huawei-Storage-Competition/LKH2_MIN/LKHInterface.h \
+ /home/csg/Huawei-Storage-Competition/LKH2_MIN/include/Genetic.h

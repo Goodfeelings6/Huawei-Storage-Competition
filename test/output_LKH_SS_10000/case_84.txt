@@ -1,0 +1,94 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset_10000/case_84.txt
+head info : [89,201418,0]
+
+io count = 10000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 4.999e-05
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 10002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 20004
+MAX_TRIALS = 20004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 20
+POPMUSIC_SOLUTIONS = 3
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 40.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 38324085.0, Ascent time = 2.85 sec.
+Cand.min = 2, Cand.avg = 4.9, Cand.max = 5
+Edges.fixed = 10003 [Cost = 0]
+Preprocessing time = 2.87 sec.
+* 1: Cost = 317384850, Time = 0.69 sec. 
+* 2: Cost = 314728097, Time = 1.06 sec. 
+* 3: Cost = 313338844, Time = 1.36 sec. 
+*** Within 20s the extent of improvement(4046006(<5835717.4)) is too small in 0.5s ***
+Run 1: Cost = 313338844, Time = 1.37 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 313338844, Cost.avg = 313338844.00, Cost.max = 313338844
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 3, Trials.avg = 3.0, Trials.max = 3
+Time.min = 1.37 sec., Time.avg = 1.37 sec., Time.max = 1.37 sec.
+Time.total = 4.25 sec.
+
+Key Metrics:
+	ioCount:			 10000
+	algorithmRunningDuration:	 4837.103 (ms)
+	memoryUse:			 13755.69 (KB)
+	addressingDuration:		 20245561 (ms)
+	readDuration:			 54105262 (ms)
+	tapeBeltWear:			 86275093
+	tapeMotorWear:			 1141
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

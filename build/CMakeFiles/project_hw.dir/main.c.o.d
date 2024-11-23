@@ -40,15 +40,36 @@ CMakeFiles/project_hw.dir/main.c.o: \
  /usr/lib/gcc/aarch64-linux-gnu/10.3.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-uintn.h \
- /home/csg/Huawei-Storage-Competition/algorithm/algorithm.h \
- /home/csg/Huawei-Storage-Competition/algorithm/../public.h \
+ /home/csg/Huawei-Storage-Competition/algorithm/include/algorithm.h \
+ /home/csg/Huawei-Storage-Competition/LKH2_MIN/../public.h \
+ /home/csg/Huawei-Storage-Competition/LKH2_MIN/LKHInterface.h \
+ /home/csg/Huawei-Storage-Competition/LKH2_MIN/include/LKH.h \
+ /usr/include/assert.h /usr/include/ctype.h \
+ /usr/lib/gcc/aarch64-linux-gnu/10.3.1/include/float.h \
+ /usr/lib/gcc/aarch64-linux-gnu/10.3.1/include/limits.h \
+ /usr/lib/gcc/aarch64-linux-gnu/10.3.1/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/pthread_stack_min-dynamic.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h /usr/include/math.h \
+ /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h /usr/include/time.h \
+ /usr/include/bits/time.h /usr/include/bits/timex.h \
+ /usr/include/bits/types/struct_tm.h \
+ /usr/include/bits/types/struct_itimerspec.h \
+ /home/csg/Huawei-Storage-Competition/LKH2_MIN/include/GainType.h \
+ /home/csg/Huawei-Storage-Competition/LKH2_MIN/include/Hashing.h \
+ /home/csg/Huawei-Storage-Competition/public.h \
+ /home/csg/Huawei-Storage-Competition/LKH2_MIN/include/Genetic.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
  /usr/include/bits/types/struct_sched_param.h /usr/include/bits/cpu-set.h \
- /usr/include/time.h /usr/include/bits/time.h /usr/include/bits/timex.h \
- /usr/include/bits/types/struct_tm.h \
- /usr/include/bits/types/struct_itimerspec.h /usr/include/bits/setjmp.h \
+ /usr/include/bits/setjmp.h \
  /usr/include/bits/types/struct___jmp_buf_tag.h \
- /usr/include/bits/pthread_stack_min-dynamic.h \
  /usr/include/sys/resource.h /usr/include/bits/resource.h \
  /usr/include/bits/types/struct_rusage.h /usr/include/sys/sysinfo.h \
  /usr/include/linux/kernel.h /usr/include/linux/sysinfo.h \

@@ -20,15 +20,16 @@ set(LKH_DIR ${PROJECT_SOURCE_DIR}/LKH2_MIN)
 # 设置头文件目录变量
 set(HEADER_DIRS
     ${PROJECT_SOURCE_DIR}
-    ${ALG_DIR}
+    ${ALG_DIR}/include
     ${LKH_DIR}
     ${LKH_DIR}/include
 )
 
 # 添加源文件变量
+aux_source_directory(${ALG_DIR}/src ALG_SRC)
 set(SOURCES
     ${PROJECT_SOURCE_DIR}/main.c
-    ${ALG_DIR}/algorithm.c
+    ${ALG_SRC}
     ${LKH_DIR}/LKHInterface.c
 )
 

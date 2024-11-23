@@ -2014,29 +2014,317 @@ LKH2_MIN/src/printff.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LKH.dir/build.make CMakeFiles/LKH.dir/LKH2_MIN/src/printff.c.s
 .PHONY : LKH2_MIN/src/printff.c.s
 
-algorithm/algorithm.o: algorithm/algorithm.c.o
-.PHONY : algorithm/algorithm.o
+algorithm/src/GetBaseline.o: algorithm/src/GetBaseline.c.o
+.PHONY : algorithm/src/GetBaseline.o
 
 # target to build an object file
-algorithm/algorithm.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/algorithm.c.o
-.PHONY : algorithm/algorithm.c.o
+algorithm/src/GetBaseline.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/GetBaseline.c.o
+.PHONY : algorithm/src/GetBaseline.c.o
 
-algorithm/algorithm.i: algorithm/algorithm.c.i
-.PHONY : algorithm/algorithm.i
+algorithm/src/GetBaseline.i: algorithm/src/GetBaseline.c.i
+.PHONY : algorithm/src/GetBaseline.i
 
 # target to preprocess a source file
-algorithm/algorithm.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/algorithm.c.i
-.PHONY : algorithm/algorithm.c.i
+algorithm/src/GetBaseline.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/GetBaseline.c.i
+.PHONY : algorithm/src/GetBaseline.c.i
 
-algorithm/algorithm.s: algorithm/algorithm.c.s
-.PHONY : algorithm/algorithm.s
+algorithm/src/GetBaseline.s: algorithm/src/GetBaseline.c.s
+.PHONY : algorithm/src/GetBaseline.s
 
 # target to generate assembly for a file
-algorithm/algorithm.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/algorithm.c.s
-.PHONY : algorithm/algorithm.c.s
+algorithm/src/GetBaseline.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/GetBaseline.c.s
+.PHONY : algorithm/src/GetBaseline.c.s
+
+algorithm/src/GetCost.o: algorithm/src/GetCost.c.o
+.PHONY : algorithm/src/GetCost.o
+
+# target to build an object file
+algorithm/src/GetCost.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/GetCost.c.o
+.PHONY : algorithm/src/GetCost.c.o
+
+algorithm/src/GetCost.i: algorithm/src/GetCost.c.i
+.PHONY : algorithm/src/GetCost.i
+
+# target to preprocess a source file
+algorithm/src/GetCost.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/GetCost.c.i
+.PHONY : algorithm/src/GetCost.c.i
+
+algorithm/src/GetCost.s: algorithm/src/GetCost.c.s
+.PHONY : algorithm/src/GetCost.s
+
+# target to generate assembly for a file
+algorithm/src/GetCost.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/GetCost.c.s
+.PHONY : algorithm/src/GetCost.c.s
+
+algorithm/src/GreedyInsert.o: algorithm/src/GreedyInsert.c.o
+.PHONY : algorithm/src/GreedyInsert.o
+
+# target to build an object file
+algorithm/src/GreedyInsert.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/GreedyInsert.c.o
+.PHONY : algorithm/src/GreedyInsert.c.o
+
+algorithm/src/GreedyInsert.i: algorithm/src/GreedyInsert.c.i
+.PHONY : algorithm/src/GreedyInsert.i
+
+# target to preprocess a source file
+algorithm/src/GreedyInsert.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/GreedyInsert.c.i
+.PHONY : algorithm/src/GreedyInsert.c.i
+
+algorithm/src/GreedyInsert.s: algorithm/src/GreedyInsert.c.s
+.PHONY : algorithm/src/GreedyInsert.s
+
+# target to generate assembly for a file
+algorithm/src/GreedyInsert.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/GreedyInsert.c.s
+.PHONY : algorithm/src/GreedyInsert.c.s
+
+algorithm/src/LKH_GI.o: algorithm/src/LKH_GI.c.o
+.PHONY : algorithm/src/LKH_GI.o
+
+# target to build an object file
+algorithm/src/LKH_GI.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/LKH_GI.c.o
+.PHONY : algorithm/src/LKH_GI.c.o
+
+algorithm/src/LKH_GI.i: algorithm/src/LKH_GI.c.i
+.PHONY : algorithm/src/LKH_GI.i
+
+# target to preprocess a source file
+algorithm/src/LKH_GI.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/LKH_GI.c.i
+.PHONY : algorithm/src/LKH_GI.c.i
+
+algorithm/src/LKH_GI.s: algorithm/src/LKH_GI.c.s
+.PHONY : algorithm/src/LKH_GI.s
+
+# target to generate assembly for a file
+algorithm/src/LKH_GI.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/LKH_GI.c.s
+.PHONY : algorithm/src/LKH_GI.c.s
+
+algorithm/src/LKH_MM.o: algorithm/src/LKH_MM.c.o
+.PHONY : algorithm/src/LKH_MM.o
+
+# target to build an object file
+algorithm/src/LKH_MM.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/LKH_MM.c.o
+.PHONY : algorithm/src/LKH_MM.c.o
+
+algorithm/src/LKH_MM.i: algorithm/src/LKH_MM.c.i
+.PHONY : algorithm/src/LKH_MM.i
+
+# target to preprocess a source file
+algorithm/src/LKH_MM.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/LKH_MM.c.i
+.PHONY : algorithm/src/LKH_MM.c.i
+
+algorithm/src/LKH_MM.s: algorithm/src/LKH_MM.c.s
+.PHONY : algorithm/src/LKH_MM.s
+
+# target to generate assembly for a file
+algorithm/src/LKH_MM.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/LKH_MM.c.s
+.PHONY : algorithm/src/LKH_MM.c.s
+
+algorithm/src/LKH_NN.o: algorithm/src/LKH_NN.c.o
+.PHONY : algorithm/src/LKH_NN.o
+
+# target to build an object file
+algorithm/src/LKH_NN.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/LKH_NN.c.o
+.PHONY : algorithm/src/LKH_NN.c.o
+
+algorithm/src/LKH_NN.i: algorithm/src/LKH_NN.c.i
+.PHONY : algorithm/src/LKH_NN.i
+
+# target to preprocess a source file
+algorithm/src/LKH_NN.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/LKH_NN.c.i
+.PHONY : algorithm/src/LKH_NN.c.i
+
+algorithm/src/LKH_NN.s: algorithm/src/LKH_NN.c.s
+.PHONY : algorithm/src/LKH_NN.s
+
+# target to generate assembly for a file
+algorithm/src/LKH_NN.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/LKH_NN.c.s
+.PHONY : algorithm/src/LKH_NN.c.s
+
+algorithm/src/LKH_SS.o: algorithm/src/LKH_SS.c.o
+.PHONY : algorithm/src/LKH_SS.o
+
+# target to build an object file
+algorithm/src/LKH_SS.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/LKH_SS.c.o
+.PHONY : algorithm/src/LKH_SS.c.o
+
+algorithm/src/LKH_SS.i: algorithm/src/LKH_SS.c.i
+.PHONY : algorithm/src/LKH_SS.i
+
+# target to preprocess a source file
+algorithm/src/LKH_SS.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/LKH_SS.c.i
+.PHONY : algorithm/src/LKH_SS.c.i
+
+algorithm/src/LKH_SS.s: algorithm/src/LKH_SS.c.s
+.PHONY : algorithm/src/LKH_SS.s
+
+# target to generate assembly for a file
+algorithm/src/LKH_SS.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/LKH_SS.c.s
+.PHONY : algorithm/src/LKH_SS.c.s
+
+algorithm/src/MaxMatching_Greedy.o: algorithm/src/MaxMatching_Greedy.c.o
+.PHONY : algorithm/src/MaxMatching_Greedy.o
+
+# target to build an object file
+algorithm/src/MaxMatching_Greedy.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/MaxMatching_Greedy.c.o
+.PHONY : algorithm/src/MaxMatching_Greedy.c.o
+
+algorithm/src/MaxMatching_Greedy.i: algorithm/src/MaxMatching_Greedy.c.i
+.PHONY : algorithm/src/MaxMatching_Greedy.i
+
+# target to preprocess a source file
+algorithm/src/MaxMatching_Greedy.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/MaxMatching_Greedy.c.i
+.PHONY : algorithm/src/MaxMatching_Greedy.c.i
+
+algorithm/src/MaxMatching_Greedy.s: algorithm/src/MaxMatching_Greedy.c.s
+.PHONY : algorithm/src/MaxMatching_Greedy.s
+
+# target to generate assembly for a file
+algorithm/src/MaxMatching_Greedy.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/MaxMatching_Greedy.c.s
+.PHONY : algorithm/src/MaxMatching_Greedy.c.s
+
+algorithm/src/MultiSortScan.o: algorithm/src/MultiSortScan.c.o
+.PHONY : algorithm/src/MultiSortScan.o
+
+# target to build an object file
+algorithm/src/MultiSortScan.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/MultiSortScan.c.o
+.PHONY : algorithm/src/MultiSortScan.c.o
+
+algorithm/src/MultiSortScan.i: algorithm/src/MultiSortScan.c.i
+.PHONY : algorithm/src/MultiSortScan.i
+
+# target to preprocess a source file
+algorithm/src/MultiSortScan.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/MultiSortScan.c.i
+.PHONY : algorithm/src/MultiSortScan.c.i
+
+algorithm/src/MultiSortScan.s: algorithm/src/MultiSortScan.c.s
+.PHONY : algorithm/src/MultiSortScan.s
+
+# target to generate assembly for a file
+algorithm/src/MultiSortScan.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/MultiSortScan.c.s
+.PHONY : algorithm/src/MultiSortScan.c.s
+
+algorithm/src/NearestNeighbor.o: algorithm/src/NearestNeighbor.c.o
+.PHONY : algorithm/src/NearestNeighbor.o
+
+# target to build an object file
+algorithm/src/NearestNeighbor.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/NearestNeighbor.c.o
+.PHONY : algorithm/src/NearestNeighbor.c.o
+
+algorithm/src/NearestNeighbor.i: algorithm/src/NearestNeighbor.c.i
+.PHONY : algorithm/src/NearestNeighbor.i
+
+# target to preprocess a source file
+algorithm/src/NearestNeighbor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/NearestNeighbor.c.i
+.PHONY : algorithm/src/NearestNeighbor.c.i
+
+algorithm/src/NearestNeighbor.s: algorithm/src/NearestNeighbor.c.s
+.PHONY : algorithm/src/NearestNeighbor.s
+
+# target to generate assembly for a file
+algorithm/src/NearestNeighbor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/NearestNeighbor.c.s
+.PHONY : algorithm/src/NearestNeighbor.c.s
+
+algorithm/src/Scan.o: algorithm/src/Scan.c.o
+.PHONY : algorithm/src/Scan.o
+
+# target to build an object file
+algorithm/src/Scan.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/Scan.c.o
+.PHONY : algorithm/src/Scan.c.o
+
+algorithm/src/Scan.i: algorithm/src/Scan.c.i
+.PHONY : algorithm/src/Scan.i
+
+# target to preprocess a source file
+algorithm/src/Scan.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/Scan.c.i
+.PHONY : algorithm/src/Scan.c.i
+
+algorithm/src/Scan.s: algorithm/src/Scan.c.s
+.PHONY : algorithm/src/Scan.s
+
+# target to generate assembly for a file
+algorithm/src/Scan.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/Scan.c.s
+.PHONY : algorithm/src/Scan.c.s
+
+algorithm/src/Sort.o: algorithm/src/Sort.c.o
+.PHONY : algorithm/src/Sort.o
+
+# target to build an object file
+algorithm/src/Sort.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/Sort.c.o
+.PHONY : algorithm/src/Sort.c.o
+
+algorithm/src/Sort.i: algorithm/src/Sort.c.i
+.PHONY : algorithm/src/Sort.i
+
+# target to preprocess a source file
+algorithm/src/Sort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/Sort.c.i
+.PHONY : algorithm/src/Sort.c.i
+
+algorithm/src/Sort.s: algorithm/src/Sort.c.s
+.PHONY : algorithm/src/Sort.s
+
+# target to generate assembly for a file
+algorithm/src/Sort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/Sort.c.s
+.PHONY : algorithm/src/Sort.c.s
+
+algorithm/src/algorithm.o: algorithm/src/algorithm.c.o
+.PHONY : algorithm/src/algorithm.o
+
+# target to build an object file
+algorithm/src/algorithm.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/algorithm.c.o
+.PHONY : algorithm/src/algorithm.c.o
+
+algorithm/src/algorithm.i: algorithm/src/algorithm.c.i
+.PHONY : algorithm/src/algorithm.i
+
+# target to preprocess a source file
+algorithm/src/algorithm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/algorithm.c.i
+.PHONY : algorithm/src/algorithm.c.i
+
+algorithm/src/algorithm.s: algorithm/src/algorithm.c.s
+.PHONY : algorithm/src/algorithm.s
+
+# target to generate assembly for a file
+algorithm/src/algorithm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_hw.dir/build.make CMakeFiles/project_hw.dir/algorithm/src/algorithm.c.s
+.PHONY : algorithm/src/algorithm.c.s
 
 main.o: main.c.o
 .PHONY : main.o
@@ -2306,9 +2594,45 @@ help:
 	@echo "... LKH2_MIN/src/printff.o"
 	@echo "... LKH2_MIN/src/printff.i"
 	@echo "... LKH2_MIN/src/printff.s"
-	@echo "... algorithm/algorithm.o"
-	@echo "... algorithm/algorithm.i"
-	@echo "... algorithm/algorithm.s"
+	@echo "... algorithm/src/GetBaseline.o"
+	@echo "... algorithm/src/GetBaseline.i"
+	@echo "... algorithm/src/GetBaseline.s"
+	@echo "... algorithm/src/GetCost.o"
+	@echo "... algorithm/src/GetCost.i"
+	@echo "... algorithm/src/GetCost.s"
+	@echo "... algorithm/src/GreedyInsert.o"
+	@echo "... algorithm/src/GreedyInsert.i"
+	@echo "... algorithm/src/GreedyInsert.s"
+	@echo "... algorithm/src/LKH_GI.o"
+	@echo "... algorithm/src/LKH_GI.i"
+	@echo "... algorithm/src/LKH_GI.s"
+	@echo "... algorithm/src/LKH_MM.o"
+	@echo "... algorithm/src/LKH_MM.i"
+	@echo "... algorithm/src/LKH_MM.s"
+	@echo "... algorithm/src/LKH_NN.o"
+	@echo "... algorithm/src/LKH_NN.i"
+	@echo "... algorithm/src/LKH_NN.s"
+	@echo "... algorithm/src/LKH_SS.o"
+	@echo "... algorithm/src/LKH_SS.i"
+	@echo "... algorithm/src/LKH_SS.s"
+	@echo "... algorithm/src/MaxMatching_Greedy.o"
+	@echo "... algorithm/src/MaxMatching_Greedy.i"
+	@echo "... algorithm/src/MaxMatching_Greedy.s"
+	@echo "... algorithm/src/MultiSortScan.o"
+	@echo "... algorithm/src/MultiSortScan.i"
+	@echo "... algorithm/src/MultiSortScan.s"
+	@echo "... algorithm/src/NearestNeighbor.o"
+	@echo "... algorithm/src/NearestNeighbor.i"
+	@echo "... algorithm/src/NearestNeighbor.s"
+	@echo "... algorithm/src/Scan.o"
+	@echo "... algorithm/src/Scan.i"
+	@echo "... algorithm/src/Scan.s"
+	@echo "... algorithm/src/Sort.o"
+	@echo "... algorithm/src/Sort.i"
+	@echo "... algorithm/src/Sort.s"
+	@echo "... algorithm/src/algorithm.o"
+	@echo "... algorithm/src/algorithm.i"
+	@echo "... algorithm/src/algorithm.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
