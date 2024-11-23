@@ -2,7 +2,7 @@
 
 /* 返回目标函数值:两点间距离 */
 int GetObjectValue(const HeadInfo *start, const HeadInfo *end){
-    //double value = SeekTimeCalculate(start, end) * final_alpha + BeltWearTimes(start, end, NULL) * final_beta  + MotorWearTimes(start, end) * final_gama;
+    // double value = SeekTimeCalculate(start, end) * final_alpha + BeltWearTimes(start, end, NULL) * final_beta  + MotorWearTimes(start, end) * final_gama;
     double value = SeekTimeCalculate(start, end) * final_alpha + MotorWearTimes(start, end) * final_gama;
     // double value = BeltWearTimes(start, end, NULL) * final_beta + MotorWearTimes(start, end)*final_gama;
     // if(value<100)

@@ -15,6 +15,12 @@ double final_alpha = 0; // 最终权重
 double final_beta = 0;
 double final_gama = 0;
 
+double MyGetTime(){ 
+    struct timeval tv;
+    gettimeofday(&tv, NULL);
+    return tv.tv_sec + tv.tv_usec / 1000000.0;
+}; 
+
 // 设置需要调整的 LKH 的参数
 void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleStartTime){
     if(matDimension <= 102){ // 10,50,100

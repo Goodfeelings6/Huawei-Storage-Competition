@@ -69,11 +69,7 @@ typedef struct {
 void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleStartTime);
 int32_t AlgorithmRun(const InputParam *input, OutputParam *output);
 // 返回实际时间：秒
-inline double MyGetTime(){ 
-    struct timeval tv;
-    gettimeofday(&tv, NULL);
-    return tv.tv_sec + tv.tv_usec / 1000000.0;
-}; 
+double MyGetTime();
 
 /* GetCost.c */
 // 返回目标函数值:两点间距离
