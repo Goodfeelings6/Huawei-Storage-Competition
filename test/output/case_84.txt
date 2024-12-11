@@ -8,15 +8,92 @@ head info : [89,201418,0]
 io count = 10000
 
 
+构建邻接表完成
+initMaxMatchingByHarryZHR完成
+最大匹配算法完成
+形成的环路：
+环路个数: 4
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 4.999e-05
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 10002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 20004
+MAX_TRIALS = 20004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 20
+POPMUSIC_SOLUTIONS = 3
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 200.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 29457789.0, Ascent time = 2.79 sec.
+Cand.min = 2, Cand.avg = 4.9, Cand.max = 5
+Edges.fixed = 10003 [Cost = 0]
+Preprocessing time = 2.83 sec.
+* 1: Cost = 311640417, Time = 0.56 sec. 
+* 2: Cost = 310271810, Time = 0.92 sec. 
+* 3: Cost = 309376835, Time = 1.23 sec. 
+*** The extent of improvement(2263582(<5835717.4)) is too small in 0.5s ***
+Run 1: Cost = 309376835, Time = 1.24 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 309376835, Cost.avg = 309376835.00, Cost.max = 309376835
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 3, Trials.avg = 3.0, Trials.max = 3
+Time.min = 1.24 sec., Time.avg = 1.24 sec., Time.max = 1.24 sec.
+Time.total = 48.31 sec.
 
 Key Metrics:
 	ioCount:			 10000
-	algorithmRunningDuration:	 2.731 (ms)
-	memoryUse:			 3693.00 (KB)
-	addressingDuration:		 21187826 (ms)
+	algorithmRunningDuration:	 48893.908 (ms)
+	memoryUse:			 1452260.87 (KB)
+	addressingDuration:		 19564837 (ms)
 	readDuration:			 54105262 (ms)
-	tapeBeltWear:			 91485462
-	tapeMotorWear:			 601
+	tapeBeltWear:			 85979580
+	tapeMotorWear:			 1141
 	errorIOCount:			 0
 
 指标写入文件 ./metrics.txt

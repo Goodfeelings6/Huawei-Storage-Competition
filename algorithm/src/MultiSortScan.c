@@ -25,8 +25,8 @@ int32_t MultiSortScan(const InputParam *input, OutputParam *output){
         else evenWrapIOSize++;
     }
     // 创建 ioArray 的副本，用于排序
-    IOUintSS *odd_IOArray = (IOUintSS *)malloc(oddWrapIOSize* sizeof(IOUintSS));;
-    IOUintSS *even_IOArray  = (IOUintSS *)malloc(evenWrapIOSize * sizeof(IOUintSS));;
+    IOUintSS *odd_IOArray = (IOUintSS *)malloc(oddWrapIOSize* sizeof(IOUintSS));
+    IOUintSS *even_IOArray  = (IOUintSS *)malloc(evenWrapIOSize * sizeof(IOUintSS));
 
     uint32_t oddIndex = 0;
     uint32_t evenIndex = 0;

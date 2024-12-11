@@ -1,0 +1,139 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset/case_34.txt
+head info : [65,631914,1]
+
+io count = 1000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 0.000499002
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 1002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 2004
+MAX_TRIALS = 2004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 20
+POPMUSIC_SOLUTIONS = 10
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 30.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 9907256.0, Ascent time = 0.50 sec.
+Cand.min = 2, Cand.avg = 5.4, Cand.max = 7
+Edges.fixed = 1003 [Cost = 0]
+Preprocessing time = 0.51 sec.
+* 1: Cost = 25237618, Time = 0.01 sec. 
+* 2: Cost = 25228479, Time = 0.02 sec. 
+* 3: Cost = 25227338, Time = 0.03 sec. 
+* 4: Cost = 25227003, Time = 0.03 sec. 
+* 6: Cost = 25224894, Time = 0.05 sec. 
+* 7: Cost = 25223662, Time = 0.05 sec. 
+* 10: Cost = 25214704, Time = 0.07 sec. 
+* 14: Cost = 25208998, Time = 0.10 sec. 
+* 15: Cost = 25202819, Time = 0.10 sec. 
+* 16: Cost = 25199623, Time = 0.11 sec. 
+* 17: Cost = 25199544, Time = 0.11 sec. 
+* 18: Cost = 25198097, Time = 0.12 sec. 
+* 21: Cost = 25196981, Time = 0.14 sec. 
+* 24: Cost = 25192219, Time = 0.15 sec. 
+* 25: Cost = 25191773, Time = 0.16 sec. 
+* 29: Cost = 25191740, Time = 0.18 sec. 
+* 30: Cost = 25190924, Time = 0.19 sec. 
+* 31: Cost = 25190308, Time = 0.19 sec. 
+* 33: Cost = 25189200, Time = 0.20 sec. 
+* 34: Cost = 25188210, Time = 0.21 sec. 
+* 35: Cost = 25188157, Time = 0.22 sec. 
+* 37: Cost = 25186987, Time = 0.23 sec. 
+* 40: Cost = 25128431, Time = 0.25 sec. 
+* 41: Cost = 25125932, Time = 0.25 sec. 
+* 42: Cost = 25125883, Time = 0.26 sec. 
+* 50: Cost = 25125173, Time = 0.31 sec. 
+* 51: Cost = 25125113, Time = 0.32 sec. 
+* 90: Cost = 25123720, Time = 0.55 sec. 
+* 93: Cost = 25123314, Time = 0.57 sec. 
+* 98: Cost = 25123119, Time = 0.60 sec. 
+* 106: Cost = 25120630, Time = 0.64 sec. 
+* 107: Cost = 25120094, Time = 0.65 sec. 
+* 108: Cost = 25119899, Time = 0.65 sec. 
+* 153: Cost = 25119684, Time = 0.93 sec. 
+* 158: Cost = 25106377, Time = 0.96 sec. 
+* 159: Cost = 25105552, Time = 0.97 sec. 
+* 161: Cost = 25105483, Time = 0.98 sec. 
+* 170: Cost = 25103732, Time = 1.04 sec. 
+* 171: Cost = 25103686, Time = 1.04 sec. 
+* 179: Cost = 25103412, Time = 1.09 sec. 
+* 228: Cost = 25102508, Time = 1.40 sec. 
+* 229: Cost = 25101424, Time = 1.40 sec. 
+* 258: Cost = 25100637, Time = 1.59 sec. 
+* 259: Cost = 25100622, Time = 1.59 sec. 
+* 260: Cost = 25099853, Time = 1.60 sec. 
+* 305: Cost = 25099774, Time = 1.87 sec. 
+* 1296: Cost = 25099564, Time = 8.09 sec. 
+* 1343: Cost = 25099448, Time = 8.38 sec. 
+* 1364: Cost = 25099369, Time = 8.51 sec. 
+Run 1: Cost = 25099369, Time = 12.55 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 25099369, Cost.avg = 25099369.00, Cost.max = 25099369
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 2004, Trials.avg = 2004.0, Trials.max = 2004
+Time.min = 12.55 sec., Time.avg = 12.55 sec., Time.max = 12.55 sec.
+Time.total = 13.06 sec.
+
+Key Metrics:
+	ioCount:			 1000
+	algorithmRunningDuration:	 13082.006 (ms)
+	memoryUse:			 5929.10 (KB)
+	addressingDuration:		 2549080 (ms)
+	readDuration:			 1029870 (ms)
+	tapeBeltWear:			 3540017
+	tapeMotorWear:			 136
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

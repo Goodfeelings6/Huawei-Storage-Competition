@@ -4,6 +4,8 @@
 int GetObjectValue(const HeadInfo *start, const HeadInfo *end){
     // double value = SeekTimeCalculate(start, end) * final_alpha + BeltWearTimes(start, end, NULL) * final_beta  + MotorWearTimes(start, end) * final_gama;
     double value = SeekTimeCalculate(start, end) * final_alpha + MotorWearTimes(start, end) * final_gama;
+    
+    //printf("value=%lf\n",value);
     // double value = BeltWearTimes(start, end, NULL) * final_beta + MotorWearTimes(start, end)*final_gama;
     // if(value<100)
     //     printf("value:%f\n", value);
@@ -68,6 +70,42 @@ int getCost(const InputParam *input, int len, int i, int j){
     }
 }
 
+// 实时算代价
+int getCost2(const InputParam *input, int len, int i, int j){
+    if(i == j)
+        return INF;
+    else if(i==len-2){ // 磁头节点
+        if(j==len-1){ // 磁头节点到虚拟节点的代价为极大值
+            return INF;
+        }
+        else{ // 磁头节点到其他节点的代价为对应寻址时间
+            HeadInfo start = {input->headInfo.wrap, input->headInfo.lpos, input->headInfo.status};
+            HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
+            return GetObjectValue(&start, &end);
+        }
+    }
+    else if(i==len-1){ // 虚拟节点
+        if(j==len-2){ // 虚拟节点到磁头节点的代价为0
+            return 0;
+        }
+        else{ // 虚拟节点到其他节点的代价为极大值
+            return INF;
+        }
+    }
+    else{ // 其他节点
+        if(j==len-2){// 其他节点到磁头节点的代价为极大值
+            return INF;
+        }
+        else if(j==len-1){// 其他节点到虚拟节点的代价为0
+            return 0;
+        }
+        else{
+            HeadInfo start = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].endLpos, HEAD_RW};
+            HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
+            return GetObjectValue(&start, &end);
+        }
+    }
+}
 // 邻接矩阵算代价
 void getAdjMat(const InputParam *input, int len, int** adjMat){
     //为了节点能和id号对应，还是将它们从0开始对应行列
@@ -113,72 +151,75 @@ void getAdjMat(const InputParam *input, int len, int** adjMat){
 #endif
 }
 
-// 邻接表算代价
-void getAdjList(const InputParam* input, Graph* graph) {
-    uint32_t len = graph->n;
+// // 邻接表算代价
+// void getAdjList(const InputParam* input, Graph* graph) {
+//     uint32_t len = graph->n;
 
-    for (uint32_t i = 0; i < len - 1; ++i) {
-        NodeCost heap[HEAP_SIZE];  // 大顶堆数组
-        int heapSize = 0;
-        int iwrap=input->ioVec.ioArray[i].wrap;
-        int index_samewrap_close=0;
-        int mindis=INF;
-        for (uint32_t j = 0; j < len - 1; ++j) {
-            int jwrap=input->ioVec.ioArray[j].wrap;
-            if (i == j) {
-                //addEdge(graph, i, i, -INF+1);
-                continue;
-            }
+//     for (uint32_t i = 0; i < len - 1; ++i) {
+//         NodeCost heap[HEAP_SIZE];  // 大顶堆数组
+//         int heapSize = 0;
+//         int iwrap=input->ioVec.ioArray[i].wrap;
+//         int index_samewrap_close=0;
+//         int mindis=INF;
+//         for (uint32_t j = 0; j < len - 1; ++j) {
+//             int jwrap=input->ioVec.ioArray[j].wrap;
+//             if (i == j) {
+//                 addEdge(graph, i, i, -INF+1);
+//                 continue;
+//             }
           
-            if(iwrap==jwrap){//对同wrap的处理
-                if(iwrap%2==0){//正向
-                    if(input->ioVec.ioArray[j].startLpos < input->ioVec.ioArray[i].endLpos){
-                        continue;
-                    }
-                    else if(mindis >= input->ioVec.ioArray[j].startLpos - input->ioVec.ioArray[i].endLpos){
-                        mindis=input->ioVec.ioArray[j].startLpos - input->ioVec.ioArray[i].endLpos;
-                        index_samewrap_close=j;//同wrap里i最近的IO块是j
-                    }
+//             if(iwrap==jwrap){//对同wrap的处理
+//                 if(iwrap%2==0){//正向
+//                     if(input->ioVec.ioArray[j].startLpos < input->ioVec.ioArray[i].endLpos){
+//                         continue;
+//                     }
+//                     else if(mindis >= input->ioVec.ioArray[j].startLpos - input->ioVec.ioArray[i].endLpos){
+//                         mindis=input->ioVec.ioArray[j].startLpos - input->ioVec.ioArray[i].endLpos;
+//                         index_samewrap_close=j;//同wrap里i最近的IO块是j
+//                     }
                     
-                }else{
-                    if(input->ioVec.ioArray[j].startLpos > input->ioVec.ioArray[i].endLpos){
-                        continue;
-                    }
-                    else if(mindis >= input->ioVec.ioArray[i].endLpos -input->ioVec.ioArray[j].startLpos){
-                        mindis=input->ioVec.ioArray[i].endLpos -input->ioVec.ioArray[j].startLpos;
-                        index_samewrap_close=j;//同wrap里i最近的IO块是j
-                    }
-                }
-            continue;
-            }
-            HeadInfo start = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].endLpos, HEAD_RW};
-            HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
-            int cost = GetObjectValue_LKH(&start, &end);
+//                 }else{
+//                     if(input->ioVec.ioArray[j].startLpos > input->ioVec.ioArray[i].endLpos){
+//                         continue;
+//                     }
+//                     else if(mindis >= input->ioVec.ioArray[i].endLpos -input->ioVec.ioArray[j].startLpos){
+//                         mindis=input->ioVec.ioArray[i].endLpos -input->ioVec.ioArray[j].startLpos;
+//                         index_samewrap_close=j;//同wrap里i最近的IO块是j
+//                     }
+//                 }
+//             continue;
+//             }
+//             HeadInfo start = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].endLpos, HEAD_RW};
+//             HeadInfo end = {input->ioVec.ioArray[j].wrap, input->ioVec.ioArray[j].startLpos, HEAD_RW};
+//             int cost = GetObjectValue(&start, &end);
+//             //printf("%d->%d,cost:%d\n",i,j,cost);
+//             NodeCost newElement = {j, cost};
+//             insertMaxHeap(heap, &heapSize, newElement);
+//         }
 
-            NodeCost newElement = {j, cost};
-            insertMaxHeap(heap, &heapSize, newElement);
-        }
+//         // 将堆中元素添加到图的邻接表中
+//         //printf("node%d的邻接表；\n",i);
+//         for (int k = 0; k < heapSize; ++k) {
+//             addEdge(graph, i, heap[k].node, -heap[k].cost);
+//            // printf("Node: %d, Cost: %d\n", heap[k].node, heap[k].cost);
+        
+//             // HeadInfo start = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].endLpos, HEAD_RW};
+//             // HeadInfo end = {input->ioVec.ioArray[index_samewrap_close].wrap, input->ioVec.ioArray[index_samewrap_close].startLpos, HEAD_RW};
+//             // int cost = GetObjectValue(&start, &end);
+//             // //if(cost<100) printf("cost:%d\n",cost);
+//             // addEdge(graph, i, index_samewrap_close, -cost);
+//         }
+//     }
 
-        // 将堆中元素添加到图的邻接表中
-        for (int k = 0; k < heapSize; ++k) {
-            addEdge(graph, i, heap[k].node, -heap[k].cost);
-            //printf("Node: %d, Cost: %lf\t", heap[k].node, heap[k].cost);
-        }
-            HeadInfo start = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].endLpos, HEAD_RW};
-            HeadInfo end = {input->ioVec.ioArray[index_samewrap_close].wrap, input->ioVec.ioArray[index_samewrap_close].startLpos, HEAD_RW};
-            int cost = GetObjectValue_LKH(&start, &end);
-            addEdge(graph, i, index_samewrap_close, -cost);
-    }
+//     // 处理虚拟节点和磁头节点的代价
+//     for (uint32_t i = 0; i < len - 1; ++i) {
+//         addEdge(graph, i, len - 1, 0);
 
-    // 处理虚拟节点和磁头节点的代价
-    for (uint32_t i = 0; i < len - 1; ++i) {
-        addEdge(graph, i, len - 1, 0);
-
-        // HeadInfo start = {input->headInfo.wrap, input->headInfo.lpos, input->headInfo.status};
-        // HeadInfo end = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].startLpos, HEAD_RW};
-        // int headCost = GetObjectValue(&start, &end);
-        // addEdge(graph, len - 1, i, -headCost);
-    }
-    addEdge(graph, len - 1, len - 2, 0);
-}
+//         // HeadInfo start = {input->headInfo.wrap, input->headInfo.lpos, input->headInfo.status};
+//         // HeadInfo end = {input->ioVec.ioArray[i].wrap, input->ioVec.ioArray[i].startLpos, HEAD_RW};
+//         // int headCost = GetObjectValue(&start, &end);
+//         // addEdge(graph, len - 1, i, -headCost);
+//     }
+//     addEdge(graph, len - 1, len - 2, 0);
+// }
 

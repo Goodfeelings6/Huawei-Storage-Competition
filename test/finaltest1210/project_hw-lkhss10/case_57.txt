@@ -1,0 +1,140 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset/case_57.txt
+head info : [179,92164,0]
+
+io count = 10000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 4.999e-05
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 10002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 20004
+MAX_TRIALS = 20004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 20
+POPMUSIC_SOLUTIONS = 3
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 10.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 31112679.0, Ascent time = 2.69 sec.
+Cand.min = 2, Cand.avg = 4.9, Cand.max = 5
+Edges.fixed = 10003 [Cost = 0]
+Preprocessing time = 2.72 sec.
+* 1: Cost = 104081796, Time = 0.24 sec. 
+* 2: Cost = 101554019, Time = 0.39 sec. 
+* 3: Cost = 100728636, Time = 0.52 sec. 
+* 4: Cost = 100352807, Time = 0.64 sec. 
+* 5: Cost = 99997189, Time = 0.76 sec. 
+* 6: Cost = 99768957, Time = 0.89 sec. 
+* 7: Cost = 99565281, Time = 1.00 sec. 
+* 8: Cost = 99504826, Time = 1.11 sec. 
+* 9: Cost = 99391344, Time = 1.21 sec. 
+* 10: Cost = 99252991, Time = 1.31 sec. 
+* 12: Cost = 98944418, Time = 1.55 sec. 
+* 17: Cost = 98550678, Time = 2.17 sec. 
+* 18: Cost = 98265803, Time = 2.29 sec. 
+* 19: Cost = 98228403, Time = 2.42 sec. 
+* 20: Cost = 98201826, Time = 2.53 sec. 
+* 21: Cost = 98130189, Time = 2.64 sec. 
+* 23: Cost = 98123361, Time = 2.88 sec. 
+* 25: Cost = 98074021, Time = 3.09 sec. 
+* 26: Cost = 97843430, Time = 3.20 sec. 
+* 27: Cost = 97842067, Time = 3.32 sec. 
+* 28: Cost = 97799785, Time = 3.44 sec. 
+* 29: Cost = 97790156, Time = 3.56 sec. 
+* 30: Cost = 97790012, Time = 3.68 sec. 
+* 31: Cost = 97708864, Time = 3.79 sec. 
+* 33: Cost = 97377728, Time = 4.03 sec. 
+* 34: Cost = 97175159, Time = 4.15 sec. 
+* 35: Cost = 97160012, Time = 4.26 sec. 
+* 36: Cost = 97158256, Time = 4.37 sec. 
+* 37: Cost = 97143372, Time = 4.48 sec. 
+* 38: Cost = 97103090, Time = 4.59 sec. 
+* 39: Cost = 96987175, Time = 4.74 sec. 
+* 40: Cost = 96986746, Time = 4.87 sec. 
+* 41: Cost = 96972450, Time = 4.98 sec. 
+* 42: Cost = 96951172, Time = 5.11 sec. 
+* 43: Cost = 96930202, Time = 5.24 sec. 
+* 44: Cost = 96877640, Time = 5.35 sec. 
+* 45: Cost = 96735593, Time = 5.49 sec. 
+* 46: Cost = 96604755, Time = 5.60 sec. 
+* 47: Cost = 96601204, Time = 5.73 sec. 
+* 48: Cost = 96599846, Time = 5.86 sec. 
+* 49: Cost = 96598027, Time = 5.98 sec. 
+* 50: Cost = 96574300, Time = 6.08 sec. 
+* 52: Cost = 96566900, Time = 6.32 sec. 
+* 53: Cost = 96519728, Time = 6.43 sec. 
+* 54: Cost = 96515801, Time = 6.54 sec. 
+* 55: Cost = 96514993, Time = 6.66 sec. 
+* 56: Cost = 96512472, Time = 6.77 sec. 
+* 57: Cost = 96512041, Time = 6.88 sec. 
+* 60: Cost = 96431458, Time = 7.23 sec. 
+*** Time limit exceeded in FindTour ***
+Run 1: Cost = 96431458, Time = 7.37 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 96431458, Cost.avg = 96431458.00, Cost.max = 96431458
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 61, Trials.avg = 61.0, Trials.max = 61
+Time.min = 7.37 sec., Time.avg = 7.37 sec., Time.max = 7.37 sec.
+Time.total = 10.09 sec.
+
+Key Metrics:
+	ioCount:			 10000
+	algorithmRunningDuration:	 10329.512 (ms)
+	memoryUse:			 15306.96 (KB)
+	addressingDuration:		 9381827 (ms)
+	readDuration:			 10509612 (ms)
+	tapeBeltWear:			 19057218
+	tapeMotorWear:			 367
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

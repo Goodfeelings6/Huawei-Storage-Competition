@@ -1,0 +1,140 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset/case_64.txt
+head info : [153,712881,0]
+
+io count = 10000
+
+
+环路个数: 9
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 4.999e-05
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 10002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 20004
+MAX_TRIALS = 20004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 20
+POPMUSIC_SOLUTIONS = 3
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 30.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 28581443.0, Ascent time = 2.66 sec.
+Cand.min = 2, Cand.avg = 4.9, Cand.max = 5
+Edges.fixed = 10003 [Cost = 0]
+Preprocessing time = 2.69 sec.
+* 1: Cost = 92208598, Time = 0.22 sec. 
+* 2: Cost = 91823094, Time = 0.36 sec. 
+* 5: Cost = 91781930, Time = 0.76 sec. 
+* 6: Cost = 91593387, Time = 0.88 sec. 
+* 8: Cost = 91564194, Time = 1.13 sec. 
+* 10: Cost = 90970731, Time = 1.39 sec. 
+* 12: Cost = 90876736, Time = 1.66 sec. 
+* 13: Cost = 90678982, Time = 1.78 sec. 
+* 14: Cost = 90206298, Time = 1.93 sec. 
+* 15: Cost = 90076244, Time = 2.05 sec. 
+* 16: Cost = 89983494, Time = 2.19 sec. 
+* 20: Cost = 89902734, Time = 2.71 sec. 
+* 21: Cost = 89703627, Time = 2.83 sec. 
+* 25: Cost = 89702673, Time = 3.34 sec. 
+* 28: Cost = 89699020, Time = 3.68 sec. 
+* 30: Cost = 89696617, Time = 3.91 sec. 
+* 31: Cost = 89640302, Time = 4.06 sec. 
+* 32: Cost = 89631823, Time = 4.17 sec. 
+* 33: Cost = 89627617, Time = 4.29 sec. 
+* 34: Cost = 89622522, Time = 4.45 sec. 
+* 35: Cost = 89615041, Time = 4.58 sec. 
+* 39: Cost = 89578298, Time = 5.06 sec. 
+* 43: Cost = 89574042, Time = 5.56 sec. 
+* 44: Cost = 89572566, Time = 5.67 sec. 
+* 46: Cost = 89571592, Time = 5.93 sec. 
+* 47: Cost = 89554210, Time = 6.04 sec. 
+* 54: Cost = 89527948, Time = 6.88 sec. 
+* 56: Cost = 89516371, Time = 7.10 sec. 
+* 58: Cost = 89490061, Time = 7.33 sec. 
+* 61: Cost = 89488776, Time = 7.66 sec. 
+* 62: Cost = 89486937, Time = 7.79 sec. 
+* 64: Cost = 89480382, Time = 8.05 sec. 
+* 66: Cost = 89466647, Time = 8.30 sec. 
+* 67: Cost = 89444191, Time = 8.42 sec. 
+* 68: Cost = 89398863, Time = 8.55 sec. 
+* 69: Cost = 89386138, Time = 8.70 sec. 
+* 71: Cost = 89379722, Time = 8.94 sec. 
+* 73: Cost = 89376388, Time = 9.25 sec. 
+* 77: Cost = 89359544, Time = 9.76 sec. 
+* 80: Cost = 89357069, Time = 10.12 sec. 
+* 86: Cost = 89353051, Time = 10.90 sec. 
+* 99: Cost = 89351779, Time = 12.55 sec. 
+* 103: Cost = 89349513, Time = 13.06 sec. 
+* 104: Cost = 89326936, Time = 13.19 sec. 
+* 105: Cost = 89320267, Time = 13.32 sec. 
+* 106: Cost = 89303789, Time = 13.47 sec. 
+* 117: Cost = 89298166, Time = 14.78 sec. 
+* 119: Cost = 89296093, Time = 15.07 sec. 
+*** Time limit exceeded in FindTour ***
+Run 1: Cost = 89296093, Time = 15.08 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 89296093, Cost.avg = 89296093.00, Cost.max = 89296093
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 119, Trials.avg = 119.0, Trials.max = 119
+Time.min = 15.08 sec., Time.avg = 15.08 sec., Time.max = 15.08 sec.
+Time.total = 30.07 sec.
+
+Key Metrics:
+	ioCount:			 10000
+	algorithmRunningDuration:	 30325.684 (ms)
+	memoryUse:			 150024.86 (KB)
+	addressingDuration:		 8736383 (ms)
+	readDuration:			 10940000 (ms)
+	tapeBeltWear:			 18496962
+	tapeMotorWear:			 437
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

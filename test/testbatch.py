@@ -228,49 +228,101 @@ def changeMemoryText(filePath):
     with open(filePath, 'w', encoding='utf-8') as file:
         file.write(content)
 
+import os
+import subprocess
+import re
+
+import os
+import subprocess
+import re
+
 def test():
     """ 直接运行测试 """
     if not os.path.exists(args.des): # 若输出文件夹不存在则创建
         os.mkdir(args.des)
-    exePath = os.path.join(os.path.dirname(testDir), "bin", "project_hw")
-    summaryFile = open(os.path.join(args.des, "A-summary.txt"), "w", encoding='utf-8')
-    detailFile = open(os.path.join(args.des, "A-detail.txt"), "w", encoding='utf-8')
-    for file in sorted(os.listdir(args.src),key=lambda x:int(re.split(r'[_.]+',x)[1])): # 测试所有用例
-        # 运行调度算法
-        # cmd = " ".join([exePath, "-f", os.path.join(args.src, file)])
-        # process = subprocess.run(cmd, shell=True, stderr=subprocess.PIPE, text=True)
-        cmd_lst = [exePath, "-f", os.path.join(args.src, file)]
-        stdout_file = open(os.path.join(args.des, file), 'w')
-        # 启动进程
-        process = subprocess.Popen(cmd_lst, shell=False, stdout=stdout_file, stderr=subprocess.PIPE, text=True) # 异步的
-        
-        # 监控内存
-        monitor_memory(process, 0.1)
-        # 等待子进程完成
-        process.wait()
-        stdout_file.close()
-        # 获取进程输出
-        stdout, stderr = process.communicate()
-
-        summaryFile.write(file + ':\t')
-        # 检查返回码和输出
-        if process.returncode != 0:
-            print(f"test {file} fail! retval:{process.returncode}, err_detail:{stderr}")
-            summaryFile.write(f"test {file} fail! retval:{process.returncode}, err_detail:{stderr}\n")
-            detailFile.write(f"test {file} fail! retval:{process.returncode}, err_detail:{stderr}\n")
-        else:
-            print(f"test {file} success!")
-            changeMemoryText(os.path.join(args.des, file))
-            summaryFile.write(formatMetrics(os.path.join(args.des, file)))
-            detailFile.write(formatDetails(os.path.join(args.des, file)))
-        
-        globals()['memory_usage'] = []
-        globals()['peak_memory'] = 0
     
-    summaryFile.close()
-    writeA_total(os.path.join(args.des, "A-total.txt"))
+    # 八个可执行文件的路径列表
+    exePaths = [
+        # "project_hw-nn",
+        # "project_hw-gi",
+        # "project_hw-ss",
+        # "project_hw-mm",
+        # "project_hw-lkhnn10",
+        # "project_hw-lkhgi10",
+        # "project_hw-lkhss10",
+        # "project_hw-lkhmm10",
+        # "project_hw-lkhnn20",
+        # "project_hw-lkhgi20",
+        # "project_hw-lkhss20",
+        # "project_hw-lkhmm20",        
+        # "project_hw-lkhnn30",
+        # "project_hw-lkhgi30",
+        # "project_hw-lkhss30",
+        "project_hw-lkhmm30",
+        "project_hw-baseline"
+    ]
+    
+    # 创建每个可执行程序的输出文件夹
+    for exe in exePaths:
+        exe_dir = os.path.join(args.des, exe)  # 为每个可执行程序创建一个文件夹
+        if not os.path.exists(exe_dir):
+            os.mkdir(exe_dir)
+
+        # 为每个可执行程序创建独立的 summary, detail 和 total 文件
+        summaryFile = open(os.path.join(exe_dir, "A-summary.txt"), "w", encoding='utf-8')
+        detailFile = open(os.path.join(exe_dir, "A-detail.txt"), "w", encoding='utf-8')
+        totalFile = open(os.path.join(exe_dir, "A-total.txt"), "w", encoding='utf-8')
+
+        # 获取该可执行文件的完整路径
+        exePath = os.path.join(os.path.dirname(testDir), "bin", exe)
+        print(f"Running tests with executable: {exePath}")
+
+        # 对每个可执行文件进行测试
+        for file in sorted(os.listdir(args.src), key=lambda x: int(re.split(r'[_.]+', x)[1])): # 测试所有用例
+            # 运行调度算法
+            cmd_lst = [exePath, "-f", os.path.join(args.src, file)]
+            stdout_file = open(os.path.join(exe_dir, file), 'w')  # 每个文件的输出在对应的文件夹中
+            
+            # 启动进程
+            process = subprocess.Popen(cmd_lst, shell=False, stdout=stdout_file, stderr=subprocess.PIPE, text=True)  # 异步的
+            
+            # 监控内存
+            monitor_memory(process, 0.1)
+            # 等待子进程完成
+            process.wait()
+            stdout_file.close()
+            
+            # 获取进程输出
+            stdout, stderr = process.communicate()
+
+            summaryFile.write(f"{exe} - {file}:\t")
+            # 检查返回码和输出
+            if process.returncode != 0:
+                print(f"test {file} with {exe} fail! retval:{process.returncode}, err_detail:{stderr}")
+                summaryFile.write(f"test {file} fail! retval:{process.returncode}, err_detail:{stderr}\n")
+                detailFile.write(f"test {file} fail! retval:{process.returncode}, err_detail:{stderr}\n")
+            else:
+                print(f"test {file} with {exe} success!")
+                changeMemoryText(os.path.join(exe_dir, file))
+                summaryFile.write(formatMetrics(os.path.join(exe_dir, file)))
+                detailFile.write(formatDetails(os.path.join(exe_dir, file)))
+
+            globals()['memory_usage'] = []
+            globals()['peak_memory'] = 0
+
+        # 将每个可执行程序的总汇结果写入 A-total.txt
+        totalFile.write(f"Results for {exe}:\n")
+        totalFile.write(f"Total tests: {len(os.listdir(args.src))}\n")
+        # 可以根据需要添加更多汇总信息，或者格式化输出更详细的统计信息
+        totalFile.close()
+
+        # 关闭每个程序的 summary 和 detail 文件
+        summaryFile.close()
+        detailFile.close()
 
     print("Done!")
+
+
         
     
 def buildAndTest():

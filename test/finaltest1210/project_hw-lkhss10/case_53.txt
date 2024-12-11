@@ -1,0 +1,143 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset/case_53.txt
+head info : [128,640010,0]
+
+io count = 10000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 4.999e-05
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 10002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 20004
+MAX_TRIALS = 20004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 20
+POPMUSIC_SOLUTIONS = 3
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 10.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 31747323.0, Ascent time = 2.73 sec.
+Cand.min = 2, Cand.avg = 4.9, Cand.max = 5
+Edges.fixed = 10003 [Cost = 0]
+Preprocessing time = 2.76 sec.
+* 1: Cost = 105699074, Time = 0.25 sec. 
+* 2: Cost = 102513442, Time = 0.38 sec. 
+* 3: Cost = 101280515, Time = 0.54 sec. 
+* 4: Cost = 100696359, Time = 0.64 sec. 
+* 5: Cost = 100085861, Time = 0.76 sec. 
+* 6: Cost = 99996704, Time = 0.87 sec. 
+* 7: Cost = 99658906, Time = 0.98 sec. 
+* 9: Cost = 99246082, Time = 1.22 sec. 
+* 10: Cost = 98939858, Time = 1.33 sec. 
+* 11: Cost = 98939642, Time = 1.47 sec. 
+* 12: Cost = 98685775, Time = 1.59 sec. 
+* 13: Cost = 98609982, Time = 1.72 sec. 
+* 14: Cost = 98556572, Time = 1.83 sec. 
+* 16: Cost = 98393166, Time = 2.07 sec. 
+* 17: Cost = 98001160, Time = 2.20 sec. 
+* 18: Cost = 97840581, Time = 2.33 sec. 
+* 19: Cost = 97831722, Time = 2.44 sec. 
+* 20: Cost = 97831386, Time = 2.57 sec. 
+* 21: Cost = 97756043, Time = 2.70 sec. 
+* 22: Cost = 97754190, Time = 2.81 sec. 
+* 23: Cost = 97719035, Time = 2.93 sec. 
+* 25: Cost = 97534969, Time = 3.17 sec. 
+* 26: Cost = 97526699, Time = 3.27 sec. 
+* 27: Cost = 97490404, Time = 3.40 sec. 
+* 28: Cost = 97488005, Time = 3.51 sec. 
+* 29: Cost = 97475513, Time = 3.62 sec. 
+* 30: Cost = 97474332, Time = 3.73 sec. 
+* 31: Cost = 97459289, Time = 3.86 sec. 
+* 32: Cost = 97310861, Time = 3.97 sec. 
+* 34: Cost = 97308669, Time = 4.21 sec. 
+* 35: Cost = 97304995, Time = 4.32 sec. 
+* 36: Cost = 97272243, Time = 4.45 sec. 
+* 39: Cost = 97271181, Time = 4.78 sec. 
+* 40: Cost = 97171719, Time = 4.90 sec. 
+* 41: Cost = 97019744, Time = 5.03 sec. 
+* 42: Cost = 97015265, Time = 5.14 sec. 
+* 43: Cost = 97012054, Time = 5.26 sec. 
+* 44: Cost = 96943929, Time = 5.36 sec. 
+* 46: Cost = 96943642, Time = 5.61 sec. 
+* 47: Cost = 96939958, Time = 5.73 sec. 
+* 48: Cost = 96937435, Time = 5.87 sec. 
+* 49: Cost = 96920651, Time = 5.98 sec. 
+* 51: Cost = 96772280, Time = 6.21 sec. 
+* 52: Cost = 96715783, Time = 6.33 sec. 
+* 53: Cost = 96714979, Time = 6.46 sec. 
+* 54: Cost = 96709212, Time = 6.57 sec. 
+* 55: Cost = 96709156, Time = 6.68 sec. 
+* 56: Cost = 96708396, Time = 6.79 sec. 
+* 57: Cost = 96695048, Time = 6.90 sec. 
+* 58: Cost = 96684397, Time = 7.01 sec. 
+* 59: Cost = 96610367, Time = 7.13 sec. 
+* 60: Cost = 96610340, Time = 7.24 sec. 
+*** Time limit exceeded in FindTour ***
+Run 1: Cost = 96610340, Time = 7.25 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 96610340, Cost.avg = 96610340.00, Cost.max = 96610340
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 60, Trials.avg = 60.0, Trials.max = 60
+Time.min = 7.25 sec., Time.avg = 7.25 sec., Time.max = 7.25 sec.
+Time.total = 10.01 sec.
+
+Key Metrics:
+	ioCount:			 10000
+	algorithmRunningDuration:	 10251.543 (ms)
+	memoryUse:			 15218.58 (KB)
+	addressingDuration:		 9313864 (ms)
+	readDuration:			 10158352 (ms)
+	tapeBeltWear:			 18927645
+	tapeMotorWear:			 355
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

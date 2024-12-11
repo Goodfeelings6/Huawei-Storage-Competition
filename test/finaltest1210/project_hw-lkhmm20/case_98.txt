@@ -1,0 +1,126 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset/case_98.txt
+head info : [238,208907,1]
+
+io count = 10000
+
+
+环路个数: 8
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 4.999e-05
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 10002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 20004
+MAX_TRIALS = 20004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 20
+POPMUSIC_SOLUTIONS = 3
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 20.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 31434175.0, Ascent time = 2.67 sec.
+Cand.min = 2, Cand.avg = 4.9, Cand.max = 5
+Edges.fixed = 10003 [Cost = 0]
+Preprocessing time = 2.70 sec.
+* 1: Cost = 107295597, Time = 0.24 sec. 
+* 2: Cost = 104776737, Time = 0.40 sec. 
+* 3: Cost = 104660881, Time = 0.52 sec. 
+* 4: Cost = 102683780, Time = 0.66 sec. 
+* 5: Cost = 102326675, Time = 0.78 sec. 
+* 6: Cost = 102312585, Time = 0.91 sec. 
+* 7: Cost = 101688558, Time = 1.06 sec. 
+* 9: Cost = 101341856, Time = 1.36 sec. 
+* 10: Cost = 101323551, Time = 1.49 sec. 
+* 11: Cost = 101219594, Time = 1.62 sec. 
+* 12: Cost = 100892488, Time = 1.75 sec. 
+* 13: Cost = 100435631, Time = 1.88 sec. 
+* 14: Cost = 100285699, Time = 2.01 sec. 
+* 15: Cost = 100240859, Time = 2.13 sec. 
+* 18: Cost = 100231283, Time = 2.50 sec. 
+* 20: Cost = 100225296, Time = 2.76 sec. 
+* 21: Cost = 100061264, Time = 2.89 sec. 
+* 22: Cost = 100016591, Time = 3.02 sec. 
+* 26: Cost = 99973136, Time = 3.51 sec. 
+* 27: Cost = 99906769, Time = 3.64 sec. 
+* 28: Cost = 99781543, Time = 3.79 sec. 
+* 29: Cost = 99776416, Time = 3.93 sec. 
+* 32: Cost = 99774448, Time = 4.29 sec. 
+* 34: Cost = 99764827, Time = 4.58 sec. 
+* 36: Cost = 99764698, Time = 4.84 sec. 
+* 38: Cost = 99757179, Time = 5.06 sec. 
+* 40: Cost = 99704961, Time = 5.34 sec. 
+* 41: Cost = 99697635, Time = 5.46 sec. 
+* 47: Cost = 99692929, Time = 6.25 sec. 
+* 48: Cost = 99682299, Time = 6.36 sec. 
+* 50: Cost = 99664408, Time = 6.63 sec. 
+* 51: Cost = 99662993, Time = 6.76 sec. 
+* 52: Cost = 99659103, Time = 6.88 sec. 
+* 55: Cost = 99559624, Time = 7.25 sec. 
+*** Time limit exceeded in FindTour ***
+Run 1: Cost = 99559624, Time = 7.26 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 99559624, Cost.avg = 99559624.00, Cost.max = 99559624
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 55, Trials.avg = 55.0, Trials.max = 55
+Time.min = 7.26 sec., Time.avg = 7.26 sec., Time.max = 7.26 sec.
+Time.total = 20.08 sec.
+
+Key Metrics:
+	ioCount:			 10000
+	algorithmRunningDuration:	 20337.841 (ms)
+	memoryUse:			 180104.00 (KB)
+	addressingDuration:		 8668101 (ms)
+	readDuration:			 10917694 (ms)
+	tapeBeltWear:			 18446286
+	tapeMotorWear:			 434
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

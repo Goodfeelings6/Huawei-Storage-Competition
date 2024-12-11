@@ -1,0 +1,187 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset/case_93.txt
+head info : [224,212279,0]
+
+io count = 10000
+
+
+环路个数: 5
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 4.999e-05
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 10002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 20004
+MAX_TRIALS = 20004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 20
+POPMUSIC_SOLUTIONS = 3
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 30.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 17444227.0, Ascent time = 2.66 sec.
+Cand.min = 2, Cand.avg = 4.9, Cand.max = 5
+Edges.fixed = 10003 [Cost = 0]
+Preprocessing time = 2.69 sec.
+* 1: Cost = 90461443, Time = 0.20 sec. 
+* 2: Cost = 88763568, Time = 0.33 sec. 
+* 3: Cost = 87561131, Time = 0.45 sec. 
+* 4: Cost = 87092914, Time = 0.57 sec. 
+* 5: Cost = 86948019, Time = 0.67 sec. 
+* 6: Cost = 86763377, Time = 0.77 sec. 
+* 8: Cost = 86570179, Time = 0.97 sec. 
+* 9: Cost = 86079732, Time = 1.06 sec. 
+* 10: Cost = 85666492, Time = 1.18 sec. 
+* 11: Cost = 84742009, Time = 1.27 sec. 
+* 12: Cost = 84694301, Time = 1.38 sec. 
+* 13: Cost = 84531296, Time = 1.46 sec. 
+* 14: Cost = 84527739, Time = 1.58 sec. 
+* 15: Cost = 84455504, Time = 1.68 sec. 
+* 16: Cost = 84440004, Time = 1.78 sec. 
+* 17: Cost = 84362188, Time = 1.86 sec. 
+* 18: Cost = 84290012, Time = 1.96 sec. 
+* 19: Cost = 84033514, Time = 2.06 sec. 
+* 20: Cost = 84001481, Time = 2.15 sec. 
+* 21: Cost = 83985812, Time = 2.24 sec. 
+* 22: Cost = 83763092, Time = 2.33 sec. 
+* 27: Cost = 83737255, Time = 2.79 sec. 
+* 28: Cost = 83600779, Time = 2.89 sec. 
+* 29: Cost = 83585523, Time = 2.97 sec. 
+* 31: Cost = 83578267, Time = 3.16 sec. 
+* 32: Cost = 83573839, Time = 3.25 sec. 
+* 33: Cost = 83569558, Time = 3.37 sec. 
+* 34: Cost = 83501921, Time = 3.46 sec. 
+* 35: Cost = 83394447, Time = 3.56 sec. 
+* 37: Cost = 83325172, Time = 3.73 sec. 
+* 39: Cost = 83314977, Time = 3.94 sec. 
+* 40: Cost = 83261022, Time = 4.05 sec. 
+* 41: Cost = 83193134, Time = 4.13 sec. 
+* 44: Cost = 83187894, Time = 4.40 sec. 
+* 45: Cost = 83183727, Time = 4.49 sec. 
+* 47: Cost = 83164338, Time = 4.68 sec. 
+* 49: Cost = 83127491, Time = 4.85 sec. 
+* 51: Cost = 83114052, Time = 5.04 sec. 
+* 52: Cost = 83101655, Time = 5.11 sec. 
+* 55: Cost = 83097233, Time = 5.39 sec. 
+* 59: Cost = 83096946, Time = 5.79 sec. 
+* 61: Cost = 83096561, Time = 5.98 sec. 
+* 63: Cost = 83019026, Time = 6.19 sec. 
+* 69: Cost = 83019016, Time = 6.74 sec. 
+* 71: Cost = 83018289, Time = 6.93 sec. 
+* 72: Cost = 83016382, Time = 7.03 sec. 
+* 74: Cost = 82989304, Time = 7.20 sec. 
+* 75: Cost = 82969816, Time = 7.29 sec. 
+* 76: Cost = 82969350, Time = 7.40 sec. 
+* 77: Cost = 82890574, Time = 7.50 sec. 
+* 78: Cost = 82890186, Time = 7.61 sec. 
+* 79: Cost = 82888604, Time = 7.72 sec. 
+* 82: Cost = 82888317, Time = 8.00 sec. 
+* 83: Cost = 82855854, Time = 8.09 sec. 
+* 84: Cost = 82836204, Time = 8.19 sec. 
+* 85: Cost = 82832134, Time = 8.28 sec. 
+* 88: Cost = 82804313, Time = 8.58 sec. 
+* 89: Cost = 82804188, Time = 8.66 sec. 
+* 90: Cost = 82786075, Time = 8.73 sec. 
+* 91: Cost = 82785531, Time = 8.83 sec. 
+* 96: Cost = 82775337, Time = 9.34 sec. 
+* 98: Cost = 82756309, Time = 9.51 sec. 
+* 99: Cost = 82755661, Time = 9.61 sec. 
+* 101: Cost = 82753156, Time = 9.80 sec. 
+* 102: Cost = 82752105, Time = 9.89 sec. 
+* 108: Cost = 82751653, Time = 10.39 sec. 
+* 110: Cost = 82747356, Time = 10.56 sec. 
+* 112: Cost = 82741227, Time = 10.75 sec. 
+* 113: Cost = 82723463, Time = 10.82 sec. 
+* 118: Cost = 82722748, Time = 11.28 sec. 
+* 122: Cost = 82717902, Time = 11.65 sec. 
+* 123: Cost = 82696490, Time = 11.75 sec. 
+* 124: Cost = 82677404, Time = 11.84 sec. 
+* 125: Cost = 82657017, Time = 11.95 sec. 
+* 126: Cost = 82601792, Time = 12.05 sec. 
+* 128: Cost = 82600628, Time = 12.25 sec. 
+* 129: Cost = 82599066, Time = 12.33 sec. 
+* 134: Cost = 82597936, Time = 12.81 sec. 
+* 135: Cost = 82596495, Time = 12.90 sec. 
+* 138: Cost = 82594805, Time = 13.17 sec. 
+* 141: Cost = 82594392, Time = 13.46 sec. 
+* 149: Cost = 82590751, Time = 14.20 sec. 
+* 150: Cost = 82590008, Time = 14.30 sec. 
+* 156: Cost = 82589619, Time = 14.83 sec. 
+* 168: Cost = 82589416, Time = 15.92 sec. 
+* 173: Cost = 82588358, Time = 16.42 sec. 
+* 175: Cost = 82586983, Time = 16.58 sec. 
+* 176: Cost = 82583977, Time = 16.67 sec. 
+* 178: Cost = 82567499, Time = 16.88 sec. 
+* 179: Cost = 82554006, Time = 16.98 sec. 
+* 181: Cost = 82549876, Time = 17.17 sec. 
+* 185: Cost = 82532033, Time = 17.57 sec. 
+* 186: Cost = 82531784, Time = 17.67 sec. 
+* 187: Cost = 82526708, Time = 17.77 sec. 
+* 188: Cost = 82526225, Time = 17.84 sec. 
+*** Time limit exceeded in FindTour ***
+Run 1: Cost = 82526225, Time = 18.03 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 82526225, Cost.avg = 82526225.00, Cost.max = 82526225
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 190, Trials.avg = 190.0, Trials.max = 190
+Time.min = 18.03 sec., Time.avg = 18.03 sec., Time.max = 18.03 sec.
+Time.total = 30.04 sec.
+
+Key Metrics:
+	ioCount:			 10000
+	algorithmRunningDuration:	 30280.820 (ms)
+	memoryUse:			 117142.64 (KB)
+	addressingDuration:		 7341204 (ms)
+	readDuration:			 10408889 (ms)
+	tapeBeltWear:			 16293389
+	tapeMotorWear:			 603
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

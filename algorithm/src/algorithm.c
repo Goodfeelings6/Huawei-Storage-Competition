@@ -50,8 +50,8 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         p->POPMUSIC_InitialTour = 1;
         //@flag5000
 		p->POPMUSIC_SampleSize = 20;
-		p->POPMUSIC_Solutions = 4;
-        p->TimeSpan = 0.3;
+		p->POPMUSIC_Solutions = 20;
+        p->TimeSpan = 2;
     }
     else{ // 10000
         p->Subgradient = 0;
@@ -60,14 +60,16 @@ void loadUserChangedParam(int matDimension, LKHParameters *p, double scheduleSta
         //@flag10000
 		p->POPMUSIC_SampleSize = 20;
 		p->POPMUSIC_Solutions = 3;
-        p->TimeSpan = 0.5;
+        p->TimeSpan = 2;
     }
     p->Runs = 1;
     p->TraceLevel = 1;
     p->TimeLimit = DBL_MAX; // 由总时间、一定时间跨度内的改进值共同控制退出即可
-    p->TotalTimeLimit = 40; // 最大允许运行时间
-    p->PenaltyScoreInSecond = alpha*1000/base_totaltime + ((2-(matDimension-2)/10000.0)/200.0)*maxbase; /* 20s后每多算1秒实际罚分 (相对Cost) */
-    p->ScheduleScoreInSecond = alpha*1000/base_totaltime + (((matDimension-2)/10000.0)/200.0)*maxbase;/* 20s内每少算1秒实际加分 (相对Cost) */
+    p->TotalTimeLimit = 30; // 最大允许运行时间
+    //p->PenaltyScoreInSecond = alpha*1000/base_totaltime + ((2-(matDimension-2)/10000.0)/200.0)*maxbase; /* 20s后每多算1秒实际罚分 (相对Cost) */
+    p->PenaltyScoreInSecond = 0;
+    p->ScheduleScoreInSecond = 0;
+    //p->ScheduleScoreInSecond = alpha*1000/base_totaltime + (((matDimension-2)/10000.0)/200.0)*maxbase;/* 20s内每少算1秒实际加分 (相对Cost) */
     // printf("p->ScheduleScoreInSecond = %lf\n", p->ScheduleScoreInSecond);
     // printf("p->PenaltyScoreInSecond = %lf\n", p->PenaltyScoreInSecond);
     p->MoveType = 3;
@@ -96,37 +98,37 @@ int32_t IOScheduleAlgorithm(const InputParam *input, OutputParam *output)
     //        return MultiSortScan(input, output);
     //  }
 
-    // GetBaseline(input, output);
+    //GetBaseline(input, output);
 
     // 使用 LKH_MM 算法
-    // return LKH_MM(input, output);
+    //return LKH_MM(input, output);
 
     // 使用 LKH_NN 算法
-    // return LKH_NN(input, output);
+    //return LKH_NN(input, output);
 
     // 使用 LKH_GI 算法
-    // return LKH_GI(input, output); 
+    //return LKH_GI(input, output); 
 
     // 使用 LKH_SS 算法
-    // return LKH_SS(input, output); 
+    //return LKH_SS(input, output); 
 
     // 使用最近邻贪心算法 
-    // return NearestNeighbor(input, output);
+    //return NearestNeighbor(input, output);
 
     // 多轮线性SCAN构造-线性搜索
-    return MultiSortScan(input, output);
+    //return MultiSortScan(input, output);
 
     // 使用贪心插入算法
-    // return GreedyInsert(input, output);
+    //return GreedyInsert(input, output);
 
     // 使用最大匹配-贪心拼接算法
-    // return MaxMatching_Greedy(input, output);
+    //return MaxMatching_Greedy(input, output);
 
     // 使用 Sort 算法
     // return Sort(input, output);
 
     // 使用 Scan 算法
-    // return Scan(input, output);
+    return Scan(input, output);
 }
 
 /**

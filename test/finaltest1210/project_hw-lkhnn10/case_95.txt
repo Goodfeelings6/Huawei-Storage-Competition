@@ -1,0 +1,139 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset/case_95.txt
+head info : [253,363399,0]
+
+io count = 10000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 4.999e-05
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 10002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 20004
+MAX_TRIALS = 20004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 20
+POPMUSIC_SOLUTIONS = 3
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 10.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 36929093.0, Ascent time = 2.69 sec.
+Cand.min = 2, Cand.avg = 4.9, Cand.max = 5
+Edges.fixed = 10003 [Cost = 0]
+Preprocessing time = 2.72 sec.
+* 1: Cost = 99874855, Time = 0.22 sec. 
+* 2: Cost = 98766202, Time = 0.35 sec. 
+* 3: Cost = 97666934, Time = 0.46 sec. 
+* 4: Cost = 96992330, Time = 0.55 sec. 
+* 5: Cost = 96984021, Time = 0.66 sec. 
+* 6: Cost = 96883109, Time = 0.75 sec. 
+* 7: Cost = 96718090, Time = 0.86 sec. 
+* 8: Cost = 96397400, Time = 0.96 sec. 
+* 9: Cost = 96232777, Time = 1.07 sec. 
+* 10: Cost = 95941820, Time = 1.16 sec. 
+* 11: Cost = 95599276, Time = 1.27 sec. 
+* 12: Cost = 95495310, Time = 1.38 sec. 
+* 13: Cost = 95366837, Time = 1.49 sec. 
+* 14: Cost = 95323896, Time = 1.58 sec. 
+* 15: Cost = 95322326, Time = 1.68 sec. 
+* 17: Cost = 95218440, Time = 1.89 sec. 
+* 18: Cost = 95217653, Time = 1.99 sec. 
+* 20: Cost = 95214591, Time = 2.17 sec. 
+* 21: Cost = 95205630, Time = 2.28 sec. 
+* 22: Cost = 95199154, Time = 2.38 sec. 
+* 23: Cost = 95184907, Time = 2.47 sec. 
+* 24: Cost = 95051489, Time = 2.58 sec. 
+* 25: Cost = 94944334, Time = 2.68 sec. 
+* 27: Cost = 94933332, Time = 2.87 sec. 
+* 28: Cost = 94932831, Time = 2.98 sec. 
+* 29: Cost = 94823246, Time = 3.07 sec. 
+* 30: Cost = 94811274, Time = 3.17 sec. 
+* 31: Cost = 94646157, Time = 3.26 sec. 
+* 33: Cost = 94645089, Time = 3.46 sec. 
+* 35: Cost = 94531495, Time = 3.66 sec. 
+* 36: Cost = 94468197, Time = 3.75 sec. 
+* 37: Cost = 94467170, Time = 3.85 sec. 
+* 39: Cost = 94416382, Time = 4.05 sec. 
+* 40: Cost = 94412202, Time = 4.15 sec. 
+* 41: Cost = 94396417, Time = 4.24 sec. 
+* 43: Cost = 94388015, Time = 4.43 sec. 
+* 44: Cost = 94385739, Time = 4.53 sec. 
+* 45: Cost = 94384737, Time = 4.62 sec. 
+* 46: Cost = 94378548, Time = 4.72 sec. 
+* 47: Cost = 94367644, Time = 4.83 sec. 
+* 48: Cost = 94341726, Time = 4.94 sec. 
+* 49: Cost = 94338086, Time = 5.05 sec. 
+* 50: Cost = 94337527, Time = 5.14 sec. 
+* 51: Cost = 94337263, Time = 5.23 sec. 
+* 52: Cost = 94255625, Time = 5.33 sec. 
+* 54: Cost = 94254840, Time = 5.55 sec. 
+* 56: Cost = 94050975, Time = 5.77 sec. 
+* 57: Cost = 94048469, Time = 5.87 sec. 
+*** Time limit exceeded in FindTour ***
+Run 1: Cost = 94048469, Time = 5.88 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 94048469, Cost.avg = 94048469.00, Cost.max = 94048469
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 57, Trials.avg = 57.0, Trials.max = 57
+Time.min = 5.88 sec., Time.avg = 5.88 sec., Time.max = 5.88 sec.
+Time.total = 10.10 sec.
+
+Key Metrics:
+	ioCount:			 10000
+	algorithmRunningDuration:	 10309.515 (ms)
+	memoryUse:			 13243.35 (KB)
+	addressingDuration:		 8370449 (ms)
+	readDuration:			 5499891 (ms)
+	tapeBeltWear:			 12615765
+	tapeMotorWear:			 399
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

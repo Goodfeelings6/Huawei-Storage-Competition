@@ -1,0 +1,100 @@
+
+
+Welcome to HW project.
+
+The file path is: ./dataset_sub/case_51.txt
+head info : [115,212692,0]
+
+io count = 5000
+
+
+Reading TOUR...done
+done
+ASCENT_CANDIDATES = 50
+BACKBONE_TRIALS = 0
+BACKTRACKING = NO
+# CANDIDATE_FILE =
+CANDIDATE_SET_TYPE = POPMUSIC
+# EDGE_FILE =
+EXCESS = 9.996e-05
+EXTRA_CANDIDATES = 0 
+EXTRA_CANDIDATE_SET_TYPE = QUADRANT
+GAIN23 = YES
+GAIN_CRITERION = YES
+INITIAL_PERIOD = 5002
+INITIAL_STEP_SIZE = 1
+INITIAL_TOUR_ALGORITHM = WALK
+# INITIAL_TOUR_FILE = 
+INITIAL_TOUR_FRACTION = 1.000
+# INPUT_TOUR_FILE = 
+KICK_TYPE = 0
+KICKS = 1
+# MAX_BREADTH =
+MAX_CANDIDATES = 5 
+MAX_SWAPS = 10004
+MAX_TRIALS = 10004
+# MERGE_TOUR_FILE =
+MOVE_TYPE = 3
+# NONSEQUENTIAL_MOVE_TYPE = 3
+# OPTIMUM =
+# OUTPUT_TOUR_FILE = 
+PATCHING_A = 1 
+PATCHING_C = 0 
+# PI_FILE = 
+POPMUSIC_INITIAL_TOUR = YES
+POPMUSIC_MAX_NEIGHBORS = 5
+POPMUSIC_SAMPLE_SIZE = 20
+POPMUSIC_SOLUTIONS = 4
+POPMUSIC_TRIALS = 1
+# POPULATION_SIZE = 0
+PRECISION = 100
+# PROBLEM_FILE = 
+RECOMBINATION = IPT
+RESTRICTED_SEARCH = YES
+RUNS = 1
+SEED = 1
+STOP_AT_OPTIMUM = YES
+SUBGRADIENT = NO
+# SUBPROBLEM_SIZE =
+# SUBPROBLEM_TOUR_FILE = 
+SUBSEQUENT_MOVE_TYPE = 3
+SUBSEQUENT_PATCHING = YES
+# TIME_LIMIT =
+TOTAL_TIME_LIMIT = 200.0
+# TOUR_FILE = 
+TRACE_LEVEL = 1
+
+Lower bound = 21009131.0, Ascent time = 1.29 sec.
+Cand.min = 2, Cand.avg = 5.2, Cand.max = 6
+Edges.fixed = 5003 [Cost = 0]
+Preprocessing time = 1.30 sec.
+* 1: Cost = 69104288, Time = 0.12 sec. 
+* 2: Cost = 68635218, Time = 0.20 sec. 
+* 3: Cost = 67853772, Time = 0.26 sec. 
+* 4: Cost = 67206675, Time = 0.34 sec. 
+* 5: Cost = 67036467, Time = 0.40 sec. 
+* 6: Cost = 66866331, Time = 0.48 sec. 
+* 7: Cost = 66849601, Time = 0.53 sec. 
+* 8: Cost = 66844191, Time = 0.57 sec. 
+* 9: Cost = 66830232, Time = 0.63 sec. 
+*** Within 20s the extent of improvement(376443(<531229.8)) is too small in 0.3s ***
+Run 1: Cost = 66830232, Time = 0.69 sec. 
+
+Successes/Runs = 0/1
+Cost.min = 66830232, Cost.avg = 66830232.00, Cost.max = 66830232
+Gap.min = 0.0000%, Gap.avg = 0.0000%, Gap.max = 0.0000%
+Trials.min = 10, Trials.avg = 10.0, Trials.max = 10
+Time.min = 0.69 sec., Time.avg = 0.69 sec., Time.max = 0.69 sec.
+Time.total = 2.43 sec.
+
+Key Metrics:
+	ioCount:			 5000
+	algorithmRunningDuration:	 2544.155 (ms)
+	memoryUse:			 8333.54 (KB)
+	addressingDuration:		 6523853 (ms)
+	readDuration:			 5240745 (ms)
+	tapeBeltWear:			 11242194
+	tapeMotorWear:			 285
+	errorIOCount:			 0
+
+指标写入文件 ./metrics.txt

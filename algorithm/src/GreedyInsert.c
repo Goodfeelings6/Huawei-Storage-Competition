@@ -33,7 +33,8 @@ int32_t GreedyInsert(const InputParam *input, OutputParam *output){
 #ifndef USING_REAL_TIME_COST
                 deltaCost = adjMat[prev-1][i-1] + adjMat[i-1][Next[prev]-1] - adjMat[prev-1][Next[prev]-1];
 #else
-                deltaCost = getCost(input, len, prev-1, i-1) + getCost(input, len, i-1, Next[prev]-1) - getCost(input, len, prev-1, Next[prev]-1);
+                deltaCost = getCost(input, len, prev-1, i-1) + getCost(input, len, i-1, Next[prev]-1) 
+                - getCost(input, len, prev-1, Next[prev]-1);
 #endif
             if (deltaCost < minDeltaCost){
                 minDeltaCost = deltaCost;

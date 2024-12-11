@@ -18,7 +18,7 @@ extern "C" {
 // #define DEBUG_LEVEL 2
 
 #define INF INT_MAX/200
-#define HEAP_SIZE 50  // 堆的大小
+#define HEAP_SIZE 5000  // 堆的大小
 
 /* ################## 全局变量声明 ################## */
 extern double alpha;              // 读时延权重
@@ -43,7 +43,7 @@ typedef struct
 } IOUintSS;
 
 typedef int ID;
-typedef double Cost;
+typedef int Cost;
 // 结构体用于存储节点和代价
 typedef struct {
     int node;
